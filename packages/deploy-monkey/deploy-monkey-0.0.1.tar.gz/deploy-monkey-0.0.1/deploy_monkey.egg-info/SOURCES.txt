@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+deploy_monkey.egg-info/PKG-INFO
+deploy_monkey.egg-info/SOURCES.txt
+deploy_monkey.egg-info/dependency_links.txt
+deploy_monkey.egg-info/top_level.txt
+monkey/__init__.py
