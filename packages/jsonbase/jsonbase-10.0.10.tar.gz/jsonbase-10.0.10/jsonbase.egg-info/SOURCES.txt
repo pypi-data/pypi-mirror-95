@@ -1,0 +1,7 @@
+README.md
+jsonbase.py
+setup.py
+jsonbase.egg-info/PKG-INFO
+jsonbase.egg-info/SOURCES.txt
+jsonbase.egg-info/dependency_links.txt
+jsonbase.egg-info/top_level.txt
