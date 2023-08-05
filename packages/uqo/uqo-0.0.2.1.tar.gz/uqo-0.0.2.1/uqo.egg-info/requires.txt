@@ -1,0 +1,5 @@
+dimod==0.9.13
+dwave-networkx==0.8.8
+prettytable==2.0.0
+pyzmq==22.0.2
+matplotlib==3.3.2
