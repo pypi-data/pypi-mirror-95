@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyarrow_ops/__init__.py
+pyarrow_ops/ops.py
+pyarrow_ops/table.py
+pyarrow_ops.egg-info/PKG-INFO
+pyarrow_ops.egg-info/SOURCES.txt
+pyarrow_ops.egg-info/dependency_links.txt
+pyarrow_ops.egg-info/requires.txt
+pyarrow_ops.egg-info/top_level.txt
