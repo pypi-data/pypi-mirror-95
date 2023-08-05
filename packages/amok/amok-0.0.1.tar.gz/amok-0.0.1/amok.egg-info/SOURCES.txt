@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+amok/__init__.py
+amok.egg-info/PKG-INFO
+amok.egg-info/SOURCES.txt
+amok.egg-info/dependency_links.txt
+amok.egg-info/top_level.txt
