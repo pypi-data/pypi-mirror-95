@@ -1,0 +1,12 @@
+fastapi
+easyprocess
+python-multipart
+plac
+aiofiles
+jinja2
+click
+uvicorn
+circus
+
+[testing]
+webtest
