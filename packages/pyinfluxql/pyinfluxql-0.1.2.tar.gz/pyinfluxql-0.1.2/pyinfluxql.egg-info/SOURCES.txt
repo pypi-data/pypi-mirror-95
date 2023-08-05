@@ -1,0 +1,12 @@
+README.rst
+setup.py
+pyinfluxql/__init__.py
+pyinfluxql/functions.py
+pyinfluxql/query.py
+pyinfluxql/utils.py
+pyinfluxql.egg-info/PKG-INFO
+pyinfluxql.egg-info/SOURCES.txt
+pyinfluxql.egg-info/dependency_links.txt
+pyinfluxql.egg-info/not-zip-safe
+pyinfluxql.egg-info/requires.txt
+pyinfluxql.egg-info/top_level.txt
