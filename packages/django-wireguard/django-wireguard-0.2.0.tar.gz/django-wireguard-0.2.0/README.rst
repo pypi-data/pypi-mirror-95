@@ -1,0 +1,75 @@
+================
+Django Wireguard
+================
+
+This is a Django app that provides management via Admin Site for WireGuard interfaces and peers.
+
+Checkout the `Documentation <https://thatsed.gitlab.io/django-wireguard/>`_.
+
+
+Installation
+------------
+
+Install with pip: ``pip install django-wireguard``
+
+
+Quick start
+-----------
+
+1. Add "django_wireguard" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'django_wireguard',
+    ]
+
+2. Run ``python manage.py migrate`` to create the models.
+
+3. Visit http://localhost:8000/admin/ to manage the VPN. Note: you must enable the Django Admin Site first https://docs.djangoproject.com/en/3.1/ref/contrib/admin/.
+
+
+Enabling the Wagtail Integration
+--------------------------------
+
+1. Add "django_wireguard.wagtail" to your INSTALLED_APPS setting after simple_vpn::
+
+    INSTALLED_APPS = [
+        ...
+        'django_wireguard'
+        'django_wireguard.wagtail',
+    ]
+
+2. You can manage the VPN from the Wagtail Admin Panel Settings. ``Inspect`` a WireguardPeer object to view their configuration.
+
+
+Configuration
+-------------
+
+The following settings can be provided:
+
+* ``WIREGUARD_ENDPOINT`` the endpoint for the peer configuration. Set it to the server Public IP address or domain. Default: ``localhost``.
+* ``WIREGUARD_STORE_PRIVATE_KEYS`` set this to False to disable auto generation of peer private keys. Default: ``True``.
+* ``WIREGUARD_WAGTAIL_SHOW_IN_SETTINGS`` set this to False to show WireGuard models in root sidebar instead of settings panel. Default: ``True``.
+
+Two signals are sent whenever a WireGuard interface is created or deleted to emulate WireGuard's PostUp/PostDown configuration options.
+These signals are sent upon interface creation **at the network level**, not at database level.
+
+Testing with Docker
+-------------------
+
+1. Build the test image by running::
+
+    docker build -f Dockerfile.test -t django_wg_test .
+
+
+2. Run the tests
+
+   - To run all tests, including Wireguard integration tests:
+      1. Make sure the WireGuard kernel modules are installed and loaded on the host machine
+      2. Run all tests with ``NET_ADMIN`` capability enabled::
+
+            docker run --cap-add NET_ADMIN django_wg_test
+
+   - To run unit tests without Wireguard support::
+
+        docker run django_wg_test --exclude-tag net
