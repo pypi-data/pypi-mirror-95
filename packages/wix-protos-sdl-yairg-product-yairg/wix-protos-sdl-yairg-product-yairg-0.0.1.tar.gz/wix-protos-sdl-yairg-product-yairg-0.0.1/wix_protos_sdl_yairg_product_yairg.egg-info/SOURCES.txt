@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+setup.py
+wix_protos_sdl_yairg_product_yairg.egg-info/PKG-INFO
+wix_protos_sdl_yairg_product_yairg.egg-info/SOURCES.txt
+wix_protos_sdl_yairg_product_yairg.egg-info/dependency_links.txt
+wix_protos_sdl_yairg_product_yairg.egg-info/top_level.txt
