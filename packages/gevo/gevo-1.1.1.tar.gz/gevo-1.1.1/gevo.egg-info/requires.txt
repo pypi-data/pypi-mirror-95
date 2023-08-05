@@ -1,0 +1,8 @@
+deap>=1.2
+matplotlib>=2.1
+pandas
+psutil
+pybind11>=2.2
+pycuda
+python-pptx>=0.6
+rich>=9.5
