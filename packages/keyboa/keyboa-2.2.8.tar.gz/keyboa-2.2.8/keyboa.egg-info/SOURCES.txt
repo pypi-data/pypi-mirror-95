@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+keyboa/__init__.py
+keyboa/constants.py
+keyboa/functions_alignment.py
+keyboa/functions_button_data.py
+keyboa/functions_callback.py
+keyboa/functions_precheck.py
+keyboa/keyboards.py
+keyboa.egg-info/PKG-INFO
+keyboa.egg-info/SOURCES.txt
+keyboa.egg-info/dependency_links.txt
+keyboa.egg-info/requires.txt
+keyboa.egg-info/top_level.txt
