@@ -1,0 +1,7 @@
+
+[:os_name != "nt"]
+psutil
+
+[:os_name == "nt"]
+pypiwin32>=154
+wmi

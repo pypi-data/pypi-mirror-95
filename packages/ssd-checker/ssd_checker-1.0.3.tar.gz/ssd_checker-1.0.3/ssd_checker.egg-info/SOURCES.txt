@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+ssd_checker.py
+ssd_checker.egg-info/PKG-INFO
+ssd_checker.egg-info/SOURCES.txt
+ssd_checker.egg-info/dependency_links.txt
+ssd_checker.egg-info/requires.txt
+ssd_checker.egg-info/top_level.txt
+ssd_checker.egg-info/zip-safe
