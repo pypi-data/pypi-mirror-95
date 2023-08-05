@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: mg
+Version: 0.0.2
+Summary: Machine Learning Extensions
+Author: chkoar
+Author-email: chkoar@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: dagging (>=0.2.2,<0.3.0)
+Requires-Dist: pytest-cov (>=2.11.1,<3.0.0)
+Requires-Dist: scikit-learn (>=0.23,<0.24)
+Requires-Dist: vfi (>=0.1.1,<0.2.0)
+Description-Content-Type: text/markdown
+
+MG is an extension package for Machine Learning. Currently wraps [vfi](https://vfi.readthedocs.io) and [dagging](https://dagging.readthedocs.io) packages.
+
+
+## How to use MG
+
+The mg package inherits from sklearn classes, and thus drops in neatly
+next to other sklearn classifiers with an identical calling API. Similarly it
+supports input in a variety of formats: an array (or pandas dataframe) of shape ``(num_samples x num_features)``.
+
+```
+import mg
+from sklearn.datasets import load_iris
+
+data, target = load_iris(return_X_y=True)
+
+model = mg.VFI()
+model.fit(data, target)
+```
+
+
+## Installing
+
+PyPI install, presuming you have an up to date pip:
+
+
+```
+pip install mg
+```
+
+If pip is having difficulties pulling the dependencies then we'd suggest to first upgrade
+pip to at least version 10 and try again:
+
+
+```
+pip install --upgrade pip
+pip install mg
+```
+
+Otherwise install the dependencies manually using anaconda followed by pulling mg from pip:
+
+```
+conda install numpy scipy
+conda install scikit-learn
+pip install mg
+```
+
+## Running the Tests
+
+
+The package tests can be run after installation using the command:
+
+```
+pytest mg --cov
+```
+
+## Python Version
+
+
+The mg package supports only Python 3.
+    
+
+## Contributing
+
+
+We welcome contributions in any form! Assistance with documentation, particularly expanding tutorials, is always welcome.
+
+## Licensing
+
+The mg package is MIT licensed. Enjoy.
