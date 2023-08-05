@@ -1,0 +1,15 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/notegod_test.py,sha256=Pjr_es3FRXOcdvgI5AEDqzaljT7hvLPryTZwZKf4IM0,140
+notegod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notegod/changes/BChanges.py,sha256=3bFhArRcKTD02KNwZ8hKQANoqYgxbzUJe-O8eNMZUj0,4529
+notegod/changes/DrawGossip.py,sha256=xYMLl6dJo0GAEvHIKWFNkWHWG-S9DPuAuNot8VC6OeM,2237
+notegod/changes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notegod/conf/GuaCi.py,sha256=AWxCpyiPIuZIICK1qIL_jzWreHKbINOpg8-W_7K2cMI,3759
+notegod/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notegod/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notegod/data/gua_ci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notegod/data/gua_ci/gwill_solution.py,sha256=46PJDwD-q38IrQ3Umhe0HUZXWyNgaDObwxwDzBubCzk,241097
+notegod-0.0.2.dist-info/METADATA,sha256=GZVc4ud5l9jok-eXH7x_bYgsTSiRRIY0i-KG1B6JTGs,254
+notegod-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+notegod-0.0.2.dist-info/top_level.txt,sha256=oX16NJR15SODArF6OYXWKQqAwTd19vZzp377SoEX1X0,16
+notegod-0.0.2.dist-info/RECORD,,

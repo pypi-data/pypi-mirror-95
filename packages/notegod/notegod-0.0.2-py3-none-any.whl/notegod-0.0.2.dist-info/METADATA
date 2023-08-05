@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: notegod
+Version: 0.0.2
+Summary: notegod
+Home-page: https://github.com/1007530194
+Author: niult
+Author-email: 1007530194@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytest
+Requires-Dist: readme-renderer
+
+UNKNOWN
+
+
