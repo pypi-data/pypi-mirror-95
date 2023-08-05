@@ -1,0 +1,13 @@
+numpy!=1.19.4
+qcodes
+scipy!=1.6.0,>=1.5.0
+xarray
+xxhash
+matplotlib
+lmfit
+pyqt5>=5.15.2
+pyqtgraph
+jsonschema
+adaptive
+filelock
+appnope
