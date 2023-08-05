@@ -1,0 +1,8 @@
+discord_base_bots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_base_bots/base.py,sha256=Xj82qDw7v5zy2iig_oYZHh1iuro8goRgm6j_puiD9S4,3764
+discord_base_bots/dice_bot.py,sha256=DKIXQGkG24USj7W0bKJc9lhjH5SnylYy4Mev8wGm3h8,1738
+discord_base_bots/fighter.py,sha256=G_DJJAQjT02qvId528WfBJD_H0EY3LvKc-vfOe58BKs,8887
+discord_base_bots-0.1.19.dist-info/METADATA,sha256=oCm-dD5RwuOK66C1A-qNxibMQTNRwq0NzBSNIeMDp0U,404
+discord_base_bots-0.1.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+discord_base_bots-0.1.19.dist-info/top_level.txt,sha256=c0MHurhVIrm0n2DkJnHddyqh99yiinA8d4O8bAXWtB0,18
+discord_base_bots-0.1.19.dist-info/RECORD,,
