@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: deep-leaps
+Version: 0.0.11
+Summary: Data driven development based deep learning deepleaps(pytorch)
+Home-page: https://github.com/Longseabear/deep-leaps-pytorch.git
+Author: Leaps
+Author-email: leap1568@gmail.com
+License: UNKNOWN
+Description: # Leaps Deep learning framework
+        
+        # IPC(mailspot) based training control
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
