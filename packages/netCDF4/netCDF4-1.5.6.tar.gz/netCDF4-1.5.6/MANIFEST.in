@@ -1,0 +1,21 @@
+include docs/index.html
+recursive-include man *
+include MANIFEST.in
+include README.htmldocs
+include Changelog
+include setup.cfg
+include examples/*py
+include examples/README.md
+include test/*py
+include test/*nc
+include src/netCDF4/__init__.py
+include src/netCDF4/_netCDF4.pyx
+include src/netCDF4/utils.py
+include include/netCDF4.pxi
+include include/mpi-compat.h
+include include/membuf.pyx
+include *.md
+include *.py
+include *.release
+include *.sh
+include LICENSE
