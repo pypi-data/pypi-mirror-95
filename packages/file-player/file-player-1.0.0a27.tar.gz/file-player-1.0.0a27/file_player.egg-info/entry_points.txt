@@ -1,0 +1,3 @@
+[console_scripts]
+file-player = fileplayer.main:main
+

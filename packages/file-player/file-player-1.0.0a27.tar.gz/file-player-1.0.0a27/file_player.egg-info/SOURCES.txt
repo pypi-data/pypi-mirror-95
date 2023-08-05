@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+file_player.egg-info/PKG-INFO
+file_player.egg-info/SOURCES.txt
+file_player.egg-info/dependency_links.txt
+file_player.egg-info/entry_points.txt
+file_player.egg-info/requires.txt
+file_player.egg-info/top_level.txt
+fileplayer/__init__.py
+fileplayer/config.py
+fileplayer/globa.py
+fileplayer/main.py
+fileplayer/main_window.py
+fileplayer/timer.py
+fileplayer/widgets.py
