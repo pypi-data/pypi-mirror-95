@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        lil_histie=lil_histie.histogram:cli
+    

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lil_histie/__init__.py
+lil_histie/histogram.py
+lil_histie.egg-info/PKG-INFO
+lil_histie.egg-info/SOURCES.txt
+lil_histie.egg-info/dependency_links.txt
+lil_histie.egg-info/entry_points.txt
+lil_histie.egg-info/requires.txt
+lil_histie.egg-info/top_level.txt
+lil_histie/__pycache__/__init__.cpython-37.pyc
+lil_histie/__pycache__/histogram.cpython-37.pyc
