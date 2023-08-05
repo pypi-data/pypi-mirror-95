@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: BGlib
+Version: 0.0.2
+Summary: Band Excitation and General Mode analysis and visualization codes
+Home-page: https://pycroscopy.github.io/BGlib/about.html
+Author: Suhas Somnath, Chris R. Smith, Rama K. Vasudevan, Stephen Jesse, Anton Ievlev, and contributors
+Author-email: pycroscopy@gmail.com
+License: MIT
+Keywords: imaging,spectra,multidimensional,scientific
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows 10/8.1/8/7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: numpy (>=1.13.0)
+Requires-Dist: h5py (>=2.6.0)
+Requires-Dist: scipy (>=0.17.1)
+Requires-Dist: scikit-image (>=0.12.3)
+Requires-Dist: scikit-learn (>=0.17.1)
+Requires-Dist: matplotlib (>=2.0.0)
+Requires-Dist: psutil
+Requires-Dist: six
+Requires-Dist: pillow
+Requires-Dist: joblib (>=0.11.0)
+Requires-Dist: ipywidgets (>=5.2.2)
+Requires-Dist: numpy-groupies (==0.9.7)
+Requires-Dist: sidpy (>=0.0.2)
+Requires-Dist: pyUSID (>=0.0.8)
+Requires-Dist: xlrd (>=1.0.0)
+Requires-Dist: unittest2 ; python_version < "3.0"
+Requires-Dist: ipython (<6,>=5.1.0) ; python_version < "3.3"
+Requires-Dist: ipython (>=6.0) ; python_version >= "3.3"
+
+BGlib
+=====
+
+.. image:: https://travis-ci.com/pycroscopy/sidpy.svg?branch=master
+    :target: https://travis-ci.com/pycroscopy/BGlib
+    :alt: TravisCI
+
+.. image:: https://img.shields.io/pypi/v/BGlib.svg
+    :target: https://pypi.org/project/bglib/
+    :alt: PyPI
+
+.. image:: https://coveralls.io/repos/github/pycroscopy/BGlib/badge.svg?branch=master
+    :target: https://coveralls.io/github/pycroscopy/BGlib?branch=master
+    :alt: coverage
+
+.. image:: https://img.shields.io/pypi/l/sidpy.svg
+    :target: https://pypi.org/project/sidpy/
+    :alt: License
+
+.. image:: http://pepy.tech/badge/BGlib
+    :target: http://pepy.tech/project/BGlib
+    :alt: Downloads
+
+Band Excitation and General Mode analysis and visualization codes
+
+
