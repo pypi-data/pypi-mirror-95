@@ -1,0 +1,4 @@
+six
+future
+lighttree==1.1.1
+elasticsearch<8.0.0,>=7.0.0
