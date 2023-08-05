@@ -1,0 +1,42 @@
+[build-system]
+requires = ["flit_core >=2,<4", "setuptools", "poetry_core>==1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flit.metadata]
+module = "commandfrog"
+author = "Andrew Magee"
+author-email = "amagee@gmail.com"
+home-page = "https://github.com/amagee/commandfrog"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+[tool.poetry]
+name = "commandfrog"
+version = "0.3.1"
+description = "Infra"
+authors = ["Andrew Magee"]
+
+[tool.poetry.dependencies]
+# Some weirdness in installing pudb, it asked us to change from ">=3.8" to ">=3.8,<4.0"
+python = ">=3.6,<4.0"
+paramiko = "^2.7.2"
+loguru = "^0.5.3"
+setuptools = "^53.0.0"
+dephell = "^0.8.3"
+typer = "^0.3.2"
+PyYAML = "^5.3.1"
+
+[tool.poetry.dev-dependencies]
+pyinstaller = "^4.1"
+mypy = "^0.790"
+ipython = "^7.19.0"
+pytest = "^6.2.1"
+docker = "^4.4.1"
+pudb = "^2020.1"
+pytest-pudb = "^0.7.0"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+
+[tool.poetry.scripts]
+build = "build.__init__:build"

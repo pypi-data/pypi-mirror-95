@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: commandfrog
+Version: 0.3.1
+Summary: Infra
+Author: Andrew Magee
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: dephell (>=0.8.3,<0.9.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: paramiko (>=2.7.2,<3.0.0)
+Requires-Dist: setuptools (>=53.0.0,<54.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
