@@ -1,0 +1,35 @@
+# lightcards
+Terminal flashcards from Markdown.
+
+## Installation
+Lightcards is only tested and maintained on Linux. Support for other Unix-like operating systems such as MacOS and the various BSDs is likely, although untested. Windows support may be possible with [windows-curses](https://pypi.org/project/windows-curses/) or the like, however much of the program makes the assumption that there is a Unix-like file hierarchy, which may break on Windows. Nontrivial patches will not be accepted to improve Windows support, although may be for MacOS or BSD.
+
+Lightcards requires Python 3.9
+
+### From PyPI
+```
+pip install lightcards
+```
+
+### From Git
+#### Main branch (stable)
+```
+pip install git+https://git.sr.ht/~armaan/lightcards
+```
+
+#### Development branch
+```
+pip install git+https://git.sr.ht/~armaan/lightcards@devel
+```
+
+## Usage
+See `lightcards --help` or `man lightcards` for usage information.
+
+## Input file
+`contrib/example.md` is an example input file. Lightcards takes all of the tables from a valid Markdown or HTML file. Each row is a card, and the two columns are the front and back.
+
+## Configuration
+Copy the config file at `/etc/lightcards/config.py` to `~/.config/lightcards/config.py` or `~/${XDG_CONFIG_HOME}/lightcards/config.py` and edit.
+
+## License
+Copyright Armaan Bhojwani 2021, MIT license
