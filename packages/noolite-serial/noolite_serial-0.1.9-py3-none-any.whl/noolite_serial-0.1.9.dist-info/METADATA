@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: noolite-serial
+Version: 0.1.9
+Summary: Noolite api over serial
+Home-page: UNKNOWN
+Author: andrewgermanovich
+Author-email: andvikt@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyserial
+
+UNKNOWN
+
+
