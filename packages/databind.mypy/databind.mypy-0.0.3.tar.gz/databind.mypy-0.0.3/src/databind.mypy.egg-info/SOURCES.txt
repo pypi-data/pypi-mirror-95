@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+package.yml
+setup.py
+src/databind/__init__.py
+src/databind.mypy.egg-info/PKG-INFO
+src/databind.mypy.egg-info/SOURCES.txt
+src/databind.mypy.egg-info/dependency_links.txt
+src/databind.mypy.egg-info/requires.txt
+src/databind.mypy.egg-info/top_level.txt
+src/databind.mypy.egg-info/zip-safe
+src/databind/mypy/__init__.py
+src/databind/mypy/_mypy_dataclasses.py
+src/databind/mypy/_plugin.py
