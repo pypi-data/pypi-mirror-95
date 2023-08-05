@@ -1,0 +1,7 @@
+numpy
+pytz
+trytond<5.1,>=5.0
+trytond_health<5.1,>=5.0
+
+[Pillow]
+Pillow
