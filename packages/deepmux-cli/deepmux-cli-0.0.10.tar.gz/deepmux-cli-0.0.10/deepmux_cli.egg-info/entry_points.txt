@@ -1,0 +1,3 @@
+[console_scripts]
+deepmux = deepmux.__main__:main
+
