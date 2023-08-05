@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: yyyy-mm-dd
+Version: 0.1.0
+Summary: Helper functions for easy string-based manipulation of dates in python
+Home-page: https://github.com/rogeriochaves/yyyy_mm_dd
+Author: Rogerio Chaves
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+
