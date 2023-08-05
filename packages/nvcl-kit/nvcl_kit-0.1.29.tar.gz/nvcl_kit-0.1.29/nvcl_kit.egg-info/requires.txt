@@ -1,0 +1,6 @@
+OWSLib
+shapely
+requests
+pyproj
+geojson
+pyyaml
