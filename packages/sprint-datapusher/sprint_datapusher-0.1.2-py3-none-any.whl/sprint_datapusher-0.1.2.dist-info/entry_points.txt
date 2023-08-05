@@ -1,0 +1,3 @@
+[console_scripts]
+sprint_datapusher=sprint_datapusher.datapusher:cli
+
