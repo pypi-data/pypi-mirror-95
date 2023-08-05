@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mildom_dl/__init__.py
+mildom_dl/__main__.py
+mildom_dl/command.py
+mildom_dl/mildomDL.py
+mildom_dl.egg-info/PKG-INFO
+mildom_dl.egg-info/SOURCES.txt
+mildom_dl.egg-info/dependency_links.txt
+mildom_dl.egg-info/entry_points.txt
+mildom_dl.egg-info/top_level.txt
