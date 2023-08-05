@@ -1,0 +1,14 @@
+florodoro/__init__.py,sha256=1p1oAyBXwVW4r-11KlVIEr9rBSyaSOs11xwJiiFUQNM,42325
+florodoro/images/icon.svg,sha256=o4lqKgX_lLcRxOtOBymqaIGfgnE4HTZ4-SbpBq47ZyA,3071
+florodoro/images/logo.svg,sha256=juhmAuVExcYWWX-9zmhbiifJiMUKNzR5UJ0rmywrpWs,15440
+florodoro/images/preview.svg,sha256=qDfkjBdQ4zkRm6eaxDgyXOlKwzKruhr4535Jv2md0v8,68551
+florodoro/sounds/break_done.wav,sha256=CEt4Rj4w2uSqxe2_npyTze5ezkpKaINS5qK2aG-bH0o,345970
+florodoro/sounds/study_done.wav,sha256=CEt4Rj4w2uSqxe2_npyTze5ezkpKaINS5qK2aG-bH0o,345970
+florodoro-0.4.data/data/LICENSE.txt,sha256=QJYF0kQueZOotgnJ_0ut5TBO88v511ZznjxP-j8MZ4A,1053
+florodoro-0.4.data/data/README.md,sha256=1XoFWBPLdJ7vAJ3eZAeSjpcTNLgZv-jDKIiGrB8OZpo,445
+florodoro-0.4.dist-info/LICENSE.txt,sha256=QJYF0kQueZOotgnJ_0ut5TBO88v511ZznjxP-j8MZ4A,1053
+florodoro-0.4.dist-info/METADATA,sha256=cOE6bWCpfP1apvfV_ZwXpWaX41TyLZ2zGLIo-4t5RlA,1103
+florodoro-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+florodoro-0.4.dist-info/entry_points.txt,sha256=gTYpvkEJh675lPcSTVcBeaFKNcbiwy8l_kwiXNJU0zI,54
+florodoro-0.4.dist-info/top_level.txt,sha256=jSYvmM7WooomRmK7W5FRpA5W24uwzysbba4Q07s5Pb0,10
+florodoro-0.4.dist-info/RECORD,,
