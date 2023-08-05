@@ -1,0 +1,17 @@
+wsterm/__init__.py,sha256=kg0ohzAIN_f0ReqP1sszh8HUttzs-XO99xjS6FMLSnw,77
+wsterm/__main__.py,sha256=EVs1uM_lK48K9AFgjMuiBD1r5JI6A-BjCKqJaB2HxJg,4494
+wsterm/client.py,sha256=_dx-B2eZhrTOJUpOPUDzY1rLk5ZCzFF01Hk8pvvYSiI,11893
+wsterm/proto.py,sha256=ysoPA1-nzsdYfp5xmtMj-sOcNJxNsf9kpT6XuPEozs8,1512
+wsterm/server.py,sha256=fNFpBnHJPKscdaNKSYZn8OuGLe1M8IF8T0h6GhAwRFU,8068
+wsterm/shell.py,sha256=tyRmLlOLqvP8fJqb9Cf8FEUEuiP5pkeE1mLsOq4kx-I,2914
+wsterm/utils.py,sha256=tYzTWDhWbnt-zryssI0Ebz5APXh18-uc5hNsYwp52kU,4874
+wsterm/workspace.py,sha256=iB6asrZTbSXyKRt49rgCvi7K0IVBIlWHPAF7xecTpL4,6109
+wsterm/aiowatch/__init__.py,sha256=CJ5G4DsmUiGnFTAVk0iPYQFOaUxbzyzG_baDVrcOaYg,3079
+wsterm/aiowatch/inotify.py,sha256=bXWohB93QykFF0Yf7quuwBOu7yjhIUAtmb80jbTjbmA,8190
+wsterm/aiowatch/kevents.py,sha256=9tO5uq4CizTheAbmIuSFzBkSm7Dm0ROz1N_O_KAFMxk,6584
+wsterm/aiowatch/win32.py,sha256=D7qGRDWe1sVH6stdi7PhHMHQOLFGsRN6nmXq-PTgfhM,10502
+wsterm-0.2.0.dist-info/METADATA,sha256=dPwJpivPvOlkg6-E7l9gg3eFcxFMqS2eAGuS5xi9--I,2545
+wsterm-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wsterm-0.2.0.dist-info/entry_points.txt,sha256=ZQOXX3AHJcsrXjtm4LudE5F7CNf9JbfbH3zu3KqLslc,49
+wsterm-0.2.0.dist-info/top_level.txt,sha256=HxZroBd_Qo-a-Cmfrz58DxrsuuF_oBdKmEd7hAvkpYY,7
+wsterm-0.2.0.dist-info/RECORD,,
