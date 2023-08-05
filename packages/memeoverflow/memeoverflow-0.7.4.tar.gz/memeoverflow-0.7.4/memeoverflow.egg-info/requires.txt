@@ -1,0 +1,10 @@
+setuptools
+requests
+twython
+logzero
+
+[test]
+pytest
+coverage
+mock
+pylint
