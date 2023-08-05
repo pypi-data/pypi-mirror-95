@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: logging_opentracing
+Version: 0.1.0
+Summary: OpenTracing handler for the Python logging library
+Home-page: https://github.com/kornerc/python-logging-opentracing
+Author: Clemens Korner
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: opentracing,logging
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
