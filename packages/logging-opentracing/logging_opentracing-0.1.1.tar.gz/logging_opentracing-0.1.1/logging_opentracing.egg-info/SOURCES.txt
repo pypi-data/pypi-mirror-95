@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+logging_opentracing/__init__.py
+logging_opentracing/_version.py
+logging_opentracing/conf.py
+logging_opentracing/formatter.py
+logging_opentracing/handler.py
+logging_opentracing.egg-info/PKG-INFO
+logging_opentracing.egg-info/SOURCES.txt
+logging_opentracing.egg-info/dependency_links.txt
+logging_opentracing.egg-info/requires.txt
+logging_opentracing.egg-info/top_level.txt
