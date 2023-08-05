@@ -1,0 +1,6 @@
+appdirs
+cachecontrol[filecache]
+gtkme>=1.5.2
+lxml
+pip==20.1
+requests

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: inkscape-extensions-manager
+Version: 0.8.3
+Summary: Inkscape manager user interface (gtk)
+Home-page: https://gitlab.com/inkscape/extension-manager
+Author: Martin Owens
+Author-email: doctormo@gmail.com
+License: GPLv3
+Description: See README for full details
+Platform: linux
+Classifier: Environment :: Plugins
+Classifier: Topic :: Multimedia :: Graphics :: Editors :: Vector-Based
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 5 - Production/Stable

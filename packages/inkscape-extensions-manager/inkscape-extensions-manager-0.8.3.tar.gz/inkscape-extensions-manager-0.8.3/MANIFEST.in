@@ -1,0 +1,9 @@
+include inkman/data/*.glade
+include inkman/data/*.ui
+include inkman/data/pixmaps/*.svg
+include inkman/data/pixmaps/*.png
+include README.md
+include icon.svg
+include extensions.pth
+include manage-extensions.inx
+include manage-extensions.py
