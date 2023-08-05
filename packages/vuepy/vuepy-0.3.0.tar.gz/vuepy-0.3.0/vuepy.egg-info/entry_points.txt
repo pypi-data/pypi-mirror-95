@@ -1,0 +1,7 @@
+[console_scripts]
+vue-cli = vuecli.cli:main
+
+[vuecli.provider]
+flask = vuecli.provider.flask:Flask
+static = vuecli.provider.static:Static
+
