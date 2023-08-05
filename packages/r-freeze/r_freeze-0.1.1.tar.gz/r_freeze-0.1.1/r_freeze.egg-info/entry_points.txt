@@ -1,0 +1,3 @@
+[console_scripts]
+r_freeze = r_freeze.cli:main
+
