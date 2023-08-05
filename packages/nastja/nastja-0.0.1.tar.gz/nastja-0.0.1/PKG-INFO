@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nastja
+Version: 0.0.1
+Summary: Python addon for NAStJA
+Home-page: UNKNOWN
+Author: T3GD1F (Felix Hoffmann)
+Author-email: <felixhoffmann07@gmx.de>
+License: UNKNOWN
+Description: 
+        Readme
+        
+Keywords: python,nastja,framework,simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Scientists
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Description-Content-Type: text/markdown

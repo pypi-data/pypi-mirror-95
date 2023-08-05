@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+nastja/__init__.py
+nastja/hello.py
+nastja.egg-info/PKG-INFO
+nastja.egg-info/SOURCES.txt
+nastja.egg-info/dependency_links.txt
+nastja.egg-info/requires.txt
+nastja.egg-info/top_level.txt
