@@ -1,0 +1,4 @@
+
+        [pygments.lexers]
+        expslexer=explorerscript.pygments.expslexer:ExplorerScriptLexer
+    
