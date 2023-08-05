@@ -1,0 +1,14 @@
+galletapy/DKR.py,sha256=th3b1FV9A9-bfBwl23qrMcsaqKX0_KR98MBzuLwXg04,14438
+galletapy/MD.py,sha256=ex_02mb18z1YTs6XvHqyWbOwe2RaFbF_tweo0k5QdHs,14752
+galletapy/OS.py,sha256=_I1_969vjctQh6D63vosq1JdL7N-jKjyW4o9Y-X6M8s,17306
+galletapy/__init__.py,sha256=M3wULAuSOu_2UfmjNIXHPRWcin7MNsQ81kLzKqflv5w,97
+galletapy/boys.py,sha256=Ddoht7UAGLEKGuBRv7JpdmaJlBBd18HRnm1i5izI3_0,90
+galletapy/shells.py,sha256=4JzgMlcxOBi8lm6DeuRAFv8quECy3g8VDcCjvcCzn1g,4735
+galletapy/basis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galletapy/basis/aug-cc-pVDZ.bas,sha256=gv8rjZ6XnO5CNGjBSdR77GCDlzQ6_8RndXPbqSDASjg,143781
+galletapy/basis/aug-cc-pVTZ.bas,sha256=gv8rjZ6XnO5CNGjBSdR77GCDlzQ6_8RndXPbqSDASjg,143781
+GalletaPy-0.17.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+GalletaPy-0.17.dist-info/METADATA,sha256=DcvNJ6RCn0QtSAYMgSwht3DdIQMEjqWGI3zqPyFyBS8,758
+GalletaPy-0.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+GalletaPy-0.17.dist-info/top_level.txt,sha256=ZUJaRjxZ_UVehpHz0rBtlcflF_oVL0aQFujly7qaRAw,10
+GalletaPy-0.17.dist-info/RECORD,,
