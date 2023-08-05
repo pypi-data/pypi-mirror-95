@@ -1,0 +1,3 @@
+[console_scripts]
+study_proc = convert_source.bin.study_proc:main
+
