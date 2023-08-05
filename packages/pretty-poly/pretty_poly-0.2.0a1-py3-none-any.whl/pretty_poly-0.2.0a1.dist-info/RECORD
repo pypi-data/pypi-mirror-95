@@ -1,0 +1,9 @@
+pretty_poly/__init__.py,sha256=52QwwJpX-_XIadtKcYhCzFIfC9TuV8HQQGSCv_3ffWY,30
+pretty_poly/abstract.py,sha256=n0Y_Dab7RPrhbWfVs_kHCnpzXLgfziFYOf5HGbLcdDc,109
+pretty_poly/ascii.py,sha256=TtzwIONUE4JwqOzjrze1m5fr4e01MCGOS3PQv2Ema9o,898
+pretty_poly/tiling.py,sha256=HbyJ6xY4m6LBLDYQcMXHlVUtPUdEdCHg7JXbyXbHXPk,3266
+pretty_poly-0.2.0a1.dist-info/entry_points.txt,sha256=RR1unv-bMGxCVBoX3asalwXXZU-96Y5UsJII-q9e3Hg,39
+pretty_poly-0.2.0a1.dist-info/LICENSE,sha256=9TofdYOxRCYYW9OWi9ennpJ2rTXgrZ6CfwakuGgfrIk,1061
+pretty_poly-0.2.0a1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pretty_poly-0.2.0a1.dist-info/METADATA,sha256=K7yb4G6gfz4nMRoD5rgJ0xn-aEp9kzuPFxjI2XR2YPM,478
+pretty_poly-0.2.0a1.dist-info/RECORD,,
