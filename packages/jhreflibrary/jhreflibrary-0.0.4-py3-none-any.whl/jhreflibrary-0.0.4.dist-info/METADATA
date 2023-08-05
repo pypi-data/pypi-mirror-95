@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jhreflibrary
+Version: 0.0.4
+Summary: jh ref library
+Home-page: https://github.com/yunjh7024/jhref
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: aiohttp (==3.7.3)
+Requires-Dist: black (==20.8b1)
+Requires-Dist: holidays (==0.10.4)
+Requires-Dist: pytz (==2019.03)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: scipy (==1.5.2)
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: pylint (==2.6.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: numba (==0.52.0)
+Requires-Dist: numpy (==1.19.5)
+
+UNKNOWN
+
+
