@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: numeraltoolkit
+Version: 0.0.3
+Summary: A python SDK for scripts that use numbers.
+Home-page: https://codeberg.org/jaydenmw/numeraltool.sdk.jaydenmw
+Author: JaydenMW
+Author-email: jmw.team.mail@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

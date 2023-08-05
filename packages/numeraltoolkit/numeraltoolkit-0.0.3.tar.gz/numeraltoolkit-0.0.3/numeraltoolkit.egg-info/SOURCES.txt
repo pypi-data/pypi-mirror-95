@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+numeraltoolkit.egg-info/PKG-INFO
+numeraltoolkit.egg-info/SOURCES.txt
+numeraltoolkit.egg-info/dependency_links.txt
+numeraltoolkit.egg-info/top_level.txt
