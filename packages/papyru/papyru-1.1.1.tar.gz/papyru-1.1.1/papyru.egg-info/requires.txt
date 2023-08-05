@@ -1,0 +1,4 @@
+Cerberus
+Django
+jsonschema
+requests
