@@ -1,0 +1,3 @@
+[console_scripts]
+gpssnr = gpssnrpy.gpssnr_cl:main
+
