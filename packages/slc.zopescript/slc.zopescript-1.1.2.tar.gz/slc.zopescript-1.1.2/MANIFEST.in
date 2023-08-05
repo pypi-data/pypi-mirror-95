@@ -1,0 +1,9 @@
+recursive-include src/slc *
+recursive-include docs *
+global-exclude *pyc
+prune test-filestorage
+graft buildout.d
+include *.py
+include Makefile
+include buildout.cfg
+include *.txt
