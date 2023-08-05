@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: clibato
+Version: 0.0.8
+Summary: A command-line tool that can backup and restore your dot-files or other simple files.
+Home-page: https://github.com/jigarius/clibato
+Author: Jigar Mehta
+Author-email: hello@jigarius.com
+License: GNU LGPL v2.1
+Description: # Clibato: CLI Backup Tool
+        
+        Clibato is a simple backup/restore tool. I created it to help me backup
+        my `.dot` files and to have fun with Python 🐍.
+        
+        ## Installation
+        
+        TODO.
+        
+        ## Configuration
+        
+        To use the tool, start by creating a configuration file. The `~/.clibato.yml`
+        will automatically be detected so, it is the recommended location. However,
+        you can place your configuration anywhere.
+        
+            clibato init --config-file=~/.clibato.yml
+        
+        The generated file contains comments to help you with the configuration.
+        
+        ### Auto-detection
+        
+        If `--config-file` is not specified, the following locations will be searched:
+        
+          - The directory from which the command was issued, i.e. `./.clibato.yml`.
+          - The user's home directory, i.e. `~/.clibato.yml`.
+        
+        If your configuration is not in one of those locations, you can use the
+        `--config-file` flag with other `clibato` commands.
+        
+        ### Suggestions
+        
+          * Place your config in `~/.clibato.yml`.
+            * This way, you don't have to specify `--config-file` all the time.
+          * Include your `.clibato.yml` in your backup.
+        
+        ## Usage
+        
+        After you've installed and configured the tool, here's how you use it.
+        
+        ### Backup
+        
+        To perform a backup, run the following command:
+        
+            clibato backup
+        
+        ### Restore
+        
+        To restore the previous backup, run the following command:
+        
+            clibato restore
+        
+        ## Examples
+        
+        For detailed documentation, and more examples, see
+        [.clibato.example.yml](https://github.com/jigarius/clibato/blob/main/.clibato.example.yml).
+        
+        ### Backup to a directory
+        
+        ```yaml
+        contents:
+          .bashrc:
+          .clibato.yml:
+        destination:
+          type: "directory"
+          path: "~/backup/clibato"
+        ```
+        
+        ### Backup to a Git repository
+        
+        ```yaml
+        contents:
+          .bashrc:
+          .clibato.yml:
+        destination:
+          type: "repository"
+          path: "~/backup/clibato"
+          remote: "git@gitlab.com:jigarius/dotfiles.git"
+          branch: 'main'
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
