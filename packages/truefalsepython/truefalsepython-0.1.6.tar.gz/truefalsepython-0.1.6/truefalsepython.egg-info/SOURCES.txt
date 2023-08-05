@@ -1,0 +1,13 @@
+README.md
+setup.py
+truefalsepython/__init__.py
+truefalsepython/little.py
+truefalsepython/logical.py
+truefalsepython/other.py
+truefalsepython/r_funcs.py
+truefalsepython/useful_funcs.py
+truefalsepython.egg-info/PKG-INFO
+truefalsepython.egg-info/SOURCES.txt
+truefalsepython.egg-info/dependency_links.txt
+truefalsepython.egg-info/requires.txt
+truefalsepython.egg-info/top_level.txt
