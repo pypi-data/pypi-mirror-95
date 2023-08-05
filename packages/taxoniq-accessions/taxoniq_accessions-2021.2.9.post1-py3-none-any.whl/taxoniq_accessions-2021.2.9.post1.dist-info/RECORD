@@ -1,0 +1,8 @@
+taxoniq_accessions/__init__.py,sha256=YsEMCYpIdiUNC2QeSCQ8xRe2HnzJHQAYvcQ65ie7Z1c,151
+taxoniq_accessions/blast_db.marisa,sha256=9rUOtjzy-fZM9V3jXMzRYlOCqrA6jk4fEGDVjU9MSC0,34476128
+taxoniq_accessions/db.marisa,sha256=tvFDs-uCSdwXI7qG81c2It6yzyhCEnnue-qyAE4eO3w,43543528
+taxoniq_accessions/taxid_db.marisa,sha256=daA0TvcMBr0axDj6XcQM4P6Xwf_XgOO81wyOfccz8l4,43494984
+taxoniq_accessions-2021.2.9.post1.dist-info/METADATA,sha256=8h-szjHV8zXyJazJDu70nx_RRIjNQ24NGNGSaZxNxMM,297
+taxoniq_accessions-2021.2.9.post1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+taxoniq_accessions-2021.2.9.post1.dist-info/top_level.txt,sha256=B_ZEXK47uL9awfaUlGRozrGedIrjyrHUhPPGGJ8le9w,19
+taxoniq_accessions-2021.2.9.post1.dist-info/RECORD,,
