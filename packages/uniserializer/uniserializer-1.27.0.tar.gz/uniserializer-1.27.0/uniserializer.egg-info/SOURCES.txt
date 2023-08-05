@@ -1,0 +1,9 @@
+README.md
+setup.py
+python/__init__.py
+python/deserializer.py
+python/serializer.py
+uniserializer.egg-info/PKG-INFO
+uniserializer.egg-info/SOURCES.txt
+uniserializer.egg-info/dependency_links.txt
+uniserializer.egg-info/top_level.txt
