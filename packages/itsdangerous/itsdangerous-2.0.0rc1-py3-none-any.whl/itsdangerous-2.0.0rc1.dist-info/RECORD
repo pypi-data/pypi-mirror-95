@@ -1,0 +1,15 @@
+itsdangerous/__init__.py,sha256=aXl6-2kZjwaom97yyNG7xkmt-VeffStJ4Iv81zdleqw,730
+itsdangerous/_json.py,sha256=BrrWWWyJ8HT-eUegt310pIljuKtL9Ls_LHrjdbjM81M,889
+itsdangerous/encoding.py,sha256=zXNcTsxoCXQ0J76FCtn45Gb2zg4mwjKTPmHJUt2T_eA,1407
+itsdangerous/exc.py,sha256=VFxmP2lMoSJFqxNMzWonqs35ROII4-fvCBfG0v1Tkbs,3206
+itsdangerous/jws.py,sha256=w9CPb9BEsRX-Jt1MlzlbvAr1cOQj_eV1l47No4cJCfw,8064
+itsdangerous/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itsdangerous/serializer.py,sha256=xLHY-DYdiLHk1qfHcI-7xuObxE0QWwpz0owu2ar0E54,11027
+itsdangerous/signer.py,sha256=Udc-dipIeXBx8TWHN6mqs63juHL_3vO0C4yl_lq69Bk,9260
+itsdangerous/timed.py,sha256=yre4MSMAsOXf6UvgkipdAlhTYfAfTZa___ei1AXOuiM,7790
+itsdangerous/url_safe.py,sha256=WLIicndsXvzS2edX7XH8bjo9nurgE-brgo915CsAR9g,2388
+itsdangerous-2.0.0rc1.dist-info/LICENSE.rst,sha256=Y68JiRtr6K0aQlLtQ68PTvun_JSOIoNnvtfzxa4LCdc,1475
+itsdangerous-2.0.0rc1.dist-info/METADATA,sha256=omF1pzwHKCicYRnPh1TgrvkCu71XOBgA3-CTZ1alMEA,2550
+itsdangerous-2.0.0rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+itsdangerous-2.0.0rc1.dist-info/top_level.txt,sha256=gKN1OKLk81i7fbWWildJA88EQ9NhnGMSvZqhfz9ICjk,13
+itsdangerous-2.0.0rc1.dist-info/RECORD,,
