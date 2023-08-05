@@ -1,0 +1,13 @@
+#Ignore python3 generated files
+#*.py
+*.pyc
+*.pyo
+*.egg
+
+#Ignore log files
+*.log*
+
+__pycache__/
+dist/
+build/
+*.egg-info/
