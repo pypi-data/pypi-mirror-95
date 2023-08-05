@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pytidds
+Version: 0.0.1
+Summary: Python bindings for DDS/PVM IO from V^3 by Stefan Roettger (LGPL, from inviwo)
+Home-page: https://github.com/sxyu/tidds
+Author: Alex Yu
+Author-email: alexyu99126@gmail.com
+License: UNKNOWN
+Description: Python bindings for DDS/PVM IO from V^3 by Stefan Roettger (LGPL, from inviwo)
+Platform: UNKNOWN

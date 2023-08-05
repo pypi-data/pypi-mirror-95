@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pybind.cpp
+setup.cfg
+setup.py
+include/tidds/codebase.h
+include/tidds/ddsbase.h
+pytidds.egg-info/PKG-INFO
+pytidds.egg-info/SOURCES.txt
+pytidds.egg-info/dependency_links.txt
+pytidds.egg-info/not-zip-safe
+pytidds.egg-info/top_level.txt
+src/ddsbase.cpp
