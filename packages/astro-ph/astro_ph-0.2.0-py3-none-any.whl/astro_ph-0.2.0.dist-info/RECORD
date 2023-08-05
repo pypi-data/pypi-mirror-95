@@ -1,0 +1,11 @@
+astro_ph/__init__.py,sha256=GVxL9dxn2e0td25fbHeDQzMDoBIJ2sxqzkyA2gmnsPY,166
+astro_ph/apps.py,sha256=_4swAkxMShUfKs8tu2TUj9YVWDL9pV6XKPhWoeLwsDo,4869
+astro_ph/cli.py,sha256=xZIPTFtpy1lgvCvVSHxJbVME95qCHtLTdHgQU0SYuJE,2494
+astro_ph/detex.py,sha256=jSzXNtgUB5F2-etDih-mYnqywCMYPcXeh0pFIDlxm4w,1256
+astro_ph/search.py,sha256=OPLPF5LQvtZpDAk6bqfn-hWyCjpMPxCAZowF_hoSAuI,5770
+astro_ph/translate.py,sha256=HksGGqYr5Mmgif7D_LQRgU4M6iZuvPk2zVH0iE0vC2E,4397
+astro_ph-0.2.0.dist-info/entry_points.txt,sha256=mQdLqiFHS_5cfQET8-M6frGYSwAfgNjHOSuyS9vONEY,45
+astro_ph-0.2.0.dist-info/LICENSE,sha256=8Alyau-bhkhaSPVnyfr6yBRLYtz6fBwFStGLSfdaCSA,1071
+astro_ph-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+astro_ph-0.2.0.dist-info/METADATA,sha256=WbZz3kk09NgCOI12J4GxMH27LlRbu_r4j7c1VBbiN70,1521
+astro_ph-0.2.0.dist-info/RECORD,,
