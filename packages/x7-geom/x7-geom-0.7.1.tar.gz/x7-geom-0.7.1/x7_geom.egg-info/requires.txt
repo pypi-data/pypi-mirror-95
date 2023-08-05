@@ -1,0 +1,12 @@
+bezier
+numpy
+matplotlib
+pygifsicle
+scipy
+x7-lib
+x7-testing
+
+[tests]
+pytest
+flake8
+mypy

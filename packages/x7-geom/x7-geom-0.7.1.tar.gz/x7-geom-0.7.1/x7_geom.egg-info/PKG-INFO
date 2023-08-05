@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: x7-geom
+Version: 0.7.1
+Summary: X7 Geometry library: Point, Vector, Line...
+Home-page: https://github.com/gribbg/x7-geom
+Author: Glenn Gribble
+Author-email: dev@gribbelus.com
+License: UNKNOWN
+Description: X7 Geometry
+        ====================
+        
+        Library providing some basic geometry types and operations:
+        
+            * ``Point``
+            * ``Vector``
+            * ``Line``
+            * ``BezierCurve``
+        
+        A distinguishing feature of this library is that it is designed for
+        modeling, so there are also classes like ``PointRelative`` which
+        automatically updates when the underlying point is moved.  This
+        is used by the morphing and animation capabilities.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Provides-Extra: tests
