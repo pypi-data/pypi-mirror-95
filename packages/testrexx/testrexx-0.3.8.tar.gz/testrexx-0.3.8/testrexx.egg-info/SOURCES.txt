@@ -1,0 +1,17 @@
+README.md
+setup.py
+testrexx.egg-info/PKG-INFO
+testrexx.egg-info/SOURCES.txt
+testrexx.egg-info/dependency_links.txt
+testrexx.egg-info/requires.txt
+testrexx.egg-info/top_level.txt
+trexx/__init__.py
+trexx/__main__.py
+trexx/rexx_lib/__init__.py
+trexx/utilities/__init__.py
+trexx/utilities/background_colors.py
+trexx/utilities/exceptions.py
+trexx/utilities/logger.py
+trexx/utilities/test_case.py
+trexx/utilities/test_file.py
+trexx/utilities/test_jcl.py
