@@ -1,0 +1,3 @@
+[console_scripts]
+pyvuejs_cli = pyvuejs_cli.cli:main
+

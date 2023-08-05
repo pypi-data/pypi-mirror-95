@@ -1,0 +1,15 @@
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyvuejs_cli/__init__.py
+pyvuejs_cli/__main__.py
+pyvuejs_cli/cli.py
+pyvuejs_cli.egg-info/PKG-INFO
+pyvuejs_cli.egg-info/SOURCES.txt
+pyvuejs_cli.egg-info/dependency_links.txt
+pyvuejs_cli.egg-info/entry_points.txt
+pyvuejs_cli.egg-info/not-zip-safe
+pyvuejs_cli.egg-info/top_level.txt

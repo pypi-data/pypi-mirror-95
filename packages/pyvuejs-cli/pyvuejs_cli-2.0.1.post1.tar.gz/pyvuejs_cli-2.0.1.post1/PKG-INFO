@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyvuejs_cli
+Version: 2.0.1.post1
+Summary: pyvuejs cli
+Home-page: https://github.com/eseunghwan/pyvuejs_cli
+Author: eseunghwan
+Author-email: shlee0920@naver.com
+License: MIT license
+Description: # pyvuejs-cli
+        ### cli of [pyvuejs](https://github.com/eseunghwan/pyvuejs)
+        <p align="center">
+        
+        <a href="https://pypi.python.org/pypi/pyvuejs_cli">
+        <img src="https://img.shields.io/pypi/v/pyvuejs_cli.svg" /></a>
+        <a href="https://travis-ci.org/eseunghwan/pyvuejs_cli"><img src="https://travis-ci.org/eseunghwan/pyvuejs_cli.svg?branch=master" /></a>
+        </p>
+        <br><br>
+        
+        # cli guide
+        <b>init</b>, <b>serve</b> are available
+        ```powershell
+        # calling cli
+        pyvuejs_cli [command]
+        # or
+        python -m pyvuejs_cli [command]
+        
+        # init
+        pyvuejs_cli init [project_name(default="./")]
+        
+        # serve
+        # must run in project directory
+        pyvuejs_cli serve
+        ```
+        
+Keywords: pyvuejs_cli
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
