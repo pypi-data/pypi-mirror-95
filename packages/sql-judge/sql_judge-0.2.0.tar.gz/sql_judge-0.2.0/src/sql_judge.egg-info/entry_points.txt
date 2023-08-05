@@ -1,0 +1,3 @@
+[console_scripts]
+sql-judge = sql_judge.__main__:main
+

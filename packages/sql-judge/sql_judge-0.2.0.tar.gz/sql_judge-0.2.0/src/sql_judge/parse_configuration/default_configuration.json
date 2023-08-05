@@ -1,0 +1,12 @@
+{
+    "adapter": {
+        "params": [],
+        "named_params": {}
+    },
+    "validations": {},
+    "ignore_tables": [],
+    "export": {
+        "format": "CLI",
+        "output": "stdout"
+    }
+}
