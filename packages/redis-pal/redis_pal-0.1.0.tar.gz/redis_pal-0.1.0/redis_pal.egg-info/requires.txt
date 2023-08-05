@@ -1,0 +1,7 @@
+cython
+dill
+redis
+typing
+
+[test]
+numpy
