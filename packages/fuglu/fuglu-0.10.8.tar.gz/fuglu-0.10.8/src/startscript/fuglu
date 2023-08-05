@@ -1,0 +1,422 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+#   Copyright 2009-2021 Oli Schacher, Fumail Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+#
+# main startup file
+
+
+import configparser
+from fuglu import __version__ as FUGLU_VERSION
+from fuglu.daemon import DaemonStuff
+import logging
+import logging.config
+import fuglu.funkyconsole
+from fuglu import loghandlers
+import sys
+from fuglu.core import MainController, EXIT_NOTSET, EXIT_EXCEPTION, EXIT_LOGTERMERROR, sigterm
+from fuglu.addrcheck import Addrcheck
+from fuglu.shared import create_filehash
+import signal
+import os
+import optparse
+import fuglu.logtools
+import multiprocessing
+
+controller = None
+foreground = False
+base_loglevel = "DEBUG"
+
+theconfigfile = '/etc/fuglu/fuglu.conf'
+dconfdir = '/etc/fuglu/conf.d'
+theloggingfile = '/etc/fuglu/logging.conf'
+thepidfile = '/var/run/fuglu.pid'
+
+# register custom log handlers
+logging.custom_handlers = loghandlers
+
+
+def reloadconfig():
+    """reload configuration file"""
+
+    logger = logging.getLogger('fuglu')
+    if controller:
+        if controller.threadpool is None and controller.procpool is None:
+            logger.error("""No process/threadpool -> This is not the main process!
+                          \nNo changes will be applied...!\nSend SIGHUP to the main process!
+                          \nCurrent controller object : %s, %s""" % (id(controller),controller.__repr__()))
+            return
+    else:
+        logger.error("No controller -> This is not the main process!\n"
+                     "No changes will be applied...!\nSend SIGHUP to the main process!")
+        return
+
+    if controller.logProcessFacQueue is None:
+        logger.error("No log process in controller -> This is not the main process!\n"
+                     "No changes will be applied...!\nSend SIGHUP to the main process!")
+        return
+
+    assert controller.logConfigFileUpdates is not None
+    assert controller.configFileUpdates is not None
+
+    configFileUpdates = getConfigFileUpdatesDict(theconfigfile, dconfdir)
+    logConfigFileUpdates = getLogConfigFileUpdatesDict(theloggingfile)
+
+    logfilechanged = (logConfigFileUpdates != controller.logConfigFileUpdates)
+    mainconfigchanged = (configFileUpdates != controller.configFileUpdates)
+
+    logger.info("Log config has changes: %s" % str(logfilechanged))
+    if logfilechanged and foreground:
+        logger.warning("No log-config changes applied in foreground mode.")
+        controller.logConfigFileUpdates = logConfigFileUpdates
+        logfilechanged = False
+
+    logger.info("Main config has changes: %s" % str(mainconfigchanged))
+
+    logger.info('Number of messages in logging queue: %u' % controller.logQueue.qsize())
+
+    if logfilechanged:
+        # save back log config file dict for later use
+        controller.logConfigFileUpdates = logConfigFileUpdates
+
+        logger.info("Create new log process with new configuration")
+        logProcessFacQueue = controller.logProcessFacQueue
+        newLogConfigure = fuglu.logtools.logConfig(logConfigFile=theloggingfile)
+        logProcessFacQueue.put(newLogConfigure)
+
+
+    if mainconfigchanged:
+        logger.info('Reloading configuration')
+
+        # save back config file dict for later use
+        controller.configFileUpdates = configFileUpdates
+        newconfig = configparser.RawConfigParser()
+        with open(theconfigfile) as fp:
+            newconfig.read_file(fp)
+
+        # Setup address compliance checker
+        try:
+            address_check = newconfig.get('main','address_compliance_checker')
+        except Exception as e:
+            # might happen for some tests which do not propagate defaults
+            address_check = "Default"
+        Addrcheck().set(address_check)
+
+        identifier = "no identifier given"
+        if newconfig.has_option('main', 'identifier'):
+            identifier = newconfig.get('main', 'identifier')
+
+        # load conf.d
+        if os.path.isdir(dconfdir):
+            filelist = os.listdir(dconfdir)
+            configfiles = [
+                dconfdir + '/' + c for c in filelist if c.endswith('.conf')]
+            logger.debug('Conffiles in %s: %s' % (dconfdir, configfiles))
+            readfiles = newconfig.read(configfiles)
+            logger.debug('Read additional files: %s' % (readfiles))
+
+        logger.info('Reload config complete. Current configuration:%s' %
+                    identifier)
+        controller.config = newconfig
+        controller.propagate_core_defaults()
+
+        logger.info('Reloading plugins...')
+        ok = controller.load_plugins()
+        if ok:
+            logger.info('Plugin reload completed')
+        else:
+            logger.error('Plugin reload failed')
+
+        controller.propagate_plugin_defaults()
+
+        controller.reload()
+
+
+def sighup(signum, frame):
+    """handle sighup to reload config"""
+    reloadconfig()
+
+def getConfigFileUpdatesDict(configfilename,dconfigFileDir):
+    configfiles = [configfilename]
+    # load conf.d
+    if dconfigFileDir and os.path.isdir(dconfigFileDir):
+        filelist = os.listdir(dconfigFileDir)
+        configfiles.extend([dconfigFileDir + '/' + c for c in filelist if c.endswith('.conf')])
+
+    hashlist = create_filehash(configfiles, "md5")
+    configFileUpdates = dict(zip(configfiles, hashlist))
+    return configFileUpdates
+
+def getLogConfigFileUpdatesDict(logConfFile):
+    logConfigFileUpdates = {}
+    logConfigFileUpdates[logConfFile] = create_filehash([logConfFile], "md5")[0]
+    return logConfigFileUpdates
+
+
+lint = False
+debugmsg = False
+console = False
+logtext = []
+
+parser = optparse.OptionParser(version=FUGLU_VERSION)
+parser.add_option("--lint", action="store_true", dest="lint",
+                  default=False, help="Check configuration and exit")
+parser.add_option("--console", action="store_true", dest="console",
+                  default=False, help="start an interactive console after fuglu startup")
+parser.add_option("-f", "--foreground", action="store_true", dest="foreground", default=False,
+                  help="start fuglu in the foreground and log to stdout, even if daemonize is enabled in the config")
+parser.add_option("--pidfile", action="store", dest="pidfile",
+                  help="use a different pidfile than /var/run/fuglu.pid")
+parser.add_option("-c", "--config", action="store", dest="configfile",
+                  help="use a different config file and disable reading from /etc/fuglu/conf.d")
+parser.add_option("--logconfig", action="store", dest="logconfigfile",
+                  help="use a different logging config file")
+parser.add_option("--configdir", action="store", dest="configdir",
+                  help="use a folder different from conf.d, enable reading even if using -c/--config option")
+parser.add_option("--baseloglevel", dest="baseloglevel", default="DEBUG", choices=["DEBUG", "INFO", "ERROR"],
+                  help="log-level for foreground mode and base (MIN) for all logging")
+
+(opts, args) = parser.parse_args()
+if len(args) > 0:
+    print("Unknown option(s): %s" % args)
+    print("")
+    parser.print_help()
+    sys.exit(1)
+
+lint = opts.lint
+console = opts.console
+
+if opts.pidfile:
+    thepidfile = opts.pidfile
+    logtext.append(f"Use pidfile \"{thepidfile}\" from options")
+
+if opts.configfile:
+    theconfigfile = opts.configfile
+    logtext.append(f"Use config file \"{theconfigfile}\" from options")
+    theloggingfile = os.path.join(
+        os.path.split(theconfigfile)[0], os.path.split(theloggingfile)[1])
+    logtext.append(f"Use logging file \"{theloggingfile}\" relative to config file from options")
+    # set config dir option to None in case of a custom configfile, might be set again by
+    # - option in config file
+    # - command line option
+    dconfdir = None
+
+config = configparser.RawConfigParser()
+if not os.path.exists(theconfigfile):
+    print("""Configfile (%s) not found. Please create it by renaming the .dist file and modifying it to your needs""" % theconfigfile)
+    sys.exit(1)
+with open(theconfigfile) as fp:
+    readconfig = config.read_file(fp)
+
+# set config directory if given in config file
+if config.has_option('main', 'configdir'):
+    configdirinput = config.get('main', 'configdir')
+    # set config to input from config file if not an empty string
+    if configdirinput:
+        dconfdir = configdirinput
+        logtext.append(f"Got config dir 'conf.d' input \"{dconfdir}\" from config file")
+        if lint:
+            print("Setting configdir by config file option to: %s" % dconfdir)
+
+# overwrite config directory "conf.d" by command line option
+if opts.configdir:
+    dconfdir = opts.configdir
+    logtext.append(f"Got config dir 'conf.d' input \"{dconfdir}\" from options")
+    if lint:
+        print("Setting configdir by command line option to: %s" % dconfdir)
+
+# load conf.d
+if dconfdir and os.path.isdir(dconfdir):
+    filelist = os.listdir(dconfdir)
+    configfiles = [dconfdir + '/' + c for c in filelist if c.endswith('.conf')]
+    readfiles = config.read(configfiles)
+
+# store if run in foreground mode so it
+# can be used in reload
+foreground = opts.foreground
+base_loglevel = opts.baseloglevel
+logconfigfile = opts.logconfigfile
+
+backend = config.get('performance', 'backend', fallback="thread")
+
+daemon = DaemonStuff(thepidfile)
+# we could have an empty config file
+# no daemon for lint&console mode
+if not lint and not console and not foreground:
+    logtext.append(f"Not lint/console/foreground -> daemonize")
+    if config.has_option('main', 'daemonize'):
+        if config.getboolean('main', 'daemonize'):
+            daemon.createDaemon()
+    else:  # option not specified -> default to run daemon
+        daemon.createDaemon()
+
+
+# drop privileges
+try:
+    running_user = config.get('main', 'user')
+    running_group = config.get('main', 'group')
+    logtext.append(f"Drop privileges: user={running_user}, group={running_group}")
+except Exception:
+    running_user = 'nobody'
+    running_group = 'nobody'
+    logtext.append(f"Drop privileges: fallback to user={running_user}, group={running_group}")
+
+priv_drop_ok = False
+try:
+    daemon.drop_privs(running_user, running_group)
+    priv_drop_ok = True
+    logtext.append(f"Successfully dropped privileges")
+except Exception as e:
+    logtext.append(f"Could not drop provileges: {str(e)}")
+    err = sys.exc_info()[1]
+    print("Could not drop privileges to %s/%s : %s" %
+          (running_user, running_group, str(err)))
+
+
+# --
+# set up logging
+# --
+
+# all threads/processes write to the logQueue which
+# will be handled by a separate process
+if backend not in ['thread', 'process', 'asyncprocess'] or foreground:
+    # no need for an advanced multiprocessing logging structure
+    logtext.append(f"Loggin setup - no workerpool or foreground mode and therefore no need for multiprocessing logging")
+    logQueue = None
+    logFactoryQueue = None
+else:
+    logtext.append(f"Loggin setup - multiprcessing setup with logging queue")
+    logQueue = multiprocessing.Queue(-1)
+    logFactoryQueue = multiprocessing.Queue(-1)
+
+# setup a process which handles logging messages
+if lint:
+    fc = fuglu.funkyconsole.FunkyConsole()
+    print(fc.strcolor("Fuglu", "yellow"), end=' ')
+    print(fc.strcolor(FUGLU_VERSION, "green"))
+    print("----------", fc.strcolor("LINT MODE",
+                                    (fc.MODE["blink"], fc.FG["magenta"])), "----------")
+
+    logConfigure = fuglu.logtools.logConfig(lint=True)
+
+elif logconfigfile:
+    logConfigure = fuglu.logtools.logConfig(logConfigFile=logconfigfile)
+    logtext.append(f"Load logging from config file \"{logconfigfile}\"")
+elif foreground:
+    logConfigure = fuglu.logtools.logConfig(foreground=True, level=base_loglevel)
+    logtext.append(f"Setup foreground mode with base loglevel: {base_loglevel}")
+else:
+    logConfigure = fuglu.logtools.logConfig(logConfigFile=theloggingfile)
+    logtext.append(f"Load logging from logging file \"{theloggingfile}\"")
+
+logProcessFactory = None
+if logFactoryQueue and logQueue:
+    logtext.append(f"Setup logFactoryQueue and logQueue")
+    # --
+    # start process handling logging queue
+    # --
+    logProcessFactory = multiprocessing.Process(target=fuglu.logtools.logFactoryProcess,
+                                                args=(logFactoryQueue, logQueue))
+    logProcessFactory.start()
+
+    # now create a log - listener process
+    logFactoryQueue.put(logConfigure)
+
+    # setup this main thread to send messages to the log queue
+    # (which is handled by the logger process created by the logProcessFactory)
+    fuglu.logtools.client_configurer(logQueue, level=base_loglevel)
+else:
+    logtext.append(f"configure logging")
+    # no multiprocessing logging, just configure process
+    logConfigure.configure()
+
+# ===                      === #
+# = Now logging is available = #
+# ===                      === #
+baselogger = logging.getLogger()
+baselogger.info("FuGLU Version %s starting up" % FUGLU_VERSION)
+baselogger.debug(f"logProcessFactory: {logProcessFactory}")
+baselogger.debug(f"logFactoryQueue: {logFactoryQueue}")
+baselogger.debug(f"logQueue: {logQueue}")
+baselogger.debug(f"Stored setup loglines (start)")
+for logline in logtext:
+    baselogger.debug(logline)
+baselogger.debug(f"Stored setup loglines (end)")
+
+exitstatus = EXIT_NOTSET
+try:
+    # Setup address compliance checker
+    try:
+        address_check = config.get('main','address_compliance_checker')
+    except Exception as e:
+        # might happen for some tests which do not propagate defaults
+        address_check = "Default"
+    Addrcheck().set(address_check)
+
+    # instantiate the MainController and load default configuration
+    controller = MainController(config,logQueue,logFactoryQueue)
+    controller.configFileUpdates = getConfigFileUpdatesDict(theconfigfile,dconfdir)
+    controller.logConfigFileUpdates = getLogConfigFileUpdatesDict(theloggingfile)
+    controller.propagate_core_defaults()
+
+    if lint:
+        exitstatus = controller.lint()
+        # the controller doesn't know about the logging.conf, so we lint this here
+        print("")
+        if priv_drop_ok:
+            print("Checking logging configuration....")
+            try:
+                logging.config.fileConfig(logconfigfile if logconfigfile else theloggingfile)
+                logging.info("fuglu --lint log configuration test")
+                print(fc.strcolor("OK", "green"))
+            except Exception as e:
+                print("Logging configuration check failed: %s " % str(e))
+                print("This may prevent the daemon from starting up.")
+                print(
+                    "Make sure the log directory exists and is writable by user '%s' " % running_user)
+                print(fc.strcolor("NOT OK", "red"))
+        else:
+            print(fc.strcolor("WARNING:", "yellow"))
+            print("Skipping logging configuration check because I could not switch to user '%s' earlier." % running_user)
+            print("please re-run fuglu --lint as privileged user")
+            print("(problems in the logging configuration could prevent the fuglu daemon from starting up)")
+
+    else:
+        signal.signal(signal.SIGHUP, sighup)
+        signal.signal(signal.SIGTERM, sigterm)
+        if console:
+            controller.debugconsole = True
+        exitstatus = controller.startup()
+except Exception as e:
+    baselogger.exception(e)
+    baselogger.error("Exception catched: %s"%(str(e)))
+    exitstatus = EXIT_EXCEPTION
+finally:
+    #---
+    # stop logger factory & process
+    #---
+    if logQueue and logFactoryQueue and logProcessFactory:
+        baselogger.info("Stop logging framework -> Goodbye")
+        try:
+            baselogger.debug("Send Poison pill to logFactoryQueue")
+            logFactoryQueue.put_nowait(None)
+            logProcessFactory.join(120)
+        except Exception as e:
+            logProcessFactory.terminate()
+            exitstatus = EXIT_LOGTERMERROR
+    sys.exit(exitstatus)
+
+
