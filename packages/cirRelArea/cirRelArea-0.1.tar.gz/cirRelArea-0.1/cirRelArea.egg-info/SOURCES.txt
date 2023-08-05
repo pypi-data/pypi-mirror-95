@@ -1,0 +1,6 @@
+README.md
+setup.py
+cirRelArea.egg-info/PKG-INFO
+cirRelArea.egg-info/SOURCES.txt
+cirRelArea.egg-info/dependency_links.txt
+cirRelArea.egg-info/top_level.txt
