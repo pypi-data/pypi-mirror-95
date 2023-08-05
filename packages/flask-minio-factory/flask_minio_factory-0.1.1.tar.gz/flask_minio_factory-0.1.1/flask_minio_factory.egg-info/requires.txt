@@ -1,0 +1,7 @@
+minio
+
+[dev]
+Flask
+pytest
+coveralls
+coverage
