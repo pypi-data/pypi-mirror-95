@@ -1,0 +1,9 @@
+dkconfig/__init__.py,sha256=hbhQt0gDM7WwLPELQcUZKBmEP_oQMdeJEm7VQLdx1h0,35
+dkconfig/_version.py,sha256=7khiae9WQAvqo7FiTwjM1u_g3admVx9tK0HqPOSZV4M,52
+dkconfig/dkconfig.py,sha256=Pc5sl6DOUUAbBfuvZ8EYSENvjcm_76NE97ncPrnlMv4,11765
+dkconfig-0.2.1.dist-info/LICENSE,sha256=QBek5ju_pFWEtV4f6n0ulGpQW-n_TY166fMt6CwlSX0,1073
+dkconfig-0.2.1.dist-info/METADATA,sha256=CeLJgWLCSgLoemE34-KjRv7JvoHOYFpzcd_5swnvXCE,3183
+dkconfig-0.2.1.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+dkconfig-0.2.1.dist-info/entry_points.txt,sha256=k2W8n85Z2Rbt0f5lLXHxb2N9U_LM6LgK8Odk60eljyI,44
+dkconfig-0.2.1.dist-info/top_level.txt,sha256=9gsrmsFaIocVZ5I4B-uO3inOYarTqIj8xtX_ZjU0uQY,9
+dkconfig-0.2.1.dist-info/RECORD,,
