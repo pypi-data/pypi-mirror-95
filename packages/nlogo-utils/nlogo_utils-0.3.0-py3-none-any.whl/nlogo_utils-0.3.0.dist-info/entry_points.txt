@@ -1,0 +1,6 @@
+[console_scripts]
+combine_nlogo_sections = nlogo_utils.combine:main
+extract_nlogo_section = nlogo_utils.extract:main
+replace_nlogo_section = nlogo_utils.replace:main
+split_nlogo_file = nlogo_utils.split:main
+
