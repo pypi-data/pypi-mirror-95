@@ -1,0 +1,13 @@
+eco/__init__.py,sha256=uyfGiipFnhOCQlqywx7wsgp6d-SYnqPqsPQd_xePZl8,23
+eco/__main__.py,sha256=b3E14WkhjXBu8vD6eLIdPbM3TpDhbCesZG3INovlR50,6954
+eco/eco_utils.py,sha256=cfTGlTm_AlU-AhCsdaYFNdmWvDM-w7FxpsbhJzJJGrs,1951
+eco/tables/daily.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco/tables/income.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco/tables/savings.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco/tables/spendings.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco_cli-1.0.0.dist-info/LICENSE,sha256=1aflSjj61DzkkgOLudgVFNCKQqqH5R6jl88fFnsKumY,1061
+eco_cli-1.0.0.dist-info/METADATA,sha256=mpiUdX8nsSxed0AVEP628CW70GhTYgp4ybYqYwOFacc,536
+eco_cli-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eco_cli-1.0.0.dist-info/entry_points.txt,sha256=fFe_RQFEHkcsmm1x6OlszM4h0Gf86mse7ONUOhVFi80,43
+eco_cli-1.0.0.dist-info/top_level.txt,sha256=6WrL0efWHKrkrrDbEJxO2-97kplDDY-mzDeWzDcsnHo,4
+eco_cli-1.0.0.dist-info/RECORD,,

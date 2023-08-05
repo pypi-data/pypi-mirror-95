@@ -1,0 +1,3 @@
+[console_scripts]
+eco = eco.__main__:main
+
