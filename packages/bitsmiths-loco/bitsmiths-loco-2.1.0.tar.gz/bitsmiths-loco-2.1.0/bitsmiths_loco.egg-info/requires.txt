@@ -1,0 +1,6 @@
+bitsmiths-mettle>=2.1.0
+bitsmiths-lib>=2.1.0
+bitsmiths-audit>=2.1.0
+filetype
+sqlparse
+pyyaml

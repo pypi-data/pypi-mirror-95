@@ -1,0 +1,53 @@
+# BITSMITHS LOCO #
+
+*LoCo* stands for **Loquacious Correspondence**. It is the common Bitsmiths python package that we use to send out communications to
+user of other systems.
+
+The intended purpose of *Loco* is to have a shared product that offers:
+
+- The complete customization of messages templates to be sent to external people or systems.
+- To support multiple methods of sending messages:
+  - Also allow dynamic/custom pluggin modules so this can be extended from outside this library
+  - We currently support sending messages to `e-mail, sms, log files (debug purposes)`.
+  - Next we need to support push notifications of some kind.
+- To provide a single a place to store the metrics and performance sending messages to different providers.
+- To provide a *transcationable* library extension so that other products can send messages and be sure those messages are always sent.
+- Finally to provide a default method of archiving messages that have been sent (batch code to speak).
+
+This product has a dependency on:
+
+- Mettle (`bitsmiths-mettle`)
+- Bitsmiths Library (`bitsmiths-lib`)
+- Bitsmiths Auditing (`bitsmiths-audit`)
+
+
+**Note** that we package the generated Mettle code in this package, which means that the Mettle version required in this module is important.
+
+## Tables & Setup ##
+
+*Loco* is designed to use a relational database with a schema/namespace of `loco` in your database. You will need to create this schema manually.
+It requires several other relational database tables.
+
+The package provides the SQL code to create these tables. There are two ways to access the table creation SQL.
+
+1. You can run `bs-loco -g postgresql` at the command line, this will print all the SQL to `stdout`.
+2. You can import the bs_loco module and get the SQL as shown below:
+
+```python
+
+import bs_loco
+
+print(bs_loco.get_table_sql('postgresql'))
+
+```
+
+**Note!** Currently only *postgres* SQL is added to the package. If you want us to support another database let
+us know and we will put it into the development pipeline.
+
+### Table Configuration ###
+
+TODO - Complete this section.
+
+## Library Objects ##
+
+TODO - Complete this section.
