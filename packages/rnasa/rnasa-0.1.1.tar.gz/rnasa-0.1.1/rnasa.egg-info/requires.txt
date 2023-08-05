@@ -1,0 +1,5 @@
+docopt
+ftarc
+luigi
+pandas
+psutil
