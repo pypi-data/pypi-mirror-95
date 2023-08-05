@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: dekespo_ai_sdk
+Version: 1.0.1
+Summary: Dekesp AI SDK tools
+Home-page: https://github.com/dekespo/dekespo_ai_sdk_py
+Author: Deniz Kennedy
+Author-email: deniz.kennedy@gmail.com
+License: apache-2.0
+Description: UNKNOWN
+Keywords: SDK,AI,Tool
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
