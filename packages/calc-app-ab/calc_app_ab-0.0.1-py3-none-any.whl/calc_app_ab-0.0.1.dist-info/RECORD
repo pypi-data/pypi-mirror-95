@@ -1,0 +1,10 @@
+calc_app_ab/__init__.py,sha256=In4aTeBC4YNSmfhXjCjvreri-IYWW73wccUEx3F941k,51
+calc_app_ab/add.py,sha256=zEEfdGzSrbmGS_nw7orTeQdfg1EOtQT7_DCIgXo4_QE,30
+calc_app_ab/subtract.py,sha256=1Y2WQoioV4MoQJFMMTlhOg0nurjYhK5GFXL8_jwZ8hc,36
+extras/__init__.py,sha256=AVzsOjSbz7Uc74DSbd2xqwPp72n5rsqsAtV8TOwFvzc,57
+extras/divide.py,sha256=njA2ZLuRzjv2Hw0ym0JHPk20NdGe3afDxF67mCv3hlk,33
+extras/multiply.py,sha256=Jh5mABHmsNj6aXKlPTegr0pGfQ6Y3Hw8ys9bMYI8ht0,35
+calc_app_ab-0.0.1.dist-info/METADATA,sha256=2G13X-nV0zk9Be7AhTHEeArI85LsZJdujC9wDeNeZqw,591
+calc_app_ab-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+calc_app_ab-0.0.1.dist-info/top_level.txt,sha256=hfH5ubUAxFaYG_zNaNssL2WvGkwjJAXIVJRrxagy16Y,19
+calc_app_ab-0.0.1.dist-info/RECORD,,
