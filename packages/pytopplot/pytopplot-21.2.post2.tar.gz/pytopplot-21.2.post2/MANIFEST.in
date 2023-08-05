@@ -1,0 +1,6 @@
+include README.md LICENSE contributors.txt run
+recursive-include pytopplot *.py
+recursive-include pytopplot/ui *.ui
+recursive-include pytopplot/abci *
+exclude *.pyc
+exclude *__pycache__
