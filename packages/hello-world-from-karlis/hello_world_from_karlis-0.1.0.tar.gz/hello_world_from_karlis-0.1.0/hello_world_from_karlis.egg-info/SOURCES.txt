@@ -1,0 +1,6 @@
+README.md
+setup.py
+hello_world_from_karlis.egg-info/PKG-INFO
+hello_world_from_karlis.egg-info/SOURCES.txt
+hello_world_from_karlis.egg-info/dependency_links.txt
+hello_world_from_karlis.egg-info/top_level.txt
