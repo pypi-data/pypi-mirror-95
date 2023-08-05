@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+add_juniper_software/__init__.py
+add_juniper_software/add_juniper_software.py
+add_juniper_software.egg-info/PKG-INFO
+add_juniper_software.egg-info/SOURCES.txt
+add_juniper_software.egg-info/dependency_links.txt
+add_juniper_software.egg-info/entry_points.txt
+add_juniper_software.egg-info/requires.txt
+add_juniper_software.egg-info/top_level.txt
+add_juniper_software.egg-info/zip-safe

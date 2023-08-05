@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: add-juniper-software
+Version: 1.0.0
+Summary: A CLI tool to install software on a remote JunOS machine.
+Home-page: https://github.com/EGuthrieWasTaken/add_juniper_software
+Author: Ethan Guthrie
+Author-email: guthrieec@cofc.edu
+License: GNU GPLv3
+Description: UNKNOWN
+Keywords: juniper junos
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Terminals
+Classifier: Topic :: Documentation :: Sphinx
+Description-Content-Type: text/x-rst
