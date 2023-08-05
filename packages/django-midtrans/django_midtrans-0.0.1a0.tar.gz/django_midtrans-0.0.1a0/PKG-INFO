@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: django_midtrans
+Version: 0.0.1a0
+Summary: django_midtrans is a package for integrate midtrans to django framework
+Home-page: https://github.com/agung96tm/django_midtrans
+Author: Agung Yuliyanto
+Author-email: agung.96tm@gmail.com
+License: UNKNOWN
+Description: WIP
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
