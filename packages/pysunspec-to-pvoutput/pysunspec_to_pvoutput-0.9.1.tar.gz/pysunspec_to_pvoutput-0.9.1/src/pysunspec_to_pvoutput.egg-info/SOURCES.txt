@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+src/convert/__init__.py
+src/convert/add_status.py
+src/convert/config.py
+src/convert/init_logging.py
+src/convert/solar.py
+src/pysunspec_to_pvoutput.egg-info/PKG-INFO
+src/pysunspec_to_pvoutput.egg-info/SOURCES.txt
+src/pysunspec_to_pvoutput.egg-info/dependency_links.txt
+src/pysunspec_to_pvoutput.egg-info/requires.txt
+src/pysunspec_to_pvoutput.egg-info/top_level.txt
