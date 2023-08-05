@@ -1,0 +1,9 @@
+Change Log
+==========
+
+BacGenomePipeline
+
+v.1.0 (12/02/21)
+-------------------
+
+- BacGenomePipeline Usage instructions update

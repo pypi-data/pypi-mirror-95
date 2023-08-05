@@ -1,0 +1,62 @@
+Metadata-Version: 1.1
+Name: BacGenomePipeline
+Version: 1.0
+Summary: Complete Bacterial Genome Assembly and Annotation Pipeline
+Home-page: https://github.com/StephenFordham/BacGenomePipeline
+Author: Stephen Fordham
+Author-email: sfstephenfordham@gmail.com
+License: MIT
+Description: BacGenomePipeline
+        
+        Complete Bacterial Genome Assembly and Annotation Pipeline
+        Program developed by Stephen Fordham
+        
+        
+        General Description
+        
+        BacGenomePipeline is a complete convenience bacterial genome assembly pipeline. Assembled and annotated bacterial
+        genomes can be created with only raw reads as input! BacGenomePipeline can accept either fastq or gzipped fastq files.
+        Relax and grab a coffee while BacGenomePipeline does the genomic heavy lifting.
+        
+        
+        This pipeline filters raw reads to produce the best 500mb reads.
+        The filtering process also places weight on read quality, to ensure small high quality reads are not discarded.
+        This is considered vital to aid the recovery of small plasmids present within bacterial strains.
+        
+        Optionally, the user can run Nanostat to assess read quality metrics. The best reads are then assembled using the
+        flye genome assembler with settings adjusted to help recovery of plasmids with an imbalanced distribution.
+        The assembly is then polished with one round of medaka-consensus polishing. The polished assembly is annotated using
+        staramr which scans bacterial genome contigs against the ResFinder, PointFinder, and PlasmidFinder databases
+        (used by the ResFinder webservice and other webservices offered by the Center for Genomic Epidemiology) and compiles
+        a summary report of detected antimicrobial resistance genes.
+        
+        Currently BacGenomePipeline has been tested and runs on Linux OS.
+        
+        To run BacGenomePipe, you must also install the following programs by running the following commands:
+        
+            conda install -c bioconda filtlong==0.2.0
+        
+            conda install -c bioconda flye==2.8.1
+        
+        
+        
+        
+        
+        
+        Change Log
+        ==========
+        
+        BacGenomePipeline
+        
+        v.1.0 (12/02/21)
+        -------------------
+        
+        - BacGenomePipeline Usage instructions update
+        
+Keywords: Genome Assembly,WGS,bacterial pipeline,prokaryotic,bacterial genome assembly
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
