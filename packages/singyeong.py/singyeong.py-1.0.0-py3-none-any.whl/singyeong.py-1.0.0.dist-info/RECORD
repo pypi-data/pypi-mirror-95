@@ -1,0 +1,16 @@
+singyeong/__init__.py,sha256=iR1pyjMjSRCvz0VcjDX7Ek_jadh5N3NByxubbhTHdAQ,648
+singyeong/backoff.py,sha256=2QuvJZWvqxD5ZhL-ZphiPUu0GWFGTI9Y5Z24kUaVVVA,728
+singyeong/client.py,sha256=saJdnzXfHE-vs8FjE2J0zZqA5knDxS9wyhiELZ11iQk,7287
+singyeong/dsn.py,sha256=eyU469CsyAEnTyHDGdgM3KMdjk8tTnXofuFsekMSD9Y,1822
+singyeong/enums.py,sha256=8KcMEAvSEoSv9OPP-OVz0Z5gE8vOhrNcb8-Vut5esVc,286
+singyeong/exceptions.py,sha256=p5a4L5m_v3whMu7SxJMhOLtUEF3-ULYj8PkllCJ7PZU,193
+singyeong/message.py,sha256=XxOpj4bn9Bu9ME2NJSDeI5Ufn7T5aI5sPs05St4uM7Q,566
+singyeong/query.py,sha256=Rrrof0vyMHlHcufZhh-0VRTDR6asbhXErdv8sSgZvNk,4707
+singyeong/types.py,sha256=PLCjA6SZXceQrMLSshW5Xhioochit1pBc7gSKrEpovk,32
+singyeong/utils.py,sha256=7dlUDlK71gZrz2EL5v5N7cSG1B16Lhjt2h-ao0KJ-zk,881
+singyeong/websocket.py,sha256=IFMv8k9ZYqF6aLc1k73U5PmedyPVdltZHLp7t0gp-UM,4745
+singyeong.py-1.0.0.dist-info/LICENSE,sha256=hymXWpsDH-1t7rzGfd5Y6Vj5NCkic7HapLZ-F2EgqHU,1064
+singyeong.py-1.0.0.dist-info/METADATA,sha256=TGQz7MLMTjk1gJE79Xo504Zb8pcHMoFEsiK_yXeXWIg,8176
+singyeong.py-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+singyeong.py-1.0.0.dist-info/top_level.txt,sha256=xoaJL04SXPZQuoCha3VfR5gv1VR_P5knk4jfBow6_tk,10
+singyeong.py-1.0.0.dist-info/RECORD,,
