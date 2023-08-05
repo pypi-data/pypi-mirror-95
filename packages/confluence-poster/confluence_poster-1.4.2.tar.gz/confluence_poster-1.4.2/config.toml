@@ -1,0 +1,37 @@
+# If the page was not updated by the username specified here, throw an error.
+# If this setting is omitted - username from auth section is used for checks.
+author = "author_username"
+
+[pages]
+[pages.default]
+# Space key. E.g. for space "local-dev" the space key is "LOC"
+# Space defined here will be used if a page section below does not specify it
+page_space = "DEFAULT_SPACE_KEY"
+[pages.page1]
+# The title of the page
+page_title = "Some page title"
+# The filename with page content
+page_file = "some_file.confluencewiki"
+# If specified - overrides the default page_space
+page_space = "some_space_key"
+# If specified as "true" - username check is always skipped for this page
+force_overwrite = false
+# If specified - the page will be created without looking for a parent under specified parent
+page_parent_title = "Parent page title"
+# If specified - script will convert the text in the file before posting it. If not specified - script will try to guess it based on file extension.
+page_file_format = "confluencewiki"
+
+[pages.page2]
+page_title = "Some other page title"
+page_file = "some_other_file.confluencewiki"
+
+[auth]
+# URL of Confluence instance
+confluence_url = "https://confluence.local"
+# Username for authentication
+username = "confluence_username"
+# Password may also be supplied through --password option or from an environment variable CONFLUENCE_PASSWORD
+password = "confluence_password"
+# Whether the Confluence instance is a "cloud" one
+is_cloud = false
+

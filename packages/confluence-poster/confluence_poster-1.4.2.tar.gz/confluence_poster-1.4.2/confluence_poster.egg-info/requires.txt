@@ -1,0 +1,12 @@
+atlassian-python-api==2.3.0
+typer>=0.3.2
+toml
+requests
+pyxdg==0.26
+tomlkit==0.7.0
+click<7.2.0,>=7.1.1
+markdown==3.3.3
+
+[docs]
+jinja2
+typer-cli
