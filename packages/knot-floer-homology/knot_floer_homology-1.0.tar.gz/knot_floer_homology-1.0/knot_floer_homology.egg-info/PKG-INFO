@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: knot-floer-homology
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github/3-manifolds/knot_floer_homology
+Author: Zoltán Szabó, Marc Culler, Nathan M. Dunfield, and Matthias Goerner
+Author-email: snappy-help@computop.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: spherogram
