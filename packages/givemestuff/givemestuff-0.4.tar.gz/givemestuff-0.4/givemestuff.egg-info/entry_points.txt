@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        giveme=giveme.main:cli
+    
