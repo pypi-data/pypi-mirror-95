@@ -1,0 +1,12 @@
+cryptography==3.2.1
+asyncssh
+traitlets==4.3.3
+jupyterhub
+
+[dev]
+flake8==3.8.4
+black==20.8b1
+docutils==0.16
+
+[test]
+pytest
