@@ -1,0 +1,4 @@
+web3
+
+[:python_version == "3.6"]
+dataclasses
