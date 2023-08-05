@@ -1,0 +1,5 @@
+meraki_dashboard_connect/__init__.py,sha256=m7gZAurNVFDno75QaTLr9wmSHjEosoiFu1Q2TiwbpPI,218
+meraki_dashboard_connect/meraki_connect.py,sha256=eWYJPrACM9TFGbz0IJKy9hbHxQJJDMMMUz2BjIm1ldg,1054
+meraki_dashboard_connect-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+meraki_dashboard_connect-0.1.2.dist-info/METADATA,sha256=zvwC0M9GB09dEmFqE-U0BmLATq_laC1kMFdTS91_F_U,361
+meraki_dashboard_connect-0.1.2.dist-info/RECORD,,
