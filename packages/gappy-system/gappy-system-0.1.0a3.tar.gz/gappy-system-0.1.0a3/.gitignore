@@ -1,0 +1,31 @@
+# vim files
+*.sw[nop]
+
+# Python files
+__pycache__/
+
+## Python build files
+build/
+gappy/*.so
+gappy/*.dll
+
+## Python packaging files
+*.dist-info/
+*.egg-info/
+.eggs/
+dist/
+
+## setuptools_scm files
+gappy/_version.py
+
+## Cython generated files
+gappy/*.c
+
+## cysignals logs
+cysignals_crash_logs/
+
+## pytest files
+pytestdebug.log
+
+## Sphinx files
+docs/_build

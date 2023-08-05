@@ -1,0 +1,47 @@
+# vim: tabstop=2 shiftwidth=2
+name: "Tests"
+on: ["push", "pull_request"]
+jobs:
+  tests:
+    name: >
+      Test on ${{ matrix.platform }} with Python ${{ matrix.python-version }}
+      and GAP ${{ matrix.gap-version }}
+    defaults:
+      run:
+        shell: "bash -l {0}"
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: ["ubuntu-latest", "macos-latest"]
+        python-version: ["3.6", "3.7", "3.8"]
+        gap-version: ["4.10.2", "4.11.0"]
+        exclude:
+          - python-version: "3.6"
+            gap-version: "4.11.0"
+          - python-version: "3.7"
+            gap-version: "4.11.0"
+          - python-version: "3.8"
+            gap-version: "4.10.2"
+    runs-on: "${{ matrix.platform }}"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        env:
+          # Increase this value to reset cache manually
+          CACHE_NUMBER: 0
+        with:
+          path: ~/conda_pkgs_dir
+          key: "${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ matrix.python-version }}-${{ matrix.gap-version }}"
+      - uses: "conda-incubator/setup-miniconda@v2"
+        with:
+          auto-update-conda: true
+          python-version: "${{ matrix.python-version }}"
+          use-only-tar-bz2: true
+      - name: "Conda info"
+        run: "conda info"
+      - name: "Conda install dependencies"
+        run: "conda install -q -c conda-forge gap-defaults=${{ matrix.gap-version }}"
+      - name: "Install gappy"
+        run: "pip install -e .[tests]"
+      - name: "Run tests"
+        run: "pytest -v --color=yes"

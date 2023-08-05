@@ -1,0 +1,12 @@
+# .readthedocs.yml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+version: 2
+conda:
+    environment: environment.yml
+python:
+    install:
+        - method: pip
+          path: .
+          extra_requirements:
+              - docs
