@@ -1,0 +1,14 @@
+README.rst
+setup.py
+webdocs/__init__.py
+webdocs/exceptions.py
+webdocs/openapi_doc.py
+webdocs/utils.py
+webdocs.egg-info/PKG-INFO
+webdocs.egg-info/SOURCES.txt
+webdocs.egg-info/dependency_links.txt
+webdocs.egg-info/requires.txt
+webdocs.egg-info/top_level.txt
+webdocs/django/__init__.py
+webdocs/django/apps.py
+webdocs/django/openapi_doc.py
