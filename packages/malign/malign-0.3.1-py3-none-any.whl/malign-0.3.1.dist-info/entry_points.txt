@@ -1,0 +1,3 @@
+[console_scripts]
+malign = malign.__main__:main
+
