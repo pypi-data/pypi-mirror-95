@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: pyhpoapi
+Version: 1.2.1
+Summary: A HTTP REST API to work with the HPO Ontology
+Home-page: https://github.com/Centogene/pyhpoapi
+Author: CENTOGENE GmbH
+Author-email: jonas.marcello@centogene.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: scipy
+Requires-Dist: pyhpo
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: aiofiles
+
+*********
+PyHPO-API
+*********
+
+A HTTP REST-API wrapper for `PyHPO`_
+
+Main features
+=============
+This package allows an easy setup of a REST API to interact with HPO Terms using the `PyHPO`_ package.
+
+
+API Documentation
+=================
+The REST API is also fully documented: https://centogene.github.io/pyhpoapi
+
+To see an interactive API documentation, install PyHPO-API, run the app and visit http://127.0.0.1:8000/docs
+
+
+Installation / Setup
+====================
+
+The easiest way to install PyHPO-API is via pip
+
+.. code:: bash
+
+    pip install pyhpoapi
+
+
+Usage
+=====
+
+Getting started
+---------------
+The easiest way to get started is to run the API via
+
+.. code:: bash
+
+    uvicorn pyhpoapi.main:app
+
+
+Parallel processing
+-------------------
+If you want better performance for parallel request handling,
+you can run PyHPO-API with multiple workers
+
+.. code:: bash
+
+    uvicorn pyhpoapi.main:app --workers 15 
+
+
+.. note::
+
+    Don't use more workers than available CPUs as it will backfire
+    and slow down processing due to constant context-switches
+
+CORS
+----
+If you need to allow cross-origin requests, you can simply create
+a ``config.ini`` file in your working directory and specify CORS settings::
+
+    [default]
+    cors-origins = *
+    cors-methods = GET,POST
+    cors-headers = *
+
+
+Dev
+===
+
+Getting started for development
+-------------------------------
+Clone the repository
+
+.. code:: bash
+
+    git clone https://github.com/anergictcell/pyhpoapi.git
+    cd pyhpoapi
+
+
+Use Docker for development
+--------------------------
+One way to do this is to run a docker container during development
+
+.. code:: bash
+
+    docker run --rm -v $(pwd):/src -p 8000:8000 -it python:3.9-slim-buster bash
+
+    cd src
+    pip3 install -r requirements.txt
+    pip3 install -r requirements-dev.txt
+
+    python3 -m unittest discover tests
+
+    uvicorn --host 0.0.0.0 --reload pyhpoapi.main:app
+
+
+Or local development without Docker
+-----------------------------------
+
+Create a virtual environment and install requirements in the virtual environment
+
+
+.. code:: bash
+
+    virtualenv --python pyhon3 venv_pyhpoapi
+    source venv_pyhpoapi/bin/activate
+
+    pip3 install -r requirements.txt
+    pip3 install -r requirements-dev.txt
+
+    python3 -m unittest discover tests
+
+    uvicorn --reload pyhpoapi.main:app
+
+
+.. _PyHPO: https://github.com/Centogene/pyhpo
+
+

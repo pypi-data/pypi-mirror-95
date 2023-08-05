@@ -1,0 +1,16 @@
+pyhpoapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhpoapi/config.py,sha256=0wvE6OGozyWhMpcizKm6weBZbRJnuWzOolasZn40dTE,1914
+pyhpoapi/helpers.py,sha256=QJx0KHEDzAsXFUZCrYB0WbPwxG5-plUpJRLWo7uHdOY,1587
+pyhpoapi/main.py,sha256=swbA2J0LItXr-L7qQVm7lq1MfxNBQIOXo01P67W2C50,78
+pyhpoapi/models.py,sha256=o-sME0AB9PNASldCLtPoaAh3aavI1MlXk_rJnU8N6to,6769
+pyhpoapi/server.py,sha256=NKKeI9-LXj9TRCnaT0PNbJ0a47QBjrZ0nH27ZS0z6wI,2301
+pyhpoapi/resources/logo.png,sha256=ZIgMMJNFrxqpNwDn5AuAugYaRVwpr74iHZfnjVr8wxw,30724
+pyhpoapi/routers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhpoapi/routers/annotations.py,sha256=Vlj_E1VYuqrN43BgEzxurlUlO4IWKchY8mzsrLxrOiA,7570
+pyhpoapi/routers/term.py,sha256=cfxqXilLj57DHtmuKRJngRGGM5r4HcnRmmVxd8UI4Xc,5515
+pyhpoapi/routers/terms.py,sha256=bLQO63cYNmWa3R713hYUb-adIcpm8G5LyUXyH6h0VfA,16834
+pyhpoapi-1.2.1.dist-info/LICENSE,sha256=a3JUJo6oNbtAffGVGfKxGwK5y25wzH68D2Ksz_BXTuA,1070
+pyhpoapi-1.2.1.dist-info/METADATA,sha256=lBdfXiynXRUwmuSUyKXMUSfK1QARXHbdQfuhJuK_KMo,3857
+pyhpoapi-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyhpoapi-1.2.1.dist-info/top_level.txt,sha256=qD91ZQlsojCdYwnFXyO67q_wRACJEr-nzSxk8nb66Q4,9
+pyhpoapi-1.2.1.dist-info/RECORD,,
