@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=khd8TRK3ijhEw9kpUWM4KAL0_V4fJxeG8ZaY_mI2wiM,72
+tests/env.py,sha256=FZxtSp9RR-7qrDgsYUWBCacdY_uD3VE8DYVlQAcQS8I,538
+tests/test.py,sha256=_tsuujuW-5ULidvqRkPokMQf1-ZhOf84fBl4ot7uFdY,4212
+wudder/__init__.py,sha256=v-ITlhNyYFZROSsMVJ0yH6kOo1huXH-iWrM8c3K6xcw,94
+wudder/client.py,sha256=prWhtepRbx_VU4iJoCkT3RRDKZDPgjegi4rtZMG9EBo,11307
+wudder/errors.py,sha256=JljQgd4ROtRFO-BgM-WTi6lTbAtMtklAPn3NJk2lGWg,265
+wudder/event.py,sha256=0jRZzKbd5b_GKk8_Yj7IGVLkM4ihBxxJR0ZnPii4N4A,4350
+wudder/exceptions.py,sha256=Zedlgsld8-G9s2Wsnj-_NTBLfz_s_RXcIYEdrFyamHo,350
+wudder/graphn.py,sha256=sGNpfXbRGettN-5eSNeKNvbdzbrtpaDbx9kmQkGpfRE,238
+wudder/utils.py,sha256=2VqUNHMkjEyMMfp2fm98nBnD0KvD1YwAB9vEZ8PE6Cc,6234
+wudder/wudder.py,sha256=dgv6YBqDZ7HlYbGyI792blFmcPy2g3mygZnSkY4V4kk,6317
+wudder-3.0.0a2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wudder-3.0.0a2.dist-info/METADATA,sha256=vTR82jUFd3C9ygxtSLQWYz9W3b_S3DNInoKscfiV1bI,895
+wudder-3.0.0a2.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+wudder-3.0.0a2.dist-info/top_level.txt,sha256=w-poIs2ARfHYh7y7D5MVJkSy9BxDaO2LURu0s9rqljA,13
+wudder-3.0.0a2.dist-info/RECORD,,
