@@ -1,0 +1,5 @@
+-std=c++1z
+-Wno-implicit-fallthrough
+-pipe 
+-fsigned-char
+-pthread
