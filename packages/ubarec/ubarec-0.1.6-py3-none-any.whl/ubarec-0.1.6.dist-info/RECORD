@@ -1,0 +1,14 @@
+ubarec/__init__.py,sha256=gW5NUxwGdPsiQjn0cOuuQT11pfthByI5DITDg_HMhLQ,22
+ubarec/__main__.py,sha256=zL5gmDty8VPaRw4j4le4qRxMfAFQuS3TuDCUpkXlvuo,47
+ubarec/backup.py,sha256=OeJReT_EHzneFDKf3v7yuSvNuOdHQDwmDSAOquwfjIM,2109
+ubarec/config.py,sha256=Ym2ZXIc9GWfb7GRre7rPUnmeDZjsWHFH4oyeOLwzqBk,4293
+ubarec/drivers.py,sha256=oSn2ftNrzieQzTCgJiOKuaLdpMaoBi_nksmPhiF6B9U,2802
+ubarec/handlers.py,sha256=jlG0gB-n2J9prWdxhR3T_gf1-2bvF-_iciyv64Bz_UA,1372
+ubarec/main.py,sha256=-bvze9Li1rYnZJo0bETjveX7g8CwojQozGYr-uYtb9w,1708
+ubarec/restore.py,sha256=okC3n3CrvM_tsZGSKY06aQX2rbvghQf9-Sc4qtoRf3A,3274
+ubarec-0.1.6.dist-info/LICENSE,sha256=so9WXG9RT0F9Q_h_CDbdGHyO47wapH00HPST5jT4QNU,1079
+ubarec-0.1.6.dist-info/METADATA,sha256=vXTi2lAUTiSO2lZVIQCV1hVHH91k2aJFk28PgLZheJQ,2814
+ubarec-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ubarec-0.1.6.dist-info/entry_points.txt,sha256=JHaFAXj6vvkiI8vYEIjx9qGaYqNx2Uc5hVCGjlveHwc,44
+ubarec-0.1.6.dist-info/top_level.txt,sha256=x3VCnQE-KbyTdduyQmM7V6Y4X_sM0EaPZ8d_A9OmGeo,7
+ubarec-0.1.6.dist-info/RECORD,,
