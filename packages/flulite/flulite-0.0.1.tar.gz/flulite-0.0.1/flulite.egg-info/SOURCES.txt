@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+flulite/__init__.py
+flulite.egg-info/PKG-INFO
+flulite.egg-info/SOURCES.txt
+flulite.egg-info/dependency_links.txt
+flulite.egg-info/top_level.txt
