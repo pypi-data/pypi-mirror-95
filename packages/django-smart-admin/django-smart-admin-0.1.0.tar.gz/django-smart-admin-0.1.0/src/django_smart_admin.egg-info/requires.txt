@@ -1,0 +1,10 @@
+
+[test]
+django-webtest
+factory-boy
+pytest
+pyquery
+pytest-echo
+pytest-cov==2.*,>=2.11.1
+pytest-django==4.*,>=4.1.0
+pytest-pythonpath==0.*,>=0.7.3
