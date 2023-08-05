@@ -1,0 +1,3 @@
+[kpireport.datasource]
+twitter = kpireport_twitter:TwitterDatasource
+
