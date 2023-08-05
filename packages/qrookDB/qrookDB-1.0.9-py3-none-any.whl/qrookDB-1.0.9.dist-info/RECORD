@@ -1,0 +1,15 @@
+qrookDB/Connector.py,sha256=snO9yFbcwpVZDysm3cRLinhiPwdo83BPA_0jpQZ28Us,703
+qrookDB/DB.py,sha256=jw-eOK7RbbTX_DLIFQZk20U3cTvbKVeiPfpheXpbGA4,3764
+qrookDB/PostgresConnector.py,sha256=P3P94Q2OsZ9RTi_gPfQWhQWQTLxK3KEr6N4F177fDio,1782
+qrookDB/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qrookDB/data.py,sha256=Kaaq3zFHszmecg8NdLDNGMf2sMO7uzHHuiq1pXz4b7M,1836
+qrookDB/data_formatter.py,sha256=o7X55vWBZCdtrgOCRhucYmGusWxM9e_lND7KVBFiQEk,891
+qrookDB/error_handlers.py,sha256=hyuYKh9AUkMbqYfdrwB_x2tyidmqTKq2_DP3mzpxPtg,1674
+qrookDB/main.py,sha256=X4GU1AmiUfGmvo8zBmYV-NyL7oCb5B98I7zBvqZ5T-8,1720
+qrookDB/operators.py,sha256=0g4cZi7Mqr3AfUYcoSgcDTa81agAzpeAc3igup6_Rpc,2054
+qrookDB/qrlogging.py,sha256=9GlFfOCAfHS9t5pqSdzdVPNdXqjXq8S6zWPOPcmcoJw,1814
+qrookDB/request.py,sha256=Qrzhnm8LfD44xfZRDy9DmSqRw9JdEz31JkQecMqkELA,13177
+qrookDB-1.0.9.dist-info/METADATA,sha256=uq6vTPkKT_34H9mzUTQriUPlTcB_gHUkcnAyVIvdaRA,384
+qrookDB-1.0.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+qrookDB-1.0.9.dist-info/top_level.txt,sha256=H-Qzk5wimyW1fypC29xJXvL_Zw99zbhXNQTSI-XnQmU,8
+qrookDB-1.0.9.dist-info/RECORD,,
