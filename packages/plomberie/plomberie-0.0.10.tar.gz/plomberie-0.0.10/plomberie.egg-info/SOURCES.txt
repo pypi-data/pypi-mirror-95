@@ -1,0 +1,11 @@
+README.md
+setup.py
+plomberie/__init__.py
+plomberie/exceptions.py
+plomberie/manager.py
+plomberie/manager_test.py
+plomberie/task.py
+plomberie.egg-info/PKG-INFO
+plomberie.egg-info/SOURCES.txt
+plomberie.egg-info/dependency_links.txt
+plomberie.egg-info/top_level.txt
