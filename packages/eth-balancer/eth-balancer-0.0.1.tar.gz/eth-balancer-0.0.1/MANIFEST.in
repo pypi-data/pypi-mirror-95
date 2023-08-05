@@ -1,0 +1,3 @@
+include README.md
+include eth_balancer/resources/**/*.json
+include eth_balancer/resources/version
