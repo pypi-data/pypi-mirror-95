@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: reasoner-pydantic
+Version: 1.0.0
+Summary: Pydantic models for the Reasoner API data formats
+Home-page: https://github.com/TranslatorSRI/reasoner-pydantic
+Author: Patrick Wang
+Author-email: patrick@covar.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
