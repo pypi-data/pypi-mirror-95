@@ -1,0 +1,3 @@
+[console_scripts]
+gitmiller = gitmiller.command_line:main
+
