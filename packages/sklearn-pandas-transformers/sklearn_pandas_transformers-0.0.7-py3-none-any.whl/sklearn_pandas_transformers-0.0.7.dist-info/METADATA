@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sklearn-pandas-transformers
+Version: 0.0.7
+Summary: A Package to use pandas DataFrame in sklearn pipeline. And others useful works to use sklearn pipeline in non usual way.
+Home-page: https://gitlab.com/thibaultB/transformers
+Author: Thbiault Blanc
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: pytest (>=6.0.1)
+Requires-Dist: pylint (>=2.6.0)
+Requires-Dist: pytest-cov (>=2.10.1)
+Requires-Dist: coverage
+Requires-Dist: yapf
+
+The main use of this package is to use Sklearn Pipeline with transformer / estimator that doesn't comply with the basic Pipeline:
+
+1 - Use sklearn Pipeline with transformation on Y:
+
+```
+spliter = SplitXY("a")
+
+pipe = Pipeline([
+        ("imputer", SklearnPandasWrapper(KNNImputer())),
+        ("spliter", spliter), ("scaler", StandardScaler()),
+        ("rf",
+            EstimatorWithoutYWrapper(RandomForestRegressor(random_state=45),
+                                    spliter))
+    ])
+pipe.fit(self.input_df)
+
+res = pipe.predict(self.input_df)
+```
+
+2 - Use sklearn Transformer (returning numpy array)  to return pandas DataFrame (with unchanged columns names):
+
+
+```
+SklearnPandasWrapper(StandardScaler()))
+```
+
+
