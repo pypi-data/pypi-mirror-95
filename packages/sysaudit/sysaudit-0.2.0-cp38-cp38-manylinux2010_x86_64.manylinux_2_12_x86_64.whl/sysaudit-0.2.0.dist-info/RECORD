@@ -1,0 +1,7 @@
+sysaudit-0.2.0.dist-info/METADATA,sha256=K15xMvFfML55uv0a01dyLxcaoN42X9rUA9tK20MpJHU,1588
+sysaudit-0.2.0.dist-info/WHEEL,sha256=rVi_bUgQJdl2T8uc-rYx-ClYYTb8EEaCVZWgDcESM7g,140
+sysaudit-0.2.0.dist-info/RECORD,,
+sysaudit/_csysaudit.cpython-38-x86_64-linux-gnu.so,sha256=3yzTWlrVn6slhP-87eWA5Gjz7lng0wNqOyQE7HzNXj0,215184
+sysaudit/_csysaudit.c,sha256=36VpNjyr7cSKDzl5dWNI7Z-Nnh0W9lMeMusd9Vlwa6g,154329
+sysaudit/__init__.py,sha256=2sPciC5elQgY0qKmEUdurzm7tw4rNwHDAuhf9O7Rr_k,1319
+sysaudit/_csysaudit.pyx,sha256=Cb4Izk2uisFsuUZ4gh05ndqDlDfOE74GR6ZIn7R07Uk,762
