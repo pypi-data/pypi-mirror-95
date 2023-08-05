@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blocksec2go_ethereum/__init__.py
+blocksec2go_ethereum/_signer.py
+blocksec2go_ethereum/_utils.py
+blocksec2go_ethereum/exceptions.py
+blocksec2go_ethereum.egg-info/PKG-INFO
+blocksec2go_ethereum.egg-info/SOURCES.txt
+blocksec2go_ethereum.egg-info/dependency_links.txt
+blocksec2go_ethereum.egg-info/requires.txt
+blocksec2go_ethereum.egg-info/top_level.txt
