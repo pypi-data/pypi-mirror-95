@@ -1,0 +1,60 @@
+# Garm Rate Limiter
+
+[![Source code on Github](https://img.shields.io/badge/burakozdemir32-garm__rate__limiter-blue.svg?logo=github)][Github]
+[![PyPI](https://img.shields.io/pypi/v/garm-rate-limiter.svg)](https://pypi.python.org/pypi/garm-rate-limiter)
+[![Documentation](https://img.shields.io/badge/docs-gh--pages-blue.svg)][docs]
+[![Docs](https://github.com/burakozdemir32/garm_rate_limiter/workflows/Docs/badge.svg?branch=main)](https://github.com/burakozdemir32/garm_rate_limiter/actions?query=workflow%3ADocs)
+[![Tests](https://github.com/burakozdemir32/garm_rate_limiter/workflows/Tests/badge.svg?branch=main)](https://github.com/burakozdemir32/garm_rate_limiter/actions?query=workflow%3ATests)
+[![Coverage](https://codecov.io/gh/burakozdemir32/garm_rate_limiter/branch/main/graph/badge.svg)](https://codecov.io/gh/burakozdemir32/garm_rate_limiter)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+IP address based rate limiter for Flask
+
+Development of Garm Rate Limiter happens on [Github][].
+
+You can read the full documentation [online][docs]. [IN PROGRESS]
+
+NB: Route specific rate limiting has not been implemented yet. The specified rate limiting will apply individually to every flask route.
+
+[docs]: https://burakozdemir32.github.io/garm_rate_limiter/
+
+
+## Installation
+To install the latest released version of Garm Rate Limiter, run this command in your terminal:
+
+```
+pip install garm_rate_limiter
+```
+
+This is the preferred method to install Garm Rate Limiter, as it will always install the most recent stable release.
+
+If you don't have [pip](https://pip.pypa.io) installed, the [Python installation guide](http://docs.python-guide.org/en/latest/starting/installation/), respectively the [Python Packaging User Guide](https://packaging.python.org/tutorials/installing-packages/) can guide you through the process.
+
+
+To install the latest development version of Garm Rate Limiter from [Github][].
+
+```
+pip install git+https://github.com/burakozdemir32/garm_rate_limiter.git@main#egg=garm_rate_limiter
+```
+
+
+
+## Usage
+
+To use Garm Rate Limiter in a Flask project:
+
+``` python
+from datetime import timedelta
+
+from flask import Flask
+
+from garm_rate_limiter.config import RateLimiterConfig
+from garm_rate_limiter.limiter import RateLimiterMiddleware
+
+app = Flask(__name__)
+
+rate_limiter_config = RateLimiterConfig(limit=10, time=timedelta(seconds=60))
+app.wsgi_app = RateLimiterMiddleware(config=rate_limiter_config, app=app.wsgi_app)
+```
+
+[Github]: https://github.com/burakozdemir32/garm_rate_limiter
