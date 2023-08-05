@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpythonpro_ajesus/__init__.py
+libpythonpro_ajesus/github_api.py
+libpythonpro_ajesus.egg-info/PKG-INFO
+libpythonpro_ajesus.egg-info/SOURCES.txt
+libpythonpro_ajesus.egg-info/dependency_links.txt
+libpythonpro_ajesus.egg-info/not-zip-safe
+libpythonpro_ajesus.egg-info/requires.txt
+libpythonpro_ajesus.egg-info/top_level.txt
