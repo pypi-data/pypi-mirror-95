@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nastja
+Version: 0.0.1
+Summary: Python addon for NAStJA
+Home-page: UNKNOWN
+Author: T3GD1F (Felix Hoffmann)
+Author-email: <felixhoffmann07@gmx.de>
+License: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+
+Readme
+
