@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: qttools
+Version: 0.0.1
+Summary: Assorted PyQt5 tools
+Home-page: UNKNOWN
+Author: igrekus
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Some convenience classes for PyQt5.
+Keywords: python,pyqt5
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
