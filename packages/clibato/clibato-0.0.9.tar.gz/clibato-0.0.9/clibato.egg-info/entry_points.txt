@@ -1,0 +1,3 @@
+[console_scripts]
+clibato = clibato.__main__:main
+
