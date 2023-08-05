@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scintillant
+Version: 0.0.5
+Summary: Fast bot creating framework
+Home-page: https://code.tatar.ru/projects/LILIYA/repos/scintillant
+Author: Niel Ketov
+Author-email: ketov-x@yandex.ru
+License: Apache 2.0
+Keywords: package development template
+Platform: UNKNOWN
+Requires-Python: >=3.9.*
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: GitPython
+
+UNKNOWN
+
+
