@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: blocked-matrix-utils
+Version: 1.0.9
+Summary: NumPy wrappers for blocked matrices
+Home-page: https://github.com/vahtras/util
+Author: Olav Vahtras
+Author-email: olav.vahtras@gmail.com
+License: MIT
+Description: [![CircleCI](https://circleci.com/gh/vahtras/util.svg?style=svg)](https://circleci.com/gh/vahtras/util)
+        [![Build Status](https://travis-ci.org/vahtras/util.svg?branch=master)](https://travis-ci.org/vahtras/util)
+        [![Coverage Status](https://coveralls.io/repos/github/vahtras/util/badge.svg?branch=master)](https://coveralls.io/github/vahtras/util?branch=master)
+        ![Python package](https://github.com/vahtras/util/workflows/Python%20package/badge.svg)
+        
+        # blocked-matrix-utils
+        
+        ## About
+        
+        This package contains utilities for handling numpy arrays with subblocking.
+        
+        ## Install 
+        
+        The latest release versions can be installed from either pypi or conda-forge
+        
+        ~~~
+            $ pip install blocked-matrix-utils
+        ~~~
+        
+        ~~~
+            $ conda install -c conda-forge blocked-matrix-utils
+        ~~~
+        
+        Alternatively the latest development version is available on github
+        
+        ~~~
+            $ pip install git+https://github.com/vahtras/util.git@master
+        ~~~
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
