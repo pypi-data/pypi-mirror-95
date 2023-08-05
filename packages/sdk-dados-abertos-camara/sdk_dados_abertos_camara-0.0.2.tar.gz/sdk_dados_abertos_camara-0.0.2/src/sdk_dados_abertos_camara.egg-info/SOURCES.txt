@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/sdk_dados_abertos_camara.egg-info/PKG-INFO
+src/sdk_dados_abertos_camara.egg-info/SOURCES.txt
+src/sdk_dados_abertos_camara.egg-info/dependency_links.txt
+src/sdk_dados_abertos_camara.egg-info/top_level.txt
