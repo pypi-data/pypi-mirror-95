@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+cygnus/__init__.py
+cygnus.egg-info/PKG-INFO
+cygnus.egg-info/SOURCES.txt
+cygnus.egg-info/dependency_links.txt
+cygnus.egg-info/top_level.txt
