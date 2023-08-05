@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: pytest-blender
+Version: 0.0.1
+Summary: Blender addons tester for Pytest.
+Home-page: https://github.com/mondeja/pytest-blender
+Author: Álvaro Mondéjar Rubio
+Author-email: mondejar1994@gmail.com
+License: BSD-3-Clause
+Description: # pytest-blender
+        
+        Pytest plugin for Blender testing. Executes your pytest testsuite with
+        Blender in headless mode using their builtin Python interpreter.
+        
+        ## Install
+        
+        ```bash
+        pip install pytest-blender
+        ```
+        
+        ## Usage
+        
+        ### Install dependencies in Blender Python interpreter
+        
+        Before execute it, you need to install your testing dependencies inside the
+        builtin Blender Python interpreter. To get the interpreter location you can
+        use the CLI utility `pytest-blender`, something like:
+        
+        ```bash
+        blender_python="$(pytest-blender)"
+        $blender_python -m ensurepip
+        $blender_python -m pip install -r test-requirements.txt
+        ```
+        
+        > You can also get the intepreter for a custom Blender installation location with `--blender-executable` option: `pytest-blender --blender-executable ~/blender-2.91.2-linux64/blender`
+        
+        ### Execute tests
+        
+        After installing dependencies, just call pytest as usually.
+        
+        ```bash
+        pytest -svv
+        ```
+        
+        ```
+        Blender 2.82 (sub 7)
+        Read prefs: ~/.config/blender/2.82/config/userpref.blend
+        ========================= test session starts ==================================
+        platform linux -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1 -- /usr/bin/blender
+        cachedir: .pytest_cache
+        metadata: {'Python': '3.8.5', 'Platform': 'Linux-5.4.0-65-generic-x86_64-with-glibc2.29',
+                   'Packages': {'pytest': '6.1.2', 'py': '1.9.0', 'pluggy': '0.13.1'},
+                   'Plugins': {'metadata': '1.11.0', 'cov': '2.10.1', 'html': '3.1.1'}}
+        rootdir: /home/mondeja/files/code/pytest-blender
+        plugins: metadata-1.11.0, cov-2.10.1, html-3.1.1
+        collected 1 item
+        
+        tests/test_import_bpy.py::test_inside_blender <module 'bpy' from '/usr/share/blender/scripts/modules/bpy/__init__.py'>
+        PASSED
+        =========================== 1 passed in 0.01s =================================
+        ```
+        
+        Just can specify a custom blender executable path using `--blender-executable`
+        option:
+        
+        ```bash
+        pytest --blender-executable ~/blender-2.91.2-linux64/blender
+        ```
+        
+        ```
+        Blender 2.91.2 (hash 5be9ef417703 built 2021-01-19 16:16:34)
+        Read prefs: ~/.config/blender/2.91/config/userpref.blend
+        found bundled python: ~/blender-2.91.2-linux64/2.91/python
+        ============================ test session starts ===============================
+        platform linux -- Python 3.7.7, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+        rootdir: ~/pytest-blender
+        collected 1 item
+        
+        tests/test_import_bpy.py .                                                [100%]
+        
+        ============================== 1 passed in 0.00s ==============================
+        ```
+        
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: lint
+Provides-Extra: test
