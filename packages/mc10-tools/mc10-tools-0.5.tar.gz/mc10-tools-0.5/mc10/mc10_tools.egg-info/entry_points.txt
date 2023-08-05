@@ -1,0 +1,4 @@
+[console_scripts]
+bastoc10 = mc10.bastoc10:bastoc10
+c10tobas = mc10.c10tobas:c10tobas
+

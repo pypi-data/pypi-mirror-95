@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+mc10/mc10/__init__.py
+mc10/mc10/bastoc10.py
+mc10/mc10/c10.py
+mc10/mc10/c10tobas.py
+mc10/mc10/mcbasic.py
+mc10/mc10/mclex.py
+mc10/mc10_tools.egg-info/PKG-INFO
+mc10/mc10_tools.egg-info/SOURCES.txt
+mc10/mc10_tools.egg-info/dependency_links.txt
+mc10/mc10_tools.egg-info/entry_points.txt
+mc10/mc10_tools.egg-info/requires.txt
+mc10/mc10_tools.egg-info/top_level.txt
