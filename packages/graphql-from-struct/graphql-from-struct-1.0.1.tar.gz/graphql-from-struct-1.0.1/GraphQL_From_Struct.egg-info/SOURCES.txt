@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+GraphQL_From_Struct.egg-info/PKG-INFO
+GraphQL_From_Struct.egg-info/SOURCES.txt
+GraphQL_From_Struct.egg-info/dependency_links.txt
+GraphQL_From_Struct.egg-info/not-zip-safe
+GraphQL_From_Struct.egg-info/top_level.txt
+graphql_from_struct.egg-info/PKG-INFO
+graphql_from_struct.egg-info/SOURCES.txt
+graphql_from_struct.egg-info/dependency_links.txt
+graphql_from_struct.egg-info/not-zip-safe
+graphql_from_struct.egg-info/top_level.txt
+src/graphql_from_struct/__init__.py
