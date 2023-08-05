@@ -1,0 +1,10 @@
+torchinfo/__init__.py,sha256=DmHfVx6qVArV9RzzE67JfFsbxqI5rV9iL24Z2HUSMbg,137
+torchinfo/formatting.py,sha256=vMikMpeMXbxXRBN1Is1bImm9xqCCukx-QVtCTGQDLcY,1859
+torchinfo/layer_info.py,sha256=r9K0ihSy830YdksTBMKt0BEq-iSva0t2-pglf-3fV4s,5815
+torchinfo/model_statistics.py,sha256=uCxFrA1tJDL4sst2pWkZY2LMq1buOz3ulxsyufrCTCU,6243
+torchinfo/torchinfo.py,sha256=RcKU0_tIuPy7LjBUvTNPq-I_kIOOy7yzGDEprkiMO0I,13978
+torchinfo-0.0.6.dist-info/LICENSE,sha256=qMTfSpPU6CosKykb_Ogy3xBOVSOGqM1ufDo0kcY02VQ,1065
+torchinfo-0.0.6.dist-info/METADATA,sha256=7kVuCATWAOIwfw6S73iY4mEqTxCfAoeipi99C7_RAIc,17065
+torchinfo-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torchinfo-0.0.6.dist-info/top_level.txt,sha256=R0QQaacQgrZDejQC0vBz7xfG1KT2TJKCQFPb_JTA4m8,10
+torchinfo-0.0.6.dist-info/RECORD,,
