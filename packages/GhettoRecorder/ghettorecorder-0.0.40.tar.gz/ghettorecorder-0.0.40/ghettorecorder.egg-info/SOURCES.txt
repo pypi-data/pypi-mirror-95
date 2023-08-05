@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+ghettorecorder/UIWindow.py
+ghettorecorder/UIghettoTerminal.py
+ghettorecorder/UItextEditor.py
+ghettorecorder/__init__.py
+ghettorecorder/run.py
+ghettorecorder/settings.ini
+ghettorecorder.egg-info/PKG-INFO
+ghettorecorder.egg-info/SOURCES.txt
+ghettorecorder.egg-info/dependency_links.txt
+ghettorecorder.egg-info/requires.txt
+ghettorecorder.egg-info/top_level.txt
