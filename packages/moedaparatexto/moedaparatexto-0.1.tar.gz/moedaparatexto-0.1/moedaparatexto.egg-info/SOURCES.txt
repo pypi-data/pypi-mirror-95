@@ -1,0 +1,8 @@
+README.md
+setup.py
+moedaparatexto/__init__.py
+moedaparatexto.egg-info/PKG-INFO
+moedaparatexto.egg-info/SOURCES.txt
+moedaparatexto.egg-info/dependency_links.txt
+moedaparatexto.egg-info/not-zip-safe
+moedaparatexto.egg-info/top_level.txt
