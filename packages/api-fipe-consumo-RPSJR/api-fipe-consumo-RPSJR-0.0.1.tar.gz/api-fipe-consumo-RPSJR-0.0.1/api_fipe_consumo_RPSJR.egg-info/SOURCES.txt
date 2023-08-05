@@ -1,0 +1,7 @@
+README.md
+setup.py
+api_fipe_consumo_RPSJR.egg-info/PKG-INFO
+api_fipe_consumo_RPSJR.egg-info/SOURCES.txt
+api_fipe_consumo_RPSJR.egg-info/dependency_links.txt
+api_fipe_consumo_RPSJR.egg-info/top_level.txt
+apifipecons/__init__.py
