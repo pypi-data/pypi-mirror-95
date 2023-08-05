@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: simon-says
+Version: 1.0.5
+Summary: GE/Interlogix Simon XT Alarm interface library and API
+Home-page: https://github.com/cvicente/simon_says
+Author: Carlos Vicente
+Author-email: cvicente@gmail.com
+License: GPL v3.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: configparser
+Requires-Dist: falcon
+Requires-Dist: gunicorn
+Requires-Dist: httpie
+Requires-Dist: pycall
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: redis
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-localserver ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+
+Interact with the Simon XT Alarm system
+
+
