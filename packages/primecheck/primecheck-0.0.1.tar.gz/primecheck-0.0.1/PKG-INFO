@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: primecheck
+Version: 0.0.1
+Summary: Checks if a number is prime or not
+Home-page: UNKNOWN
+Author: Rayhan
+Author-email: rayhan.rockz.4.669@gmail.com
+License: MIT
+Description: This is a Prime Checking Package, that checks if a number is a prime or not
+        
+        Syntax:
+        	prime(number)
+Keywords: core package
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown

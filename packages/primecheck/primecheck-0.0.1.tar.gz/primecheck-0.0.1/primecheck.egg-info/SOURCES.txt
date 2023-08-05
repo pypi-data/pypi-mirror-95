@@ -1,0 +1,14 @@
+CHANGELOG.txt
+JUST TESTING.py
+LICENSE.txt
+MANIFEST.in
+README.txt
+example.py
+setup.py
+primecheck/__init__.py
+primecheck/exceptions.py
+primecheck.egg-info/PKG-INFO
+primecheck.egg-info/SOURCES.txt
+primecheck.egg-info/dependency_links.txt
+primecheck.egg-info/not-zip-safe
+primecheck.egg-info/top_level.txt
