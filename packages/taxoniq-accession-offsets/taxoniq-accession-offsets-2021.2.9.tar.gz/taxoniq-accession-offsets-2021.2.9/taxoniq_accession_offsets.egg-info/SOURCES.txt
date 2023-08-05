@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+taxoniq_accession_offsets/__init__.py
+taxoniq_accession_offsets/db.marisa
+taxoniq_accession_offsets.egg-info/PKG-INFO
+taxoniq_accession_offsets.egg-info/SOURCES.txt
+taxoniq_accession_offsets.egg-info/dependency_links.txt
+taxoniq_accession_offsets.egg-info/top_level.txt
