@@ -1,0 +1,6 @@
+pytz
+datamx
+pvoutput_publisher
+requests
+marshmallow
+pyyaml
