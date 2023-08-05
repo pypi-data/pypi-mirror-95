@@ -1,0 +1,9 @@
+LICENSE,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+pocketsnack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pocketsnack/pocketsnack.py,sha256=u0Jn4Z7i_uug7zUmUHRXaiVvilxTRlXwgTlhXnjRaI8,11941
+pocketsnack/toolkit.py,sha256=I8Y3ImVIvggDmxzMcaEntaukJeVjZUTgLAC9G_Ip9Ho,32625
+pocketsnack-3.2.0.dist-info/entry_points.txt,sha256=_uYxOQIKVLkGfxgR3RqupDmwHID2Qdrn9LvSqk1ojXo,60
+pocketsnack-3.2.0.dist-info/LICENSE,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+pocketsnack-3.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pocketsnack-3.2.0.dist-info/METADATA,sha256=pykdk4zBVpVD71QDG8FlHlMSMlDpSCzqVrhTZNGePZc,5422
+pocketsnack-3.2.0.dist-info/RECORD,,
