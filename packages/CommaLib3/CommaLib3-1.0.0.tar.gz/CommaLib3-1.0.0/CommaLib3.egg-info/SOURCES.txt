@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+CommaLib3/__init__.py
+CommaLib3/class1.py
+CommaLib3.egg-info/PKG-INFO
+CommaLib3.egg-info/SOURCES.txt
+CommaLib3.egg-info/dependency_links.txt
+CommaLib3.egg-info/not-zip-safe
+CommaLib3.egg-info/top_level.txt
