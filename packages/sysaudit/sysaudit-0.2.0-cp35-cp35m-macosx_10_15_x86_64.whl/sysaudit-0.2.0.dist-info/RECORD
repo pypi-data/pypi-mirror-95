@@ -1,0 +1,7 @@
+sysaudit/__init__.py,sha256=2sPciC5elQgY0qKmEUdurzm7tw4rNwHDAuhf9O7Rr_k,1319
+sysaudit/_csysaudit.pyx,sha256=Cb4Izk2uisFsuUZ4gh05ndqDlDfOE74GR6ZIn7R07Uk,762
+sysaudit/_csysaudit.cpython-35m-darwin.so,sha256=9_znm43IJtbYBJFkmoKZ29uko5UCrxXhMjC_vj7_VGo,44192
+sysaudit/_csysaudit.c,sha256=36VpNjyr7cSKDzl5dWNI7Z-Nnh0W9lMeMusd9Vlwa6g,154329
+sysaudit-0.2.0.dist-info/WHEEL,sha256=TEGgAatkjP1OFBlJ2Ab_FYknecLS0XGqxMl1lawbBKk,102
+sysaudit-0.2.0.dist-info/METADATA,sha256=K15xMvFfML55uv0a01dyLxcaoN42X9rUA9tK20MpJHU,1588
+sysaudit-0.2.0.dist-info/RECORD,,
