@@ -1,0 +1,4 @@
+Flask<2.0,>=1.0
+python-jose[cryptography]>=3.1.0
+PyJWT<2.0,>=1.7
+requests<3.0.0,>=2.9.1
