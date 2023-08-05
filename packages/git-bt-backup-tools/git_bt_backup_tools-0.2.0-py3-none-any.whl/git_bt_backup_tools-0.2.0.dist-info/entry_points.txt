@@ -1,0 +1,4 @@
+[console_scripts]
+cat_bencode=git_bt_backup_tools.pretty_print:pretty_print_bencoded
+git_bt_tools_setup=git_bt_backup_tools.configure_git:setup_config
+
