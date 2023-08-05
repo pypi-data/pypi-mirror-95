@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nfnets-pytorch
+Version: 0.0.4
+Summary: NFNets, PyTorch
+Home-page: https://github.com/vballoli/nfnets-pytorch
+Author: Vaibhav Balloli
+Author-email: balloli.vb@gmail.com
+License: MIT
+Keywords: computer vision,image classification,pytorch,adaptive gradient clipping
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+UNKNOWN
+
+
