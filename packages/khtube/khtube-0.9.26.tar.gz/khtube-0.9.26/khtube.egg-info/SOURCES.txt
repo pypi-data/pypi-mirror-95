@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+khtube/__init__.py
+khtube/download_ffmpeg.py
+khtube/khtube.py
+khtube.egg-info/PKG-INFO
+khtube.egg-info/SOURCES.txt
+khtube.egg-info/dependency_links.txt
+khtube.egg-info/requires.txt
+khtube.egg-info/top_level.txt
