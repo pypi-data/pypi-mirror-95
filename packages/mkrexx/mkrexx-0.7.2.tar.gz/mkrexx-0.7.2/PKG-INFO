@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: mkrexx
+Version: 0.7.2
+Summary: Python library that leverage include statements in rexx files for the build process.
+Home-page: UNKNOWN
+Author: Guilherme Cartier
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
