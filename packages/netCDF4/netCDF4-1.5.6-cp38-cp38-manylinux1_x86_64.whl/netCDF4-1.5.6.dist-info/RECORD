@@ -1,0 +1,16 @@
+netCDF4.libs/libcurl-39338734.so.4.7.0,sha256=yEIMMr8ZaeDPeJnyHPvdWMfY1sqU9BBiQFofNLsTasw,3046232
+netCDF4.libs/libaec-f0d4887b.so.0.0.10,sha256=gviy5OVahPS4nIhFiVO-m53s9yaridcYRHKaIbbFCwk,37720
+netCDF4.libs/libz-a147dcb0.so.1.2.3,sha256=_HZ_XiOuVypJhy7VEy7Pv-QM6RxKmNtmQG2swxTNcvE,87848
+netCDF4.libs/libsz-53d02de5.so.2.0.1,sha256=T7MCKP3NCPrDIynD7OxK-cYi1m0nijNEnx_ZEoSbZ1o,16800
+netCDF4.libs/libhdf5-51df8fe1.so.200.0.0,sha256=aTDtNZey_47b2WJzhdyVtzg0tENOj7Sgu2AamUTx8Xs,9329504
+netCDF4.libs/libnetcdf-f8f4832d.so.18.0.0,sha256=0BGRv0YEuHYKdTtlTIiaJSTVmJIVOD5rMYoW_QOSxgE,1859952
+netCDF4.libs/libhdf5_hl-5d1b72f4.so.200.0.0,sha256=-TzaSAzNOeW_CbNWjzPgw7d5TtF0gKEFtiaG-7HvUro,198464
+netCDF4-1.5.6.dist-info/LICENSE,sha256=f90MJkfentWqVJwhxGd4N0hneTwvh0SXtUgN8ix3eP8,1056
+netCDF4-1.5.6.dist-info/METADATA,sha256=_sVhuHUXzaGU-JAHcGJueCo5ceql0LNb9kFbb3UoV7Y,1597
+netCDF4-1.5.6.dist-info/top_level.txt,sha256=stYbJPcHWECrrFPwNt4TZ2dkAmjFzNd29Sc5T0FkJfs,8
+netCDF4-1.5.6.dist-info/WHEEL,sha256=Dh4w5P6PPWbqyqoE6MHlzbFQwZXlM-voWJDf2WUsS2g,108
+netCDF4-1.5.6.dist-info/RECORD,,
+netCDF4-1.5.6.dist-info/entry_points.txt,sha256=SOaA1ioikuEHrv2NnxYU7BBVds5ZzBNOLWA5LN3p5Yk,117
+netCDF4/utils.py,sha256=sHcgDmVkV3IlIPb83BclWyJ6k9LOzAtlmd0a90eO26Q,37482
+netCDF4/_netCDF4.cpython-38-x86_64-linux-gnu.so,sha256=ArIplkfiMXjxJnx4GjXYI6GV_Lqbomx7HDa4MruncKo,1320104
+netCDF4/__init__.py,sha256=B-vJ1GQSqnG5TVDkkr11A2nvNpFZvoLEZ5vDXcf_-Ns,795
