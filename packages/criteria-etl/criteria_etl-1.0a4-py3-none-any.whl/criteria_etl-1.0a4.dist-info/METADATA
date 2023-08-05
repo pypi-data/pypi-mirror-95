@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: criteria-etl
+Version: 1.0a4
+Summary: A library for Criteria related data wrangling.
+Home-page: https://github.com/prosper-ia/covid-response-source
+Author: Prosperia Social
+Author-email: developers.etl@prosperia.ai
+Maintainer: Rodrigo Lara Molina
+Maintainer-email: rodrigo@prosperia.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1)
+Requires-Dist: scikit-learn
+
+# Criteria-ETL
+This repository contains general tools for Extracting, Transforming and Loading data in Criteria projects.
+
+## Structure of the package
+### `transformers` module
+- `columns_base`: scikit-learn compatible classes which transform `pandas.DataFrame`'s along the columns axis.
+- `rows_base`: scikit-learn compatible classes which transform `pandas.DataFrame`'s along the rows axis.
+
+### `utils` module
+- `common_func`: miscellaneous functions which might be useful in any project.
+- `config`: placeholder for setting-up global variables of the project, used for loading data.
+- `dataload`: functions used for loading data. It imports global variables from `config` sub-module.
+- `display`: functions used for displaying tables and plotting.
+- `expansion_func`: functions designed for handling statistical sources which present an **expansion factor**. 
+
+### `impute` module
+- `model_based`: scikit-learn compatible classes for imputing observations based on predictive models.
+
