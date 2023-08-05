@@ -1,0 +1,16 @@
+hgext3rd/fastimport/__init__.py,sha256=FNGkZuABqbol3fGycr0t9A-ejuCCHVViJzRbwqC4m-A,2639
+hgext3rd/fastimport/hgechoprocessor.py,sha256=CpIkW5pIovUtxnQqqGUggmCR-BMLIo2HvNPqz32HaVQ,2558
+hgext3rd/fastimport/hgimport.py,sha256=hSutnRI8cZUrEvV20XD6M6MoqasgmwX8YZRsA0_KESQ,18194
+hgext3rd/fastimport/vendor/python_fastimport/__init__.py,sha256=XXp1kOr5tvMn7GyZFbOEmg0ynyiAKkTAPajMiKyaOkk,1197
+hgext3rd/fastimport/vendor/python_fastimport/commands.py,sha256=-YL_MMIDl5hvuJXP5OrMLoKTc7qPOQO5nkwAqvXkE8E,16267
+hgext3rd/fastimport/vendor/python_fastimport/dates.py,sha256=aD8aWU2DhdXwQrJ52IL05Vwh3bCasuxMYS6OETzOc7Q,2399
+hgext3rd/fastimport/vendor/python_fastimport/errors.py,sha256=AHOSovrDLuYq5-fYbLMWKHoC3OMLb0j4nrBoW4oHeI4,5440
+hgext3rd/fastimport/vendor/python_fastimport/helpers.py,sha256=7y8roXULObDP_545H_A0LovGsx1GV8RJ8uYJTmj5-do,7613
+hgext3rd/fastimport/vendor/python_fastimport/parser.py,sha256=poJJLYEuY7F5wLTlnwzo8TWXr3q5Ys-OdNVc1ZnBFy0,22712
+hgext3rd/fastimport/vendor/python_fastimport/processor.py,sha256=KTQRTcjToH4FJAW2kv0C_AIq-vc0PdGwoRv5H3n9IUE,6282
+hgext3rd/fastimport/vendor/python_fastimport/reftracker.py,sha256=9fuUDxL7WeWkI-aknA6ZvnK9IL-ORbCXzoZNUjLUR14,2177
+hg_fastimport-0.1.1.dist-info/COPYING,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+hg_fastimport-0.1.1.dist-info/METADATA,sha256=xG8_Bgf3UmcMSyKCFPHHBu5V7SAi4tIc7HLQCGOuwKU,1649
+hg_fastimport-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hg_fastimport-0.1.1.dist-info/top_level.txt,sha256=QOsI6Pm4T7KhZd_Rm5fsAIgac0uPDyuZEE1JYVG7XNw,9
+hg_fastimport-0.1.1.dist-info/RECORD,,
