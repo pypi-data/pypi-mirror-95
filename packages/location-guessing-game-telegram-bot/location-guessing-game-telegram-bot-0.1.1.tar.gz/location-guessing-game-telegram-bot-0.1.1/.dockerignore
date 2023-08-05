@@ -1,0 +1,9 @@
+*
+# setuptools_scm
+!.git/
+.git/index
+!Pipfile
+!Pipfile.lock
+!README.md
+!location_guessing_game_telegram_bot/
+!setup.py
