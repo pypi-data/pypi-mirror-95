@@ -1,0 +1,10 @@
+[Unit]
+Description=AMZ Auto Updater Service
+
+[Service]
+User=__USER__
+Type=oneshot
+ExecStart=/home/__USER__/.amz/data/auto_update/amz_update.py
+
+[Install]
+WantedBy=multi-user.target
