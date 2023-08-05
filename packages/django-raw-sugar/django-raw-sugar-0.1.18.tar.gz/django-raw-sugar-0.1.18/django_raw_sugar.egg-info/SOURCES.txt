@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_raw_sugar.egg-info/PKG-INFO
+django_raw_sugar.egg-info/SOURCES.txt
+django_raw_sugar.egg-info/dependency_links.txt
+django_raw_sugar.egg-info/top_level.txt
+raw_sugar/__init__.py
+raw_sugar/managers.py
+raw_sugar/query.py
+raw_sugar/sources.py
+tests/__init__.py
+tests/models.py
+tests/settings.py
+tests/test_querying.py
