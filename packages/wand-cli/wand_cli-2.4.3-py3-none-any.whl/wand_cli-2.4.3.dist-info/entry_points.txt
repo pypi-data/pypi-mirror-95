@@ -1,0 +1,3 @@
+[console_scripts]
+wandbox = wandbox.cli_:main
+
