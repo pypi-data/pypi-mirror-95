@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simon-says
+Version: 1.0.5
+Summary: GE/Interlogix Simon XT Alarm interface library and API
+Home-page: https://github.com/cvicente/simon_says
+Author: Carlos Vicente
+Author-email: cvicente@gmail.com
+License: GPL v3.0
+Description: Interact with the Simon XT Alarm system
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: dev
+Provides-Extra: lint
