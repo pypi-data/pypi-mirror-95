@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+numeraltoolkit_jaydenmw.egg-info/PKG-INFO
+numeraltoolkit_jaydenmw.egg-info/SOURCES.txt
+numeraltoolkit_jaydenmw.egg-info/dependency_links.txt
+numeraltoolkit_jaydenmw.egg-info/top_level.txt
