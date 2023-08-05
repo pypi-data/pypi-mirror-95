@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: signalr-async
+Version: 0.1.6
+Summary: Python SignalR async client
+Home-page: https://github.com/sam-mosleh/signalr-async
+License: MIT
+Keywords: SignalR,SignalR client,Real-time messaging
+Author: Sam Mosleh
+Author-email: sam.mosleh@ut.ac.ir
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aiohttp (>=3.7.3,<4.0.0)
+Requires-Dist: websockets (>=8.1,<9.0)
+Description-Content-Type: text/markdown
+
+
