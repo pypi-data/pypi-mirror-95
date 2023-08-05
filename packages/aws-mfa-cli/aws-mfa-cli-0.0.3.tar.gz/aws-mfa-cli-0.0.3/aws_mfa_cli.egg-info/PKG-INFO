@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aws-mfa-cli
+Version: 0.0.3
+Summary: CLI tool for managing AWS MFA credentials
+Home-page: https://github.com/marlanperumal/aws-mfa-cli
+Author: Marlan Perumal
+Author-email: marlan.perumal@gmail.com
+License: UNKNOWN
+Description: # AWS MFA CLI
+        
+        Command Line tool for managing AWS MFA credentials.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
