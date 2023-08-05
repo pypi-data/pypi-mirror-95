@@ -1,0 +1,3 @@
+include README.md
+include eth_openzeppelin/resources/**/*.json
+include eth_openzeppelin/resources/version

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+eth_openzeppelin/__init__.py
+eth_openzeppelin.egg-info/PKG-INFO
+eth_openzeppelin.egg-info/SOURCES.txt
+eth_openzeppelin.egg-info/dependency_links.txt
+eth_openzeppelin.egg-info/requires.txt
+eth_openzeppelin.egg-info/top_level.txt
+eth_openzeppelin/resources/version
