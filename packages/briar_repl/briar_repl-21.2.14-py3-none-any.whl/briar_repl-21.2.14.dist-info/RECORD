@@ -1,0 +1,13 @@
+briar_repl/__init__.py,sha256=zCv7yTJR1MH3dC9ab7ZKcSRuTKejlJw0qZWO_5Tm0MI,71
+briar_repl/__main__.py,sha256=Rddg2iw7kR3-SnN3-YaTBz2-z5ntbaQTwUVrelRj4bQ,4063
+briar_repl/blogs.py,sha256=dFQAUyK2WxIXKcSiG-Eq2XjSsg_jE6lmIdOwBauA-C4,669
+briar_repl/connections.py,sha256=x1Up4xgMeGB5oVq7qurJQyKPFCzTNhHqmh3_VP4Te04,2282
+briar_repl/contacts.py,sha256=2mSrKilF7fyi8jlM54Hzo2iULW_IH8PIWBJRypXB5sc,6767
+briar_repl/messages.py,sha256=o-u6CaFUAkTbAaB00C1GbArGfLb8dcPddIsRbiZmQxI,2373
+briar_repl/network.py,sha256=OBo_zfdZlyadxVgJB0UorEs6pv2SO6lMJCV5UkAPUxs,1693
+briar_repl/repl.py,sha256=Q7HJoCa7JpsSFKqh7mjoTGsdsI-i2J2J2pecsPsMP1Q,2223
+briar_repl/start_up.py,sha256=NehbfWS5lGn93mWq3NOC8iAhsKoNtn1lvThR5golbo4,3176
+briar_repl-21.2.14.dist-info/LICENSE,sha256=W1cqeM8KnRFIG1qMX5Q0XpiRhyVBKNXZMScsuxAtFtU,35069
+briar_repl-21.2.14.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+briar_repl-21.2.14.dist-info/METADATA,sha256=ZkwZfNe3NOmbvQ5I-1e-TzK4vIpXPbzcpwRDDsX7DWU,1313
+briar_repl-21.2.14.dist-info/RECORD,,
