@@ -1,0 +1,6 @@
+pandas
+numpy
+requests<3,>2
+urllib3<2,>1.24
+websocket-client<1,>=0.56.0
+websockets<9,>=8.0
