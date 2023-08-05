@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/Qieyun/__init__.py
+src/Qieyun/qieyun.csv
+src/Qieyun/version.py
+src/Qieyun/拓展音韻屬性.py
+src/Qieyun/音韻地位.py
+src/qieyun.egg-info/PKG-INFO
+src/qieyun.egg-info/SOURCES.txt
+src/qieyun.egg-info/dependency_links.txt
+src/qieyun.egg-info/top_level.txt
