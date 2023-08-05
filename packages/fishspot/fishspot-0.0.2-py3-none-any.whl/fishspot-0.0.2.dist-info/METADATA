@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fishspot
+Version: 0.0.2
+Summary: Tools for finding discrete bright spots in images
+Home-page: https://github.com/GFleishman/fishspot
+Author: Greg M. Fleishman
+Author-email: greg.nli10me@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+
+UNKNOWN
+
+
