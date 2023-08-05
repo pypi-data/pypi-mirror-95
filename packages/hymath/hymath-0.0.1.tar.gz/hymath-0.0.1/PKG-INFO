@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: hymath
+Version: 0.0.1
+Summary: 火焰数学库
+Home-page: https://code.xueersi.com/
+Author: Dingdang Wang
+Author-email: 133027238@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
