@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: BadEncryption
+Version: 0.0.1
+Summary: Python package to use encryption, bad encryption.
+Home-page: UNKNOWN
+Author: barton222
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Bad-Encryption
+Python package to use encryption, bad encryption.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install BadEncryption.
+
+```bash
+pip install BadEncryption
+```
+
+## Usage
+
+```python
+import BadEncryption
+
+BadEncryption.vbh('hello') # returns -1267296259
+BadEncryption.rotate('hello', 13) # returns 'uryyb'
+```
+
