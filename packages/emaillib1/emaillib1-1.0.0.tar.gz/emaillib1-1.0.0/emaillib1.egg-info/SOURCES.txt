@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+emaillib1/__init__.py
+emaillib1/class1.py
+emaillib1.egg-info/PKG-INFO
+emaillib1.egg-info/SOURCES.txt
+emaillib1.egg-info/dependency_links.txt
+emaillib1.egg-info/not-zip-safe
+emaillib1.egg-info/top_level.txt
