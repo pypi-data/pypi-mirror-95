@@ -1,0 +1,11 @@
+pytelelogger/__init__.py,sha256=BufXqIYwpHeW9PdGYVQygV8ssKpdP_3BFHLzpZEuUUQ,256
+pytelelogger/_threaded.py,sha256=YTUa2vTa5RSWWkxZF6uo-qx-N3crJ9SIldo4CIA4JDE,433
+pytelelogger/_types.py,sha256=XvhN1PSu6ka2GfkUABMszXPjLwEmis2sJ_BSJ34w_-Y,125
+pytelelogger/defaults.py,sha256=2EO7SoAzjy13cEnFcNHr1r2rYl6xQ8DtCxLqwW1tp-U,734
+pytelelogger/levels.py,sha256=kii6G4PyKzLmlRLiU5vYahuh2b6wGHv2GAZtcTXVi30,620
+pytelelogger/telelogger.py,sha256=8WJYN64u-mKyK9OEhqDw-onzsxs513mqXMXQal2SSp8,8055
+pytelelogger-0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pytelelogger-0.1.dist-info/METADATA,sha256=brPdz9941T1kWBOYwrt2VentEpaL09pziZYF76V_mTc,3015
+pytelelogger-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytelelogger-0.1.dist-info/top_level.txt,sha256=e0_KMf1n8qGhF1_ODDu0bZ1sVyrJFqTTvRTOZU9JSh8,13
+pytelelogger-0.1.dist-info/RECORD,,
