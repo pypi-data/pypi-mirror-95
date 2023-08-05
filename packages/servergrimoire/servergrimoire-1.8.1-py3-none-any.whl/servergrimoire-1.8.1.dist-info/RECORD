@@ -1,0 +1,15 @@
+servergrimoire/__init__.py,sha256=CiM2J6gZC_AudpQswEsOPUSXFDvDFwmyaIj1R6GS7z4,29
+servergrimoire/__main__.py,sha256=UU_qdwixfZzIQiFhlhMEy65OnWxnrsj9DL7AruIS0JM,150
+servergrimoire/app.py,sha256=jL9w7oj0I3PM4JoJORu3AxwG7Mx0wJnP8pv3xgj6MCA,7482
+servergrimoire/configmanager.py,sha256=UZA_WQXsAHzedwpQjRVG87kcWvZCX2WBJDJ5-jvSxNg,2630
+servergrimoire/dispatcher.py,sha256=4KARXjTPLEITBMlCsbMm_k2A_T9Ov8CCOU5Hlup4Xg0,2835
+servergrimoire/operation/dnschecker.py,sha256=0i9vO6YzeCzXKzXuDKk1XNl-HTbBk4OmgCIaXCUWC2Q,3028
+servergrimoire/operation/dnslookup.py,sha256=ycQq5mS-UBm_dWTWGaz5ZjGc15lH2L-tAx4gdQ2vSb0,2038
+servergrimoire/operation/pagechecker.py,sha256=kbDGgdgdM5xR4XNAT9zvnLVzKNLiHgGXkQVmcAj-M8E,3509
+servergrimoire/operation/sslverify.py,sha256=yB9I-OwoIk11NOs_X0jSDF6NbW4qVxOUbatYVV6rbbU,5620
+servergrimoire/plugin.py,sha256=nixbTTotRUQxBhdsIexC618a3xhTGuFsruoKU957y4A,1778
+servergrimoire-1.8.1.dist-info/entry_points.txt,sha256=GSxMjlQxyZMiXtVwASuHrWTgjyMPuIFb_EJ7BdR_L78,67
+servergrimoire-1.8.1.dist-info/LICENSE,sha256=k8IZ2ekjHpSchHyeErzbykdwP3TAbR8_fY2cO9ASORo,1066
+servergrimoire-1.8.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+servergrimoire-1.8.1.dist-info/METADATA,sha256=wPxenypCR8eiXhPgsS82eFd15x_YfsKdPWgsOkSSsco,3872
+servergrimoire-1.8.1.dist-info/RECORD,,
