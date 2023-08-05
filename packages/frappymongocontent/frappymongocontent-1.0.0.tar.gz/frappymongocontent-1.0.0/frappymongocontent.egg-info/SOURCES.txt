@@ -1,0 +1,10 @@
+README.md
+setup.py
+frappymongocontent/__init__.py
+frappymongocontent/content_store.py
+frappymongocontent.egg-info/PKG-INFO
+frappymongocontent.egg-info/SOURCES.txt
+frappymongocontent.egg-info/dependency_links.txt
+frappymongocontent.egg-info/not-zip-safe
+frappymongocontent.egg-info/requires.txt
+frappymongocontent.egg-info/top_level.txt
