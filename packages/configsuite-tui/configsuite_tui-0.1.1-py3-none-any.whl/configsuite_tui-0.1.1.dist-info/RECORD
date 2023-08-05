@@ -1,0 +1,14 @@
+configsuite_tui/__about__.py,sha256=rN7gKJpyLk5dbsBct3h00zpW_2vbnuIIqVsT9k-hJuQ,19
+configsuite_tui/__init__.py,sha256=TDHt7Upcdhw1J4czl2udMWrtlpZ8idf-XDkBz4BV2CI,191
+configsuite_tui/__main__.py,sha256=iV4DDWwrgAJY1JOw-qN4SAUwGkgCCXMdxGDq58emMtQ,74
+configsuite_tui/_version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+configsuite_tui/config.py,sha256=Od3YmC1TewI_bR3F8l8u9FoD1m4V6Ma4qymbhZHNZl8,371
+configsuite_tui/hookspecs.py,sha256=0BSC8huGP4zIrdN6EFPKfOgCy7FQ7fWzUx2Dn0Z16OU,260
+configsuite_tui/test_hook.py,sha256=06Ciuk_HfZSzIPzKGdXHuIpMHblnMB3wVWuBBhKIrAY,419
+configsuite_tui/tui.py,sha256=M8HTXZ2FVz-GuxC8_9z5-A61pZsMhc2mM-qdx_khU8w,5769
+configsuite_tui-0.1.1.dist-info/LICENSE,sha256=oUtO2eiWmRx_SAYHHlfGnTHlxD9TaU5U-pCIYkGOTiU,1064
+configsuite_tui-0.1.1.dist-info/METADATA,sha256=FXWIbQ2JRScm1_VZknEmxLUeU7zmZYGVCftVWTIEkzk,1879
+configsuite_tui-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+configsuite_tui-0.1.1.dist-info/entry_points.txt,sha256=vfWlHQ8O2s9rtzndyVUCzfaCznLyNWVWVVQWCBha5m4,61
+configsuite_tui-0.1.1.dist-info/top_level.txt,sha256=Q2ihLEJOEyNohFyxr12-x3PuTVt33QS_vSxMmajusQg,16
+configsuite_tui-0.1.1.dist-info/RECORD,,
