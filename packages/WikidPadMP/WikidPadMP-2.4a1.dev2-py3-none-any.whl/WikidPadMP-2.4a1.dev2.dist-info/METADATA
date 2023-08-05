@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: WikidPadMP
+Version: 2.4a1.dev2
+Summary: Single user wiki notepad
+Home-page: http://wikidpad.sourceforge.net/
+Author: Michael Butscher
+Author-email: mbutscher@gmx.de
+License: UNKNOWN
+Keywords: Personal Wiki
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Office/Business
+Requires-Dist: wxpython
+Requires-Dist: pillow
+Requires-Dist: biopython
+Requires-Dist: pyparsing
+Requires-Dist: pydna
+Requires-Dist: natsort
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: dateparser
+
+UNKNOWN
+
+
