@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jqpd
+Version: 0.0.1
+Summary: implementation of jqpd
+Home-page: UNKNOWN
+Author: Imran Khan
+Author-email: iakhan@utexas.edu
+License: UNKNOWN
+Keywords: python,jqpd
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# JQPD Package
+
+This is an implementation of Hadlock and Bickel's JQPD algorithm.
+
