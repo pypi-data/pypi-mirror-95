@@ -1,0 +1,42 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container-main {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-flow: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    height: 60px;
+    line-height: 3;
+}
+
+.btn-disabled {
+    pointer-events: none;
+}
+
+.twoColumns{
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+.break-word {
+    word-break: break-word;
+}
+
+.consequence-list {
+    max-height: 70vh;
+    overflow: auto;
+}
