@@ -1,0 +1,11 @@
+
+.idea/*
+
+*.pyc
+
+upsilon.egg-info/*
+
+output/*
+
+dist/*
+.DS_Store
