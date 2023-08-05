@@ -1,0 +1,8 @@
+README.md
+setup.py
+BadEncryption/BadEncryption.py
+BadEncryption/__init__.py
+BadEncryption.egg-info/PKG-INFO
+BadEncryption.egg-info/SOURCES.txt
+BadEncryption.egg-info/dependency_links.txt
+BadEncryption.egg-info/top_level.txt
