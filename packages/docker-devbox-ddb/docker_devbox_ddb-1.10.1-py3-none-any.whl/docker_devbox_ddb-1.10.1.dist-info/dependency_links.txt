@@ -1,0 +1,2 @@
+https://github.com/danthedeckie/simpleeval/archive/0383c383bd437e4fe7be9a9f85cffaa01a662b3f.zip
+https://github.com/Toilal/pytest-docker-compose/archive/configuration-inside-tests.zip
