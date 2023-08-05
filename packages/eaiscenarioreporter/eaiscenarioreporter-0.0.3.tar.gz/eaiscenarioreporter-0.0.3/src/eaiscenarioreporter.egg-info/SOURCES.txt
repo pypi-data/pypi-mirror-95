@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/featurereporter.py
+src/assets/valid.png
+src/assets/warning.png
+src/eaiscenarioreporter.egg-info/PKG-INFO
+src/eaiscenarioreporter.egg-info/SOURCES.txt
+src/eaiscenarioreporter.egg-info/dependency_links.txt
+src/eaiscenarioreporter.egg-info/requires.txt
+src/eaiscenarioreporter.egg-info/top_level.txt
