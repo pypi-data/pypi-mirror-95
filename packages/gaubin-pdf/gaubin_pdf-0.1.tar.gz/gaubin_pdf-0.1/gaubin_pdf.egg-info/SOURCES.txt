@@ -1,0 +1,10 @@
+setup.py
+gaubin_pdf/Binomialdistribution.py
+gaubin_pdf/Gaussiandistribution.py
+gaubin_pdf/Generaldistribution.py
+gaubin_pdf/__init__.py
+gaubin_pdf.egg-info/PKG-INFO
+gaubin_pdf.egg-info/SOURCES.txt
+gaubin_pdf.egg-info/dependency_links.txt
+gaubin_pdf.egg-info/not-zip-safe
+gaubin_pdf.egg-info/top_level.txt
