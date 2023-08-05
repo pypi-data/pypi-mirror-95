@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitmiller/__init__.py
+gitmiller/command_line.py
+gitmiller.egg-info/PKG-INFO
+gitmiller.egg-info/SOURCES.txt
+gitmiller.egg-info/dependency_links.txt
+gitmiller.egg-info/entry_points.txt
+gitmiller.egg-info/requires.txt
+gitmiller.egg-info/top_level.txt

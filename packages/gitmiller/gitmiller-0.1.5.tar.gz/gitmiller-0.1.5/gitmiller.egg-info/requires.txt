@@ -1,0 +1,7 @@
+jupyterlab>=1.2.6
+nbformat>=5.1.2
+matlab_kernel
+papermill
+PyGithub>=1.54.1
+pyyaml
+tqdm
