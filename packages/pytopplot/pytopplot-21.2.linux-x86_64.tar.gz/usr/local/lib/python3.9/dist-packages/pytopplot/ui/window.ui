@@ -1,0 +1,2034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>pyTopPlot</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="Tabs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="geometry">
+       <attribute name="title">
+        <string>Geometry</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QTableWidget" name="gTable">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Geometry points</string>
+            </property>
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="rowCount">
+             <number>11</number>
+            </property>
+            <property name="columnCount">
+             <number>2</number>
+            </property>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <row/>
+            <column>
+             <property name="text">
+              <string notr="true">R</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string notr="true">Z</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>0.0</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>0.0</string>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>0.21</string>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>0.0</string>
+             </property>
+            </item>
+            <item row="2" column="0">
+             <property name="text">
+              <string>0.21</string>
+             </property>
+            </item>
+            <item row="2" column="1">
+             <property name="text">
+              <string>0.115</string>
+             </property>
+            </item>
+            <item row="3" column="0">
+             <property name="text">
+              <string>0.18</string>
+             </property>
+            </item>
+            <item row="3" column="1">
+             <property name="text">
+              <string>0.135</string>
+             </property>
+            </item>
+            <item row="4" column="0">
+             <property name="text">
+              <string>0.13</string>
+             </property>
+            </item>
+            <item row="4" column="1">
+             <property name="text">
+              <string>0.135</string>
+             </property>
+            </item>
+            <item row="5" column="0">
+             <property name="text">
+              <string>0.07</string>
+             </property>
+            </item>
+            <item row="5" column="1">
+             <property name="text">
+              <string>0.095</string>
+             </property>
+            </item>
+            <item row="6" column="0">
+             <property name="text">
+              <string>-1.0</string>
+             </property>
+            </item>
+            <item row="6" column="1">
+             <property name="text">
+              <string>0.009</string>
+             </property>
+            </item>
+            <item row="7" column="0">
+             <property name="text">
+              <string>0.06</string>
+             </property>
+            </item>
+            <item row="7" column="1">
+             <property name="text">
+              <string>0.097</string>
+             </property>
+            </item>
+            <item row="8" column="0">
+             <property name="text">
+              <string>0.06</string>
+             </property>
+            </item>
+            <item row="8" column="1">
+             <property name="text">
+              <string>0.15</string>
+             </property>
+            </item>
+            <item row="9" column="0">
+             <property name="text">
+              <string>0.0</string>
+             </property>
+            </item>
+            <item row="9" column="1">
+             <property name="text">
+              <string>0.15</string>
+             </property>
+            </item>
+            <item row="10" column="0">
+             <property name="text">
+              <string>0.0</string>
+             </property>
+            </item>
+            <item row="10" column="1">
+             <property name="text">
+              <string>0.0</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="gStyle">
+            <property name="currentText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>Points</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QPushButton" name="gUploadButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="toolTip">
+                <string>Upload geometry points</string>
+               </property>
+               <property name="statusTip">
+                <string>Upload geometry points</string>
+               </property>
+               <property name="text">
+                <string>Upload</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="gDownloadButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="toolTip">
+                <string>Download geometry points</string>
+               </property>
+               <property name="statusTip">
+                <string>Download geometry points</string>
+               </property>
+               <property name="text">
+                <string>Download</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="gDrawButton">
+            <property name="toolTip">
+             <string>Draw geometry</string>
+            </property>
+            <property name="statusTip">
+             <string>Draw geometry (Ctrl+C)</string>
+            </property>
+            <property name="text">
+             <string>Draw</string>
+            </property>
+            <property name="shortcut">
+             <string>Ctrl+C</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="gFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="jobs">
+       <attribute name="title">
+        <string>Job</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QTableWidget" name="jTable">
+             <property name="toolTip">
+              <string>May run multiple jobs at one go.
+For this assign names for these jobs.</string>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="rowCount">
+              <number>7</number>
+             </property>
+             <row>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </row>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <column>
+              <property name="text">
+               <string>Job Name</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="title">
+              <string>abc</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QPushButton" name="jABCUploadButton">
+                <property name="toolTip">
+                 <string>Upload input file</string>
+                </property>
+                <property name="statusTip">
+                 <string>Upload input file</string>
+                </property>
+                <property name="text">
+                 <string>Upload</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="jABCDownloadButton">
+                <property name="toolTip">
+                 <string>Download input file</string>
+                </property>
+                <property name="statusTip">
+                 <string>Download input file</string>
+                </property>
+                <property name="text">
+                 <string>Download</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>yaml</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="jYAMLUploadButton">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Upload configuration</string>
+                </property>
+                <property name="statusTip">
+                 <string>Upload configuration</string>
+                </property>
+                <property name="text">
+                 <string>Upload</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="jYAMLDownloadButton">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Download configuration</string>
+                </property>
+                <property name="statusTip">
+                 <string>Download configuration</string>
+                </property>
+                <property name="text">
+                 <string>Download</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="jCalculateButton">
+             <property name="toolTip">
+              <string>Calculate</string>
+             </property>
+             <property name="statusTip">
+              <string>Calculate (Ctrl+C)</string>
+             </property>
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+             <property name="shortcut">
+              <string>Ctrl+C</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QToolBox" name="settingsPage">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="generalPage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>286</width>
+                <height>147</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>General</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>General settings (g)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QLineEdit" name="TITLE">
+                   <property name="toolTip">
+                    <string>Name of the project</string>
+                   </property>
+                   <property name="text">
+                    <string>Project Title</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_30">
+                   <property name="text">
+                    <string>Title</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="LSAV">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>Save the intermediate results when the CPU time is
+expired. A file for saving has to be allocated when LSAV
+is true. The default value of the logical device number
+assigned to this file is 1.
+When ITEST=0, ABCI computes wake fields.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSAV</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="LREC">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>Recover from a previous unfinished job, and restart of
+calculation. The file, which was created when LSAV
+command was executed, has to be declared for recovery.
+The default value of the logical device number assignedthis file is 2.</string>
+                   </property>
+                   <property name="text">
+                    <string>LREC</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QCheckBox" name="LCPUTM">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>Activates the subroutine which monitors the remaining
+CPU time. If LSAV is true, LCPUTM becomes
+automatically true. When LCPUTM=.T. and the
+calculation is not yet completed by the time TMAX-TSOS
+or the remaining CPU time is less than TSOS, ABCI stops
+the calculation and prints out the intermediate results on
+printer. To save them on a file, LSAV must be true.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCPUTM</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_15"/>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="0" column="0">
+                  <widget class="QDoubleSpinBox" name="TSOS">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>CPU time devoted to saving the intermediate results on a
+file.</string>
+                   </property>
+                   <property name="decimals">
+                    <number>2</number>
+                   </property>
+                   <property name="maximum">
+                    <double>99999.990000000005239</double>
+                   </property>
+                   <property name="value">
+                    <double>5.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string>TSOS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QDoubleSpinBox" name="TMAX">
+                   <property name="toolTip">
+                    <string>CPU time limit for a batch job. It is required to be
+specified when a subroutine such as TIMEL of the CERN
+library that returns the remaining CPU time is not
+available.</string>
+                   </property>
+                   <property name="maximum">
+                    <double>99999.990000000005239</double>
+                   </property>
+                   <property name="value">
+                    <double>3600.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>TMAX</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QComboBox" name="ITEST">
+                   <property name="toolTip">
+                    <string>When ITEST=0, ABCI computes wake fields.
+When ITEST=1, ABCI does not calculate any fields, but
+generates meshes for a structure to see if the input data are
+correct.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_29">
+                   <property name="text">
+                    <string>ITEST</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="meshPage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>158</width>
+                <height>107</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>Mesh</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>Mesh settings (m)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>NR</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="NR">
+                   <property name="toolTip">
+                    <string>Number of mesh lines in the r-direction.
+NR=(Total radius of the structure)/DDR+1.
+If this input method is chosen, only one mesh size can be
+used in the r-direction.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLineEdit" name="DDR">
+                   <property name="toolTip">
+                    <string>Mesh sizes in the r-direction. This is actually an array.
+Different mesh sizes can be used for radial intervals
+defined by RMARK. For example, “DDR=0.02, 0.01,
+RMARK=0.1, 0.2&quot; means that the mesh sizes are 0.02m
+from r=0.0m to r=0.1m, and 0.01m from r=0.1m to
+r=0.2m. When more than one mesh sizes are used, the
+radial coordinates of their borders are marked by arrows
+in a plot of the cavity shape actually used.</string>
+                   </property>
+                   <property name="text">
+                    <string>0.001</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>DDR</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLineEdit" name="RMARK">
+                   <property name="toolTip">
+                    <string>The r coordinates which define intervals where different
+radial mesh sizes are applied. Between RMARK(I) and
+RMARK(I+1), the radial mesh size is DDR(I). If no
+value is specified, RMARK(1) is automatically set to be
+the total radius of the structure.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>RMARK</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLineEdit" name="DDZ">
+                   <property name="toolTip">
+                    <string>Mesh size in the z-direction. Only one mesh size can be
+used in the z-direction.</string>
+                   </property>
+                   <property name="text">
+                    <string>0.001</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>DDZ</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QLineEdit" name="NZ">
+                   <property name="toolTip">
+                    <string>Number of mesh lines in the z direction.
+NZ=(Total length of the structure)/DDZ+1.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>NZ</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QLineEdit" name="RZ">
+                   <property name="toolTip">
+                    <string>The values of variables RZi (i=1,100) which may be used
+in the subsequent input of the cavity geometry. The values
+can be specified either as RZ=v1,v2,...,vn or as
+RZ(1)=v1, RZ(2)=v2,...,RZ(n)=vn. If the values
+are specified, but not used in the input of the cavity
+geometry, they are ignored. One can use -RZi in the
+meaning of -vi in the cavity geometry input.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="4">
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>RZ</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="beamPage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>286</width>
+                <height>110</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>Beam</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>Beam settings (b)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="0" column="2">
+                  <widget class="QSpinBox" name="NBUNCH">
+                   <property name="toolTip">
+                    <string>Number of driving Gaussian bunches.
+If zero or negative, an user defined charge distribution
+function will be used instead of an usual Gaussian
+distribution. Then, the user must supply his charge
+distribution by editing the subroutine BSHAPE in the
+source code. The total charge will be automatically
+normalized to 1 coulomb. For more details, consult the
+instruction written in the subroutine BSHAPE.</string>
+                   </property>
+                   <property name="value">
+                    <number>1</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>MROT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="SIG">
+                   <property name="toolTip">
+                    <string>One standard deviation of bunch length</string>
+                   </property>
+                   <property name="text">
+                    <string>0.01</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="MROT">
+                   <property name="toolTip">
+                    <string>Azimuthal mode number, i.e., MROT=0 for monopole
+fields or MROT=1 for dipole fields.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLineEdit" name="RDRIVE">
+                   <property name="toolTip">
+                    <string>The radius of the driving hollow beam.
+The beam pipe radius is found by ABCI. If the beam pipe
+radii at both ends are unequal, the default value will be
+the smallest of them. If the cavity material comes down
+below the beam pipe radii, the default value will be the
+radial coordinate of the cavity material closest to the beam
+axis.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_13">
+                   <property name="text">
+                    <string>RDRIVE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>SIG</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>NBUNCH</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>ISIG</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QDoubleSpinBox" name="BSEP">
+                   <property name="toolTip">
+                    <string>The peak-to-peak distance between bunches.
+Valid only when NBUNCH ≥2.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>BSEP</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QSpinBox" name="ISIG">
+                   <property name="toolTip">
+                    <string>Number of standard deviations used for a Gaussian bunch.</string>
+                   </property>
+                   <property name="maximum">
+                    <number>99999</number>
+                   </property>
+                   <property name="value">
+                    <number>5</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="timePage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>117</width>
+                <height>109</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>Time</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>Time settings (t)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="1" column="0">
+                  <widget class="QSpinBox" name="NSHOT">
+                   <property name="toolTip">
+                    <string>Total number of plots of electric field lines or total current
+lines at subsequent time steps for the monopole case
+(MROT=0). Plots are made at equally spaced time steps.</string>
+                   </property>
+                   <property name="value">
+                    <number>5</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QSpinBox" name="MT">
+                   <property name="toolTip">
+                    <string>Number of time steps for a beam to move from one cell to
+another. (It will be automatically changed
+to MT=4 when LCHIN=.T. and MROT=1).
+If the user’s chosen value is not large enough to satisfy
+the stability criterion (1), a warning message will be
+issued with a suggested value. Calculation continues
+despite of the warning.</string>
+                   </property>
+                   <property name="value">
+                    <number>3</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_16">
+                   <property name="text">
+                    <string>MT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string>NSHOT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLineEdit" name="TPS">
+                   <property name="toolTip">
+                    <string>The first time step at which electric field lines or total
+current lines are plotted. The default value is (the total
+time needed for a bunch to pass through a
+structure)/NSHOT.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>TPS</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="wakePage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>262</width>
+                <height>222</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>Wake</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>Wake settings (w)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="ZCF">
+                   <property name="toolTip">
+                    <string>The z-coordinate in the cavity frame at which the
+Napoly-Zotter integration contour shifts from r=the radius
+of the left beam pipe to r=RWAK. See manual Fig. 1.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="RWAK">
+                   <property name="toolTip">
+                    <string>The r-coordinate in the cavity frame where the
+Napoly-Zotter integration contour runs horizontally
+between z=ZCF and z=ZCT. See manual Fig. 1.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="UBT">
+                   <property name="toolTip">
+                    <string>The last longitudinal coordinate relative to the head of the
+beam, up to which the wake potentials are calculated.
+This parameter defines the window length.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>UBT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="ZCT">
+                   <property name="toolTip">
+                    <string>The z-coordinate in the cavity frame at which the
+Napoly-Zotter integration contour shifts from r=RWAK to
+the radius of the right beam pipe. See manual Fig. 1.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QDoubleSpinBox" name="ZSEP">
+                   <property name="toolTip">
+                    <string>The initial distance between heads of the two counter-
+rotating beams. Zero means that the two beams touch
+head-to-head when the head of the driving beam enters
+the structure. See manual Fig. 2.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>ZCF</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QLabel" name="label_21">
+                   <property name="text">
+                    <string>ZCT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QLabel" name="label_22">
+                   <property name="text">
+                    <string>ZSEP</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QLabel" name="label_23">
+                   <property name="text">
+                    <string>RWAK</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="1" column="0">
+                  <widget class="QCheckBox" name="LCFRON">
+                   <property name="toolTip">
+                    <string>Window suppressing calculation of fields in front of the
+bunch.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCFRON</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QCheckBox" name="LNAPOLY">
+                   <property name="toolTip">
+                    <string>When LNAPOLY=.T., the Napoly method of wake
+potential calculation is used for both MROT=0 and
+MROT=1 cases. If the beam pipe radii at both ends are
+unequal, or the cavity material comes down below the
+beam pipe radii, one must use the Napoly method. If
+LNAPOLY is yet false, ABCI changes it to
+LNAPOLY=.T., and finds an appropriate integration
+contour (its validity should still be checked by the user).
+The integration contour can be specified by the user,
+using ZCF, ZCT and RWAK. See Fig. 1. The Naoply
+integration method does not work for calculation of the
+transverse wake potential for a structure with beam pipes
+of unequal radii at both ends (ABCI skips the
+calculation.). In this case, use LNONAP option explained
+below.
+For more details, see manual Appendix A.</string>
+                   </property>
+                   <property name="text">
+                    <string>LNAPOLY</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="LCHIN">
+                   <property name="toolTip">
+                    <string>When LCHIN=.T., wake potentials for MROT=1 case
+are calculated by means of Chin’s method. The beam
+moves continuously, and wake fields are sampled at equal
+time steps. When LCHIN=.F., the beam jumps to next
+cell every MT time steps.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCHIN</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QCheckBox" name="LCBACK">
+                   <property name="toolTip">
+                    <string>Window suppressing calculation of fields behind the
+bunch. If LPLE or LPLC is true, LCBACK must be false.
+Then, the moving mesh option is suppressed.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCBACK</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QCheckBox" name="LNONAP">
+                   <property name="toolTip">
+                    <string>When LNONAP=.T., the Napoly integration will be
+switched off. ABCI finds a suitable straight integration
+path at the largest aperture. One can also specify this
+straight path using RWAK option. If one wants to calculate
+the transverse wake potential for a structure with beam
+pipes of unequal radii at both ends, he has to set
+LNONAP=.T. Otherwise, ABCI skips the calculation.
+For MROT=1 case with LNONAP=.T. for a structure with
+beam pipes of unequal radii at both ends, the longitudinal
+wake potential on plot is a pure radiation term after the
+correction is made on the potential difference term. The
+transverse wake potential is calculated from this corrected
+longitudinal wake potential using Panofsky-Wenzel
+theorem. It becomes (in principle) identical to the
+azimuthal wale potential (which is free from the potential
+difference term), calculated directly from Eφ and Br ,
+although the sign is opposite.</string>
+                   </property>
+                   <property name="text">
+                    <string>LNONAP</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QCheckBox" name="LCRBW">
+                   <property name="toolTip">
+                    <string>When LCRBW=.T., wake potentials are calculated
+for a counter-rotating beam of opposite charge instead of
+usual ones for a beam trailing the driving beam. The
+initial distance between heads of the two counter-rotating
+beams can be specified by ZSEP. See manual Fig. 2.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCRBW</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="plotPage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>314</width>
+                <height>219</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>Plot</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>Plot settings (p)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="LCAVUS">
+                   <property name="toolTip">
+                    <string>Plot cavity shape actually used. When more than one
+radial mesh sizes are used, the radial coordinates of their
+borders are (not) marked by arrows in the plot.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCAVUS</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QCheckBox" name="LPATH">
+                   <property name="toolTip">
+                    <string>Plot the Napoly-Zotter contour on cavity shape plots.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPATH</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="LCAVIN">
+                   <property name="toolTip">
+                    <string>Plot cavity shape input.</string>
+                   </property>
+                   <property name="text">
+                    <string>LCAVIN</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="3">
+                  <widget class="QCheckBox" name="LPLC">
+                   <property name="toolTip">
+                    <string>Plot total current lines at subsequent time steps for the
+monopole case (MROT=0). If this is true, LCBACK must
+be false.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPLC</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QCheckBox" name="LPLE">
+                   <property name="toolTip">
+                    <string>Plot electric field lines at subsequent time steps for the
+monopole case (MROT=0). If this is true, LCBACK must
+be false.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPLE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QCheckBox" name="LWNDW">
+                   <property name="toolTip">
+                    <string>When LWNDW=.T., the data windowing [6] is applied to
+wake potential data to reduce the undesirable effects
+related to spectral leakage.</string>
+                   </property>
+                   <property name="text">
+                    <string>LWNDW</string>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QCheckBox" name="LSPEC">
+                   <property name="toolTip">
+                    <string>Calculate the frequency spectrum of a longitudinal loss
+factor (or deposited energy) and its integration over
+frequency as a function of the upper limit of frequency of
+this integration and plot them.
+This option is applied only to MROT=0 case.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSPEC</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QCheckBox" name="LINTZ">
+                   <property name="toolTip">
+                    <string>Integrate the real part of each impedance over frequency
+and plot it as a function of the upper limit of this
+integration. This option is useful to find areas of each
+resonance peak.</string>
+                   </property>
+                   <property name="text">
+                    <string>LINTZ</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QCheckBox" name="LFFTT">
+                   <property name="toolTip">
+                    <string>Calculate the real and imaginary parts of transverse
+impedance and plot them.</string>
+                   </property>
+                   <property name="text">
+                    <string>LFFTT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QCheckBox" name="LFFTA">
+                   <property name="toolTip">
+                    <string>Calculate the real and imaginary parts of azimuthal
+impedance and plot them.</string>
+                   </property>
+                   <property name="text">
+                    <string>LFFTA</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QCheckBox" name="LFFTL">
+                   <property name="toolTip">
+                    <string>Calculate the real and imaginary parts of longitudinal
+impedance and plot them.</string>
+                   </property>
+                   <property name="text">
+                    <string>LFFTL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QCheckBox" name="LFFT">
+                   <property name="toolTip">
+                    <string>Calculate the real and imaginary parts of all impedance,
+and plot them.</string>
+                   </property>
+                   <property name="text">
+                    <string>LFFT</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QCheckBox" name="LPLWT">
+                   <property name="toolTip">
+                    <string>Plot the transverse wake potential.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPLWT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QCheckBox" name="LPLWA">
+                   <property name="toolTip">
+                    <string>Plot the azimuthal wake potential.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPLWA</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="LPLWL">
+                   <property name="toolTip">
+                    <string>Plot the longitudinal wake potential.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPLWL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QCheckBox" name="LPLW">
+                   <property name="toolTip">
+                    <string>Plot all wake potentials.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPLW</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <item row="1" column="2">
+                  <widget class="QDoubleSpinBox" name="EXPFAC">
+                   <property name="toolTip">
+                    <string>CUTOFF frequency is changed by a factor of
+log(EXPFAC/20) from the default value.</string>
+                   </property>
+                   <property name="value">
+                    <double>20.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QDoubleSpinBox" name="ALPHA">
+                   <property name="toolTip">
+                    <string>Alpha parameter of the window functions.</string>
+                   </property>
+                   <property name="value">
+                    <double>3.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QDoubleSpinBox" name="CUTOFF">
+                   <property name="toolTip">
+                    <string>The cutoff frequency for plots of the Fourier transforms of
+wake potentials. At the default value, CUTOFF is
+determined so that the exponential correction factor due to
+the bunch length, exp((2π*CUTOFF⋅SIG)2/2c2), is
+EXPFAC (default=20), where c is the speed of light.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_24">
+                   <property name="text">
+                    <string>ALPHA</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QSpinBox" name="NPLOT">
+                   <property name="toolTip">
+                    <string>Number of field lines that a bunch carries when it enters a
+structure. At the default mode, the field lines of given
+strength are plotted, and thus the number of field lines
+may vary from one plot to another.</string>
+                   </property>
+                   <property name="value">
+                    <number>10</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_25">
+                   <property name="text">
+                    <string>CUTOFF</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QLabel" name="label_26">
+                   <property name="text">
+                    <string>EXPFAC</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QLabel" name="label_27">
+                   <property name="text">
+                    <string>NPLOT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QComboBox" name="NWFUN">
+                   <property name="toolTip">
+                    <string>Choice of the window functions.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_28">
+                   <property name="text">
+                    <string>NWFUN</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="LPALL">
+                   <property name="toolTip">
+                    <string>When LPALL=.T., the mode of field line plotting is
+switched to the mode in which a fixed number of field
+lines (specified by NPLOT) are plotted at each time step,
+regardless of the strength of remnant wake fields.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPALL</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="printPage">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>308</width>
+                <height>74</height>
+               </rect>
+              </property>
+              <attribute name="label">
+               <string>Print</string>
+              </attribute>
+              <attribute name="toolTip">
+               <string>Print settings (l)</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <item>
+                <layout class="QGridLayout" name="gridLayout_10">
+                 <item row="0" column="3">
+                  <widget class="QCheckBox" name="LSVWL">
+                   <property name="toolTip">
+                    <string>Save numerical values of the longitudinal wake potential
+on a separate file. When MROT=1, they are normalized by
+the transverse offset of the driving beam.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSVWL</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QCheckBox" name="LSVWA">
+                   <property name="toolTip">
+                    <string>Save numerical values of the azimuthal wake potential on
+a separate file. They are normalized by the transverse
+offset of the driving beam.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSVWA</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QCheckBox" name="LSVF">
+                   <property name="toolTip">
+                    <string>Save Fourier transform results (impedance, etc.) on a
+separate file. This option is effective only when
+LFFT=.T.. The default value of the logical device
+number assigned to this file is 8.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSVF</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="LMATPR">
+                   <property name="toolTip">
+                    <string>Print cavity shape actually used on line
+printer.</string>
+                   </property>
+                   <property name="text">
+                    <string>LMATPR</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="LPRW">
+                   <property name="toolTip">
+                    <string>Print numerical values of all wake potentials on line
+printer.</string>
+                   </property>
+                   <property name="text">
+                    <string>LPRW</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QCheckBox" name="LSVW">
+                   <property name="toolTip">
+                    <string>Save numerical values of all wake potentials on a separate
+file. When MROT=1, they are normalized by the transverse
+offset of the driving beam. The default value of the logical
+device number assigned to this file is 8.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSVW</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="LSVWT">
+                   <property name="toolTip">
+                    <string>Save numerical values of the transverse wake potential on
+a separate file. They are normalized by the transverse
+offset of the driving beam.</string>
+                   </property>
+                   <property name="text">
+                    <string>LSVWT</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_8">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="plot">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Plot</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QListWidget" name="pList">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="pInfo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="title">
+             <string>top</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QPushButton" name="pUploadButton">
+               <property name="toolTip">
+                <string>Upload data source</string>
+               </property>
+               <property name="statusTip">
+                <string>Upload data source</string>
+               </property>
+               <property name="text">
+                <string>Upload</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pDownloadButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="toolTip">
+                <string>Download data source</string>
+               </property>
+               <property name="statusTip">
+                <string>Download data source</string>
+               </property>
+               <property name="text">
+                <string>Download</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QFrame" name="pFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="settings">
+       <attribute name="title">
+        <string>Settings</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>ABCI binary location</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLineEdit" name="execLocation">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Binary in use</string>
+             </property>
+             <property name="statusTip">
+              <string>Binary in use</string>
+             </property>
+             <property name="text">
+              <string>pytopplot/abci/Linux/abci.exe</string>
+             </property>
+             <property name="readOnly">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="execFindButton">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="toolTip">
+              <string>Select binary</string>
+             </property>
+             <property name="statusTip">
+              <string>Select binary</string>
+             </property>
+             <property name="text">
+              <string>Find</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>App</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="appCloseAction"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="appCloseAction">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit application</string>
+   </property>
+   <property name="statusTip">
+    <string>Quit application (Ctrl+q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="gUploadAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="gDownloadAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </action>
+  <action name="gDrawAction">
+   <property name="text">
+    <string>Draw</string>
+   </property>
+  </action>
+  <action name="jUploadAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="jDownloadAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </action>
+  <action name="jCalculateAction">
+   <property name="text">
+    <string>Calculate</string>
+   </property>
+  </action>
+  <action name="pUploadAction">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="pDownloadAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>Tabs</tabstop>
+  <tabstop>gTable</tabstop>
+  <tabstop>gStyle</tabstop>
+  <tabstop>gDrawButton</tabstop>
+  <tabstop>jTable</tabstop>
+  <tabstop>TITLE</tabstop>
+  <tabstop>LSAV</tabstop>
+  <tabstop>LREC</tabstop>
+  <tabstop>LCPUTM</tabstop>
+  <tabstop>TSOS</tabstop>
+  <tabstop>TMAX</tabstop>
+  <tabstop>ITEST</tabstop>
+  <tabstop>DDR</tabstop>
+  <tabstop>DDZ</tabstop>
+  <tabstop>NR</tabstop>
+  <tabstop>NZ</tabstop>
+  <tabstop>RMARK</tabstop>
+  <tabstop>RZ</tabstop>
+  <tabstop>MROT</tabstop>
+  <tabstop>NBUNCH</tabstop>
+  <tabstop>SIG</tabstop>
+  <tabstop>ISIG</tabstop>
+  <tabstop>RDRIVE</tabstop>
+  <tabstop>BSEP</tabstop>
+  <tabstop>MT</tabstop>
+  <tabstop>NSHOT</tabstop>
+  <tabstop>TPS</tabstop>
+  <tabstop>UBT</tabstop>
+  <tabstop>ZCF</tabstop>
+  <tabstop>ZCT</tabstop>
+  <tabstop>RWAK</tabstop>
+  <tabstop>ZSEP</tabstop>
+  <tabstop>LCFRON</tabstop>
+  <tabstop>LCHIN</tabstop>
+  <tabstop>LNONAP</tabstop>
+  <tabstop>LCBACK</tabstop>
+  <tabstop>LNAPOLY</tabstop>
+  <tabstop>LCRBW</tabstop>
+  <tabstop>LCAVIN</tabstop>
+  <tabstop>LCAVUS</tabstop>
+  <tabstop>LPATH</tabstop>
+  <tabstop>LINTZ</tabstop>
+  <tabstop>LPLW</tabstop>
+  <tabstop>LPLWL</tabstop>
+  <tabstop>LPLWA</tabstop>
+  <tabstop>LPLWT</tabstop>
+  <tabstop>LFFT</tabstop>
+  <tabstop>LFFTL</tabstop>
+  <tabstop>LFFTA</tabstop>
+  <tabstop>LFFTT</tabstop>
+  <tabstop>LSPEC</tabstop>
+  <tabstop>LWNDW</tabstop>
+  <tabstop>LPLE</tabstop>
+  <tabstop>LPLC</tabstop>
+  <tabstop>LPALL</tabstop>
+  <tabstop>NWFUN</tabstop>
+  <tabstop>ALPHA</tabstop>
+  <tabstop>EXPFAC</tabstop>
+  <tabstop>CUTOFF</tabstop>
+  <tabstop>NPLOT</tabstop>
+  <tabstop>LPRW</tabstop>
+  <tabstop>LMATPR</tabstop>
+  <tabstop>LSVW</tabstop>
+  <tabstop>LSVWL</tabstop>
+  <tabstop>LSVWA</tabstop>
+  <tabstop>LSVWT</tabstop>
+  <tabstop>LSVF</tabstop>
+  <tabstop>jCalculateButton</tabstop>
+  <tabstop>pList</tabstop>
+  <tabstop>pInfo</tabstop>
+  <tabstop>execLocation</tabstop>
+  <tabstop>execFindButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
