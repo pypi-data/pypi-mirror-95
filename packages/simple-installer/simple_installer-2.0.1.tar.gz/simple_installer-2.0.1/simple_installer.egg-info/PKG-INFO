@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: simple-installer
+Version: 2.0.1
+Summary: Extendable installer for latest Github repository release.
+Home-page: https://github.com/S0nic014/simple_installer
+Author: Dmitrii Shevchenko
+Author-email: dmitrii.shevchenko96@gmail.com
+License: UNKNOWN
+Description: 
+        # Simple installer
+        
+         ### Extandable installer for Github release zip files.
+        --- 
+        
+        ![Preview](docs/images/examplePreview.gif)
+        
+        ## Installation
+        ---
+        ```
+        pip install simple-installer
+        ```
+        ## Usage example
+        ---
+        - [Maya module installer](/docs/images/example_installer.md)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

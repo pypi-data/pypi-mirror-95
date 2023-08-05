@@ -1,0 +1,13 @@
+README.md
+setup.py
+simple_installer/__init__.py
+simple_installer/common_widgets.py
+simple_installer/installFn.py
+simple_installer/logger.py
+simple_installer/main_dialog.py
+simple_installer/pages.py
+simple_installer.egg-info/PKG-INFO
+simple_installer.egg-info/SOURCES.txt
+simple_installer.egg-info/dependency_links.txt
+simple_installer.egg-info/requires.txt
+simple_installer.egg-info/top_level.txt
