@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: pyclsload
+Version: 1.1
+Summary: importlib wrapper, instantiate class dynamically in one line
+Home-page: https://github.com/smthnspcl/pwnpy
+Author: Pascal Eberlein
+Author-email: pascal@eberlein.io
+License: UNKNOWN
+Description: pyclsload
+        =========
+        
+        easily load classes from source files basically just a wrapper for
+        importlib
+        
+        why?
+        ----
+        
+        .. code:: python
+        
+           # doesn't look
+           from pyclsload import load
+           o = load("somefile.py", "ThisAClass")
+           o.somemethod()
+        
+           # better than
+           from importlib.util import spec_from_file_location, module_from_spec
+           s = spec_from_file_location("ThisAClass", "somefile.py")
+           o = module_from_spec(s)
+           s.loader.exec_module()
+           o.somemethod()
+        
+        install
+        -------
+        .. code:: shell
+        
+            pip3 install pyclsload
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9

@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pyclsload/__init__.py
+pyclsload/__main__.py
+pyclsload.egg-info/PKG-INFO
+pyclsload.egg-info/SOURCES.txt
+pyclsload.egg-info/dependency_links.txt
+pyclsload.egg-info/top_level.txt
