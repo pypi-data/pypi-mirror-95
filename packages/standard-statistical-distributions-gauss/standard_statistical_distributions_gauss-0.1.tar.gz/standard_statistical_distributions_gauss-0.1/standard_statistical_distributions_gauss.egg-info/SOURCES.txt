@@ -1,0 +1,10 @@
+setup.py
+standard_statistical_distributions_gauss/Binomialdistribution.py
+standard_statistical_distributions_gauss/Gaussiandistribution.py
+standard_statistical_distributions_gauss/Generaldistribution.py
+standard_statistical_distributions_gauss/__init__.py
+standard_statistical_distributions_gauss.egg-info/PKG-INFO
+standard_statistical_distributions_gauss.egg-info/SOURCES.txt
+standard_statistical_distributions_gauss.egg-info/dependency_links.txt
+standard_statistical_distributions_gauss.egg-info/not-zip-safe
+standard_statistical_distributions_gauss.egg-info/top_level.txt
