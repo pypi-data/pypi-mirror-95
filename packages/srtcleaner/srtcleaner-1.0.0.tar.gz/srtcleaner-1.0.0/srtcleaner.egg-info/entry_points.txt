@@ -1,0 +1,3 @@
+[console_scripts]
+srtcleaner = srtcleaner:cli
+
