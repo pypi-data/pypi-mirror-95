@@ -1,0 +1,9 @@
+pytest_httpserver/__init__.py,sha256=jP-rPXPvVe7QtTTq-XZqMb5fUOXrDyWORFbzgHLKGqk,333
+pytest_httpserver/httpserver.py,sha256=o3rvcii-c5tE0Pv4etRNH3S6D6m8ebJJe9ZQ89_44Ic,42804
+pytest_httpserver/pytest_plugin.py,sha256=nURtuxbPPrwFuFYx6rN5D1Mr6S57vuFWBq_CZ47k14M,1782
+pytest_httpserver-0.3.8.dist-info/LICENSE,sha256=KUr7ZKG_73p9_Z8ODdU7FI-Tw6CHVhcxNjXJhUzUpak,1069
+pytest_httpserver-0.3.8.dist-info/METADATA,sha256=waMOPbD_8S0DkCRUbNWqergp__s2c0oyQLmwhPaGx_A,5832
+pytest_httpserver-0.3.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_httpserver-0.3.8.dist-info/entry_points.txt,sha256=-CcweFw9xOdDsMC2PCwl9bYoeFW_DKBPxKdZryni3dk,64
+pytest_httpserver-0.3.8.dist-info/top_level.txt,sha256=IpUSIOAVbfXz1BOwvxOPyg5_2-V97HzP-RmOSQ9XSig,18
+pytest_httpserver-0.3.8.dist-info/RECORD,,
