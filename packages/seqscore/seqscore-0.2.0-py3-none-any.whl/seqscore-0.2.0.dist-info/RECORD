@@ -1,0 +1,13 @@
+seqscore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seqscore/conll.py,sha256=veRvYrcXevO6ygG5suUiGGIs2W3_ZVenh7ozJ4Cqf9g,14486
+seqscore/encoding.py,sha256=Vu8meSZaMdBiFX24Pg9DMchjnTSAA11nzyw3O2pEDoE,17448
+seqscore/scoring.py,sha256=TcMII-rOyoAzQZQwOd3EHQSVl6zcnlivBrq094bYEuw,4340
+seqscore/util.py,sha256=9OyY5MpLt0F_fFaQeayEI712p9arrAqmfsQgQ18quVI,219
+seqscore/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seqscore/scripts/seqscore.py,sha256=52ypoyzE_dDyergXrrN6rQflitDohME45ucU5DRqD_g,3399
+seqscore-0.2.0.dist-info/LICENSE,sha256=GhtIRR_jeL866-og-5I4pzWCvPASq4XtppD1zlxUYO4,1075
+seqscore-0.2.0.dist-info/METADATA,sha256=qXNc2PHCX-Huixdjd8zwZ6Vy--H2b-_wPPSClZnL6po,1673
+seqscore-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+seqscore-0.2.0.dist-info/entry_points.txt,sha256=wKEUpN2PoX73L258IbjDiHOI_sUEq75ppZLo8k58nyg,90
+seqscore-0.2.0.dist-info/top_level.txt,sha256=QBHF0EwDA-R55Z4cMMUW_tVly0PckutkR8mb_CBl__Q,9
+seqscore-0.2.0.dist-info/RECORD,,
