@@ -1,0 +1,3 @@
+[console_scripts]
+arrange = arrangepy.main:main
+
