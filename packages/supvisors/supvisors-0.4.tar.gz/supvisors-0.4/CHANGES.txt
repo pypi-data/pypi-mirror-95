@@ -1,0 +1,69 @@
+0.4 (2021-02-14)
+----------------
+
+* Auto-refresh button added to all pages
+
+* Main page reworked by adding a subdivision of application in node boxes
+
+* Fixed exception when exiting using Ctrl+c from shell
+
+* Fixed exception when rules files is not provided
+
+* Documentation updated
+
+
+0.3 (2020-12-29)
+----------------
+
+* Fixed https://github.com/julien6387/supvisors/issues/81
+  When Supvisors logfile is set to AUTO, Supvisors uses the same logger as Supervisor
+
+* Fixed https://github.com/julien6387/supvisors/issues/79
+  When FATAL or UNKNOWN Process state is forced by Supvisors, spawnerr was missing in the listener payload
+
+* Documentation updated
+
+* Useless folder rsc_ref deleted
+
+* 'design' folder moved to a dedicated GitHub repository
+
+* 100% coverage reached in unit tests.
+
+
+0.2 (2020-12-14)
+----------------
+
+* Migration to Python 3.6
+  Versions of dependencies are refreshed, more particularly supervisor 4.2.1
+
+* CSS of Web UI updated / simplified
+
+* New action added to Host Process page of WebUI
+  'tail -f stderr' button
+
+* New information actions added to Application page of WebUI
+  'description' field
+  'clear logs', 'tail -f stdout', 'tail -f stderr' buttons
+
+* Fixed https://github.com/julien6387/supvisors/issues/75
+  Supvisors takes into account username and password of inet_http_server in the supervisord section
+
+* Fixed https://github.com/julien6387/supvisors/issues/17
+  The user selections on the web UI are passed to the URL
+
+* Fixed https://github.com/julien6387/supvisors/issues/72
+  The extra arguments are shared between all Supvisors instances
+
+* Documentation formatting issues fixed
+
+* README.rst replaced with README.md
+
+* Coverage improved in tests
+
+* Docs target added to Travis-CI
+
+
+0.1 (2017-08-11)
+----------------
+
+Initial release.
