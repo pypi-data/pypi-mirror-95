@@ -1,0 +1,9 @@
+{% extends "squelette.html" %}
+
+{% block content %}
+<p class="my-5">
+	La page que vous cherchez n'existe pas.
+	<br />
+	<a href="{{ url_for('index') }}">Page d'accueil</a>
+</p>
+{% endblock %}

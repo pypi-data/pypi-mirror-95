@@ -1,0 +1,31 @@
+{% extends "acte-1/acte-1.html" %}
+
+{% block content %}
+<p>
+	Voici la liste des aventures que les joueurs vont avoir à faire :
+</p>
+
+<ul style="list-style: none;">
+	<li>
+		{{ link("/acte-1/introduction", "Introduction") }}
+	</li>
+	<li>
+		{{ link("/acte-1/aventure-1", "L'Université de Veratis et ses artefacts") }}
+	</li>
+	<li>
+		<!-- {{ link("/acte-1/aventure-2", "De La Fausse Monnaie dérègle le casino de Port Dux") }} -->
+	</li>
+	<li>
+		<!-- {{ link("/acte-1/aventure-3", "La source de Valefan infectée par un drôle de mal") }} -->
+	</li>
+	<li>
+		<!-- {{ link("/acte-1/aventure-4", "De La Fausse Monnaie dérègle le casino de Port Dux") }} -->
+	</li>
+	<li>
+		<!-- {{ link("/acte-1/aventure-5", "De La Fausse Monnaie dérègle le casino de Port Dux") }} -->
+	</li>
+	<li>
+		<!-- {{ link("/acte-1/conclusion", "Epilogue") }} -->
+	</li>
+</ul>
+{% endblock %}
