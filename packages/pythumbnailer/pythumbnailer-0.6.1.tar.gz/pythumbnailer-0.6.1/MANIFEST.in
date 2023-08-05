@@ -1,0 +1,3 @@
+recursive-include pythumbnailer/static/ *
+recursive-include pythumbnailer/templates/ *
+exclude pythumbnailer/static/.ignore
