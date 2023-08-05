@@ -1,0 +1,8 @@
+README.md
+setup.py
+finder-in-files/__init__.py
+finder-in-files/finder-string.py
+finder_string.egg-info/PKG-INFO
+finder_string.egg-info/SOURCES.txt
+finder_string.egg-info/dependency_links.txt
+finder_string.egg-info/top_level.txt
