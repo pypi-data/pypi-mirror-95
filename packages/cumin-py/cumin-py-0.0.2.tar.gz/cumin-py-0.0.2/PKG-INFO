@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: cumin-py
+Version: 0.0.2
+Summary: Python Binding for cumin
+Home-page: https://github.com/cympfh/cumin-py
+Author: cympfh
+Author-email: cympfh@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
