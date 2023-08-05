@@ -1,0 +1,11 @@
+simple_installer/__init__.py,sha256=aR_n-SKZp2yWJw-nrZk-rasXyM57xAL4ZVPmhbIhVzI,152
+simple_installer/common_widgets.py,sha256=AqRdZYNEx00ykBykOSO_j2vOZeECHAZ0PPk1LHXmOFg,2102
+simple_installer/installFn.py,sha256=TNrV4-6Z9W4_URNJc8RRCRT3qhN67Wb25d8U3MqFMjQ,6728
+simple_installer/logger.py,sha256=8o6Oul3oYwjDxzgPcpDSuuzyHIvpv0umK7j-HUtv7u8,4497
+simple_installer/main_dialog.py,sha256=8IvoRFuMq_qT7R9C9refmTaMU1YhBWLxzOfaXeb1SUY,4845
+simple_installer/pages.py,sha256=Dv6t2GimgtQt50nuJagYJh3GF9Poh1ELsVA5JtE6W2o,2812
+simple_installer-2.0.2.dist-info/LICENSE,sha256=zHa8oRzNzm7LC0FDbsGnXnI7mNVeXnAuOmNZtfije_s,1086
+simple_installer-2.0.2.dist-info/METADATA,sha256=d051u-CCxs-2gRj5mY_oSPpbnnwPC2SPwWR72AIXD-s,1174
+simple_installer-2.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_installer-2.0.2.dist-info/top_level.txt,sha256=UVLsatlf9QBxqMzj0ldlIzyrOs7c-TOJ7-FeiHDSOQc,17
+simple_installer-2.0.2.dist-info/RECORD,,
