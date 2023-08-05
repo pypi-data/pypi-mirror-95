@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fenix_library-configuration
+Version: 0.0.2
+Summary: The configuration library for the Fenix Installer
+Home-page: https://gitlab.com/rebornos-team/fenix/libraries/configuration
+Author: Shivanand Pattanshetti
+Author-email: shivanand.pattanshetti@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
