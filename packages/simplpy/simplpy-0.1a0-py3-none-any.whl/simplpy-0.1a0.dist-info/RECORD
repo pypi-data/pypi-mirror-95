@@ -1,0 +1,14 @@
+simplpy/__init__.py,sha256=GD5KUKUBv-NxLIhPOKc3hhtHH0tBlbTPDtfmNcDV86g,118
+simplpy/dict_/__init__.py,sha256=w_QJ9tjL0tdZakpMzauyqhHP3Ol5V2A4SXCwOwlUWyg,39
+simplpy/dict_/dict_func.py,sha256=J-OKbpm2bG4-OAY_OYe2jzOpKrwtab1Cj-rgJBmKtWE,766
+simplpy/list_/__init__.py,sha256=eZavKNSq-Nj-1at1Vk7dZxIPJxR9wObtWX2QuPwIlVM,39
+simplpy/list_/list_func.py,sha256=egoebM6o5Yz_nwpTc-NhSJU5fho1xxsNq_c7LPXDAK0,156
+simplpy/pd_/__init__.py,sha256=hOj6MYBImFkuudipLVsztbgP3uFsqU0selUl9fL5BiQ,35
+simplpy/pd_/pd_func.py,sha256=MF_xpFge5fdS08FeR5TjTK_FNG-GWF4x6bX7FJnJ9rk,89
+simplpy/sklearn_/__init__.py,sha256=5ki7p_EPTt97s_nTmDxTgDWTUsu_4HzOKVXf-vGy1Ng,45
+simplpy/sklearn_/sklearn_func.py,sha256=Y4DFIEXrL1t9ux1UZTFpF-l2kAj43gGTsMPRFae39os,737
+simplpy-0.1a0.dist-info/LICENSE,sha256=73oSK3RWDGwMDTDlpkjG-aaedOyi5jB4OZGjlo7R-Ag,1082
+simplpy-0.1a0.dist-info/METADATA,sha256=RgqvHVvG8t7qEJAelr46mdbnXif6IZFEb7AHNKL1-AA,1067
+simplpy-0.1a0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+simplpy-0.1a0.dist-info/top_level.txt,sha256=Hw5FeXFFhEfBUH99JkxE69QHa2CdV_rh3gju0VQzRoU,8
+simplpy-0.1a0.dist-info/RECORD,,
