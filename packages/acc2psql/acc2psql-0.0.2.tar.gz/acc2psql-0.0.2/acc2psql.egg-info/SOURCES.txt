@@ -1,0 +1,9 @@
+README.md
+setup.py
+acc2psql/__init__.py
+acc2psql/__main__.py
+acc2psql/to_psql.py
+acc2psql.egg-info/PKG-INFO
+acc2psql.egg-info/SOURCES.txt
+acc2psql.egg-info/dependency_links.txt
+acc2psql.egg-info/top_level.txt
