@@ -1,0 +1,3 @@
+[console_scripts]
+location-guessing-game-telegram-bot = location_guessing_game_telegram_bot:_main
+
