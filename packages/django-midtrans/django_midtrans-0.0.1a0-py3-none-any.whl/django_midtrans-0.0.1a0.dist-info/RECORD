@@ -1,0 +1,9 @@
+django_midtrans/__init__.py,sha256=bYmazAcYAgnhOIr0Oh-hLe01Oeob0Y5VBQJWdsQqUgs,1695
+django_midtrans/apps.py,sha256=weIBhkOdBYHUH4diT-FzPAaFIUSrDFyR7woteJKGap8,104
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_adapters.py,sha256=z4B0mag6TS0PSHV5Klr1XkCvYJI2-QE3-xdoNQ8-EiM,121
+django_midtrans-0.0.1a0.dist-info/LICENSE,sha256=ZHXCgba8-i1sSZABoaKzLgQt9FkGNcDeM_r3qCvpxKQ,1072
+django_midtrans-0.0.1a0.dist-info/METADATA,sha256=o_ruWewxqLHG4q1DxFA1tFqBY8mhX47sQzBMdC6mlb4,1195
+django_midtrans-0.0.1a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_midtrans-0.0.1a0.dist-info/top_level.txt,sha256=fuyVLgpF88xy4KUPIhHX3LYWg9fBUywoHHlmfH-4CX4,22
+django_midtrans-0.0.1a0.dist-info/RECORD,,
