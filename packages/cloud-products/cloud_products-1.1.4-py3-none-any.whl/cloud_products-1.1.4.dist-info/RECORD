@@ -1,0 +1,9 @@
+cloud_products/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_products/aws.py,sha256=UMfKOwwW86JD7Yz5YK_NkgQX1wZcJaTkhI3s8o4d89w,8282
+cloud_products/base.py,sha256=QJOiK5rnAi7h9ozdLY-ywKWnFf6IDnx-lYTm8wKC2_Y,2346
+cloud_products/product.py,sha256=RsFGTGuU1f3cTgMpYfiCJp6kBxQDwkTTeB0a6RwP-cs,670
+cloud_products-1.1.4.dist-info/LICENSE,sha256=d_Chw5Y-dcwAiNwwe7eCJqicV5iK1Agl02chCfrruw8,1067
+cloud_products-1.1.4.dist-info/METADATA,sha256=N102vwtELD06Yctl0iLvThdbBq5c7z1vzmM5j0fHznI,5020
+cloud_products-1.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloud_products-1.1.4.dist-info/top_level.txt,sha256=4kePcFBdvyz7OqoitM0DjyId8f_RbvNuFuJLJUNd-hg,15
+cloud_products-1.1.4.dist-info/RECORD,,
