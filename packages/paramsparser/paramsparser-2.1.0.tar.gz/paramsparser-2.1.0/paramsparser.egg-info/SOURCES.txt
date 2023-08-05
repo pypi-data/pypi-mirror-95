@@ -1,0 +1,13 @@
+README.md
+setup.py
+paramsparser/__init__.py
+paramsparser/config2params.py
+paramsparser/dict2params.py
+paramsparser/json2params.py
+paramsparser/paramsbase.py
+paramsparser/yaml2params.py
+paramsparser.egg-info/PKG-INFO
+paramsparser.egg-info/SOURCES.txt
+paramsparser.egg-info/dependency_links.txt
+paramsparser.egg-info/requires.txt
+paramsparser.egg-info/top_level.txt
