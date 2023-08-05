@@ -1,0 +1,10 @@
+README.md
+setup.py
+frappyflaskdataset/__init__.py
+frappyflaskdataset/data_set_api.py
+frappyflaskdataset.egg-info/PKG-INFO
+frappyflaskdataset.egg-info/SOURCES.txt
+frappyflaskdataset.egg-info/dependency_links.txt
+frappyflaskdataset.egg-info/not-zip-safe
+frappyflaskdataset.egg-info/requires.txt
+frappyflaskdataset.egg-info/top_level.txt
