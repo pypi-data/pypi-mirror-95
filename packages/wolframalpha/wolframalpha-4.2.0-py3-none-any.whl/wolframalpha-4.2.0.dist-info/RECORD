@@ -1,0 +1,10 @@
+wolframalpha/__init__.py,sha256=HaKVvmN3HzHWKPKhDIUsVHhf6jo9LRtJrRJkvHOyKgQ,6690
+wolframalpha/pmxbot.py,sha256=d559vXKEa3B_rmjnz1Htrjz3Z-T98Re9cvPr95widM4,391
+wolframalpha/test_client.py,sha256=1pRwPQD-mBoObhk0TupZx97aRZ1eEoDoFFHNQCTJCeU,1437
+wolframalpha/test_pmxbot.py,sha256=XghZOQeikot6cNZpTZK_Na9JQ169-IBrW_FE3TKqomY,336
+wolframalpha-4.2.0.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+wolframalpha-4.2.0.dist-info/METADATA,sha256=04jLZAHH0ivEJNth20R98wCO9_nQmhEX8cM8t-mjf7Y,2314
+wolframalpha-4.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wolframalpha-4.2.0.dist-info/entry_points.txt,sha256=eQR_fDm0USQowfNbt2ScznGRr8qdRy9xDH7OM_7IYzg,55
+wolframalpha-4.2.0.dist-info/top_level.txt,sha256=Ye3im99vDSGw-rTIjZVmc3G3tu6Cr2Or_m4hNJb3lOE,18
+wolframalpha-4.2.0.dist-info/RECORD,,
