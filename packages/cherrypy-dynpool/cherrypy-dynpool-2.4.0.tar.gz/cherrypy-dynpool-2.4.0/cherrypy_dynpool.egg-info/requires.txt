@@ -1,0 +1,5 @@
+CherryPy>=3.2
+dynpool<3.0,>=2.0
+
+[testing]
+pytest
