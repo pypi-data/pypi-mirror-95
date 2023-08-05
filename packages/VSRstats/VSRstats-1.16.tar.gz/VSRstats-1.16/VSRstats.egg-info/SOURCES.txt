@@ -1,0 +1,11 @@
+README.md
+setup.py
+VSRstats/__init__.py
+VSRstats/frequency_domain.py
+VSRstats/nonlinear.py
+VSRstats/time_domain.py
+VSRstats.egg-info/PKG-INFO
+VSRstats.egg-info/SOURCES.txt
+VSRstats.egg-info/dependency_links.txt
+VSRstats.egg-info/requires.txt
+VSRstats.egg-info/top_level.txt
