@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyslab/__init__.py
+pyslab/board.py
+pyslab/generator.py
+pyslab/solver.py
+pyslab/validator.py
+pyslab.egg-info/PKG-INFO
+pyslab.egg-info/SOURCES.txt
+pyslab.egg-info/dependency_links.txt
+pyslab.egg-info/requires.txt
+pyslab.egg-info/top_level.txt

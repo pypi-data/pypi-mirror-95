@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyslab
+Version: 0.1.0
+Summary: Play Your Sudoku Like A Boss
+Home-page: https://github.com/benhorsburgh/pyslab
+Author: Ben Horsburgh
+License: Apache Software License (Apache 2.0)
+Description: # pyslab
+Keywords: Sudoku
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
