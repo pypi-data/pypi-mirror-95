@@ -1,0 +1,12 @@
+README.md
+setup.py
+XlsxPandasFormatter.egg-info/PKG-INFO
+XlsxPandasFormatter.egg-info/SOURCES.txt
+XlsxPandasFormatter.egg-info/dependency_links.txt
+XlsxPandasFormatter.egg-info/not-zip-safe
+XlsxPandasFormatter.egg-info/requires.txt
+XlsxPandasFormatter.egg-info/top_level.txt
+xlsxpandasformatter/__init__.py
+xlsxpandasformatter/_version.py
+xlsxpandasformatter/xlsxpandasformatter.py
+xlsxpandasformatter/xlsxpandasformatter_example.py
