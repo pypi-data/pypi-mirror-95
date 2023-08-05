@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rpyg
+Version: 0.2
+Summary: A Python3 library implementation of a general role playing game system
+Home-page: https://github.com/Ayumu098/rpg
+Author: Ayumu098
+Author-email: stephen.singer.098@gmail.com
+License: UNKNOWN
+Description: # Guidelines
+        
+        Welcome to this mess
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
