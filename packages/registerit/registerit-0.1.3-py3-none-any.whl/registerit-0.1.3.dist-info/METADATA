@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: registerit
+Version: 0.1.3
+Summary: Register package names on PyPI
+Home-page: https://github.com/alexioannides/registerit
+Author: Alex Ioannides
+Author-email: alex@bodyworkml.com
+License: MIT
+Project-URL: Source, https://github.com/alexioannides/registerit
+Project-URL: Documentation, https://github.com/alexioannides/registerit
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+Requires-Dist: twine (==3.3.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: wheel (>=0.36.2)
+Provides-Extra: dev
+Requires-Dist: flake8 (==3.8.4) ; extra == 'dev'
+Requires-Dist: mypy (==0.800) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'dev'
+Requires-Dist: tox (==3.21.4) ; extra == 'dev'
+Requires-Dist: twine (==3.3.0) ; extra == 'dev'
+
+<div align="center">
+<img src="https://dev-project-media.s3.eu-west-2.amazonaws.com/registerit-logo-github.png"/>
+</div>
+
+<div align="center">
+<img src="https://img.shields.io/pypi/pyversions/registerit"/>
+<img src="https://img.shields.io/pypi/v/registerit.svg?label=PyPI&logo=PyPI&logoColor=white&color=success"/>
+</div>
+
+---
+
+## Register Package Names on PyPI
+
+* Have an idea for a Python package?
+* Thought of a great name?
+* Register it on PyPI, before someone else does!
+
+A tool that creates a minimal Python package with your chosen name and uploads it to PyPI, registering it for you.
+
+## Install
+
+```shell
+$ pip install registerit
+```
+
+## Run
+
+If you don't care about assigning your name and contact details to the package, then use
+
+```shell
+$ registerit MY_COOL_PKG --username PYPI_USERNAME --password PYPI_PASSWORD
+```
+
+If you do, then
+
+```shell
+$ registerit MY_COOL_PKG \
+    --username PYPI_USERNAME \
+    --password PYPI_PASSWORD \
+    --author Me \
+    --email me@me.com \
+    --url www.me.com
+```
+
+
