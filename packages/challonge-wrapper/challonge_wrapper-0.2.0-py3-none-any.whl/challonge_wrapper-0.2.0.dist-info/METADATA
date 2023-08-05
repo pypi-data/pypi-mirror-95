@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: challonge-wrapper
+Version: 0.2.0
+Summary: Challonge REST API wrappers
+Home-page: https://github.com/Impasse52/challonge-python-wrapper
+Author: Giuseppe Termerissa
+Author-email: linkohprismriver@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# challonge-python-wrapper
+An OOP approach to Challonge's REST API; WIP.
+
+## Todo
+- write an actual README
+- implement POST operations
+
+

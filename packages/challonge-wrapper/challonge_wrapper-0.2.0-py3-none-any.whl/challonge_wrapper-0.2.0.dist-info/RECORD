@@ -1,0 +1,10 @@
+challonge_wrapper/__init__.py,sha256=aIz6U8pFvjyBJSQR11PzTv6cqoiuP4fTQpLqZqRZjMU,298
+challonge_wrapper/challonge_helpers.py,sha256=MqV88Kkvuj9zUKUEy03R1b102GCIvwQJZswFqTr3isw,1985
+challonge_wrapper/challonge_match.py,sha256=i98O9c13-G9LTDm3xTxyFmIgUx9l6NEXlAzDsjaOcok,4883
+challonge_wrapper/challonge_participant.py,sha256=X0KtFDGNkqG0ZXDE15jUxAZRnlj1g0zq-sQwdgy7ylE,1692
+challonge_wrapper/challonge_tourney.py,sha256=GvVGGh3TxTn3SFOQzxBYG58yRZ-64WUIvGtHG-dReCY,3367
+challonge_wrapper-0.2.0.dist-info/LICENSE,sha256=FUu9-VxHG2o8RHNsKP1EHdzdH4t5jNq59buqPoikMzM,1095
+challonge_wrapper-0.2.0.dist-info/METADATA,sha256=2G3BSeZW56cpymXcK5NvDMD1_l-vUv4jc9bvmWAIXhU,465
+challonge_wrapper-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+challonge_wrapper-0.2.0.dist-info/top_level.txt,sha256=9GD2LcfXMfjYaXrIcP_Ed92twy60btu-hUQRJcNHFZU,18
+challonge_wrapper-0.2.0.dist-info/RECORD,,
