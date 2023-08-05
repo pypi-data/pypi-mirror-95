@@ -1,0 +1,3 @@
+[console_scripts]
+duckiter = duckiter.main:main
+
