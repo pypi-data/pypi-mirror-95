@@ -1,0 +1,3 @@
+[console_scripts]
+water = water.__main__:main
+
