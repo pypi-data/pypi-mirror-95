@@ -1,0 +1,11 @@
+sphinx>=3.0
+better-apidoc
+six    # better-apidoc requires it but it doesn't list it (bug)
+sphinx-autodoc-typehints
+sphinx-autorun
+guzzle_sphinx_theme
+sphinxcontrib_trio
+
+# for running the code in the examples
+ipython
+numpy

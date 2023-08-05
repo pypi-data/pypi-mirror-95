@@ -1,0 +1,14 @@
+numpy
+tqdm
+overrides
+tabulate
+
+[dev]
+tox
+pytest
+pytest-cov
+coverage
+flake8
+mypy
+twine
+bump2version
