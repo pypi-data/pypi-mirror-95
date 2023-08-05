@@ -1,0 +1,16 @@
+numerical_analysis/__init__.py,sha256=qucSTKPW5rABcDbv3tLESsFVoCqqpuRhk71hnTeBlCY,78
+numerical_analysis/dependencies/__init__.py,sha256=rYfy6RVPlyaLPJzVLNUvF9Evf0Xl3n7qgf3BajbG5IU,76
+numerical_analysis/dependencies/geometry.py,sha256=ydEw0Ub4rIwJ-unup1NlJT_4eKmwX66r9_sWCoPy5ZM,2236
+numerical_analysis/dependencies/polynomial.py,sha256=NJxFsE5DzUKUH5zn94B24e3r9mI0GFjpFP59jLBs2-E,2074
+numerical_analysis/integration/__init__.py,sha256=ar8boPbP-k98z0C6MiDM1Nl4YRDXE_-KBjHNjPQU_Qk,28
+numerical_analysis/integration/integration.py,sha256=Z9bOL9Qrdl6bQqX9nAMstDrXHJtIChi-_EbEX4QqELg,2302
+numerical_analysis/root_finding/__init__.py,sha256=xy8LDvS12m7Jv6Pp82Em-khKWz9M_wVbbk1BdUYeQks,29
+numerical_analysis/root_finding/root_finding.py,sha256=w3flZ_3REfpOtZT2WjmwIiTB1uOWagP1ZpocR31zm58,1368
+numerical_analysis/splines/__init__.py,sha256=Laoa3A2bMZlTYvn-SJo67AgbSLwwSO5ZDpJThkjtEFc,94
+numerical_analysis/splines/bezier.py,sha256=ij7_gWPCeyfxeJfi3e_-rCXRtYBAzLQ2hBIfe-KB-14,3080
+numerical_analysis/splines/composite_quadratic_bezier.py,sha256=QTgko_AtZQSNrF95pw-9jidh6CRA_Ebqo31QOKiAiNE,3076
+numerical_analysis-0.0.3.dist-info/LICENSE,sha256=YiPLdJM_vmY6-uCVUVpQEHxZ5SYMYWAUUP69hkDdYS4,1559
+numerical_analysis-0.0.3.dist-info/METADATA,sha256=-lEoOnJRBes5Qr_cXzzoEfHGTf6ebfcJDqcpx46EML4,436
+numerical_analysis-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+numerical_analysis-0.0.3.dist-info/top_level.txt,sha256=nsLz07leXL1_mQeJqkJK0P2eB8xUU-z7LkWEn1o3smI,19
+numerical_analysis-0.0.3.dist-info/RECORD,,
