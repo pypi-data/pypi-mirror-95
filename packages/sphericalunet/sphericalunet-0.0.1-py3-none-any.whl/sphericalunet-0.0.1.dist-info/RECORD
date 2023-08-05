@@ -1,0 +1,16 @@
+sphericalunet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphericalunet/layers.py,sha256=4__HxUvN2wrY2uX_K5ok-RfXeWH2bsb9jfBP8OPbyKM,8122
+sphericalunet/model.py,sha256=YWV2zIub5yw32T_HZRaH_dshh8ArrGdPR4AXw61WLH4,10815
+sphericalunet/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphericalunet/utils/create_reg_parameters.py,sha256=RsSDuFlR5y8H_45hDIfPkGi8TOO0yt_XcJpc3Aghm6M,5209
+sphericalunet/utils/groupwise_reg.py,sha256=grJihezC106o5EHr2XkV8hGkzTTtoOQh2x0gfmfPwsI,7712
+sphericalunet/utils/initial_rigid_align.py,sha256=ASz3E0oHo9tehUqxgQtUnRYRv2bmIQQImlynXlXQ5jQ,4004
+sphericalunet/utils/interp_numpy.py,sha256=ZF6vFP4dxdng6tDDZb80afV4NFSPJ2vV6vWDKwT7qHs,14716
+sphericalunet/utils/interp_torch.py,sha256=DHwDmYZRj-ew_h4sUob0QnI4p4x323zNo3wQML0bew4,35248
+sphericalunet/utils/utils.py,sha256=tXI5MOrRBznJOr0_yyTqqPF4oYYaRpnbyk87v1r79Ac,14507
+sphericalunet/utils/vtk.py,sha256=oLwpeg2LCy5cgPJpHjPKtemuDG9XMpSeOFNf1C4Z430,6219
+sphericalunet-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+sphericalunet-0.0.1.dist-info/METADATA,sha256=DajFkyJ8uBjvLg70pZYjB6DPa2viTFu_3opGjIIQw4o,543
+sphericalunet-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sphericalunet-0.0.1.dist-info/top_level.txt,sha256=Mm4cvKgzetInCD8oBRY6ZwNitXP4ismBl7-rvJrxvRo,14
+sphericalunet-0.0.1.dist-info/RECORD,,
