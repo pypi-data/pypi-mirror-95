@@ -1,0 +1,10 @@
+torgrims/__init__.py,sha256=TEGa5SQOzfGjsvd5V4XiZnGTnpL_vOyzDFLO1zCjoQ8,279
+torgrims/aml.py,sha256=K2SJAsnBxjUqDy2w40fB8OaD1_GL19mlSPA4N_jI3-8,3463
+torgrims/descstat.py,sha256=8LUumdmc9YDDHUmv5xsohnp1TOHN0MelB29BYPlyuFY,6460
+torgrims/helpers.py,sha256=rG-3dh3zH_FwVtQL_2ZJXgwlM7n6b-FBJT_Cea53FmY,4340
+torgrims/transformers.py,sha256=GPVf8v6kfbp5e0AwxVc36ofDYwPhVDvFnD4eWquftW8,9623
+torgrims-0.0.5.dist-info/LICENCE,sha256=YOBfCav3EGtaYg0uNmQ8Kb9fMnkV41IfqebWTKCGe_8,1503
+torgrims-0.0.5.dist-info/METADATA,sha256=uk085imHniI_f48xxyyEH3_9vN3bL9IW7jXPDVItmAQ,383
+torgrims-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torgrims-0.0.5.dist-info/top_level.txt,sha256=qEnlyCgOiZKMjgMIQHGxnOFxYJhHOGGsa3TbLp3SRAA,9
+torgrims-0.0.5.dist-info/RECORD,,
