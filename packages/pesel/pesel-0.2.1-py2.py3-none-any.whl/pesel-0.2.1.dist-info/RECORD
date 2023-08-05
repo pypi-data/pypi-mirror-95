@@ -1,0 +1,10 @@
+pesel/__init__.py,sha256=5A_wl4zDNCGOe4CYrxkEu26YWHtjkQWrDzng7ryW_GI,104
+pesel/__main__.py,sha256=POLEPyAvZMgfAD7tEHPtD7-odWpfXBfHFk-UmElc8DU,34
+pesel/main.py,sha256=2UGTrptC_poAOu7vksybkFR15LxLzras58MvINAWI8U,1518
+pesel/pesel.py,sha256=tikvyoX-bZ01wNMSKpea8QEFZyqM0joQZYQeTUDn9F4,6376
+pesel-0.2.1.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+pesel-0.2.1.dist-info/METADATA,sha256=JgiUjGlVv3ejpNSgBFlXkJyNj_WKH04MwzVL5FAOYoc,1817
+pesel-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pesel-0.2.1.dist-info/entry_points.txt,sha256=cgZpOMVTLL9mzWuyX1zxsPAwXY4kfsJ0AQ_28G47wQU,42
+pesel-0.2.1.dist-info/top_level.txt,sha256=IWLg9pmONI2QcnwvcywNxkJc96HrTJTCdIAOq5iaXT4,6
+pesel-0.2.1.dist-info/RECORD,,
