@@ -1,0 +1,9 @@
+flask_minio/__init__.py,sha256=b2NVR6qo9zFb2Zi1SbjDO-q24oapDX65uqsg6NUzGcw,41
+flask_minio/extension.py,sha256=IbQO5BFmll-ER4WazM8DTpGEU9RoV-GLp5XCODr9cvY,1394
+flask_minio/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_minio/tests/test_extension.py,sha256=WzeNuJ3lvxpGyywnRvx7e6EVAlpA7COByhoPH5qmnmM,1187
+flask_minio_factory-0.1.1.dist-info/LICENSE.txt,sha256=56SCRpcVkKCc54VQTcpuDsd5Z_caaXI4F7NpxBDAp4s,1079
+flask_minio_factory-0.1.1.dist-info/METADATA,sha256=wodGTFngYxY8DwURZF0qGf0dUN2su5uO3AGLP9cd6do,2719
+flask_minio_factory-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flask_minio_factory-0.1.1.dist-info/top_level.txt,sha256=x4aC960R5Duqfuz0GPAEDWD9o68n9tVeXimENfQ8C4k,12
+flask_minio_factory-0.1.1.dist-info/RECORD,,
