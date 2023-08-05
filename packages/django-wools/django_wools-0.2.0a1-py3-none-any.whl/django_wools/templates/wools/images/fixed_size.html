@@ -1,0 +1,21 @@
+{% if base_url %}
+<picture>
+    {% for type, source in sources.items %}
+    <source
+        type="image/{{ type }}"
+        srcset="
+            {% for size in source.set %}
+            {{ size.rendition.url }} {{ size.density }}x{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        "
+    >
+    {% endfor %}
+
+    <img
+        src="{{ base_url }}"
+        alt="{{ alt }}"
+        width="{{ size.width }}"
+        height="{{ size.height }}"
+    >
+</picture>
+{% endif %}
