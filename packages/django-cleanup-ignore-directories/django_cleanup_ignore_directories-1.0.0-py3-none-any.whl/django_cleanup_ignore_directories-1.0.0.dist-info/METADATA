@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: django-cleanup-ignore-directories
+Version: 1.0.0
+Summary: Extension of the django-cleanup project v4.0.0. Allows ignoring specified user directories
+Home-page: https://github.com/MausamGaurav/django_cleanup_ignore_directories
+License: UNKNOWN
+
+# Django Cleanup Ignore Directories
+
+
