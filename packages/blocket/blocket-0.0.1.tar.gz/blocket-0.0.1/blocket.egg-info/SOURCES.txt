@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+blocket/__init__.py
+blocket.egg-info/PKG-INFO
+blocket.egg-info/SOURCES.txt
+blocket.egg-info/dependency_links.txt
+blocket.egg-info/top_level.txt
