@@ -1,0 +1,11 @@
+README.md
+setup.py
+odinwolf.egg-info/PKG-INFO
+odinwolf.egg-info/SOURCES.txt
+odinwolf.egg-info/dependency_links.txt
+odinwolf.egg-info/entry_points.txt
+odinwolf.egg-info/not-zip-safe
+odinwolf.egg-info/requires.txt
+odinwolf.egg-info/top_level.txt
+py_pkg/__init__.py
+py_pkg/__version__.py
