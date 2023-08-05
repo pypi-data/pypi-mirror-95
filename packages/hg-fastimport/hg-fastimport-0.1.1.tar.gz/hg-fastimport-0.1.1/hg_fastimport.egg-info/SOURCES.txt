@@ -1,0 +1,17 @@
+README.rst
+setup.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/__init__.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/hgechoprocessor.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/hgimport.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/__init__.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/commands.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/dates.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/errors.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/helpers.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/parser.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/processor.py
+/home/roy/src/hg/hg-fastimport/hgext3rd/fastimport/vendor/python_fastimport/reftracker.py
+hg_fastimport.egg-info/PKG-INFO
+hg_fastimport.egg-info/SOURCES.txt
+hg_fastimport.egg-info/dependency_links.txt
+hg_fastimport.egg-info/top_level.txt
