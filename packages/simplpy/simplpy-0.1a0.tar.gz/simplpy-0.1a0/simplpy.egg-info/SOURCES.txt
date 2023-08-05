@@ -1,0 +1,16 @@
+README.md
+setup.py
+simplpy/__init__.py
+simplpy.egg-info/PKG-INFO
+simplpy.egg-info/SOURCES.txt
+simplpy.egg-info/dependency_links.txt
+simplpy.egg-info/requires.txt
+simplpy.egg-info/top_level.txt
+simplpy/dict_/__init__.py
+simplpy/dict_/dict_func.py
+simplpy/list_/__init__.py
+simplpy/list_/list_func.py
+simplpy/pd_/__init__.py
+simplpy/pd_/pd_func.py
+simplpy/sklearn_/__init__.py
+simplpy/sklearn_/sklearn_func.py
