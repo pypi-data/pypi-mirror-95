@@ -1,0 +1,15 @@
+README.md
+setup.py
+pywater.egg-info/PKG-INFO
+pywater.egg-info/SOURCES.txt
+pywater.egg-info/dependency_links.txt
+pywater.egg-info/entry_points.txt
+pywater.egg-info/not-zip-safe
+pywater.egg-info/requires.txt
+pywater.egg-info/top_level.txt
+water/__init__.py
+water/__main__.py
+water/atexit_handler.py
+water/display.py
+water/monitor.py
+water/queue.py

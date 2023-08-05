@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: pywater
+Version: 1.0.2
+Summary: water - watch execute repeat
+Home-page: http://github.com/matutter/water
+Author: Mathew Utter
+Author-email: mcutter.svc@gmail.com
+License: MIT
+Description: # water
+        
+        water is a tool to help develop python projects by executing build tasks when
+        file changes are detected.
+        
+        water intends to have feature parity to [nodemon][nodemon], a similar tool for
+        the NodeJS ecosystem, but provide those features within a python toolchain. To
+        use `water` run your script or module as `water [script or module]` or run
+        `water --help` for advanced usage.
+        
+        File monitoring for water is provided by [watchdog][watchdog] which provides its
+        own shell-utility, [watchmedo][watchmedo].
+        
+        water is currently in beta.
+        
+        [nodemon]: https://www.npmjs.com/package/nodemon
+        [watchdog]: https://github.com/gorakhargosh/watchdog
+        [watchmedo]: https://github.com/gorakhargosh/watchdog#shell-utilities
+        
+        # Installation
+        
+        Clone `water` with git or install it using [pip][pip] (recommended):
+        
+        ```bash
+        pip install pywater
+        ```
+        
+        [pip]: https://packaging.python.org/tutorials/installing-packages/#use-pip-for-installing
+        
+        # Usage
+        
+        water will bootstrap your module or script with the arguments you normally pass
+        to it:
+        
+        ```bash
+        water [script or module] [args]
+        ```
+        
+        For CLI options, use `-h` or `--help`:
+        
+        ```bash
+        water -h
+        ```
+        
+        Using water is simple. It will guess if you are running a module or python
+        script and adjust the command-line arguments accordingly. To disable this
+        feature, add the `-n` (`--no-guess`) option.
+        
+        ```bash
+        # Executes `script.py`
+        water -n script.py
+        
+        # Executes `python3 script.py`
+        water script.py
+        
+        # Does not try to guess command
+        water node server.js
+        ```
+        
+        water runs scripts the python interpreter of the environment it is installed in
+        (`sys.executable`).
+Keywords: python filesystem monitoring scripting task automation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: Microsoft :: Windows :: Windows Vista
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Requires: ansicolors
+Requires: click
+Requires: watchdog
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
