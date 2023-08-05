@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: distributions-suhongkim11
+Version: 0.1
+Summary: Gaussian distributions
+Home-page: UNKNOWN
+Author: Suhong Kim
+Author-email: suhongkim11@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
