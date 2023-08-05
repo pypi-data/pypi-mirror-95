@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dessia-api-client
+Version: 0.2.8
+Summary: Python client to interact with DessiA API
+Home-page: UNKNOWN
+Author: DessiA Technologies
+Author-email: root@dessia.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyJWT (>=2.0.0)
+Requires-Dist: requests
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
