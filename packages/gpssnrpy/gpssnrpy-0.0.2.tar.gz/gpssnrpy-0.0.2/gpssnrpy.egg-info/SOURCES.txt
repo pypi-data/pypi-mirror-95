@@ -1,0 +1,12 @@
+README.md
+setup.py
+gpssnrpy/__init__.py
+gpssnrpy/gpssnr.f
+gpssnrpy/gpssnr_cl.py
+gpssnrpy/test.py
+gpssnrpy.egg-info/PKG-INFO
+gpssnrpy.egg-info/SOURCES.txt
+gpssnrpy.egg-info/dependency_links.txt
+gpssnrpy.egg-info/entry_points.txt
+gpssnrpy.egg-info/requires.txt
+gpssnrpy.egg-info/top_level.txt
