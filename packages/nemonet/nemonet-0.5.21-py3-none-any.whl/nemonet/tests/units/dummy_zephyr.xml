@@ -1,0 +1,19 @@
+<graph>
+    <nodes>
+        <node name="selenium"></node>
+        <node name="phrase"></node>
+        <node name="waiting"></node>
+    </nodes>
+    <edges>
+        <edge from="selenium" to="phrase"></edge>
+        <edge from="phrase" to="waiting"></edge>
+    </edges>
+    <actions>
+        <action nodename="selenium" type="OPENURL" value="https://www.selenium.dev/" xpath=""></action>
+        <action nodename="phrase" type="TEXTABLE-ENTER" value="computer vision" xpath="//*[@id='gsc-i-id1']"></action>
+        <action nodename="waiting" type="WAIT" value="5" xpath=""></action>
+    </actions>
+    <plugin>
+        <zephyr description="Automatische test: selenium-dev" id="FORE-352" project="FORE" summary="Automatische test: selenium-dev"></zephyr>
+    </plugin>
+</graph>
