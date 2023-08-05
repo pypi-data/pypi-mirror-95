@@ -1,0 +1,8 @@
+README.md
+setup.py
+hellorwid/__init__.py
+hellorwid/main.py
+hellorwid.egg-info/PKG-INFO
+hellorwid.egg-info/SOURCES.txt
+hellorwid.egg-info/dependency_links.txt
+hellorwid.egg-info/top_level.txt
