@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: pyrexx
+Version: 0.4.3
+Summary: Python library that enables parsing and analysis of REXX source code
+Home-page: UNKNOWN
+Author: Guilherme Cartier
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
