@@ -1,0 +1,10 @@
+gsvi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gsvi/catcodes.py,sha256=3LqDymdtbEUeVn6vSDfTCTLp6Jw_Zvp7cr7hO593I8o,537
+gsvi/connection.py,sha256=rXKyx5Y0t8DQ29DQCyu8dgh4aOfzNVr04OWgPVHnxtM,11683
+gsvi/related.py,sha256=z7cUrjZuMCtbQeQI8spVqny_bu18hGMvEmNUDEnKBDQ,7216
+gsvi/timeseries.py,sha256=ZvYOM_JLS3HTHqRsNhX0Kny-zLHZElOve8hlUpONMMM,14452
+gsvi-0.2.1.dist-info/LICENSE,sha256=TQb5naMKDq5hroIQgpgmJttoxRv4yeBN7cjt3peWcyQ,1072
+gsvi-0.2.1.dist-info/METADATA,sha256=OovNktSivQqKxt1dfVv6hl961PikmPlTIoDg1Kc_eGk,5421
+gsvi-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gsvi-0.2.1.dist-info/top_level.txt,sha256=9Iw0bwwYnQ9AQ-o1dWDzWXyj9tNGR5YtfqqxUFjOQ5Y,5
+gsvi-0.2.1.dist-info/RECORD,,
