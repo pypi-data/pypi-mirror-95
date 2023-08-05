@@ -1,0 +1,9 @@
+README.md
+setup.py
+pdf-tables/pdftables
+pdf-tables/text_to_tables.py
+pdf_tables.egg-info/PKG-INFO
+pdf_tables.egg-info/SOURCES.txt
+pdf_tables.egg-info/dependency_links.txt
+pdf_tables.egg-info/requires.txt
+pdf_tables.egg-info/top_level.txt
