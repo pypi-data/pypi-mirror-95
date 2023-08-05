@@ -1,0 +1,10 @@
+README.md
+setup.py
+xialib_gcs/__init__.py
+xialib_gcs/gcs_list_archiver.py
+xialib_gcs/gcs_storer.py
+xialib_gcs.egg-info/PKG-INFO
+xialib_gcs.egg-info/SOURCES.txt
+xialib_gcs.egg-info/dependency_links.txt
+xialib_gcs.egg-info/requires.txt
+xialib_gcs.egg-info/top_level.txt
