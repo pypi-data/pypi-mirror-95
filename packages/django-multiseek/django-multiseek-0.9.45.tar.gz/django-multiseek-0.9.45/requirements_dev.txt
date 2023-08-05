@@ -1,0 +1,10 @@
+pytest-django
+pytest-xdist
+pytest-splinter
+pytest-cov
+pytest-pythonpath
+coveralls
+
+mock
+model_bakery
+psycopg2-binary
