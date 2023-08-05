@@ -1,0 +1,10 @@
+.gitignore
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/main.yml
+vquesrs/__init__.py
+vquesrs.egg-info/PKG-INFO
+vquesrs.egg-info/SOURCES.txt
+vquesrs.egg-info/dependency_links.txt
+vquesrs.egg-info/top_level.txt
