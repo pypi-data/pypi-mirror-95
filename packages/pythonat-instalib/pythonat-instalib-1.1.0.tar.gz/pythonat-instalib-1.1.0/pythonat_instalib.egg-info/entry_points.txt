@@ -1,0 +1,3 @@
+[console_scripts]
+pyinstalib = pythonatinstalib.__main__:main
+

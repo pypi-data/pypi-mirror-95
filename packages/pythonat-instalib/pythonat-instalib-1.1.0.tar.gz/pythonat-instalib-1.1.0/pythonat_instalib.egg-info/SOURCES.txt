@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pythonat_instalib.egg-info/PKG-INFO
+pythonat_instalib.egg-info/SOURCES.txt
+pythonat_instalib.egg-info/dependency_links.txt
+pythonat_instalib.egg-info/entry_points.txt
+pythonat_instalib.egg-info/requires.txt
+pythonat_instalib.egg-info/top_level.txt
+pythonatinstalib/__init__.py
+pythonatinstalib/__main__.py
+pythonatinstalib/config.txt
+pythonatinstalib/pyinstatool.py

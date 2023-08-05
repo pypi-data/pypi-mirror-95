@@ -1,0 +1,43 @@
+
+
+Author : Eng. Nasser AlOstath
+nasser@dotslashhack.io
+pythonatinstagramtool, is a simple library/bot developed by The CEO of www.dotslashhack.io for educational perposes as an asset code to an article written in arabic for www.pythonat.com that talks about writing and uploading a user built python package to pypi.org so that it can be installed using pip.
+
+this library is opensource that yields to the MIT license.
+
+for more information, please check www.pythonat.com or www.dotslashhack.io to contact the author
+
+this library is build mainly on top of selenium and webdriver-manager
+
+the webdriver-manager library is usefull because it will automatically find and download the suitable browser webdriver depending on it’s version and OS.
+
+NOTE:
+
+it is always better to keep you instagram credentials in a separate file and import them here
+
+
+## installation
+```
+pip install pythonat-instalib
+```
+
+## usage
+
+```
+# importing username and password of instagram account from a separate auth.py file
+from auth import username,password
+
+#creating a bot instace with credentials
+bot = Bot("chrome",username,password)
+
+#searching using a keyword
+bot.find("#plymouthroadrunner")
+
+# getting images and posts
+posts, images = bot.get_posts(10)
+
+# creating a folder of downloaded images
+bot.download_pics_from_page(images,"./plymouthroadrunner","Roady")
+
+```

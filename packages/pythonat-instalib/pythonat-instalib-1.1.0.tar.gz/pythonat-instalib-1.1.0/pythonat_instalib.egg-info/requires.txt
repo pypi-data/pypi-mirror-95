@@ -1,0 +1,7 @@
+os
+pynput
+selenium
+sys
+time
+webdriver-manager
+wget
