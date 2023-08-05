@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pizza_slice/__init__.py
+pizza_slice/module1.py
+pizza_slice.egg-info/PKG-INFO
+pizza_slice.egg-info/SOURCES.txt
+pizza_slice.egg-info/dependency_links.txt
+pizza_slice.egg-info/requires.txt
+pizza_slice.egg-info/top_level.txt
