@@ -1,0 +1,10 @@
+indep_free/cli.py,sha256=OsZFKgSbabMvPdj1nJC358pVT6xgBZy-DNbbD66m9gY,253
+indep_free/downloader.py,sha256=I6NojJJL8l0AizMlwn6ghZWqm-cAkJdqNPCB-qfXstM,564
+indep_free/mailer.py,sha256=LQweRkjQGwQGlYlvfbuHHizuSpnXXw1waRGK3b_GIRk,537
+indep_free/manager.py,sha256=hLJKTICEdqa8yJ83li-PRQyHIUTBL3nC6Hfgqvw0a6Y,997
+indep_free/utils.py,sha256=w06AqkDj5CCVKraiaO4G7GGwh_KgSD-wXXb3KvH-ioY,150
+indep_free-0.1.0.dist-info/entry_points.txt,sha256=fyxgz2-jYh8dQMM7fXrj4iOFhnP4AbTQD3pmXrp8Qec,50
+indep_free-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+indep_free-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+indep_free-0.1.0.dist-info/METADATA,sha256=JheKoyABpBbz3B8FQgYd37A-mh8hshRC2o0LFgPwuYo,600
+indep_free-0.1.0.dist-info/RECORD,,
