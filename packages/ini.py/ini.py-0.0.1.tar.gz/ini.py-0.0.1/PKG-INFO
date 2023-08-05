@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ini.py
+Version: 0.0.1
+Summary: a lightweight ini parser
+Home-page: https://github.com/husseinraed/ini.py
+Author: Hussein Raed
+Author-email: me@husseinraed.cf
+License: UNKNOWN
+Description: # a lightweight ini parser
+        
+        > converts an ini file to a python dictionary
+        
+        ## example ini file
+        ```ini
+        ; main section
+        [section]
+        key = value
+        key2 = "value2"
+        key3 = 'value3'
+        ```
+        
+        ## reading it using ini.py
+        ```py
+        import ini
+        
+        text = open('config.ini', 'r')
+        
+        config = ini.parse(text)
+        
+        section = config['section']
+        
+        print(section['key'], section['key2'], section['key3'])
+        ```
+        
+        > output 
+        `value value2 value3`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
