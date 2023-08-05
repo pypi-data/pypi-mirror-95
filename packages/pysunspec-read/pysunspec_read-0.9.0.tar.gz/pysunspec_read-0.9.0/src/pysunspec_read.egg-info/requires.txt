@@ -1,0 +1,4 @@
+pysunspec
+pyserial
+pytz
+datamx

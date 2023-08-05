@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+src/demo.py
+src/pysunspec_read/__init__.py
+src/pysunspec_read/options.py
+src/pysunspec_read/reader.py
+src/pysunspec_read/to_datamx.py
+src/pysunspec_read.egg-info/PKG-INFO
+src/pysunspec_read.egg-info/SOURCES.txt
+src/pysunspec_read.egg-info/dependency_links.txt
+src/pysunspec_read.egg-info/requires.txt
+src/pysunspec_read.egg-info/top_level.txt
