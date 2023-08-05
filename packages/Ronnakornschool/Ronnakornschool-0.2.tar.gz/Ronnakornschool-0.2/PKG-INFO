@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Ronnakornschool
+Version: 0.2
+Summary: OOP Learning Example by Ronnakorn
+Home-page: https://github.com/plug8955/Ronnakornschool
+Author: Ronnakorn Dumrongphol
+Author-email: plug8955@gmail.com
+License: MIT
+Download-URL: https://github.com/plug8955/Ronnakornschool/archive/v_01.tar.gz
+Description: OOP Learning Example by Ronnakorn
+Keywords: OOP,THAI,Ron,Ronnakorn
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
