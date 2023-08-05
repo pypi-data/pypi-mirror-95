@@ -1,0 +1,8 @@
+README.md
+setup.py
+noelnetwork/__init__.py
+noelnetwork/neural.py
+noelnetwork.egg-info/PKG-INFO
+noelnetwork.egg-info/SOURCES.txt
+noelnetwork.egg-info/dependency_links.txt
+noelnetwork.egg-info/top_level.txt
