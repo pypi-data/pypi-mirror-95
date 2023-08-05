@@ -1,0 +1,10 @@
+README.md
+setup.py
+parole/__init__.py
+parole/generator.py
+parole.egg-info/PKG-INFO
+parole.egg-info/SOURCES.txt
+parole.egg-info/dependency_links.txt
+parole.egg-info/entry_points.txt
+parole.egg-info/requires.txt
+parole.egg-info/top_level.txt
