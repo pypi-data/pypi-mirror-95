@@ -1,0 +1,9 @@
+simplebloom-1.0.1.dist-info/RECORD,,
+simplebloom-1.0.1.dist-info/LICENSE,sha256=CMmjpQwx7PoPtASq6Nifg5JWG0L4jat9qB2ave0282Y,1138
+simplebloom-1.0.1.dist-info/WHEEL,sha256=IkZiJFiZiRavDHfaLV1hdVPFYe1HJNLQ8dnz1DVQgHk,109
+simplebloom-1.0.1.dist-info/METADATA,sha256=ex4CNFFvOrc7q4X38ETg3w1nxJc4DiHG5rYFUYHTc2A,4410
+simplebloom-1.0.1.dist-info/top_level.txt,sha256=dfYP-nMqevvAUAkJEiCosCfcKO8Yzd1Ly90PxNxqLiI,12
+simplebloom/__init__.py,sha256=yqO5XUSWceQlQD2WhcuJNxQe_jwRdRttmWdWxefPkU0,96
+simplebloom/_cbloom.cpython-36m-x86_64-linux-gnu.so,sha256=lErmlKBZ1-JZ8UQ1K3WXSG2y7XYiGTOZC1hs8Hj8G80,45592
+simplebloom/bloom.py,sha256=UCWm0eCnNzf04Zc6yxYqAczPxHLeqWn3LOIiQaSHZqw,5098
+simplebloom/_pybloom.py,sha256=sQUM6_qZgiJJXqETlX0_z1F9KkdcOeXOm7gmRrUjkPE,1290
