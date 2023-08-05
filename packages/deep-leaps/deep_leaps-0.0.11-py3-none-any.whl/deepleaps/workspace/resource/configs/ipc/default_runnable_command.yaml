@@ -1,0 +1,88 @@
+#DEFAULT: [$root(($TRAINING_EPOCH(TEST->$LEARNING(B->$C->A)))->PRINT()->$SAVE2($SAVE(U))->STATE(*PrintCommand->*PrintCommand)->STATE(*PrintCommand)->LEARNING(A->B->C)), $TRAINING_BATCH(E->F->$C->D)]
+DEFAULT: [$root( $TRAINER_CONTAINER_LOAD->$TRAINING_LOADER( $MAIN_MODEL_LOAD->$TRAINING_BATCH( $TRAINING_STEP )->MAIN_MODEL_SAVE) )]
+ADD: []
+REMOVE: []
+IMPORT_MODULE: [src.dataloader.transforms, src.dataloader.TensorTypes]
+ADD_COMMAND_MODULE: []
+RELOAD_MODULE: []
+EXPORT: ['pre_base=ExampleNet/scenario1', 'loss_src_path=deepleaps/trainer/losses.py']
+
+DEFINE:
+  TRAINER_CONTAINER_LOAD:
+    command: 'TrainerContainerLoaderCommand'
+    args: 'resource/configs/trainer/ExampleContainer.yaml'
+    finish: True
+
+  MAIN_MODEL_LOAD:
+    command: 'ModuleLoadClass'
+    required: ['MODEL', 'OPTIMIZER']
+    base_path: '$base'
+    finish: True
+    args:
+      MODEL:
+        _reload: False
+        use_hook: True
+        file_name: $latest.id
+
+  MAIN_MODEL_SAVE:
+    command: 'ModuleSaveClass'
+    required: ['MODEL', 'OPTIMIZER']
+    base_path: '$base'
+    args:
+      MODEL: {}
+
+  MAIN_MODEL_SAVE2:
+    command: 'ModuleSaveClass'
+    required: ['MODEL']
+    args:
+      MODEL: {}
+    finish: True
+
+  TRAINING_LOADER:
+    command: 'MainGraph'
+    required: []
+    args:
+      loader_name: 'training'
+    repeat: 10
+    finish: True
+    run_cycle: '$self'
+
+  PRINT:
+    command: 'PrintCommand'
+    required: []
+    args: {
+            content: 'hello world'
+    }
+    repeat: 1 # 10번 반복
+    run_cycle: '$self'
+
+  TRAINING_OUTPUT_SAVE:
+    command: 'BatchedImageSaveCommand'
+    required: ['OUTPUT']
+    base_path: '$base'
+    args:
+      path: 'visual/img'
+      format: 'png'
+    repeat: -1
+    run_cycle: '$main.total_step:20'
+
+  TRAINING_OUTPUT_SHOW:
+    command: 'BatchedImageShowCommand'
+    required: ['OUTPUT','GT','IMAGE']
+    args: {
+      batch_number: 0
+    }
+    repeat: 1
+
+  TRAINING_BATCH:
+    command: 'RunnableGraph'
+    repeat: -1
+
+  TRAINING_STEP:
+    command: 'RunCommand'
+    required: ['train']
+
+  BATCH_EPOCH:
+    args: {}
+    repeat: 1 # IterStop을 기다림, 내 현재 처리중인 GRAPH의 repeat가 -1이라면, raise IterStop
+    run_cycle: '' # $main $ngraph $my
