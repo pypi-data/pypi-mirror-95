@@ -1,0 +1,9 @@
+uk_mod_check/__init__.py,sha256=NdJIM2LMEhl-1myR5kwRXiuhtaMC94PYa30r52nhpDs,8770
+uk_mod_check/data_parser.py,sha256=hS7twGJtuoZcQeiBx-v7SfpbehfjyD3jVULNd83Saqk,3840
+uk_mod_check/data/subs.txt,sha256=vvW8cPT3SG8j04rsQ_ef9gFOYdLpsIlbRB0pMwBMoIc,315
+uk_mod_check/data/weights.txt,sha256=i0vRNlokv5QRgMkkDytI1QTwvXMO-MDnMnqxkxNYYeE,104000
+uk_mod_check-1.0.dist-info/LICENSE.md,sha256=A6TtFZAh2QnWCZa92DdksAR0iYY1i1rCAzrjMNPf9XM,1077
+uk_mod_check-1.0.dist-info/METADATA,sha256=ern95DpuilLCq1WLKgcRedH1ULDjWgH9HEngqBXShEk,657
+uk_mod_check-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+uk_mod_check-1.0.dist-info/top_level.txt,sha256=ml3tqGg28V5SmkrhKgH-XIgZ1o_xCUDcp4fPgwmgAps,13
+uk_mod_check-1.0.dist-info/RECORD,,

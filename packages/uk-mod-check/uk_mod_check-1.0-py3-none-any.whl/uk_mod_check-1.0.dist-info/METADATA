@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: uk-mod-check
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/as207960/uk-mod-check
+Author: Q 🦄
+Author-email: q@magicalcodewit.ch
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# A python library for checking the validitiy of UK bank account details
+
+Example usage:
+
+```python
+import uk_mod_check
+
+assert uk_mod_check.validate( 40004, 78111815) == uk_mod_check.ValidationResult(result=True, known_sort_code=True, substitute_sort_code=None)
+assert uk_mod_check.validate(309070, 12345668) == uk_mod_check.ValidationResult(result=True, known_sort_code=True, substitute_sort_code=309634)
+```
+
+
