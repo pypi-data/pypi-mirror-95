@@ -1,0 +1,38 @@
+meta:
+    temp_dir: true
+    name: "OSQP"
+    check: "if [ -f /usr/local/lib/libosqp.a ]; then echo true; else echo false; fi"
+
+install:
+    Cloning OSQP from github:
+        - "git clone --recursive https://github.com/oxfordcontrol/osqp"
+        - "mkdir osqp/build"
+    Building and Installing OSQP:
+        - 'cd osqp/build/ && cmake -G "Unix Makefiles" .. && sudo cmake --build . --target install'
+    Cloning OSQP Eigen Wrappers from github:
+        - "git clone https://github.com/robotology/osqp-eigen.git"
+        - "mkdir osqp-eigen/build"
+    Building and Installing Eigen Wrappers:
+        - "cd osqp-eigen/build/ && cmake ../ && make"
+        - "cd osqp-eigen/build/ && sudo make install"
+update:
+    Cloning OSQP from github:
+        - "git clone --recursive https://github.com/oxfordcontrol/osqp"
+        - "mkdir osqp/build"
+    Building and Reinstalling OSQP:
+        - 'cd osqp/build/ && cmake -G "Unix Makefiles" .. && sudo cmake --build . --target install'
+    Cloning OSQP Eigen Wrappers from github:
+        - "git clone https://github.com/robotology/osqp-eigen.git"
+        - "mkdir osqp-eigen/build"
+    Building and Reinstalling Eigen Wrappers:
+        - "cd osqp-eigen/build/ && cmake ../ && make"
+        - "cd osqp-eigen/build/ && sudo make install"
+remove:
+    Removing OSQP:
+        - "sudo rm -f /usr/local/lib/libosqp*"
+        - "sudo rm -rf /usr/local/include/osqp"
+        - "sudo rm -rf /usr/local/lib/cmake/osqp"
+    Removing OSQP Eigen Wrapper:
+        - "sudo rm -f /usr/local/lib/libOsqpEigen*"
+        - "sudo rm -rf /usr/local/include/OsqpEigen"
+        - "sudo rm -rf /usr/local/lib/cmake/OsqpEigen"

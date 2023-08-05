@@ -1,0 +1,31 @@
+meta:
+    temp_dir: false
+    name: "ROS"
+    check: 'if [ $(rosversion -d) = "melodic" ]; then echo true; else echo false; fi'
+    args:
+        ver:
+            default: "desktop"
+            desktop: "desktop"
+            full: "desktop-full"
+            base: "ros-base"
+
+install:
+    Initial Setup:
+        - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+        - "sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654"
+    Installing ros [(ver.key)] from apt:
+        - "sudo apt update"
+        - "sudo apt install --yes ros-melodic-[(ver)]"
+    Setting Up Environment and few other things:
+        - 'echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc'
+        - "sudo apt --yes install python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools"
+    Setting Up Rosdep:
+        - "sudo apt install --yes python-rosdep"
+        - "sudo rm -f /etc/ros/rosdep/sources.list.d/20-default.list && sudo rosdep init"
+        - "rosdep update"
+update:
+    Updating from apt:
+        - 'echo "Nothing To Do"'
+remove:
+    Removing somepackage from your machine:
+        - 'echo "Nothing To Do"'
