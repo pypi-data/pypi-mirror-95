@@ -1,0 +1,8 @@
+setup.py
+stocktiger/__init__.py
+stocktiger/layout.py
+stocktiger/tools.py
+stocktiger.egg-info/PKG-INFO
+stocktiger.egg-info/SOURCES.txt
+stocktiger.egg-info/dependency_links.txt
+stocktiger.egg-info/top_level.txt
