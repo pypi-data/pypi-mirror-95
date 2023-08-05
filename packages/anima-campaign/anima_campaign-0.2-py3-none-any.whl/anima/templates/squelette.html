@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:title" content="Site de campagne" />
+    <meta property="og:description" content="Site de campagne Anima, Beyond Fantasy" />
+
+	<meta name="description" content="Site de campagne Anima, Beyond Fantasy" />
+    <meta name="keywords" content="Anima, Beyond Fantasy, RGP, JDR, Campagne, Campain" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
+
+	<!-- CSS Only -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+
+    <title>Spigushe — Campagne Anima</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header role="banner">
+        <a href="/" class="site-logo">
+            <img src="{{ url_for('static', filename='img/anima.png') }}" alt="Anima: Beyond Fantasy">
+            <h1>Campagne Anima: Beyond Fantasy</h1>
+        </a>
+        <nav role="navigation">
+            <ul>
+                <li>{{ link('/acte-1') }}</li>
+                <li>{{ link('/acte-2') }}</li>
+                <li>{{ link('/acte-3') }}</li>
+                <li>{{ link('/ressources') }}</li>
+            </ul>
+        </nav>
+    </header>
+
+	{% block article %}
+    <article>
+        {% block content %}{% endblock %}
+    </article>
+    {% endblock %}
+
+	<footer>
+        {% block footer %}
+        <nav role="navigation">
+            {{ prev() }}
+            {{ top() }}
+            {{ next() }}
+        </nav>
+        {% endblock %}
+    </footer>
+</body>
+{% block script %}{% endblock %}
+</html>

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: anima-campaign
+Version: 0.2
+Summary: "Site personnel pour l'organisation de campagne anima",
+Home-page: https://github.com/Spigushe/anima_campaign
+Author: mcuchet
+Author-email: martin.cuchet+anima@gmail.com
+License: "MIT"
+Keywords: anima jdr
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Other/Nonlisted Topic
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: unidecode
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: doc8 ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: zest.releaser[recommended] ; extra == 'dev'
+
+# anima_campain
+Personnal website to build and follow my anima campaign
+
+
