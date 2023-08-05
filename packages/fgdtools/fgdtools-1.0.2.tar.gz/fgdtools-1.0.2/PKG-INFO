@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: fgdtools
+Version: 1.0.2
+Summary: (DEPRECATED: check ValveFGD) A library to parse .fgd files used in the source engine.
+Home-page: https://maxdup.github.io/fgd-tools/
+Author: Maxime Dupuis
+Author-email: mdupuis@hotmail.ca
+License: gpl-3.0
+Download-URL: https://github.com/maxdup/fgd-tools/archive/v1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: fgd,source,sourcesdk,hammer,valve
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
