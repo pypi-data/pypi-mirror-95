@@ -1,0 +1,3 @@
+cusim/culda/culda_bind.cpython-36m-x86_64-linux-gnu.so
+cusim/cuw2v/cuw2v_bind.cpython-36m-x86_64-linux-gnu.so
+cusim/ioutils/ioutils_bind.cpython-36m-x86_64-linux-gnu.so
