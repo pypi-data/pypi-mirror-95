@@ -1,0 +1,6 @@
+patool
+pandas
+Pillow
+opencv-python
+numpy
+hex_dynamic_images
