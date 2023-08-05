@@ -1,0 +1,5 @@
+rjieba-0.1.4.dist-info/METADATA,sha256=HUApVKwMVceSK5XTsyNwbxL1QRuvBuRxH-r_mEesRO0,1722
+rjieba-0.1.4.dist-info/WHEEL,sha256=1USuAC1wLSVDBXVyvgs88XJBEYe4Azt6B7ueWObr1sA,90
+rjieba/__init__.py,sha256=4mjzHTZ7y6Atn_yrYinrzAdOFdrxO6NDpUmx4cLgB-w,368
+rjieba/rjieba.pyd,sha256=eiYU-g7WT6uoXUfY2arXSt2jEnBH191SCbkBoYYaoTI,6925824
+rjieba-0.1.4.dist-info/RECORD,,
