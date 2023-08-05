@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pygrapenlp
+Version: 2.4.0
+Summary: UNKNOWN
+Home-page: https://github.com/GrapeNLP/pygrapenlp.git
+Author: Javier Sastre
+Author-email: javier.sastre@gmail.com
+License: UNKNOWN
+Description: 
+        Python package enabling the usage of the grapenlp-core library from Python; for more information about GrapeNLP please
+        visit https://github.com/GrapeNLP/grapenlp-core
+        
+Keywords: GrapeNLP,grammar engine,NLP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5
+Provides-Extra: test
