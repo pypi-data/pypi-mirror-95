@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: sparkfun_qwiic_soil_moisture_sensor
+Version: 0.0.1
+Summary: SparkFun Electronics Qwiic Soil Moisture Sensor
+Home-page: https://www.sparkfun.com/products/17731
+Author: SparkFun Electronics
+Author-email: info@sparkfun.com
+License: MIT
+Description: SparkFun Qwiic Soil Moisture Sensor
+        ========================================================
+        
+        This package provdes support for the SparkFun Qwiic Soil Moisture Sensor breakout.
+        
+Keywords: electronics,maker
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
