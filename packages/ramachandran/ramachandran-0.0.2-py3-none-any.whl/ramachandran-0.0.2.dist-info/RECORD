@@ -1,0 +1,15 @@
+ramachandran/__init__.py,sha256=qjXJ5p7VG6Kxoqz7MXA6MDr0cDOWNC49PHwbPGYdccs,37
+ramachandran/download.py,sha256=Jp_h_FTelBOwV2ypLKo0idScUinzpMU6QuEyBvJEBoY,5081
+ramachandran/geometry.py,sha256=YdbzQeF-l7FCMgkFPE0ObUXblJzh_OKqTv1-8cNX11c,2596
+ramachandran/io.py,sha256=H96WivixEXbUzdeGXof78kPWXfA-iGBSJRDHlfX8Pgw,14349
+ramachandran/plot.py,sha256=RmkmDIirIOI3kERyGX3pZ9yLygc2v62vQPyELkR6NNA,6844
+ramachandran/statistics.py,sha256=dxOHu3JzbN9RGIDgdUfvoJFGB3oLSn82bdcjVKY7LVY,7580
+ramachandran/torsion.py,sha256=Skm2TWu1DzL3yho37NYUDktzBtPcJn3560wVMaSWzaI,4342
+ramachandran/data/gaussian_density.npz,sha256=fEymmqgwQ6POe66G_G_EoD74mCZSqCfEGUw0_eZ5_uc,4148188
+ramachandran/data/probability.npz,sha256=AXCwKSvP1n8eAauGeS1rPNVgHMpGHEDV9pnGgZdxYg0,162988
+ramachandran-0.0.2.data/scripts/ramachandran-plot,sha256=lOyU6fjJHyMP40xhaIL_vFvzxOR1KeaC_S98GCwzHAE,1118
+ramachandran-0.0.2.dist-info/LICENSE.md,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+ramachandran-0.0.2.dist-info/METADATA,sha256=_sTt35qg0zSCB9MQzF3-YtXNAtvtyjXG4jL3GCcuy6U,3075
+ramachandran-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ramachandran-0.0.2.dist-info/top_level.txt,sha256=R7l9ep9hj_H-9Gw0phiAD_mhIavgbthXOBZyrsVDMjc,13
+ramachandran-0.0.2.dist-info/RECORD,,
