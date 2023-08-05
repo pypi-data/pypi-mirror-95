@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+__pkginfo__.py
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+pytest_mypy_plugins_shim/__init__.py
+pytest_mypy_plugins_shim.egg-info/PKG-INFO
+pytest_mypy_plugins_shim.egg-info/SOURCES.txt
+pytest_mypy_plugins_shim.egg-info/dependency_links.txt
+pytest_mypy_plugins_shim.egg-info/entry_points.txt
+pytest_mypy_plugins_shim.egg-info/not-zip-safe
+pytest_mypy_plugins_shim.egg-info/requires.txt
+pytest_mypy_plugins_shim.egg-info/top_level.txt
