@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bigmultipipe/__init__.py
+bigmultipipe/bigmultipipe.py
+bigmultipipe/bigmultipipe_example.py
+bigmultipipe.egg-info/PKG-INFO
+bigmultipipe.egg-info/SOURCES.txt
+bigmultipipe.egg-info/dependency_links.txt
+bigmultipipe.egg-info/requires.txt
+bigmultipipe.egg-info/top_level.txt

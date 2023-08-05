@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bigmultipipe
+Version: 0.0.6
+Summary: Process big data efficiently
+Home-page: http://bigmultipipe.readthedocs.io/
+Author: Jeffrey P. Morgenthaler
+Author-email: UNKNOWN
+License: MIT
+Description: This package provides tools that enable a flexible, modular approach to constructing data processing pipelines that optimize computer processing, memory, and disk I/O resources.  See full documentation at https://bigmultipipe.readthedocs.io/en/latest/
+Platform: UNKNOWN
