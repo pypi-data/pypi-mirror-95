@@ -1,0 +1,8 @@
+setup.py
+FileStream/FileStream.py
+FileStream/__init__.py
+FileStream.egg-info/PKG-INFO
+FileStream.egg-info/SOURCES.txt
+FileStream.egg-info/dependency_links.txt
+FileStream.egg-info/requires.txt
+FileStream.egg-info/top_level.txt
