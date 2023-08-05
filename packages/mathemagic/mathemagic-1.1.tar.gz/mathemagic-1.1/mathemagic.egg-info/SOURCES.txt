@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+mathemagic/__init__.py
+mathemagic.egg-info/PKG-INFO
+mathemagic.egg-info/SOURCES.txt
+mathemagic.egg-info/dependency_links.txt
+mathemagic.egg-info/not-zip-safe
+mathemagic.egg-info/top_level.txt
