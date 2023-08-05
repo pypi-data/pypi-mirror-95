@@ -1,0 +1,6 @@
+DensityPlot
+resampy
+matplotlib
+scipy
+numpy
+numba
