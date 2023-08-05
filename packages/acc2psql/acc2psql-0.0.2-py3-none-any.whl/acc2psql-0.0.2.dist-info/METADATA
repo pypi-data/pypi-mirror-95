@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: acc2psql
+Version: 0.0.2
+Summary: Converter from *.accdb/*.mdb to PostgreSQL *.sql
+Home-page: https://github.com/remoteworkerid/acc2psql
+Author: Eko S. Wibowo
+Author-email: swdev.bali@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# acc2psql
+## Part of free course in RemoteWorker.id
+
+>Eko - Founder and CEO 
+> 
+>[Remote Worker Indonesia](https://remoteworker.id) / [LinkedIn](https://www.linkedin.com/organization-guest/company/remote-worker-id) / [Facebook](https://www.facebook.com/remoteworkerid) / [Instagram](https://www.instagram.com/remoteworker.id/) / [Twitter](https://twitter.com/remoteworkerid) 
+> 
+>[Youtube: Everybody can code!](https://www.youtube.com/watch?v=h2naH3WawpU)
+> 
+>[Spotify: Everybody can code!](https://open.spotify.com/episode/2MeFoHkbvsyMZiplw01yYv?si=EQFpnYZoTzyp_JngpuIzEQ)
+
+
+
+
+
