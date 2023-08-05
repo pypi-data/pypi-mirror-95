@@ -1,0 +1,11 @@
+mildom_dl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mildom_dl/__main__.py,sha256=9q-zM3wNv_Hroa_Fj2JmOlD7-CzsS5Oh5Y6zN2LtGz0,22
+mildom_dl/command.py,sha256=bFn9X5SFiwduD_ZbMoBe7jgLEkkjK28J7vbpwpJsqjM,601
+mildom_dl/mildomDL.py,sha256=pDwlQXWvjlCwIwcpgSqZ4YwwUAu-erruZaO8a4_dpfY,6470
+mildom_dl-0.0.2.data/scripts/mildomDL.py,sha256=pDwlQXWvjlCwIwcpgSqZ4YwwUAu-erruZaO8a4_dpfY,6470
+mildom_dl-0.0.2.dist-info/LICENSE,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+mildom_dl-0.0.2.dist-info/METADATA,sha256=PZS01qNQcjwrk4xXVkcMjH-2C_c-IYKIo3_l4Vi0kTs,1259
+mildom_dl-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mildom_dl-0.0.2.dist-info/entry_points.txt,sha256=27Lgzc0Udw56JHx0hs2myC6erG1FUlzNBhYgWSXMoik,53
+mildom_dl-0.0.2.dist-info/top_level.txt,sha256=r_gRfNdMi64F_Zo81PPPN6knQGwpKwONdwUVjlab7Xk,10
+mildom_dl-0.0.2.dist-info/RECORD,,
