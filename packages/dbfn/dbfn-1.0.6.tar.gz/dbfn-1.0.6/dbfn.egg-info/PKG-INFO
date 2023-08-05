@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dbfn
+Version: 1.0.6
+Summary: Discord Bot Functions. Includes reaction books with more feature to be added
+Home-page: https://github.com/judev1/dbfn
+Author: Jude BC
+Author-email: jude.version1.0@gmail.com
+License: BSD 2-clause
+Description: The Discord Bot Functions Module contains functions to enhance and simplify your python Discord Bot.
+        
+        **Instalation**
+        ```
+        pip install dbfn
+        ```
+        
+        **Usage and examples**
+        At the moment it only contains one function: Reaction Books, which allows the user to create interactable embeds
+        
+        An example of a basic book
+        ```python
+        from dbfn import reactionbook
+        
+        # (inside a cog)
+        async def function(self, ctx):
+        
+        	book = reactionbook(self.bot, ctx)
+        	book.createpages("This page only has one line")
+        	book.createpages(["This page only has...", "...two"])
+        	await book.createbook(TITLE="Example book", MODE="numbers")
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
