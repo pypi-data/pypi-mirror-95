@@ -1,0 +1,14 @@
+bitsets/__init__.py,sha256=rHEY8uINHk1el2vzhP6NM_nkgASBQ0vzogZwAIvHhgE,1985
+bitsets/_compat.py,sha256=2_LKF4sI_QhmM89yK4FQ0pVoc2f_pExfVTN3ylMb5i0,1643
+bitsets/bases.py,sha256=oIxNaGnacZhI3hfgYEP6spDLC2-acC5HZt0YW6qqEGs,6855
+bitsets/combos.py,sha256=16vDFX92x_pVSfkkIwOtGGwH_C8-R3cN6kU9_LjMxdw,2092
+bitsets/integers.py,sha256=vnp1A7naz3Xub-55txkuVfWTKIf6NGeMAdriKqGEmGU,2717
+bitsets/meta.py,sha256=mvI5Hg8J-AWoIQWqXkaYzsa6YyrwWByBoJFvsQK9_zc,5690
+bitsets/series.py,sha256=KoZ8wEFOBbZlDFO9xQqSpf2nM-bWeqpZCPxlre1HR0U,2955
+bitsets/transform.py,sha256=p_Exa55YvEGkJgN4FmYLKGwWhdeOYNEAnr60Ryw-c5w,2769
+bitsets/visualize.py,sha256=aYdlr20w12ADP9AYBLazLoQ52xSTYd9odEFNYGbtHYU,2147
+bitsets-0.8.1.dist-info/LICENSE.txt,sha256=VzK5MsO6jcs0LIy64lJUR2EEcrg2-lrGfrVPKerKlVI,1107
+bitsets-0.8.1.dist-info/METADATA,sha256=cQoUS4WMYyuJSQvQktbtmnO1VqsP55ooDLHaQ7vgMh0,7462
+bitsets-0.8.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bitsets-0.8.1.dist-info/top_level.txt,sha256=BvatkUUebCSsj_paiLQclPfjaYBqccI3WSmjS9sjOes,8
+bitsets-0.8.1.dist-info/RECORD,,
