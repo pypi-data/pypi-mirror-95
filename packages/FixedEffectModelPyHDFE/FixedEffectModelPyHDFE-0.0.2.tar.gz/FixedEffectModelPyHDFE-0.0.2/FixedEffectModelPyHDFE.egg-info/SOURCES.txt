@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+FixedEffectModelPyHDFE.egg-info/PKG-INFO
+FixedEffectModelPyHDFE.egg-info/SOURCES.txt
+FixedEffectModelPyHDFE.egg-info/dependency_links.txt
+FixedEffectModelPyHDFE.egg-info/not-zip-safe
+FixedEffectModelPyHDFE.egg-info/requires.txt
+FixedEffectModelPyHDFE.egg-info/top_level.txt
