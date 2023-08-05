@@ -1,0 +1,7 @@
+biosteam==2.24.1
+thermosteam==0.24.0
+matplotlib>=3.3.2
+scikit-learn
+scipy
+SALib
+matplotlib
