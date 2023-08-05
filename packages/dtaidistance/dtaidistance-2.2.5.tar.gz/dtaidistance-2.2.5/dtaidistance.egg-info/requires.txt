@@ -1,0 +1,13 @@
+cython>=0.29.6
+
+[all]
+matplotlib
+numpy
+scipy
+
+[numpy]
+numpy
+scipy
+
+[vis]
+matplotlib
