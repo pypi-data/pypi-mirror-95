@@ -1,0 +1,10 @@
+django~=2.2
+django-environ<0.5
+django-filter<3
+django-generic-api-permissions
+djangorestframework<4
+djangorestframework-jsonapi<4
+mozilla-django-oidc<2
+requests<3
+psycopg2-binary<3
+uwsgi<2.1
