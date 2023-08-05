@@ -1,0 +1,11 @@
+README.md
+setup.py
+frappymongodataset/__init__.py
+frappymongodataset/data_store.py
+frappymongodataset/mmacommon.py
+frappymongodataset.egg-info/PKG-INFO
+frappymongodataset.egg-info/SOURCES.txt
+frappymongodataset.egg-info/dependency_links.txt
+frappymongodataset.egg-info/not-zip-safe
+frappymongodataset.egg-info/requires.txt
+frappymongodataset.egg-info/top_level.txt
