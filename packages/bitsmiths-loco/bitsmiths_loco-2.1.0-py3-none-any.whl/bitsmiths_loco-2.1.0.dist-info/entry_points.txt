@@ -1,0 +1,3 @@
+[console_scripts]
+bs-loco = bs_loco:main
+
