@@ -1,0 +1,8 @@
+README.md
+mintotp.py
+setup.py
+mintotp.egg-info/PKG-INFO
+mintotp.egg-info/SOURCES.txt
+mintotp.egg-info/dependency_links.txt
+mintotp.egg-info/entry_points.txt
+mintotp.egg-info/top_level.txt
