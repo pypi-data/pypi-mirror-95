@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: paramsparser
+Version: 2.0.0
+Summary: Parse parameters written in files.
+Home-page: https://github.com/pysan3/paramsparser.git
+Author: pysan3
+Author-email: pysan3@gmail.com
+License: MIT
+Keywords: paramsparser yaml PyYAML ConfigParser json
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: ConfigParser
+
+# ParamsParser
+
+A nice library that loads your pamaraters written in yaml / json / Config style.
+
+## Usage
+
+```pip install paramsparser```
+
+### json
+
+```python
+from paramsparser import Json2Params
+params = Json2Params()
+```
+
+### yaml
+
+```python
+from paramsparser import Yaml2Params
+params = Yaml2Params()
+```
+
+
