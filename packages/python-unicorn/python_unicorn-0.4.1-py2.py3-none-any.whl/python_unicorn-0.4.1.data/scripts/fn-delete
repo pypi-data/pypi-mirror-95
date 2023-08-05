@@ -1,0 +1,74 @@
+#!python
+# -*- coding: utf-8 -*-
+"""Delete function from unicorn service.
+"""
+
+from getpass import getpass
+import argparse
+import sys
+import os
+
+from unicorn import AdminClient
+
+try:
+    r_input = raw_input
+except NameError:
+    r_input = input
+
+parser = argparse.ArgumentParser(
+        description="Delete functions from UNICORN service",
+        formatter_class=argparse.RawTextHelpFormatter)
+
+parser.add_argument("--url", dest="url", default="http://127.0.0.1:5000",
+                    help="Base URL (admin) for UNICORN service")
+parser.add_argument("-f", dest="func", action="append",
+                    help="Name of function to be deleted (repeated usage to select more)")
+parser.add_argument("--all", dest="fnall", nargs="?",
+                    default=False, const=True,
+                    help="Select all functions if '-f' is off")
+
+parser.epilog = \
+"""
+Examples:
+>>> # delete all functions
+>>> {n} --all
+>>> # delete function named 'f1'
+>>> {n} -f f1
+>>> # delete function named 'f1' and 'f2'
+>>> {n} -f f1 -f f2
+""".format(n=os.path.basename(sys.argv[0]))
+
+args = parser.parse_args(sys.argv[1:])
+
+if args.func is None and not args.fnall or len(sys.argv) < 2:
+    parser.print_help()
+    sys.exit(1)
+
+func, url, fnall = args.func, args.url, args.fnall
+
+client = AdminClient(url)
+
+if func is None and fnall:
+    fn = [f['name'] for f in client.get()['functions']]
+else:
+    fn = func
+
+if not fn:
+    print("Nothing to be deleted.")
+    sys.exit(1)
+
+username = r_input("Enter username: ")
+password = getpass("Enter password for '{}': ".format(username))
+
+cnt = 0
+for f in fn:
+    ret = client.delete(name=f, username=username, password=password)
+
+    if ret.get('status') is False:
+        print("Failed to delete {}.".format(f))
+    else:
+        cnt += 1
+        print("Deleted {}.".format(f))
+
+print("-"*30)
+print("Deleted {} functions.".format(cnt))

@@ -1,0 +1,13 @@
+python_unicorn-0.4.1.data/scripts/fn-delete,sha256=F31torAhlwsw04fLbjkFUITUTH7n0ucq6GyJ-NOcnI0,1870
+python_unicorn-0.4.1.data/scripts/fn-push,sha256=ZTLMMqjiKXCS3ccdDjD9-NtSyjHj5W4cg_HxeAadLcs,1615
+unicorn/__init__.py,sha256=YzJlFODX-0fVThiTwnZGEg4ddu3mVeDwDYRyAJzQt1o,965
+unicorn/utils.py,sha256=X-kk7s4zXzikhB5lOczHlc58pmCpe9z6_DDrpMbcs04,2310
+unicorn/client/__init__.py,sha256=MskfcSLU8OTbg8pceitlXIw4pvTKFMLWY5vTECKQ2KE,216
+unicorn/client/admin_client.py,sha256=pqK3_zfTSWZAH8eL5EnBbMIw8a6lEozrtycBZyfEodI,6014
+unicorn/client/api_client.py,sha256=7z6ejfwfv4xKQozQaZIbB0QvFySb0zutB1A4LTvHPyI,1561
+unicorn/client/utils.py,sha256=tJhAed4p5u1g_nm58A1tWgUV_FSwPKYj1moJx7qIlTA,423
+python_unicorn-0.4.1.dist-info/LICENSE,sha256=db6dPWhHJF7IIFgPYB8s9hWDq5Rb68Bny3hfFU2G6KQ,1095
+python_unicorn-0.4.1.dist-info/METADATA,sha256=kigWAxrYiK1firv_ItLSYKxe5DXeWqhvJ8TB7s5uaGE,470
+python_unicorn-0.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+python_unicorn-0.4.1.dist-info/top_level.txt,sha256=7AwD83Cng9VbaOJAQywVhQ7GCse4qhy7IOr-xt1RK3E,8
+python_unicorn-0.4.1.dist-info/RECORD,,

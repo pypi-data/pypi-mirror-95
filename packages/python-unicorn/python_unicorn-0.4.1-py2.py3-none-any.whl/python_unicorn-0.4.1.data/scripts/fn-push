@@ -1,0 +1,61 @@
+#!python
+# -*- coding: utf-8 -*-
+"""Create new function(s) to Unicorn service from external xlsx file.
+"""
+
+from getpass import getpass
+import argparse
+import sys
+import os
+
+from unicorn import AdminClient
+from unicorn import UnicornData
+
+try:
+    r_input = raw_input
+except NameError:
+    r_input = input
+
+parser = argparse.ArgumentParser(
+        description="Create function(s) to UNICORN service from xlsx file",
+        formatter_class=argparse.RawTextHelpFormatter)
+
+parser.add_argument("--url", dest="url", default="http://127.0.0.1:5000",
+                    help="Base URL (admin) for UNICORN service")
+parser.add_argument("xlsxfile", nargs="?", default="unicorn-data.xlsx",
+                    help="Path to locate xlsx data file")
+
+parser.epilog = \
+"""
+Examples:
+>>> # push data from file1 to unicorn service
+>>> {n} file1
+>>> # push data to service with url: http://192.168.0.100
+>>> {n} file1 --url http://192.168.0.100
+""".format(n=os.path.basename(sys.argv[0]))
+
+if len(sys.argv) < 2:
+    parser.print_help()
+    sys.exit(1)
+
+args = parser.parse_args(sys.argv[1:])
+
+data = UnicornData(args.xlsxfile)
+
+client = AdminClient(base_url=args.url)
+cnt = 0
+
+username = r_input("Enter username: ")
+password = getpass("Enter password for '{}': ".format(username))
+
+for f in data.functions:
+    r = client.create(username=username, password=password, **f)
+    if r.get('status') is False:
+        print("Failed to create function: {}.".format(f.get('name')))
+    else:
+        cnt += 1
+        print("Created new function: {}.".format(f.get('name')))
+
+print("-"*30)
+print("Created {} functions.".format(cnt))
+

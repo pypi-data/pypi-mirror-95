@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: python-unicorn
+Version: 0.4.1
+Summary: Python client interface to Unicorn service.
+Home-page: UNKNOWN
+Author: Tong Zhang
+Author-email: zhangt@frib.msu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: requests
+Requires-Dist: xlrd
+Requires-Dist: numpy
+
+UNKNOWN
+
+
