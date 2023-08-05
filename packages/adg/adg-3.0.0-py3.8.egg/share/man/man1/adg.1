@@ -1,0 +1,3440 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "ADG" "1" "Feb 15, 2021" "3.0.0" "ADG - Automated Diagram Generator"
+.SH NAME
+adg \- ADG - Automated Diagram Generator Documentation
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH THE ADG PROJECT
+.SS Description
+.sp
+ADG is a tool generating diagrams and producing their expressions for given
+many\-body formalisms. Diagrammatic rules from the formalism are combined with
+graph theory objects to produce diagrams and expressions in a fast, simple and
+error\-safe way.
+.sp
+The only input consists in the theory and order of interest, and the N\-body
+character of the operators of interest. The main output is a LaTeX file
+containing the diagrams, their associated expressions and additional
+informations that can be compiled into PDF by ADG if needed. Other
+computer\-readable files may be produced as well.
+.SS Status
+.sp
+As for now, the code is capable of handling four different formalisms, i.e.
+Many\-Body Perturbation Theory (MBPT), Bogoliubov Many\-Body Perturbation
+Theory (BMBPT), Projected Bogoliubov Many\-Body Perturbation Theory (PBMBPT),
+and Bogoliubov In\-Medium Similarity Renormalization Group (BIMSRG).
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+For MBPT, the code generates all Hartree\-Fock energy diagrams at any given
+order along with their expression and additional information
+(conjugate diagram, excitation level...).
+.IP \(bu 2
+For (P)BMBPT, the code generates all diagrams for a generic observable
+commuting with the Hamiltonian, along with their time\-dependent and
+time\-integrated expressions.
+.IP \(bu 2
+For BIMSRG, the code generates all diagrams and expressions at any given
+truncation order for the two operators as well as the commutator itself.
+The traditional BIMSRG(n) truncation order corresponds to truncating both
+operators as well as the commutator at the same rank.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Future developments
+.sp
+ADG is currently being extended to diagrams and expressions generation for
+Gorkov Self\-Consistent Green\(aqs Functions (GSCGF).
+.SH INSTALL ADG ON YOUR COMPUTER
+.SS Install
+.sp
+To install ADG, download the source files and run
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+pip install <project_folder>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+or alternatively
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+python setup.py install
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+If you want to install ADG in \fBdevelop\fP mode, then run
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+pip install \-e <project_folder>
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Dependencies
+.sp
+In order to run the code, you will need a Python2 install >= 2.7.1 and the
+following Python libraries:
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+networkx >= 2.0
+.IP \(bu 2
+numpy
+.IP \(bu 2
+scipy
+.IP \(bu 2
+future
+.IP \(bu 2
+more\-itertools
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.sp
+If you want ADG to compile the LaTeX output file, you will need a Latex install
+with the PDFLaTeX compiler and the feynmp and feynmp\-auto packages installed,
+which are standard packages in most recent distributions.
+.SH GENERATE DIAGRAMS WITH ADG
+.SS Run ADG
+.sp
+To run the program and generate BMBPT diagrams at order 4 for example, use
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+adg \-o 4 \-t BMBPT \-d \-c
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+where the \fB\-o\fP flag is for the order, \fB\-t\fP for the type of theory,
+\fB\-d\fP indicates you want the diagrams to be drawn and \fB\-c\fP that you want
+ADG to compile the LaTeX output.
+.sp
+You can alternatively run the program in interactive mode by typing
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+adg \-i
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Finally, to obtain more information on all the available flags, use
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+adg \-h
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS CLI options
+.SS Generic options:
+.INDENT 0.0
+.TP
+.B \-o\fP,\fB  \-\-order
+order of the diagrams [1\-9] or N_A, N_B, N_C truncation for BIMSRG
+.TP
+.B \-t\fP,\fB  \-\-theory
+theory of interest: MBPT, BMBPT or PBMBPT
+.TP
+.B \-i\fP,\fB  \-\-interactive
+execute ADG in interactive mode
+.UNINDENT
+.SS (P)BMBPT options:
+.INDENT 0.0
+.TP
+.BI \-c\fB an\fR,\fB \ \-\-canonical
+consider only canonical diagrams
+.TP
+.BI \-n\fB obs\fR,\fB \ \-\-nbody_observable
+maximal n\-body character of the observable [1\-3], default = 2
+.TP
+.BI \-3\fB NF\fR,\fB \ \-\-with_3NF
+use two and three\-body forces for BMBPT diagrams
+.TP
+.BI \-d\fB t\fR,\fB \ \-\-draw_tsds
+draw Time\-Structure Diagrams
+.UNINDENT
+.SS MBPT option:
+.INDENT 0.0
+.TP
+.BI \-c\fB d\fR,\fB \ \-\-cd_output
+produce computer\-readable output for automated frameworks
+.UNINDENT
+.SS Run management options:
+.INDENT 0.0
+.TP
+.B \-d\fP,\fB  \-\-draw_diags
+draw the diagrams using FeynMF
+.TP
+.B \-c\fP,\fB  \-\-compile
+compile the LaTeX output file with PDFLaTeX
+.UNINDENT
+.SS Output files
+.sp
+The output of the program is stored in a folder named after the theory, and a
+subfolder named after the order, e.g. \fB/MBPT/Order\-4\fP\&. In the case of (P)BMBPT,
+suffixes are added depending on the n\-body forces of the observable, and if
+three\-body forces were used or only canonical diagrams computed, i.e. for our
+previous example, results would be stored under
+\fBBMBPT/Order\-4_2body_observable\fP\&. For BIMSRG, the folder corresponds e.g. to
+\fBBIMSRG/Order_1_2_3\fP if N_A is 1, N_B is 2 and N_B is 3.
+.sp
+The main output file of the program, called \fBresult.tex\fP, is a LaTeX file
+containing the expressions of the diagrams along other basic infos on their
+structure, and, if flag \fB\-d\fP has been used, drawing instructions. The file
+is automatically compiled and produces a PDF file \fBresult.pdf\fP when using the
+\fB\-c\fP file.
+.sp
+A list of the adjacency matrices associated with the diagrams is printed
+separately in the \fBadj_matrices.list\fP file to allow for an easy use with
+another many\-body diagrams code.
+.sp
+In the case of a MBPT calculations, it is possible to produce output
+specifically tailored for automated calculations framework by
+using the \fB\-cd\fP flag. The associated output files use \fBCD_\fP as a prefix.
+.SH ADG REFERENCE FOR DEVELOPERS
+.SS Main script
+.sp
+Main routine of the Automated Diagram Generator.
+.INDENT 0.0
+.TP
+.B adg.main.main()
+Launch the ADG program.
+.UNINDENT
+.SS Run & CLI management
+.sp
+Routines handling the run of ADG.
+.INDENT 0.0
+.TP
+.B adg.run.attribute_directory(commands)
+Create missing directories and return the working directory.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the run management.
+.TP
+.B Returns
+Path to the result folder.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> com = argparse.Namespace()
+>>>
+>>> com.theory, com.order = \(aqBMBPT\(aq, 4
+>>> com.with_3NF, com.nbody_observable, com.canonical = False, 2, False
+>>>
+>>> attribute_directory(com)
+\(aqBMBPT/Order\-4_2body_observable\(aq
+>>>
+>>> com.theory, com.order = \(aqBMBPT\(aq, 5
+>>> com.with_3NF, com.nbody_observable, com.canonical = True, 3, False
+>>>
+>>> attribute_directory(com)
+\(aqBMBPT/Order\-5_3body_observable_with3N\(aq
+>>>
+>>> com.theory, com.order = \(aqMBPT\(aq, 3
+>>> com.with_3NF, com.nbody_observable, com.canonical = False, 2, False
+>>>
+>>> attribute_directory(com)
+\(aqMBPT/Order\-3\(aq
+>>>
+>>> com.theory, com.order = \(aqBIMSRG\(aq, (1,2,3)
+>>>
+>>> attribute_directory(com)
+\(aqBIMSRG/Order_1_2_3\(aq
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.clean_folders(directory, commands)
+Delete temporary files and folders.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the output folder.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags to manage the program\(aqs run.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.compile_manager(directory)
+Compile the program\(aqs LaTeX ouput file.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the ouput folder.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.create_feynmanmp_files(diagrams, theory, directory, diag_type)
+Create and move the appropriate feynmanmp files to the right place.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- The studied diagrams.
+.IP \(bu 2
+\fBtheory\fP (\fIstr\fP) \-\- Name of the theory of interest.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the result folder.
+.IP \(bu 2
+\fBdiag_type\fP (\fIstr\fP) \-\- Type of studied diagrams used for drawing.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.generate_diagrams(commands, id_generator)
+Return a list with diagrams of the appropriate type.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the run management.
+.IP \(bu 2
+\fBid_generator\fP (\fIUniqueID\fP) \-\- A unique ID number generator.
+.UNINDENT
+.TP
+.B Returns
+All the diagrams of the appropriate Class and order.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.get_bimsrg_truncation_order(operator)
+Return the truncation order of a given operator from the user input.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBoperator\fP (\fIstr\fP) \-\- The letter corresponding to the operator name.py
+.TP
+.B Returns
+The truncation rank of the operator.
+.TP
+.B Return type
+order (int)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.interactive_interface(commands)
+Run the interactive interface mode, return the appropriate commands.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the run management.
+.TP
+.B Returns
+Flags initialized through keyboard input.
+.TP
+.B Return type
+(Namespace)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.order_diagrams(diagrams, commands)
+Return the ordered unique diagrams with a dict of numbers per type.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- The diagrams of the appropriate Class.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the run management.
+.UNINDENT
+.TP
+.B Returns
+First element is the list of ordered and unique diagrams.
+Second element is a dict with the number of diagrams per type. Third
+element is a dict with the identifiers of diagrams starting each output
+file section.
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.parse_command_line(cli_args)
+Return run commands from the Command Line Interface.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBcli_args\fP \-\- Command\-line arguments submitted with the program.
+.TP
+.B Returns
+Appropriate commands to manage the program\(aqs run.
+.TP
+.B Return type
+(Namespace)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.prepare_drawing_instructions(directory, commands, diagrams, diagrams_time)
+Write FeynMP files for the different diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the output folder.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the run management.
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- All the diagrams of interest.
+.IP \(bu 2
+\fBdiagrams_time\fP (\fIlist\fP) \-\- All the associated TSDs if appropriate.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.print_diags_numbers(commands, diags_nbs)
+Print the number of diagrams for each major type.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the run management.
+.IP \(bu 2
+\fBdiags_nbs\fP (\fIdict\fP) \-\- The number of diagrams for each major type.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.run.write_file_header(latex_file, commands, diags_nbs)
+Write the header of the result tex file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- LaTeX output file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags to manage the program\(aqs run.
+.IP \(bu 2
+\fBdiags_nbs\fP (\fIdict\fP) \-\- Number of diagrams per major type.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Generic Diagram
+.sp
+Routines and class for all types of diagrams, inherited by others.
+.INDENT 0.0
+.TP
+.B class adg.diag.Diagram(nx_graph)
+Bases: \fBobject\fP
+.sp
+Describes a diagram with its related properties.
+.INDENT 7.0
+.TP
+.B graph
+The actual graph.
+.INDENT 7.0
+.TP
+.B Type
+NetworkX MultiDiGraph
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsorted_degrees
+The degrees of the graph vertices
+.INDENT 7.0
+.TP
+.B Type
+tuple
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+The ascendingly sorted degrees of the graph vertices.
+.INDENT 7.0
+.TP
+.B Type
+tuple
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+The list of in\- and out\-degrees for each
+vertex of the graph, stored in a (in, out) tuple.
+.INDENT 7.0
+.TP
+.B Type
+tuple
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+The sorted version of unsort_io_degrees.
+.INDENT 7.0
+.TP
+.B Type
+tuple
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+The maximal degree of a vertex in the graph.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+The tag numbers associated to a diagram.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B graph
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_graph(latex_file, directory, write_time)
+Write the graph of the diagram to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX ouput file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the result folder.
+.IP \(bu 2
+\fBwrite_time\fP (\fIbool\fP) \-\- (Here to emulate polymorphism).
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.bimsrg_diagram_internals(graph, fmf_file, prop_type)
+Write to file the vertices and propagators of BIMSRG diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The graph to be drawn.
+.IP \(bu 2
+\fBfmf_file\fP (\fIfile\fP) \-\- The FeymanMF file to be written to.
+.IP \(bu 2
+\fBprop_type\fP (\fIstr\fP) \-\- The FeymanMF type for drawing the propagators.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.check_vertex_degree(matrices, three_body_use, nbody_max_observable, canonical_only, vertex_id)
+Check the degree of a specific vertex in a set of matrices.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBmatrices\fP (\fIlist\fP) \-\- Adjacency matrices.
+.IP \(bu 2
+\fBthree_body_use\fP (\fIbool\fP) \-\- \fBTrue\fP if one uses three\-body forces.
+.IP \(bu 2
+\fBnbody_max_observable\fP (\fIint\fP) \-\- Maximum body number for the observable.
+.IP \(bu 2
+\fBcanonical_only\fP (\fIbool\fP) \-\- \fBTrue\fP if one draws only canonical diagrams.
+.IP \(bu 2
+\fBvertex_id\fP (\fIint\fP) \-\- The position of the studied vertex.
+.UNINDENT
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> test_matrices = [numpy.array([[0, 1, 2], [1, 0, 1], [0, 2, 0]]),         numpy.array([[2, 0, 2], [1, 2, 3], [1, 0, 0]]),         numpy.array([[0, 1, 3], [2, 0, 8], [2, 1, 0]])]
+>>> check_vertex_degree(test_matrices, True, 3, False, 0)
+>>> test_matrices 
+[array([[0, 1, 2], [1, 0, 1], [0, 2, 0]]),
+ array([[2, 0, 2], [1, 2, 3], [1, 0, 0]])]
+>>> check_vertex_degree(test_matrices, False, 2, False, 0)
+>>> test_matrices 
+[array([[0, 1, 2], [1, 0, 1], [0, 2, 0]])]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.create_checkable_diagram(pbmbpt_graph)
+Return a graph with anomalous props going both ways for topo check.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBpbmbpt_graph\fP (\fINetworkX MultiDiGraph\fP) \-\- The graph to be copied.
+.TP
+.B Returns
+Graph with double the anomalous props.
+.TP
+.B Return type
+(NetworkX MultiDiGraph)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.draw_diagram(directory, result_file, diagram_index, diag_type)
+Copy the diagram feynmanmp instructions in the result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- The path to the output folder.
+.IP \(bu 2
+\fBresult_file\fP (\fIfile\fP) \-\- The LaTeX ouput file of the program.
+.IP \(bu 2
+\fBdiagram_index\fP (\fIstr\fP) \-\- The number associated to the diagram.
+.IP \(bu 2
+\fBdiag_type\fP (\fIstr\fP) \-\- The type of diagram used here.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.extract_denom(start_graph, subgraph)
+Extract the appropriate denominator using the subgraph rule.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBstart_graph\fP (\fINetworkX MultiDiGraph\fP) \-\- The studied graph.
+.IP \(bu 2
+\fBsubgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The subgraph used for this particular
+denominator factor.
+.UNINDENT
+.TP
+.B Returns
+The denominator factor for this subgraph.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.feynmf_generator(graph, theory_type, diagram_name)
+Generate the feynmanmp instructions corresponding to the diagram.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The graph of interest.
+.IP \(bu 2
+\fBtheory_type\fP (\fIstr\fP) \-\- The name of the theory of interest.
+.IP \(bu 2
+\fBdiagram_name\fP (\fIstr\fP) \-\- The name of the studied diagram.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.label_vertices(graphs_list, theory_type, switch_flag)
+Account for different status of vertices in operator diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBgraphs_list\fP (\fIlist\fP) \-\- The Diagrams of interest.
+.IP \(bu 2
+\fBtheory_type\fP (\fIstr\fP) \-\- The name of the theory of interest.
+.IP \(bu 2
+\fBswitch_flag\fP (\fIint\fP) \-\- When to switch A and B operators for BIMSRG.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.no_trace(matrices)
+Select matrices with full 0 diagonal.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBmatrices\fP (\fIlist\fP) \-\- A list of adjacency matrices.
+.TP
+.B Returns
+The adjacency matrices without non\-zero diagonal elements.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> test_matrices = [[[0, 1, 2], [2, 0, 1], [5, 2, 0]],     [[2, 2, 2], [1, 2, 3], [0, 0, 0]],     [[0, 1, 3], [2, 0, 8], [2, 1, 0]]]
+>>> no_trace(test_matrices)
+[[[0, 1, 2], [2, 0, 1], [5, 2, 0]], [[0, 1, 3], [2, 0, 8], [2, 1, 0]]]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.print_adj_matrices(directory, diagrams)
+Print a computer\-readable file with the diagrams\(aq adjacency matrices.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- The path to the output directory.
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- All the diagrams.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.prop_directions(vert_distance, nb_props)
+Return a list of possible propagators directions.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBvert_distance\fP (\fIint\fP) \-\- Distance between the two connected vertices.
+.IP \(bu 2
+\fBnb_props\fP (\fIint\fP) \-\- Number of propagators to be drawn.
+.UNINDENT
+.TP
+.B Returns
+Propagators directions stored as strings.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.propagator_style(prop_type)
+Return the FeynMF definition for the appropriate propagator type.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBprop_type\fP (\fIstr\fP) \-\- The type of propagators used in the diagram.
+.TP
+.B Returns
+The FeynMF definition for the propagator style used.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.self_contractions(graph)
+Return the instructions for drawing the graph\(aqs self\-contractions.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The graph being drawn.
+.TP
+.B Returns
+FeynMF instructions for drawing the self\-contractions.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.to_skeleton(graph)
+Return the bare skeleton of a graph, i.e. only non\-redundant links.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The graph to be turned into a skeleton.
+.TP
+.B Returns
+The skeleton of the initial graph.
+.TP
+.B Return type
+(NetworkX MultiDiGraph)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.topologically_distinct_diagrams(diagrams)
+Return a list of diagrams all topologically distinct.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdiagrams\fP (\fIlist\fP) \-\- The Diagrams of interest.
+.TP
+.B Returns
+Topologically unique diagrams.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.update_permutations(comp_graph_perms, comp_graph_tag, mapping)
+Update permutations associated to the BMBPT diags for a shared TSD.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcomp_graph_perms\fP (\fIdict\fP) \-\- Permutations to be updated.
+.IP \(bu 2
+\fBcomp_graph_tag\fP (\fIint\fP) \-\- The tag associated to the TSD configuration.
+.IP \(bu 2
+\fBmapping\fP (\fIdict\fP) \-\- permutations to go from previous ref TSD to new one.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.diag.vertex_positions(graph, order)
+Return the positions of the graph\(aqs vertices.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The graph of interest.
+.IP \(bu 2
+\fBorder\fP (\fIint\fP) \-\- The perturbative order of the graph.
+.UNINDENT
+.TP
+.B Returns
+The FeynMP instructions for positioning the vertices.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.SS MBPT diagram
+.sp
+Routines and class for Many\-Body Perturbation Theory diagrams.
+.INDENT 0.0
+.TP
+.B class adg.mbpt.MbptDiagram(mbpt_graph, tag_num)
+Bases: \fBadg.diag.Diagram\fP
+.sp
+Describes a MBPT diagram with its related properties.
+.INDENT 7.0
+.TP
+.B incidence
+The incidence matrix of the graph.
+.INDENT 7.0
+.TP
+.B Type
+NumPy array
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B excitation_level
+The single, double, etc., excitation character.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B complex_conjugate
+The tag number of the diagram\(aqs complex
+conjugate. \-1 is the graph has none.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B expr
+The MBPT expression associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B cd_expr
+The expression associated to the diagram in a
+computer\-readable format.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B adjacency_mat
+The adjacency matrix of the graph.
+.INDENT 7.0
+.TP
+.B Type
+NumPy array
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B adjacency_mat
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_expression()
+Initialize the expression associated to the diagram.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_ph_labels()
+Attribute the appropriate qp labels to the graph\(aqs propagators.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B calc_excitation()
+Return an integer coding for the excitation level of the diag.
+.INDENT 7.0
+.TP
+.B Returns
+The singles / doubles / etc. character of the graph.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B cd_denominator()
+Return the computer\-readable denominator of the graph.
+.INDENT 7.0
+.TP
+.B Returns
+The graph denominator tailored for automated frameworks.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B cd_expr
+.UNINDENT
+.INDENT 7.0
+.TP
+.B cd_numerator()
+Return the computer\-readable numerator.
+.INDENT 7.0
+.TP
+.B Returns
+The graph numerator tailored for automated frameworks.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B complex_conjugate
+.UNINDENT
+.INDENT 7.0
+.TP
+.B count_hole_lines()
+Return an integer for the number of hole lines in the graph.
+.INDENT 7.0
+.TP
+.B Returns
+The number of holes in the diagram.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B excitation_level
+.UNINDENT
+.INDENT 7.0
+.TP
+.B expr
+.UNINDENT
+.INDENT 7.0
+.TP
+.B extract_denominator()
+Return the denominator for a MBPT graph.
+.INDENT 7.0
+.TP
+.B Returns
+The denominator of the diagram.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B extract_numerator()
+Return the numerator associated to a MBPT graph.
+.INDENT 7.0
+.TP
+.B Returns
+The numerator of the diagram.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B graph
+.UNINDENT
+.INDENT 7.0
+.TP
+.B incidence
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B is_complex_conjug_of(test_diagram)
+Return True if self and test_diagram are complex conjugate.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBtest_diagram\fP (\fIMbptDiagram\fP) \-\- A diagram to compare with.
+.TP
+.B Returns
+The complex conjugate status of the pair of diagrams.
+.TP
+.B Return type
+(bool)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B loops_number()
+Return the number of loops in the diagram as an integer.
+.INDENT 7.0
+.TP
+.B Returns
+The number of loops in the graph.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_graph(latex_file, directory, write_time)
+Write the graph of the diagram to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX ouput file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the result folder.
+.IP \(bu 2
+\fBwrite_time\fP (\fIbool\fP) \-\- (Here to emulate polymorphism).
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_section(result, commands, flags)
+Write sections for MBPT result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBresult\fP (\fIfile\fP) \-\- The LaTeX output file to be written in.
+.IP \(bu 2
+\fBcommands\fP (\fIdict\fP) \-\- The flags associated with run management.
+.IP \(bu 2
+\fBflags\fP (\fIdict\fP) \-\- The identifier of each section\-starting graph.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.attribute_conjugate(diagrams)
+Attribute to each diagram its complex conjugate.
+.sp
+The diagrams involved in conjugate pairs receive the tag associated to
+their partner in the \fBcomplex_conjugate\fP attribute.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdiagrams\fP (\fIlist\fP) \-\- The topologically unique MbptDiagrams.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.diagrams_generation(order)
+Generate the diagrams for the MBPT case.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBorder\fP (\fIint\fP) \-\- The perturbative order of interest.
+.TP
+.B Returns
+A list of NumPy arrays with the diagrams adjacency matrices.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> diagrams_generation(2) 
+[array([[0, 2], [2, 0]])]
+>>> diagrams_generation(3) 
+[array([[0, 2, 0], [0, 0, 2], [2, 0, 0]]),
+ array([[0, 1, 1], [1, 0, 1], [1, 1, 0]]),
+ array([[0, 0, 2], [2, 0, 0], [0, 2, 0]])]
+>>> diagrams_generation(1)
+[]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.extract_cd_denom(start_graph, subgraph)
+Extract the computer\-readable denominator using the subgraph rule.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBstart_graph\fP (\fINetworkX MultiDiGraph\fP) \-\- The studied graph.
+.IP \(bu 2
+\fBsubgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- The subgaph for this particular
+factor.
+.UNINDENT
+.TP
+.B Returns
+The denominator factor associated to this subgraph.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.order_diagrams(diagrams)
+Order the MBPT diagrams and return the number of diags for each type.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdiagrams\fP (\fIlist\fP) \-\- The unordered MbptDiagrams.
+.TP
+.B Returns
+First element are the ordered MbptDiagrams. Second element is
+the number of diagrams for each excitation level type.
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.print_cd_output(directory, diagrams)
+Print a computer\-readable file for automated frameworks.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- The path to the output directory.
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- All the MbptDiagrams.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.write_diag_exp(latex_file, mbpt_diag)
+Write the expression associated to a diagram in the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file to be written in.
+.IP \(bu 2
+\fBmbpt_diag\fP (\fIMbptDiagram\fP) \-\- The diagram which expression is being written.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.mbpt.write_header(tex_file, diags_nbs)
+Write tha appropriate header for the LaTeX file for MBPT diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBtex_file\fP (\fIfile\fP) \-\- The LaTeX ouput file to be written in.
+.IP \(bu 2
+\fBdiags_nbs\fP (\fIdict\fP) \-\- A dict with the number of diagrams per
+excitation level type.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS BMBPT Diagram
+.sp
+Routines and class for Bogoliubov MBPT diagrams.
+.INDENT 0.0
+.TP
+.B class adg.bmbpt.BmbptFeynmanDiagram(nx_graph, tag_num)
+Bases: \fBadg.diag.Diagram\fP
+.sp
+Describes a BMBPT Feynman diagram with its related properties.
+.INDENT 7.0
+.TP
+.B two_or_three_body
+The 2 or 3\-body characted of the vertices.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B time_tag
+The tag number associated to the diagram\(aqs
+associated TSD.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tsd_is_tree
+The tree or non\-tree character of the
+associated TSD.
+.INDENT 7.0
+.TP
+.B Type
+bool
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B feynman_exp
+The Feynman expression associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B diag_exp
+The Goldstone expression associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vert_exp
+The expression associated to the vertices.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B hf_type
+The Hartree\-Fock, non\-Hartree\-Fock or Hartree\-Fock for
+the energy operator only character of the graph.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unique_id
+A unique number associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vertex_exchange_sym_factor
+Lazy\-initialized symmetry factor
+associated to the vertex exchange, stored to avoid being computed
+several times.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_expressions(time_diag)
+Attribute the correct Feynman and Goldstone expressions.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBtime_diag\fP (\fITimeStructureDiagram\fP) \-\- The associated TSD.
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_qp_labels()
+Attribute the appropriate qp labels to the graph\(aqs propagators.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B diag_exp
+.UNINDENT
+.INDENT 7.0
+.TP
+.B equivalent_permutations()
+Return the permutations generating equivalent diagrams.
+.INDENT 7.0
+.TP
+.B Returns
+Vertices permutations as dictionnaries.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B extract_integral()
+Return the integral part of the Feynman expression of the diag.
+.INDENT 7.0
+.TP
+.B Returns
+The integral part of its Feynman expression.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B extract_numerator()
+Return the numerator associated to a BMBPT graph.
+.INDENT 7.0
+.TP
+.B Returns
+The numerator of the graph.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B feynman_exp
+.UNINDENT
+.INDENT 7.0
+.TP
+.B graph
+.UNINDENT
+.INDENT 7.0
+.TP
+.B has_crossing_sign()
+Return True for a minus sign associated with crossing propagators.
+.sp
+Use the fact that all lines propagate upwards and the
+canonical representation of the diagrams and vertices.
+.INDENT 7.0
+.TP
+.B Returns
+.INDENT 7.0
+.TP
+.B Encode for the sign factor associated with crossing
+propagators.
+.UNINDENT
+
+.TP
+.B Return type
+(bool)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B has_sign_factor()
+Return True if a sign factor is associated to the diagram.
+.sp
+Wrapper allowing for easy refactoring of expression code.
+.INDENT 7.0
+.TP
+.B Returns
+The presence of a sign factor.
+.TP
+.B Return type
+(boolean)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B hf_type
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B multiplicity_symmetry_factor()
+Return the symmetry factor associated with propagators multiplicity.
+.INDENT 7.0
+.TP
+.B Returns
+The symmetry factor associated with equivalent lines.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B symmetry_factor()
+Return the overall symmetry factor of the diagram.
+.INDENT 7.0
+.TP
+.B Returns
+The combination of all symmetry factors.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+.UNINDENT
+.INDENT 7.0
+.TP
+.B time_tag
+.UNINDENT
+.INDENT 7.0
+.TP
+.B time_tree_denominator(time_graph)
+Return the denominator for a time\-tree graph.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBtime_graph\fP (\fINetworkX MultiDiGraph\fP) \-\- Its associated time\-structure
+graph.
+.TP
+.B Returns
+The denominator of the graph.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tsd_is_tree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B two_or_three_body
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unique_id
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vert_exp
+.UNINDENT
+.INDENT 7.0
+.TP
+.B property vertex_exchange_sym_factor
+Return the symmetry factor associated with vertex exchange.
+.INDENT 7.0
+.TP
+.B Returns
+The symmetry factor for vertex exchange.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vertex_expression(vertex)
+Return the expression associated to a given vertex.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBvertex\fP (\fIint\fP) \-\- The vertex of interest in the graph.
+.TP
+.B Returns
+The LaTeX expression associated to the vertex.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_diag_exps(latex_file, norder)
+Write the expressions associated to a diagram in the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX outputfile of the program.
+.IP \(bu 2
+\fBnorder\fP (\fIint\fP) \-\- The order in BMBPT formalism.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_graph(latex_file, directory, write_time)
+Write the BMBPT graph and its associated TSD to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- The path to the result folder.
+.IP \(bu 2
+\fBwrite_time\fP (\fIbool\fP) \-\- \fBTrue\fP if we want informations on the
+associated TSDs.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_section(result, commands, section_flags)
+Write section and subsections for BMBPT result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBresult\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fIdict\fP) \-\- The flags associated with run management.
+.IP \(bu 2
+\fBsection_flags\fP (\fIdict\fP) \-\- UniqueIDs of diags starting each section.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_tsd_info(diagrams_time, latex_file)
+Write info related to the BMBPT associated TSD to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiagrams_time\fP (\fIlist\fP) \-\- The associated TSDs.
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_vertices_values(latex_file, mapping)
+Write the qp energies associated to each vertex of the diag.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBmapping\fP (\fIdict\fP) \-\- A mapping between the vertices in the diagram and
+the vertices in its euivalent TSD, since permutations between
+vertices are possible.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.check_topologically_equivalent(matrices, max_vertex)
+Exclude matrices that would spawn topologically equivalent graphs.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBmatrices\fP (\fIlist\fP) \-\- Adjacency matrices to be checked.
+.IP \(bu 2
+\fBmax_vertex\fP (\fIint\fP) \-\- The maximum vertex which have been filled.
+.UNINDENT
+.TP
+.B Returns
+The topologically unique matrices.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> import numpy
+>>> mats = [numpy.array([[0, 2, 0, 0], [2, 0, 0, 1], [0, 0, 0, 0], [0, 0, 0, 0]]),                 numpy.array([[0, 0, 2, 0], [0, 0, 0, 0], [2, 0, 0, 1], [0, 0, 0, 0]])]
+>>>
+>>> mats = check_topologically_equivalent(mats, 2)
+>>> mats 
+[array([[0, 2, 0, 0], [2, 0, 0, 1], [0, 0, 0, 0], [0, 0, 0, 0]])]
+>>>
+>>> mats = check_topologically_equivalent([], 2)
+>>> mats 
+[]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.check_unconnected_spawn(matrices, max_filled_vertex)
+Exclude some matrices that would spawn unconnected diagrams.
+.sp
+Do several permutations among the rows and columns corresponding to already
+filled vertices, and check if one obtains a block\-diagonal organisation,
+where the off\-diagonals blocks connecting the already\-filled and
+yet\-unfilled parts of the matrix would be empty. In that case, remove the
+matrix.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBmatrices\fP (\fIlist\fP) \-\- The adjacency matrices to be checked.
+.IP \(bu 2
+\fBmax_filled_vertex\fP (\fIint\fP) \-\- The furthest vertex until which the matrices
+have been filled.
+.UNINDENT
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> import numpy
+>>> mats = [numpy.array([[0, 2, 0], [2, 0, 0], [0, 0, 0]]),                 numpy.array([[0, 2, 1], [2, 0, 1], [0, 0, 0]])]
+>>>
+>>> check_unconnected_spawn(mats, 1)
+>>> mats 
+[array([[0, 2, 1], [2, 0, 1], [0, 0, 0]])]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.diagrams_generation(p_order, three_body_use, nbody_obs, canonical)
+Generate diagrams for BMBPT from bottom up.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBp_order\fP (\fIint\fP) \-\- The BMBPT perturbative order of the studied diagrams.
+.IP \(bu 2
+\fBthree_body_use\fP (\fIbool\fP) \-\- Flag for the use of three\-body forces.
+.IP \(bu 2
+\fBnbody_obs\fP (\fIint\fP) \-\- N\-body character of the obervable of interest.
+.IP \(bu 2
+\fBcanonical\fP (\fIbool\fP) \-\- \fBTrue\fP if one draws only canonical diagrams.
+.UNINDENT
+.TP
+.B Returns
+NumPy arrays encoding the adjacency matrices of the graphs.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> diags = diagrams_generation(1, False, 2, False)
+>>> len(diags)
+2
+>>> any(np.array_equal([[0, 4], [0, 0]], diag) for diag in diags)
+True
+>>> any(np.array_equal([[0, 2], [0, 0]], diag) for diag in diags)
+True
+>>> diags = diagrams_generation(1, True, 3, False)
+>>> len(diags)
+3
+>>> any(np.array_equal([[0, 6], [0, 0]], diag) for diag in diags)
+True
+>>> any(np.array_equal([[0, 4], [0, 0]], diag) for diag in diags)
+True
+>>> any(np.array_equal([[0, 2], [0, 0]], diag) for diag in diags)
+True
+>>> diags = diagrams_generation(2, False, 2, True)
+>>> len(diags)
+2
+>>> any(np.array_equal([[0, 2, 2], [0, 0, 2], [0, 0, 0]], d) for d in diags)
+True
+>>> any(np.array_equal([[0, 1, 1], [0, 0, 3], [0, 0, 0]], d) for d in diags)
+True
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.order_and_remove_topologically_equiv(matrices, max_vertex)
+Order the matrices in sub\-list and remove topologically equivalent ones.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBmatrices\fP (\fIlist\fP) \-\- The adjacency matrices to be checked.
+.IP \(bu 2
+\fBmax_vertex\fP (\fIint\fP) \-\- The maximum vertex which has been filled.
+.UNINDENT
+.TP
+.B Returns
+The ordered topologically unique matrices.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.order_diagrams(diagrams)
+Order the BMBPT diagrams and return number of diags for each type.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdiagrams\fP (\fIlist\fP) \-\- Possibly redundant BmbptFeynmanDiagrams.
+.TP
+.B Returns
+.INDENT 7.0
+.TP
+.B First element is the list of topologically unique, ordered
+diagrams. Second element is a dict with the number of diagrams
+for each major type. Third element is a dict with the identifiers
+of diagrams starting each output file section.
+.UNINDENT
+
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.produce_expressions(diagrams, diagrams_time)
+Produce and store the expressions associated to the BMBPT diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- The list of all BmbptFeynmanDiagrams.
+.IP \(bu 2
+\fBdiagrams_time\fP (\fIlist\fP) \-\- Their associates TSDs.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.remove_disconnected_matrices(matrices)
+Remove matrices corresponding to disconnected diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBmatrices\fP (\fIlist\fP) \-\- List of adjacency matrices.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bmbpt.write_header(tex_file, commands, diags_nbs)
+Write overall header for BMBPT result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBtex_file\fP (\fIfile\fP) \-\- The ouput LaTeX file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the program run.
+.IP \(bu 2
+\fBdiags_nbs\fP (\fIdict\fP) \-\- The number of diagrams per type.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS PBMBPT Diagram
+.sp
+Routines and class for Projected Bogoliubov MBPT diagrams.
+.INDENT 0.0
+.TP
+.B class adg.pbmbpt.ProjectedBmbptDiagram(graph, unique_id, tag, child_tag)
+Bases: \fBadg.bmbpt.BmbptFeynmanDiagram\fP
+.sp
+Describes a PBMBPT diagram with its related properties.
+.INDENT 7.0
+.TP
+.B two_or_three_body
+The 2 or 3\-body characted of the vertices.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B time_tag
+The tag number associated to the diagram\(aqs
+associated TSD.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tsd_is_tree
+The tree or non\-tree character of the
+associated TSD.
+.INDENT 7.0
+.TP
+.B Type
+bool
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B feynman_exp
+The Feynman expression associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B diag_exp
+The Goldstone expression associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vert_exp
+The expression associated to the vertices.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B hf_type
+The Hartree\-Fock, non\-Hartree\-Fock or Hartree\-Fock for
+the energy operator only character of the graph.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unique_id
+A unique number associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vertex_exchange_sym_factor
+Lazy\-initialized symmetry factor
+associated to the vertex exchange, stored to avoid being computed
+several times.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B check_graph
+A copy of the graph that can be
+used for topological equivalence checks (lazy\-initialized).
+.INDENT 7.0
+.TP
+.B Type
+NetworkX MultiDiGraph
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B anomalous_contractions_factor()
+Return the factor associated with anomalous self\-contractions.
+.INDENT 7.0
+.TP
+.B Returns
+The anomalous self\-contractions factor.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_expressions(time_diag)
+Attribute the correct Feynman and Goldstone expressions.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBtime_diag\fP (\fITimeStructureDiagram\fP) \-\- The associated TSD.
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_qp_labels()
+Attribute the appropriate qp labels to the graph\(aqs propagators.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B property check_graph
+Return a graph that can be used for topological equivalence checks.
+.sp
+Lazy\-initialized to reduce memory and CPU costs as this operation
+requires a deep copy.
+.INDENT 7.0
+.TP
+.B Returns
+The graph with doubled anomalous props.
+.TP
+.B Return type
+(NetworkX MultiDiGraph)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B diag_exp
+.UNINDENT
+.INDENT 7.0
+.TP
+.B equivalent_permutations()
+Return the permutations generating equivalent diagrams.
+.INDENT 7.0
+.TP
+.B Returns
+Vertices permutations as dictionnaries.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B extract_integral()
+Return the integral part of the Feynman expression of the diag.
+.INDENT 7.0
+.TP
+.B Returns
+The integral part of its Feynman expression.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B extract_numerator()
+Return the numerator associated to a PBMBPT graph.
+.INDENT 7.0
+.TP
+.B Returns
+The numerator of the graph.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B feynman_exp
+.UNINDENT
+.INDENT 7.0
+.TP
+.B graph
+.UNINDENT
+.INDENT 7.0
+.TP
+.B has_anom_non_selfcontracted_props()
+Return True if the diagram has anomalous propagators.
+.INDENT 7.0
+.TP
+.B Returns
+The presence of anomalous propagators.
+.TP
+.B Return type
+(bool)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B has_anom_props_linked_sign()
+Return True if there is a minus sign associated to anom props.
+.sp
+Anomalous propagators departing to higher vertices introduce a sign
+factor if a normal propagator is going to an even higher vertex, as it
+departs from the canonical representation used for numerator
+extraction.
+.INDENT 7.0
+.TP
+.B Returns
+The presence of the sign factor.
+.TP
+.B Return type
+(bool)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B has_crossing_sign()
+Return True for a minus sign associated with crossing propagators.
+.sp
+Use the fact that all lines propagate upwards and the
+canonical representation of the diagrams and vertices.
+.INDENT 7.0
+.TP
+.B Returns
+.INDENT 7.0
+.TP
+.B Encode for the sign factor associated with crossing
+propagators.
+.UNINDENT
+
+.TP
+.B Return type
+(bool)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B has_sign_factor()
+Return True if a sign factor is associated to the diagram.
+.sp
+Wrapper allowing for easy refactoring of expression code.
+.INDENT 7.0
+.TP
+.B Returns
+The presence of a sign factor.
+.TP
+.B Return type
+(boolean)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B hf_type
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B multiplicity_symmetry_factor()
+Return the symmetry factor associated with propagators multiplicity.
+.INDENT 7.0
+.TP
+.B Returns
+The symmetry factor associated with equivalent lines.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B set_io_degrees()
+Attribute the correct in\- and out\-degrees to a PBMBPT diagram.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B symmetry_factor()
+Return the overall symmetry factor of the diagram.
+.INDENT 7.0
+.TP
+.B Returns
+The combination of all symmetry factors.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+.UNINDENT
+.INDENT 7.0
+.TP
+.B time_tag
+.UNINDENT
+.INDENT 7.0
+.TP
+.B time_tree_denominator(time_graph)
+Return the denominator for a time\-tree graph.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBtime_graph\fP (\fINetworkX MultiDiGraph\fP) \-\- Its associated time\-structure
+graph.
+.TP
+.B Returns
+The denominator of the graph.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tsd_is_tree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B two_or_three_body
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unique_id
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vert_exp
+.UNINDENT
+.INDENT 7.0
+.TP
+.B property vertex_exchange_sym_factor
+Return the symmetry factor associated with vertex exchange.
+.INDENT 7.0
+.TP
+.B Returns
+The symmetry factor for vertex exchange.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vertex_expression(vertex)
+Return the expression associated to a given vertex.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBvertex\fP (\fIint\fP) \-\- The vertex of interest in the graph.
+.TP
+.B Returns
+The LaTeX expression associated to the vertex.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_diag_exps(latex_file, norder)
+Write the expressions associated to a diagram in the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX outputfile of the program.
+.IP \(bu 2
+\fBnorder\fP (\fIint\fP) \-\- The order in BMBPT formalism.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_graph(latex_file, directory, write_time)
+Write the PBMBPT graph and its associated TSD to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- The path to the result folder.
+.IP \(bu 2
+\fBwrite_time\fP (\fIbool\fP) \-\- \fBTrue\fP if we want informations on the
+associated TSDs.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_section(result, commands, section_flags)
+Write section and subsections for BMBPT result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBresult\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fIdict\fP) \-\- The flags associated with run management.
+.IP \(bu 2
+\fBsection_flags\fP (\fIdict\fP) \-\- UniqueIDs of diags starting each section.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_tsd_info(diagrams_time, latex_file)
+Write info related to the BMBPT associated TSD to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiagrams_time\fP (\fIlist\fP) \-\- The associated TSDs.
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_vertices_values(latex_file, mapping)
+Write the qp energies associated to each vertex of the diag.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBmapping\fP (\fIdict\fP) \-\- A mapping between the vertices in the diagram and
+the vertices in its euivalent TSD, since permutations between
+vertices are possible.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.pbmbpt.equiv_generating_permutations(graph)
+Return the list of permutations generating equivalent PBMBPT diags.
+.INDENT 7.0
+.TP
+.B adg.pbmbpt.graph
+The graph to be checked.
+.INDENT 7.0
+.TP
+.B Type
+Networkx MultiDiGraph
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B Returns
+The mappings giving equivalent graphs, inc. identity.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.pbmbpt.filter_new_diagrams(new_diags, old_diags)
+Eliminate diagrams having a topologically equivalent diag.
+.INDENT 7.0
+.TP
+.B Attibutes:
+new_diags (list): The list of newly created PBMBPT diagrams.
+old_diags (list): The list of already checked PBMBPT diagrams.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.pbmbpt.generate_anomalous_diags(diag, nbody_max)
+Generate PBMBPT graphs with anomalous lines, with some redundancy.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiag\fP (\fIBmbptFeynmanDiagram\fP) \-\- The diagram to generate children from.
+.IP \(bu 2
+\fBnbody_max\fP (\fIint\fP) \-\- The maximal n\-body character of a graph vertex.
+.UNINDENT
+.TP
+.B Returns
+The anomalous graphs generated.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.pbmbpt.generate_combinations(iter_list)
+Generate all possible combinations of length 1 to total.
+.INDENT 7.0
+.TP
+.B adg.pbmbpt.iter_list
+A list of iterable objects.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B Returns
+A list with all the possible combinations of all lengths.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> print(generate_combinations([1, 2, 3]))
+[(1,), (1, 2), (1, 2, 3), (1, 3), (2,), (2, 3), (3,)]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.pbmbpt.unique_edge_combinations(edges, permutations)
+Return all edge combinations not producing equivalent anomalous graphs.
+.INDENT 7.0
+.TP
+.B adg.pbmbpt.edges
+The edges that can be modified.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B adg.pbmbpt.permutations
+The permutation generating equivalent diagrams.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B Returns
+The list of edges producing unique anomalous diagrams.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> edges = [(1, 3), (2, 3)]
+>>> permutations = [{1: 1, 2: 2}, {1: 2, 2: 1}]
+>>> print(unique_edge_combinations(edges, permutations))
+[((1, 3), (2, 3)), ((2, 3),)]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.pbmbpt.unique_vertex_combinations(vertices, permutations)
+Return vertex combinations generating unique anomalous diagrams.
+.sp
+Return combinations of vertices on which self\-contractions can be added
+without producing topologically equivalent PBMBPT diagrams.
+.INDENT 7.0
+.TP
+.B adg.pbmbpt.vertices
+Vertices that can be self\-contracted.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B adg.pbmbpt.permutations
+The permutations that generate equivalent diags.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B Returns
+Vertex combinations that do not produce equivalent diags.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> vertices = [1, 3]
+>>> permutations = [{1: 1, 3: 3}, {1: 3, 3: 1}]
+>>> print(unique_vertex_combinations(vertices, permutations))
+[(1, 3), (3,)]
+.ft P
+.fi
+.UNINDENT
+.SS Time\-Structure Diagram
+.sp
+Module with functions relative to time\-stucture diagrams, called by ADG.
+.INDENT 0.0
+.TP
+.B class adg.tsd.TimeStructureDiagram(bmbpt_diag)
+Bases: \fBadg.diag.Diagram\fP
+.sp
+Describes a time\-structure diagram with its related properties.
+.INDENT 7.0
+.TP
+.B perms
+The permutations on the vertices for all the BMBPT
+diagrams associated to this TSD.
+.INDENT 7.0
+.TP
+.B Type
+dict
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B equivalent_trees
+The tag numbers of the equivalent tree TSDs
+associated to a non\-tree TSD.
+.INDENT 7.0
+.TP
+.B Type
+list
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B is_tree
+The tree or non\-tree character of a TSD.
+.INDENT 7.0
+.TP
+.B Type
+bool
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B expr
+The Goldstone denominator associated to the TSD.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B resum
+The resummation power of a tree TSD.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B draw_equivalent_tree_tsds(latex_file)
+Draw the equivalent tree TSDs for a given non\-tree TSD.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBlatex_file\fP (\fIfile\fP) \-\- The output LaTeX file of the program.
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B equivalent_trees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B expr
+.UNINDENT
+.INDENT 7.0
+.TP
+.B get_feynman_diags(feyn_diagrams)
+Return the list of Feynman diagrams associated to the TSD.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBfeyn_diagrams\fP (\fIlist\fP) \-\- All produced BmbptFeymmanDiagrams.
+.TP
+.B Returns
+All the identifiers of associated BmbptFeymmanDiagrams.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B graph
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B is_tree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B perms
+.UNINDENT
+.INDENT 7.0
+.TP
+.B resum
+.UNINDENT
+.INDENT 7.0
+.TP
+.B resummation_power()
+Calculate the resummation power of the tree TSD.
+.INDENT 7.0
+.TP
+.B Returns
+The resummation power associated to the TSD.abs
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+.UNINDENT
+.INDENT 7.0
+.TP
+.B treat_cycles()
+Find and treat cycles in a TSD diagram.
+.INDENT 7.0
+.TP
+.B Returns
+The unique tree TSDs associated to a non\-tree TSD.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_graph(latex_file, directory, write_time)
+Write the graph of the diagram to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX ouput file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the result folder.
+.IP \(bu 2
+\fBwrite_time\fP (\fIbool\fP) \-\- (Here to emulate polymorphism).
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.disentangle_cycle(time_graph, cycle_nodes)
+Separate a cycle in a sum of tree diagrams.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBtime_graph\fP (\fINetworkXn MultiDiGraph\fP) \-\- A time\-structure diagram.
+.IP \(bu 2
+\fBcycle_nodes\fP (\fItuple\fP) \-\- Integers encoding the positions of the end nodes
+of the cycle.
+.UNINDENT
+.TP
+.B Returns
+New graphs produced from treating the cycles in the TSD.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.equivalent_labelled_tsds(equivalent_trees, labelled_tsds)
+Return the list of labelled TSDs corresponding to equivalent TSDs.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBequivalent_trees\fP (\fIlist\fP) \-\- The equivalent tree TSDs of a non\-tree TSD.
+.IP \(bu 2
+\fBlabelled_tsds\fP (\fIlist\fP) \-\- The labelled TSDs obtained from BMBPT diagrams.
+.UNINDENT
+.TP
+.B Returns
+The list of tag numbers of the equivalent TSDs.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.find_cycle(graph)
+Return start and end nodes for an elementary cycle.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBgraph\fP (\fINetworkX MultiDiGraph\fP) \-\- A TSD with cycle(s) to be treated.
+.TP
+.B Returns
+Positions of the two end nodes of a cycle in the graph.
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.time_structure_graph(diag)
+Return the time\-structure graph associated to the graph.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdiag\fP (\fIBmbptFeymmanDiagram\fP) \-\- The BMBPT graph of interest.
+.TP
+.B Returns
+The time\-structure diagram.
+.TP
+.B Return type
+(NetworkX MultiDiGraph)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.treat_tsds(diagrams_time)
+Order TSDs, produce their expressions, return also number of trees.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdiagrams_time\fP (\fIlist\fP) \-\- All the associated TSDs.
+.TP
+.B Returns
+List of TSDs, number of tree TSDs
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.tree_time_structure_den(time_graph)
+Return the denominator associated to a tree time\-structure graph.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBtime_graph\fP (\fINetworkX MultiDiGraph\fP) \-\- The TSD of interest.
+.TP
+.B Returns
+The denominator associated to the TSD.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tsd.write_section(latex_file, directory, pdiag, time_diagrams, nb_tree_tsds, diagrams)
+Write the appropriate section for tsd diagrams in the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the output folder.
+.IP \(bu 2
+\fBpdiag\fP (\fIbool\fP) \-\- \fBTrue\fP if diagrams are to be drawn.
+.IP \(bu 2
+\fBtime_diagrams\fP (\fIlist\fP) \-\- The ensemble of TSDs.
+.IP \(bu 2
+\fBnb_tree_tsds\fP (\fIint\fP) \-\- Number of tree TSDs.
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- All produced BmbptFeymmanDiagrams.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS BIMSRG Diagram
+.sp
+Routines and class for Bogoliubov IMSRG diagrams.
+.INDENT 0.0
+.TP
+.B class adg.bimsrg.BimsrgDiagram(nx_graph, tag_num)
+Bases: \fBadg.diag.Diagram\fP
+.sp
+Describes a B\-IMSRG Feynman diagram with its related properties.
+.INDENT 7.0
+.TP
+.B adjacency_mat
+The adjacency matrix of the diagram.
+.INDENT 7.0
+.TP
+.B Type
+Numpy array
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unique_id
+A unique number associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B expr
+The B\-IMSRG expression associated to the diagram.
+.INDENT 7.0
+.TP
+.B Type
+str
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B ext_io_degree
+The degree of the operator component the diagram
+corresponds to.
+.INDENT 7.0
+.TP
+.B Type
+tuple
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B is_AB
+True if the diagram contributes to +AB, false if to \-BA.
+.INDENT 7.0
+.TP
+.B Type
+bool
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B adjacency_mat
+.UNINDENT
+.INDENT 7.0
+.TP
+.B attribute_expression()
+Returns the LaTeX expression of the diagram.
+.sp
+The expression is extracted in a way that assumes the canonical
+representation of the vertices as well as a labeling of the external
+lines that would correspond to a canonical representation of the C
+operator vertex. As such, there is no sign factor associated to
+departing from the canonical representation of the diagram. This
+additionally prevents any line crossing from appearing.
+.INDENT 7.0
+.TP
+.B Returns
+The LaTeX expression for the diagram.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B expr
+.UNINDENT
+.INDENT 7.0
+.TP
+.B ext_io_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B graph
+.UNINDENT
+.INDENT 7.0
+.TP
+.B io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B is_AB
+.UNINDENT
+.INDENT 7.0
+.TP
+.B max_degree
+.UNINDENT
+.INDENT 7.0
+.TP
+.B permutator()
+Return the permutator associated to the diagram.
+.sp
+The labelling of the external lines correspond to the canonical
+representation of the C operator vertex.
+.INDENT 7.0
+.TP
+.B Returns
+The permutator associated to the diagram in LaTeX format.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B sign()
+Return the sign of the diagram.
+.sp
+As the diagrams are made with vertices in canonical representation and
+avoiding crossings, the only sign left is associated with the
+commutator.
+.INDENT 7.0
+.TP
+.B Returns
+The sign of the diagram.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B symmetry_factor()
+Returns the symmetry factor of the diagram in LaTeX format.
+.INDENT 7.0
+.TP
+.B Returns
+The LaTeX\-formatted symmetry factor.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B tags
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unique_id
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B unsort_io_degrees
+.UNINDENT
+.INDENT 7.0
+.TP
+.B vertices_expression()
+Return the expression associated to the vertices in LaTeX format.
+.sp
+The expressions are extracted in a way that assumes the canonical
+representation of the vertices as well as a labeling of the external
+lines that would correspond to a canonical representation of the C
+operator vertex. This prevents any crossing as well as additional sign
+tied to departing from the canonical representation.
+.INDENT 7.0
+.TP
+.B Returns
+The LaTeX\-formatted expression for the vertices.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_graph(latex_file, directory, write_time)
+Write the graph of the diagram to the LaTeX file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBlatex_file\fP (\fIfile\fP) \-\- The LaTeX ouput file of the program.
+.IP \(bu 2
+\fBdirectory\fP (\fIstr\fP) \-\- Path to the result folder.
+.IP \(bu 2
+\fBwrite_time\fP (\fIbool\fP) \-\- (Here to emulate polymorphism).
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B write_section(result, commands, section_flags)
+Write section and subsections for BMBPT result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBresult\fP (\fIfile\fP) \-\- The LaTeX output file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fIdict\fP) \-\- The flags associated with run management.
+.IP \(bu 2
+\fBsection_flags\fP (\fIdict\fP) \-\- UniqueIDs of diags starting each section.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.diagrams_generation(orders)
+Generate diagrams for B\-IMSRG.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBorders\fP (\fItuple\fP) \-\- The B\-IMSRG (N_A, N_B, N_C) order of the diagrams.
+.TP
+.B Returns
+.INDENT 7.0
+.TP
+.B NumPy arrays encoding the adjacency matrices of the graphs,
+and number of diagrams with the A vertex on top.
+.UNINDENT
+
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.diagrams_subset(deg_max_top, deg_max_bot, deg_max_ext)
+Generate diagrams for B\-IMSRG.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBorders\fP (\fItuple\fP) \-\- The max ranks (2*N_A, 2*N_B, 2*N_C) of the vertices.
+.TP
+.B Returns
+NumPy arrays encoding the adjacency matrices of the graphs.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> diagrams_subset(2, 2, 0) 
+[array([[0, 0, 0, 0],
+       [0, 0, 2, 0],
+       [0, 0, 0, 0],
+       [0, 0, 0, 0]])]
+>>> len(diagrams_subset(2, 2, 2))
+5
+>>> len(diagrams_subset(4, 4, 4))
+41
+>>> len(diagrams_subset(0, 0, 0))
+0
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.order_diagrams(diagrams, order)
+Order the BIMSRG diagrams and return the number of diags for each type.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBdiagrams\fP (\fIlist\fP) \-\- The unordered BimsrgDiagrams.
+.IP \(bu 2
+\fBorder\fP (\fIint\fP) \-\- The order of the B\-IMSRG truncation.
+.UNINDENT
+.TP
+.B Returns
+First element are the ordered BimsrgDiagrams. Second element
+is the number of diagrams for each type. Third element is flags for the
+output processing.
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.permutator(set_1, set_2)
+Write the definition of the permutation operator given by the two sets.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBset_1\fP (\fIlist\fP) \-\- The list of the left\-hand\-side qp labels.
+.IP \(bu 2
+\fBset_2\fP (\fIlist\fP) \-\- The list of the right\-hand\-side qp labels.
+.UNINDENT
+.TP
+.B Returns
+The LaTeX expression for the permutation operator.
+.TP
+.B Return type
+(str)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> print(permutator([1, 2], [3])) 
+P(k_{1}k_{2}/k_{3}) &= 1 \- P_{k_{1} k_{3}} \- P_{k_{2} k_{3}} \e\e
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.two_partitions(number)
+Return 2\-partitions of the given integer.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBnumbr\fP (\fIint\fP) \-\- The integer to partition.
+.TP
+.B Returns
+All the 2\-partitions as tuples.
+.TP
+.B Return type
+(list)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> two_partitions(3)
+[(0, 3), (1, 2), (2, 1), (3, 0)]
+.ft P
+.fi
+.sp
+.nf
+.ft C
+>>> two_partitions(0)
+[(0, 0)]
+.ft P
+.fi
+.sp
+.nf
+.ft C
+>>> two_partitions(\-1)
+[]
+.ft P
+.fi
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.write_header(tex_file, commands, diags_nbs)
+Write overall header for BIMSRG result file.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBtex_file\fP (\fIfile\fP) \-\- The ouput LaTeX file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the program run.
+.IP \(bu 2
+\fBdiags_nbs\fP (\fIdict\fP) \-\- The number of diagrams per type.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.bimsrg.write_permutator_section(tex_file, commands)
+Write the section defining permutation operators.
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBtex_file\fP (\fIfile\fP) \-\- The ouput LaTeX file of the program.
+.IP \(bu 2
+\fBcommands\fP (\fINamespace\fP) \-\- Flags for the program run.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Tools and utilities
+.sp
+Miscellaneous diagram\-unrelated tools for ADG.
+.INDENT 0.0
+.TP
+.B class adg.tools.UniqueID
+Bases: \fBobject\fP
+.sp
+Counter making sure of generating a unique ID number for diagrams.
+.INDENT 7.0
+.TP
+.B current
+The unique identifier to be attributedto a diagram.
+.INDENT 7.0
+.TP
+.B Type
+int
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B current
+.UNINDENT
+.INDENT 7.0
+.TP
+.B get()
+Iterate on counter value and return current value.
+.INDENT 7.0
+.TP
+.B Returns
+A unique identifier for the diagram.
+.TP
+.B Return type
+(int)
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B adg.tools.reversed_enumerate(data)
+Return the index and item of the data in reversed order.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBdata\fP (\fIiterable data structure\fP) \-\- The data to be used..
+.TP
+.B Returns
+Index and item.
+.TP
+.B Return type
+(tuple)
+.UNINDENT
+.sp
+.nf
+.ft C
+>>> list(reversed_enumerate([\(aqA\(aq, \(aqB\(aq, \(aqC\(aq]))
+[(2, \(aqC\(aq), (1, \(aqB\(aq), (0, \(aqA\(aq)]
+.ft P
+.fi
+.UNINDENT
+.SH DEVELOPERS TEAM
+.sp
+They have been involved in the making of ADG over the past years:
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+Pierre Arthuis \- IKP, TU Darmstadt & ExtreMe Matter Institute EMMI, GSI, Darmstadt (previously University of Surrey & Irfu, CEA, Université Paris\-Saclay & CEA, DAM, DIF)
+.IP \(bu 2
+Thomas Duguet \- Irfu, CEA, Université Paris\-Saclay & KU Leuven, IKS
+.IP \(bu 2
+Jean\-Paul Ebran \- CEA, DAM, DIF
+.IP \(bu 2
+Heiko Hergert \- NSCL/FRIB Laboratory & Department of Physics and Astronomy, Michigan State University
+.IP \(bu 2
+Raphaël\-David Lasseri \- ESNT, Irfu, CEA, Université Paris\-Saclay (previously IPN, CNRS/IN2P3, Université Paris\-Sud, Université Paris\-Saclay)
+.IP \(bu 2
+Julien Ripoche \- CEA, DAM, DIF
+.IP \(bu 2
+Alexander Tichai \- MPI fuer Kernphysik, Heidelberg & IKP, TU Darmstadt & ExtreMe Matter Institute EMMI, GSI, Darmstadt (previsously ESNT, Irfu, CEA, Université Paris\-Saclay)
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SH CITING
+.sp
+If you use ADG in your research work, we kindly ask you to cite the following
+papers:
+.INDENT 0.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+P. Arthuis, T. Duguet, A. Tichai, R.\-D. Lasseri and J.\-P. Ebran,
+Comput. Phys. Commun. \fB240\fP, 202\-227 (2019). It is available under the
+following \fI\%DOI\fP\&.
+.IP \(bu 2
+P. Arthuis, A. Tichai, J. Ripoche and T. Duguet,
+Comput. Phys. Commun. \fB261\fP, 107677 (2021). It is available \fI\%here\fP\&.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SH LICENSE
+.sp
+ADG is licensed under under GNU General Public License version 3
+(see LICENSE.txt for the full GPLv3 License).
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+Copyright (C) 2018\-2021 ADG Dev Team
+Pierre Arthuis
+Thomas Duguet
+Jean\-Paul Ebran
+Heiko Hergert
+Raphaël\-David Lasseri
+Julien Ripoche
+Alexander Tichai
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+genindex
+.IP \(bu 2
+modindex
+.IP \(bu 2
+search
+.UNINDENT
+.SH AUTHOR
+ADG Dev Team
+.SH COPYRIGHT
+2018-2021, ADG Dev Team
+.\" Generated by docutils manpage writer.
+.
