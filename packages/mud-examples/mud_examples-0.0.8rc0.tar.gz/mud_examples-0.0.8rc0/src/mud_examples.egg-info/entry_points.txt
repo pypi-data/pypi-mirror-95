@@ -1,0 +1,4 @@
+[console_scripts]
+generate_poisson_data = mud_examples.poisson:run
+mud_examples = mud_examples.runner:run
+
