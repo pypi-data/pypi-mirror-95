@@ -1,0 +1,13 @@
+Django<3.2,>=2.1
+djangorestframework>=3.10
+django-countries>=5
+django-phonenumber-field[phonenumberslite]>=2.3
+drf-nested-routers>=0.90
+python-dateutil>=2.7
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog==0.9
