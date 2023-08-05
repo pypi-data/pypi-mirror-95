@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: zolocal
+Version: 0.2.0
+Summary: A Python tool kit for interacting with the locally hosted Zotero database.
+Home-page: https://github.com/sailist/pyzotero-local
+Author: Haozhe Yang
+Author-email: yyanghaozhe@outlook.com
+License: GNU General Public License v3
+Description: UNKNOWN
+Keywords: zotero sqlite
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
