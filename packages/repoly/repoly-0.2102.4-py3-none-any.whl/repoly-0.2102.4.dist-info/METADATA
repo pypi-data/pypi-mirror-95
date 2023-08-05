@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: repoly
+Version: 0.2102.4
+Summary: Rectilinear polygons
+Home-page: https://github.com/davips/repoly
+Author: Davi Pereira-Santos
+Author-email: dpsabc@gmail.com
+License: GPL3
+Download-URL: https://github.com/davips/repoly/releases
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyside6
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+![test](https://github.com/davips/arqgen-challenge/workflows/test/badge.svg)
+[![codecov](https://codecov.io/gh/davips/arqgen-challenge/branch/main/graph/badge.svg)](https://codecov.io/gh/davips/arqgen-challenge)
+
+# Client GUI
+
+<img src="https://raw.githubusercontent.com/davips/arqgen-challenge/main/chart.png">
+
+[Latest version](https://github.com/davips/arqgen-challenge)
+
+## Installation
+### as a standalone lib.
+```bash
+# Set up a virtualenv. 
+python3 -m venv venv
+source venv/bin/activate
+
+# Install from PyPI...
+pip install --upgrade pip
+pip install -U repoly
+
+# ...or, install from updated source code.
+pip install git+https://github.com/davips/arqgen-challenge/repoly
+```
+
+
+## Features (current or planned)
+
+* [x] Form input
+  * [ ] position
+  * [x] size
+  * [ ] orientation
+* [x] Mouse input
+  * [ ] position
+  * [ ] size
+  * [x] orientation
+
+
