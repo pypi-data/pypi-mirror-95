@@ -1,0 +1,17 @@
+dothttp/__init__.py,sha256=N2NznB5g5iPaj-nF1FtdD5sabp5kXIQjFEKBc9zcbBA,23545
+dothttp/__main__.py,sha256=dQqHNXs3goNgWKjpqF2AzHx30RqT4LHukXncOPARzZI,3863
+dothttp/dsl_jsonparser.py,sha256=Vh3FLF3rL6wt1tDz0AGZ1Cy66XKSOkNle6Enfs7qhuE,820
+dothttp/exceptions.py,sha256=HzxXwwKxA9C0Th37LTI38XJQi_W9Gn8mLoZr33CEM2k,1985
+dothttp/http.tx,sha256=dCERChZ37fQCr6ffqZ32W70NlgXqsP1T54Lj25WfCnk,2009
+dothttp/parse_models.py,sha256=AxoNs8EAGYoLM3OFQb7Kx5cCgqfEDLEMuWOAm4Q-OwQ,226
+dothttp/property_schema.py,sha256=o-az7BxyDq6p2_pm3nPZ8UPLA9O97nLYcirhwULNYiM,280
+test/__init__.py,sha256=FGOBibgoYUNSh6px9yaTks_0LnEKygldLV1qWnxLZf4,1233
+test/test_exceptions.py,sha256=45CWZc5ySH9YCSZOOoUlLujQKTaxMNvTnVm5QKccnlY,2340
+test/test_payload.py,sha256=p1kBJHVB4y7GYPC-ezAJ5GXs8Pwrejn38Eu5cXdkjsM,6156
+test/test_request.py,sha256=wJyTeRqmx0JvOFAmoTTTyGcWQ-5CZqCrbAl9PTSXyHo,3474
+test/test_substition.py,sha256=ZgLeVN08kiXVIBneGh5Il0qsea5HeZd8wIszuJEh1Fc,4199
+dothttp_req-0.0.4.dist-info/METADATA,sha256=pf0p4W2lc7A0cJzhTyPmgZYb22y9xsi4U42D3fQvzrQ,7568
+dothttp_req-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dothttp_req-0.0.4.dist-info/entry_points.txt,sha256=COovPDHMvsSRkauCbouWZJ_V9cxQ1-rD4LBj5-rhocM,51
+dothttp_req-0.0.4.dist-info/top_level.txt,sha256=q_QfohWxyZc5z16CUIdwsUreXyYlpzp5xdhL4y4LeJM,13
+dothttp_req-0.0.4.dist-info/RECORD,,
