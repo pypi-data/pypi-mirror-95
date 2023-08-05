@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: monke
+Version: 0.0.1
+Summary: monke - event-based socket wrapper
+Home-page: https://github.com/husseinraed/monke
+Author: Hussein Raed
+Author-email: me@husseinraed.cf
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MONKE - is a event-based socket wrapper
+
+> how to install
+
+```sh
+pip install monke
+```
+
+navigate to examples folder of this repo to know how u can make your own server-client event based communication thing.
+
