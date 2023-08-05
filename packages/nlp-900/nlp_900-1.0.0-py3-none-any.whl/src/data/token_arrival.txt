@@ -1,0 +1,9 @@
+vers
+partir
+arriver
+aller
+rendre
+prendre
+déplacer
+rouler
+rentrer
