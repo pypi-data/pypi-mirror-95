@@ -1,0 +1,10 @@
+README.md
+setup.py
+headpose/__init__.py
+headpose/headpose.py
+headpose.egg-info/PKG-INFO
+headpose.egg-info/SOURCES.txt
+headpose.egg-info/dependency_links.txt
+headpose.egg-info/not-zip-safe
+headpose.egg-info/requires.txt
+headpose.egg-info/top_level.txt
