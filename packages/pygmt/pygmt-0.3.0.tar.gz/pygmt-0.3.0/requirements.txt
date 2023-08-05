@@ -1,0 +1,6 @@
+# Requirements for installing with conda
+numpy
+pandas
+xarray
+netCDF4
+packaging

@@ -1,0 +1,31 @@
+name: pygmt
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.8
+    - pip
+    - gmt=6.1.1
+    - numpy
+    - pandas
+    - xarray
+    - netCDF4
+    - packaging
+    - black
+    - blackdoc
+    - coverage[toml]
+    - docformatter
+    - flake8
+    - ipython
+    - isort>=5
+    - jupyter
+    - matplotlib
+    - nbsphinx
+    - pylint
+    - pytest-cov
+    - pytest-mpl
+    - pytest>=6.0
+    - sphinx
+    - sphinx-copybutton
+    - sphinx-gallery
+    - sphinx_rtd_theme=0.4.3
