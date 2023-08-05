@@ -1,0 +1,17 @@
+jaraco/develop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaraco/develop/add-github-secret.py,sha256=VNXmeGzQREdOG7y9CAuNSHWJ-fDeWLnAgD8B3HZ7dqA,181
+jaraco/develop/add-github-secrets.py,sha256=I5Vl723r691qjDNavTnYshApP4uYDrz-K--7oSflQJI,913
+jaraco/develop/compiler.py,sha256=rXhc1rUEmBv1a7PDhW6aJ9BYWvC4MZVz_W7V2ogBEMo,1662
+jaraco/develop/create-github-release.py,sha256=FtkWkZGQ8j8CHvv9DOSeQ-bxztAgbk0Jd19GF5A86NA,247
+jaraco/develop/github.py,sha256=LKk3Sf9aMl9ix7Us0dYsQVda4doqzCnKyIBDqkT6tkI,2576
+jaraco/develop/indent.py,sha256=Sio3FN2tKlERq92_6xsd5zCN4ZGSP7RFXkfdXKczoIU,2545
+jaraco/develop/init-azure.py,sha256=E4DzPn2fKxo6UeUFIUtJcYkvaLSdDXa2IJ5fIPyJXrA,1574
+jaraco/develop/macos-build-python.py,sha256=fz2EdD5XExtQcALp2BgGFFdGC5tD5GGthOy1vnjosls,1083
+jaraco/develop/pypi.py,sha256=dKqM8sQPtuEVwYPo-BGWNbbyqtJ_-daA5EvYaFCYBEA,216
+jaraco/develop/remove-namespace.py,sha256=tJ320Gcl_JdmggJ95_iTBh61vC-kK5o4_CxTnEqSz-A,947
+jaraco/develop/repo.py,sha256=UD7-zC7XhMh9qQESMK5vh8Thrci5WtD2qahhglxlIGA,349
+jaraco.develop-7.7.0.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+jaraco.develop-7.7.0.dist-info/METADATA,sha256=tog98QCz9KWFrkHIfQJy1EmT9VnOH6sSZ3cBH7JiNUE,2143
+jaraco.develop-7.7.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jaraco.develop-7.7.0.dist-info/top_level.txt,sha256=SfNfwtvbuldkMnccxCTA0fSyzVjMh-hSt8UGJ2jF12I,12
+jaraco.develop-7.7.0.dist-info/RECORD,,
