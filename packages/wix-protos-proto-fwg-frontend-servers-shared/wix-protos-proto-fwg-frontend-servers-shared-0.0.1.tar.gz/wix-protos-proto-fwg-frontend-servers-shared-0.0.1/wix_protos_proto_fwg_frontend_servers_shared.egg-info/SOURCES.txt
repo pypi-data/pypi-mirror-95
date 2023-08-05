@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+setup.py
+wix_protos_proto_fwg_frontend_servers_shared.egg-info/PKG-INFO
+wix_protos_proto_fwg_frontend_servers_shared.egg-info/SOURCES.txt
+wix_protos_proto_fwg_frontend_servers_shared.egg-info/dependency_links.txt
+wix_protos_proto_fwg_frontend_servers_shared.egg-info/top_level.txt
