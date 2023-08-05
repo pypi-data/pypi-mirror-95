@@ -1,0 +1,12 @@
+sds011/__init__.py,sha256=hg4G0KXH9UFvynCtLU7aUE7AJe08pnE1cSvUaQQKloY,22
+sds011/sds011.py,sha256=_Q0ZgNGsCg1pj7GcV8dXchQE6mwGlN_CAmuBqHo7dig,12348
+sds011/examples/__init__.py,sha256=iBqsasciYtPu9wIrCQMaJF7ir9uCFER8UqmH1rds5Rk,66
+sds011/examples/sds011_console_test.py,sha256=N8KyTKcj_WjopdmG_NwA7VvzHDTeYMxrz9MlWUe_yXs,774
+sds011/utils/__init__.py,sha256=gahr9bKU_wWoiZQ0_ijKK9tqBMR7QMw39DOPyqr_TPQ,60
+sds011/utils/databasehandler.py,sha256=0DOhopTJdb7qIqfByt0CGaln1iCKgF7F2Eqj6uSWONE,1547
+sds011/utils/sockethandler.py,sha256=rUZjBcYTYqq14CXgxBGrHZgw_3sf0EWKes8bL1sUrTo,1628
+sds011-0.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+sds011-0.1.0.dist-info/METADATA,sha256=Is_t84RIxdqPVX7KZo5A0r0cg-P9raBXs1dyRjedrL4,3725
+sds011-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sds011-0.1.0.dist-info/top_level.txt,sha256=XVFqg3omuV7WeIcKMwutk2mGDFQCMf_Rq9s_RncysYU,7
+sds011-0.1.0.dist-info/RECORD,,
