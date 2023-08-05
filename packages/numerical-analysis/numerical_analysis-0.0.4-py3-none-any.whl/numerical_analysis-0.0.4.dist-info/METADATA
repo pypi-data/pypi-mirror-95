@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: numerical-analysis
+Version: 0.0.4
+Summary: Numerical Analysis contains some basic numerical methods for solving equations, integrating functions and parameterizing curves with Bezier Polynomials.
+Home-page: https://github.com/iagerogiannis/numerical-analysis
+Author: IAGerogiannis
+Author-email: iagerogiannis@gmail.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
