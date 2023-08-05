@@ -1,0 +1,6 @@
+/cfg.yaml
+__pycache__
+/.pybuild/
+/asyncakumuli.egg-info/
+/dist/
+/.eggs/
