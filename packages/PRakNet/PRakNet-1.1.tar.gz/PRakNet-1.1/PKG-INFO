@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: PRakNet
+Version: 1.1
+Summary: A Minecraft PI Edition oriented RakNet implementation written in python.
+Home-page: https://github.com/MCPI-Revival/PRakNet
+Author: MFDGaming
+Author-email: alexandros.argentakis@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: mcpi,raknet,python3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
