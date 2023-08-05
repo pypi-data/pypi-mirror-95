@@ -1,0 +1,3 @@
+[console_scripts]
+touch-callable = touch_callable.touch_callable:main
+
