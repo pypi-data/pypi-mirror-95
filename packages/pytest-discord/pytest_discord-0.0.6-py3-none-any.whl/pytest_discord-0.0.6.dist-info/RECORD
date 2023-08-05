@@ -1,0 +1,11 @@
+pytest_discord/__init__.py,sha256=XOL6wHg6Soy0p0rLr8rTl6ER9yKknp0H1d0WjfbxA50,88
+pytest_discord/__version__.py,sha256=HmkCefyRUbqc4CQBJvwfwS8j8ibtbZC2N9WEFdMvvmQ,209
+pytest_discord/_const.py,sha256=-K64aUyuqueHGGgQ6SZFRJWBG0O8ixu2zc-c6gB61WI,1894
+pytest_discord/_opt_retriever.py,sha256=2xZoEHqRhuDYZAiVEA-xuJaKdVVImke_Rn9QYZshTHU,3126
+pytest_discord/plugin.py,sha256=wXmrLS_WnKtSNkfSJp0lhwQZHm1dt4ljR8qIb-xEQH8,13644
+pytest_discord-0.0.6.dist-info/LICENSE,sha256=9BoEVtXyu6Jf1NflC1GpXeMEdw_x21p5UV0DOXqRTY0,1074
+pytest_discord-0.0.6.dist-info/METADATA,sha256=U0w6sQfAw3KirQ7eDhhHJeN4t79lBoQPhBcJ5kCVTVg,8007
+pytest_discord-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_discord-0.0.6.dist-info/entry_points.txt,sha256=JyBMb-sPUtiAnWSZNs3YbhJS6gMkQXDapPsXbJM5Ge0,51
+pytest_discord-0.0.6.dist-info/top_level.txt,sha256=1RzECzpVh2GYXwy3_cOizhNM2lDROtR0pDwuFZQFTas,15
+pytest_discord-0.0.6.dist-info/RECORD,,
