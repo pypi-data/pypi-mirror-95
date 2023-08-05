@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: silenceofthelambs
+Version: 0.0.1
+Summary: Decrypt shush-like KMS-encrypted strings stored in the environment
+Home-page: UNKNOWN
+Author: Sam Jarrett
+Author-email: sam@samjarrett.com.au
+License: MIT
+Description: # silenceofthelambs
+        
+        A python module that decrypts [shush](https://github.com/realestate-com-au/shush)-like
+        KMS-encrypted strings stored in the environment, for use in places where using
+        `shush env` as your entrypoint is not an option, e.g. AWS Lambda.
+        
+        ## Usage
+        
+        `silenceofthelambs` has two key usages:
+        
+        1. **Imported and manually activated**
+           ```python
+           import silenceofthelambs
+        
+           # in your main() func, or wherever makes sense
+           silenceofthelambs.decrypt()
+           ```
+        
+           If you want to provide your own boto3 KMS client (e.g. if you need to use different credentials/region):
+           ```python
+           import silenceofthelambs
+           import boto3
+        
+           myclient = boto3.client("kms", .....)
+        
+           silenceofthelambs.decrypt(kms_client=myclient)
+           ```
+        
+        1. **Imported and automatically activated**
+        
+           `silenceofthelambs` also supports auto-activation, using a default boto3 KMS client.
+           ```python
+           import silenceofthelambs.auto
+           ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: with_boto3
