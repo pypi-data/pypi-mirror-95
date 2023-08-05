@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+requirements_dev.txt
+requirements_pkg.txt
+setup.py
+src/registerit/__init__.py
+src/registerit/build_and_upload.py
+src/registerit/cli.py
+src/registerit.egg-info/PKG-INFO
+src/registerit.egg-info/SOURCES.txt
+src/registerit.egg-info/dependency_links.txt
+src/registerit.egg-info/entry_points.txt
+src/registerit.egg-info/requires.txt
+src/registerit.egg-info/top_level.txt
+src/registerit.egg-info/zip-safe
