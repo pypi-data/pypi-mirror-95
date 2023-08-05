@@ -1,0 +1,112 @@
+{% from 'tf1x_utils.j2' import batch_normal, activation_function, activation_name, build_output_dict, check_input_vars %}
+{% from 'controlflow.j2' import indented_if %}
+
+
+{% macro indented_if(condition) %}
+    {% filter remove_lspaces(4) -%}                
+        {% if condition -%}
+            {{ caller() }}
+        {%- endif -%}
+    {% endfilter -%}    
+{% endmacro %}
+
+
+{% macro layer_tf2x_fully_connected(layer_spec, graph_spec) %}
+class {{layer_spec.sanitized_name}}(Tf1xLayer):
+    def __init__(self):
+        self._n_neurons = {{layer_spec.n_neurons}}
+        self._variables = {}
+
+    def __call__(self, inputs: Dict[str, tf.Tensor], is_training: bool = True) -> Dict[str, tf.Tensor]:
+        """ Takes a tensor as input and feeds it forward through a layer of neurons, returning a newtensor."""
+        {{ check_input_vars(layer_spec, ['input'])|indent(width=8)}}                
+        input_ = inputs['input']
+        
+        flat_input = tf.keras.layers.Flatten()(input_)
+
+        {# Workaround to prevent re-creating weights@call. Fix w/ keras.layers.Layer. #}            
+        if not hasattr(self, 'W'):
+            W0 = tf.random.truncated_normal((flat_input.shape[1], self._n_neurons), stddev=0.1)
+            self.W = tf.Variable(initial_value=W0)
+        W = self.W
+
+        {# Workaround to prevent re-creating weights@call. Fix w/ keras.layers.Layer. #}
+        if not hasattr(self, 'b'):        
+            b0 = tf.constant(0.0, shape=[self._n_neurons], dtype=tf.float32)        
+            self.b = tf.Variable(initial_value=b0)
+        b = self.b
+        
+        y_before = tf.matmul(flat_input, W) + b
+        
+        {% call indented_if(layer_spec.batch_norm) %}
+            y = tf.keras.layers.BatchNormalization()(y_before, training=is_training)
+            {{ activation_function(layer_spec.activation, 'y_before') | indent(8) }}            
+        {% endcall %}
+        {% call indented_if(not layer_spec.batch_norm) %}
+            y = y_before
+        {% endcall %}
+        {{ activation_function(layer_spec.activation, 'y') | indent(8) }}
+            
+        self._variables = {k: v for k, v in locals().items() if can_serialize(v)}
+
+        {{ build_output_dict(
+            'self._outputs',
+            {'output': 'y', 'W': 'W', 'b': 'b', 'y_before': 'y_before'},
+            ['y', 'y_before'])|indent(width=8)
+        }}
+        return self._outputs
+
+    def get_sample(self) -> Dict[str, tf.Tensor]:
+        """ Returns a dictionary of sample tensors
+
+        Returns:
+            A dictionary of sample tensors
+        """
+        {% call indented_if(layer_spec.batch_norm) %}            
+            sample = self._outputs
+            sample['output'] = sample['y_before'] # Before batch normalization
+            return sample
+        {% endcall %}
+        {% call indented_if(not layer_spec.batch_norm) %}
+            return self._outputs
+        {% endcall %}
+
+    @property
+    def variables(self):
+        """Any variables belonging to this layer that should be rendered in the frontend.
+        
+        Returns:
+            A dictionary with tensor names for keys and picklable for values.
+        """
+        return self._variables.copy()
+
+    @property
+    def trainable_variables(self):
+        """Any trainable variables belonging to this layer that should be updated during backpropagation. Their gradients will also be rendered in the frontend.
+        
+        Returns:
+            A dictionary with tensor names for keys and tensors for values.
+        """
+        variables = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES, scope=self._scope)
+        variables = {v.name: v for v in variables}
+        return variables
+
+    @property
+    def weights(self):
+        """Any weight tensors belonging to this layer that should be rendered in the frontend.
+
+        Return:
+            A dictionary with tensor names for keys and tensors for values.
+        """
+        return {'W': self._variables['W']}
+
+    @property
+    def biases(self):
+        """Any weight tensors belonging to this layer that should be rendered in the frontend.
+
+        Return:
+            A dictionary with tensor names for keys and tensors for values.
+        """
+        return {'b': self._variables['b']}        
+{% endmacro %}
+
