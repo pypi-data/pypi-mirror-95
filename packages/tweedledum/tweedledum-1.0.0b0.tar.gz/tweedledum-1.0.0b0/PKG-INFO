@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: tweedledum
+Version: 1.0.0b0
+Summary: A library for synthesizing and manipulating quantum circuits
+Home-page: https://github.com/boschmitt/tweedledum
+Author: Bruno Schmitt
+Author-email: bruno.schmitt@epfl.ch
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
