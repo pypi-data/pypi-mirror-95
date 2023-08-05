@@ -1,0 +1,7 @@
+README.md
+setup.py
+pupil_sync.egg-info/PKG-INFO
+pupil_sync.egg-info/SOURCES.txt
+pupil_sync.egg-info/dependency_links.txt
+pupil_sync.egg-info/requires.txt
+pupil_sync.egg-info/top_level.txt
