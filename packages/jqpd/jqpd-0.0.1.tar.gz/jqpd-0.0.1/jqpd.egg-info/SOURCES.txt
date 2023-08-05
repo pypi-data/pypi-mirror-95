@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+jqpd/__init__.py
+jqpd/jqpd.py
+jqpd.egg-info/PKG-INFO
+jqpd.egg-info/SOURCES.txt
+jqpd.egg-info/dependency_links.txt
+jqpd.egg-info/requires.txt
+jqpd.egg-info/top_level.txt
