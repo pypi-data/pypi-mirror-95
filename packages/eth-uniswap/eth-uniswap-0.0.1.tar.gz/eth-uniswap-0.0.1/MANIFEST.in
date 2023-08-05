@@ -1,0 +1,3 @@
+include README.md
+include eth_uniswap/resources/**/*.json
+include eth_uniswap/resources/version
