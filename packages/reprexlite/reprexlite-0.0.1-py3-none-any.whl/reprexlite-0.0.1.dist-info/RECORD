@@ -1,0 +1,12 @@
+reprexlite/__init__.py,sha256=I6azG7R0R20NWECyxoYOAOxXgh-Zqf727HM50C38rBQ,123
+reprexlite/__main__.py,sha256=16pZGPYqSjmnISQloDdl6Qh4Deoxu2E4zSVRAuc6DIw,70
+reprexlite/cli.py,sha256=8ZCW0hDg-PIAOqkoIhpKfSzaqQ7lRJpPqjzBrSD8gEQ,2567
+reprexlite/reprex.py,sha256=T9_KAkMF-pkFvRtlfiM9HRFDZGZllkPCwbvqhFFzKJA,3577
+reprexlite/session_info.py,sha256=dVRswGS5ivWw44lcVs15z2LzcrADjLXZvIyPGDXj4S4,1625
+reprexlite/venues.py,sha256=H8pTAed4UAaYeaIM3ZSs9r9ML3tP4xSWq6uimm7jW0M,4185
+reprexlite/version.py,sha256=uxa186zLkPAF-sD5hMcgEU4QZ9_3XUGVLOLTAI8cStU,205
+reprexlite-0.0.1.dist-info/METADATA,sha256=7h2vDU6IzEpkH4zpv2nBF8v_rl9xFMznx4T4SKpsXhk,3115
+reprexlite-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+reprexlite-0.0.1.dist-info/entry_points.txt,sha256=9HVubBjWhEqsdYBYDgrl-CQ_X1htGA_kl-pJZMnE0vo,47
+reprexlite-0.0.1.dist-info/top_level.txt,sha256=DMoDFNVjPs76hPUZuXVeMgxCbhRKSdTvWFwkU-W_Ogw,11
+reprexlite-0.0.1.dist-info/RECORD,,
