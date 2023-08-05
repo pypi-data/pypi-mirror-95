@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 44", "wheel >= 0.30", "setuptools_scm[toml]>=3.4"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+profile = "black"
+known_first_party = ["tox", "tests"]
+
+[tool.setuptools_scm]
+write_to = "src/tox/version.py"
+write_to_template = """
+\"\"\" Version information \"\"\"
+__version__ = "{version}"
+"""
+
+[tool.towncrier]
+name = "tox"
+filename = "docs/changelog.rst"
+directory = "docs/changelog"
+title_format = false
+issue_format = "`#{issue} <https://github.com/tox-dev/tox/issues/{issue}>`_"
+template = "docs/changelog/template.jinja2"
+# possible types, all default: feature, bugfix, doc, removal, misc
