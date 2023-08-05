@@ -1,0 +1,10 @@
+setup.py
+distributions_julio_ml/Binomialdistribution.py
+distributions_julio_ml/Gaussiandistribution.py
+distributions_julio_ml/Generaldistribution.py
+distributions_julio_ml/__init__.py
+distributions_julio_ml.egg-info/PKG-INFO
+distributions_julio_ml.egg-info/SOURCES.txt
+distributions_julio_ml.egg-info/dependency_links.txt
+distributions_julio_ml.egg-info/not-zip-safe
+distributions_julio_ml.egg-info/top_level.txt
