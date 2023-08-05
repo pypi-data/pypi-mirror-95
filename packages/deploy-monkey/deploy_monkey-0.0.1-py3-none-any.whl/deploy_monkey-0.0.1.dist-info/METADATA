@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: deploy-monkey
+Version: 0.0.1
+Summary: Currently to prevent dependency-confusion. Aim to open source later
+Home-page: https://github.com/solarmonkey/deploy-monkey
+Author: Tino de Bruijn
+Author-email: tino@solarmonkey.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Deploy Monkey
+
+An opinionated tool to deploy things to a Nomad cluster.
+
+
