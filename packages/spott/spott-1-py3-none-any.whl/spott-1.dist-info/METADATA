@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: spott
+Version: 1
+Summary: Face Recognizer
+Home-page: UNKNOWN
+Author: Shaharyar Ahmed
+Author-email: <shaharyar.ahmed1121@gmail.com>
+License: UNKNOWN
+Keywords: python,face-recognition,opencv
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: face-recognition
+Requires-Dist: opencv-contrib-python
+Requires-Dist: tqdm
+Requires-Dist: colorama
+Requires-Dist: joblib
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: six
+
+A package that allows developers to do face recognition in a few lines of code
+
+
