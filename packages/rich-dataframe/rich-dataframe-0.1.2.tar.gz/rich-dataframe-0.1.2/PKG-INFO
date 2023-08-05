@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rich-dataframe
+Version: 0.1.2
+Summary: Create animated and prettify Pandas dataframe
+Home-page: https://github.com/khuyentran1401/rich-dataframe
+Author: khuyentran1401
+Author-email: khuyentran1476@gmail.com
+Requires-Python: ==3.7.8
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pandas (>=1.2.2,<2.0.0)
+Requires-Dist: rich (>=9.10.0,<10.0.0)
