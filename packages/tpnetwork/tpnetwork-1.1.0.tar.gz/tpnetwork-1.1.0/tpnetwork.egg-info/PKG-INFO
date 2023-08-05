@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tpnetwork
+Version: 1.1.0
+Summary: A python network module
+Home-page: https://github.com/tomarrok/tpnetwork
+Author: Thomas Pajon
+Author-email: th.pajon45@gmail.com
+License: UNKNOWN
+Description: # tpnetwork
+        
+        A python network module
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
