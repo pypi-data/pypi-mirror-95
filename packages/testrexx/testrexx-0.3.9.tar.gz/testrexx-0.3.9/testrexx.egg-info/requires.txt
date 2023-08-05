@@ -1,0 +1,5 @@
+pyrexx
+mkrexx
+python-decouple
+zowe-zos-files-for-zowe-sdk
+zowe-zos-jobs-for-zowe-sdk
