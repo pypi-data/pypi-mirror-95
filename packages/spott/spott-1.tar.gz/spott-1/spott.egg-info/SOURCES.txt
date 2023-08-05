@@ -1,0 +1,9 @@
+README.md
+setup.py
+spott/__init__.py
+spott/recognizer.py
+spott.egg-info/PKG-INFO
+spott.egg-info/SOURCES.txt
+spott.egg-info/dependency_links.txt
+spott.egg-info/requires.txt
+spott.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+face-recognition
+opencv-contrib-python
+tqdm
+colorama
+joblib
+regex
+requests
+six
