@@ -1,0 +1,8 @@
+VSRstats/__init__.py,sha256=9PHz0w2ndbBHJOhg5s1MA8j0NAHJaoRYxnwyL1-vUT0,2277
+VSRstats/frequency_domain.py,sha256=idjXjv_PBzWrWaHlfmnAksP__lzxhKa0LoH-wwP55v4,3558
+VSRstats/nonlinear.py,sha256=6KF5hfUmLnhp0k_FFYMnytaL72bxEeEWwgXtHSMDVmg,2961
+VSRstats/time_domain.py,sha256=8klY_1bdPmBZKWCZLiOKD7WjVa76yimQCIPwIcu9Dvs,3647
+VSRstats-1.17.dist-info/METADATA,sha256=CCSvli7esyp7WU31lJcNlWnCqFFhsniQ8A-_uMK6sGQ,304
+VSRstats-1.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+VSRstats-1.17.dist-info/top_level.txt,sha256=lZsNfXurLYlm_orov7LDetrtlAMIjUWDMPJkZpdYGtA,9
+VSRstats-1.17.dist-info/RECORD,,
