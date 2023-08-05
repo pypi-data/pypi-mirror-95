@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+taxoniq_accession_db/__init__.py
+taxoniq_accession_db.egg-info/PKG-INFO
+taxoniq_accession_db.egg-info/SOURCES.txt
+taxoniq_accession_db.egg-info/dependency_links.txt
+taxoniq_accession_db.egg-info/top_level.txt
