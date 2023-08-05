@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: Scrapx
+Version: 2.4.1
+Summary: A customized version of Scrapy
+Home-page: https://github.com/moqsien/scrapx
+Author: MoQsien
+Maintainer: MoQsien
+Maintainer-email: moqsien@foxmail.com
+License: BSD
+Project-URL: Documentation, https://github.com/moqsien/scrapx/blob/main/README.md
+Project-URL: Source, https://github.com/moqsien/scrapx
+Project-URL: Tracker, https://docs.scrapy.org/
+Platform: UNKNOWN
+Classifier: Framework :: Scrapy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: scrapy (>=2.4.1)
+Requires-Dist: pymongo (>=3.11.2)
+Requires-Dist: lxml (>=3.5.0) ; platform_python_implementation == "CPython"
+Requires-Dist: PyDispatcher (>=2.0.5) ; platform_python_implementation == "CPython"
+Requires-Dist: lxml (>=4.0.0) ; platform_python_implementation == "PyPy"
+Requires-Dist: PyPyDispatcher (>=2.1.0) ; platform_python_implementation == "PyPy"
+
+======
+Scrapx
+======
+
+.. image:: https://img.shields.io/pypi/v/Scrapy.svg
+   :target: https://pypi.python.org/pypi/Scrapy
+   :alt: PyPI Version
+
+Overview
+========
+
+Scrapx is a customized and also enhanced version of Scrapy
+
+
+Requirements
+============
+
+* Python 3.6+
+* Works on Linux, Windows, macOS, BSD
+
+Install
+=======
+
+The quick way::
+
+    pip install scrapx
+
+See the install section in the documentation at
+https://github.com/moqsien/scrapx/blob/main/README.md for more details.
+
+Documentation
+=============
+
+https://github.com/moqsien/scrapx/blob/main/README.md.
+
+
