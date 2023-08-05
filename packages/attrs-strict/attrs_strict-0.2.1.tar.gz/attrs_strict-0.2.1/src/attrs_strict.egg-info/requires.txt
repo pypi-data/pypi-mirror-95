@@ -1,0 +1,28 @@
+attrs>=19.1.0
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version < "3.5"]
+funcsigs>=1.0.2
+typing>=3.7.4.1
+
+[:python_version < "3.8"]
+typing_extensions
+
+[docs]
+Sphinx>=3
+
+[test]
+pytest>=4
+pytest-cov>=2.6
+
+[test:python_version < "3.3"]
+mock
+
+[test:python_version < "3.4"]
+enum34
+typing
+
+[test:python_version < "3.8"]
+typing_extensions
