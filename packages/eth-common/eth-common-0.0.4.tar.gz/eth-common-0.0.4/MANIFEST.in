@@ -1,0 +1,3 @@
+include README.md
+include eth_common/resources/**/*.json
+include eth_common/resources/version
