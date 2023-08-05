@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pybryt
+Version: 0.0.0
+Summary: Python auto-assessment library
+Home-page: UNKNOWN
+Author: Chris Pyles
+Author-email: cpyles@berkeley.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
