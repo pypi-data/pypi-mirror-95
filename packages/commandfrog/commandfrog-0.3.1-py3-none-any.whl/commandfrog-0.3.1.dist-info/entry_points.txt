@@ -1,0 +1,3 @@
+[console_scripts]
+build=build.__init__:build
+
