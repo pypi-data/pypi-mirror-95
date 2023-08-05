@@ -1,0 +1,15 @@
+pyyaml>=5.4.0
+sqlparse>=0.4.1
+stringcase>=1.2.0
+
+[postgresql_async]
+asyncio>=3.4.3
+databases[postgres]>=0.4.1
+
+[sqlalchemy]
+sqlalchemy
+asyncpg>=0.21.0
+
+[sqlite_async]
+asyncio>=3.4.3
+databases[sqlite]>=0.4.1

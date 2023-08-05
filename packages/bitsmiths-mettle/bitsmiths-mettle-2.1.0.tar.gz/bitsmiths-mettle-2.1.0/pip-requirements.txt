@@ -1,0 +1,10 @@
+asyncpg
+build
+databases[postgres]
+pre-commit
+pytest
+pyyaml
+sqlalchemy
+sqlparse
+stringcase
+twine
