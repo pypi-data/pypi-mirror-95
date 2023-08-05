@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pypypy
+Version: 0.1
+Summary: A test package for learning how to upload better in pip
+Home-page: https://github.com/Ayumu098/pypypy
+Author: Ayumu098
+Author-email: stephen.singer.098@gmail.com
+License: UNKNOWN
+Description: # Welcome
+        
+        This is just a test package uwu
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
