@@ -1,0 +1,8 @@
+elasticsearch
+nltk
+scipy
+sentence_transformers
+shortuuid
+torch
+torchvision
+transformers>=4.0.0
