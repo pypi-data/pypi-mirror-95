@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: iflowly
+Version: 0.0.2
+Summary: IFlowly Pythonn SDK.
+Home-page: https://github.com/Iflowly/python-iflowly-sdk
+Author: IFlowly
+Author-email: mohammad.albakri@iflowly.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: requests
+
+# python-iflowly-sdk
+SDK Python Wrapper for IFlowly APIs
+
+
