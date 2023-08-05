@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: NaverTTS
+Version: 0.2.0
+Summary: NaverTTS (NAVER Text-to-Speech), a Python library and CLI tool to interface with NAVER Papago text-to-speech API
+Home-page: https://github.com/scottgigante/NaverTTS
+Author: Scott Gigante
+Author-email: scottgigante@gmail.com
+License: MIT
+Keywords: navertts,text to speech,NAVER Papago,TTS
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Requires-Python: >= 3.5
+Description-Content-Type: text/markdown
+Requires-Dist: six
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: pytest (>=4.6) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: testfixtures ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: coveralls ; extra == 'test'
+
+# NaverTTS
+
+<img width=600 src="https://developers.naver.com/inc/devcenter/images/clova_thumbnail_1200x630.png">
+
+**NaverTTS** (*NAVER Text-to-Speech*), a Python library and CLI tool to interface with NAVER CLOVA text-to-speech API.
+Writes spoken `mp3` data to a file, a file-like object (bytestring) for further audio
+manipulation, or `stdout`.
+
+[![PyPI version](https://img.shields.io/pypi/v/NaverTTS.svg)](https://pypi.org/project/NaverTTS/)
+[![Python versions](https://img.shields.io/pypi/pyversions/NaverTTS.svg)](https://pypi.org/project/NaverTTS/)
+[![PyPi Downloads](http://pepy.tech/badge/NaverTTS)](http://pepy.tech/project/NaverTTS)
+[![Travis CI Build](https://api.travis-ci.com/scottgigante/NaverTTS.svg?branch=master)](https://travis-ci.com/scottgigante/NaverTTS)
+
+## Features
+
+-   Customizable speech-specific sentence tokenizer that allows for unlimited lengths of text to be read, all while keeping proper intonation, abbreviations, decimals and more;
+-   Customizable text pre-processors which can, for example, provide pronunciation corrections;
+-   Automatic retrieval of supported languages.
+
+### Installation
+
+    $ pip install NaverTTS
+
+### Quickstart
+
+Command Line:
+
+    $ navertts-cli --output hello.mp3 hello
+
+Module:
+
+    >>> from navertts import NaverTTS
+    >>> tts = NaverTTS('hello')
+    >>> tts.save('hello.mp3')
+
+### Licence
+
+This project was adapted from [gTTS](https://github.com/pndurette/gTTS) under the [The MIT License (MIT)](LICENSE). gTTS Copyright © 2014-2019 Pierre Nicolas Durette. NaverTTS Copyright © 2019 Scott Gigante.
+
+
