@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+TradingTechnicals.egg-info/PKG-INFO
+TradingTechnicals.egg-info/SOURCES.txt
+TradingTechnicals.egg-info/dependency_links.txt
+TradingTechnicals.egg-info/requires.txt
+TradingTechnicals.egg-info/top_level.txt

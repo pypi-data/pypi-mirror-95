@@ -1,0 +1,1 @@
+This is a library that makes it easy to get technical indicators
