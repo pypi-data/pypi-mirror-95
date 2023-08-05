@@ -1,0 +1,8 @@
+README.md
+setup.py
+pychordpro/__init__.py
+pychordpro/chordpro.py
+pychordpro.egg-info/PKG-INFO
+pychordpro.egg-info/SOURCES.txt
+pychordpro.egg-info/dependency_links.txt
+pychordpro.egg-info/top_level.txt
