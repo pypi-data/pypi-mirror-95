@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: FINANCEPP
+Version: 1.2.1
+Summary: Algorithm for finance
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: datetime
+Requires-Dist: pandas-datareader
+
+##Coming soon
+
+
