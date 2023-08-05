@@ -1,0 +1,13 @@
+fileplayer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fileplayer/config.py,sha256=bZCfBO9ZKvxTCpUDGbHKT475yOQGfaUo2dnRVe4P-j8,8547
+fileplayer/globa.py,sha256=XjAY71qC0QtOEokb0TGtqutqXSNOzUhsBL3AxMmcAXc,6300
+fileplayer/main.py,sha256=A07sO4GU6uXjANqBztKidJZE1V7iSU98jdc-8kW_33U,1962
+fileplayer/main_window.py,sha256=U8fBLRu2ax0uF4sR096RD_fC5PhOwG-nxXJhY8u_jxM,50887
+fileplayer/timer.py,sha256=oAHkXQQblLu1AabzdDrTM6p-FZdsQDFsyK9l94jdqBw,2499
+fileplayer/widgets.py,sha256=6Lo36Gsdmri2ncAzPfpj0LeWcEjvVzZ_vb7Bzr3jvoY,954
+file_player-1.0.0a27.dist-info/LICENSE,sha256=nXSYofwmEZcj5p5IDECflHYWVNpn3QSnqTi6F5K_cVk,35075
+file_player-1.0.0a27.dist-info/METADATA,sha256=OobMpMXiHWDuQ_X0sSJsESqbwGASz5nRTP5mhnyrkeI,1973
+file_player-1.0.0a27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+file_player-1.0.0a27.dist-info/entry_points.txt,sha256=a0PbrYETCPsI0fYxBaiVeuU8Rc28dPqQsuDdTOQbLqA,54
+file_player-1.0.0a27.dist-info/top_level.txt,sha256=r6YydS-gU-28B9HsjqgRTYH5CyVI1MucCCk0i-Yh_Pg,11
+file_player-1.0.0a27.dist-info/RECORD,,
