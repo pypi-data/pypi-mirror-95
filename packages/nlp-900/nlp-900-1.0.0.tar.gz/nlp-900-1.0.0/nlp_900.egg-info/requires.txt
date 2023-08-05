@@ -1,0 +1,10 @@
+click
+vext
+vext.gi
+nltk
+spacy
+gTTS
+playsound
+SpeechRecognition
+pyaudio
+langdetect

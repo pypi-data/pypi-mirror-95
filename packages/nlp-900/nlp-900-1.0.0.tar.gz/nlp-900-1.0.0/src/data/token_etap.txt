@@ -1,0 +1,5 @@
+en
+passer
+étape
+pause
+halte
