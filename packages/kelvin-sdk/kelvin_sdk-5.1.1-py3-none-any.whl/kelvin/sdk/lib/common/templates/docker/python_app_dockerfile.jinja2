@@ -1,0 +1,115 @@
+{% extends "docker/base_dockerfile.jinja2" %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{%- block builder_image -%}
+{%- if build_for_data_model_compilation or requirements_file %}
+FROM {{ base_data_model_builder_image }} as builder
+ARG PIP_INDEX_URL=https://pypi.org/simple
+ARG PIP_EXTRA_INDEX_URL
+ARG PIP_DISABLE_PIP_VERSION_CHECK=true
+ARG PIP_NO_INPUT=true
+ARG PIP_NO_CACHE_DIR=off
+LABEL stage=builder
+{% endif %}
+
+WORKDIR /opt/kelvin/app/
+
+{% if build_for_data_model_compilation %}
+COPY build/datamodel/ /icds
+RUN entrypoint.sh
+{% endif %}
+{% if system_packages %}
+RUN export DEBIAN_FRONTEND=noninteractive; apt-get update && \
+apt-get install -y --no-install-recommends {{ system_packages }} && \
+apt-get clean && rm -rf /var/lib/apt/lists/*
+{% endif %}
+
+ENV VIRTUAL_ENV=/opt/kelvin/app/venv
+RUN \
+python3 -m venv --system-site-packages ${VIRTUAL_ENV} && \
+${VIRTUAL_ENV}/bin/python -m pip install -U pip
+
+{% if build_for_data_model_compilation %}
+RUN \
+pip install kelvin-icd[builder] && \
+kelvin-icd message package /icds && \
+mv kelvin_message-*.whl /output/python && \
+${VIRTUAL_ENV}/bin/python -m pip install /output/python/kelvin_message-*.whl
+{% endif %}
+{% if requirements_file %}
+COPY {{ requirements_file }} /opt/kelvin/app/
+RUN \
+${VIRTUAL_ENV}/bin/python -m pip install -r /opt/kelvin/app/{{ requirements_file }}
+{% endif %}
+
+RUN echo '#! /bin/bash \n\
+BASE_DIR=$(realpath $(dirname $0))\n\
+export PYTHONPATH=${BASE_DIR}${PYTHONPATH:+:${PYTHONPATH'}}'\n\
+export VIRTUAL_ENV=${BASE_DIR}/venv\n\
+export PATH=${VIRTUAL_ENV}/bin${PATH:+:${PATH'}}'\n\
+cd "${BASE_DIR}"\n\
+exec python -m kelvin.app run app -c app.yaml {{ entry_point }} "$@"' > {{ executable }}
+
+RUN chmod +x {{ executable }}
+
+COPY . /opt/kelvin/app/
+
+{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block app_image_setup %}{{ super() }}{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block image_dependencies %}{{ super() }}{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block copy_app_content %}
+{% if build_for_data_model_compilation %}
+COPY --from=builder /output /opt/kelvin/datamodel
+{% endif %}
+COPY --from=builder /opt/kelvin/app /opt/kelvin/app/
+{% endblock %}
+##
+##
+##
+##
+##
+##
+{% block entry_point %}
+ENV PYTHONUNBUFFERED=1
+ENV VIRTUAL_ENV=/opt/kelvin/app/venv
+ENV PATH=${VIRTUAL_ENV}/bin:${PATH}
+
+WORKDIR /opt/kelvin/app/
+EXPOSE 48010
+ENTRYPOINT ["run_opcua"]
+CMD ["--cfg", "/opt/kelvin/app/{{ app_configuration_file }}"]
+{% endblock %}
+## finished
+{#
+  vim:ft=dockerfile.jinja
+#}
