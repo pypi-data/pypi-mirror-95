@@ -1,0 +1,3 @@
+[console_scripts]
+pizza-slice = pizza_slice.run:main
+
