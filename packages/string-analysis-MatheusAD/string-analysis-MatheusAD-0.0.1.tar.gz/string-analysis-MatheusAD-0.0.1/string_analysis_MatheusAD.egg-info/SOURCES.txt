@@ -1,0 +1,9 @@
+README.md
+setup.py
+string_analysis/__init__.py
+string_analysis/string_analysis.py
+string_analysis_MatheusAD.egg-info/PKG-INFO
+string_analysis_MatheusAD.egg-info/SOURCES.txt
+string_analysis_MatheusAD.egg-info/dependency_links.txt
+string_analysis_MatheusAD.egg-info/requires.txt
+string_analysis_MatheusAD.egg-info/top_level.txt

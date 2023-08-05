@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: string-analysis-MatheusAD
+Version: 0.0.1
+Summary: String Stream Analysis
+Home-page: https://github.com/MatheusAD95/str_analysis
+Author: Matheus Alves Diniz
+Author-email: matheusad95@gmail.com
+License: UNKNOWN
+Description: # String Stream Analysis
+        
+        Given a word, this package proposes an efficient solution to find the most
+        similar word in a string stream.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
