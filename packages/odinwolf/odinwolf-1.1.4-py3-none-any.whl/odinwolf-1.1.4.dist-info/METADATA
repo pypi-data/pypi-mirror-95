@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odinwolf
+Version: 1.1.4
+Summary: A wrapper for the odinwolf package.
+Home-page: https://youtube.com
+Author: janus banus
+Author-email: janus.banus@gmail.com
+License: Apache 2.0
+Keywords: yes
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: webbrowser
+
+A sample package
+
+
