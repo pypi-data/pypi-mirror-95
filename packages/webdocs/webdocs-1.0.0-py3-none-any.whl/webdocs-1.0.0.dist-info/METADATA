@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: webdocs
+Version: 1.0.0
+Summary: small tool to generate openapi doc
+Home-page: UNKNOWN
+Author: Abraham
+Author-email: abraham.liu@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: PyYAML
+
+#######
+webdocs
+#######
+
+Install
+########
+
+.. code:: shell
+
+    pip install  webdocs
+
+
+Usage
+######
+
+See `example/django_app`
+
+
