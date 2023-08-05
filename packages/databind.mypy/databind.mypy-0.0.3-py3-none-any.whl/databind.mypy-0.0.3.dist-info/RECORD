@@ -1,0 +1,10 @@
+databind/__init__.py,sha256=9T7FxraWd1HjbPnTNMD6kx2v1tOW1aIT1xZMMmPVO9Q,66
+databind/mypy/__init__.py,sha256=Em0yz14rrTeDDrqzf8d4tvO_uqXGYLoDNMTRXFhxhHw,174
+databind/mypy/_mypy_dataclasses.py,sha256=S8oPUsdK3ThDGT4vq9hyEOftrQeTbqxnxjjWMCSyX0s,13842
+databind/mypy/_plugin.py,sha256=JQop8oB7pmgydtZTPvEsgbT21mph6NnJtT1DX0AG20c,390
+databind.mypy-0.0.3.dist-info/LICENSE.txt,sha256=PTMA8TgKd7TibXuKbMOGlqATHes1D76uP9dAlPyqdEk,1002
+databind.mypy-0.0.3.dist-info/METADATA,sha256=PeQ3MR_vE6QH8Ygv_PnMgk0RQEtvmixjAy2V8x4OWoo,880
+databind.mypy-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+databind.mypy-0.0.3.dist-info/top_level.txt,sha256=WpXq4u4e1sM5ssD0YVRw6NDZ6a0dPTSSyVMVHOr5CZ4,9
+databind.mypy-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+databind.mypy-0.0.3.dist-info/RECORD,,
