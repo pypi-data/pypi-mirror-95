@@ -1,0 +1,4 @@
+tqdm
+werkzeug
+requests
+GitPython
