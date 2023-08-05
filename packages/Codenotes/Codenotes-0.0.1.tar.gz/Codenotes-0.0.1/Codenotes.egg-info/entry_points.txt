@@ -1,0 +1,3 @@
+[console_scripts]
+codenotes = codenotes:main
+
