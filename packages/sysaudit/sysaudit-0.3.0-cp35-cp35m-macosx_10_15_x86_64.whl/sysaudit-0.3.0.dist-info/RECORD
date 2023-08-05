@@ -1,0 +1,11 @@
+sysaudit/__init__.py,sha256=2sPciC5elQgY0qKmEUdurzm7tw4rNwHDAuhf9O7Rr_k,1319
+sysaudit/__init__.pyi,sha256=G85bLXgVwoON2AlrR2aZ6tGiapcXhfGiT1ClZ4QzHSI,172
+sysaudit/_csysaudit.pyi,sha256=G85bLXgVwoON2AlrR2aZ6tGiapcXhfGiT1ClZ4QzHSI,172
+sysaudit/_csysaudit.pyx,sha256=Cb4Izk2uisFsuUZ4gh05ndqDlDfOE74GR6ZIn7R07Uk,762
+sysaudit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sysaudit/_csysaudit.cpython-35m-darwin.so,sha256=YOeTa_NogblP5QyW9pdLTPvEhwkSNSKgP_jZvpcaOZM,44192
+sysaudit/_csysaudit.c,sha256=36VpNjyr7cSKDzl5dWNI7Z-Nnh0W9lMeMusd9Vlwa6g,154329
+sysaudit-0.3.0.dist-info/LICENSE,sha256=lwoq_vVTZRx0L2lKpwvpHmPQ1OUdzfFSZ5NTExAft7U,1070
+sysaudit-0.3.0.dist-info/WHEEL,sha256=TEGgAatkjP1OFBlJ2Ab_FYknecLS0XGqxMl1lawbBKk,102
+sysaudit-0.3.0.dist-info/METADATA,sha256=lvwKvaorgnS8XRe59__ufNfqyuP7CJhUGBUNRKTIDxw,2047
+sysaudit-0.3.0.dist-info/RECORD,,
