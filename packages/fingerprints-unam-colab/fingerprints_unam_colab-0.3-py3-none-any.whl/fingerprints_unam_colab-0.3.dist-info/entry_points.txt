@@ -1,0 +1,3 @@
+[console_scripts]
+extract_fp = huellas.extract_fp:entry_point
+
