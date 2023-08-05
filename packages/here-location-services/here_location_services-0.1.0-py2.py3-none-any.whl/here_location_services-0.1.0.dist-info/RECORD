@@ -1,0 +1,13 @@
+here_location_services/__init__.py,sha256=5xpZelezqdaX-nNcAW_ZLWqHEPOWDGQzaBp0cRlGIeI,353
+here_location_services/__version__.py,sha256=nilJyO7Xu6K-k0GG27EqvLawnftlaS4x2rl9D9SQaVA,140
+here_location_services/apis.py,sha256=lMuMgJRYnHn8Ca0okrLlkKc9ZrYbeoVD1oDXVNr1GGs,13374
+here_location_services/config.py,sha256=utfrfeniULFxau5nvfacnu_GqppWsz7RoOkBXxaM5Gw,294
+here_location_services/exceptions.py,sha256=rOFP2A-WEyxDXIYf0XYH3dl6Y9n0Ru4z-iHSItDFhVE,756
+here_location_services/ls.py,sha256=EFnYP05gvgUT-iMCXDvx0z8TeoEVvopmuFbniKDl3l8,10528
+here_location_services/responses.py,sha256=lAAWfgjgOHJmh_VgJKWx3JkktKCJLPw0_VueYuS4u3U,3726
+here_location_services/utils.py,sha256=GNkIj9AoGvQPYXCbUna1vaH_uNzyIHB_OP42cLMomEg,593
+here_location_services-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+here_location_services-0.1.0.dist-info/METADATA,sha256=f9TyWJBkVe-GtZhnClK2j0Ek6XfYisS1CkM6-pdJxdw,4759
+here_location_services-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+here_location_services-0.1.0.dist-info/top_level.txt,sha256=N_MbjRcri-tw2A-ZieGb-7UCWh7qz5Fx6uIrBazoDHc,23
+here_location_services-0.1.0.dist-info/RECORD,,
