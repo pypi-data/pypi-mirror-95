@@ -1,0 +1,3 @@
+[console_scripts]
+bzvl-invoices = bzvl_invoices.bzvl_invoices:main
+
