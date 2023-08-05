@@ -1,0 +1,8 @@
+include README.md
+include VERSION
+recursive-include mapy_dependencies_*/ *
+recursive-include mapy_dependencies_py27/ *
+recursive-include mapy_dependencies_py36/ *
+recursive-include mapy_dependencies_py37/ *
+recursive-include mapy_dependencies_py38/ *
+recursive-include mapy_dependencies_py39/ *
