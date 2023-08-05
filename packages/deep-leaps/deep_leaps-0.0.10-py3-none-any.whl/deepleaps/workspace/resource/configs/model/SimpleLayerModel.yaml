@@ -1,0 +1,5 @@
+_LOAD_INFO:
+  _LOAD_TYPE: 'package'
+  _MODULE_NAME: 'src.model.SimpleConv'
+  _CLASS_NAME: 'SimpleLayer'
+
