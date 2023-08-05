@@ -1,0 +1,11 @@
+richer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+richer/console.py,sha256=UoOKzruGdFvjXEpGkVJ_Pl7h4wcczYsi-nYRzqpLBwA,2557
+richer/interactive_console.py,sha256=fcxcrXAADqKVa3ZU4iHjF3T_6nr1vMg0hvZyA3pgjL4,2593
+richer/parser.py,sha256=IAvST046buhY7bmG_VMllcplwXuCuw0sz3_OmlRIGUE,1603
+richer/table.py,sha256=LJZr9omiS6ZIVXZn6kJ2BpCHAm14ywU8NRkJS3KNSug,3572
+richer/text.py,sha256=A5SWHHRpEJ-fgQ3i6HnXi3Q09Kv7lUoVRz310gTGkfI,2196
+richer-0.1.6.dist-info/LICENSE,sha256=qRnJKrSu_gKjYECuMkptJnqlLUFyqc1K4FdNTw3ap-4,1069
+richer-0.1.6.dist-info/METADATA,sha256=yhrTMoua6EecGLpUmCH3HHUDTj8URHWMNcWYjg5PKjk,5970
+richer-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+richer-0.1.6.dist-info/top_level.txt,sha256=jzbZpNVBp3loK0NFoIrWpyuNKSi4teMg9Jcflzx-caY,7
+richer-0.1.6.dist-info/RECORD,,
