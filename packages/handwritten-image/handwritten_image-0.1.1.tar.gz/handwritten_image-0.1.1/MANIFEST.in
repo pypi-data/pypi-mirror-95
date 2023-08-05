@@ -1,0 +1,2 @@
+include LICENSE.txt
+recursive-include handwritten_image/assets/*

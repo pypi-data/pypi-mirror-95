@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+handwritten_image/__init__.py
+handwritten_image/handwritten.py
+handwritten_image.egg-info/PKG-INFO
+handwritten_image.egg-info/SOURCES.txt
+handwritten_image.egg-info/dependency_links.txt
+handwritten_image.egg-info/not-zip-safe
+handwritten_image.egg-info/requires.txt
+handwritten_image.egg-info/top_level.txt
+handwritten_image/assets/A4.png
+handwritten_image/assets/Cursive.fcp
+handwritten_image/assets/Cursive.ttf
