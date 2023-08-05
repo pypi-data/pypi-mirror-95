@@ -1,0 +1,6 @@
+README.md
+setup.py
+arithpro.egg-info/PKG-INFO
+arithpro.egg-info/SOURCES.txt
+arithpro.egg-info/dependency_links.txt
+arithpro.egg-info/top_level.txt
