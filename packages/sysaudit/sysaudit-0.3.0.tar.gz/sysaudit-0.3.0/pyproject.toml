@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "sysaudit"
+version = "0.3.0"
+description = "Backport module for sys.audit and sys.addaudithook from Python 3.8"
+authors = ["brettlangdon <me@brett.is>"]
+license = "MIT"
+build = "build.py"
+repository = "https://github.com/brettlangdon/sysaudit"
+homepage = "https://sysaudit.readthedocs.io/"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "~2.7 || ~=3.5"
+
+[tool.poetry.dev-dependencies]
+Cython = "^0.29.21"
+black = {version = "^20.8b1", python = "~=3.6"}
+pytest = {version = "~=4.6"}
+mock = "~=3.0"
+mypy = {version = "~=0.800", python = "~=3.5"}
+typing = {version = "~=3.7.4", python = "~=2.7"}
+Sphinx = {version = "~=3.5.0", python = "~=3.5"}
+sphinx-rtd-theme = {version = "~=0.5.1", python = "~=3.5"}
+vulture = {version = "~=2.3", python = "~=3.6"}
+bandit = {version = "~=1.7.0", python = "~=3.6"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "Cython", "setuptools"]
+build-backend = "poetry.core.masonry.api"
