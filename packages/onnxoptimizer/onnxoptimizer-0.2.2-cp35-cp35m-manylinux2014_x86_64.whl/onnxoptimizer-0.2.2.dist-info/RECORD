@@ -1,0 +1,8 @@
+onnxoptimizer-0.2.2.dist-info/RECORD,,
+onnxoptimizer-0.2.2.dist-info/METADATA,sha256=H-SjvCUuOJY3FkgghgnIB5uVe5oM74Gi8HjGeZvwxNY,377
+onnxoptimizer-0.2.2.dist-info/WHEEL,sha256=EWjPQEu7l45LfLQ-ahAwqqO68k0EZcARHq4zAx5nZvs,112
+onnxoptimizer-0.2.2.dist-info/top_level.txt,sha256=c6tzddKT8vXQk8-8a2ukqEENCaU0HqKWjCU7FiVBn1A,14
+onnxoptimizer-0.2.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+onnxoptimizer/version.py,sha256=6KSUQBtuirHn1HHv4-kj4ZodmE57b631SfyWUqeIvV4,277
+onnxoptimizer/onnx_opt_cpp2py_export.cpython-35m-x86_64-linux-gnu.so,sha256=-eEDVQl-S9mKo3NtCqu8OF124n3X9QPTWuyxdZPDUb8,1367864
+onnxoptimizer/__init__.py,sha256=TfwXujzN8GRNg6Fn7HPEiWBpo4BW_8OU1bMBOgwPR2A,1820
