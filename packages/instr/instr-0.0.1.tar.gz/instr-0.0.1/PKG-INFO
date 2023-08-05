@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: instr
+Version: 0.0.1
+Summary: Simple wrapper for various SCPI-compliant instruments
+Home-page: UNKNOWN
+Author: igrekus
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Convenience wrapper around raw pyvisa objects.
+Keywords: python,scpi,visa
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
