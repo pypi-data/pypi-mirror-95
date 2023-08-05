@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+examples/fractal example.ipynb
+examples/test.py
+safrac/__init__.py
+safrac/generator.py
+safrac/mask.py
+safrac.egg-info/PKG-INFO
+safrac.egg-info/SOURCES.txt
+safrac.egg-info/dependency_links.txt
+safrac.egg-info/pbr.json
+safrac.egg-info/top_level.txt
