@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: python-snowflake
+Version: 0.0.1
+Summary: Lightweight library to generate unique IDs
+Home-page: https://github.com/mattonit/python-snowflake
+Author: Mattonit
+Author-email: itc@matton.it
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
