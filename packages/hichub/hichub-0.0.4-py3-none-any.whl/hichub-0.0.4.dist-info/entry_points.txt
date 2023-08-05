@@ -1,0 +1,5 @@
+[console_scripts]
+calldiff = hichub:call_diff_regions.py
+callhub = hichub:callhub.py
+hic2txt = hichub:convert_hic_to_pair.py
+
