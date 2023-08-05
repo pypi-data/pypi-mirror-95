@@ -1,0 +1,11 @@
+# ftb-mc
+
+A python script for working with servers.
+
+## Description
+
+This package is designed to provide the functionality necessary to more easily interact with FTB minecraft servers that are running in containers. It essentially functions as a wrapper around much more complex `podman` commands, with some awareness of how the containers should be built and structured, because it is codeveloped and colocated with those containers.
+
+## Notice
+
+This project is wholely unaffiliated with FeedTheBeast, Minecraft, Mojang, and Microsoft. It is an independent release to make management of local servers simpler.
