@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+stockwebscraper/__init__.py
+stockwebscraper/main.py
+stockwebscraper.egg-info/PKG-INFO
+stockwebscraper.egg-info/SOURCES.txt
+stockwebscraper.egg-info/dependency_links.txt
+stockwebscraper.egg-info/requires.txt
+stockwebscraper.egg-info/top_level.txt
