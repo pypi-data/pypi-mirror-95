@@ -1,0 +1,9 @@
+pysparkly/__init__.py,sha256=ZgQIICVzLF1L_45XKdn0hPc9aT3nwOTiIJI70EoOTxY,62
+pysparkly/extensions/__init__.py,sha256=UHlFSYLmvs4TtMm5hrpPowu2evZzINQTQAtn2xLvA1s,24
+pysparkly/extensions/dataframe.py,sha256=FIRcRqOTuSd9pTqaqOcXPJ5WzOy1Z5qNVVmoDj3jADg,3136
+pysparkly/helpers_column.py,sha256=l5DEgzGFGLH5veAQj4hST38xX8WVoHd8C0AWVoK8yNk,459
+pysparkly/helpers_dataframe.py,sha256=JHgi-3jWxhu7qQ24g7dLBB2yyYNNQDnkfsN_789t8Eg,1184
+pysparkly-0.1.1.dist-info/LICENSE,sha256=77zB09U9YbGPHOUxq1Taz5Duwtr3nDL2UQrxCkhCHzU,1068
+pysparkly-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pysparkly-0.1.1.dist-info/METADATA,sha256=GtPTzDDM40QEGhDGTlCWLUcopu3hq47sV13R2WLoWLw,519
+pysparkly-0.1.1.dist-info/RECORD,,
