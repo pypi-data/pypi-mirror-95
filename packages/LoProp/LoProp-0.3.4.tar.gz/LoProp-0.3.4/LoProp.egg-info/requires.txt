@@ -1,0 +1,7 @@
+blocked-matrix-utils>=1.0.8
+
+[dalton]
+daltools>=1.1.4
+
+[vlx]
+h5py

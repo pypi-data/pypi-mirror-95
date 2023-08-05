@@ -1,0 +1,3 @@
+[console_scripts]
+loprop = loprop.__main__:main
+
