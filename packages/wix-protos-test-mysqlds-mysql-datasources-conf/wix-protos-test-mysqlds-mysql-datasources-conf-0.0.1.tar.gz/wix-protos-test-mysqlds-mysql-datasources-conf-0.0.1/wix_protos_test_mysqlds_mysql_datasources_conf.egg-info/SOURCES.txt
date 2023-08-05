@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+setup.py
+wix_protos_test_mysqlds_mysql_datasources_conf.egg-info/PKG-INFO
+wix_protos_test_mysqlds_mysql_datasources_conf.egg-info/SOURCES.txt
+wix_protos_test_mysqlds_mysql_datasources_conf.egg-info/dependency_links.txt
+wix_protos_test_mysqlds_mysql_datasources_conf.egg-info/top_level.txt
