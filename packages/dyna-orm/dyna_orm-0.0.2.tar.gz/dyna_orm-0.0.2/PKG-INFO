@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: dyna_orm
+Version: 0.0.2
+Summary: A small and simplistic AWS dynamodb ORM
+Home-page: https://github.com/jsgilberto/dyna_orm
+Author: Jesus Alvarez
+Author-email: alv.mtz94@gmail.com
+License: MIT
+Download-URL: https://github.com/jsgilberto/dyna_orm/archive/v0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: Dynamodb,AWS,ORM
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
