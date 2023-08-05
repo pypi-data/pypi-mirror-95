@@ -1,0 +1,5 @@
+PyGObject
+babel
+croniter
+psutil
+python-xlib
