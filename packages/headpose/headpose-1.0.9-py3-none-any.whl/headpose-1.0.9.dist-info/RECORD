@@ -1,0 +1,12 @@
+headpose/__init__.py,sha256=iGHFrsWBtEbc-xQ4gD9dexBXIx1gWtBdQNVAFZbB-uw,164
+headpose/headpose.py,sha256=ie12AofPPalKf5GuF6qbCh9vX48XZ6stELablspB5hQ,7982
+headpose/model/caffemodel,sha256=KlahGlekopWVawZgtKPXa73KIgbElhzqjv59lcfLLy0,10666211
+headpose/model/model_points.txt,sha256=s2FtETY8K9kw5emeINGu8XJTIm4hYKFUXU_3fPm5fvg,1060
+headpose/model/prototxt,sha256=9iYhyskj1vN71mkpjEKLt-5yIztfjDOJu4k-Neu895U,28092
+headpose/model/pose_model/saved_model.pb,sha256=pNYLwc8A8_8XfkC0TiiORBKWG9imNUSYy8nZQwbdD_8,66569
+headpose/model/pose_model/variables/variables.data-00000-of-00001,sha256=yb1xNvBR-VyC_dwVpRmK_LwLWSeM6eXcvdnNOKv0lC8,29363240
+headpose/model/pose_model/variables/variables.index,sha256=p42l80CO26TLQ5WnL5LG-3liU44PbrLMqTIYUB-cf3E,898
+headpose-1.0.9.dist-info/METADATA,sha256=jHYbzCVjNGjFaWoSJmTq4xG2aP8rdpg_mDGcIu-E-XQ,1862
+headpose-1.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+headpose-1.0.9.dist-info/top_level.txt,sha256=KmAwLDiGvAMDAZrpZdgJnNRA76w9t9y52AFxm_sl5es,9
+headpose-1.0.9.dist-info/RECORD,,
