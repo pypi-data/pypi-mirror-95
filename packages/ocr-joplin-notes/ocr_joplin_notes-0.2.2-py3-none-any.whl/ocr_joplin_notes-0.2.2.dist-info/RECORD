@@ -1,0 +1,11 @@
+ocr_joplin_notes/__init__.py,sha256=UmovzO0GGkJ5tjPxWkp1VuEGJoSFJDuaKGx1pGKaEuY,115
+ocr_joplin_notes/cli.py,sha256=eP9hrDDYrJrIeATNQm59J7tT0OKre0GlrNjKWtH9_MA,2120
+ocr_joplin_notes/file_ocr.py,sha256=ZxYz1GjkUUh9xUcd5HueJ6SWk3TOxIxGcxxA0IticOg,3888
+ocr_joplin_notes/joplin_api.py,sha256=D-QyudYQNncWXce1lbyI7zdIGE38e-GxHogthC6QMKM,3592
+ocr_joplin_notes/ocr_joplin_notes.py,sha256=0gPO18zDrVPoY0-8FmmCWHCl0qIAr1AlIwsmIeWsmeI,7516
+ocr_joplin_notes/rest.py,sha256=nFDtyTJ5Z_iDcl09JdoZa7h3WZh6oNx8cA2I8i44tG0,1853
+ocr_joplin_notes-0.2.2.dist-info/LICENSE,sha256=yacrHHoxNsd1TpMPPmMOIDhZIT_djJMSrjMhlPd12uk,1072
+ocr_joplin_notes-0.2.2.dist-info/METADATA,sha256=2Ti1lKmvq2jpvpbupr8sb02LgNJETAQe5KfYYoF8IMA,6569
+ocr_joplin_notes-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ocr_joplin_notes-0.2.2.dist-info/top_level.txt,sha256=LXlLAMqxD9cpjd2VYB4HZyjR13-s72U2a4sNtKkxdLI,17
+ocr_joplin_notes-0.2.2.dist-info/RECORD,,
