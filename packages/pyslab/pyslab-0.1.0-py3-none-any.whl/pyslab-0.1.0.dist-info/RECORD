@@ -1,0 +1,10 @@
+pyslab/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pyslab/board.py,sha256=nL_NAdsXDN1KysU9zdLJBgq3dihmcmiJgWkx5FBpXdw,654
+pyslab/generator.py,sha256=p7lijIbtadIEUW1fMFuS8nn0ubNjmsBtAnuuM0OO_XM,590
+pyslab/solver.py,sha256=AUXY0zK4jIIcAJo4M19bvQZY-uZ0fi6ELOvSoalvo58,544
+pyslab/validator.py,sha256=aCIGlTV2qJ2AkeVB77jBqfsrvmR9mxpKUduP95LL3U4,533
+pyslab-0.1.0.dist-info/LICENSE,sha256=6L1JUUhRVjeSGqKzjj6xataoLSblboYpL30bjIzitTQ,1070
+pyslab-0.1.0.dist-info/METADATA,sha256=4FrfkUBh8yfMcXq2MNTFPfdNyByHP9JsKpPacscT9vo,551
+pyslab-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyslab-0.1.0.dist-info/top_level.txt,sha256=xt24GcvEZtUde5snKXBSVTwOIswsivm1GV1KhGyI9Gg,7
+pyslab-0.1.0.dist-info/RECORD,,
