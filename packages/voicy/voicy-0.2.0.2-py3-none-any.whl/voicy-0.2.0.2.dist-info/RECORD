@@ -1,0 +1,10 @@
+voicy/__init__.py,sha256=RevIlK1AVYICPKPkLtR5sadjzUQZsp6dY-ZbE0COPzI,145
+voicy/http/__init__.py,sha256=1TMyU_RPBTwkntyBd6Tk_f0W7NUmcfoP5gYRC8oVA14,26
+voicy/http/core.py,sha256=l9oU7a8-ZQNghY86z2JvR0ScXCUySnByipGeZ8zGTdA,297
+voicy/voicy/__init__.py,sha256=HnC5kRXSL6QcOA7sqgOv0KDem155a0N9lKVmha9uN78,119
+voicy/voicy/core.py,sha256=gir7r_z4AdW8BFrBdZwZt-NUHwN9T7kf0WsKaIA_2hg,6262
+voicy-0.2.0.2.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+voicy-0.2.0.2.dist-info/METADATA,sha256=CvJbccz3EXfdjtGmI9u_PutTEglNpSTGL6YFF6pIYT4,4391
+voicy-0.2.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+voicy-0.2.0.2.dist-info/top_level.txt,sha256=d6CIzlI4qNjfLTtsJ-r5IZZ7i8kzgnArnUUTLZRy5Q8,6
+voicy-0.2.0.2.dist-info/RECORD,,
