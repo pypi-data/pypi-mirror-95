@@ -1,0 +1,2 @@
+gnuhealth_lab==3.8.0
+gnuhealth_services==3.8.0
