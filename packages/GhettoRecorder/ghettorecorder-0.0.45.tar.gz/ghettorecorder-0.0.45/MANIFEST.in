@@ -1,0 +1,4 @@
+include ghettorecorder/settings.ini
+include ghettorecorder/UIghettoTerminal.py
+include ghettorecorder/UItextEditor.py
+include ghettorecorder/win.py
