@@ -1,0 +1,7 @@
+channels:
+ - conda-forge
+ - bioconda
+ - defaults
+dependencies:
+ - sra-tools=2.10.1
+ - seqtk=1.3
