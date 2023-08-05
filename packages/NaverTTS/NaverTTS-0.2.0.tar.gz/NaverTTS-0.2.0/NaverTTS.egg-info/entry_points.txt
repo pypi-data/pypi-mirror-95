@@ -1,0 +1,3 @@
+[console_scripts]
+navertts-cli = navertts.cli:tts_cli
+
