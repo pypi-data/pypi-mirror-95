@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: eth-openzeppelin
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/julien-h/python-eth-openzeppelin
+Author: Julien Harbulot
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: eth-common
+Requires-Dist: web3
+Requires-Dist: dataclasses ; python_version == "3.6"
+
+# Coming soon
+
+This library is currently in construction and will soon be released.
+
