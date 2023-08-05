@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: challonge-wrapper
+Version: 0.2.3
+Summary: Challonge REST API wrappers
+Home-page: https://github.com/Impasse52/challonge-python-wrapper
+Author: Giuseppe Termerissa
+Author-email: linkohprismriver@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# challonge-python-wrapper
+
+A wrapper for Challonge's REST API. Its main objective is to provide the ability to create easy-to-read, fast-to-build tools for *tournament organizing and analysis*, which is also the reason why I decided to leave out fields that do not contribute towards that goal.
+
+
+
+## Features
+
+- full support for Double Elimination brackets;
+- tournament, match and partecipant classes are totally decoupled, allowing you to istantiate just what you need for your use case;
+- ability to instantiate ChallongeTournament objects with or without attaching matches / participants;
+- players in ChallongeMatch objects are named, despite the matches endpoint not providing names;
+- round names are correctly assigned in Double Elimination brackets.
+
+
+
+## Installation
+
+```pip install challonge-wrapper```
+
+
+
+## Usage
+
+Make sure to generate an API key [here](https://challonge.com/settings/developer). Then import the `set_api_key()` function by typing
+
+```
+from challonge_wrapper import set_api_key
+```
+
+and using `set_api_key()` with your API key as a parameter. Make sure to also import `init_tournament()`,`init_matches()` and / or `init_partecipants()`. Then, call your desired function as follows:
+
+``````
+t = init_tournament(
+	"evojap19kof14",
+    "evo"
+)
+``````
+
+you can just print this object to get:
+
+``````
+id: 5316434, name: Evo Japan 2019 - The King of Fighters XIV, players: 192, game: The King of Fighters XIV, start: 2019-02-14
+``````
+
+you can instantiate a tournament object and also retrieve matches and / or players for that tournament like that:
+
+``````
+t = init_tournament(
+	"evojap19kof14",
+    "evo",
+    matches=False
+    participants=True
+)
+``````
+
+you can then access the object's attribute by simply calling his properties:
+
+`````` 
+for p in t.participants:
+	print('{}, {}'.format(p.id, p.name))
+``````
+
+
+
+## Todo
+
+- fully implement Single Elimination and Swiss brackets;
+- implement ability to set timezone;
+- implement POST operations;
+- write docs;
+

@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+challonge_wrapper/__init__.py
+challonge_wrapper/challonge_helpers.py
+challonge_wrapper/challonge_match.py
+challonge_wrapper/challonge_participant.py
+challonge_wrapper/challonge_tournament.py
+challonge_wrapper.egg-info/PKG-INFO
+challonge_wrapper.egg-info/SOURCES.txt
+challonge_wrapper.egg-info/dependency_links.txt
+challonge_wrapper.egg-info/requires.txt
+challonge_wrapper.egg-info/top_level.txt
