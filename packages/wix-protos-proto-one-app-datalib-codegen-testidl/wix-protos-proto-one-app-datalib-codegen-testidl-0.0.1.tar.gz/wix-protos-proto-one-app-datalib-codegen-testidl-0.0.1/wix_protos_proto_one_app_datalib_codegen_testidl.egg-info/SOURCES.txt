@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+setup.py
+wix_protos_proto_one_app_datalib_codegen_testidl.egg-info/PKG-INFO
+wix_protos_proto_one_app_datalib_codegen_testidl.egg-info/SOURCES.txt
+wix_protos_proto_one_app_datalib_codegen_testidl.egg-info/dependency_links.txt
+wix_protos_proto_one_app_datalib_codegen_testidl.egg-info/top_level.txt
