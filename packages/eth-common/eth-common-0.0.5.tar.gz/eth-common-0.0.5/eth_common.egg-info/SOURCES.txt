@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+eth_common/__init__.py
+eth_common/types.py
+eth_common.egg-info/PKG-INFO
+eth_common.egg-info/SOURCES.txt
+eth_common.egg-info/dependency_links.txt
+eth_common.egg-info/requires.txt
+eth_common.egg-info/top_level.txt
+eth_common/resources/version
