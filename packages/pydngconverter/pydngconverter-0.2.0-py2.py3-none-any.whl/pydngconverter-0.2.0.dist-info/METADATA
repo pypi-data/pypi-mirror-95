@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pydngconverter
+Version: 0.2.0
+Summary: Python Interface for the Adobe's DNG Converter
+Home-page: UNKNOWN
+Author: Braden Mars
+Author-email: bradenmars@bradenmars.me
+License: MIT
+Project-URL: documentation, https://bradenm.github.io/pydngconverter
+Project-URL: homepage, https://github.com/BradenM/pydngconverter
+Project-URL: repository, https://github.com/BradenM/pydngconverter
+Keywords: pydng dng dngconverter raw api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: ==3.*,>=3.8.0
+Requires-Dist: psutil (==5.8.*,>=5.8.0)
+Requires-Dist: rich (==9.10.*,>=9.10.0)
+Requires-Dist: wand (==0.6.*,>=0.6.0)
+Provides-Extra: dev
+Requires-Dist: autoflake (==1.*,>=1.4.0) ; extra == 'dev'
+Requires-Dist: black (==20.*,>=20.8.0.b1) ; extra == 'dev'
+Requires-Dist: bump2version (==1.*,>=1.0.1) ; extra == 'dev'
+Requires-Dist: coveralls (==3.*,>=3.0.0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.*,>=3.8.4) ; extra == 'dev'
+Requires-Dist: isort (==5.*,>=5.7.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.*,>=0.800.0) ; extra == 'dev'
+Requires-Dist: pytest (==6.*,>=6.2.2) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (==0.*,>=0.14.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.*,>=2.11.1) ; extra == 'dev'
+Requires-Dist: pytest-coverage (==0.*,>=0.0.0) ; extra == 'dev'
+Requires-Dist: pytest-mock (==3.*,>=3.5.1) ; extra == 'dev'
+Requires-Dist: pytest-sugar (==0.*,>=0.9.4) ; extra == 'dev'
+Requires-Dist: recommonmark (==0.*,>=0.7.1) ; extra == 'dev'
+Requires-Dist: sphinx (==3.*,>=3.4.3) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints (==1.*,>=1.11.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==0.*,>=0.5.1) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: recommonmark (==0.*,>=0.7.1) ; extra == 'docs'
+Requires-Dist: sphinx (==3.*,>=3.4.3) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (==1.*,>=1.11.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.*,>=0.5.1) ; extra == 'docs'
+
+UNKNOWN
+
+
