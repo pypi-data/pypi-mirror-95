@@ -1,0 +1,11 @@
+pyls_spyder/__init__.py,sha256=-A_GDkkNkt3gtGpM7fzVdj0s7lNXQqShwH4nzgYAMGg,436
+pyls_spyder/plugin.py,sha256=jIfvbVXowxOXEm_cxAIewjaSQcyxjQZjEL_7Hu-b6QU,6300
+pyls_spyder/utils.py,sha256=I8V768o3u-zIM6JibcGNVUgg6dKM5VetgV3ziDJ6udQ,1508
+pyls_spyder/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyls_spyder/tests/test_plugin.py,sha256=WZSPnOnLsDfiOet--tjInaGnXosnnu9AXHiO-IIfbmQ,4538
+pyls_spyder-0.3.1.dist-info/LICENSE,sha256=wgdBShI0JZmj1LYDy7Fb5pi16Veyiy6mDZHcDloKfgE,1067
+pyls_spyder-0.3.1.dist-info/METADATA,sha256=Th8sjZXCLuOpnD15Kbazd8APURam2wQS_m-LuGRsWiU,4623
+pyls_spyder-0.3.1.dist-info/WHEEL,sha256=oh0NKYrTcu1i1-wgrI1cnhkjYIi8WJ-8qd9Jrr5_y4E,110
+pyls_spyder-0.3.1.dist-info/entry_points.txt,sha256=tYobQ6la0by_5UPTAJqnIIuKiW_DgkZDtSMvZcMDXpE,41
+pyls_spyder-0.3.1.dist-info/top_level.txt,sha256=mJMViMzXwf-QyXbBRLEtxCsBN-1cjrqWgcqRGM-5OSQ,12
+pyls_spyder-0.3.1.dist-info/RECORD,,
