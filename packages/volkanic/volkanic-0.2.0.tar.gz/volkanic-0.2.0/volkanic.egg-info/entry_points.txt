@@ -1,0 +1,3 @@
+[console_scripts]
+volk = volkanic.default:registry
+
