@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: moolb
+Version: 0.1.1b1
+Summary: Simple bloom filter with pluggable hash backend
+Home-page: https://gitlab.com/nolash/python-moolb
+Author: Louis Holbrook
+Author-email: dev@holbrook.no
+License: GPL3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
+
+# Moolb - simple bloom filter with pluggable hash backend
+
+See tests for usage
+
+
