@@ -1,0 +1,14 @@
+django<4,>=2.2
+
+[develop]
+tox
+coverage
+pytest
+pre-commit
+
+[test]
+pytest
+pytest-django
+pytest-cov
+coverage
+codecov
