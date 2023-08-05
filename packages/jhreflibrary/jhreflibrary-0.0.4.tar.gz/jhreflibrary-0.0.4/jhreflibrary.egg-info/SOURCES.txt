@@ -1,0 +1,7 @@
+README.md
+setup.py
+jhreflibrary.egg-info/PKG-INFO
+jhreflibrary.egg-info/SOURCES.txt
+jhreflibrary.egg-info/dependency_links.txt
+jhreflibrary.egg-info/requires.txt
+jhreflibrary.egg-info/top_level.txt
