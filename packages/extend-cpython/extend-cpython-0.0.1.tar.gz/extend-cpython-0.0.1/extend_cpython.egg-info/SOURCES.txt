@@ -1,0 +1,7 @@
+README.md
+setup.py
+extend_cpython.egg-info/PKG-INFO
+extend_cpython.egg-info/SOURCES.txt
+extend_cpython.egg-info/dependency_links.txt
+extend_cpython.egg-info/top_level.txt
+src/maths.cpp
