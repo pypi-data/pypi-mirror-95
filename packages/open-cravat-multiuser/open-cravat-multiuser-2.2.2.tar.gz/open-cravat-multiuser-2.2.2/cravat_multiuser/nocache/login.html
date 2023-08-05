@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title>OpenCRAVAT Server</title>
+    <link rel="shortcut icon" href='#'>
+    <link rel="icon" href="/submit/logo_transparent.png" />
+    <link rel="stylesheet" href="/submit/nocache/websubmit.css?ver=1.6.0">
+    <link rel="stylesheet" href="/store/nocache/webstore.css?ver=1.6.0">
+    <link rel="stylesheet" href="/server/nocache/cravat_multiuser.css?ver=1.6.0">
+    <script src="/submit/jquery-3.3.1.min.js"></script>
+    <script src='/store/nocache/webstore.js?ver=1.6.0'></script>
+    <script src='/server/nocache/cravat_multiuser.js?ver=1.6.0'></script>
+    <script>
+        $(document).ready(function() {
+            multiuser_run();
+        });
+    </script> 
+</head>
+
+<body>
+
+<div id='loginsignupdialog'>
+    <div id='wrapdiv'>
+        <img src='/server/nocache/logo.png' style='position: absolute; top: -52px;'/>
+        OpenCRAVAT<br />
+        <div id='logindiv'>
+            <input type='text' id='login_username' placeholder='Email' />
+            <br />
+            <input type='password' id='login_password' placeholder='Password' />
+            <br />
+            <button id='login_button' onclick='login();' >Login</button>
+            <br />
+            <span style='cursor: pointer; font-size: 12px;' onclick='forgotPassword();'>Forgot password?</span>
+            <br />
+            <span style='cursor: pointer; font-size: 23px;' onclick='showSignupDiv();'>Sign up</span>
+            <br />
+            <span style='font-size: 12px;'>or</spna>
+            <br />
+            <button id='guest_button' onclick='tryAsGuest();' >Try as Guest</button>
+            <br />
+            <a href='https://open-cravat.readthedocs.io/en/latest/' target='_blank' style='font-size: 11px; color: white; text-decoration: none; cursor: pointer;'>Help</a>
+        </div>
+        <div id='forgotpassworddiv' style='display: none; margin-top: 15px;'>
+            <div id='forgotpasswordgetquestiondiv'>
+                <input type='text' id='forgotpasswordemail' placeholder='Email' />
+                <button id='forgotpasswordgetquestionbutton' onclick='getPasswordQuestion();'>Get password question</button>
+                <br />
+                <span style='cursor: pointer; font-size: 22px;' onclick='showLoginDiv();'>&#x21e6;</span>
+            </div>
+            <div id='forgotpasswordquestionanswerdiv' style='font-weight: normal;' >
+                <div style='font-size: 16px;'>
+                    Question: <span id='forgotpasswordquestion'></span>
+                </div>
+                <input type='text' id='forgotpasswordanswer' placeholder='Answer' />
+            <br />
+            <button id='forgotpasswordsubmitbutton' onclick='submitForgotPasswordAnswer();'>Submit</button>
+            </div>
+        </div>
+        <div id='signupdiv' style='display: none;'>
+            <input type='text' id='signupemail' placeholder='Email' />
+            <br />
+            <input type='password' id='signuppassword' placeholder='Password' />
+            <br />
+            <input type='password' id='signupretypepassword' placeholder='Repeat password' />
+            <br />
+            <input type='text' id='signupquestion' placeholder='Password retrieval question' />
+            <br />
+            <input type='text' id='signupanswer' placeholder='Password retrieval answer' />
+            <br />
+            <button id='signupbutton' onclick='signupSubmit();'>Create account</button>
+            <br />
+            <span style='cursor: pointer; font-size: 22px;' onclick='showLoginDiv();'>&#x21e6;</span>
+        </div>
+    </div>
+</div>
+ 
+</body>
+</html>
