@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: speechly-api
+Version: 0.1.0b9
+Summary: Speechly Public Protobuf Stubs
+Home-page: https://github.com/speechly/api/python
+Author: Speechly
+License: UNKNOWN
+Project-URL: Speechly, https://www.speechly.com/
+Project-URL: Source, https://github.com/speechly/api
+Keywords: speech,asr,language,nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio (>1.30)
+
+# Python stubs for Speechly protobuf collection
+
+Install the latest stubs with
+
+    pipenv install speechly_api
+
+
