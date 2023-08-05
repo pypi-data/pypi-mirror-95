@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "indep_free"
+version = "0.2.1"
+description = "Send newspaper \"El Independiente\" to mail. While we can download the newspaper and sed via email."
+authors = ["Emmanuel Arias <eamanu@yaerobi.com>"]
+license = "GPL-3+"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-mock = "^3.5.1"
+pytest-freezegun = "^0.4.2"
+pytest-cov = "^2.11.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+indep_free = "indep_free.cli:main"
