@@ -1,0 +1,12 @@
+Django>=2.2.0
+requests>=2.7.0
+
+[lint]
+pyflakes
+black
+
+[test]
+coverage
+pytest
+pytest-cov
+pytest-django
