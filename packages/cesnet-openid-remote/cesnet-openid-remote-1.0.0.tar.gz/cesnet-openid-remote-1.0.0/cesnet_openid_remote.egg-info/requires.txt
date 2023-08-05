@@ -1,0 +1,17 @@
+invenio-openid-connect
+
+[all]
+oarepo[tests]~=3.3.0
+pydocstyle
+isort
+invenio-oauthclient==1.4.0
+oarepo[tests]~=3.3.0
+pydocstyle
+isort
+invenio-oauthclient==1.4.0
+
+[tests]
+oarepo[tests]~=3.3.0
+pydocstyle
+isort
+invenio-oauthclient==1.4.0
