@@ -1,0 +1,10 @@
+setup.py
+giveme/__init__.py
+giveme/gitignore.py
+giveme/main.py
+givemestuff.egg-info/PKG-INFO
+givemestuff.egg-info/SOURCES.txt
+givemestuff.egg-info/dependency_links.txt
+givemestuff.egg-info/entry_points.txt
+givemestuff.egg-info/requires.txt
+givemestuff.egg-info/top_level.txt
