@@ -1,0 +1,187 @@
+#!/usr/bin/env python3
+# PYTHON_ARGCOMPLETE_OK
+
+import os
+import sys
+import subprocess
+import argparse
+import argcomplete
+
+import amz.init as init
+import amz.meta as meta
+import amz.install as install
+
+# Define
+AMZ_VERSION = meta.get_version()
+AMZ_VER_STR = f"\033[0m\033[40m\033[37m AMZ Tool \033[0m\033[34m\033[106m {AMZ_VERSION} \033[0m\033[31m"
+AMZ_SPLASH = f'''\033[31m
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                       ,e@MDMMMMMMMMMMM           ejMMMMMMMMMMMMMMMMMMMMMMMM  ║
+║                    ,eRMMMMMMMMMMMMMMMMU        ,@MMMMMMMMMMMMMMMMMMMMMMMMM   ║
+║                  -@MMMMMMM^```eMMMMMMMm       eMMMMMMMD```````````````````   ║
+║               ,eRMMMMMM`     jMMMMMMMMN     zMMMMMMMMMM        e@MMMMMRM     ║
+║             -@MMMMMM^        RMMMMMMMMM    @MMMMMMMMMM      ,@jMMMMMM`       ║
+║          ,eRMMMMMM`,wwwwwwwweMMMMM%MMMMH /RMMMMMMMMMM     eMMMMMMNM          ║
+║        -@MMMMMM" eMMMMMMMMMMMMMMMMMMMM`,@MMMMR^MMMMMM  ,eDMMMMMM^            ║
+║      eMMMMMMM`,@NjjjjjjjjjjMMMMMM  MM ejMMMMM eMMMMD xMMMMMMMMweeeeeeeeee    ║
+║   ,@MMMMMR^               ,MMMMMM   ,MMMMMM` MMMMMMM,MMMMMMMMMMMMMMMMMMMR    ║
+║ eMMMMMMM`                 RMMMMR   *MMMMM^   MMMMMM RMMMMMMMMMMMMMMMMMMMM    ║
+║                                                                              ║
+║   {    AMZ_VER_STR     }                                       MODE__MODE    ║
+║                                                                              ║'''.replace('\n', '', 1)
+
+# CLI Interface
+
+parser = argparse.ArgumentParser(description="AMZ Codebase Management Tool")
+parser.add_argument("--version", action='version', version=AMZ_VERSION)
+
+common_parser = argparse.ArgumentParser(add_help=False)
+common_parser.add_argument("-V", "--verbose", action='store_true', help="enable verbose output")
+# common_parser.add_argument("-C", "--oncar", action='store_true', help="running on car")
+
+subparsers = parser.add_subparsers(title="commands", dest="commands")
+
+parser_install = subparsers.add_parser("install", parents=[common_parser], help="install dependencies")
+parser_install.add_argument("options", type=str, nargs="*", choices=meta.autocomplete_choices())
+parser_install.add_argument("-F", "--forced", action='store_true', help="forced installation")
+parser_install.add_argument("-U", "--update", action='store_true', help="update package")
+parser_install.add_argument("-R", "--remove", action='store_true', help="remove package")
+
+parser_update = subparsers.add_parser("update", parents=[common_parser], help="update the tool")
+parser_update.add_argument("options", type=str, nargs="*")
+
+parser_init = subparsers.add_parser("init",
+                                    parents=[common_parser],
+                                    add_help=True,
+                                    help="initialize the tool or a repository")
+parser_init.add_argument("options",
+                         type=str,
+                         choices=["gen", "repo"],
+                         help="Initialize the AMZ Tool or the current repository.")
+
+
+def splash(mode):
+
+    # SPLASH
+    print(AMZ_SPLASH.replace("MODE__MODE", f"\033[43m{('verbose' if mode else 'silent').rjust(9)} \033[0m\033[31m"))
+
+    # Request Blanket sudo Access
+    SUDO_REQ_STR = f"║   \033[33m[sudo] password:\033[31m {58*' '}║"
+    while True:
+        try:
+            p1 = subprocess.run(f'sudo -p "{SUDO_REQ_STR}" echo "Check"', shell=True, stdout=subprocess.PIPE)
+            if p1.stdout.decode() == "Check\n":
+                break
+        except KeyboardInterrupt:
+            print(f"║   Exiting...{65*' '}║")
+            print(f"║{78*' '}║\n╚{ 78 * '═' }╝\033[0m")
+            sys.exit(0)
+
+    print(f"║{78*' '}║\n╚{ 78 * '═' }╝\033[0m")
+
+
+if __name__ == "__main__":
+
+    # Some initial stuff
+    argcomplete.autocomplete(parser)
+    args = parser.parse_args()
+
+    # Not all commands offer the "--verbose" flag
+    verbose = args.verbose if "verbose" in args else False
+
+    splash(mode=verbose)
+
+    # Main command selection
+
+    # Get meta config first:
+    cur_repo = ''
+    if args.commands in ['install', 'update']:
+        try:
+            amz_repos = meta.get_amz_config(['amz_tool_meta', 'repos'])
+            p2 = subprocess.run('git rev-parse --show-toplevel',
+                                shell=True,
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
+            # Check if your current repo is recognized as amz repos
+            if p2.returncode == 0 and p2.stdout.decode()[:-1] in amz_repos:
+                cur_repo = p2.stdout.decode()[:-1]
+            else:
+                if 'AMZ_ROOT' in list(os.environ.keys()):
+                    if os.environ['AMZ_ROOT'] != '':
+                        print("WARNING: Not in an amz repo --> Running command for autonomous repo")
+                        cur_repo = os.environ['AMZ_ROOT']
+                    else:
+                        print("ERROR: Not in an amz repo --> Couldn't locate autonomous repo either")
+                        sys.exit()
+                else:
+                    print("ERROR: Not in an amz repo --> Couldn't locate autonomous repo either")
+                    sys.exit()
+        except:
+            print("ERROR: Unable to acquire details of the repo")
+            sys.exit()
+
+    # Get repo and config file
+    amz_repo_root = cur_repo
+    amz_repo_config = amz_repo_root + '/amz.yaml'
+
+    # amz <Nothing to be done>
+    if args.commands is None:
+        print("Nothing to be done!")
+
+    ## amz install
+    elif args.commands == "install":
+
+        # Parse all args after install
+        install_cmd_list = args.options
+        forced = args.forced
+        install_mode = 'update' if args.update else 'install'
+        install_mode = 'remove' if args.remove else 'install'
+        # Segregate parsed install list
+        install_list = [x.split('.')[0] for x in install_cmd_list]
+        script_dict = {}
+        known_list = []
+        arg_list = []
+
+        try:
+            script_dict = meta.get_yaml_config(amz_repo_config, ['scripts'])
+            known_list = list(set(install_list) & set(script_dict.keys()))
+            arg_list = [x.split('.')[1:] for x in install_cmd_list if x.split('.')[0] in known_list]
+        except:
+            known_list = []
+
+        unknown_list = [x for x in install_list if x not in known_list + ['apt-deps', 'py2-deps', 'py3-deps']]
+
+        ### amz install apt-deps
+        if "apt-deps" in install_list:
+            apt_dep_file = meta.get_yaml_config(amz_repo_config, ['apt-deps'])
+            install.std_deps('apt', f"{amz_repo_root}/{apt_dep_file}", verbose, '')
+
+        ### amz install py2-deps
+        if "py2-deps" in install_list:
+            py2_dep_file = meta.get_yaml_config(amz_repo_config, ['py2-deps'])
+            install.std_deps('py2', f"{amz_repo_root}/{py2_dep_file}", verbose, '')
+
+        ### amz install py3-deps
+        if "py3-deps" in install_list:
+            py3_dep_file = meta.get_yaml_config(amz_repo_config, ['py3-deps'])
+            install.std_deps('py3', f"{amz_repo_root}/{py3_dep_file}", verbose, '')
+
+        ### amz install scr1 scr2 ...
+        if len(known_list) != 0:
+            for scr, args in zip(known_list, arg_list):
+                install.script(f"{amz_repo_root}/{script_dict[scr]}", args, verbose, forced, install_mode)
+
+        ### amz install <wrong> <wrong2> ...
+        if len(unknown_list) != 0:
+            print(f"ERROR: Unknown install command(s) - {', '.join(unknown_list)}")
+
+    ## amz init
+    elif args.commands == "init":
+        ### amz init gen
+        if args.options == "gen":
+            init.amz_gen_init(verbose)
+
+        ### amz init repo
+        elif args.options == "repo":
+            init.amz_repo_init(verbose)
