@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: svdc
+Version: 1.0.6
+Summary: Stefano Valentino: Test Dependency Confusion vulnerability
+Home-page: UNKNOWN
+Author: Stefano Valentino
+Author-email: stefano.valentino@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
