@@ -1,0 +1,23 @@
+spec_version: 1.0.0
+info:
+  name: {{app_name}}
+  version: 1.0.0
+  title: {{app_name}}
+  description: {{app_description}}
+
+system:
+  resources:
+    cpu: "1.0"
+  privileged: false
+  environment_vars: [ ]
+  ports: [ ]
+  volumes: [ ]
+
+app:
+  type: docker
+  docker:
+    entrypoint: [ ]
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args: [ ]

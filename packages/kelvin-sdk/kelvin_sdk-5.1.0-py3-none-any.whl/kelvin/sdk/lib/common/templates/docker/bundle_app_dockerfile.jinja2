@@ -1,0 +1,26 @@
+{% extends "docker/base_dockerfile.jinja2" %}
+
+{% block builder_image %}
+FROM {{ base_data_model_builder_image }} as builder
+LABEL stage=builder
+COPY build/datamodel/ /icds
+RUN entrypoint.sh
+{% endblock %}
+
+{% block copy_app_content %}
+COPY --from=builder /output /opt/kelvin/datamodel
+COPY build/bundle /opt/kelvin/bundle
+COPY app.yaml /opt/kelvin/bundle
+{% endblock %}
+
+{% block entry_point %}
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /opt/kelvin/bundle
+EXPOSE 48010
+ENTRYPOINT ["run_opcua"]
+CMD ["--cfg", "/opt/kelvin/bundle/config"]
+{% endblock %}
+{#
+  vim:ft=dockerfile.jinja
+#}

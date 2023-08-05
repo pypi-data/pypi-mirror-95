@@ -1,0 +1,35 @@
+"""
+Data Application.
+"""
+
+from kelvin.app import DataApplication
+
+
+class App(DataApplication):
+    """Application."""
+
+    def process(self) -> None:
+        """Process data."""
+        # 1 - To access the App Configuration -> app.kelvin.core.configuration @ app.yaml:
+        # self.config
+
+        # 2 - To access the input data:
+        # self.data
+
+        # 3 - Considering your data is defined in the inputs as 'my_var', you can access it with:
+        # my_var = self.data.my_var
+        # or
+        # my_var = self.data.get('my_var')
+
+        # 4 - To access the inputs and outputs, respectively:
+        # self.inputs
+        # and
+        # self.outputs
+
+        # 5 - To emit data:
+        # self.make_message("raw.float32", name="my_new_var", value=1.0, time_of_validity=int(1 * 1e9), store=True, emit=True)
+
+
+{#
+  vim:ft=python.jinja2:sw=4
+#}

@@ -1,0 +1,78 @@
+{% extends "docker/base_dockerfile.jinja2" %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block builder_image %}
+FROM {{base_data_model_builder_image}} as builder
+WORKDIR /opt/kelvin/app/
+COPY . /opt/kelvin/app/
+{% if build_for_data_model_compilation %}
+COPY build/datamodel/ /icds
+RUN mkdir -p /output/message && /bin/entrypoint.sh
+RUN ln -s /output /opt/kelvin/datamodel
+{% endif %}
+{% if system_packages %}
+RUN export DEBIAN_FRONTEND=noninteractive; apt-get update && \
+    apt-get install -y --no-install-recommends {{system_packages}} && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+{% endif %}
+RUN cd {{app_file_system_name}} && cmake . && make
+
+{% endblock -%}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block app_image_setup %}{{super()}}{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block image_dependencies %}{{super()}}{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block copy_app_content %}
+COPY --from=builder /opt/kelvin/app/ /opt/kelvin/app/
+{% if build_for_data_model_compilation %}
+COPY --from=builder /opt/kelvin/datamodel /opt/kelvin/datamodel
+ENV LD_LIBRARY_PATH=${LIBRARY_PATH}:/opt/kelvin/datamodel/message:/opt/kelvin/datamodel/message-impl:/opt/kelvin/datamodel/message-runtime
+{% endif %}
+{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block entry_point %}
+
+{{super()}}
+{% endblock %}
+##
+##
+##
+##
+##
+## finished
+# vim:ft=dockerfile.jinja

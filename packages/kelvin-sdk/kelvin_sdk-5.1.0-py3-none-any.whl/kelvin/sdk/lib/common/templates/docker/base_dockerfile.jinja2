@@ -1,0 +1,61 @@
+{#
+##
+##
+##
+##
+##
+##
+#}
+{%- block builder_image %}{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block app_image_setup %}
+FROM {{base_image}}
+{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block image_dependencies %}
+{% if system_packages %}
+RUN export DEBIAN_FRONTEND=noninteractive; apt-get update && \
+    apt-get install -y --no-install-recommends {{system_packages}} && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+{% endif %}
+{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block copy_app_content %}{% endblock %}
+{#
+##
+##
+##
+##
+##
+##
+#}
+{% block entry_point %}
+WORKDIR /opt/kelvin/app/
+EXPOSE 48010
+ENTRYPOINT ["run_opcua"]
+CMD ["--cfg", "/opt/kelvin/app/{{app_configuration_file}}"]
+{% endblock %}
+{#
+  vim:ft=dockerfile.jinja
+#}
