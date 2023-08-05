@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dott/__init__.py
+dott/__version__.py
+dott/api.py
+dott/runner.py
+dott.egg-info/PKG-INFO
+dott.egg-info/SOURCES.txt
+dott.egg-info/dependency_links.txt
+dott.egg-info/top_level.txt
