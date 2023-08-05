@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: komiker
+Version: 1.0.6
+Summary: Tutorial komiker-py: https://m.youtube.com/watch?v=wmlFLnWmaa0
+Home-page: https://github.com/komiker-py
+Author: pemula
+Maintainer: pemula
+License: Dilindungi oleh Raja Iblis Merlin Lucifer.
+Download-URL: https://github.com/komiker-py
+Keywords: komiker
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: Indonesian
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: fake-headers (==1.0.2)
+Requires-Dist: pycrypto (==2.6.1)
+Requires-Dist: rich (==9.10.0)
+
+# Komiker
+
+“apa ini aku tidak tau :><br>
+script asal-asalan gak jelas gak penting bodoamat!!!”<br>
+-pemula
+
+## Installation
+
+※ Install python di android pakai pydroid.<br>
+※ Buka pydroid => buka file "main.py" dari folder komiker-py.<br>
+※ Langsung jalankan saja untuk mengetes apakah sudah terbaca semua module-nya.<br>
+※ Jika module masih tidak terbaca, buka terminal.<br>
+※ Copy paste perintah di bawah di terminal.
+```
+python -m pip install komiker
+```
+※ Tunggu sampai selesai.
+
+## Usage
+
+※ Cari URL manga di "bacakomik.co", "boosei.com", "kiryuu.co", "komikav.com", "komikindo.co", "komikmama.net", "komiku.id", "komikcast.com", "maid.my.id","mangakita.net", "mangakyo.me", "sektekomik.com", "westmanga.info" saja, website lain tidak bisa karena regex-nya hanya mencari di sumber teks dari web tsb, jika ingin yang lainnya silakan dimodif sendiri. Format link-nya harus dari page manga bukan page chapter!! Misalnya: 'https://bacakomik.co/manga/solo-leveling/' dan bukan dari page chapter (X)  'https://bacakomik.co/solo-leveling-chapter-136-bahasa-indonesia/' (X). Contoh lewat URL:
+```
+komik.download('https://bacakomik.co/manga/solo-leveling/').generate()
+```
+
+※ Jika malas sekali mencari URL manga seperti si penulis, gunakan parameter site="inisial website" ['bk', 'bs', 'ka', 'kc', 'ki', 'kk', 'km', 'ky', 'md', 'mk', 'mo', 'sk', 'wm']. Fungsinya untuk mencari URL lewat daftar komik dari website tsb. Misalnya ingin buka daftar komik dari website "bacakomik.co":
+```
+komik.download(site='bk').generate()
+```
+Seperti dijelaskan di atas inisial website dari "bacakomik.co" adalah "bk".
+
+※ Pilih mode download, dalam bentuk folder berisi gambar (.jpg) pilih mode 1-3 dan dalam bentuk berkas (.rar/ .zip) pilih mode ke 4. 
+
+Mode 1: download semua chapter.<br>
+Mode 2: download satu chapter.<br>
+Mode 3: download chapter a sampai chapter b.<br>
+*a = chapter tujuan awal<br>
+*b = chapter tujuan akhir
+
+## Warning
+
+Jangan memasukan angka atau apapun yang tidak semestinya, misalnya memasukan mode 5 atau 999 yang sudah jelas akan muncul error/ berhenti. Karena si penulis malas sekali untuk menghandle semua kemungkinan munculnya error. Tidak menerima perintah untuk memperbaiki bug atau sejenisnya, tapi bisa mengirim pesan untuk memberi tahu bug tersebut.
+
+## License
+
+Dilindungi oleh Raja Iblis Merlin Lucifer.<br>
+Ditulis dengan ❤ oleh Mantan Kamu 😘
+
