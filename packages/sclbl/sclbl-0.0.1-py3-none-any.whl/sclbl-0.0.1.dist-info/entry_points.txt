@@ -1,0 +1,3 @@
+[console_scripts]
+sclbl = sclbl.cli:main
+
