@@ -1,0 +1,9 @@
+signalr_async/__init__.py,sha256=aRxZRnv0-iNq4_fhD85ejdBHSYWuePuwc2743lnrjtU,130
+signalr_async/client.py,sha256=sQjTMSHwQ1-7Ei6lL6vJejBbBVkLwKrrYwCfxKPveJc,2450
+signalr_async/connection.py,sha256=Q7oW0A3-wdrwC0eCPEs0px31YGkt0RrGNs6G0sBE2qY,5122
+signalr_async/hub_proxy.py,sha256=gbISmvIQ6PuAsUAlscGGeExWQhFfVl-eiARps-0JlBg,1462
+signalr_async/invoke.py,sha256=hsJk17o_xM3Tx2sJY8Wz8qf6LtB1M_v-MrmvCphvFes,982
+signalr_async-0.1.6.dist-info/LICENSE,sha256=HweLczQuJtL4KAI9sPPG98HPkSGOF3_oMLt1aR5eowg,1067
+signalr_async-0.1.6.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+signalr_async-0.1.6.dist-info/METADATA,sha256=55wghl-7C8SDLu5JNwy2NTGbNdPfKZzjneYN_Lbyjt4,566
+signalr_async-0.1.6.dist-info/RECORD,,
