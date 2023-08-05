@@ -1,0 +1,8 @@
+README.md
+setup.py
+fishspot/__init__.py
+fishspot.egg-info/PKG-INFO
+fishspot.egg-info/SOURCES.txt
+fishspot.egg-info/dependency_links.txt
+fishspot.egg-info/requires.txt
+fishspot.egg-info/top_level.txt
