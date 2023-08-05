@@ -1,0 +1,5 @@
+pelican/plugins/webassets/__init__.py,sha256=k6PZlVOVj5d3rLk1ZZSIfISK80YhT2QdMdfYVH6d23U,33
+pelican/plugins/webassets/webassets.py,sha256=JmzTR7PfCb9bwtshcBc2e15VMpL1LbRM5NH9G8exvlA,3572
+pelican_webassets-2.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pelican_webassets-2.0.0.dist-info/METADATA,sha256=4oj04MOKdPu84eEXJu2Xsy3TYRycLd1cOvy-3tKL9Ic,8498
+pelican_webassets-2.0.0.dist-info/RECORD,,
