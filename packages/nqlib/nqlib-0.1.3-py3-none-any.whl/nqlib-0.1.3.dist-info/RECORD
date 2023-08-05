@@ -1,0 +1,9 @@
+nqlib/__init__.py,sha256=vjo_r4402QzNTCKLl5Lieg-xZv4olr3KYRTVOjDlb1k,273
+nqlib/linalg.py,sha256=qLpA6QQMUgyKiq-4Ix-Z-hwL904OD05edoQ3J-g8SCk,881
+nqlib/quantizer.py,sha256=pyNcga14x38jAt0PKr2KmFRxJcRiLP6WCC_y5ODp2kk,45545
+nqlib/system_description.py,sha256=5XHgJQCciViJTP2Gjx4xRZaU9uu_-qHMAswgf9n_-kE,27064
+nqlib-0.1.3.dist-info/LICENSE.txt,sha256=Mst06igIbHAtNfHtKgrdshcqG8lKC86jdaUams7U6E8,1090
+nqlib-0.1.3.dist-info/METADATA,sha256=P5EDIUo8II3pbZ466ge0gM0NKSXWhumzBTjVA85oSBM,2661
+nqlib-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nqlib-0.1.3.dist-info/top_level.txt,sha256=efz21lmiRfL7f_AVgE3n941LeZSxgJUFKHHIXA-Z2Nc,6
+nqlib-0.1.3.dist-info/RECORD,,
