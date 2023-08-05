@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: polyrename
+Version: 1.1.0
+Summary: A cross-platform, bulk-file rename tool
+Home-page: https://github.com/agsimmons/PolyRename
+License: GPL-3.0-only
+Author: Andrew Simmons
+Author-email: agsimmons0@gmail.com
+Requires-Python: >=3.6.1,<3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PySide2 (>=5.15.2,<6.0.0)
+Requires-Dist: mediafile (>=0.2.0,<1.0.0)
+Project-URL: Bug Tracker, https://github.com/agsimmons/PolyRename/issues/
+Project-URL: Documentation, https://polyrename.readthedocs.io/
+Project-URL: Repository, https://github.com/agsimmons/PolyRename
+Description-Content-Type: text/markdown
+
+[![PyPI](https://img.shields.io/pypi/v/PolyRename)](https://pypi.org/project/PolyRename/)
+[![Documentation Status](https://readthedocs.org/projects/polyrename/badge/?version=latest)](https://polyrename.readthedocs.io/en/latest/?badge=latest)
+
+# PolyRename
+A cross-platform, bulk-file rename tool
+
+## Installation
+PolyRename is available on [PyPI](https://pypi.org/project/PolyRename/) and can be installed via:
+
+    $ pip3 install --user PolyRename
+
+## Documentation
+PolyRename's documentation is hosted on [ReadTheDocs](http://polyrename.readthedocs.io/)
+

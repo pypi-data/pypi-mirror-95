@@ -1,0 +1,3 @@
+[console_scripts]
+polyrename=polyrename.__main__:main
+
