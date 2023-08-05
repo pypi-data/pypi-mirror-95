@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<registry>
+  <record name="ideabox.restapi.login">
+    <field type="plone.registry.field.TextLine">
+      <title>Login for rest calls</title>
+      <required>True</required>
+    </field>
+    <value>login</value>
+  </record>
+
+  <record name="ideabox.restapi.password">
+    <field type="plone.registry.field.Password">
+      <title>Password for rest calls</title>
+      <required>True</required>
+    </field>
+    <value>password</value>
+  </record>
+</registry>

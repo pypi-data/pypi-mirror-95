@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-02-15 10:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../form/action.py:13
+msgid "Import PST Actions"
+msgstr ""
+
+#: ../form/action.py:21
+msgid "Import PST Progresses"
+msgstr ""
+
+#: ../configure.zcml:26
+msgid "Installs the ideabox.restapi add-on."
+msgstr ""
+
+#: ../form/pstactionprogress.py:18
+msgid "List of PST Actions progresses that you want to import"
+msgstr ""
+
+#: ../form/pstaction.py:18
+msgid "List of PST Actions that you want to import"
+msgstr ""
+
+#: ../form/pstactionprogress.py:19
+msgid "This list contains only PST Actions progresses that was not already imported"
+msgstr ""
+
+#: ../form/pstaction.py:19
+msgid "This list contains only PST Actions that was not already imported"
+msgstr ""
+
+#: ../configure.zcml:35
+msgid "Uninstalls the ideabox.restapi add-on."
+msgstr ""
+
+#: ../configure.zcml:26
+msgid "ideabox.restapi"
+msgstr ""
+
+#: ../configure.zcml:35
+msgid "ideabox.restapi (uninstall)"
+msgstr ""

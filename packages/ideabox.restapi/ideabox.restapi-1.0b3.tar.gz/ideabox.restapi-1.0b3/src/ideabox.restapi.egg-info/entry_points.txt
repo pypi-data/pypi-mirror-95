@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    update_locale = ideabox.restapi.locales.update:update_locale
+    
