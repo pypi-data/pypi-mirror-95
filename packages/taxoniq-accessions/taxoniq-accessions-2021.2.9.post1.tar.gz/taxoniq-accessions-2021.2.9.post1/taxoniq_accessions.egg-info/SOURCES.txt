@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+taxoniq_accessions/__init__.py
+taxoniq_accessions/blast_db.marisa
+taxoniq_accessions/db.marisa
+taxoniq_accessions/taxid_db.marisa
+taxoniq_accessions.egg-info/PKG-INFO
+taxoniq_accessions.egg-info/SOURCES.txt
+taxoniq_accessions.egg-info/dependency_links.txt
+taxoniq_accessions.egg-info/top_level.txt
