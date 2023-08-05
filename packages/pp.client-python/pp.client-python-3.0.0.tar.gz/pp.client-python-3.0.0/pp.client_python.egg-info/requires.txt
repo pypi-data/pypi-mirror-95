@@ -1,0 +1,4 @@
+loguru
+plac
+requests
+setuptools
