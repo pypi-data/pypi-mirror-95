@@ -1,0 +1,10 @@
+include *.py MANIFEST.in LICENSE README.rst
+global-include *.txt *.rst *.ini *.c *.h *.cfg
+recursive-include test *.py
+recursive-include docs *.py
+exclude .gitignore
+exclude *.so
+prune build
+prune dist
+prune .tox
+prune .git
