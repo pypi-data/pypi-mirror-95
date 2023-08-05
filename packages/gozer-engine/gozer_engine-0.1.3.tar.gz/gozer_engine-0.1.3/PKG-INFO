@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: gozer_engine
+Version: 0.1.3
+Summary: Browser engine for Gopher
+Home-page: https://gitlab.com/schism15/gozer-engine
+Author: schism
+Author-email: schism@schism15.com
+License: GPL v2
+Description: # Gozer: A Browser Engine for the Gopher Protocol
+        
+        # About Gozer
+        
+        gozer-engine started a project I gave myself to explore the process of building something straight from an RFC spec. It adheres to the syntax specified in RFC [1436](https://tools.ietf.org/html/rfc1436) and RFC [4266](https://tools.ietf.org/html/rfc4266). It utilizes the Lark package for parsing the Gopher source code.
+        
+        The goal of this project is to serve as an extensible framework that will allow users to select and/or create their own frontends (e.g. picotui, blessed, PyQt, etc). 
+        
+        Bugs and feature requests are tracked in the [Issues](https://gitlab.com/schism15/gozer-curses/-/issues) section this GitLab project.
+        
+        ## Installation
+        * From PyPI: `pip install gozer_engine`
+        * From source. Either:
+          * Clone this repo locally or
+          * Download an artifact from [Releases](https://gitlab.com/schism15/gozer-engine/-/releases)
+        * If you want to install Gozer to a specific Python virtaul environment, activate that environment
+        * From the project root run `pip install .`
+        
+        ## Usage
+        The following is a simple script that uses the Gozer API methods to load two pages then go back one page in the history. For an example of a terminal-based browser that utilizes the Gozer engine, see the schism15/gozer-curses> project.
+        ```python
+        from pprint import pprint as pp
+        from gozer_engine.gozer import Gozer
+        
+        def gozer_test():
+            first_uri = 'sdf.org'
+            second_uri = 'gopherpedia.com'
+        
+            gozer = Gozer()
+        
+            input('Press Enter to load sdf.org: ')
+        
+            gozer.send_request(first_uri)
+            pp(gozer.get_page_contents())
+        
+            input('Press Enter to load gopherpedia.com: ')
+            gozer.send_request(second_uri)
+            pp(gozer.get_page_contents())
+        
+            input('Press Enter to go back one page in the history: ')
+            gozer.back_one_page()
+            pp(gozer.get_page_contents())
+        
+        if __name__ == '__main__':
+            gozer_test()
+        ```
+        
+        ## TODO (As of 2021-02-13)
+        * Search support (#16)
+        * Add Sphinx Docs (#32)
+        * ~~Fix History Bug (#28)~~
+        * ~~Add reload (#27)~~
+        * ~~Publish Package to PyPI (#33)~~
+        
+        ## About Gopher
+        
+        The Gopher protocol was an Internet protocol that was popular in the early 1990s. Created in 1991 (the same year as HTTP), it was one of the dominant competitors in the World Wide Web space in the early 1990s. Gopher's emphasis was on modeling a hierarchical file-like structure of content on the web and simplicity in implementing server and client software.
+        
+        With an interface utilized menu-like functionality for navigating through web content, Gopher was suited for text based browsers. Lynx still currently maintains native Gopher support. Though Gopher was eventually overtaken in adoption by HTTP, a community of active Gopherholes continues to this day.
+        
+        If you are unfamiliar with Gopher, these links will provide some context:
+        
+        - [Wikipedia entry on Gopher](https://en.wikipedia.org/wiki/Gopher_(protocol))
+        - [Floodgap Public Gopher Proxy](https://gopher.floodgap.com/gopher/gw)
+        - [DistroTube's video on Gopher](https://www.youtube.com/watch?v=lUBhOgK5zQI)
+        - [The Rise and Fall of the Gopher Protocol](https://www.minnpost.com/business/2016/08/rise-and-fall-gopher-protocol/)
+        - [Interview with the Developers of Gopher](https://www.youtube.com/watch?v=oR76UI7aTvs)
+        - [RFC 1436 - The Internet Gopher Protocol (a distributed document search and retrieval protocol)](https://tools.ietf.org/html/rfc1436)
+        - [RFC 4266 - The Gopher URI Scheme)](https://tools.ietf.org/html/rfc4266)
+        
+        
+Keywords: gopher browser engine
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
