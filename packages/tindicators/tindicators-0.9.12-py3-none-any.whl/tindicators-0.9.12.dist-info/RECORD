@@ -1,0 +1,10 @@
+tindicators/__init__.py,sha256=uG5bvmtKyhc1qc06LO-fuvWWhZC-F2jGaZVIJqtd1QI,78
+tindicators/impl.py,sha256=TuR6Z-AI5u4KaCdMJ3UFm5bOTggS26QwgyApSYqda3o,7523
+tindicators/indicators.dll,sha256=XIjEE2CU0Xm65iL6im7HV4-jNAoUH3tLp58ctcmPqig,753664
+tindicators/libindicators.dylib,sha256=RtYkZGUrmg6C5gaeayd0r3aifOxHJ2pxpTPFqxsoPaw,500336
+tindicators/libindicators.so,sha256=R3ZNO76mGc-4pw9YUIpGruGOOkYQTFxcpxlAyxnJqoU,4013768
+tindicators/test_.py,sha256=o2J8rCO5gQfQuTKAbN4StfBqAiJRYgiqFHYxckx6G_U,3647
+tindicators-0.9.12.dist-info/METADATA,sha256=5NqhDJfbkrT8A57ANFwj7AoF5buV9oFZE606zwBSOjk,613
+tindicators-0.9.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tindicators-0.9.12.dist-info/top_level.txt,sha256=NlEa-P2clcl1vVKgCO-oeqAHKlMHjouxOgTeuw6cVLA,12
+tindicators-0.9.12.dist-info/RECORD,,

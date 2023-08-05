@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tindicators
+Version: 0.9.12
+Summary: Python wrapper for tindicators
+Home-page: UNKNOWN
+Author: Ilya Pikulin
+Author-email: ilya.pikulin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: tox-wheel ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pandas ; extra == 'dev'
+
+UNKNOWN
+
+
