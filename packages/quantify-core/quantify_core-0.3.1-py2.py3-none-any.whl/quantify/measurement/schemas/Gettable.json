@@ -1,0 +1,79 @@
+{
+    "description": "Requirements for the Gettable concept",
+    "attrs": {
+        "description": "attributes",
+        "required": [
+            "name",
+            "label",
+            "unit"
+        ],
+        "properties": {
+            "name": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "description": "identifier"
+            },
+            "label": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "description": "axis descriptor"
+            },
+            "unit": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "description": "unit of measurement"
+            },
+            "batched": {
+                "type": "boolean",
+                "description": "true if data is processed in batches, false otherwise"
+            }
+        }
+    },
+    "methods": {
+        "description": "methods",
+        "required": [
+            "get"
+        ],
+        "properties": {
+            "get": {
+                "description": "get values from this device",
+                "type": "object"
+            },
+            "prepare": {
+                "description": "called before the acquisition loop",
+                "type": "object"
+            },
+            "finish": {
+                "description": "called once after the acquisition loop",
+                "type": "object"
+            }
+        }
+    }
+}
