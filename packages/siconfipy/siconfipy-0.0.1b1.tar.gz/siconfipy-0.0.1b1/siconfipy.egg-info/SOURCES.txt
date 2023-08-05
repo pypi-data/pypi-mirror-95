@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+siconfipy/__init__.py
+siconfipy/find_cod.py
+siconfipy/get.py
+siconfipy/utils.py
+siconfipy.egg-info/PKG-INFO
+siconfipy.egg-info/SOURCES.txt
+siconfipy.egg-info/dependency_links.txt
+siconfipy.egg-info/requires.txt
+siconfipy.egg-info/top_level.txt
+siconfipy/data/__init__.py
