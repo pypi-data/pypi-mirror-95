@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+setup.py
+wix_protos_test_server_signer.egg-info/PKG-INFO
+wix_protos_test_server_signer.egg-info/SOURCES.txt
+wix_protos_test_server_signer.egg-info/dependency_links.txt
+wix_protos_test_server_signer.egg-info/top_level.txt
