@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ssb-client"
+version = "0.1.0"
+description = "Client for Secure Scuttlebutt (SSB)"
+authors = ["Henning Jacobs <henning@jacobs1.de>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://codeberg.org/hjacobs/python-ssb-client"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 2 - Pre-Alpha",
+    "Topic :: Internet",
+    "Topic :: System :: Networking"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+secret-handshake = "^0.1.0-alpha.3"
+PyYAML = "^5.4.1"
+
+[tool.poetry.dev-dependencies]
+colorlog = "^4.7.2"
+pytest-cov = "^2.11.1"
+asynctest = "^0.13.0"
+pytest-asyncio = "^0.14.0"
+pytest-mock = "^3.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
