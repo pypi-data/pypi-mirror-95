@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: isthmuslib
+Version: 0.0.5
+Summary: Misc utilities, mostly related to plotting
+Home-page: https://github.com/mitchellpkt/python-isthmus
+Author: Isthmus (Mitchell P. Krawiec-Thayer)
+Author-email: isthmuslib@mitchellpkt.com
+License: LGPL-3.0-only
+Project-URL: Changelog, https://github.com/mitchellpkt/python-isthmus/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/mitchellpkt/python-isthmus/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+
+========
+Overview
+========
+
+
+
+Misc utilities, mostly related to plotting
+
+* Free software: GNU Lesser General Public License v3 (LGPLv3)
+
+Installation
+============
+
+::
+
+    pip install isthmuslib
+
+You can also install the in-development version with::
+
+    pip install https://github.com/mitchellpkt/python-isthmus/archive/master.zip
+
+
+Documentation
+=============
+
+
+To use the project:
+
+.. code-block:: python
+
+    import isthmuslib
+    isthmuslib.longest()
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.4 (2021-02-14)
+------------------
+
+* First release on PyPI.
+
+
