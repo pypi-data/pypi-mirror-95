@@ -1,0 +1,6 @@
+pandas
+
+[test]
+coverage[toml]>=5.0.2
+matplotlib
+pytest
