@@ -1,0 +1,32 @@
+xdoctest
+ubelt
+
+[all]
+xdoctest
+ubelt
+Pygments
+pytest
+pytest-cov
+codecov
+xdoctest
+
+[all:platform_system == "Windows"]
+colorama
+
+[all:python_version > "3.5" and platform_python_implementation == "CPython"]
+black
+
+[optional]
+Pygments
+
+[optional:platform_system == "Windows"]
+colorama
+
+[optional:python_version > "3.5" and platform_python_implementation == "CPython"]
+black
+
+[tests]
+pytest
+pytest-cov
+codecov
+xdoctest
