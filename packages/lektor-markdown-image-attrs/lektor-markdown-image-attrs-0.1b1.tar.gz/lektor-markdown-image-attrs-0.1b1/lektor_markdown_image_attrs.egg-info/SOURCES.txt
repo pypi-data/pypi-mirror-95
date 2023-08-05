@@ -1,0 +1,17 @@
+.gitignore
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+lektor_markdown_image_attrs.py
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/tests.yml
+lektor_markdown_image_attrs.egg-info/PKG-INFO
+lektor_markdown_image_attrs.egg-info/SOURCES.txt
+lektor_markdown_image_attrs.egg-info/dependency_links.txt
+lektor_markdown_image_attrs.egg-info/entry_points.txt
+lektor_markdown_image_attrs.egg-info/top_level.txt
+tests/test_plugin.py
