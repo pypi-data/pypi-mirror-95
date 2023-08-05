@@ -1,0 +1,10 @@
+numpy
+
+[dev]
+hypothesis[numpy]
+matplotlib
+pandas
+pyprojroot
+pytest
+pytest-cov
+pytest-regressions
