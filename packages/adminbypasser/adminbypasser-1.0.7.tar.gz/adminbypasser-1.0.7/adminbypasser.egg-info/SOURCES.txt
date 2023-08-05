@@ -1,0 +1,9 @@
+README.md
+setup.py
+adminbypasser.egg-info/PKG-INFO
+adminbypasser.egg-info/SOURCES.txt
+adminbypasser.egg-info/dependency_links.txt
+adminbypasser.egg-info/requires.txt
+adminbypasser.egg-info/top_level.txt
+src/__init__.py
+src/adminbypasser
