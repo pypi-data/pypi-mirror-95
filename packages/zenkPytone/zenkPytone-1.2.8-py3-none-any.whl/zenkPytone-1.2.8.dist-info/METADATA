@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zenkPytone
+Version: 1.2.8
+Summary: pytone is a library for operating Kintone with Python.
+Home-page: https://github.com/zenk-github/pytone
+Author: Masashi Tsuruya
+Author-email: m_tsuruya@zenk.co.jp
+License: MIT
+Requires-Dist: requests
+
+# pytone
+
+
