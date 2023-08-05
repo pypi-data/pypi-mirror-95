@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: datamx
+Version: 0.9.0
+Summary: data structure for measurements/readings that can hold documentation about them and be read and written to/from objects to json and back
+Home-page: https://bitbucket.org/clockworkcodeteam/datamx/src/master/
+Author: dilbertau99
+Author-email: dilbertau99@gmail.com
+License: GNU General Public License V3 or later
+Keywords: solar monitoring data format model
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
+Classifier: Topic :: Communications
+Description-Content-Type: text/markdown
+Requires-Dist: marshmallow
+Requires-Dist: marshmallow-oneofschema
+
+This file is part of pvoutput-publisher
+
+pvoutput-publisher is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    PySunSpec-Read is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along pvoutput-publisher.  If not, see <https://www.gnu.org/licenses/>.    
+
+
+
