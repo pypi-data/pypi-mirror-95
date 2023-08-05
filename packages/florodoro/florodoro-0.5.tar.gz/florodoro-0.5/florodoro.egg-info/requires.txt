@@ -1,0 +1,6 @@
+pyqt5
+pyqtchart
+plyer
+qtawesome
+PyYAML
+DateTime
