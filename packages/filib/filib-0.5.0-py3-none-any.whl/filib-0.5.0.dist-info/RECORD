@@ -1,0 +1,10 @@
+filib/__init__.py,sha256=t-y-itNQg5rqdXQsQpS6g-DEZgrNsxVULpeosDiAZ6U,293
+filib/_version.py,sha256=qOgp63DKbJUTEpeNFSC6-4Z4ggiiiujx7_nJvXchvEg,142
+filib/helpers.py,sha256=p-ETvG4OOKQU05tlc8F70pAKXwk6NcFwS6jLANUEDXM,5140
+filib/oanda.py,sha256=ly0SIYfr2LYRBgopGJpkBPKNK3mFqq4pEmeOFK1ezko,29616
+filib/utils.py,sha256=0rvg5WG6wBhQeHH1Csr8MDWrzrJ6sDgIV-HFWzbHTeE,8883
+filib-0.5.0.dist-info/LICENSE,sha256=5fk45275OObQaqH1nd6OfGOewMS6xUrN5c1HcJpXcsc,11345
+filib-0.5.0.dist-info/METADATA,sha256=EzyzDJY23-ttXPRSmIX0ecgtcP4at1HuCPYvJ0NB264,8860
+filib-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+filib-0.5.0.dist-info/top_level.txt,sha256=n5rHCdcTm1Css9ygBnJA4ey1S58ftUck_0WtfvK_Emg,6
+filib-0.5.0.dist-info/RECORD,,
