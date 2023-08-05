@@ -1,0 +1,16 @@
+asn1crypto>=1.4.0
+oscrypto>=1.2.1
+pytz>=2020.1
+qrcode>=6.1
+tzlocal>=2.1
+python-pkcs11>=0.6.0
+pyhanko-certvalidator==0.12.1
+fonttools>=4.13.0
+click>=7.1.2
+requests>=2.24.0
+python-barcode>=0.13.1
+Pillow>=8.0.1
+pyyaml>=5.3.1
+
+[pss]
+cryptography>=3.3.1
