@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: uqo
+Version: 0.0.2.1
+Summary: Client of the optimization framework UQO
+Home-page: https://github.com/pypa/sampleproject
+Author: QAR-Lab Munich
+Author-email: Sebastian.Zielinski@ifi.lmu.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: dimod (==0.9.13)
+Requires-Dist: dwave-networkx (==0.8.8)
+Requires-Dist: prettytable (==2.0.0)
+Requires-Dist: pyzmq (==22.0.2)
+Requires-Dist: matplotlib (==3.3.2)
+
+UQO - You, Quantum and Optimization
+---
+UQO is an optimization framework developed by the QAR-Lab of the LMU Munich. 
+
+Guides / Examples
+---
+For setup instructions, guides and examples please visit the Github page: https://github.com/QAR-Lab/uqoclient
+
+Installation
+---
+
+ ```
+   pip install uqo
+```
+
+
