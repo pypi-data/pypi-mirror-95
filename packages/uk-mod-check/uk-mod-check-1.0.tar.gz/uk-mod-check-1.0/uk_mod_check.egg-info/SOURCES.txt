@@ -1,0 +1,8 @@
+README.md
+setup.py
+uk_mod_check/__init__.py
+uk_mod_check/data_parser.py
+uk_mod_check.egg-info/PKG-INFO
+uk_mod_check.egg-info/SOURCES.txt
+uk_mod_check.egg-info/dependency_links.txt
+uk_mod_check.egg-info/top_level.txt
