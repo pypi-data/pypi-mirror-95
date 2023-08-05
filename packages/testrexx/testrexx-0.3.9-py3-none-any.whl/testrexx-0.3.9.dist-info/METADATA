@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: testrexx
+Version: 0.3.9
+Summary: Python library for REXX automated testing
+Home-page: UNKNOWN
+Author: Guilherme Cartier
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pyrexx
+Requires-Dist: mkrexx
+Requires-Dist: python-decouple
+Requires-Dist: zowe-zos-files-for-zowe-sdk
+Requires-Dist: zowe-zos-jobs-for-zowe-sdk
+
+UNKNOWN
+
+
