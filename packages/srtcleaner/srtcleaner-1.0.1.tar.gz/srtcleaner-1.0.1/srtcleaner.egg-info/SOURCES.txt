@@ -1,0 +1,13 @@
+README.md
+setup.py
+srtcleaner/__about__.py
+srtcleaner/__init__.py
+srtcleaner/__main__.py
+srtcleaner/apppaths.py
+srtcleaner/srtcleaner.py
+srtcleaner.egg-info/PKG-INFO
+srtcleaner.egg-info/SOURCES.txt
+srtcleaner.egg-info/dependency_links.txt
+srtcleaner.egg-info/entry_points.txt
+srtcleaner.egg-info/requires.txt
+srtcleaner.egg-info/top_level.txt
