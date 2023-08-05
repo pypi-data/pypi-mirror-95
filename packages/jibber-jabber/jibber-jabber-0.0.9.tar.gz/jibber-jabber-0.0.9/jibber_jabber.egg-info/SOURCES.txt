@@ -1,0 +1,11 @@
+README.md
+setup.py
+jibber_jabber.egg-info/PKG-INFO
+jibber_jabber.egg-info/SOURCES.txt
+jibber_jabber.egg-info/dependency_links.txt
+jibber_jabber.egg-info/top_level.txt
+jibberjabber/__init__.py
+jibberjabber/dictonaries.py
+jibberjabber/dist.products
+jibberjabber/dist.words
+jibberjabber/generators.py
