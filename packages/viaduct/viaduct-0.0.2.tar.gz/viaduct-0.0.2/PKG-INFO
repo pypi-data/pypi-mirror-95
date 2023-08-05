@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: viaduct
+Version: 0.0.2
+Summary: Viaduct is a Trading212 REST API wrapper for python
+Home-page: https://github.com/harrytwigg/Viaduct-Trading212-Python-API
+Author: Harry Twigg
+Author-email: harrytwigg111@gmail.com
+License: 	gpl-3.0
+Download-URL: https://github.com/harrytwigg/Viaduct-Trading212-Python-API/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: python,api,rest,api-wrapper,viaduct,trading212,trading212-api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
