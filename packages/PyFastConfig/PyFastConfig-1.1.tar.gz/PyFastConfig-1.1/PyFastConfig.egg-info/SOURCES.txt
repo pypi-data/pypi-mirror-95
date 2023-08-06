@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+PyFastConfig/__init__.py
+PyFastConfig/example.py
+PyFastConfig.egg-info/PKG-INFO
+PyFastConfig.egg-info/SOURCES.txt
+PyFastConfig.egg-info/dependency_links.txt
+PyFastConfig.egg-info/top_level.txt
