@@ -1,0 +1,12 @@
+ImageRobot/Focus.py,sha256=5gEHtQHHkVDQQjwesR8qxmcdMbmr2b_X3oGTCgwTWDU,2835
+ImageRobot/Image.py,sha256=xZBe_oUYRp0KvAVUtu2hlaX3gG4VZwWzDKq1hZotCs4,19811
+ImageRobot/Keyboard.py,sha256=QM8ArWhIaBWWyJu5uQW83zjqVQR0I48XoxbCOmE9YHY,2078
+ImageRobot/Mouse.py,sha256=dVnfKLw1eDlDV_W5kWtB5ufsctc09Bi9-FrQFdDdlbk,8160
+ImageRobot/RobotException.py,sha256=s9KY7bauywMPL2Km1oQ67mDeT-CvipA3yKnP3e_Gzwk,5036
+ImageRobot/__init__.py,sha256=FtX8m44fMVpVF78zVRtgx9Nj2UWstA5Qo_EYty5YBIA,426
+ImageRobot/version.py,sha256=aU2REOAIEP0vjfpsqe4c1jtt3jORslNHbQTxH6Hy8bo,19
+ImageRobot-1.3.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ImageRobot-1.3.2.dist-info/METADATA,sha256=iWbZAVyOdvqMC5cmBDSnH7pj3yABnuLFKK0b5aEpJCs,6004
+ImageRobot-1.3.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ImageRobot-1.3.2.dist-info/top_level.txt,sha256=0b1JMaZeSR4_2Rs4wuDKYvtdPmmcDl-ksIgCKn3eb8A,11
+ImageRobot-1.3.2.dist-info/RECORD,,
