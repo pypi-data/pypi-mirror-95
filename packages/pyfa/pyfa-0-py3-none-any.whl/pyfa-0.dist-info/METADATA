@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyfa
+Version: 0
+Summary: financial ideas
+Home-page: UNKNOWN
+Author: jameschapman
+Author-email: james.chapman.19@ucl.ac.uk
+License: UNKNOWN
+Keywords: pyfa
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+pyfa
+
+
