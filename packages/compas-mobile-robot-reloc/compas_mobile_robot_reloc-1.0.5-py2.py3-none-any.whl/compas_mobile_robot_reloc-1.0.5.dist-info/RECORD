@@ -1,0 +1,14 @@
+compas_mobile_robot_reloc/__init__.py,sha256=cjdehesbvNDQ0TqU76Lld5xwhWmtvWFpLDE_6TMFg0Y,3237
+compas_mobile_robot_reloc/__main__.py,sha256=aWJrRQOyCvPwzhG-TblYOmgEGH7fGB1ycR3YidtNQ2Q,421
+compas_mobile_robot_reloc/_version.py,sha256=VNRGPZzCxnqo9XAh5oqNUnzUxGdLuPM1yvwyY_gzZ6k,142
+compas_mobile_robot_reloc/arbitrary_pts_localization.py,sha256=bvdWjTsthNoLOxFayLr-xy2r-IkfEc5-XLd2ZRQy5DE,9318
+compas_mobile_robot_reloc/measurement_point.py,sha256=MQAiyBcHBtPjoBNYMVCq5dN8Lo_80ShYgDDpn3RXKCA,2136
+compas_mobile_robot_reloc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compas_mobile_robot_reloc/three_pts_localization.py,sha256=rc8pzuWEXHzUV3YpbqsF8XevUU1qIZUv5WeLIAwxabc,1398
+compas_mobile_robot_reloc/utils.py,sha256=pW1zhTukCENBkgfonlFEV5v5bA2OSwnPDuab0M3NtUs,2861
+compas_mobile_robot_reloc/xforms.py,sha256=k5tarT_HzJMvjwLL-ySZeA8b1ge60q6iwUgZygWFBXY,2826
+compas_mobile_robot_reloc-1.0.5.dist-info/LICENSE,sha256=D_PRqFgX0Hd_Q_hfboZ6J3UZcut8VFDxt7tHlHuzl-M,1081
+compas_mobile_robot_reloc-1.0.5.dist-info/METADATA,sha256=uGyFN-nhfu78TQgLsErYmASUcID2g___wSjqEmOUcpU,6965
+compas_mobile_robot_reloc-1.0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+compas_mobile_robot_reloc-1.0.5.dist-info/top_level.txt,sha256=KPRxv8gg-ig1CVZlXjwbDEjp-DvrmsyhI2Rh9y4LymQ,26
+compas_mobile_robot_reloc-1.0.5.dist-info/RECORD,,
