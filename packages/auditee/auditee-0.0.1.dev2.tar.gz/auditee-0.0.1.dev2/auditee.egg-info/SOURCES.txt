@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+auditee/__init__.py
+auditee/__main__.py
+auditee/reproducibility.py
+auditee/sgx.py
+auditee.egg-info/PKG-INFO
+auditee.egg-info/SOURCES.txt
+auditee.egg-info/dependency_links.txt
+auditee.egg-info/entry_points.txt
+auditee.egg-info/requires.txt
+auditee.egg-info/top_level.txt

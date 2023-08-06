@@ -1,0 +1,12 @@
+blessings
+colorama
+
+[dev]
+ipdb
+ipython
+
+[docs]
+sphinx
+
+[test]
+pytest
