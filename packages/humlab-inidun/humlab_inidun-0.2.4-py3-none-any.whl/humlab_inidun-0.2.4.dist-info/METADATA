@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: humlab-inidun
+Version: 0.2.4
+Summary: INIDUN research project text analysis tools and utilities
+Home-page: https://inidun.github.io
+License: Apache-2.0
+Author: Roger Mähler
+Author-email: roger.mahler@hotmail.com
+Requires-Python: ==3.8.5
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Dist: bokeh (==2.2.3)
+Requires-Dist: click
+Requires-Dist: debugpy (>=1.2.1,<2.0.0)
+Requires-Dist: ftfy
+Requires-Dist: gensim
+Requires-Dist: humlab-penelope (>=0.3.9,<0.4.0)
+Requires-Dist: ipyaggrid (==0.2.1)
+Requires-Dist: ipyfilechooser (>=0.4.0,<0.5.0)
+Requires-Dist: ipywidgets (==7.5.1)
+Requires-Dist: jupyter
+Requires-Dist: jupyter-bokeh (==2.0.4)
+Requires-Dist: jupyterlab (==2.2.9)
+Requires-Dist: matplotlib
+Requires-Dist: memoization
+Requires-Dist: nbformat (==5.0.8)
+Requires-Dist: nltk
+Requires-Dist: pandas
+Requires-Dist: pandas-bokeh (>=0.5.2,<0.6.0)
+Requires-Dist: pandocfilters (==1.4.2)
+Requires-Dist: qgrid (>=1.3.1,<2.0.0)
+Requires-Dist: sidecar (>=0.4.0,<0.5.0)
+Requires-Dist: spacy
+Requires-Dist: textacy
+Requires-Dist: tqdm (>=4.51.0,<5.0.0)
+Requires-Dist: wordcloud
+Project-URL: Repository, https://github.com/inidun/text_analytics
+Description-Content-Type: text/markdown
+
+# The INIDUN Text Analytics Repository
+
+### Prerequisites
+
+### Installation
+
+### Note
+
+
+
