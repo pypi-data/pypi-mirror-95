@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bogons
+Version: 0.0.1
+Summary: Python Libary for IP & ASN Bogons
+Home-page: https://github.com/mellowdrifter/python-bogons
+Author: Darren O'Connor
+Author-email: nouser@bgpstuff.net
+License: Apache Software License (http://www.apache.org/licenses/LICENSE-2.0)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ipaddress
+
+# python-bogons
+
+Python version of [https://github.com/mellowdrifter/bogons](https://github.com/mellowdrifter/bogons)
+
+
