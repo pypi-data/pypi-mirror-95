@@ -1,0 +1,16 @@
+pyqint.libs/libgomp-f7e03b3e.so.1.0.0,sha256=GzmXB1qluHXQUhlsmNKuWncNm8Jezfq1jt5rKrV_8kQ,93080
+pyqint/gto.py,sha256=18_PMByYavFZYG-KH4IxFDm2IIavIzpEDs0lPO7Mq1c,1233
+pyqint/molecule.py,sha256=N4E-kM-tRknVCLo15FrDj7pnuggmunort44oxhkN9IY,3453
+pyqint/pyqint.cpython-35m-x86_64-linux-gnu.so,sha256=CLh53gN66J7mOf8V4727ghlL_2kjEbCNZkHFCeKWZww,5484832
+pyqint/__init__.py,sha256=4P0znDRwN0TcGdFjANhIvePQngvTsAIInhZckFZuk1c,119
+pyqint/cgf.py,sha256=z64wbSmF1e8VO1Bst46I2_7LU2SyfujrilyiKnPc-Mw,1262
+pyqint/hf.py,sha256=YH5zIVhqab04zsxToQjzqAe4CXe-T4HPv-FLnuG2Aws,7679
+pyqint/basis/sto3g.json,sha256=fDFv_BQ_tSUonI4-6afVHZFNrAoC9I5NiG6KtNXXoi8,199070
+pyqint/basis/p321.json,sha256=Itgf7VNHTjUr1X4vaRJWj5CPoloj6OWyCs065WxyQng,222141
+pyqint/basis/p631.json,sha256=R575nioMcXlkMjMVOz0hGN0b9_K6OVk_LkeeJ0eVyLA,132745
+pyqint/basis/sto6g.json,sha256=vWDkjU51RAlI-Tzf9gLn5_Y4ir6dJ-WD9qVBIwVz-Lg,187818
+pyqint-0.7.2.2.dist-info/top_level.txt,sha256=RG5mWdC-OvKsz4rZOmwSCLYZsLgKdaqiI8Z--ezhOk8,7
+pyqint-0.7.2.2.dist-info/RECORD,,
+pyqint-0.7.2.2.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+pyqint-0.7.2.2.dist-info/METADATA,sha256=qX7OwDZiweEXDVerH_tG4eBzF97zOrJt5HcOqCPh89U,10726
+pyqint-0.7.2.2.dist-info/WHEEL,sha256=IUmbIjxlXWQ6dGt0i0VY1dyvNtBsfjpE9w9OXH4iHhY,112
