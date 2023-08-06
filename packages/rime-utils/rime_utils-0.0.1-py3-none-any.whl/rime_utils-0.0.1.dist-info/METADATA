@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: rime-utils
+Version: 0.0.1
+Summary: Utilities for operating rime configurations and dictionaries
+Home-page: https://github.com/nk2028/rime-utils-python
+Author: Ngiox Khyen 2028 Project
+Author-email: support@nk2028.shn.hk
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/nk2028/rime-utils-python/issues
+Project-URL: Source, https://github.com/nk2028/rime-utils-python
+Keywords: rime input-method
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# rime-utils-python
+
+Utilities for operating rime configurations and dictionaries (under development)
+
+
