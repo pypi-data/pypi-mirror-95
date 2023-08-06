@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: types-pathlib2
+Version: 0.1.1
+Summary: Typing stubs for pathlib2
+Home-page: https://github.com/python/typeshed
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Requires-Dist: types-typing-extensions
+
+## Typing stubs for pathlib2
+
+This is an auto-generated PEP 561 type stub package for `pathlib2` package.
+It can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code
+that uses `pathlib2`. The source for this package can be found at
+https://github.com/python/typeshed/tree/master/stubs/pathlib2. All fixes for
+types and metadata should be contributed there.
+
+See https://github.com/python/typeshed/blob/master/README.md for more details.
+This package was generated from typeshed commit `79113be6096911c0726afab11674f936c45dfe5f`.
+
+
