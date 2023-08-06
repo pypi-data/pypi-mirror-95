@@ -1,0 +1,5 @@
+click>=7.0
+requests
+junitparser>=1.6.3
+setuptools
+more_itertools
