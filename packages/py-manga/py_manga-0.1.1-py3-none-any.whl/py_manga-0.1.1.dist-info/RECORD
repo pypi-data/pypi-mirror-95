@@ -1,0 +1,13 @@
+pymanga/__init__.py,sha256=12tOQh_mHLXFrZbYt9bEbSaIz5dFWRcLmxX0_IyvTQ8,19
+pymanga/api.py,sha256=iUMiCuiVMFAKo25tXMGZe8-W3eXge6fzVh8X2SVACX4,3687
+pymanga/notifier.py,sha256=AxtdjyP6qD_P-3AUDjcc2KM8cRqdGfVoktERtKW3NMM,993
+pymanga/parsers/__init__.py,sha256=m_egLZYDxaCPd_iPstiwhdUzx0fY7QvsuLCk1uNV6cc,65
+pymanga/parsers/adv_search_parser.py,sha256=-XcGwp9ZXV5tSxW7PV3UN0VFllphB_uqDMx9QXBcdqU,1253
+pymanga/parsers/releases_parsers.py,sha256=6in2PNj_2jmPMh2RHNW_D7wq2mxeGqOWhIpcEyae1SQ,718
+pymanga/parsers/search_parsers.py,sha256=qMEbvHnSZ18IIw0_cfKpQXhVbr3WQwEGw2Z0aoSSmkw,2857
+pymanga/parsers/series_parsers.py,sha256=TGTd1nzb2bvcmrra-sJAeS9cqiScx7IXJCrGCxaDjKU,6579
+py_manga-0.1.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+py_manga-0.1.1.dist-info/METADATA,sha256=JAHaY7jLRWnss1wtCoy2P5yL7UUgDw3GeZYo9L3xnLM,1106
+py_manga-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+py_manga-0.1.1.dist-info/top_level.txt,sha256=IjuL50g1pucKW8gEqIdhtSMOEFb8ud7LTzfZNZLs6DE,8
+py_manga-0.1.1.dist-info/RECORD,,
