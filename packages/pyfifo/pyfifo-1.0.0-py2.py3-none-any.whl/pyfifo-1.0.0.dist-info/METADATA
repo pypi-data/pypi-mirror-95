@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyfifo
+Version: 1.0.0
+Summary: A simple and reasonably efficient FIFO buffer
+Home-page: https://github.com/greenbender/python-fifo
+Author: Byron Platt
+Author-email: byron.platt@gmail.com
+License: GPL2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# python-fifo
+
+A simple and reasonably efficient FIFO buffer
+
+
