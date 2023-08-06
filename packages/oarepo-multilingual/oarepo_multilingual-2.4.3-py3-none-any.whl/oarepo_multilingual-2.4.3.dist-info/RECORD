@@ -1,0 +1,17 @@
+oarepo_multilingual/__init__.py,sha256=BliX_LKFl-QYVA5uXIhNebgNOks5GVGWW_fMxW4FZDE,160
+oarepo_multilingual/config.py,sha256=qAlSGr47y75UVtrYbBMA2sl1DEMyqz1WhK_Ym3VpppM,198
+oarepo_multilingual/ext.py,sha256=-9_uo1Iox2xGKMQ7d7n1mbNUq-0EwGMNu-qyDpDF8S0,1463
+oarepo_multilingual/rest.py,sha256=5yfJWvRD3emNVdwmFQXapKg1PrMPjw2S087Rzr_1Qt4,3910
+oarepo_multilingual/version.py,sha256=Z35xcgjcW2FJFcf2K9SNO-MfMjPfzNSXzy57ECCD0GE,1404
+oarepo_multilingual/jsonschemas/__init__.py,sha256=m7UQhnKgPA2WUOAuo-GU0LXW4g_b3SetqsEjfdDVgsY,468
+oarepo_multilingual/jsonschemas/multilingual-v2.0.0.json,sha256=b9uUPuA5bORSMembpk48o6Jf4Nc9XnSfov1l5NG3XVc,328
+oarepo_multilingual/mapping/__init__.py,sha256=dKfabKNIq17JTZzSQ5Wap3TApbFZjRzIiK_xz_jdPCs,69
+oarepo_multilingual/mapping/mapping_handler.py,sha256=UPM1cO_CsmKzorktv_D3W3NowncKGrKy3Gs_jIEPJVA,911
+oarepo_multilingual/mapping/multilingual_analysis.py,sha256=G958ucI0yxLhmFIC1M3j3PslXTDqS_JkHReNXMOmFAk,983
+oarepo_multilingual/marshmallow/__init__.py,sha256=QF4_Zr9h2zr6Er5HqY7ZZA8xuu1DS-L1YbU4pNIoVLw,1851
+oarepo_multilingual-2.4.3.dist-info/LICENSE,sha256=oxlvOW3GiojF5mcapEzPff39MfADzIw5Qt8iOonks8c,1062
+oarepo_multilingual-2.4.3.dist-info/METADATA,sha256=vA2-6BkhSxWkKMOV9_dE-guyNKBgPqDVdvUG-_NXYUE,6750
+oarepo_multilingual-2.4.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+oarepo_multilingual-2.4.3.dist-info/entry_points.txt,sha256=v1TzIeRPAuDlIt0HeS1IEKNZ1CBo2YjEm5-fferlfuI,361
+oarepo_multilingual-2.4.3.dist-info/top_level.txt,sha256=7WxZcrfub7xSdjpGGgyAhIRo_XKs529km-64w8BhsjI,20
+oarepo_multilingual-2.4.3.dist-info/RECORD,,
