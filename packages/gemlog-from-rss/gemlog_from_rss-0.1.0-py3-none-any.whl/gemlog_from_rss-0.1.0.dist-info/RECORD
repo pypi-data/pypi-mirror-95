@@ -1,0 +1,11 @@
+gemlog_from_rss/__init__.py,sha256=r8j4mP3VhW6M_im3pi_orNGDpN1sf6RK_Goec1pBISc,57
+gemlog_from_rss/examples.py,sha256=oSdvxyjxCXZh2bxOVohjtkk3elQH-KTaqxNTG94ll8k,1034
+gemlog_from_rss/spip/__init__.py,sha256=FAqv7VFRfYlmDcHX3fPDg6oJLRwJJujtPv5SXxUceR0,65
+gemlog_from_rss/spip/content.py,sha256=kxWV9UG-tjumrNuA2LbDdJqkFjbV0xIabAqhDkSEMMw,1299
+gemlog_from_rss/spip/page.py,sha256=YZkquJWdm7Po5BEHxZaAw1CmPqXz2R1on0Us7v-z9pc,4138
+gemlog_from_rss/wordpress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemlog_from_rss-0.1.0.dist-info/LICENSE,sha256=G1WNjDz5e3Dnx49nG_Ot8p3GKHinQE0D-3tG3LWUVzs,1070
+gemlog_from_rss-0.1.0.dist-info/METADATA,sha256=AcnUXIRvbI3YQ75zrg8FCZXtmD_hc0MtVNSsCVXM908,2879
+gemlog_from_rss-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gemlog_from_rss-0.1.0.dist-info/top_level.txt,sha256=O8KDvHM9N-_FGH3AsueBGJ629v8XCuc_leWhEau99rI,16
+gemlog_from_rss-0.1.0.dist-info/RECORD,,
