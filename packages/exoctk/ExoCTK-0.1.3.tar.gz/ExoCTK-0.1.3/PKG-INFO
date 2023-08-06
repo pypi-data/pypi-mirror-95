@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: ExoCTK
+Version: 0.1.3
+Summary: Exoplanet Characterization Tool Kit
+Home-page: http://astropy.org
+Author: Joe Filippazzo Matthew Hill
+Author-email: jfilippazzo@stsci.edu
+License: BSD
+Description: 
+        The Exoplanet Characterization Tool Kit is a collection of packages used to reduce and analyze observations of transiting exoplanets
+        
+Platform: UNKNOWN
