@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+PyAutoMaker/__init__.py
+PyAutoMaker/dd.py
+PyAutoMaker/record.py
+PyAutoMaker.egg-info/PKG-INFO
+PyAutoMaker.egg-info/SOURCES.txt
+PyAutoMaker.egg-info/dependency_links.txt
+PyAutoMaker.egg-info/requires.txt
+PyAutoMaker.egg-info/top_level.txt
+PyAutoMaker/dlls/DD64.dll

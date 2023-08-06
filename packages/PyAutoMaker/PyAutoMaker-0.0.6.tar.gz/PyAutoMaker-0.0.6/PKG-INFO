@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyAutoMaker
+Version: 0.0.6
+Summary: 자동화를 위한 패키지
+Home-page: https://boa9448.tistory.com/category/PyAutoMaker%20%EC%82%AC%EC%9A%A9%EB%B2%95
+Author: WDW
+Author-email: boa9448@naver.com
+License: UNKNOWN
+Description: 자동화를 위한 유틸패키지 입니다
+        
+        이 패키지엔 공개 가능한 기능들만 포함됩니다
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
