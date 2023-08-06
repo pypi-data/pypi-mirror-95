@@ -1,0 +1,9 @@
+sdg_eth/__init__.py,sha256=qG8sVXKH68aEXT1vNEZ4Gf7Ua5iEmj9IvJGS0UB73u4,125
+sdg_eth/tcpc.py,sha256=Urn1URPClY_pmkJmPN2vrrreOH0hr_qvfRypzRcP6OA,4634
+sdg_eth/tcps.py,sha256=P4yk_BZzfmcVy36W-Z3F8st2L-JOAMAzbqOHelseiUY,3099
+sdg_eth/udp_io.py,sha256=eKq4aQMFeW9DMYH5fjqL4HEc5oMMKPt8KZ9jVmFhAN8,3551
+sdg_eth-0.20.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sdg_eth-0.20.dist-info/METADATA,sha256=-b-90wQbEKxRK626p0RN4xUR8oH8dUyyFqWPjHadvj4,416
+sdg_eth-0.20.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+sdg_eth-0.20.dist-info/top_level.txt,sha256=pAAZyqdq2LQZq1NFCxg8TIgN90FwULJ_d8WyQqoc8Xs,8
+sdg_eth-0.20.dist-info/RECORD,,
