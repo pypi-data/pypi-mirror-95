@@ -1,0 +1,11 @@
+setup.py
+audict/__init__.py
+audict.egg-info/PKG-INFO
+audict.egg-info/SOURCES.txt
+audict.egg-info/dependency_links.txt
+audict.egg-info/entry_points.txt
+audict.egg-info/requires.txt
+audict.egg-info/top_level.txt
+audict/autosub/__init__.py
+audict/autosub/constants.py
+audict/autosub/formatters.py
