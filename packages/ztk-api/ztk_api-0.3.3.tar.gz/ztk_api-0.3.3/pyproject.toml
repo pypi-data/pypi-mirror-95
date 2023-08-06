@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ztk_api"
+version = "0.3.3"
+description = "折淘客接口"
+readme = "README.md"
+homepage = "https://github.com/QiYuTechDev/ztk_api"
+authors = ["dev <dev@qiyutech.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+pydantic = ">=1.7,<2"
+dataclasses-json = ">=0.5,<0.6"
+structlog = ">=21,<22"
+
+aiohttp = ">=3.7,<4"
+requests = ">=2.25,<3"
+
+# prepare for std tbk API
+tbk_api = ">=0.2.1,<0.3"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pylama = "*"
+
+[build-system]
+requires = ["poetry>=1"]
+build-backend = "poetry.masonry.api"
