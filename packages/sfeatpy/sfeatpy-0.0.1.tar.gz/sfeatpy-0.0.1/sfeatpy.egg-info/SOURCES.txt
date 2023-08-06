@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+sfeatpy/__init__.py
+sfeatpy/features.py
+sfeatpy.egg-info/PKG-INFO
+sfeatpy.egg-info/SOURCES.txt
+sfeatpy.egg-info/dependency_links.txt
+sfeatpy.egg-info/requires.txt
+sfeatpy.egg-info/top_level.txt
