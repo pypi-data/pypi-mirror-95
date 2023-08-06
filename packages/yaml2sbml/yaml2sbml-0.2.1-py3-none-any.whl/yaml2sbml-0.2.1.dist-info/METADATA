@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: yaml2sbml
+Version: 0.2.1
+Summary: A small package to convert ODEs specified in a YAML file to SBML/PEtab
+Home-page: https://github.com/yaml2sbml-dev/yaml2sbml
+Author: Jakob Vanhoefer, Marta R. A. Matos, Dilan Pathirana, Yannik Schälte
+Author-email: jakob.vanhoefer@uni-bonn.de,marta.ra.matos@gmail.com
+License: MIT
+Download-URL: https://github.com/yaml2sbml-dev/yaml2sbml/releases
+Project-URL: Bug Tracker, https://github.com/yaml2sbml-dev/yaml2sbml/issues
+Project-URL: Documentation, https://yaml2sbml.readthedocs.io
+Project-URL: Changelog, https://yaml2sbml.readthedocs.io/en/latest/release_notes.html
+Keywords: YAML,SBML,PEtab,ODE
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: PyYAML (>=5.1)
+Requires-Dist: python-libsbml (>=5.18.0)
+Requires-Dist: petab (>=0.1.4)
+Provides-Extra: doc
+Requires-Dist: sphinx (>=3.4.3) ; extra == 'doc'
+Requires-Dist: nbsphinx (>=0.8.0) ; extra == 'doc'
+Requires-Dist: nbconvert (>=6.0.7) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints (>=1.11.1) ; extra == 'doc'
+Requires-Dist: ipython (>=7.18.1) ; extra == 'doc'
+Provides-Extra: examples
+Requires-Dist: numpy (>=1.19.4) ; extra == 'examples'
+Requires-Dist: scipy (>=1.6.0) ; extra == 'examples'
+Requires-Dist: notebook (>=6.1.4) ; extra == 'examples'
+Requires-Dist: amici (==0.11.10) ; extra == 'examples'
+Requires-Dist: pypesto (>=0.2.3) ; extra == 'examples'
+Requires-Dist: matplotlib (>=3.1.0) ; extra == 'examples'
+
+<img src="https://raw.githubusercontent.com/yaml2sbml-dev/yaml2sbml/main/doc/logo/logo_yaml2sbml_long.svg" alt="yaml2sbml logo"/>
+
+[![CI](https://github.com/yaml2sbml-dev/yaml2sbml/workflows/CI/badge.svg)](https://github.com/yaml2sbml-dev/yaml2sbml/actions)
+[![codecov](https://codecov.io/gh/yaml2sbml-dev/yaml2sbml/branch/master/graph/badge.svg)](https://codecov.io/gh/yaml2sbml-dev/yaml2sbml)
+[![Documentation Status](https://readthedocs.org/projects/yaml2sbml/badge/?version=latest)](https://yaml2sbml.readthedocs.io/en/latest/?badge=latest)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/632acdc8d4ef4f50bf69892b8862fd24)](https://www.codacy.com/gh/yaml2sbml-dev/yaml2sbml/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yaml2sbml-dev/yaml2sbml&amp;utm_campaign=Badge_Grade)
+
+## Table of contents
+
+* [About](#about)
+
+* [Installation](#installation)
+
+* [Getting Started](#getting-started)
+
+* [Basic Syntax](#basic-syntax)
+
+* [Contact](#contact)
+
+
+## About
+
+`yaml2sbml` is a small package in Python to convert an ODE model specified in a YAML file into 
+[**SBML**](http://www.sbml.org/) for ODE simulation and into 
+[**PEtab**](https://github.com/martamatos/yaml2sbml) for parameter fitting. `yaml2sbml` offers:
+
+
+* a translator of ODE models specified in YAML into SBML/PEtab via a Python and a command-line interface;
+* a format validator for the input YAML; and
+* a model editor, which provides a simplified interface to generate, import and export YAML models.
+
+## Installation
+
+`yaml2sbml` can be installed from PyPI with
+
+```shell
+pip install yaml2sbml
+```
+For more info see the [docs](https://yaml2sbml.readthedocs.io/en/latest/).
+
+## Getting Started
+
+* The documentation of the tool is hosted on [Read the Docs](https://yaml2sbml.readthedocs.io/en/latest/).
+* The [format documentation](https://yaml2sbml.readthedocs.io/en/latest/format_specification.html) describes the input YAML. 
+
+* Jupyter notebooks containing examples can be found under [`doc/examples`](https://github.com/yaml2sbml-dev/yaml2sbml/tree/main/doc/examples).  Most notably:
+    * [Lotka_Volterra.ipynb](https://github.com/yaml2sbml-dev/yaml2sbml/tree/main/doc/examples/Lotka_Volterra/Lotka_Volterra_python/Lotka_Volterra.ipynb) showing the Python package,
+    * [Lotka_Volterra_CLI.ipynb](https://github.com/yaml2sbml-dev/yaml2sbml/tree/main/doc/examples/Lotka_Volterra/Lotka_Volterra_CLI/Lotka_Volterra_CLI.ipynb) showing the command-line interface, and
+    * [Lotka_Volterra_Model_Editor.ipynb](https://github.com/yaml2sbml-dev/yaml2sbml/tree/main/doc/examples/Lotka_Volterra/Lotka_Volterra_Model_Editor/Lotka_Volterra_Model_Editor.ipynb) demonstrates the Model Editor.
+
+## Basic Syntax
+
+### Python
+
+A YAML model can be translated to SBML/PEtab in Python via
+```python
+import yaml2sbml
+
+# SBML conversion
+yaml2sbml.yaml2sbml(yaml_dir, sbml_dir)
+
+#PEtab conversion
+yaml2sbml.yaml2petab(yaml_dir, 
+                     output_dir,
+                     sbml_name)
+```
+### Command-Line Interface
+
+and in the command-line via 
+```shell
+# SBML conversion
+yaml2sbml <yaml_dir> <sbml_dir>
+
+#PEtab conversion
+yaml2petab <yaml_dir> <output_dir> <sbml_name>
+```
+
+### Format Validation
+
+Format validation is possible in Python via `yaml2sbml.validate_yaml` and in the command-line via `yaml2sbml_validate`.
+
+## Contact
+If you have a question regarding the tool: Please drop us an [issue](https://github.com/yaml2sbml-dev/yaml2sbml/issues/new) or a [mail](mailto:jakob.vanhoefer@uni-bonn.de), we are happy to help.
+
+
