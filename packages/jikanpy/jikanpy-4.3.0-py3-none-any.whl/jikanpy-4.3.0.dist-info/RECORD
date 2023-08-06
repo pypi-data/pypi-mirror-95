@@ -1,0 +1,12 @@
+jikanpy/__init__.py,sha256=DI63ZdxY_2eHhRgOhBnSGtKrinKOitw5dG5BG6NIg64,369
+jikanpy/aiojikan.py,sha256=XvM4sWSDROoWfwyOBs_5v_WXmYnBL7Vnb9ji03leVp8,19323
+jikanpy/exceptions.py,sha256=pwYTuy2vYTtvv8UNL27f0s_XNM7QN9t9hnElh36cgAE,1772
+jikanpy/jikan.py,sha256=4CI5bZHcuk2QtZa_nDxghMvpckQZXZ6Ljm330P_G3x0,17769
+jikanpy/py.typed,sha256=yORFRaebBl7-ZHPjNpCW14sbAxjnZAUgCAcTgH00dFA,65
+jikanpy/utils.py,sha256=CxucT8-dqJD2dRoGs7I9--spBq5VmMzzTnC_kQM8QlA,4488
+jikanpy-4.3.0.data/data/CHANGELOG.md,sha256=0--X6QA40DyZWHrECFDbDmUm8E0miWtQK9shOMUAQ1s,6564
+jikanpy-4.3.0.dist-info/LICENSE,sha256=nAoK5-RaEiY8q7dxSMoCEB6I_8K4xGIfFgSu3Qm7RoY,1130
+jikanpy-4.3.0.dist-info/METADATA,sha256=j45mAA9IPhi6qa_cA7BrDjciQX38BoBoJcCAI43cZW8,11606
+jikanpy-4.3.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+jikanpy-4.3.0.dist-info/top_level.txt,sha256=yZl3GnbsxBIK_Gsftrk5kWwFsMzpCcFLTim-hBvMTgw,8
+jikanpy-4.3.0.dist-info/RECORD,,
