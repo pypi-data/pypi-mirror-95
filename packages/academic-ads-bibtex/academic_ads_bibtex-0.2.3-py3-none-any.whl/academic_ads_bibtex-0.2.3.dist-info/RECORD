@@ -1,0 +1,10 @@
+academic_ads_bibtex/__init__.py,sha256=XtWUl6HPylv5jZLd2KkgtPptuzuda93kC2REmOrF-Cs,22
+academic_ads_bibtex/converter.py,sha256=YsNa393Cw5GmGAjxCd4GrhzY7U-y4XqMI8Ld7U2fxHM,2950
+academic_ads_bibtex/logger.py,sha256=QeVvYHJFNwM5BDPq8cXEtNNYAcQe1vWG8Vckag_crRA,1732
+academic_ads_bibtex/database/bibtex_journals.db,sha256=d-zNg3AlXHTpjzc8dLN-lhRp-o6BwZXdJD3UgFGcPw4,2005
+academic_ads_bibtex-0.2.3.data/scripts/academic_ads_bibtex,sha256=ZO6WK-iXjGnsTczPOSMvEz9vwWg4NRH5IbXP6ND2YW0,1836
+academic_ads_bibtex-0.2.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+academic_ads_bibtex-0.2.3.dist-info/METADATA,sha256=FTIF1lEPEcx2PCofvhaJxF_jh-NOr_Tip0weDYZibiA,5928
+academic_ads_bibtex-0.2.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+academic_ads_bibtex-0.2.3.dist-info/top_level.txt,sha256=h_6FzfFA58882fXX86EaSWWE6yv9Rk3996SqKsBNUmY,20
+academic_ads_bibtex-0.2.3.dist-info/RECORD,,
