@@ -1,0 +1,6 @@
+pydantic
+appdirs
+PyYAML
+toml
+python-dotenv
+typing_extensions
