@@ -1,0 +1,11 @@
+yaqd_seabreeze/VERSION,sha256=Ry2m-0mo1dNAy6mC5HSmyxeVSU9WZNItfgKWShRoAeQ,9
+yaqd_seabreeze/__init__.py,sha256=N_s9hAEvOvwdAP8CMVZ6j7AAibntcAuStlfClDcEAzc,87
+yaqd_seabreeze/__version__.py,sha256=aIq6BYZ2Vu4z6qhpulwJjQVwfXWBRNlRKwBX_hECB00,493
+yaqd_seabreeze/_seabreeze.py,sha256=Cd4i363CofpuE_vH-DfRwalOoY7nEynzirTd3cVB_Es,1687
+yaqd_seabreeze/seabreeze.avpr,sha256=X-alsH_gaWeCofMTom90mj8pg67yrCSG1VbXF2O7uvY,8778
+yaqd_seabreeze/seabreeze.toml,sha256=SxOsr2Mc5lItRGeNwsfN1Lb4ObKP9y1u0Qx79eWihf4,1317
+yaqd_seabreeze-2021.2.0.dist-info/entry_points.txt,sha256=8gmr8t4P-mGAzwAKcw2D7zmT1Xv_qWgGw7fyU8bXDpo,75
+yaqd_seabreeze-2021.2.0.dist-info/LICENSE,sha256=gQ0onXQnjXJoTSbNwqxcuw8B8tGCEvORxsRGc5mnrdU,7633
+yaqd_seabreeze-2021.2.0.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+yaqd_seabreeze-2021.2.0.dist-info/METADATA,sha256=VLsvC2GelrBhTx98PAPI56THCvUhFhmp4PwqXnxTNI4,1810
+yaqd_seabreeze-2021.2.0.dist-info/RECORD,,
