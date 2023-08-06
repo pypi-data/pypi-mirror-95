@@ -1,0 +1,3 @@
+[console_scripts]
+trackdownchanges=dfn_pki_client.main:main
+
