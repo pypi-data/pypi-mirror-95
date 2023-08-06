@@ -1,0 +1,15 @@
+README.md
+setup.py
+Streamer_Retriever.egg-info/PKG-INFO
+Streamer_Retriever.egg-info/SOURCES.txt
+Streamer_Retriever.egg-info/dependency_links.txt
+Streamer_Retriever.egg-info/entry_points.txt
+Streamer_Retriever.egg-info/top_level.txt
+streamerretriever/__init__.py
+streamerretriever/cli.py
+streamerretriever/constants.py
+streamerretriever/fileoperator.py
+streamerretriever/streamerretriever.py
+streamerretriever/tools.py
+streamerretriever/twitchobjs.py
+streamerretriever/twitchrequest.py
