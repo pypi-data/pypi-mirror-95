@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: how_many_fish
+Version: 0.0.1
+Summary: Tells you you got 20 fish
+Home-page: https://github.com/Delayed-Gitification/how_many_fish.git
+Author: Oscar
+Author-email: oscargwilkins@gmail.com
+License: UNKNOWN
+Description: # how_many_fish
+        Very simple cython package for practice
+        
+        First run: python setup.py build_ext --inplace
+        
+        Then simply: python3 how_many_fish/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+how_many_fish/__init__.py
+how_many_fish/__main__.py
+how_many_fish/fish_multiplier.c
+how_many_fish.egg-info/PKG-INFO
+how_many_fish.egg-info/SOURCES.txt
+how_many_fish.egg-info/dependency_links.txt
+how_many_fish.egg-info/top_level.txt
