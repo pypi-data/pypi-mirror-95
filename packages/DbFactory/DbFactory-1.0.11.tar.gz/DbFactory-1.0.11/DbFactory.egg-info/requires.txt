@@ -1,0 +1,7 @@
+pymysql>=0.10.0
+elasticsearch>=7.10.0
+redis>=3.5.3
+redis-py-cluster>=2.1.0
+DBUtils>=1.0.2
+kafka-python>=2.0.1
+cacheout>=0.11.2
