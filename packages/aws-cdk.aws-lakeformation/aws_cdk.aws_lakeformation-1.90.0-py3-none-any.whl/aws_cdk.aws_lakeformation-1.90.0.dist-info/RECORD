@@ -1,0 +1,8 @@
+aws_cdk/aws_lakeformation/__init__.py,sha256=Bd4XpTWQToA-Vw84_FLYeDgcSD8lv8gMfjvdeiirC9U,53364
+aws_cdk/aws_lakeformation/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_lakeformation/_jsii/__init__.py,sha256=fPbSq5Fisg2j8z2WToUra6D5jCLaaQlxTrCRBYP4Q3U,396
+aws_cdk/aws_lakeformation/_jsii/aws-lakeformation@1.90.0.jsii.tgz,sha256=mmBLb6AUeQozqg7gPJgPYejLz5UNq22JZO5jXExFT0c,30900
+aws_cdk.aws_lakeformation-1.90.0.dist-info/METADATA,sha256=3sJX4oZbO2GUWw3mgS-v58DSOG_2EWjlq-s7vz06_oY,1726
+aws_cdk.aws_lakeformation-1.90.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_lakeformation-1.90.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_lakeformation-1.90.0.dist-info/RECORD,,
