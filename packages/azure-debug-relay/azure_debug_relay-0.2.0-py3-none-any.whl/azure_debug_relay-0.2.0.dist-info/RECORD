@@ -1,0 +1,7 @@
+LICENSE,sha256=m3YcsVLjS5a-GXsoYbtTIYvRl096UwlPvWinN9quRv8,1072
+azdebugrelay/__init__.py,sha256=wPZOUF1o16dMJyzpZSuNktB4R07z3up073wpG17g8ik,96
+azdebugrelay/debug_relay.py,sha256=zNxwGQ1Lu0aZ-6ubhTqxoJnl5Xyuu2E7xLdHm-7s9Vc,19438
+azure_debug_relay-0.2.0.dist-info/LICENSE,sha256=m3YcsVLjS5a-GXsoYbtTIYvRl096UwlPvWinN9quRv8,1072
+azure_debug_relay-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+azure_debug_relay-0.2.0.dist-info/METADATA,sha256=54uOoNivLAxKgMAq-YgCXcHIXdEcptHMM3fBy-p2sOM,16027
+azure_debug_relay-0.2.0.dist-info/RECORD,,
