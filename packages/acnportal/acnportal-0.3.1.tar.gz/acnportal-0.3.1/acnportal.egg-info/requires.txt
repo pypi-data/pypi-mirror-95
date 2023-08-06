@@ -1,0 +1,12 @@
+numpy
+pandas<1.2.0,>=1.1.0
+matplotlib
+requests
+pytz
+typing_extensions
+
+[all]
+scikit-learn
+
+[scikit-learn]
+scikit-learn
