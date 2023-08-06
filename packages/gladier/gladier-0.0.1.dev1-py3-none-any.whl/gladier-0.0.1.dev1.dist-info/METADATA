@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gladier
+Version: 0.0.1.dev1
+Summary: Tooling for rapid deployment of automation tooling.
+Home-page: https://github.com/globus-gladier/gladier
+Maintainer: 
+Maintainer-email: 
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: funcx (>=0.0.5)
+Requires-Dist: globus-automate-client (>=0.10.6)
+
+Gladier: The Globus Architecture for Data-Intensive Experimental Research.
+==========================================================================
+|docs|
+
+.. |docs| image:: https://readthedocs.org/projects/gladier/badge/?version=latest
+   :target: https://gladier.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+Gladier is a programmable data capture, storage, and analysis architecture for experimental facilities.
+The architecture leverages a data/computing substrate based on 
+data and compute agents deployed across computer and storage 
+systems at APS, ALCF, and elsewhere, all managed by cloud-hosted Globus services.
+
+
+
