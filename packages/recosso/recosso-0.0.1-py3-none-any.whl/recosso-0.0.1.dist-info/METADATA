@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: recosso
+Version: 0.0.1
+Summary: Official package of recosso
+Home-page: UNKNOWN
+Author: Himanshu Sahrawat
+Author-email: hsdsahrawat@gmail.com
+License: MIT
+Keywords: recosso
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: plotly
+
+This is package for Recosso project to official tasks.
+
+Change Log
+============
+
+0.0.1(20/02/2021)
+-----------------
+- First Release
+
