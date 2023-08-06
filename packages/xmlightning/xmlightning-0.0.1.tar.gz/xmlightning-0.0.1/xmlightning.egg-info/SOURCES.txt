@@ -1,0 +1,8 @@
+README.md
+setup.py
+xmlightning/__init__.py
+xmlightning/core.py
+xmlightning.egg-info/PKG-INFO
+xmlightning.egg-info/SOURCES.txt
+xmlightning.egg-info/dependency_links.txt
+xmlightning.egg-info/top_level.txt
