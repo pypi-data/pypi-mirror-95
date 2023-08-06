@@ -1,0 +1,8 @@
+setup.py
+thieves/__init__.py
+thieves/thieves.py
+thieves.egg-info/PKG-INFO
+thieves.egg-info/SOURCES.txt
+thieves.egg-info/dependency_links.txt
+thieves.egg-info/requires.txt
+thieves.egg-info/top_level.txt
