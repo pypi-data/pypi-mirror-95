@@ -1,0 +1,9 @@
+ddt_api_calls/__init__.py,sha256=irOe3iFsQu0H7-6KPGCEJE0O8fbcPOH7bqRmcEahXIM,60
+ddt_api_calls/apps.py,sha256=D0uVS_8CsKJsbTMIbEnZKf1q1MjoqHQvIrclqKKkifk,99
+ddt_api_calls/panels.py,sha256=ohm8KN3Iow9zXqzNlU6OA-AaYnr8rki2lG1G9ZYehDc,6520
+ddt_api_calls/templates/ddt_api_calls/requests.html,sha256=RIIs3eLdFpIaQ-D2JdZqHd0pzWwknI9Num-_EZKwjf8,1631
+ddt_api_calls-0.3.1.dist-info/LICENSE,sha256=NgPdm-0CmaOYcG80bY54Q6pVvecTv-zcr3oKVs7uX2U,1052
+ddt_api_calls-0.3.1.dist-info/METADATA,sha256=9BzW4qSHkib0HQHUoxS4iMSG-HzeZ2RKDyxV-m5sHA0,3478
+ddt_api_calls-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ddt_api_calls-0.3.1.dist-info/top_level.txt,sha256=PBdG2loWIIsZmAH78PNA_sa-Cr0XuLWi5cc8sXYPRKA,14
+ddt_api_calls-0.3.1.dist-info/RECORD,,
