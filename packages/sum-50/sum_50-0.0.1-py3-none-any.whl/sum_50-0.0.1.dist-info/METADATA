@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sum-50
+Version: 0.0.1
+Summary: adding number
+Home-page: UNKNOWN
+Author: UZair Khan
+Author-email: mohammaduzairkhan97@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# this is documentation file where we 
+describe the package description.
+
+
