@@ -1,0 +1,5 @@
+beautifulsoup4
+pyyaml
+pysolar
+basemap
+xarray

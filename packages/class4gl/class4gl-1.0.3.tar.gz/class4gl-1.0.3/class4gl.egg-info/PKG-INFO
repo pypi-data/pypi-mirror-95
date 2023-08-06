@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: class4gl
+Version: 1.0.3
+Summary: a framework to investigate the dynamics of the atmospheric boundary layer weather balloons worldwide
+Home-page: https://github.com/hendrikwout/class4gl
+Author: Hendrik Wouters
+Author-email: hendrik.wouters@ugent.be
+License: gpl-3.0
+Download-URL: https://github.com/hendrikwout/class4gl/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: atmospheric boundary layer,weather balloons,land--atmosphere interactions
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
