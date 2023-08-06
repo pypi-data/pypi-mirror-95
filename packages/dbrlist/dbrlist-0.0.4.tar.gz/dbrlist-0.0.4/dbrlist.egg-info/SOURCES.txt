@@ -1,0 +1,8 @@
+README.md
+setup.py
+dbrlist/__init__.py
+dbrlist.egg-info/PKG-INFO
+dbrlist.egg-info/SOURCES.txt
+dbrlist.egg-info/dependency_links.txt
+dbrlist.egg-info/not-zip-safe
+dbrlist.egg-info/top_level.txt
