@@ -1,0 +1,11 @@
+libhgdb.so,sha256=FVUygh2xqUhsqJJvmhfO0Du-ovgVunLB9n0-eL3LmsQ,5749696
+hgdb-replay,sha256=TJVLHwyS4XNd2-inrpndgPEwTjV89daEZhKovzsbprs,1008144
+hgdb-rewrite-vcd,sha256=TT7H03raDDiDQBqyg4OvJzMuCpIF2YlnJfzywUcEXno,3344752
+libhgdb-0.0.3.dist-info/LICENSE,sha256=ehdrLOF-fQUXyV_KTj0XyQlNdfVPLjqJoP-PAjnFmwk,1325
+libhgdb-0.0.3.dist-info/METADATA,sha256=fGJgmAX8MWU3tJqpDh7JtJefxtpByXkA97clwtoIEtY,269
+libhgdb-0.0.3.dist-info/top_level.txt,sha256=KEAFsp_lf84ymd9L-YyJdwLZtPIB_KMjJKvrvObE_ZI,8
+libhgdb-0.0.3.dist-info/WHEEL,sha256=zxAnLpUyPWiD-Qj7VRqNUf38zZF_SGiY5xXMhCAyT5A,107
+libhgdb-0.0.3.dist-info/RECORD,,
+libhgdb.libs/libhgdb-15553282.so,sha256=S3CGCgzPsD1YA4AfdJujO__T5geEf-DwumGYS5o7bCk,6499864
+libhgdb-0.0.3.data/scripts/hgdb-replay,sha256=l5ecH8SvLXAu46Z_AbqOUZnxNvlTDwOu9s3JItyrbNw,271
+libhgdb-0.0.3.data/scripts/hgdb-rewrite-vcd,sha256=gRbmC7yjr77b5O4GyvBydk-AfTt1C5FhT7_f5W905cA,242
