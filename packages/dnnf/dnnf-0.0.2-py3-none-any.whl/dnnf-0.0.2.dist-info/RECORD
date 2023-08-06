@@ -1,0 +1,14 @@
+dnnf/__init__.py,sha256=IYRJRnwsOWKmqfTLvUtG-xxY_tyGXDXhofMWZyZCZkM,111
+dnnf/__main__.py,sha256=ofEqkgcWXxx2-rAOAYDA0NwusPUPajdG2sX72i_tHkU,1809
+dnnf/__version__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+dnnf/cli.py,sha256=kV0eWUUMWsvGo3IHmE7hrsFdprtutO-PBaP8QTjfxTM,6083
+dnnf/extractor.py,sha256=vZqfGAIzeAZLqG9hw1lc_ap8Yn7rDqA8ntRh3RGoVR4,22520
+dnnf/falsifier.py,sha256=Lfup07oKtW7LUgO7g7-AVpNPH3reH__gE1iX8LblPvc,10521
+dnnf/model.py,sha256=4epIfzOLJRvppcSA0D7ed1dZBZ-pUnN-sXU7MGK4jjM,3116
+dnnf/pytorch.py,sha256=tPOzk3dyAwIeuiQ0dk__T6_6q6lPMRB8qN8IQn5fs-8,10917
+dnnf/utils.py,sha256=RPqL2C11WKSuz8GrcfGCu_JbDr7ODTGF10gLvhJRiD4,1991
+dnnf-0.0.2.dist-info/entry_points.txt,sha256=6s75wxr0XiKZAL4AZCUMpj6krhQ3GlURAw04tNV5hRs,47
+dnnf-0.0.2.dist-info/LICENSE,sha256=1mUNKVPhfbeeb2q1N47KQX292kTabX1Nd5tGMVExKKg,1070
+dnnf-0.0.2.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+dnnf-0.0.2.dist-info/METADATA,sha256=4PsyvpJ7xLHeWcRXlYXPwPOydmsbs16pQnz8xZVlA3o,8792
+dnnf-0.0.2.dist-info/RECORD,,
