@@ -1,0 +1,12 @@
+vgsstyle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vgsstyle/cli.py,sha256=ibiCIYMEQO8ASg7lgK_nCyqDkWLycBnimzjdSU36nGU,1617
+vgsstyle/config.py,sha256=P986zw9kew7EiOG0Gx6ZhO_p2bBy6kAnF-p06gNZRpU,936
+vgsstyle/linters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vgsstyle/linters/base.py,sha256=iFaDwsMoqW_0wNprkg1eS3U-3bYwjAQx3kixh2MiEsg,444
+vgsstyle/linters/black.py,sha256=nZSs3uP_uz0oZw2yAhGrbQLdNJqHUuWB4Or0pS5wGtU,3341
+vgsstyle/linters/flake.py,sha256=KZaasZoC7qv-rY0STSyHaUCu7nGt83xSmH_q8nkGIx0,2951
+vgs_style-0.2.3.dist-info/entry_points.txt,sha256=pgDMAk8x7NuK1TY393GTT1iqUFK_wz1P0nwpl52lK_M,47
+vgs_style-0.2.3.dist-info/LICENSE,sha256=WuQTn7P_IFbx7yk7q4SgRSZcIx0rzrpKcDNLuawTmEg,11353
+vgs_style-0.2.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+vgs_style-0.2.3.dist-info/METADATA,sha256=QxOY92XU7uM7pBFVyjW2g2Uyzlp-tByH8dVFZRi9nCM,659
+vgs_style-0.2.3.dist-info/RECORD,,

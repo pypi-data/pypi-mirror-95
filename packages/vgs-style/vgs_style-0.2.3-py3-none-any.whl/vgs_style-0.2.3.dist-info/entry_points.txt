@@ -1,0 +1,3 @@
+[console_scripts]
+vgs-style=vgsstyle.cli:main
+
