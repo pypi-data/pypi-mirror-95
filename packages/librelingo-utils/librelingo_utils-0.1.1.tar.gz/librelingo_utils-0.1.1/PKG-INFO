@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: librelingo-utils
+Version: 0.1.1
+Summary: Utilities to be used in LibreLingo-related-packages
+License: AGPLv3
+Author: Dániel Kántor
+Author-email: git@daniel-kantor.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
