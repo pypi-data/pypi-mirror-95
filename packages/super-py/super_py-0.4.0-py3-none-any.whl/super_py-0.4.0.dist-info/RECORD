@@ -1,0 +1,11 @@
+super_py/__init__.py,sha256=bvR-DJls9qThBUqSu2E8sRnUm6iIBo-0ZTfoS0l0bA0,1261
+super_py/concurrency.py,sha256=uLNxUbloy4aSGKHpYC1kzNKZOSdLTWKIJRWRY4bhdwQ,624
+super_py/dicts.py,sha256=cdWWTu9TVujlVSvIodksq-A0aL3-9XZ3N7rZTpLQmhc,304
+super_py/disk.py,sha256=7L8bl7wNyrGC5PBmbZwLTk3O90e-iEcFrFSo5CsHwD8,2195
+super_py/logging.py,sha256=s_SAxu8fAu-_g3KZaRXpgu4803rDhIa5lFu_aRXEdyU,3050
+super_py/string.py,sha256=rtviGykyBwAPH8gLM3gBjB-K-S7LMuSkCIgzbVJ8ZCU,1166
+super_py/testing.py,sha256=2ifBfbj29FnFRTXV6gVPjmdMIbdmBr3Vm-iZ4cGrJBU,2258
+super_py-0.4.0.dist-info/LICENSE,sha256=rIUTMGtXt2gnKznsGVPEFRxp1Z842XkWHOxxyR2jN-I,1061
+super_py-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+super_py-0.4.0.dist-info/METADATA,sha256=KzXsZU1QkoPsikVx1_f-u9Yr5FmNRnQz2TjLLFowTPo,1334
+super_py-0.4.0.dist-info/RECORD,,
