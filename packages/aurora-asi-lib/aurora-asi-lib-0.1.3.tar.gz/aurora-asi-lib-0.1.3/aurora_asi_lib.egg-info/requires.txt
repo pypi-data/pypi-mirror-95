@@ -1,0 +1,9 @@
+beautifulsoup4
+numpy
+scipy
+pandas
+matplotlib
+requests
+cdflib
+ffmpeg-python
+pymap3d
