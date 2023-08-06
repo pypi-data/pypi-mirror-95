@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: product-id-extractor-yimian
+Version: 0.0.1
+Summary: A tiny package to extract product id
+Home-page: https://gitlab.yimian.com.cn/dev/product_id_extractor
+Author: citrusy
+Author-email: luojunshan@yimian.com.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+A extractor to extract product id from an provided url of specific platforms.
+
+
