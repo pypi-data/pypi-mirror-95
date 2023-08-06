@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: example-pkg-zyxstudycs
+Version: 0.0.3
+Summary: Try package python code
+Home-page: UNKNOWN
+Author: zyxstudycs
+Author-email: zhengyixing01@corp.netease.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: librosa (==0.8.0)
+Requires-Dist: numba (==0.45.1)
+
+This is a simple try pip package.
+
+
