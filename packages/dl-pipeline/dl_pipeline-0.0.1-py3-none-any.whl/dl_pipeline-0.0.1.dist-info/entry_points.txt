@@ -1,0 +1,3 @@
+[console_scripts]
+kaggle_rainforest2021 = dl_pipeline.kaggle.rfcx_species_audio_detection:main
+
