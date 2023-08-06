@@ -1,0 +1,12 @@
+tspwplib/__init__.py,sha256=3nhcRPSMVxme7Z24a9gA94KJ8acLcCMa-9AcDoxM5Mo,2108
+tspwplib/complete.py,sha256=74bTK7vcFBp2g_JMhO6FmQqOsz9kL-wpUiUhCmE2s_0,759
+tspwplib/converter.py,sha256=qX2aKSdK99G1ubuLgyG46gA6qtwlu_qLgGLwXgIpAPg,7499
+tspwplib/problem.py,sha256=nRKnBEsed3gZP4iHEgEp0Isfx8oBaIgpYregYCsWi3g,8462
+tspwplib/types.py,sha256=GOMJQ2JPbllkZgnZl-s-LMjeLwCub24Bj961FOfnRs8,5648
+tspwplib/utils.py,sha256=By_4DhHpnNn3PNhnNaTU78v4_YZ5OL82xte-w-IriXI,1254
+tspwplib/walk.py,sha256=00djRoelQoQMY2s7NoihKkcc-puw1mvGA3qNrXUFBHg,4062
+tspwplib-0.5.8.dist-info/LICENSE,sha256=hDBdudC9UePolV-h76dmcga0lAPmNU58NlOVqvQytvY,1071
+tspwplib-0.5.8.dist-info/METADATA,sha256=TP0iWOfIb4Bk-VHsSzeXmP_6rpJgu8i2O0uebgIxTjo,698
+tspwplib-0.5.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tspwplib-0.5.8.dist-info/top_level.txt,sha256=LQqH9una85syCAM7J8Et3KcQnsCYktOd-ZWDiCsi4Hw,9
+tspwplib-0.5.8.dist-info/RECORD,,
