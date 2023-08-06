@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Coolapk
+Version: 0.0.2
+Summary: ToolBox for coolapk
+Home-page: https://github.com/1767523953/Coolapk
+Author: QQlittleice
+Author-email: 1767523953@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+
+A module for coolapk. 
+Function:
+1.Login Coolapk
+2.Get UserData
+
