@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+bioportal/__init__.py
+bioportal/bioportal_client.py
+bioportal.egg-info/PKG-INFO
+bioportal.egg-info/SOURCES.txt
+bioportal.egg-info/dependency_links.txt
+bioportal.egg-info/requires.txt
+bioportal.egg-info/top_level.txt
