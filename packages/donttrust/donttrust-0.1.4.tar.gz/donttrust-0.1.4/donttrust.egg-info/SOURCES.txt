@@ -1,0 +1,9 @@
+README.md
+setup.py
+donttrust/__init__.py
+donttrust/exceptions.py
+donttrust/schema.py
+donttrust.egg-info/PKG-INFO
+donttrust.egg-info/SOURCES.txt
+donttrust.egg-info/dependency_links.txt
+donttrust.egg-info/top_level.txt
