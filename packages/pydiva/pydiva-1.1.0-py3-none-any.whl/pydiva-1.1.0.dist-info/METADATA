@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pydiva
+Version: 1.1.0
+Summary: Some stuff for handling files from Project DIVA games
+Home-page: https://github.com/somewhatlurker/pydiva
+Author: somewhatlurker
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: construct (>=2.9.0)
+Requires-Dist: pycryptodomex
+
+pydiva
+======
+
+Some python (3.8+) stuff for handling files from Project DIVA games.
+
+
+## pyfarc
+Reads and writes farc archives (FArc/FArC/FARC fully supported).  
+See `docs/pyfarc.md` for usage.
+
+
+## pyfmh3
+Reads and writes fontmaps for F2nd (BE only), FT and X series games.
+See `docs/pyfmh3.md` for usage.
+
+　
+
+## Development Info
+License is MIT so do whatever you want, but I'd personally prefer if we avoid forks for now.
+
+Format-specific info is in the relevant docs.
+
+### Tests
+Run `python -m unittest` from the root directory.
+
