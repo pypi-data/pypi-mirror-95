@@ -1,0 +1,8 @@
+.cache
+.coverage
+.venv
+*.egg-info
+*.py[co]
+.tox
+build
+dist
