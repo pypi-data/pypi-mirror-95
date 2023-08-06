@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: slack-machine-plugins
+Version: 0.1.0
+Summary: Utility plugins for Slack-Machine, the sexy, simple, yet powerful and extendable Slack bot
+Home-page: https://github.com/eguven/slack-machine-plugins
+Author: Eren Güven
+License: MIT
+Keywords: slack bot framework ai utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Topic :: Office/Business
+Requires-Python: ~=3.8
+
+# slack-machine-plugins
+
+Utility plugins for Slack-Machine, the sexy, simple, yet powerful and extendable Slack bot
+
+## commander
+
+Provides two classes ``Command`` and ``CommandArgument`` for a declarative way to define a chat command and it's arguments for input validation and error feedback for the user.
+

@@ -1,0 +1,10 @@
+machine_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+machine_plugins/__meta__.py,sha256=eVJ9clVH916QGixBzKBNvsGSzn9TXW0j-vtCuCc_AAg,566
+machine_plugins/commander/__init__.py,sha256=V0Z_wgzsJvzs4afJ2t7Qcu-5a5IpLFcG23-TNTfCdJs,7256
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_commander.py,sha256=ibOkUJfRzD0fV560Ur5xNxTaGDCWZT9BKjcOowBr4uI,3329
+slack_machine_plugins-0.1.0.dist-info/LICENSE,sha256=U5CdNuBLeMWV-ECyoz7U9DWOVPHvMT2CHzDQh6fT1Ik,1068
+slack_machine_plugins-0.1.0.dist-info/METADATA,sha256=i6FwvakF6CHhSLAeRRo67wc8fbeoWpFsxmv7vL22GE4,1093
+slack_machine_plugins-0.1.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+slack_machine_plugins-0.1.0.dist-info/top_level.txt,sha256=RcVL34UKkKULsXW9nTdDTmpjoZxaoe4s7NAaGYqWTsM,22
+slack_machine_plugins-0.1.0.dist-info/RECORD,,
