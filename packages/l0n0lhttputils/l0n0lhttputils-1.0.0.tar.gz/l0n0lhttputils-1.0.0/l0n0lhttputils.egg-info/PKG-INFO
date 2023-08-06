@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: l0n0lhttputils
+Version: 1.0.0
+Summary: 平时常用的http server|mysql|腾讯cos|微信公众号等库的集合
+Home-page: https://gitee.com/l00n00l/http_server_utils
+Author: l0n0l
+Author-email: 1038352856@qq.com
+License: UNKNOWN
+Description: # http服务开发经常用到的库集合(持续更新，第一版写的简单)
+        ## dbmysql mysql数据库权限控制，可用于前端直接执行mysql
+        ## http_server 基于aiohttp的http服务器
+        ## tencent_cos 腾讯对象存储
+        ## token_mgr 用于管理token
+        ## wx_gzh 用于处理微信公众号开发获取授权信息
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
