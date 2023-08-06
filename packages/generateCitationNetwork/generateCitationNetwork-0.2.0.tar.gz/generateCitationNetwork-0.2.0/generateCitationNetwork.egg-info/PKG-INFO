@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: generateCitationNetwork
+Version: 0.2.0
+Summary: 
+        A tool to generate a network of cited and
+        referenced papers for a given DOI.
+    
+Home-page: https://gitlab.gwdg.de/GMPG/generatecitationnet
+Author: Malte Vogl
+Author-email: mvogl@mpiwg-berlin.mpg.de
+License: MIT License
+Description: =============================
+        generateCitationNetwork
+        =============================
+        
+        A tool to generate a network of cited and referenced papers for a given DOI.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+        
+        
+        Documentation
+        -------------
+        
+        The full documentation can be generated with Sphinx
+        
+        :
+        
+        History
+        -------
+        
+        0.1.0 (2020-12-09)
+        ++++++++++++++++++
+        
+        * First release on PyPI.
+        
+        0.2.0 (2021-02-19)
+        ++++++++++++++++++
+        
+        * Refactored to include references without DOI.
+        * New routine to determine publication year from different fields.
+        * Publications without year data are set to the source DOI year.
+        
+Keywords: generateCitationNetwork
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
