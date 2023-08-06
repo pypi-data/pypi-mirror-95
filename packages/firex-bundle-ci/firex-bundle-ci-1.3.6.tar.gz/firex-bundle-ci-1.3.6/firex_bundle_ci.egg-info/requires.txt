@@ -1,0 +1,5 @@
+firexapp
+firex-keeper
+lxml
+xunitmerge
+unittest-xml-reporting
