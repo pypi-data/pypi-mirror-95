@@ -1,0 +1,16 @@
+booktool/__init__.py,sha256=xEYamo7pkVn3MmM1p69sNW6yV8dEPPjTwqSMTrhocKo,733
+booktool/__main__.py,sha256=Q7TCCL9_F4kWfrxm37Gn7LPwjZFcphuC3EEMhfPcWI0,4384
+booktool/isbnsearch.py,sha256=vaaNzm0ovU3-2hu6N37dc0nKuXmKz-PCIg7F8O_Hdqc,1424
+booktool/util.py,sha256=NbUJ4BnEktGHV-juJ7jNpHPGwcmefxCUo17DkwDZFCo,2377
+booktool/worldcat.py,sha256=7TwtIXfpUgOZMNEZh_qcoK_Y4FHg_sOSQv4qETVil0A,3161
+booktool/audio/__init__.py,sha256=WfTHf9pM66iLMGtL95tm8i7IZYRCnX5zXyw0RVN6X70,577
+booktool/audio/group.py,sha256=uGVLN1nydBE6YIiEtBprogYT5nV17IlaUzLDAAxVJWM,1562
+booktool/audio/track.py,sha256=eke8R6_FEVj7rKyQ2uOCMGAD79y7aPS14Fjkc23ojL4,8910
+booktool/visual/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+booktool/visual/epub.py,sha256=vHvRhqoCntiPRboBBjP1jl26jQGGeLq2Y841d1cyElM,2237
+booktool/visual/tools.py,sha256=qtdhySPgJHoMJN3OxpIBv47shGEgXg91QgfglO58cWo,2662
+booktool-0.7.0.dist-info/METADATA,sha256=ogYDx-V63MnkYcK_kIFR2oX4WRGLmByJifhrf44YECE,1908
+booktool-0.7.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+booktool-0.7.0.dist-info/entry_points.txt,sha256=AzhZuWHRtAbjdSb414iehgC9435p98tAi5trIczR5wk,53
+booktool-0.7.0.dist-info/top_level.txt,sha256=LBZ8YLdPwpbPNWC7aAJalXUzYuzz4rFjRvAReNom0oE,9
+booktool-0.7.0.dist-info/RECORD,,
