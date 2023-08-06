@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: beepbeep
+Version: 0.0.1
+Summary: data pipeline utility functions for beepbeep.technology
+Home-page: UNKNOWN
+Author: Jim Barlow
+Author-email: jim@beepbeep.technology
+License: Apache License 2.0
+Download-URL: https://github.com/beepbeeptechnology/beepbeep/archive/beepbeep-0.0.1.tar.gz
+Description: # beepbeep
+        Python package for data pipeline development, management and monitoring.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
