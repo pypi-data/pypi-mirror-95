@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: xscrapers
+Version: 0.0.2
+Summary: A simple webscraping framework.
+Home-page: https://github.com/juliandwain/webscrapers
+Author: Julian Dwain Stang
+Author-email: julian.stang@web.de
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: astroid (==2.4.2)
+Requires-Dist: autopep8 (==1.5.4)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: bleach (==3.3.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: fake-useragent (==0.1.11)
+Requires-Dist: idna (==2.10)
+Requires-Dist: isort (==5.7.0)
+Requires-Dist: keyring (==22.0.1)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pkginfo (==1.7.0)
+Requires-Dist: pycodestyle (==2.6.0)
+Requires-Dist: Pygments (==2.8.0)
+Requires-Dist: pylint (==2.6.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: readme-renderer (==28.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.4.0)
+Requires-Dist: rope (==0.18.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: soupsieve (==2.1)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: twine (==3.3.0)
+Requires-Dist: urllib3 (==1.26.2)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: wincertstore (==0.2)
+Requires-Dist: wrapt (==1.12.1)
+
+# XSCRAPERS
+
+The [XSCRAPERS](https://github.com/juliandwain/webscrapers) package provides an OOP interface to some simple webscraping techniques.
+
+
