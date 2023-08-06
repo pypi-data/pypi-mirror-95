@@ -1,0 +1,15 @@
+PyYAML
+dataclasses-json
+imageio
+nibabel
+pandas
+pillow
+prettytable
+pytest
+python-Levenshtein
+scikit-image
+tensorflow-datasets~=3.0.0
+tensorflow<=2.4.0,>=2.3.0
+tensorflow_addons
+tqdm
+xlrd
