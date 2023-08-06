@@ -1,0 +1,7 @@
+README.md
+setup.py
+rev_str.egg-info/PKG-INFO
+rev_str.egg-info/SOURCES.txt
+rev_str.egg-info/dependency_links.txt
+rev_str.egg-info/top_level.txt
+reverseprint/__init__.py
