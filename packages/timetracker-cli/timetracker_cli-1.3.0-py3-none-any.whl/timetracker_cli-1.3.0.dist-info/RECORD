@@ -1,0 +1,12 @@
+Users/eysenck/.timetracker/config.toml,sha256=S1WXDqSYB6LkjttFvNSlK_tYKRtwd77K95LGLmxIs20,193
+timetracker/__init__.py,sha256=Jzt4W0G20ITD2wMQBB-MMvRVT0KtH6HgWod5WBo5zlY,24
+timetracker/cli.py,sha256=aGZWufMLNk_64yJ2qSJqdrSaHXKjyP3lFM4LZ_jsZuo,2411
+timetracker/constants.py,sha256=Jb3oeQ1_jiM3xNo4SsZUFRrMPPKlHz0Ot1rewpaWtSw,543
+timetracker/timetracker.py,sha256=lQ-JaYZoK_tysis8UYrUizgt3ytlaxHdaVB4iMge7LU,11786
+timetracker/utils.py,sha256=DlkjmLog5Ztq4EcknhAgA34TlzY4aHwGnB0-CgQyGNE,781
+timetracker_cli-1.3.0.dist-info/LICENSE,sha256=AvL3Sj-CpsTkeCC_6nyMSqI9h_m4jXVnPdERlxIzlKI,1315
+timetracker_cli-1.3.0.dist-info/METADATA,sha256=jhz3K_rILDleWPH2plz1jkWAjHajhGYtXW4y6owVjSw,5469
+timetracker_cli-1.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+timetracker_cli-1.3.0.dist-info/entry_points.txt,sha256=dVvol_IRsUBFM2VJGwqoftUc1WA_z6-mYqj4B3O1fLs,43
+timetracker_cli-1.3.0.dist-info/top_level.txt,sha256=k4FXtQM5DQkkiYnrilKW_CqrdPr6bNSyln91E35b3Jw,12
+timetracker_cli-1.3.0.dist-info/RECORD,,
