@@ -1,0 +1,14 @@
+*.swp
+__pycache__
+docs/_build/*
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+pyhdfe
+env
+build
+dist
+regpyhdfe.egg-info/
+regpyhdfe_andy.egg-info/
+dev.txt
+docs/modules.rst
+
