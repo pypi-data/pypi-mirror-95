@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: scimschema
+Version: 0.2.89
+Summary: A validator for System for Cross domain Identity Management (SCIM) responses given predefine schemas
+Home-page: https://github.com/GordonSo/scimschema
+License: MIT
+Keywords: scimschema,scim
+Author: Gordon So
+Author-email: gordonkwso@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/GordonSo/scimschema
