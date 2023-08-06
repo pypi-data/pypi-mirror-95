@@ -1,0 +1,8 @@
+acc2psql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acc2psql/__main__.py,sha256=baA3SmZX_iFF67pxmuKM65uHEcOZ4nM5GtZglUvhEOM,1345
+acc2psql/to_psql.py,sha256=86MF9kspVguKzjSo_Df4D8rTBZ2tFAbzyA6biy-Kfcc,4373
+acc2psql-0.0.8.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+acc2psql-0.0.8.dist-info/METADATA,sha256=3-rYcJxv6MiTlcoc1Tls61lev9mmkMVoIaD_NKE2_eA,2478
+acc2psql-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+acc2psql-0.0.8.dist-info/top_level.txt,sha256=r9jeg0Hd8ExhxAYFuqd-vgBEHx4ewgdI5J-6CAkgvsM,9
+acc2psql-0.0.8.dist-info/RECORD,,
