@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: navio-builder-win
+Version: 0.1.54
+Summary: navio-builder, but doesn't import sh and works on windows.
+Home-page: https://oss.navio.tech/navio-builder/
+Author: Matthew Martin
+Author-email: matthewdeanmartin@gmail.com
+License: MIT License
+Keywords: devops,build tool
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+Requires-Dist: sh
+
+See [../navio-builder](navio-builder) for details. 
+This fork exists only to get windows compatibility.
+
