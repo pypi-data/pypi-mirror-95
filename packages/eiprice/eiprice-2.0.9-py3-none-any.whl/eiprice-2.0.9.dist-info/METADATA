@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eiprice
+Version: 2.0.9
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Unidecode
+Requires-Dist: nest-asyncio
+Requires-Dist: backoff
+Requires-Dist: requests-html
+Requires-Dist: user-agent
+
+UNKNOWN
+
+
