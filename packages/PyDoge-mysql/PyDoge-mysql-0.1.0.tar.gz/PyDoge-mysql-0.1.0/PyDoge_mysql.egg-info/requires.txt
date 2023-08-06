@@ -1,0 +1,2 @@
+PyDoge
+mysql-connector-python

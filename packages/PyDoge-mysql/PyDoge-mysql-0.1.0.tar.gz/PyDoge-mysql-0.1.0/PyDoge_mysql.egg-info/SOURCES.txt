@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyDoge-mysql/__init__.py
+PyDoge-mysql/mysql_client.py
+PyDoge_mysql.egg-info/PKG-INFO
+PyDoge_mysql.egg-info/SOURCES.txt
+PyDoge_mysql.egg-info/dependency_links.txt
+PyDoge_mysql.egg-info/requires.txt
+PyDoge_mysql.egg-info/top_level.txt
