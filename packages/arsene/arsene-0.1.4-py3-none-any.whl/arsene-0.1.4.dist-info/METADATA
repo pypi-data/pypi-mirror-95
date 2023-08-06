@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: arsene
+Version: 0.1.4
+Summary: Easy data cache management
+Home-page: https://github.com/JeremyAndress/cobnut
+License: MIT
+Author: JeremyAndress
+Author-email: jeremysilvasilva@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: redis
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: redis (>=3.5.3,<4.0.0); extra == "redis"
+Project-URL: Repository, https://github.com/JeremyAndress/cobnut
+Description-Content-Type: text/markdown
+
+# Cobnut
+[![Test](https://github.com/JeremyAndress/cobnut/actions/workflows/python-app.yml/badge.svg)](https://github.com/JeremyAndress/cobnut/actions/workflows/python-app.yml) [![license](https://img.shields.io/github/license/peaceiris/actions-gh-pages.svg)](LICENSE)
+
+Simple cache management to make your life easy.
+
+### Requirements 
+- Python 3.6+ 
+
+### Installation
+```sh
+pip install cobnut
+```
+
+### Quick Start
+For the tutorial, you must install redis as dependency
+
+```sh
+pip install cobnut[redis]
+```
+
+
+The simplest Cobnut setup looks like this:
+
+```python
+from cobnut import Cobnut, RedisModel
+
+cobnut = Cobnut(redis_connection=RedisModel(host="localhost"))
+cobnut.set(key='mykey', data='mydata')
+cobnut.get(key='mykey')
+# Response: mydata
+
+cobnut.delete(key='mykey')
+cobnut.get(key='mykey')
+# Response: None
+
+```
