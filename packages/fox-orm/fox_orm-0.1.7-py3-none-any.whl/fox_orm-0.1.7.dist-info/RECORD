@@ -1,0 +1,10 @@
+fox_orm/__init__.py,sha256=FeYRzPe73sBRd2uMB_ebnPnIN71AyuRfj7PUbe7XJD8,558
+fox_orm/exceptions.py,sha256=oAm_0EWcH_mBBlOBZc47RE3zbFmH94KW01kRIbcqE4k,296
+fox_orm/model.py,sha256=3kShi3WUsWXa7H0HQrrImKkr6bQ3-mqrP4BG7dtH7QQ,7362
+fox_orm/relations.py,sha256=CotwK38uGeg_bFWkiB5yu284lmCxR6VsMq8gmFnQpFA,5721
+fox_orm/utils.py,sha256=81dyAIi5aXkJLXaRLmEKBRrQT7QHwW4JrCibEiGycoY,464
+fox_orm-0.1.7.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+fox_orm-0.1.7.dist-info/METADATA,sha256=W-Jp0xBDP7kZo6X7aAw5l0X7uT5lTKRJ2fNnQqvYev0,454
+fox_orm-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fox_orm-0.1.7.dist-info/top_level.txt,sha256=kBWs_YgEXl2DmInAsJPfQW8SlyAy9DjSLxIaWFO-rPo,8
+fox_orm-0.1.7.dist-info/RECORD,,
