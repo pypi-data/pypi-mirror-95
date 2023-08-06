@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: eth-uniswap
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/julien-h/python-eth-uniswap
+Author: Julien Harbulot
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: eth-common
+Requires-Dist: web3
+Requires-Dist: dataclasses ; python_version == "3.6"
+
+# eth-uniswap
+
+eth-uniswap is a python wrapper built ontop the [web3py](https://web3py.readthedocs.io/en/stable/) library to interact with [Uniswap](https://uniswap.org/) solidity contracts on a public or private ethereum blockchain. 
+
+The library defines a python function for each function defined by the solidity contracts in python, adding type hints for the arguments and return values. This makes it easier to call the contracts' function by enabling IDE features such as auto-completion. 
+
+## Installation
+
+You can install the `eth-uniswap` package using pip:
+
+```
+python -m pip install eth-uniswap
+```
+
+## Getting started
+
+Here is how to deploy and use the [Uniswap-V2 Factory solidity contract](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2Factory.sol) using this library:
+
+
+```python
+# First, you need a connection to an ethereum node.
+# Here, we are using a local node created with ganache-cli for instance.
+
+from web3 import Web3, HTTPProvider
+url = "http://127.0.0.1:8545"
+w3 = Web3(HTTPProvider(url))
+
+# We can deploy the factory as follows:
+
+from eth_uniswap.v2.core import UniswapV2Factory
+
+receipt = UniswapV2Factory.deploy(w3, my_address).waitForReceipt()
+factory = receipt.contract
+
+# Alternatively, we can connect to a deployed instance:
+
+factory_address = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+factory = UniswapV2Factory(w3, address=factory_address)
+
+# All the functions defined by the solidity contract are available.
+# For instance, here is how to make an eth-call on the allPairsLength function:
+
+nb_pairs = factory.functions.allPairsLength().call()
+print("This many pairs have been deployed', nb_pairs)
+
+# Here is how to send a transaction to the createPair function
+
+token1 = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+token2 = '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+
+receipt = factory.functions.createPair(token1, token2).waitForReceipt()
+
+```
+
+## Documentation
+
+For each solidity contract defined by Uniswap, this package contains a python class with the same name and its methods also have the same name as the solidity one. This makes it easy to find the class and method you are looking for. Refer to Uniswap documentation to learn how to interact with the contracts.
+
+- [Uniswap documentation](https://uniswap.org/docs/v2)
+- [Solidity contracts for Uniswap v2 core](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts)
+- [Solidity contracts for Uniswap v2 periphery](https://github.com/Uniswap/uniswap-v2-periphery/tree/master/contracts)
+
