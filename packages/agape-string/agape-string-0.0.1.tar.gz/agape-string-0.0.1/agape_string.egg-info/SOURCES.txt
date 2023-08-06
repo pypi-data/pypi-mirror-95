@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+agape/__init__.py
+agape/__init__.pyc
+agape/string.py
+agape/string.pyc
+agape_string.egg-info/PKG-INFO
+agape_string.egg-info/SOURCES.txt
+agape_string.egg-info/dependency_links.txt
+agape_string.egg-info/top_level.txt

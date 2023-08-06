@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: agape-string
+Version: 0.0.1
+Summary: String manipulation
+Home-page: https://gitlab.com/MiverikMinett/agape
+Author: Maverik Minett
+Author-email: maverik.minett@gmail.com
+License: All rights reserved.
+Description: # Agape
+        
+        String manipulation
+        
+        ## Testing
+        
+        ```
+        python test.py
+        ```
+        
+        ## Build
+        
+        ```
+        python setup.py sdist
+        ```
+        
+        ## License
+        
+        Copyright (C) 2021 Maverik Minett
+        
+        The (MIT) license.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
