@@ -1,0 +1,4 @@
+Usage
+=====
+.. automodule:: docdata
+    :members:
