@@ -1,0 +1,3 @@
+[bitex]
+kraken = bitex_kraken.hooks
+

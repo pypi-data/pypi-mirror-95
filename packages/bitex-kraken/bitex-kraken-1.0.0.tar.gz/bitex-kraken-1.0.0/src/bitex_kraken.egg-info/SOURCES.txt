@@ -1,0 +1,14 @@
+README.rst
+pyproject.toml
+setup.py
+src/bitex_kraken/__init__.py
+src/bitex_kraken/auth.py
+src/bitex_kraken/hooks.py
+src/bitex_kraken/request.py
+src/bitex_kraken/response.py
+src/bitex_kraken.egg-info/PKG-INFO
+src/bitex_kraken.egg-info/SOURCES.txt
+src/bitex_kraken.egg-info/dependency_links.txt
+src/bitex_kraken.egg-info/entry_points.txt
+src/bitex_kraken.egg-info/requires.txt
+src/bitex_kraken.egg-info/top_level.txt
