@@ -1,0 +1,25 @@
+{% if logo and theme_logo_only %}
+<a href="{{ pathto(master_doc) }}">
+{% else %}
+<a href="{{ pathto(master_doc) }}" class="icon icon-home" alt="{{ _(" Documentation Home") }}">
+    {{ project }}
+{% endif %}
+    {% if logo %}
+    <img src="{{ pathto('_static/' + logo, 1) }}" class="theme-logo" alt="{{ _('Logo') }}" />
+    {% endif %}
+</a>
+
+{% include 'searchbox.html' %}
+
+{% if 'singlehtml' not in builder %}
+{% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
+collapse=theme_collapse_navigation|tobool,
+includehidden=theme_includehidden|tobool,
+titles_only=theme_titles_only|tobool) %}
+{% endif %}
+
+{% if global_toc %}
+{{ global_toc }}
+{% else %}
+<div class="local-toc">{{ toc }}</div>
+{% endif %}
