@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: platemap
+Version: 0.0.2b0
+Summary: A package for working with plates
+Home-page: https://github.com/Benedict-Carling/platemap
+Author: Benedict Carling
+Author-email: benedict.carling18@imperial.ac.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+platemap
+
+

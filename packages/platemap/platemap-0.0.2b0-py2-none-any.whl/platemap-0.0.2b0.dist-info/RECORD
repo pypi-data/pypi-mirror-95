@@ -1,0 +1,12 @@
+platemap/__init__.py,sha256=7FfoAi-GP1wrWjW_QpPpOrAqd6HYqWcYGzlGXW68XxA,176
+platemap/plate.py,sha256=o5hZBzFJ2SknyVScpbfXXRbT2ugKeLAOFdjUFjONy-c,4057
+platemap/PlateUtils/__init__.py,sha256=xldjFqjygS_B_dZAzsPkaPfNY_GdYymK_izbkMOCNrA,160
+platemap/PlateUtils/add_volume.py,sha256=5E7qI4vArsQxDCoaCWgJEk9KRzvIf-tIgGIjzafJl2k,1831
+platemap/PlateUtils/assign_source_wells.py,sha256=-NLwTVxfNR4i_S83BpripncAA1715rU2lEKoQi464EE,905
+platemap/PlateUtils/remove_volume.py,sha256=wFHOwj3dL5Dk152PklQCgmSVqx92j4cmWZYgUp3xT2U,1522
+platemap/PlateUtils/transfer.py,sha256=B8dXxdrkB2Ex3p7W5-KA186RzTaa0vXCVZcFrYdbR_M,2372
+platemap-0.0.2b0.dist-info/LICENSE.txt,sha256=D-A7_MXEHq6swCqf5EX9tCFl_5W5STw3D-Ru6WokbSM,1072
+platemap-0.0.2b0.dist-info/METADATA,sha256=eVfFMpBLY68HS6U8uQz6sU1Du9ey1ysBcrxbyKRAl9g,633
+platemap-0.0.2b0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+platemap-0.0.2b0.dist-info/top_level.txt,sha256=nANUiPQ4bngmOsiWMPf0Tr0Dwl7HigB3bfSi-Lkg89M,9
+platemap-0.0.2b0.dist-info/RECORD,,
