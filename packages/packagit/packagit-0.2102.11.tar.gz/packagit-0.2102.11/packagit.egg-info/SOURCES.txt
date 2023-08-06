@@ -1,0 +1,10 @@
+README.md
+packagit
+setup.py
+packagit.egg-info/PKG-INFO
+packagit.egg-info/SOURCES.txt
+packagit.egg-info/dependency_links.txt
+packagit.egg-info/requires.txt
+packagit.egg-info/top_level.txt
+packagit_/__init__.py
+packagit_/packagit.py
