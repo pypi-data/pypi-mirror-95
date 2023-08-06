@@ -1,0 +1,27 @@
+
+[all]
+pythonnet
+py4j
+comtypes
+
+[clr]
+pythonnet
+
+[com]
+comtypes
+
+[java]
+py4j
+
+[tests]
+pytest>=4.4
+pytest-cov
+py4j
+numpy
+pythonnet
+
+[tests:python_version < "3.0"]
+pathlib
+
+[tests:sys_platform == "win32"]
+comtypes
