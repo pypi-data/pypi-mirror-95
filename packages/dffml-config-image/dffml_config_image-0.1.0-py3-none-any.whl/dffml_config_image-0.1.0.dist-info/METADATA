@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: dffml-config-image
+Version: 0.1.0
+Summary: DFFML config dffml-config-image
+Home-page: https://github.com/dffml/blob/master/configloader/image/README.md
+Author: sakshamarora1
+Author-email: sakshamarora1001@gmail.com
+Maintainer: sakshamarora1
+Maintainer-email: sakshamarora1001@gmail.com
+License: MIT
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: opencv-python (==4.5.1.48) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: opencv-python (==4.5.1.48) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: opencv-python (==4.5.1.48) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: opencv-python (==4.5.1.48) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: opencv-python (==4.5.1.48) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.8"
+
+# DFFML Config for Image
+
+## About
+
+Allows for reading of `PNG`, `JPEG` and `TIFF` images
+
+## License
+
+DFFML Config For Image are distributed under the terms of the
+[MIT License](LICENSE).
+
+

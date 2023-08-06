@@ -1,0 +1,6 @@
+[dffml.configloader]
+jpeg = dffml_config_image.configloader:JPEGConfigLoader
+jpg = dffml_config_image.configloader:JPGConfigLoader
+png = dffml_config_image.configloader:PNGConfigLoader
+tiff = dffml_config_image.configloader:TIFFConfigLoader
+
