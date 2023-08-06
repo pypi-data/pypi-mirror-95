@@ -1,0 +1,2 @@
+hopcroftkarp>=1.2.5
+pyfiglet>=0.8.post1
