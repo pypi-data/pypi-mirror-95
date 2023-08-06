@@ -1,0 +1,8 @@
+README.md
+setup.py
+wtf-test/__init__.py
+wtf-test/wtf-test.py
+wtf_test.egg-info/PKG-INFO
+wtf_test.egg-info/SOURCES.txt
+wtf_test.egg-info/dependency_links.txt
+wtf_test.egg-info/top_level.txt
