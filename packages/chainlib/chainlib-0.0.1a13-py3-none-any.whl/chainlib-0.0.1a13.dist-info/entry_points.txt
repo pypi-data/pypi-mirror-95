@@ -1,0 +1,7 @@
+[console_scripts]
+eth-balance = chainlib.eth.runnable.balance:main
+eth-checksum = chainlib.eth.runnable.checksum:main
+eth-gas = chainlib.eth.runnable.gas:main
+eth-get = chainlib.eth.runnable.get:main
+eth-transfer = chainlib.eth.runnable.transfer:main
+
