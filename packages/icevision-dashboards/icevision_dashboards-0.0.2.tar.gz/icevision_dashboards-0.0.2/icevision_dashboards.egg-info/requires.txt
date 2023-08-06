@@ -1,0 +1,5 @@
+bokeh
+panel
+pandas
+numpy
+icevision
