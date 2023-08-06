@@ -1,0 +1,91 @@
+
+.container {
+  text-align: center;
+}
+
+::placeholder {
+  color: #8c9b9d !important;
+}
+
+.input {
+  background-color: #1f2424;
+}
+
+.logo {
+  font-size: 4rem;
+  bottom: -0.6rem;
+  position: relative;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.button.is-info {
+  background-color: #343c3d;
+}
+
+a {
+  width: 100%;
+}
+
+.input, .select select, .textarea {
+  border-width: 0;
+  background-color: #282f2f;
+  color: white;
+}
+
+.input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
+  box-shadow: none;
+}
+
+.hero-body, .section {
+  padding: 1.5rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.is-danger {
+  background-color: #E54B4B !important;
+}
+
+.button.is-danger {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.button.is-info {
+  margin-bottom: 0.65rem;
+}
+
+
+@font-face {
+  font-family: 'Relative Mono';
+  src: url(//jerbob.me/relative-mono-11-pitch.woff);
+}
+
+* {
+  font-family: 'Relative Mono' !important;
+  font-weight: normal !important;
+  box-shadow: none !important;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden
+}
+
+html,
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body > footer {
+    margin-top: auto;
+}
+footer {
+  padding: 3rem 1.5rem 3rem !important
+}
