@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: selfbot
+Version: 0.2
+Summary: Epic exploit discord api wrapper
+Home-page: https://github.com/rqzu/selfbot.py
+Author: razu
+Author-email: support@xyris.org
+License: MIT
+Download-URL: https://github.com/rqzu/AuthGG/archive/main.tar.gz
+Description: # SelfbotPY
+        
+        A modern, exploit API wrapper for Discord written in Python.
+        
+        ## Features
+        
+        - Built in discord exploits
+        - Built-In Ratelimit Handler
+        - Discord API 100% used
+        - Very fast
+        
+        # COMING SOON
+        
+        ### Developement
+        - Development started on 18 / 2 / 2021 with the idea from lovely slab
+Keywords: selfbot,discord,discord-selfbot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+selfbot/__init__.py
+selfbot.egg-info/PKG-INFO
+selfbot.egg-info/SOURCES.txt
+selfbot.egg-info/dependency_links.txt
+selfbot.egg-info/top_level.txt
