@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/divisionbeads/__init__.py
+src/divisionbeads/__main__.py
+src/divisionbeads.egg-info/PKG-INFO
+src/divisionbeads.egg-info/SOURCES.txt
+src/divisionbeads.egg-info/dependency_links.txt
+src/divisionbeads.egg-info/top_level.txt
