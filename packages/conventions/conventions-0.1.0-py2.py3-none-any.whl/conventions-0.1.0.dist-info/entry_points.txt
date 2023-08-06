@@ -1,0 +1,3 @@
+[console_scripts]
+conventions = conventions.cli:main
+
