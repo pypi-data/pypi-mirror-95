@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: aio-videoindexer
+Version: 1.0.0.dev2
+Summary: An async video indexer package for querying Microsoft Media Services Video Indexer in Python.
+Home-page: https://aio-videoindexer.readthedocs.io/en/latest/
+Author: Chris Lloyd-Jones
+License: MIT
+Project-URL: Documentation, https://aio-videoindexer.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/Sealjay-clj/aio-videoindexer
+Project-URL: Tracker, https://github.com/Sealjay-clj/aio-videoindexer/issues
+Description: # aio-videoindexer
+        [![Documentation Status](https://readthedocs.org/projects/aio-videoindexer/badge/?version=latest)](https://aio-videoindexer.readthedocs.io/en/latest/?badge=latest) ![PyPI](https://img.shields.io/pypi/v/aio-videoindexer) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aio-videoindexer) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) ![GitHub issues](https://img.shields.io/github/issues/Sealjay-clj/aio-videoindexer) ![GitHub](https://img.shields.io/github/license/Sealjay-clj/aio-videoindexer)  ![I Love Badges](https://img.shields.io/badge/-I%20Love%20Badges-blueviolet) ![GitHub Repo stars](https://img.shields.io/github/stars/Sealjay-clj/aio-videoindexer?style=social)
+        
+        An async video indexer package for querying [Microsoft Media Services Video Indexer](https://docs.microsoft.com/en-us/azure/media-services/video-indexer/) in Python.
+        
+        # Installation
+           ```bash
+           $ pip3 install aio-videoindexer
+           ```
+        
+        
+        # Usage:
+        ```python
+        from asyncvideoindexer import AsyncVideoIndexer
+        
+        VIDEO_INDEXER_ACCOUNT_ID = "your-account-id"
+        VIDEO_INDEXER_KEY = "your-account-key"
+        VIDEO_INDEXER_ACCOUNT_LOCATION = "your-account-location"
+        
+        
+        async def get_video_indexer():
+            video_indexer = await AsyncVideoIndexer.create(
+                VIDEO_INDEXER_ACCOUNT_ID,
+                VIDEO_INDEXER_KEY,
+                VIDEO_INDEXER_ACCOUNT_LOCATION,
+            )
+        ```
+        
+        For more information, see [https://aio-videoindexer.readthedocs.io/en/latest/](https://aio-videoindexer.readthedocs.io/en/latest/).
+        
+        # Contact Information
+        Feel free to contact me [on Twitter](https://twitter.com/sealjay_clj). For bugs, please raise an issue on GitHub.
+        
+        aio-videoindexer is available under the [MIT Licence](./LICENCE).
+        
+        # Background
+        Forked from my [Teams Vid](https://github.com/sealjay-clj/teams-vid) project.
+        
+        # Contributing
+        Contributions are more than welcome.
+        - Create a fork
+        - Create a feature branch `git checkout -b feature/featurename`
+        - Commit your changes `git commit -am 'Fixed a bug'`
+        - Push to the branch `git push`
+        - Create a new Pull Request to this repository
+Keywords: azure media services video indexer asyncio aio async sdk
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
