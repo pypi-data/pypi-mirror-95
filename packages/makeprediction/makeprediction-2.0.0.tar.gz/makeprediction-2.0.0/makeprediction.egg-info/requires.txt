@@ -1,0 +1,13 @@
+numpy
+colorama
+tqdm
+termcolor
+scipy
+requests
+joblib
+matplotlib
+pandas
+pytest
+plotly
+dash
+dash-bootstrap-components
