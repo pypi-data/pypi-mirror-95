@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: makru
+Version: 0.1.0rc3
+Summary: Makru is a building system framework
+License: MIT
+Author: thisLight
+Author-email: l1589002388@gmail.com
+Requires-Python: >=3.7,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyYAML (>=5.1,<6.0)
+Requires-Dist: clint (>=0.5.1,<0.6.0)
+Requires-Dist: httpx (>=0.16.1,<0.17.0)
+Requires-Dist: pluginbase (>=1.0,<2.0)
+Requires-Dist: semver (>=2.13,<3.0)
