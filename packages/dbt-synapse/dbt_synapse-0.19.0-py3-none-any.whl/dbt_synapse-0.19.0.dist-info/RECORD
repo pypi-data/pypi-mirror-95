@@ -1,0 +1,17 @@
+dbt/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+dbt/adapters/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+dbt/adapters/synapse/__init__.py,sha256=hwfIJ7pTrpHqCCFmgMH2eGuH-bebTZgryZ-ndcmPfhU,426
+dbt/adapters/synapse/__version__.py,sha256=g-hLGEuFp64cHUJMUiB_5rMjD7yYLyZH5tJVjnVtSy4,19
+dbt/adapters/synapse/connections.py,sha256=xTOizTk8GpoYmUpf57VAbc7U_rIgqRPk3VWFZHpZAAI,375
+dbt/adapters/synapse/impl.py,sha256=S7Qwnfah0bAZxRfMG9_G5rbfP2to-oWKdqId3ieEino,201
+dbt/include/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+dbt/include/synapse/__init__.py,sha256=vBGWeG-dHHkimfnX8axBJ4IgAowFw8xADmo6Auzn2xc,52
+dbt/include/synapse/dbt_project.yml,sha256=DMJgph3DuP1LuKqupSDtl_pYp2utza6lag5Lu6vPF7E,76
+dbt/include/synapse/macros/adapters.sql,sha256=q3FiKcNzQal88CFpN_JWaqcaUPBKXABohCPMpGHEHMA,6072
+dbt/include/synapse/macros/catalog.sql,sha256=0ENKOlaiKMIqLpwQA5mtYwOmEFv_ACCfMFqOFlznsnE,150
+dbt/include/synapse/macros/indexes.sql,sha256=B4aPaPxbZ-fZdrZgv_C1bBf3qdunK8nsD1ATsTZLTRw,4863
+dbt_synapse-0.19.0.dist-info/LICENSE,sha256=1vrltCwoS46oUhZivdhGeXK-gIGQ84FMySpdXbV8lPA,1087
+dbt_synapse-0.19.0.dist-info/METADATA,sha256=LMbH4HkxV21iWyLjbCAiiJPQQ_F2qXNmJKT-7sMpKRo,422
+dbt_synapse-0.19.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dbt_synapse-0.19.0.dist-info/top_level.txt,sha256=B2YH4he17ajilEWOGCKHbRcEJlCuZKwCcgFcLPntLsE,4
+dbt_synapse-0.19.0.dist-info/RECORD,,
