@@ -1,0 +1,4 @@
+requests<3,>=2
+pySerial
+colorama
+termcolor
