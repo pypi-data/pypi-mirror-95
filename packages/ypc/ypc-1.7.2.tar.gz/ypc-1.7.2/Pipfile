@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+twine = "*"
+
+[packages]
+e1839a8 = {editable = true,path = "."}
+ypc = {editable = true, path = "."}
+twine = "*"
+itunespy = "*"
+
+[requires]
+python_version = "3.9"

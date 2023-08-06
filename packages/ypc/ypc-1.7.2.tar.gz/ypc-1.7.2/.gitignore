@@ -1,0 +1,14 @@
+*.egg-info/
+*__pycache__/
+.venv/
+Audio_export/
+Exports/
+Lists/
+Video_export/
+config.ini
+dist/
+geckodriver.log
+tags
+build/
+ypc_exports/
+*.sh
