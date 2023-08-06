@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: plot-likert
+Version: 0.0.1rc0
+Summary: Library to visualize results from Likert-style survey questions
+Home-page: https://github.com/nmalkin/plot-likert
+Author: nmalkin
+License: UNKNOWN
+Description: The package is properly called plot_likert (`pip install plot_likert`). This package exists in case there's some confusion about the name.
+Keywords: plot graph visualize likert survey matplotlib
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
