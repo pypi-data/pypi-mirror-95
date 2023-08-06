@@ -1,0 +1,9 @@
+README.md
+setup.py
+motionless/__init__.py
+motionless/gpolyencode.py
+motionless.egg-info/PKG-INFO
+motionless.egg-info/SOURCES.txt
+motionless.egg-info/dependency_links.txt
+motionless.egg-info/requires.txt
+motionless.egg-info/top_level.txt
