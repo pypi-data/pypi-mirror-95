@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sqlalchemy2-stubs
+Version: 0.0.1a1
+Summary: Typing Stubs for SQLAlchemy 1.4
+Home-page: http://www.sqlalchemy.org
+Author: Mike Bayer
+Author-email: mike_mp@zzzcomputing.com
+License: MIT
+Project-URL: Issue Tracker, https://github.com/sqlalchemy/sqlalchemy2-stubs/
+Description: ===================
+        SQLAlchemy 2 Stubs
+        ===================
+        
+        These are the PEP-484 typing stubs for SQLAlchemy 1.4 and
+        SQLAlchemy 2.0, as well as a mypy extension.
+        
+        This package will be integrated within SQLAlchemy 2 itself
+        as inline type annotations for SQLAlchemy 2.0's release.
+        
+        
+        For SQLAlchemy 1.4, the annotations are published here
+        as separate stubs so that users who are relying upon
+        the "sqlalchemy-stubs" package published by Dropbox can
+        continue to do so.  This package necessarily replaces
+        sqlalchemy-stubs entirely, and will be in development
+        throughout the 1.4 SQLAlchemy series.
+        
+        This project is **under consruction** right now and initial
+        releases will be in the coming weeks of 2021.
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
