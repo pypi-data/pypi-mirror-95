@@ -1,0 +1,13 @@
+
+[accelerated]
+pycryptodome>=3.7.2
+uvloop>=0.13.0
+
+[daemon]
+python-daemon>=2.2.3
+
+[quic]
+aioquic>=0.9.7
+
+[sshtunnel]
+asyncssh>=2.5.0
