@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ratpy
+Version: 1.0.2.4
+Summary: An interpreter and visualiser of RATS files
+Home-page: UNKNOWN
+Author: Steve Ayrton
+Author-email: s.t.ayrton@icloud.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Requires-Dist: pandas (>=1.2.1)
+Requires-Dist: dash (>=1.19.0)
+Requires-Dist: plotly-express (>=0.4.1)
+Requires-Dist: plotly (>=4.14.3)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: dash-bootstrap-components (>=0.11.1)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+Requires-Dist: pyarrow (>=3.0.0)
+Requires-Dist: dash-uploader (>=0.4.1)
+Requires-Dist: lxml (>=4.6.2)
+
+UNKNOWN
+
+
