@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ExoCTK
+Version: 0.1.3.dev685
+Summary: Exoplanet Characterization Tool Kit
+Home-page: http://astropy.org
+Author: Joe Filippazzo Matthew Hill
+Author-email: jfilippazzo@stsci.edu
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cython
+Requires-Dist: matplotlib
+Requires-Dist: numba
+Requires-Dist: pysynphot
+Requires-Dist: sphinx-automodapi
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: bibtexparser
+Requires-Dist: bokeh
+Requires-Dist: batman-package
+Requires-Dist: astroquery
+Requires-Dist: mpld3
+
+
+The Exoplanet Characterization Tool Kit is a collection of packages used to reduce and analyze observations of transiting exoplanets
+
+

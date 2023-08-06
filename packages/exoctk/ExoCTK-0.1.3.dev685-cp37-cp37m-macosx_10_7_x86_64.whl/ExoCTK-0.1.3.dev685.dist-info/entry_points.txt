@@ -1,0 +1,4 @@
+[console_scripts]
+collect_exotransmit_data = ExoCTK.pal.exotransmit:collect_exotransmit_data
+exotransmit = ExoCTK.pal._exotransmit_wrapper:exotransmit
+
