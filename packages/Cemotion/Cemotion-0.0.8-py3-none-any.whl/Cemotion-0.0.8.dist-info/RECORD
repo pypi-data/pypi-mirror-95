@@ -1,0 +1,10 @@
+cemotion/__init__.py,sha256=OdRl5nH3QI6_06W1HIaWA4vwWKf_SuXlFt8cd1emgpY,65
+cemotion/app.py,sha256=p_4rjuQ0631WE3sDxENdc0fSKzbZJoFcPdvEtvIvLck,2684
+cemotion/dataset.py,sha256=1kWSbpRZKmjfgwMr4BrDYPMC3Qv9Q1z-aJXnDeeVyj0,1740
+cemotion/download.py,sha256=lts8fGlVAacQNVsqai_xVcs2PJKgM6SPfVy66IpL4kY,1582
+cemotion/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cemotion/models/requirements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Cemotion-0.0.8.dist-info/METADATA,sha256=XkWhCo_34XKwvcUa46W19eglYlqlH3nowSQ-rL-2h3I,2439
+Cemotion-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Cemotion-0.0.8.dist-info/top_level.txt,sha256=x428yVREM68CoBdpxIWAfzqlI3wdF41zt2_KVkHiV7g,9
+Cemotion-0.0.8.dist-info/RECORD,,
