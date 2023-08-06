@@ -1,0 +1,15 @@
+README.md
+setup.py
+ci/__init__.py
+ci/test_Pal.py
+redis_pal/RedisPal.c
+redis_pal/RedisPal.py
+redis_pal/__init__.c
+redis_pal/__init__.py
+redis_pal/exceptions.c
+redis_pal/exceptions.py
+redis_pal.egg-info/PKG-INFO
+redis_pal.egg-info/SOURCES.txt
+redis_pal.egg-info/dependency_links.txt
+redis_pal.egg-info/requires.txt
+redis_pal.egg-info/top_level.txt
