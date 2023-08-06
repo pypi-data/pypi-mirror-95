@@ -1,0 +1,8 @@
+humanize>=3.0.0
+numpy
+click>=7.1.2
+urllib3>=1.25.10
+loguru
+sqlite
+opencv-contrib-python
+pandas
