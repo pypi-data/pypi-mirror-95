@@ -1,0 +1,70 @@
+description: Check for data mandatory columns in the different elements (eg. "SDATE", "LATIT", "LONGI" in the element "data").
+name: essentials
+validator: !!python/name:sharkvalidator.validators.essential.EssentialValidator ''
+data_types:
+    physicalchemical:
+        data:
+          - MYEAR
+          - PROJ
+          - ORDERER
+          - SDATE
+          - STIME
+          - SHIPC
+          - STATN
+          - LATIT
+          - LONGI
+          - POSYS
+          - DEPH
+        analyse_info:
+          - PARAM
+          - VALIDFR
+          - VALIDTO
+          - METOA
+          - REFSK_ANA
+          - UNCERT
+          - METCU
+          - LMQNT
+          - RANA
+          - ALABO
+          - ACKR_ANA
+        sampling_info:
+          - PARAM
+          - VALIDFR
+          - VALIDTO
+          - SMTYP
+          - REFSK_SMP
+          - SLABO
+          - ACKR_SMP
+    phytoplankton:
+        data:
+          - MYEAR
+          - STATN
+          - PROJ
+          - ORDERER
+          - SHIPC
+          - SDATE
+          - LATIT
+          - LONGI
+          - POSYS
+          - WADEP
+          - MNDEP
+          - MXDEP
+          - SLABO
+          - ACKR_SMP
+          - SMTYP
+          - SMVOL
+          - LATNM
+          - SFLAG
+          - TRPHY
+          - COUNT
+          - COEFF
+          - SIZCL
+          - SIZRF
+          - SDVOL
+          - QFLAG
+          - TAXNM
+          - METOA
+          - ALABO
+          - ACKR_ANA
+          - ANADATE
+          - METDC
