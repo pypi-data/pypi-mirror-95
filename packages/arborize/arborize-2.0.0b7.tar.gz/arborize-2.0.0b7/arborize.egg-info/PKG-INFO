@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arborize
+Version: 2.0.0b7
+Summary: Write descriptions for NEURON cell models in an Arbor-like manner.
+Home-page: https://github.com/dbbs-lab/arborize
+Author: Robin De Schepper
+Author-email: robingilbert.deschepper@unipv.it
+License: GPLv3
+Description: # arborize
+        A Python package that allows Arbor-like descriptions of cell models for NEURON.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
