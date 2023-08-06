@@ -1,0 +1,16 @@
+README.md
+setup.py
+mathterpreter/__init__.py
+mathterpreter/_parser.py
+mathterpreter/cli.py
+mathterpreter/exceptions.py
+mathterpreter/lexer.py
+mathterpreter/main.py
+mathterpreter/nodes.py
+mathterpreter/tokens.py
+mathterpreter.egg-info/PKG-INFO
+mathterpreter.egg-info/SOURCES.txt
+mathterpreter.egg-info/dependency_links.txt
+mathterpreter.egg-info/entry_points.txt
+mathterpreter.egg-info/requires.txt
+mathterpreter.egg-info/top_level.txt
