@@ -1,0 +1,12 @@
+pydocxtpl/__init__.py,sha256=uPv14pX-PQ-1Tf3-evksKbdmM3sbPI3uj5QXwgYO9rs,828
+pydocxtpl/ext.py,sha256=ipu7XKHByU9waBW1LUr3wlzN7OYaj_mr5KrSdWYfBYE,3340
+pydocxtpl/node.py,sha256=SW0Sra31qJoJVvj6sdXm3NHR6GrKLNNtppHkLqr_ko0,6288
+pydocxtpl/table.py,sha256=1RG4vpBw0xzHeIKKBbYlsR2kBXJY30EXwsygalsNXuc,1003
+pydocxtpl/text.py,sha256=IdEYexEJoJEN3ZZXVjGAhJf1qZHrkWp9Zd3FBImiVzg,7059
+pydocxtpl/utils.py,sha256=M2WqxSrrDbqcyCZoEnasArQXD6sVnQC-qaHxcyHGvoo,3036
+pydocxtpl/writer.py,sha256=V9wplAKyV0-W5iWatrp3H0DU8KFTbKTccCJ91s8swo8,1531
+pydocxtpl-0.2.1.dist-info/LICENSE,sha256=9d2z5Q3w_3ShkECFIcVnTt72ks71KO1WMY4DXF_NvS4,1065
+pydocxtpl-0.2.1.dist-info/METADATA,sha256=MZQ0ai9JVcNdrc9tz1C1Cm6X8Ydx5BkDvSpnE2oSdUE,1116
+pydocxtpl-0.2.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+pydocxtpl-0.2.1.dist-info/top_level.txt,sha256=MY2N2vmTBenJh-Z44DNQbhpG_Et2zFcoYkHd9n_S-04,10
+pydocxtpl-0.2.1.dist-info/RECORD,,
