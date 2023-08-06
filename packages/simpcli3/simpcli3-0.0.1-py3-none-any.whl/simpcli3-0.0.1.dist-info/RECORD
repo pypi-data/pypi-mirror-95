@@ -1,0 +1,11 @@
+simpcli3/__init__.py,sha256=0pjWeotZfT6WHXAwse5FnNSwFMq8ROKpT69Up0_FYb0,214
+simpcli3/app.py,sha256=x3eN3knbhY950r_SaP59dEaCJjEEzdtypa8gVO6_Ri0,144
+simpcli3/cli.py,sha256=-jrKmDUQqa8aWcV3wGrY34ePaWS3iS4d5Cmn91Wz1G0,21817
+simpcli3/logging.py,sha256=Pqm3hvbkndgylMSLYkm7780ySfGgmHKHxRu_QcLLAMw,197
+simpcli3/simpcli.py,sha256=jicgYq9Co7Resj8Rtmtp4eq43s6ItWi9-egQccqY9v4,17
+simpcli3-0.0.1.dist-info/LICENSE,sha256=vkQTDEleWdEg0P9yWfuis6kjCGqcmZl4IOX1s9sEGMk,1092
+simpcli3-0.0.1.dist-info/METADATA,sha256=63JtLG5hC2PdMD-Sz8VpuLDnO3BsXqHWwne8mq2xHSg,2571
+simpcli3-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simpcli3-0.0.1.dist-info/entry_points.txt,sha256=hcSlv1u2kOxk8cmk8mqs-uhBwPFEqNnXs5uqV4RGe4g,60
+simpcli3-0.0.1.dist-info/top_level.txt,sha256=drLREhjNPJSk7fv4fVCcq8XBHxIBXQhMADdn0wPAQoI,9
+simpcli3-0.0.1.dist-info/RECORD,,

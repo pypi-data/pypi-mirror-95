@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: simpcli3
+Version: 0.0.1
+Summary: An Awesome python module
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Keywords: An Awesome python module
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: simple-parsing
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# simpcli3
+
+TODO List
+  1. Decorator for functions
+  2. Decide on cmd / subcmd structure. Classes?
+  3. In doc, recreate a few classic cmds
+  4. args / kwargs support
+  5. Mapping[str->something] support for e.g. cmake -Dx.y.z=21
+  6. Tests for nested dataclass translation.
+  7. Code to load JSON / YAML / Python configs, this goes with 8:
+  8. SimpleCli and BigCli:
+    a. SimpleCli accepts a function and returns something you an call .run() on to run the thing
+    b. BigCli looks like the below:
+  4. TODO parse richer types like dictionary? Like Dict as annotation type, so allow optional -Dmykey=myval
+  5. TODO Support for loading Python, JSON / (optional YAML) configs
+
+## Prior Art
+And why I didn't use it.
+
+argparse_dataclasses and argparse_dataclass reasons, see Improvements.
+
+SimpleParsing (pip install simple_parsing). Different goals and approaches.
+I'm not sure that positional args are ever possible in that schema, for example.
+
+
+
+## TODO BigCli
+```
+class MyApp:
+    def __init__(self, config):
+        self._config = config
+
+    def ln(self, in:str,  out:str):
+        pass
+
+    def cp(self, in:str, out:str):
+        pass
+
+run(MyApp)
+
+--help:
+myapp {ln, cp}
+myapp ln --help
+   prints that help.
+
+TODO Check invoke here because they have better subcmd help than argparse.
+```
+
+
+### Improvements over projects based on
+Modifications made from "argparse_dataclass":
+  2. "positional" metadata arg as I think that's more intuitive than passing "args" directly.
+  3. If type is enum, choices automatically specified, default given as string
+     (kind of like "argparse_dataclasses" package, but with cleaner impl IMO)
+  4. Better handling of bools (especially ones which default to True).
+  5. Wrapper over field (idea lifted from argparse_dataclasses)
+
