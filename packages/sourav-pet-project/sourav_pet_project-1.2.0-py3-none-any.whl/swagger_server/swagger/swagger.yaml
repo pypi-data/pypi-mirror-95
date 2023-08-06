@@ -1,0 +1,202 @@
+openapi: 3.0.0
+info:
+  title: Swagger Petstore
+  license:
+    name: MIT
+  version: 1.0.0
+servers:
+- url: http://petstore.swagger.io/v1/{basePath}
+  description: The production API server
+  variables:
+    basePath:
+      default: petstore
+paths:
+  /summary:
+    get:
+      tags:
+      - command apis
+      summary: Gives petstore's summary
+      operationId: summary_get
+      responses:
+        "200":
+          description: summary
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StoreInfo'
+      x-openapi-router-controller: swagger_server.controllers.command_apis_controller
+  /pets:
+    get:
+      tags:
+      - resource apis
+      summary: List all pets
+      operationId: list_pets
+      parameters:
+      - name: limit
+        in: query
+        description: How many items to return at one time (max 100)
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: An paged array of pets
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pets'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-openapi-router-controller: swagger_server.controllers.resource_apis_controller
+    post:
+      tags:
+      - resource apis
+      summary: Create a pet
+      operationId: create_pets
+      parameters:
+      - name: name
+        in: query
+        description: New pet details
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: New pet details
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "201":
+          description: Null response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-openapi-router-controller: swagger_server.controllers.resource_apis_controller
+  /pets/{petId}:
+    get:
+      tags:
+      - resource apis
+      summary: Info for a specific pet
+      operationId: show_pet_by_id
+      parameters:
+      - name: petId
+        in: path
+        description: The id of the pet to retrieve
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pets'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-openapi-router-controller: swagger_server.controllers.resource_apis_controller
+    delete:
+      tags:
+      - resource apis
+      summary: Delete a pet
+      operationId: del_pet_by_id
+      parameters:
+      - name: petId
+        in: path
+        description: The id of the pet to retrieve
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-openapi-router-controller: swagger_server.controllers.resource_apis_controller
+components:
+  schemas:
+    StoreInfo:
+      properties:
+        numDogs:
+          type: integer
+        numCats:
+          type: integer
+        address:
+          type: string
+      example:
+        address: address
+        numCats: 6
+        numDogs: 0
+    Pet:
+      required:
+      - id
+      - name
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        tag:
+          type: string
+      example:
+        name: name
+        id: 0
+        tag: tag
+    Pets:
+      type: array
+      items:
+        $ref: '#/components/schemas/Pet'
+    Error:
+      required:
+      - code
+      - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+
