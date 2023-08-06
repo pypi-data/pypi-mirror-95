@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: avault
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/fkshom
+License: MIT
+Author: Shoma FUKUDA
+Author-email: fkshom+pypi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: pyyaml (>=5.4.1,<6.0.0)
+Project-URL: Documentation, https://github.com/fkshom/avault
+Project-URL: Repository, https://github.com/fkshom/avault
