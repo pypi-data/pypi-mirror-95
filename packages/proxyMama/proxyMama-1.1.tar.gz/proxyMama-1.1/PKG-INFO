@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: proxyMama
+Version: 1.1
+Summary: A simple proxy manager for your web scraping journey
+Home-page: https://github.com/jakestrouse00/proxyMama
+Author: Jake Strouse
+Author-email: jakestrouse00@gmail.com
+License: GNU GPLv3
+Description: UNKNOWN
+Keywords: proxy manager,proxy,manager,requests
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
