@@ -1,0 +1,12 @@
+cli.py,sha256=M9F7sUcOsq3NLrTVDqKqSoT5Z06490BHU87wAfLXhi0,3824
+model.py,sha256=mCS4CQiD2BmRcAu-9tmXRBp89jAB0foiQkSfnbUF1Us,15170
+predict.py,sha256=CIEf1VQtIgknEAdxUrr4otQdujiyPZrwWrVtxP2Qp8k,8324
+utils/__init__.py,sha256=-F45D8PeSNmVNv5LwSBR23y93BJo8YwWMc2gpyD51j8,61
+utils/authenticators.py,sha256=ZVvO7PiukmUMyMVUUIh7ZASx9WDsTHUYKlxjNUKi5P8,1019
+utils/constants.py,sha256=rZOCuyyE6Sal-GZaMwY0uKZv0Q5fq5hesVlRsZ4y-S8,273
+spinectl-0.2.7.dist-info/LICENSE.txt,sha256=uyM5YPCVznjcwn7yMStHgjFaql4mEkxzXeHGuM9eHQM,10354
+spinectl-0.2.7.dist-info/METADATA,sha256=HdEI_pqqyYyYM2hD0s9RyrqjJ3ztgQQpFNmWoaum_qs,1498
+spinectl-0.2.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spinectl-0.2.7.dist-info/entry_points.txt,sha256=gL0lPxu5UIIHVPxlN1RA9C2XcXEmTBMhNqgt-2nAces,55
+spinectl-0.2.7.dist-info/top_level.txt,sha256=kiDe6e_5aAPyYsuwsvpwOfKvs1mhdHdQ2-46CBApCcc,24
+spinectl-0.2.7.dist-info/RECORD,,
