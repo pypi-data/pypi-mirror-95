@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: mmpy_bot
+Version: 1.3.7
+Summary: A python based chat bot for [Mattermost](http://www.mattermost.org).
+Home-page: https://github.com/attzonko/mmpy_bot
+Author: Alex Tzonkov
+Author-email: alex.tzonkov@gmail.com

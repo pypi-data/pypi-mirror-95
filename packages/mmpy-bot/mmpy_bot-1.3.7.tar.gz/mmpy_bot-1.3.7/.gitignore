@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+.idea
+local_settings.*
+logs
+dist
+build
+*.egg-info*
+.build
+.pytest_cache
+.coverage
+.vscode
+coverage.xml
+*_build*
