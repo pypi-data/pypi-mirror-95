@@ -1,0 +1,5 @@
+requests>=2.5
+tenacity>=4.2.0
+
+[pandas]
+pandas
