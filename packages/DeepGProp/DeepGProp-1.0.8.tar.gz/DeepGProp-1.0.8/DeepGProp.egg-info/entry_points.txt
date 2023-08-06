@@ -1,0 +1,4 @@
+[console_scripts]
+d2p1 = dgp.dataset_to_proben1:cli
+dgp = dgp.__main__:cli
+

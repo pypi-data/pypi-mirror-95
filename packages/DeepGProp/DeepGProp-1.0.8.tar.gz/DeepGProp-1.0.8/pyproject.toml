@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]  # PEP 508 specifications.
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+include_trailing_comma = "True"
+multi_line_output = 3
+lines_between_types = 1
+line_length = 79
+known_first_party = "dgp,settings"
+default_section = "THIRDPARTY"
+
+[tool.pylint]
+    [tool.pylint."MESSAGES CONTROL"]
+    disable = "bad-continuation,duplicate-code,logging-fstring-interpolation"
+
+[tool.coverage]
+    [tool.coverage.report]
+    exclude_lines = [
+        "if __name__ == .__main__.:",
+        "except KeyboardInterrupt:"
+    ]
