@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: depending
+Version: 0.1.6
+Summary: 
+Author: Blake
+Author-email: blakeinvictoria@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# Depending
+
+Yet another dependency injection framework for python.
+
+## Usage
+
+```python
+import asyncio
+from depending import dependency, bind, dependencies
+
+@dependency
+async def name():
+    return "Item"
+
+@bind
+async def function(name):
+    print(name)
+
+async def main():
+    async with dependencies():
+        await function()
+
+asyncio.run(main())
+```
+
+
