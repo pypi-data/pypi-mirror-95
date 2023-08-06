@@ -1,0 +1,20 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        python: [3.6, 3.7]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+    - name: Test Setup
+      run: python -m pip install tox
+    - name: Run Tests
+      run: tox -e py
