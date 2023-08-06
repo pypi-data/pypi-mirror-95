@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_replace_migrations/__init__.py
+django_replace_migrations.egg-info/PKG-INFO
+django_replace_migrations.egg-info/SOURCES.txt
+django_replace_migrations.egg-info/dependency_links.txt
+django_replace_migrations.egg-info/requires.txt
+django_replace_migrations.egg-info/top_level.txt
+django_replace_migrations/management/__init__.py
+django_replace_migrations/management/commands/__init__.py
+django_replace_migrations/management/commands/makemigrations.py
