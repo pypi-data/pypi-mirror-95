@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_bunny_storage/__init__.py
+django_bunny_storage/storage.py
+django_bunny_storage.egg-info/PKG-INFO
+django_bunny_storage.egg-info/SOURCES.txt
+django_bunny_storage.egg-info/dependency_links.txt
+django_bunny_storage.egg-info/top_level.txt
