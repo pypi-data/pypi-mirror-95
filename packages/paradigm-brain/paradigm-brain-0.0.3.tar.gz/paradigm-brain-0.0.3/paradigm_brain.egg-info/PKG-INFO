@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: paradigm-brain
+Version: 0.0.3
+Summary: A package provides the core implementation for various use cases of paradigm.
+Home-page: https://github.com/Paradigm-shift-AI/paradigm-brain/
+Author: Vedang Joshi
+Author-email: vedangj044@gmail.com
+License: UNKNOWN
+Description: # paradigm-brain
+        Core repository which offers abstraction to machine learning algorithms and techniques used for various use cases of the organization
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
