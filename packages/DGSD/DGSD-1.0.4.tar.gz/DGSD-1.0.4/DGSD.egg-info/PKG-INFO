@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: DGSD
+Version: 1.0.4
+Summary: DGSD: Distributed Graph Representation via Graph Statistical Properties!
+Home-page: https://github.com/Anwar-Said/DGSD
+Author: Anwar Said
+Author-email: anwar.said@itu.edu.pk
+License: MIT
+Download-URL: https://github.com/Anwar-Said/DGSD/archive/v1.0.4.tar.gz
+Description: long_description
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
