@@ -1,0 +1,11 @@
+morris/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+morris/fields.py,sha256=dlvisR0XZk3J8fy_Zg_kJZJQPdQZK28sIXo7epF4CYg,775
+morris/widgets.py,sha256=6fQUMtqC8JkR4f214CslbTharCvnQ65odlDFnnzj2QU,188
+morris/static/morris/js/hex_color.js,sha256=1w-N6DAhqHPYTkGW-a3ccSu6coB8Gq4IKPzp9im-P7Q,1017
+morris/static/morris/js/hex_color.min.js,sha256=mgOsThvf81QbUJNBgaI8xo39ZMBixidMQhY72otZLq4,562
+morris/templates/morris/hex_color.html,sha256=XBX2WuLRIY3TRpkTMary5v5PcSWz8X30O3Sx4w2cBio,311
+django_morris-0.2.0.dist-info/LICENSE.txt,sha256=ewHgn4502c5cgfx-4msLhQdCnXr5gN9MK1J8LKiCVCQ,1068
+django_morris-0.2.0.dist-info/METADATA,sha256=50JJRkxujlaDAe8Ul0Qv6wTU8r1v9lAd-YFo-NVvDqY,1700
+django_morris-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_morris-0.2.0.dist-info/top_level.txt,sha256=pfGr0v3CsjehMbqlb6C_efnK1civA9BT8VvlOv02dQk,7
+django_morris-0.2.0.dist-info/RECORD,,

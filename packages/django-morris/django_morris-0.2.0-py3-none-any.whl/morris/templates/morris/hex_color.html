@@ -1,0 +1,8 @@
+<input type="text"
+ id="{{ widget.attrs.id }}"
+ class="vTextField morris-hexcolor"
+ name="{{ widget.name }}"
+ value="{% firstof widget.value widget.attrs.default '' %}"
+ placeholder="{% firstof widget.value widget.attrs.default '#ff00ff' %}"
+ maxlength="7"
+ {% if widget.attrs.required %}required{% endif %} />
