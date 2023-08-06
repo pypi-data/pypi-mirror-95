@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dbrlist
+Version: 0.0.1
+Summary: Async wrapper for DBL api
+Home-page: https://github.com/ConnorTippets/dblist/
+Author: meiscool466
+License: MIT
+Keywords: async,wrapper,async wrapper,dbl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# DBList
+
+An async wrapper for DBL api.
+
+Example:
+```py
+import dblist
+import asyncio
+
+client = dblist.Client(auth_key)
+print(asyncio.get_event_loop().run_until_complete(client.metrics(bot_id)))
+```
+
+
