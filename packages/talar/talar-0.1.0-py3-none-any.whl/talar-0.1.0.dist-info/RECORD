@@ -1,0 +1,16 @@
+talar/__init__.py,sha256=l4DtTjpuF6JvdecMJPb3GLhaGy8GcVP6Akcm_QLZCwo,50
+talar/client/__init__.py,sha256=yecArWFNn0FsxuWz2x3DLkJLvjO8TlvxgtWeP-j9hK4,1711
+talar/client/auth.py,sha256=rU6TOF8QNIrOCNF7AnO0IkaTWzPFbqM4ifmDyRHPhpw,302
+talar/main.py,sha256=n0PRTkSukRtEkIEyBIY87SFV6WeCEaPLvnMIlKY1C20,890
+talar/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talar/resources/abstract.py,sha256=tNs5pSgq_1g9NWonUUNxxE5yf2z_2iRtjUf55oePrbU,542
+talar/resources/api_keys.py,sha256=zf2qftTubKIv1noiuDyG54Ly-yz8N9PVs3__Vlh-toY,1454
+talar/resources/currency_conversions.py,sha256=nxvMAnl7EOhEmiwCzPlWV0LdlpSaSAYfSY3B-0yYxlA,857
+talar/resources/projects.py,sha256=6fZZ4ZUOIcwZ116h-qYbvoD_0IlJmS77BkiYAKzjsUI,593
+talar/resources/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talar/resources/tests/test_integrations.py,sha256=gFWLmcvWir3fc_NN-SrpoHFCXhiiN6SuYEkQCf_d7M4,4088
+talar/version.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+talar-0.1.0.dist-info/LICENSE,sha256=cC7d7WuM7PjXgPUJf1G_3RBnDNWY8tv9Zz2CadEuMxg,1062
+talar-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+talar-0.1.0.dist-info/METADATA,sha256=jskUavqR_VqClciR10fA3i4uhg2RQLQuFTD7lGtJSiQ,462
+talar-0.1.0.dist-info/RECORD,,
