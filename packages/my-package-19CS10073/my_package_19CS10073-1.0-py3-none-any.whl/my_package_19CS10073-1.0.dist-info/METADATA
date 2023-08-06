@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: my-package-19CS10073
+Version: 1.0
+Summary: My package
+Home-page: UNKNOWN
+Author: Rajat Bachhawat
+Author-email: <myemail@abc.com>
+License: UNKNOWN
+Keywords: python,first-package
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+
+My first Python package but with a longer description
+
+
