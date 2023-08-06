@@ -1,0 +1,16 @@
+# Describe what files should be included or excluded from sdist.
+# Some files are automatically included based on setup.cfg, so there
+# may be some overlap here.
+
+# General project descriptors.
+include CONTRIBUTING.md
+include LICENSE
+include MANIFEST.in
+include README.md
+recursive-include docs *
+
+# For reproducing the testing setup.
+include tox.ini
+recursive-include tests *
+
+global-exclude *.py[cod]
