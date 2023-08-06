@@ -1,0 +1,6 @@
+stripe>=2.32.0
+werkzeug<2
+trytond_account<5.9,>=5.8
+trytond_account_payment<5.9,>=5.8
+trytond_party<5.9,>=5.8
+trytond<5.9,>=5.8
