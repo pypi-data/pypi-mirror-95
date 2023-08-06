@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dffml-model-daal4py
+Version: 0.1.0
+Summary: DFFML model daal4py
+Home-page: https://github.com/intel/dffml-model-daal4py
+Author: Ch.M.Hashim
+Author-email: hashimchaudry23@gmail.com
+Maintainer: John Andersen
+Maintainer-email: john.s.andersen@intel.com
+License: MIT
+Description: # DFFML DAAL4Py Models
+        
+        ## About
+        
+        DAAL4Py models.
+        
+        ## Demo
+        
+        ![Demo](https://github.com/intel/dffml/raw/master/docs/images/model_demo.gif)
+        
+        ## License
+        
+        DAAL4Py Models are distributed under the terms of the
+        [MIT License](LICENSE).
+        
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
