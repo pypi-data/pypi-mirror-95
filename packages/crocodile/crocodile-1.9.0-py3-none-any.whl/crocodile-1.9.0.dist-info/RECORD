@@ -1,0 +1,10 @@
+python/__init__.py,sha256=ieYp9u_aMCdk733Ph6PSx66lo9vZCLrmbEQ4SrWTMQc,178
+python/deeplearning.py,sha256=BrLo_N4vFIyXfEWhq2wAofblUtjiaNylpkQpH0NAY5Y,33946
+python/deeplearning_torch.py,sha256=UO_l6abPz_soPyEN3Cwp278cix1xVKh96fvmwh8_ipQ,8983
+python/history.py,sha256=06y3Dz1eQtO-HSi5BPtyVTaMfOYZGmJJsWHI4J24AYc,3197
+python/miscellaneous.py,sha256=9YWu1WfJvxNdni75SCT4T85h49GyGN54-nQGu7hZoOc,1868
+python/toolbox.py,sha256=jvVStlmrINrTeGGqMXU5leHlmXUo0tiQKiSgkMOM8RM,118692
+crocodile-1.9.0.dist-info/METADATA,sha256=pVATH_-HWPPhFjfoJWUOG4O0THqm2bREkcfD2DiifXs,4785
+crocodile-1.9.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+crocodile-1.9.0.dist-info/top_level.txt,sha256=7WZ2poHmrxYn8jYgsbuiQpOvAcVx8d9r8OKCsz7QB8M,47
+crocodile-1.9.0.dist-info/RECORD,,
