@@ -1,0 +1,14 @@
+click~=7.1
+typing_extensions
+pydantic~=1.7
+
+[dev]
+flake8
+black
+isort
+pytest
+pytest-cov
+coverage[toml]
+twine
+pdoc3
+mypy
