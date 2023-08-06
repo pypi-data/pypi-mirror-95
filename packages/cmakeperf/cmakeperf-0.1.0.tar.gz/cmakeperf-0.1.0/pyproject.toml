@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cmakeperf"
+version = "0.1.0"
+description = "Measure compilation performance from cmake compilation database"
+authors = ["Paul Gessinger <hello@paulgessinger.com>"]
+license = "MIT"
+packages = [
+    { include = "cmakeperf", from = "src"  },
+    
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+psutil = "^5.7.0"
+pandas = "^1.0.5"
+tabulate = "^0.8.7"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+cmakeperf = "cmakeperf.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
