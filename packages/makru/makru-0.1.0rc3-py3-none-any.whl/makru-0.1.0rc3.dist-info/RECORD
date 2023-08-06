@@ -1,0 +1,17 @@
+makru/__init__.py,sha256=Ywiz8sy719l2kRMxo05NWdeKVX720obvv-SpRAIvhTg,44
+makru/helpers.py,sha256=8HtVo5Fwg4NJ2e1kuqRjsGu-pQDu4xHO7NhFiGHY3Bs,4949
+makru/main.py,sha256=sArCXsG1MO6kpZCvC11TJJc5pFwi_NCuePUGXbcEzdo,217
+makru/makru.py,sha256=isJv3D_b9BFuQFoo1IgfY49_TBkdYIoLeBD83LJPZ_I,21809
+makru/nethelpers.py,sha256=89HaNQ_LqPpqj1b8g7nLpykUNIac-BIezV7bnX4iPYs,7485
+makru/plug.py,sha256=5_HNzq-1DVC3jRM7GziGIrZ4DRDLDyvSIfO2Spqv0qE,1635
+makru/store.py,sha256=CE7PysNazwokLL0osVBOOqN5teEgnTy9CguyELAxclw,1304
+makru/test_helpers.py,sha256=4Z6ynnPhLBdFQavRtot5wne8YJhHymhxZovj43Ijga0,3626
+makru/test_makru.py,sha256=LjuXymuD2S32kgpQiLFqgPWg-ANPv7OuX6cHlzp8L6s,580
+makru/test_plug.py,sha256=4eGVC2pVHHmDKEZcLgM5ufyn9X19v7dQwmu18ntTJrs,590
+makru/test_store.py,sha256=XlPmim7sa1BbUrAgtt-8ayDin2C4YqeZmebgW3UMJKg,1464
+makru/yamlh.py,sha256=2WYayejEVdrAXf3SjBDej-BNJie2w2r9kqXOsNOT_BE,272
+makru-0.1.0rc3.dist-info/entry_points.txt,sha256=sq5SMIpwMfNtakvp8DDyA08WU8zR0qo5woMq0lS6c7I,41
+makru-0.1.0rc3.dist-info/LICENSE,sha256=BwE4v_OjvB8ScB4LyZgLtRXsooaLpktRKo2---5EOCc,1079
+makru-0.1.0rc3.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+makru-0.1.0rc3.dist-info/METADATA,sha256=l0rBwDkXkWYijqpQLZMP-XRtypzU-FQk2X8E7bsNBFE,578
+makru-0.1.0rc3.dist-info/RECORD,,
