@@ -1,0 +1,8 @@
+watchtower_logging/__init__.py,sha256=GjGS-RoBJ8TyDkDxmazaMwzvHRF_xzvTOfeIuuGZ0vc,312
+watchtower_logging/exceptions.py,sha256=1XOTOCCqqHYXoyWSOj5aec6X6caf3yQswwC_X0naTu4,39
+watchtower_logging/watchtower_logging.py,sha256=wLw-z9Mc4c_pmIvscdTq5Q3LF6d2fWAIJ9LJpBA8ADE,6879
+watchtower_logging/watchtower_handler/__init__.py,sha256=ur48YCU4HDAJbFFmIaZEIuTCKMEuEYYcmpDJWHHTYaU,11570
+watchtower_logging-0.1.0.dist-info/METADATA,sha256=EbpXnvGyXr-IbcHkaPNsHdGPC1gPbQtnCj7I1XelX1Q,331
+watchtower_logging-0.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+watchtower_logging-0.1.0.dist-info/top_level.txt,sha256=O0nfqXHRfyl2cdO9xgQtBQSFSJ7Ll9xs--KY45-YgA4,19
+watchtower_logging-0.1.0.dist-info/RECORD,,
