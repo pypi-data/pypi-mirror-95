@@ -1,0 +1,99 @@
+
+
+Examples using ``imblearn.BaseUnderSampler``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows the different usage of the parameter sampling_strategy for the different fam...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/api/images/thumb/sphx_glr_plot_sampling_strategy_usage_thumb.png
+     :alt: How to use ``sampling_strategy`` in imbalanced-learn
+
+     :ref:`sphx_glr_auto_examples_api_plot_sampling_strategy_usage.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_api_plot_sampling_strategy_usage.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Some balancing methods allow for balancing dataset with multiples classes. We provide an exampl...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/applications/images/thumb/sphx_glr_plot_multi_class_under_sampling_thumb.png
+     :alt: Multiclass classification with under-sampling
+
+     :ref:`sphx_glr_auto_examples_applications_plot_multi_class_under_sampling.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_applications_plot_multi_class_under_sampling.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to balance the text data before to train a classifier.">
+
+.. only:: html
+
+ .. figure:: /auto_examples/applications/images/thumb/sphx_glr_plot_topic_classication_thumb.png
+     :alt: Example of topic classification in text documents
+
+     :ref:`sphx_glr_auto_examples_applications_plot_topic_classication.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_applications_plot_topic_classication.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example illustrates the problem induced by learning on datasets having imbalanced classes....">
+
+.. only:: html
+
+ .. figure:: /auto_examples/applications/images/thumb/sphx_glr_plot_impact_imbalanced_classes_thumb.png
+     :alt: Fitting model on imbalanced datasets and how to fight bias
+
+     :ref:`sphx_glr_auto_examples_applications_plot_impact_imbalanced_classes.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_applications_plot_impact_imbalanced_classes.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The following example attends to make a qualitative comparison between the different under-samp...">
+
+.. only:: html
+
+ .. figure:: /auto_examples/under-sampling/images/thumb/sphx_glr_plot_comparison_under_sampling_thumb.png
+     :alt: Compare under-sampling samplers
+
+     :ref:`sphx_glr_auto_examples_under-sampling_plot_comparison_under_sampling.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_auto_examples_under-sampling_plot_comparison_under_sampling.py`

@@ -1,0 +1,16 @@
+
+:orphan:
+
+.. _sphx_glr_auto_examples_over-sampling_sg_execution_times:
+
+Computation times
+=================
+**01:31.348** total execution time for **auto_examples_over-sampling** files:
+
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------+
+| :ref:`sphx_glr_auto_examples_over-sampling_plot_comparison_over_sampling.py` (``plot_comparison_over_sampling.py``)             | 01:21.601 | 32.0 MB |
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------+
+| :ref:`sphx_glr_auto_examples_over-sampling_plot_shrinkage_effect.py` (``plot_shrinkage_effect.py``)                             | 00:08.597 | 8.5 MB  |
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------+
+| :ref:`sphx_glr_auto_examples_over-sampling_plot_illustration_generation_sample.py` (``plot_illustration_generation_sample.py``) | 00:01.151 | 8.5 MB  |
++---------------------------------------------------------------------------------------------------------------------------------+-----------+---------+
