@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: isabelle-client
+Version: 0.0.2
+Summary: A client to Isabelle proof assistant server
+Home-page: https://github.com/inpefess/isabelle-client
+License: Apache-2.0
+Author: Boris Shminke
+Author-email: boris@shminke.ml
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/inpefess/isabelle-client
+Description-Content-Type: text/markdown
+
+# Isabelle Client
+
+A client for [Isabelle](https://isabelle.in.tum.de) server. For more information about the server see part 4 of [the Isabelle system manual](https://isabelle.in.tum.de/dist/Isabelle2020/doc/system.pdf).
+
