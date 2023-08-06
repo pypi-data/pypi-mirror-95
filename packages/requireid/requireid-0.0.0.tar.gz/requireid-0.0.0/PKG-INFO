@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: requireid
+Version: 0.0.0
+Summary: under development
+Home-page: https://github.com/kalaspuff
+License: MIT
+Author: Carl Oscar Aaro
+Author-email: hello@carloscar.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/kalaspuff
+Description-Content-Type: text/markdown
+
+# python package in development
+
+*More info soon.*
+
+
+## Installation with `pip`
+Like you would install any other Python package, use `pip`, `poetry`, `pipenv` or your weapon of choice.
+```
+$ pip install <package>
+```
+
+
+## Usage and examples
+
+#### Use-case
+
