@@ -1,0 +1,9 @@
+README.md
+setup.py
+clossh.egg-info/PKG-INFO
+clossh.egg-info/SOURCES.txt
+clossh.egg-info/dependency_links.txt
+clossh.egg-info/top_level.txt
+control/__init__.py
+control/controller.py
+control/ssh.py
