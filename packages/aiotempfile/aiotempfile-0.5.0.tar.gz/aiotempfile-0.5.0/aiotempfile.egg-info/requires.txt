@@ -1,0 +1,7 @@
+aiofiles
+
+[dev]
+black
+pylint
+twine
+wheel
