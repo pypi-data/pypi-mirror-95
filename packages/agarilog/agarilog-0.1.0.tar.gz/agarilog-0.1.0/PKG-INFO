@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: agarilog
+Version: 0.1.0
+Summary: 
+Author: agari
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp[speedups] (>=3.7.3,<4.0.0)
+Requires-Dist: alog (>=1.1.0,<2.0.0)
+Requires-Dist: pydantic[dotenv] (>=1.7.3,<2.0.0)
