@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+dianafirstcalc.egg-info/PKG-INFO
+dianafirstcalc.egg-info/SOURCES.txt
+dianafirstcalc.egg-info/dependency_links.txt
+dianafirstcalc.egg-info/top_level.txt
+op1/__init__.py
+op2/__init__.py

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dianafirstcalc
+Version: 0.0.2
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author:  Diana Hernandez
+Author-email: dianyrob78@gmail.com
+License: MIT
+Description: This is a sample library
+        
+        This is the change log file
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
