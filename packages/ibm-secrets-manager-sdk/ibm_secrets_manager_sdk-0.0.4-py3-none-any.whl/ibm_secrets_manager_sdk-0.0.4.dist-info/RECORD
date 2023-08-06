@@ -1,0 +1,10 @@
+ibm_secrets_manager_sdk/__init__.py,sha256=G08DYpl2P9ksu1Na7MZz0fzY-S-61EjH8Gu4L-773LU,869
+ibm_secrets_manager_sdk/common.py,sha256=w_XeiT23Rt278KeiOvAOCaU8-JrvzNBU07pQZbpJMCc,2527
+ibm_secrets_manager_sdk/ibm_cloud_secrets_manager_api_v1.py,sha256=rYFBgB6YxS5ULpJXeUMTwaX2UVTR8jYR-19AG885FOI,148003
+ibm_secrets_manager_sdk/version.py,sha256=osqzTExwDEp9i_7sy7jJeZkRyiwn0JdwEr8whS_YPJ4,668
+ibm_secrets_manager_sdk-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ibm_secrets_manager_sdk-0.0.4.dist-info/METADATA,sha256=QUzVq7k1Bpg4k9FCYQIlVNtQe7RWHchuF8p9IwEdtQQ,5980
+ibm_secrets_manager_sdk-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ibm_secrets_manager_sdk-0.0.4.dist-info/top_level.txt,sha256=tVLHYySDHF0SgWwPzCQEpBObsZMGIwcTiSL8FABHv24,24
+ibm_secrets_manager_sdk-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ibm_secrets_manager_sdk-0.0.4.dist-info/RECORD,,
