@@ -1,0 +1,16 @@
+pyworld3/__init__.py,sha256=gfYtR_uanVEKAF-aBJmlKpSR3PZPhE33ts9UyidY1sk,92
+pyworld3/agriculture.py,sha256=MqzGCL24HUpJs_iebQbS9knIwOqeVXHs3nUTltYrE-Q,30953
+pyworld3/capital.py,sha256=9_2T566iqy6P-ZY443vaDPni5vD3XGTR-Lzd9-L-hm4,24991
+pyworld3/functions_table_world3.json,sha256=MgTsmnGDx40isWALkk0ngG6o6dkEEVnzMrCf0JyLLdQ,13077
+pyworld3/pollution.py,sha256=S2FJBvLFkYHIHJ_wPWCGPYKkGA3FTqkfljYaYxuhYos,19539
+pyworld3/population.py,sha256=EyF1jfHIdaejqi_w4eUKIAseWvS3cTIMlC3zg29pCgQ,32863
+pyworld3/resource.py,sha256=HNn6ea-g53sqtXnAwgTx-eGk5nDW68wkgJWrnwthj9o,12474
+pyworld3/specials.py,sha256=_slWcdZC9sqC5zyU1Th2TMWCAbUl8uP0eQYpuiKoVFo,8233
+pyworld3/test_sectors.py,sha256=Pj-cFoM6-Q6aEPZkKC4sgEo64HaJwWkq9Wwz2djIdeI,8153
+pyworld3/utils.py,sha256=lXdauEA5SyVTkyelZShsLvO4dybt-TVpNtI1uB-88aY,5802
+pyworld3/world3.py,sha256=wAX_SfXV6NQ9pZp2nqjKDKqirJ2lqt5D6T18ewOxLH4,16193
+pyworld3-1.0.dist-info/LICENSE,sha256=2mbjz_Pt1gCBiI15jZmjXB5BRFj3oQRpanfV2Mq45nI,21780
+pyworld3-1.0.dist-info/METADATA,sha256=PEmJqIfcN_X58tNL8iJcJbTp0RUbBgApwReyDoE1R8Q,823
+pyworld3-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyworld3-1.0.dist-info/top_level.txt,sha256=t5PcWF_6CbS6G3xVOyyoA3tHnQQ_HhhzclynRp7l4Hk,9
+pyworld3-1.0.dist-info/RECORD,,
