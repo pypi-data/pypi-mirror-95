@@ -1,0 +1,11 @@
+mpl_tools/__init__.py,sha256=hoOzh9fs8JXwbHlYqPYtR-1sghoI7RBWGhIRLdO9oiE,921
+mpl_tools/ax_placement.py,sha256=6nLaemO-E1H18qUgQ2hoxeNP1H9TQQtbYEWRW3pQBUw,3442
+mpl_tools/conftest.py,sha256=MQKyivJErrSEI5Kwg8FWS5lFVHJoYih18X18wAtNy1M,213
+mpl_tools/fig_layout.py,sha256=k71d_t98n_tvXmQpl8aGyFbZsqNBJffmp8_Z87MoqzQ,9359
+mpl_tools/log_toggler.py,sha256=Gm0igea2xbyWFxnbr5RBteNtiI8gJ8dAVdRchAqEFM0,2914
+mpl_tools/misc.py,sha256=QCbJYTMplL5MMAf2SsBqxTRWrW-J_IzKNezuQPrz_6w,4588
+mpl_tools/sci.py,sha256=IryegkOVc8HdQSk3CAHv9vnM-BDF2h-zBjH9GdKLz6c,2154
+mpl_tools/visibility.py,sha256=o567uVdvjq_akMHZubFoCrtxjk6uhdS1YHrcBKrLG0Q,4826
+mpl_tools-0.2.26.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mpl_tools-0.2.26.dist-info/METADATA,sha256=5458LBn2Z0eOqrdrP-S60EXwReT2QD5_TDGOkIQewwM,2306
+mpl_tools-0.2.26.dist-info/RECORD,,
