@@ -1,0 +1,13 @@
+platemap/__init__.py,sha256=i4ZnUcCDKlXG-CFPO_TYS4KE5F8yTedFj6Lc-L336DE,210
+platemap/plate.py,sha256=o5hZBzFJ2SknyVScpbfXXRbT2ugKeLAOFdjUFjONy-c,4057
+platemap/PlateUtils/__init__.py,sha256=sF_hGIT2bMmjB6h4U3uqDYcddqZZ_YOFOczr4aJonx4,198
+platemap/PlateUtils/add_volume.py,sha256=5E7qI4vArsQxDCoaCWgJEk9KRzvIf-tIgGIjzafJl2k,1831
+platemap/PlateUtils/assign_source_wells.py,sha256=hEQSSwHNTcr4P4SW3K4DiLG-RX1_goUM9DC-1oKFn5w,1303
+platemap/PlateUtils/find_next_well.py,sha256=gjqQV6yT8FbbP5IfNfgEW4D4q9XIQFQ9WbSaDSlIy8I,595
+platemap/PlateUtils/remove_volume.py,sha256=TvFWBh4_K22_SQ0W0m-nurLi-Z3y6JBYom6UeKZslec,1492
+platemap/PlateUtils/transfer.py,sha256=B8dXxdrkB2Ex3p7W5-KA186RzTaa0vXCVZcFrYdbR_M,2372
+platemap-0.0.6.dist-info/LICENSE.txt,sha256=D-A7_MXEHq6swCqf5EX9tCFl_5W5STw3D-Ru6WokbSM,1072
+platemap-0.0.6.dist-info/METADATA,sha256=SlhGfVbHQBI7hkO92Xh8LicyQS8wOdq79cpA1DWixWo,1686
+platemap-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+platemap-0.0.6.dist-info/top_level.txt,sha256=nANUiPQ4bngmOsiWMPf0Tr0Dwl7HigB3bfSi-Lkg89M,9
+platemap-0.0.6.dist-info/RECORD,,
