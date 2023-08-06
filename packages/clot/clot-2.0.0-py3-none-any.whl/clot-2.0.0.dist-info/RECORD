@@ -1,0 +1,13 @@
+clot/__init__.py,sha256=uM3FXtOAhUi4ee-XlqxHLKghekV4C1JO_tNxPmWwOMI,95
+clot/bencode/__init__.py,sha256=X-LHfWtH0aVdAAX_Es47gXiPD41hTKcdRzVuLlPrjM8,326
+clot/bencode/decoder.py,sha256=nKWXf891eG9cqXBv5226mAIHKhIt2mq211J01gojS0Q,3803
+clot/bencode/encoder.py,sha256=ZHENpvxSoBIdreyA2Gq3S_GH9zXV6yBR_b-stMNV7BA,2622
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_decoder.py,sha256=ZdyDEaIMuoaly-X81qFnEp2fISpMbEZj94j8w4xfWFo,5084
+test/test_encoder.py,sha256=kbL-15ZjBDauCfHvlU6pkTPq6g-7RvhgagJCY8lAEg8,5497
+clot-2.0.0.dist-info/LICENSE,sha256=SU6YcwLDII0pO1AFEeBnktYZ1EdXBBLHykT_dP8Q4a0,1094
+clot-2.0.0.dist-info/METADATA,sha256=GgnDyhEHaUsu7PjQCgx-jJ-geBIevkqnM7SI31c_Bb8,1079
+clot-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clot-2.0.0.dist-info/top_level.txt,sha256=CfWUwzoxOF1gDUx8mEm2V5cYSuEVvxpr5aLgfByPb_k,10
+clot-2.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+clot-2.0.0.dist-info/RECORD,,
