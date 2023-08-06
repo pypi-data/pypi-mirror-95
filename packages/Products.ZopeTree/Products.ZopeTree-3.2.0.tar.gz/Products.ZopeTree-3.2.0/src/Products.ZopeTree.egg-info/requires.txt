@@ -1,0 +1,9 @@
+Zope
+setuptools
+AccessControl
+zope.interface
+zope.testing
+
+[test]
+pytest>=6.1.1
+pytest-cov

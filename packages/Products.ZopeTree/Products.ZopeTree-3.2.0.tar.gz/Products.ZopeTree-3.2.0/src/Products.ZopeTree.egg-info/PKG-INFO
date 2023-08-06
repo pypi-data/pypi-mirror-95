@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: Products.ZopeTree
+Version: 3.2.0
+Summary: ZopeTree is a light-weight tree implementation.
+Home-page: https://github.com/jugmac00/Products.ZopeTree
+Author: Philipp von Weitershausen
+Author-email: philipp@weitershausen.de
+Maintainer: Juergen Gmach
+Maintainer-email: juergen.gmach@googlemail.com
+License: UNKNOWN
+Project-URL: Issue Tracker, https://github.com/jugmac00/Products.ZopeTree/issues
+Project-URL: Sources, https://github.com/jugmac00/Products.ZopeTree
+Description: .. image:: https://github.com/jugmac00/Products.ZopeTree/workflows/CI/badge.svg?branch=master
+           :target: https://github.com/jugmac00/Products.ZopeTree/actions?workflow=CI
+           :alt: CI Status
+        
+        .. image:: https://coveralls.io/repos/github/jugmac00/Products.ZopeTree/badge.svg?branch=master
+          :target: https://coveralls.io/github/jugmac00/Products.ZopeTree?branch=master
+        
+        .. image:: https://img.shields.io/pypi/v/Products.ZopeTree.svg
+          :target: https://pypi.org/project/Products.ZopeTree/
+        
+        .. image:: https://img.shields.io/pypi/pyversions/Products.ZopeTree.svg
+          :target: https://pypi.org/project/Products.ZopeTree/
+        
+        .. image:: https://requires.io/github/jugmac00/Products.ZopeTree/requirements.svg?branch=master
+          :target: https://requires.io/github/jugmac00/Products.ZopeTree/requirements/?branch=master
+        
+        .. image:: https://img.shields.io/pypi/l/Products.ZopeTree
+          :target: https://github.com/jugmac00/Products.ZopeTree/blob/master/LICENSE.txt
+        
+        
+        Products.ZopeTree
+        =================
+        
+        ZopeTree is a light-weight tree implementation, mainly for use with ZPT.
+        
+        Created by Philipp "philiKON" von Weitershausen.
+        
+        Scope
+        -----
+        
+        This package back from 2003 has been asleep for more than a decade.
+        
+        It was about time to get up and get ready for Zope 4 and Python 3.
+        
+        The package is considered feature-complete.
+        
+        
+        
+        CHANGES
+        =======
+        
+        v3.2.0
+        ------
+        
+          * add Philipp von Weitershausen as the author of this package
+        
+        v3.1.0
+        ------
+        
+          * use gh actions for CI instead of Travis
+        
+        v3.0.1
+        ------
+        
+          * fix MANIFEST.in
+        
+        v3.0.0
+        ------
+        
+          * enable pre-commit hooks
+        
+          * drop support for Python versions < 3.6
+        
+          * add support for Python 3.9
+        
+          * convert documentation from markdown to restructured text
+        
+        v2.0.1
+        ------
+        
+          * fix link to PyPi badge
+        
+        v2.0 (2019-11-23)
+        -----------------
+        
+          * add tox environment
+        
+          * restructure to use a src directory
+        
+          * add a Travis configuration
+        
+          * make tests run on Python 2.7 and in a Zope 4 environment
+        
+          * add a setup.py
+        
+          * fix deprecation warnings
+        
+          * replace license file format (HTML->txt)
+        
+          * add flake8 and apply it
+        
+          * add support for Python 3.6, 3.7, 3.8
+        
+        v1.3.1 (2003-08-21)
+        -------------------
+        
+          * Fixed tree_menu example. Thanks to Andy McKay for the patch.
+        
+        v1.3 (2003-05-30)
+        -----------------
+        
+          * Setting a cookie with ZopeTree is optional now. Simply pass
+            set_cookie=0 to the ZopeTree constructor.
+        
+          * Fixed a security hole in the tree state decompressing
+            mechanism. Previous versions were vulnerable to a denial of
+            service attack using large tree states. Thanks go to Jamie Heilman
+            for reporting the bug and Toby Dickenson for providing a fix.
+        
+        v1.2 (2003-04-30)
+        -----------------
+        
+          * Added optional 'expanded_nodes' argument to ZopeTree constructor.
+            Thanks to Jean Jordaan for suggesting this.
+        
+          * Changed signature of TreeObjectWrapper constructor. 'path' is an
+            optional argument now.
+        
+          * Added collapse() method to ZopeTree.Node.
+        
+        v1.1 (2003-03-17)
+        -----------------
+        
+          * It now works on Zope 2.4.
+        
+          * The unit test was not converted from RevisionManager yet. Fixed.
+        
+        v1.0 (2003-03-14)
+        -----------------
+        
+          * Initial release.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Zope :: 4
+Classifier: Framework :: Zope :: 5
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >3.5
+Description-Content-Type: text/x-rst
+Provides-Extra: test
