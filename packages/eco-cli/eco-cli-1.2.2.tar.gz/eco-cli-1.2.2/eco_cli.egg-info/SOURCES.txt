@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+eco/__init__.py
+eco/__main__.py
+eco/eco_scrapper.py
+eco/eco_utils.py
+eco_cli.egg-info/PKG-INFO
+eco_cli.egg-info/SOURCES.txt
+eco_cli.egg-info/dependency_links.txt
+eco_cli.egg-info/entry_points.txt
+eco_cli.egg-info/requires.txt
+eco_cli.egg-info/top_level.txt
