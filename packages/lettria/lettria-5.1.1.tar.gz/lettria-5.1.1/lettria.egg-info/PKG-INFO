@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: lettria
+Version: 5.1.1
+Summary: Lettria official SDK for python
+Home-page: https://github.com/Lettria/sdk-python
+Author: Maxence
+Author-email: maxence@lettria.com
+License: MIT
+Description: Lettria official SDK for python
+Keywords: lettria french nlp taln ner nlu chatbot bigdata text analysis sentiment emotion
+Platform: UNKNOWN

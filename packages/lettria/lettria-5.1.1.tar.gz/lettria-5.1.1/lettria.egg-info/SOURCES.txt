@@ -1,0 +1,15 @@
+README.md
+setup.py
+lettria/NLP.py
+lettria/TextChunk.py
+lettria/__init__.py
+lettria/client.py
+lettria/sentiment.py
+lettria/subtypes.py
+lettria/transform_morph.py
+lettria/utils.py
+lettria.egg-info/PKG-INFO
+lettria.egg-info/SOURCES.txt
+lettria.egg-info/dependency_links.txt
+lettria.egg-info/requires.txt
+lettria.egg-info/top_level.txt
