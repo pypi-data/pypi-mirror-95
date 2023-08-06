@@ -1,0 +1,5 @@
+PyYAML
+opencv-python
+pillow
+google-cloud-vision
+google-cloud-storage

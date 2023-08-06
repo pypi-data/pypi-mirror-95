@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+GCDetection.egg-info/PKG-INFO
+GCDetection.egg-info/SOURCES.txt
+GCDetection.egg-info/dependency_links.txt
+GCDetection.egg-info/requires.txt
+GCDetection.egg-info/top_level.txt
+gcdetection/__init__.py
+gcdetection/gc_detection.py
