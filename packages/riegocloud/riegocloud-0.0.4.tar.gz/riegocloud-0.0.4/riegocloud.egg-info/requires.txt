@@ -1,0 +1,10 @@
+ConfigArgParse
+aiohttp
+aiohttp_jinja2
+aiohttp_remotes
+aiohttp_debugtoolbar
+cchardet
+asyncssh
+
+[:sys_platform == "linux"]
+uvloop
