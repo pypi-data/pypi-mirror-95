@@ -1,0 +1,10 @@
+opentelemetry/exporter/opencensus/__init__.py,sha256=p1pNwZ7rqWs04-IjLygaGd22gyI87ZV0AUPbZdJq4pQ,663
+opentelemetry/exporter/opencensus/util.py,sha256=vEXV0-l2AllM579_E3ZO-oNQ_HFHdq3N1E4BKvrUTMk,3305
+opentelemetry/exporter/opencensus/version.py,sha256=OZiDNkn_Qwd74MhXJcGBLuqtSsc3u97UhRif_aEcrpw,608
+opentelemetry/exporter/opencensus/trace_exporter/__init__.py,sha256=bhgzR4svQjixhpvO8IwSSEP_R7Yo5skrCbGUjo0DmPA,5895
+opentelemetry_exporter_opencensus-0.18b0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_exporter_opencensus-0.18b0.dist-info/METADATA,sha256=S2oJ556xl3ndGjEgBTB1q0Pc2DU_-mSaTL7yATxcPmU,1760
+opentelemetry_exporter_opencensus-0.18b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_exporter_opencensus-0.18b0.dist-info/entry_points.txt,sha256=g0OrQNr-yl-aPp-8TY8gI6yf_JrTWUEPlJt1shfB0h4,111
+opentelemetry_exporter_opencensus-0.18b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_opencensus-0.18b0.dist-info/RECORD,,
