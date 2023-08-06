@@ -1,0 +1,3 @@
+[dffml.model]
+daal4pylr = dffml_model_daal4py.daal4pylr:DAAL4PyLRModel
+

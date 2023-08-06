@@ -1,0 +1,12 @@
+dffml_model_daal4py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_model_daal4py/daal4pylr.py,sha256=NwWJ-sW27Hh436Y0vq4mws7K79HIjoYeHPPf49Kt3ec,6919
+dffml_model_daal4py/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lr.py,sha256=fEzSs7m5aNQ5SweFmhYcSNxusCxbpOlY64vz94CmDhU,2352
+tests/test_lr_integration.py,sha256=BZFakBlIcuwBIzehADl5PcH4OIRr6PNaxXGfwGutPf8,2491
+dffml_model_daal4py-0.1.0.dist-info/LICENSE,sha256=dXBKBk-dkP6OTsWhAeMnpyPtz-wTlwmUudO2STK_8WY,1070
+dffml_model_daal4py-0.1.0.dist-info/METADATA,sha256=3RXRmnReuqIdTTggkKEjc5jEwUjk3h3F2xJPcXIyulc,3133
+dffml_model_daal4py-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_daal4py-0.1.0.dist-info/entry_points.txt,sha256=gabbyuYMYDYEyQNISiW7L3573KhB8GxUlCZh4Do3gr4,72
+dffml_model_daal4py-0.1.0.dist-info/top_level.txt,sha256=6kxgOR35kBYDD4C0sGDXnyUtFrBTMfkFKEVt-qoL5-c,26
+dffml_model_daal4py-0.1.0.dist-info/RECORD,,
