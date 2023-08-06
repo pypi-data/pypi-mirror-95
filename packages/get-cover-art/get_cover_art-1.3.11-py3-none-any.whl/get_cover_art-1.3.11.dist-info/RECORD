@@ -1,0 +1,13 @@
+get_cover_art/__init__.py,sha256=bqKpG2i3wfgape4Cfhnas94NXMafx2kwqVfODV0yxJI,50
+get_cover_art/__main__.py,sha256=kaXFhwnzbB5XPeWdr2n_iJfk2FOGHv3r_BLddKfT0V8,2117
+get_cover_art/apple_downloader.py,sha256=HbSKc2NzSnWHFl6cVgQAe-xgKYSU5g03K0YWo5h5mTA,3888
+get_cover_art/cover_finder.py,sha256=-sT0JWNAuaUWQiswzBgrzq0etOzX3os310PP2lzD0mk,5616
+get_cover_art/meta_audio.py,sha256=5vHELkElL7ynp2MRAWOv1oIZlZ_RBAs5_jX4HQ49_Ow,418
+get_cover_art/meta_flac.py,sha256=Uw5134BxlHFyfLdWKg6y84DRSHCoMEagyYjwlMKCHEs,1124
+get_cover_art/meta_mp3.py,sha256=UuJskkf1XiEqd-exuQ1NTcQ52PIDTLll7xL7cqcoW9c,1309
+get_cover_art/meta_mp4.py,sha256=XNE8P0IepEuczP1ZmzSWpx5h4vmrLXXo4zKk9zD4BTQ,925
+get_cover_art-1.3.11.dist-info/LICENSE,sha256=Shs7yU0Mpx_4Ix5taWVeJNqSILjtLTmVYjZzC426cPw,1065
+get_cover_art-1.3.11.dist-info/METADATA,sha256=ZSqudoS3IslGtBf0e4RYWy9apGYCoTBvnYY71RVt9-w,5435
+get_cover_art-1.3.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+get_cover_art-1.3.11.dist-info/top_level.txt,sha256=yfX-VM5G_K85Qdpzo8-IHnFrjpD9FmehTzErguyck2w,14
+get_cover_art-1.3.11.dist-info/RECORD,,
