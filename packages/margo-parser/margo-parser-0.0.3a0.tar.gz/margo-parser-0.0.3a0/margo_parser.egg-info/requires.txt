@@ -1,0 +1,2 @@
+lark-parser[regex]==0.10.0
+pyyaml==5.3.1

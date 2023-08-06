@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: margo-parser
+Version: 0.0.3a0
+Summary: A notebook description language parser
+Home-page: https://github.com/jakekara.com/nbdl
+Author: Jake Kara
+Author-email: jake@jakekara.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
