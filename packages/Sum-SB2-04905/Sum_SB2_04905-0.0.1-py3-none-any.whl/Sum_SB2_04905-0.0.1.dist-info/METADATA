@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Sum-SB2-04905
+Version: 0.0.1
+Summary: adding unlimited number
+Home-page: UNKNOWN
+Author: Ibne Saeed
+Author-email: Someone@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Add Unlimited Number...
+
+DEMO
+'''def add(*c):
+    d = sum(c)
+    return d'''
+
