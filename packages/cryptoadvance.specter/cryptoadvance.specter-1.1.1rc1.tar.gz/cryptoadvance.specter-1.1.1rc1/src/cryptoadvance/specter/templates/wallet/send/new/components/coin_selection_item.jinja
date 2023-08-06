@@ -1,0 +1,25 @@
+{# 
+    coin_selection_item - UTXO coin selection table row.
+    Parameters:
+    - txid: The transaction ID.
+    - amount: The transaction amount.
+    - address: The address associated with the transaction.
+    - label: The label of `address` (equal to `address` if no label exists).
+    - explorer: explorer url.
+    - selected: The coin was selected previously
+ #}
+{% macro coin_selection_item(txid, vout, amount, address, label, explorer, selected) -%}
+    {% from 'wallet/components/explorer_link.jinja' import explorer_link %}
+    <tr>
+        <td>
+            <input class="checkbox coin_select_checkbox" type="checkbox" name="coinselect" value="{{ [txid, vout, amount] | join(', ') }}"  onchange='updateCoinSelect(this)' {% if selected %}checked{% endif %}>
+        </td>
+        <td class="tx scroll">
+            {{ explorer_link('tx', txid, txid, explorer) }}
+        </td>
+        <td class="tx scroll">
+            <address-label data-address="{{ address }}" data-label="{{ label if label else address }}" data-wallet="{{ wallet_alias }}"></address-label>
+        </td>
+        <td>{{ amount | btcunitamount }}</td>
+    </tr>
+{%- endmacro %}
