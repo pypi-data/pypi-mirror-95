@@ -1,0 +1,9 @@
+README.md
+setup.py
+detectorpy/__init__.py
+detectorpy/model.py
+detectorpy.egg-info/PKG-INFO
+detectorpy.egg-info/SOURCES.txt
+detectorpy.egg-info/dependency_links.txt
+detectorpy.egg-info/requires.txt
+detectorpy.egg-info/top_level.txt
