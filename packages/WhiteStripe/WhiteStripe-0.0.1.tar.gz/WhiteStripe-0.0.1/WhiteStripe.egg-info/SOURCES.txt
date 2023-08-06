@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+WhiteStripe/__init__.py
+WhiteStripe.egg-info/PKG-INFO
+WhiteStripe.egg-info/SOURCES.txt
+WhiteStripe.egg-info/dependency_links.txt
+WhiteStripe.egg-info/requires.txt
+WhiteStripe.egg-info/top_level.txt
