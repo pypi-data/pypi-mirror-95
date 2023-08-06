@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: node-conformity
+Version: 0.0.2
+Summary: Path-Aware local homophily score
+Home-page: https://github.com/GiulioRossetti/conformity
+Author: Giulio Rossetti
+Author-email: giulio.rossetti@gmail.com
+License: BSD-Clause-2
+Keywords: complex-networks assortativity homophily
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Other
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: networkx (>=2.4)
+Requires-Dist: numpy (>=1.15.*)
+Requires-Dist: tqdm (>=4.20.*)
+
+UNKNOWN
+
+
