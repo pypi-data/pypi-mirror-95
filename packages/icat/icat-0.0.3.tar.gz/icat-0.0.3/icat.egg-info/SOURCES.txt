@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+icat/__init__.py
+icat/__main__.py
+icat.egg-info/PKG-INFO
+icat.egg-info/SOURCES.txt
+icat.egg-info/dependency_links.txt
+icat.egg-info/top_level.txt
