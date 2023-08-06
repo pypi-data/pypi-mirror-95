@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dffml-model-pytorch
+Version: 0.1.0
+Summary: DFFML model dffml-model-pytorch
+Home-page: https://github.com/intel/dffml-model-pytorch
+Author: Saksham Arora
+Author-email: sakshamarora1001@gmail.com
+Maintainer: Saksham Arora
+Maintainer-email: sakshamarora1001@gmail.com
+License: MIT
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: torch (==1.7.1) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: torchvision (==0.8.2) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: torch (==1.7.1) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: torchvision (==0.8.2) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: torch (==1.7.1) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: torchvision (==0.8.2) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: torch (==1.7.1) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: torchvision (==0.8.2) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: torch (==1.7.1+cu110) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: torchvision (==0.8.2+cu110) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: numpy (==1.19.5) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.8"
+
+# DFFML PyTorch Models
+
+## About
+
+dffml_model_pytorch supports pre-trained PyTorch ConvNet models.
+![Pre-Trained models](https://pytorch.org/docs/stable/torchvision/models.html)
+
+## Documentation
+
+Documentation is hosted at https://intel.github.io/dffml/plugins/dffml_model.html#dffml-model-pytorch
+
+## License
+
+dffml_model_pytorch Models are distributed under the terms of the
+[MIT License](LICENSE).
+
+

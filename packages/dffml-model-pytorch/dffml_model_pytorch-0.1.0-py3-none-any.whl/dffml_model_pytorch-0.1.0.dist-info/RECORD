@@ -1,0 +1,17 @@
+dffml_model_pytorch/__init__.py,sha256=SQQg1zqm3ad-HcHwluNKm9vuwsXn534BqD5qPH9x3FE,12242
+dffml_model_pytorch/pytorch_base.py,sha256=K7q2DXj3AnbBHWXTQ73JLKcrpQ_B1ebEAcd5TjW9ZAo,16110
+dffml_model_pytorch/pytorch_net.py,sha256=_6HokAkW9HgBNAtrS5UC0jkjjj9fDwEVxqGc6uQHWjs,2619
+dffml_model_pytorch/pytorch_pretrained.py,sha256=BLLNwq-5JICgNvYLtXGk9Bp6re8UCNua42xpQLDZoV0,6020
+dffml_model_pytorch/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+dffml_model_pytorch/utils/__init__.py,sha256=alIDGBnxWH4JvP-UW-7N99seBBi0r1GV1h8f1ERFBec,21
+dffml_model_pytorch/utils/config.py,sha256=ZYEozG-KC-3V7Qw_T1wWmEV6Gg0CVTOIglt1BNnYzWE,1084
+dffml_model_pytorch/utils/utils.py,sha256=G0sua_A7OwvscaO9vzrcFvkpIyk_NoFta2NAkIMdel8,3873
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pytorchnet.py,sha256=29H7RdodGiqyU6ZtCnDxafXZTdSjar1cUaHBZ63hGe4,6882
+tests/test_resnet18.py,sha256=MFaE16rpc3CFBlagz5gUOq_8nV99yArTwN_qNvxrlYc,2687
+dffml_model_pytorch-0.1.0.dist-info/LICENSE,sha256=hyL5m07F9aNMhhsiLL6D9CTwI1kAfRG77yGbonHK7r4,1071
+dffml_model_pytorch-0.1.0.dist-info/METADATA,sha256=X-tE3ABCLCpV9c5BW1h910U_BLdE7jXoJzYzCZV_85k,3172
+dffml_model_pytorch-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_pytorch-0.1.0.dist-info/entry_points.txt,sha256=KOjsPvoWhWCL_0sqYQKd4dSiVmDNMF_NU2ZT4OWV_4s,2053
+dffml_model_pytorch-0.1.0.dist-info/top_level.txt,sha256=BIIf0Z0cLX_cuIJCKqccpgpWRPX20hGh0D6eAhIYtYc,26
+dffml_model_pytorch-0.1.0.dist-info/RECORD,,
