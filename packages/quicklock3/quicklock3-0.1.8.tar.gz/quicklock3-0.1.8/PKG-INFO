@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: quicklock3
+Version: 0.1.8
+Summary: A simple Python 3.x resource lock to ensure only one process at a time is operating with a particular resource.
+Home-page: https://github.com/untixx/quicklock/
+Author: Mathias Ziebarth (forked from Nate Ferrero)
+Author-email: mathias.ziebarth@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/untixx/quicklock/tarball/0.1.8
+Description: UNKNOWN
+Keywords: lock,locking,singleton,process,resource,exclusive lock
+Platform: any
