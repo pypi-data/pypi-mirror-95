@@ -1,0 +1,12 @@
+README.md
+setup.py
+Multifunction/__init__.py
+Multifunction/afile.py
+Multifunction/atime.py
+Multifunction/network.py
+Multifunction/text.py
+Multifunction/thread.py
+Multifunction.egg-info/PKG-INFO
+Multifunction.egg-info/SOURCES.txt
+Multifunction.egg-info/dependency_links.txt
+Multifunction.egg-info/top_level.txt
