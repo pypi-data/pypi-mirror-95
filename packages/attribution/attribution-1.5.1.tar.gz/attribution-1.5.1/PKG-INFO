@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: attribution
+Version: 1.5.1
+Summary: Generate changelogs based on tag messages and shortlogs
+Home-page: https://attribution.omnilib.dev
+Author: John Reese
+Author-email: john@noswap.com
