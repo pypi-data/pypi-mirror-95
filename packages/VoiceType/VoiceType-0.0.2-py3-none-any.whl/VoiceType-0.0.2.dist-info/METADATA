@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: VoiceType
+Version: 0.0.2
+Summary: A package to type using your voice.You can report errors or make suggestions on my github: https://github.com/Friend1975/VoiceType.git
+Home-page: UNKNOWN
+Author: Friend1975
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: python,voice,typing,speech recognition
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: keyboard
+Requires-Dist: SpeechRecognition
+
+UNKNOWN
+
+
