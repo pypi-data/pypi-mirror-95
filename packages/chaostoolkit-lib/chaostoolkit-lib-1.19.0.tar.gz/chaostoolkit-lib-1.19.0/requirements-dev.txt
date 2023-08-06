@@ -1,0 +1,12 @@
+requests-mock
+coverage
+pycodestyle
+pytest~=6.2
+pytest-cov
+pytest-sugar
+ply
+pyhcl
+hvac
+jsonpath2
+chardet
+pylama
