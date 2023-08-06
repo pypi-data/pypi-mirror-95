@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: welcometomycourse
+Version: 0.0.1
+Summary: My first Python package
+Home-page: UNKNOWN
+Author: Kazem Mirzaei
+Author-email: k90mirzaei@gmail.com
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+My first Python package with a slightly longer description
+
+
