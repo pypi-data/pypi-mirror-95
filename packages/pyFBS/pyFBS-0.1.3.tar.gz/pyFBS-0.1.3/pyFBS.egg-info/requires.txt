@@ -1,0 +1,12 @@
+numpy>=1.19.1
+pyansys>=0.44.21
+pyEMA>=0.23
+pyuff>=1.23
+pyvista>=0.25.3
+pyvistaqt>=0.1.1
+pandas>=1.1.0
+scipy>=1.5.2
+tqdm>=4.48.2
+keyboard>=0.13.5
+requests>=2.24.0
+xlrd>=1.2.0

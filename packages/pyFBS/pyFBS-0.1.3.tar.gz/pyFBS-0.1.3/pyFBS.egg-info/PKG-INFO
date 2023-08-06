@@ -1,0 +1,58 @@
+Metadata-Version: 1.2
+Name: pyFBS
+Version: 0.1.3
+Summary: pyFBS: A Python package for Frequency Based Substructuring
+Home-page: https://pyfbs.readthedocs.io/en/latest/intro.html
+Author: Tomaž Bregar, Ahmed El Mahmoudi, Miha Kodrič, Domen Ocepek
+Author-email: tomaz.bregar@gorenje.com
+License: MIT license
+Description: .. image:: https://gitlab.com/pyFBS/pyFBS/-/raw/master/docs/logo/logo-big.png
+        	:align: right
+        	:width: 300
+        
+        pyFBS
+        -----
+        	
+        pyFBS is a Python package for Frequency Based Substructuring and Transfer Path Analysis. It enables the user to use state-of-the-art dynamic substructuring methodologies in an intuitive manner. 
+        
+        With the package also basic and application examples are provided, together with real datasets so you can directly try out the capabilities of the pyFBS.
+        
+        Features
+        --------
+        
+        * 3D display
+        
+        * FRF synthetization
+        
+        * Virtual Point Transformation
+        
+        * System Equivalent Model Mixing
+        
+        * Singular Vector Transformation
+        
+        For more information on features, basic and application examples check out the `documentation`_. 
+        
+        Citation
+        --------
+        A paper about the pyFBS will be submitted to the Journal of Open Source Software journal. If you will be using pyFBS in your scientific research, please consider citing the paper.
+        
+        License
+        -------
+        Licensed under the MIT license.
+        
+        .. _documentation: https://pyfbs.readthedocs.io/en/latest/intro.html
+        
+        
+        
+        
+Keywords: pyFBS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
