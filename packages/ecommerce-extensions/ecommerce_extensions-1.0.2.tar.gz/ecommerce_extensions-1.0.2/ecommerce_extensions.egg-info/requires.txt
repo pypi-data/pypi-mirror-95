@@ -1,0 +1,10 @@
+jsonfield2
+qrcode
+edx-auth-backends
+sorl-thumbnail
+cryptography
+Django
+django-oscar
+django-compressor
+djangorestframework
+django-crum
