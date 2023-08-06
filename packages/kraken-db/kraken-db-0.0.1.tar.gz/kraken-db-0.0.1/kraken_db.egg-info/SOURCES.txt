@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kraken_db/kraken_db.py
+kraken_db.egg-info/PKG-INFO
+kraken_db.egg-info/SOURCES.txt
+kraken_db.egg-info/dependency_links.txt
+kraken_db.egg-info/top_level.txt

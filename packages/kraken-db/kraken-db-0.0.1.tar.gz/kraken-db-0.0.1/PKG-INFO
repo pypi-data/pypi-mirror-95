@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kraken-db
+Version: 0.0.1
+Summary: Kraken db
+Home-page: https://github.com/tactik8/kraken_db
+Author: Tactik8
+Author-email: info@tactik8.com
+License: MIT
+Description: Test
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
