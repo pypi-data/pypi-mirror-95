@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+crate-smartnow = crate.client.sqlalchemy:CrateDialect
+
