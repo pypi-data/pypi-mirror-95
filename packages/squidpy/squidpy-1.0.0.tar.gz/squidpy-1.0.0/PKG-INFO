@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: squidpy
+Version: 1.0.0
+Summary: Squidpy - Spatial Single Cell Analysis in Python
+Home-page: https://github.com/theislab/squidpy
+Author: Theislab
+Author-email: giovanni.palla@helmholtz-muenchen.de, hannah.spitzer@helmholtz-muenchen.de
+Maintainer: Theislab
+Maintainer-email: giovanni.palla@helmholtz-muenchen.de, hannah.spitzer@helmholtz-muenchen.de
+License: BSD
+Download-URL: https://pypi.org/project/squidpy/
+Project-URL: Documentation, https://squidpy.readthedocs.io/en/latest
+Project-URL: Source Code, https://github.com/theislab/squidpy
+Description: |PyPI| |Downloads| |CI| |Notebooks| |Docs| |Coverage|
+        
+        Squidpy - Spatial Single Cell Analysis in Python
+        ================================================
+        
+        .. image:: https://raw.githubusercontent.com/theislab/squidpy/master/docs/source/_static/img/squidpy_horizontal.png
+            :alt: Logo
+            :width: 400px
+            :align: center
+        
+        **Squidpy** is a tool for the analysis and visualization of spatial molecular data.
+        It builds on top of `scanpy`_ and `anndata`_, from which it inherits modularity and scalability.
+        It provides analysis tools that leverages the spatial coordinates of the data, as well as
+        tissue images if available.
+        
+        .. image:: https://raw.githubusercontent.com/theislab/squidpy/master/docs/source/_static/img/figure1.png
+            :alt: Title figure
+            :width: 400px
+            :align: center
+            :target: https://www.biorxiv.org/content/10.1101/2021.02.19.431994v1
+        
+        Visit our `documentation`_ for installation, tutorials, examples and more.
+        
+        Manuscript
+        ----------
+        Please see our `preprint`_ on **bioRxiv** to learn more.
+        
+        Squidpy's key applications
+        --------------------------
+        - Build and analyze the neighborhood graph from spatial coordinates.
+        - Compute spatial statistics for cell-types and genes.
+        - Efficiently store, analyze and visualize large tissue images, leveraging `skimage`_.
+        - Explore `anndata`_ and the large tissue image in `napari`_.
+        
+        Installation
+        ------------
+        Install Squidpy via PyPI by running::
+        
+            pip install squidpy
+        
+        Contributing to Squidpy
+        -----------------------
+        We are happy about any contributions! Before you start, check out our `contributing guide <CONTRIBUTING.rst>`_.
+        
+        .. |PyPI| image:: https://img.shields.io/pypi/v/squidpy.svg
+            :target: https://img.shields.io/pypi/v/squidpy.svg
+            :alt: PyPI
+        
+        .. |CI| image:: https://img.shields.io/github/workflow/status/theislab/squidpy/CI/master
+            :target: https://github.com/theislab/squidpy/actions
+            :alt: CI
+        
+        .. |Notebooks| image:: https://img.shields.io/github/workflow/status/theislab/squidpy_notebooks/CI/master?label=notebooks
+            :target: https://github.com/theislab/squidpy_notebooks/actions
+            :alt: Notebooks CI
+        
+        .. |Docs| image:: https://img.shields.io/readthedocs/squidpy
+            :target: https://squidpy.readthedocs.io/en/latest/
+            :alt: Documentation
+        
+        .. |Coverage| image:: https://codecov.io/gh/theislab/squidpy/branch/master/graph/badge.svg
+            :target: https://codecov.io/gh/theislab/squidpy
+            :alt: Coverage
+        
+        .. |Downloads| image:: https://pepy.tech/badge/squidpy
+            :target: https://pepy.tech/project/squidpy
+            :alt: Downloads
+        
+        .. _preprint: https://www.biorxiv.org/content/10.1101/2021.02.19.431994v1
+        .. _scanpy: https://scanpy.readthedocs.io/en/latest/
+        .. _anndata: https://anndata.readthedocs.io/en/latest/
+        .. _napari: https://napari.org/
+        .. _skimage: https://scikit-image.org/
+        .. _documentation: https://squidpy.readthedocs.io/en/latest/
+        
+Keywords: bio-informatics,image analysis,single-cell,spatial data analysis,spatial data analysis,spatial transcriptomics
+Platform: Linux
+Platform: MacOSX
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: interactive
+Provides-Extra: all
