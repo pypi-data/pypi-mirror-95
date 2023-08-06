@@ -1,0 +1,11 @@
+req_update/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+req_update/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+req_update/req_update.py,sha256=HUBAjoreI9t2MRSu2hTxqUpgNhVnSf0_lFtVpNVmhXk,9978
+req_update/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+req_update/tests/test_req_update.py,sha256=hi5MsoOxNtZlrBC2JQAsiagbaEn-hny3dOI1Y12RtFE,20372
+req_update-1.4.0.dist-info/LICENSE,sha256=dmBJezKBqVg2AbhDv6I22MFTx19m3h7zFDfMAUzfJvw,1068
+req_update-1.4.0.dist-info/METADATA,sha256=gIVOU-4HfiTA3eo7FGb2-VlGTNTL_SsPckDoTkKaN4k,2670
+req_update-1.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+req_update-1.4.0.dist-info/entry_points.txt,sha256=8b8YD61kuzq3Vw5LbAGVWdH9ePfewShExtm5BJJzErg,59
+req_update-1.4.0.dist-info/top_level.txt,sha256=JRSxVihfBjwuowt49yB6CR8F1YaTNM1ZcRKLGXIdVXM,11
+req_update-1.4.0.dist-info/RECORD,,
