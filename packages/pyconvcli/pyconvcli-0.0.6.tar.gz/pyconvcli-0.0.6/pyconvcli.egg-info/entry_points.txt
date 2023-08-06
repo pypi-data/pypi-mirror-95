@@ -1,0 +1,6 @@
+[console_scripts]
+pyconvcli = pyconvcli_internal_cli.cli:main
+pyconvcli-app = pyconvcli_internal_cli.cli:visualize
+pyconvcli-test = test_pyconvcli_internal_cli.cli:main
+pyconvcli-test-app = test_pyconvcli_internal_cli.cli:visualize
+
