@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_textarea_autocomplete/DashTextareaAutocomplete.py
+dash_textarea_autocomplete/__init__.py
+dash_textarea_autocomplete/_imports_.py
+dash_textarea_autocomplete/dash_textarea_autocomplete.min.js
+dash_textarea_autocomplete/dash_textarea_autocomplete.min.js.map
+dash_textarea_autocomplete/metadata.json
+dash_textarea_autocomplete/package-info.json
+dash_textarea_autocomplete.egg-info/PKG-INFO
+dash_textarea_autocomplete.egg-info/SOURCES.txt
+dash_textarea_autocomplete.egg-info/dependency_links.txt
+dash_textarea_autocomplete.egg-info/top_level.txt
