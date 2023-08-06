@@ -1,0 +1,8 @@
+jiraclient/__init__.py,sha256=zAye55rMFnS8vfMyqeQa8SaTkLxazhXbZFda_q62xfQ,145
+jiraclient/jiraclient.py,sha256=M38Y2pudbVhPVlVh7CS9yTqt3ptTMYrw1_WUuM6sH4g,54796
+jiraclient/worklogs.py,sha256=tu5qwcUaIqc-tavrL167hHHt07kTYLRmo0y6V-lEwZM,694
+jiraclient-2.1.12.data/scripts/jiraclient,sha256=7y4hfLqRVzfFty8SWbm9RRoTzWohHntfzu0JXFgzgDs,177
+jiraclient-2.1.12.dist-info/METADATA,sha256=MpJnKl6pWSt3ZLjc53wNq013HoheCgTOKZgdNv8VYbs,282
+jiraclient-2.1.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jiraclient-2.1.12.dist-info/top_level.txt,sha256=-Cz4MwF70q8tBK-OVhRYpeZoNTfDy7IwUB90fAh5S74,11
+jiraclient-2.1.12.dist-info/RECORD,,
