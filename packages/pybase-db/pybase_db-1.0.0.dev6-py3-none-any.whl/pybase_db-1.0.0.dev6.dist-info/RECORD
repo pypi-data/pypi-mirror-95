@@ -1,0 +1,11 @@
+pybase_db/__init__.py,sha256=si6ScPndKoAlAnfEhgaAjF3vlGAt6D_BWldieHoyhkM,209
+pybase_db/pybase_db.py,sha256=tdRFOyjo94WM4CJoRa8DWWmAFVhMLGdxv1MJ8sDgd6Y,82106
+pybase_db/pysql.py,sha256=IwbffceubEpMK5vncuID3M1zZM0GbYWsM0_u5vbWw2M,27393
+pybase_db/version.py,sha256=5d4OJY_TBcRtfKUhFHM8jh7Qnzh1qlu-Tn8t0t5cHV0,27
+pybase_db/utils/__init__.py,sha256=YDMEfVh-d4lKKSWI5MZPo9PQwUu8I4db2qc_M6zsz7I,203
+pybase_db/utils/main.py,sha256=1UaU2G6Urkb_kr9v1HnLoW5If4fu7S_QOyxZd3UnCTQ,28284
+pybase_db-1.0.0.dev6.dist-info/LICENSE,sha256=JIdYyKOBVfv8U-CelopXVLe1b0Wd1C3W8lY3mddYjuY,1060
+pybase_db-1.0.0.dev6.dist-info/METADATA,sha256=6ctYtrJWK5AiqblyiXNfnyVe1aOceW3GSTuIjBikhqY,6208
+pybase_db-1.0.0.dev6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybase_db-1.0.0.dev6.dist-info/top_level.txt,sha256=kNBNTMAf_o1b7gCOtUhSYTZ3dBMnugRxaBgHEfGZmRM,10
+pybase_db-1.0.0.dev6.dist-info/RECORD,,
