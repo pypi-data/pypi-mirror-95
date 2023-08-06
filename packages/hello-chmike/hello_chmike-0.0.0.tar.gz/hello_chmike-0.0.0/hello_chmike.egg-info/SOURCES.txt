@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hello/__init__.py
+hello_chmike.egg-info/PKG-INFO
+hello_chmike.egg-info/SOURCES.txt
+hello_chmike.egg-info/dependency_links.txt
+hello_chmike.egg-info/top_level.txt
+src/hello.c
+src/hello.h

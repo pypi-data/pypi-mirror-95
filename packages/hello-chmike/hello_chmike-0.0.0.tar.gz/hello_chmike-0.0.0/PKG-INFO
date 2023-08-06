@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hello_chmike
+Version: 0.0.0
+Summary: Simple python module with external C library
+Home-page: https://github.com/chmike/hello
+Maintainer: Christophe Meessen
+Maintainer-email: christophe@meessen.net
+License: BSD 3-Clause License
+Description: # Hello World!
+        
+        Minimal example demonstrating the production of module with an external C library. It 
+        also demonstrate the automatic generation and uploading of the sdist and wheels for
+        unix, Windows and MacOS. 
+        
+        The module contains a simple function that receive a string as argument and return a 
+        string containing "hello " with the argument string appended. The example uses 
+        `ctypes` to wrap the C library function.
+        
+        
+Keywords: Example
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
