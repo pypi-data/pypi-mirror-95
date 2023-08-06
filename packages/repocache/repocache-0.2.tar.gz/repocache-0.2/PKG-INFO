@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: repocache
+Version: 0.2
+Summary: Universal caching and proxying server for pypi/maven
+Home-page: https://github.com/pedia/repocache
+Author: repocache author
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
