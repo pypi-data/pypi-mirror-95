@@ -1,0 +1,15 @@
+[flask.commands]
+oarepo:communities = oarepo_communities.cli:communities
+
+[invenio_base.api_apps]
+oarepo_communities = oarepo_communities:OARepoCommunities
+
+[invenio_base.apps]
+oarepo_communities = oarepo_communities:OARepoCommunities
+
+[invenio_db.alembic]
+oarepo_communities = oarepo_communities:alembic
+
+[invenio_db.models]
+oarepo_communities = oarepo_communities.models
+
