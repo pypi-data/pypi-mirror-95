@@ -1,0 +1,12 @@
+riegocloud/__init__.py,sha256=lduwXXx-0yXZEMYvst8puI56Vlrw0GpBZmZv6-cF0gU,25
+riegocloud/app.py,sha256=mksw-y_iz46IWTlsv7h8H1eMaFqucmcJHYFJWkGp9DY,6308
+riegocloud/web/__init__.py,sha256=u8JSdRKgHm4EEpva13RIOX0u7lueZImn82McnsALNFU,25
+riegocloud/web/views/__init__.py,sha256=u8JSdRKgHm4EEpva13RIOX0u7lueZImn82McnsALNFU,25
+riegocloud/web/views/home.py,sha256=puaLTGo6hQ-SEXW8v3J0AH0Gtoh_cW-Ttg45ogAPZyQ,267
+riegocloud-0.0.2.data/scripts/setup_service.sh,sha256=qyFSJo7ub1_rHjun7LjoMzcAAL9NYnBtRzPe2hOoUjM,492
+riegocloud-0.0.2.dist-info/LICENSE,sha256=k_lGu3oGdZvORy3jWD-0WJcoD5pwEoyE1KcXPPRzSag,1090
+riegocloud-0.0.2.dist-info/METADATA,sha256=E-NiNCLuVfoxG4oQK1O094WvkKioCamRGifc7yCnj0A,874
+riegocloud-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+riegocloud-0.0.2.dist-info/entry_points.txt,sha256=L_Qaoh0IsLkcpilPH_I9nmcPzoHrsw6JQZS1ePz8e5k,52
+riegocloud-0.0.2.dist-info/top_level.txt,sha256=2giCr4VKPY9CBt-7evyI6u-qmsSO-3b2O0abQqxJ4L0,11
+riegocloud-0.0.2.dist-info/RECORD,,
