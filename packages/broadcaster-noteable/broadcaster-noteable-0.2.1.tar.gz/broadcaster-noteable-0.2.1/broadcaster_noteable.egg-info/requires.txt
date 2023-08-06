@@ -1,0 +1,9 @@
+
+[kafka]
+aiokafka
+
+[postgres]
+asyncpg
+
+[redis]
+aioredis
