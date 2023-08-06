@@ -1,0 +1,5 @@
+andi>=0.4.1
+attrs
+parsel
+web-poet
+tldextract
