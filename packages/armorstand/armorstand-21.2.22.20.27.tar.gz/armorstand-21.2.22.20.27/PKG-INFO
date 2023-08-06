@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: armorstand
+Version: 21.2.22.20.27
+Summary: All my utility functions
+Home-page: https://github.com/ninest/armorstand/
+License: MIT
+Author: ninest
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: youtube_dl (>=2021.2.10,<2022.0.0)
+Project-URL: Documentation, https://github.com/ninest/armorstand/
+Project-URL: Repository, https://github.com/ninest/armorstand/
+Description-Content-Type: text/markdown
+
+# Armorstand
+
+> **Util functions.**
