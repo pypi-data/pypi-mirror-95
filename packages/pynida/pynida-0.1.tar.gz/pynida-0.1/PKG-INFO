@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pynida
+Version: 0.1
+Summary: In-situ nanoindentation data analysis
+Home-page: https://github.com/LebedevV/pynida
+Author: Vasily Lebedev, Anton Poluboiarinov, Daniil Kozlov, Robert Sakaev
+Author-email: vasily.lebedev@ul.ie
+License: GPLv3
+Download-URL: https://github.com/LebedevV/pynida
+Description: UNKNOWN
+Keywords: Nanomechanics,Microscopy,in-situ
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
