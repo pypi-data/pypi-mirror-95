@@ -1,0 +1,44 @@
+
+[:platform_system == "Darwin" and python_version == "3.7"]
+dffml==0.4.0
+dffml-model-tensorflow==0.3.0
+tensorflow==2.4.1
+tensorflow-hub==0.11.0
+pandas==1.2.2
+numpy==1.19.5
+
+[:platform_system == "Darwin" and python_version == "3.8"]
+dffml==0.4.0
+dffml-model-tensorflow==0.3.0
+tensorflow==2.4.1
+tensorflow-hub==0.11.0
+pandas==1.2.2
+numpy==1.19.5
+
+[:platform_system == "Linux" and python_version == "3.7"]
+dffml==0.4.0
+dffml-model-tensorflow==0.3.0
+tensorflow==2.4.1
+tensorflow-hub==0.11.0
+pandas==1.2.2
+numpy==1.19.5
+
+[:platform_system == "Linux" and python_version == "3.8"]
+dffml==0.4.0
+dffml-model-tensorflow==0.3.0
+tensorflow==2.4.1
+tensorflow-hub==0.11.0
+pandas==1.2.2
+numpy==1.19.5
+
+[:platform_system == "Windows" and python_version == "3.7"]
+dffml==0.4.0
+dffml-model-tensorflow==0.3.0
+tensorflow==2.4.1
+tensorflow-hub==0.11.0
+pandas==1.2.2
+numpy==1.19.5
+
+[:platform_system == "Windows" and python_version == "3.8"]
+dffml==0.4.0
+dffml-model-tensorflow==0.3.0
