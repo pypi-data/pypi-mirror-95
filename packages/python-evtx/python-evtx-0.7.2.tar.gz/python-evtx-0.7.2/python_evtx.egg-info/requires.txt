@@ -1,0 +1,8 @@
+six
+pytest==4.6.11
+hexdump==3.3
+pytest-cov==2.11.1
+more_itertools==5.0.0
+zipp==1.0.0
+configparser==4.0.2
+pyparsing==2.4.7
