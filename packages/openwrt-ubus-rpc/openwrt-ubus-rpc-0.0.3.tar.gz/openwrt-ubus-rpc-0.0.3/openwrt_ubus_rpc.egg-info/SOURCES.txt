@@ -1,0 +1,17 @@
+DESCRIPTION.md
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+openwrt/__init__.py
+openwrt/ubus/__init__.py
+openwrt/ubus/const.py
+openwrt/ubus/interface.py
+openwrt_ubus_rpc.egg-info/PKG-INFO
+openwrt_ubus_rpc.egg-info/SOURCES.txt
+openwrt_ubus_rpc.egg-info/dependency_links.txt
+openwrt_ubus_rpc.egg-info/not-zip-safe
+openwrt_ubus_rpc.egg-info/requires.txt
+openwrt_ubus_rpc.egg-info/top_level.txt
