@@ -1,0 +1,8 @@
+README.md
+setup.py
+nutritranslate/__init__.py
+nutritranslate/nt.py
+nutritranslate.egg-info/PKG-INFO
+nutritranslate.egg-info/SOURCES.txt
+nutritranslate.egg-info/dependency_links.txt
+nutritranslate.egg-info/top_level.txt
