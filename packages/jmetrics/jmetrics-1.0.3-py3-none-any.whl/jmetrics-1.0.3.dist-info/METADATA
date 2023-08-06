@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jmetrics
+Version: 1.0.3
+Summary: Parse and represent SI units
+Home-page: https://gist.github.com/Julien00859/a63f6b830547059795689e549045853f
+Author: Julien Castiaux
+Author-email: julien.castiaux@gmail.com
+License: MIT
+Download-URL: https://pypi.drlazor.be/metrics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+
