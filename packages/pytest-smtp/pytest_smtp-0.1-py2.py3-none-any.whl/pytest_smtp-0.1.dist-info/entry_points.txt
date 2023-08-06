@@ -1,0 +1,3 @@
+[pytest11]
+pytest-smtp = pytest_smtp.plugin
+

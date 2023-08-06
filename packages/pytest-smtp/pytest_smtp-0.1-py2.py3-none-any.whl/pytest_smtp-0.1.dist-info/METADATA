@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytest-smtp
+Version: 0.1
+Summary: Send email with pytest execution result
+Home-page: https://github.com/txu2k8/pytest-smtp
+Author: Tao Xu
+Author-email: txu2008@outlook.com
+License: MIT license
+Keywords: pytest,py.test,email
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pytest
+Requires-Dist: pytest-runner
+
+A plugin for send email with pytest execution result once execution is completed
+
+
