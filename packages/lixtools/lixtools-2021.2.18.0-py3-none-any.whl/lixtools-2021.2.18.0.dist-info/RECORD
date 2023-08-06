@@ -1,0 +1,13 @@
+lixtools/__init__.py,sha256=lKAtx9nnkBZ8cvibUQomfaE7AlBtkgpTqWfu6nBXcX8,28
+lixtools/atsas.py,sha256=nqG9JMEw_B0xU7E3eYc3Ig7wb9npJZ5djH_iadcq1vA,17505
+lixtools/hdf.py,sha256=n9GA2bEAcaWC2PL9ykbuKuHMFmxh69x0E-kN1s_s5bI,28350
+lixtools/mailin.py,sha256=VKcIhZdAnJcHMPUy8Ql8TaT6sOS8wJS_coSwfhgCSD8,28969
+lixtools/modeling.py,sha256=y9oDBoWzXhGFVFNHXdl7C6flbAQ2QNi3dGQU6yaxsQI,9428
+lixtools/notebooks.py,sha256=aZLWUUZuQhfQVrZ-mPZNcuKoOtskGoJ68skyEAwMSMQ,32852
+lixtools/plate_label_template.html,sha256=eMbWCfPDHr_1oOR9Q4y96_kz1MLu7OjL6GwElQgyshE,519
+lixtools/template_report.ipynb,sha256=rrGoDfNosSuvrd2OhO73umCLt8TcVk3SCuN5Ok5fctE,1117
+lixtools-2021.2.18.0.dist-info/LICENSE,sha256=rc6XZq_4heAIqSC19MVGQsdM5K72blAFvqyQkHTxtlc,1528
+lixtools-2021.2.18.0.dist-info/METADATA,sha256=gnGjCCfqgcueI3BvjIezdVCeVrXtDs4l1TFeLF1OxI0,702
+lixtools-2021.2.18.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+lixtools-2021.2.18.0.dist-info/top_level.txt,sha256=6JYmApNegBDdNlxB4cTt112d3RwcMp5mEa8jkst7xqA,9
+lixtools-2021.2.18.0.dist-info/RECORD,,
