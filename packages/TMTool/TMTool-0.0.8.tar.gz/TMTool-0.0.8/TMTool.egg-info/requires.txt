@@ -1,0 +1,5 @@
+openpyxl
+xlsxwriter
+atlassian>=3.5.0
+pypandoc>=1.5
+xmltodict>=0.12.0
