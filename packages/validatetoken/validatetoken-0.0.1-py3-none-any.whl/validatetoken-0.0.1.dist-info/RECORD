@@ -1,0 +1,15 @@
+validatetoken/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validatetoken/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validatetoken/middleware/validatetoken.py,sha256=j03JHdFABWzAc-OI2UNUsiy978__vRyXzIE2OrokXb0,4558
+validatetoken/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validatetoken/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validatetoken/tests/unit/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validatetoken/tests/unit/middleware/test_validatetoken.py,sha256=5cPCH_mx4nPbLgj9B8w2Kcm_adJQOW_RfFkpPwtrgiw,6995
+validatetoken-0.0.1.dist-info/AUTHORS,sha256=mIjJWYxD_OC4omwdpUtdw1Ib2lFJ3H8T3VW-Ps56NDA,44
+validatetoken-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+validatetoken-0.0.1.dist-info/METADATA,sha256=eBnNnS11t9xJcRUy1aSrESOMwRrV4LNwohjXUJcJN3Y,2101
+validatetoken-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+validatetoken-0.0.1.dist-info/entry_points.txt,sha256=z8z1J_Kqb7jzGizl6W3jA989yVZP42wwvECc4i0FMDE,94
+validatetoken-0.0.1.dist-info/pbr.json,sha256=P70vE0ctbxsVjP5e9LWTIjYvlMZnfSAsspkZpwlSvTc,47
+validatetoken-0.0.1.dist-info/top_level.txt,sha256=LtJ7AvdoEwVS6RuukuxIm9lgNH1sfWEzaIlHoXfbOy8,14
+validatetoken-0.0.1.dist-info/RECORD,,
