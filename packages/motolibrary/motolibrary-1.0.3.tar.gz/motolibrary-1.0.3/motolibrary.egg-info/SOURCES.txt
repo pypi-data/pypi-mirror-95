@@ -1,0 +1,15 @@
+README.md
+setup.py
+motolib/__init__.py
+motolib/dir_clean.py
+motolib/errors.py
+motolib/ftp_cleanse.py
+motolib/ftp_down.py
+motolib/ftp_up.py
+motolib/redash_download.py
+motolib/slack_funcs.py
+motolib/supp_create.py
+motolibrary.egg-info/PKG-INFO
+motolibrary.egg-info/SOURCES.txt
+motolibrary.egg-info/dependency_links.txt
+motolibrary.egg-info/top_level.txt
