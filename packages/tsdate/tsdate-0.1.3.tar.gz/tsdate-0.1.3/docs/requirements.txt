@@ -1,0 +1,11 @@
+attrs
+six
+setuptools_scm 
+sphinx-argparse
+sphinx_rtd_theme
+sphinx_issues
+numba
+tskit
+scipy
+tqdm
+appdirs

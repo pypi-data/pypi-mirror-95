@@ -1,0 +1,3 @@
+[console_scripts]
+tsdate = tsdate.__main__:main
+
