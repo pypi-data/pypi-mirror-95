@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: excel-exporter
+Version: 0.1
+Summary: A Django library for exporting data.
+Home-page: https://github.com/zhangyu836/django-excel-export
+Author: Zhang Yu
+Author-email: zhangyu836@gmail.com
+License: MIT
+Keywords: django,Excel,xls,xlsx,spreadsheet,workbook,template
+Platform: Any platform 
+Description-Content-Type: text/markdown
+Requires-Dist: xltpl (>=0.9.1)
+Requires-Dist: pydocxtpl (>=0.2.1)
+Requires-Dist: six
+
+# django-excel-export
+
+A Django library for exporting data.
+
