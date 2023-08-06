@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: detect_simd
+Version: 0.2.1
+Summary: Python library to detect CPU SIMD capabilities.
+Home-page: UNKNOWN
+Author: Cristian Bicheru
+Author-email: c.bicheru0@gmail.com
+Maintainer: Cristian Bicheru
+Maintainer-email: c.bicheru0@gmail.com
+License: MIT
+Download-URL: https://github.com/cristian-bicheru/detect-simd/archive/v0.2.tar.gz
+Project-URL: Documentation, https://detect-simd.readthedocs.io/
+Project-URL: Bug Reports, https://github.com/cristian-bicheru/detect-simd/issues
+Project-URL: Source, https://github.com/cristian-bicheru/detect-simd
+Description: UNKNOWN
+Keywords: cpu,detect,simd,python3,sse,avx,avx2,avx512,fma
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

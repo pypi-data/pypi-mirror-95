@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+detect_simd/__init__.py
+detect_simd.egg-info/PKG-INFO
+detect_simd.egg-info/SOURCES.txt
+detect_simd.egg-info/dependency_links.txt
+detect_simd.egg-info/top_level.txt
+detect_simd/src/detect_simd.c
+detect_simd/src/detect_simd.c
