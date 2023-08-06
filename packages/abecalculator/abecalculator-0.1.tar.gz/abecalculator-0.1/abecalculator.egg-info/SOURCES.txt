@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+abe.egg-info/SOURCES.txt
+abe.egg-info/dependency_links.txt
+abe.egg-info/top_level.txt
+abecalculator.egg-info/PKG-INFO
+abecalculator.egg-info/SOURCES.txt
+abecalculator.egg-info/dependency_links.txt
+abecalculator.egg-info/top_level.txt

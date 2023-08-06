@@ -1,0 +1,1 @@
+This is a simple calculator function which add, subract, multiply or divide two numbers.
