@@ -1,0 +1,3 @@
+tqdm
+progressbar2
+opencv-python
