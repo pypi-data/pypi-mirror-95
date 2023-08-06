@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: flask-insect
+Version: 0.0.1
+Summary: 
+Author: pskishere
+Author-email: pskishere@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=1.1.2,<2.0.0)
