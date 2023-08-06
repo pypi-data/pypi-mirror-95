@@ -1,0 +1,6 @@
+flask
+lxml
+pillow
+
+[test]
+pytest
