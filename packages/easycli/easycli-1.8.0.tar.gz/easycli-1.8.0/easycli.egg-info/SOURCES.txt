@@ -1,0 +1,14 @@
+README.md
+setup.py
+easycli/__init__.py
+easycli/argument.py
+easycli/colors.py
+easycli/command.py
+easycli/completion.py
+easycli/progressbar.py
+easycli/root.py
+easycli.egg-info/PKG-INFO
+easycli.egg-info/SOURCES.txt
+easycli.egg-info/dependency_links.txt
+easycli.egg-info/requires.txt
+easycli.egg-info/top_level.txt
