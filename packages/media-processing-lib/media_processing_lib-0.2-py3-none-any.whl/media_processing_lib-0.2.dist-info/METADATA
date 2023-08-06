@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: media-processing-lib
+Version: 0.2
+Summary: Generic media processing lib high level library
+Home-page: https://gitlab.com/mihaicristianpirvu/media-processing-lib/
+Author: Mihai Cristian Pîrvu
+Author-email: mihaicristianpirvu@gmail.com
+License: WTFPL
+Keywords: audio,video,images,media,high level api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: imageio
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: scikit-image
+Requires-Dist: opencv-python
+Requires-Dist: pims
+Requires-Dist: lycon
+Requires-Dist: librosa
+Requires-Dist: ffmpeg-python
+
+# Media Processing Lib
+
+Python library to standardize reading/writing and operations using various python compatible libraries.
+
+Basically: https://xkcd.com/927/
+
