@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: jarvis-sdk
+Version: 1.1.8
+Summary: JARVIS SDK Python Package
+Home-page: https://www.fashiondata.io/
+Author: Fashiondata Team
+Author-email: contact@fashiondata.io
+License: GPLv3
+Keywords: pip,fashiondata
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: firebase (>=3.0.1)
+Requires-Dist: pycryptodome (>=1.6.0)
+Requires-Dist: python-jwt
+Requires-Dist: gcloud
+Requires-Dist: sseclient
+Requires-Dist: networkx
+Requires-Dist: requests-toolbelt
+Requires-Dist: google.auth
+Requires-Dist: semver (>=2.10.2)
+Requires-Dist: Jinja2 (>=2.11.2)
+Requires-Dist: google-cloud-bigquery (>=1.25.0)
+Requires-Dist: google-cloud-firestore (>=1.8.1)
+Requires-Dist: pkg-info (>=0.1.2)
+Requires-Dist: chardet (>=3.0.4)
+
+# Jarvis SDK by Fashiondata.io
+
+## Changelog
+
+### Release 1.1.8 : 2021-02-16
+
+* Added --context flag to specify which context to use.
+* Added --no-launch flag to skip the DAG launch question asked to the user.
+### Release 1.1.7 : 2021-02-03
+
+* All configuration types : the flag direct_execution is added and to true automatically if not present.
+* All configuration type : added context management.
+* TTT : added enhanced SQL parameters management.
+* TTT : added GBQ Script support.
+* TTT : added "use_query_cache" flag for "sql" task type.
+* TTT : added "temporary_table" flag for "sql" task type.
+* TTT : added enhanced information context for "sql" task type.
+* Global : bugfix
+### Release 1.1.6 : 2020-11-24
+
+* TTT : fixed an issue linked to partitioned table creation for direct execution mode.
+* TTT : fixed "--sql-execution-date" parameter usage.
+* Minor fixes
+### Release 1.1.5 : 2020-11-04
+
+* TTT : the DAG can be deployed in direct execution mode.
+* TTT : the user is asked if he wants to execute teh DAG upon successful upload.
+* TTT : the user is not asked for the project profile. The configuration attribute "default_gcp_project_id" is used automatically.
+* Updated "setup.py"
+* Added file encoding verification upon reading. Everything will be converted to UTF-8
+* Added specific Google Drive scope to generated DAG to allow Google Sheet as GBQ source
+* When a "workflow" type configuration is uploaded, the latest workflow status (if it exists) is deleted.
+* The used is asked if he wants to deploy associated cloud functions upon STS and STT deployment.
+* STT : DDL infos can be processed using different methods
+
+### Release 1.1.4 : 2020-07-03
+
+* Added Notification upon Jarvis SDK new release on PyPi
+* TTT : added "client_type" and "client_version" to the stored configuration
+
+### Release 1.1.3 : 2020-06-18
+
+* TTT : fixed another regression on function call.
+
+### Release 1.1.2 : 2020-06-18
+
+* TTT : fixed a regression impacting SQL type tasks.
+
+### Release 1.1.1 : 2020-05-18
+
+* Added support for ZSH under Max OS X
+* TTT : Added task status
+* TTT : added special check for tasks declared in "task_dependencies" but not in "workflow"
+* TTT : check if task IDs are named properly
+* TTT : You can run tasks locally with : jarvis configuration run YOUR-CONF.json [task1 task2 .... taskN]
+* Project Profiles list is now sorted
+
+### Release 1.1.0 : 2020-02-19
+
+* Added TTT DAG file checking upon deployment. The user must validate if he wants to overwrite TTT DAG.
+* Removed Project selection validation.
+
+### Release 1.0.1 : 2020-02-10
+
+* Fixed seek() error on file read
+
+### Release 0.0.16 : 2020-01-10
+
+* Removed ASCII art
+* Storage-to-tables : check for JSON syntax for DDL files as well
+
+### Release 0.0.15 : 2019-xx-xx
+
+* Table-To-Table : GBQ table schema will be preserved upon WRITE_TRUNCATE
+* Minor fixes
+
+
+### Release 0.0.14 : 2019-11-26
+
+* Table-To-Table : added nested RECORD fields support for Bigquery table creation.
+
+
+### Release 0.0.13 : 2019-11-15
+
+* Storage-To-Tables : "jarvis create configuration" support
+
+
+### Release 0.0.12 : 2019-11-04
+
+* Added Storage-To-Tables configuration support.
+* Table To Table (gbq to gbq) : "create_gbq_table" tasks will now use an external DDL file to describe the table schema.
+
+
+### Release 0.0.11 : 2019-10-23
+
+* Table To Table (gbq to gbq) configuration will now use "configuration_type" and "configuration_id".
+* Table To Table (gbq to gbq) configuration DOES NOT need "dag_name" parameter anymore.
+* Storage To Storage configuration accepts "gcp_project_id" in the "source" section if the "source_type" is "gcs".
+
+
+### Release 0.0.10 : 2019-09-20
+
+* Added auto creation of ".bash_profile" for Max OS X
+* Added password double check upon user creation
+* Added SQL file path management for "table-to-storage" deploy command
+* Added : jarvis create configuration CONFIGURATION_TYPE command
+* Added : jarvis check configuration CONFIG.json command
+* Added : project profiles management
+
+
+
