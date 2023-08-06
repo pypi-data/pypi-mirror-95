@@ -1,0 +1,14 @@
+README.md
+setup.py
+sdk_dados_abertos_camara/__init__.py
+sdk_dados_abertos_camara/api.py
+sdk_dados_abertos_camara/endpoints.py
+sdk_dados_abertos_camara/exceptions.py
+sdk_dados_abertos_camara/models.py
+sdk_dados_abertos_camara.egg-info/PKG-INFO
+sdk_dados_abertos_camara.egg-info/SOURCES.txt
+sdk_dados_abertos_camara.egg-info/dependency_links.txt
+sdk_dados_abertos_camara.egg-info/requires.txt
+sdk_dados_abertos_camara.egg-info/top_level.txt
+tests/__init__.py
+tests/test_models.py
