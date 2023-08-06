@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+fuzzysets/__init__.py
+fuzzysets/plot.py
+fuzzysets/tfn.py
+fuzzysets/utils.py
+fuzzysets.egg-info/PKG-INFO
+fuzzysets.egg-info/SOURCES.txt
+fuzzysets.egg-info/dependency_links.txt
+fuzzysets.egg-info/top_level.txt
+fuzzysets/sets/__init__.py
+fuzzysets/sets/base.py
+fuzzysets/sets/continuous.py
+fuzzysets/sets/finite.py
