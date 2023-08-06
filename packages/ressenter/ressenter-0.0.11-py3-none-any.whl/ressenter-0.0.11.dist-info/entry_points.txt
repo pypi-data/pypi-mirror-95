@@ -1,0 +1,3 @@
+[console_scripts]
+ressenter = ressenter.cli:cli
+
