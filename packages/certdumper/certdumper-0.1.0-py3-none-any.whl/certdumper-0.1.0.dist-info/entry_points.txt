@@ -1,0 +1,3 @@
+[console_scripts]
+certdumper=certdumper.cli:app
+

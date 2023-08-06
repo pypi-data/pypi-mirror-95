@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: certdumper
+Version: 0.1.0
+Summary: 
+Author: Mateusz Klos
+Author-email: novopl@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: flex-config (>=2.0.0,<3.0.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Requires-Dist: watchdog (>=1.0.2,<2.0.0)
