@@ -1,0 +1,3 @@
+[console_scripts]
+opflowlab = OpFlowLab.OpFlowLab_GUI:main
+
