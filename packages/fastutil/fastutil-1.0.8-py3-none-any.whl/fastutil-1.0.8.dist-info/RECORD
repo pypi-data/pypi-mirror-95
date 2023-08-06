@@ -1,0 +1,9 @@
+fastutil/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_main.py,sha256=QYtMsU8h2XuUQVvBimsdorGIbxz8FD1kSMCsgcPQKgU,1970
+fastutil-1.0.8.dist-info/LICENSE,sha256=MtLM5z6itns7V7hhPQPUYemy5weTaiNB5LeDM4opHKI,1542
+fastutil-1.0.8.dist-info/METADATA,sha256=hD4LCW2hcyTWR4JtQo0-IMYgRWzSXXoN2nWYWMg89sc,529
+fastutil-1.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastutil-1.0.8.dist-info/entry_points.txt,sha256=S8xzvjynXcG0r5ZmfAwV8f8X2Fla3ERFfbPAYHfSUZA,306
+fastutil-1.0.8.dist-info/top_level.txt,sha256=4vIQdAlxIkWQMXhfVrtQlEik8eD2YthftXvQpOLrfEQ,14
+fastutil-1.0.8.dist-info/RECORD,,
