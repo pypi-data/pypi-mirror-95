@@ -1,0 +1,8 @@
+opentelemetry-api==1.0.0rc1
+opentelemetry-instrumentation==0.18b0
+wrapt<2.0.0,>=1.0.0
+elasticsearch>=2.0
+
+[test]
+opentelemetry-test==0.18b0
+elasticsearch-dsl>=2.0
