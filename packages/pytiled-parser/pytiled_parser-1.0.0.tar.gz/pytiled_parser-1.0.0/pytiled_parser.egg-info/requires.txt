@@ -1,0 +1,17 @@
+attrs
+typing-extensions
+
+[build]
+pep517
+
+[dev]
+pytest
+pytest-cov
+black
+pylint
+mypy
+isort<5,>=4.2.5
+
+[docs]
+sphinx
+sphinx_rtd_theme
