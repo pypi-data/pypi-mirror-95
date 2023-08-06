@@ -1,0 +1,19 @@
+!MyEncoder
+metas:
+  name: myenc  # a customized name
+  workspace: $HW_WORKDIR
+  py_modules:
+    - components.py
+requests:
+  on:
+    [IndexRequest, SearchRequest]:
+      - !Blob2PngURI
+        with:
+          height: 28
+          width: 28
+      - !EncodeDriver {}
+      - !ExcludeQL
+        with:
+          fields:
+            - buffer
+            - chunks
