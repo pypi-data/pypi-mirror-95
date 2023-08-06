@@ -1,0 +1,5 @@
+dbnd==0.34.2
+luigi
+
+[test]
+docutils
