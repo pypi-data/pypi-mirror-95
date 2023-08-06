@@ -1,0 +1,66 @@
+description: Reader for txt files according SMHI:s LIMS format
+name: phyche_lims
+data_type: physicalchemical
+reader: !!python/name:sharkvalidator.readers.phyche.PhysicalChemicalLIMSReader ''
+elements:
+    # element_specifier: can be a file_name, excel sheet_name or perhaps something else?
+    # key_values below are considered standard archive structure
+    delivery_note:
+        element_specifier: "delivery_note.txt"
+        encoding: "cp1252"
+        dtype: !!python/str
+        keep_default_na: false
+    data:
+        element_specifier: "data.txt"
+        header: 0
+        sep: "\t"
+        encoding: "cp1252"
+        dtype: !!python/str
+        keep_default_na: false
+    analyse_info:
+        element_specifier: "analyse_info.txt"
+        header: 0
+        sep: "\t"
+        encoding: "cp1252"
+        dtype: !!python/str
+        keep_default_na: false
+    sampling_info:
+        element_specifier: "sampling_info.txt"
+        header: 0
+        sep: "\t"
+        encoding: "cp1252"
+        dtype: !!python/str
+        keep_default_na: false
+
+data_columns:
+    - AL
+    - ALKY
+    - AMON
+    - CDOM
+    - CNDC_25
+    - CNDC_CTD
+    - CPHL
+    - DOC
+    - DOXY_BTL
+    - DOXY_CTD
+    - H2S
+    - HUMUS
+    - NTOT
+    - NTRA
+    - NTRI
+    - NTRZ
+    - PH
+    - PH_LAB
+    - PH_LAB_TEMP
+    - PHOS
+    - POC
+    - PON
+    - PRES_CTD
+    - PTOT
+    - SALT_BTL
+    - SALT_CTD
+    - SECCHI
+    - SIO3-SI
+    - TEMP_BTL
+    - TEMP_CTD
+    - TOC
