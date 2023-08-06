@@ -1,0 +1,8 @@
+conversational_sentence_encoder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conversational_sentence_encoder/definitions.py,sha256=JPb2ho7R4E6KFsPC9h62X96OrUSCLOcJFzKV9gtAY40,217
+conversational_sentence_encoder/vectorizers.py,sha256=aPL0JSv49zBhSVxhbcGrlwUsRLLrUuevFhUTMnNyfzA,4239
+conversational_sentence_encoder-0.0.5.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+conversational_sentence_encoder-0.0.5.dist-info/METADATA,sha256=NUm_YqQ6idxrd2XpFudY8NZmfE4eC40SIOCTQ9hIRSU,7668
+conversational_sentence_encoder-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+conversational_sentence_encoder-0.0.5.dist-info/top_level.txt,sha256=yGpdbuxwtNOof-Shypi-C4DlP1bcSN6bFymg5ym9Dmk,32
+conversational_sentence_encoder-0.0.5.dist-info/RECORD,,
