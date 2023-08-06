@@ -1,0 +1,16 @@
+jarvis/Colors.py,sha256=Y9B1sJFaHcOLqcT2uzeBtlGFUKe3f2NhkpGlnt44HSQ,701
+jarvis/Config.py,sha256=K5ItEkdh-TqGNZoc4sAD3qh94uCRZ63tpM7ayPkn6LE,1120
+jarvis/Database.py,sha256=trIvHJuryk7f-KSn6Ixha_bVGDlwlZyGBFWRfZHUXjg,3679
+jarvis/Exiter.py,sha256=_TnWdYB5sy5s_j67LD0_zviQWnm2AxE0t6gpMiAOGVk,752
+jarvis/Jarvis.py,sha256=qChQj0xPB16plZtDKH-PJFJjl6_M52WMWDAqueZkuAw,3477
+jarvis/Logger.py,sha256=g8V7rg1ACgyrWRUuYKV0l3j52OqwUBH9p1AOkFVofwQ,2996
+jarvis/MQTT.py,sha256=KcJLipAM8GLm8rFvXp2JLhkuf2s0-qF3ro7BZ25H2Wo,1269
+jarvis/Mime.py,sha256=rrJzssXSEa_Es8Stdjt-3Uf2gCVDIXPKHIKnIUjnik4,43270
+jarvis/SetupTools.py,sha256=2-jSYpl8h8EvQpmGmrtBcfqUbmMesuEQsrvcpj5W04A,2075
+jarvis/__init__.py,sha256=vP0H87-zQgBUzK3jy091M5OKznbp9YhF2CKTzeY9m1E,230
+jarvis/test.py,sha256=zH9YKEPBM7ACeysu0vRuy99fI8CQ8A2BZ7S9ZX69WPI,212
+open_jarvis-0.0.35.dist-info/LICENSE,sha256=P71WgCPXhoC4ERFYCOJVp4kqnK3GLq6f5j1SayRZccA,1090
+open_jarvis-0.0.35.dist-info/METADATA,sha256=DQC8UHJH2GQtQHh2dtqbiVDZ0b1R1TsyWk-NlzsMxxU,5135
+open_jarvis-0.0.35.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+open_jarvis-0.0.35.dist-info/top_level.txt,sha256=1BOxyWfzOP_ZXj8rVTDnNCJ92bBGB0rwq8N1PCpoMIs,7
+open_jarvis-0.0.35.dist-info/RECORD,,
