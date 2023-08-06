@@ -1,0 +1,8 @@
+setup.py
+dcoderio/IO.py
+dcoderio/__init__.py
+dcoderio.egg-info/PKG-INFO
+dcoderio.egg-info/SOURCES.txt
+dcoderio.egg-info/dependency_links.txt
+dcoderio.egg-info/not-zip-safe
+dcoderio.egg-info/top_level.txt
