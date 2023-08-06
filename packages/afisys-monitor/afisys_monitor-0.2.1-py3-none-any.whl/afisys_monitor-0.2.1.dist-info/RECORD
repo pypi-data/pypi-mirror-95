@@ -1,0 +1,17 @@
+afisys_monitor/__init__.py,sha256=fQhNir1EMzQe0KEXbi0PCXqAiHxuLsXbtmob4CmZth4,421
+afisys_monitor/__main__.py,sha256=BK56vRQ-13VXtu6KW8Wjhza3yI2g7W-sP07uLrlvmEk,99
+afisys_monitor/interfaces.py,sha256=F_Edybc5QuT6yH9R38meRxFk9iCIqxTCJCtx-84s-ks,346
+afisys_monitor/ip.py,sha256=w2feILaa04Qv0Yjqz75Amvnx5C4vgQPgTdj_RBPVs4o,1260
+afisys_monitor/leases.py,sha256=uj7d67PPKNgs4FpmB5XMoxlVCxA9g4wMb7vgmX-9wq8,735
+afisys_monitor/lxc.py,sha256=tMfmG2SCvFC6T53-Wb7cuk77jZTQAnHvv-oWvklON4U,4774
+afisys_monitor/lxd.py,sha256=MGvhSzlCDb03W02qztZW7ybjmDxGZFK9KzH3-ZPggkw,1131
+afisys_monitor/module.py,sha256=Zoab9xISRjAVEH8WpT0OryGyAXgDr8yU8A0MVC_GMUY,520
+afisys_monitor/monitor.py,sha256=QSkonhlVfo3DGnBBcmMdlT2nvkJSG97EWUwZCbVBX6I,3352
+afisys_monitor/resolve.py,sha256=KvQ_g2n2RYqz5DORM13zMieQ7Q21CZNXoNrHFMg11Gc,350
+afisys_monitor/routes.py,sha256=0kZ0-im33TDyzW0yw3uToYHHgMpocj8aqJnqLFbICZk,894
+afisys_monitor/sensors.py,sha256=ZbXwc3LmOv4acmMjcQU95bJrsXEgfkLRTr_-Gwa5wv0,956
+afisys_monitor-0.2.1.dist-info/entry_points.txt,sha256=FHrPct8j1YxME5KEYo2rDo0Cc1KvGv8qvwb0JouQ_HM,54
+afisys_monitor-0.2.1.dist-info/LICENSE,sha256=6vYb6gh6AQ1zZHqeQszCjT7GZMtQyBnTIzLjg6fOaag,1073
+afisys_monitor-0.2.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+afisys_monitor-0.2.1.dist-info/METADATA,sha256=oS76xONDebFnA8ZCdLYwury7l4gQS82QXBzm41NfHlg,593
+afisys_monitor-0.2.1.dist-info/RECORD,,

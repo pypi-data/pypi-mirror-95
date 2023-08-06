@@ -1,0 +1,3 @@
+[console_scripts]
+afisys-monitor=afisys_monitor:main
+
