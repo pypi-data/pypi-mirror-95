@@ -1,0 +1,14 @@
+avogadro/AvogadroCore.dll,sha256=gTneNIrquGwGsU29J7mNtF9SANdbB2RKMZBD16jiARA,928768
+avogadro/AvogadroCore.lib,sha256=aWmv7XzfiaqA3ttDmFvF0h8Wp-X8kWmVd4EgSwGPq_c,284504
+avogadro/AvogadroIO.dll,sha256=ugoxx1ES2tq_nctAxpfRFIh0w3SwacYxHSrG6LqJH4w,442880
+avogadro/AvogadroIO.lib,sha256=cZA_Natape5Z6Zv9xh-83wfyCp4ixqpQYH6SdXzPGHw,144632
+avogadro/AvogadroQuantumIO.dll,sha256=qrOYJeZfRZHh1VuPWlbOS0o6yKd-y_hd39YP3eFZbyo,267776
+avogadro/AvogadroQuantumIO.lib,sha256=6uEPY-r_U0guxnQzHLdfjwu2Rf4BN0cqpihM76GuYCM,88304
+avogadro/__init__.py,sha256=XNudqeC6seyS9zJusYlJi-1dsTjv3QQpw133e5J9XXs,38
+avogadro/core.cp37-win_amd64.pyd,sha256=l7o_cwOUGeaFKb_dY_V3JMja3Emn9qU2QR7LzVw0zQ0,167424
+avogadro/io.cp37-win_amd64.pyd,sha256=kGx3zaafUB-8wbYJcfPMTYjYA53XvZVUeGxaOrD0iic,144896
+avogadro-1.93.1.dist-info/LICENSE,sha256=z-ftiwv6m2O3nsuU9iiOndF_AG-aFUCkPgNYWLMIPHo,1536
+avogadro-1.93.1.dist-info/METADATA,sha256=McLxl6FifLYPEFQDMjj0_kjgPpE1sAif92xmD8nVD5o,964
+avogadro-1.93.1.dist-info/WHEEL,sha256=WhO318o7DGV1k2ihq4nQ2Ee_IYhXEU8yKTjfj2LrX1Q,95
+avogadro-1.93.1.dist-info/top_level.txt,sha256=1zfhhEmxzchlNR3jxqJeD5yCgfOzTH-mqEx0lrrvOTA,9
+avogadro-1.93.1.dist-info/RECORD,,
