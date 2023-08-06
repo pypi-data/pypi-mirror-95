@@ -1,0 +1,17 @@
+tankobon/__init__.py,sha256=kwqoxiRldo2YCitAriLh_j8s3Jg1ilSkJow6Gs6NX3k,123
+tankobon/__main__.py,sha256=Iu7QSPOJ99wY64lID5LY1J1H45Uk0N-ZbvD7L1h5yzE,72
+tankobon/__version__.py,sha256=v0p847a2x4koPho25ThvO-Uz5qSeblOF5cNaO3LeeZA,40
+tankobon/cli.py,sha256=WnIObx0AGWxxcOMq8RpR2VXRWZOb1O8YePahC2rilzM,1896
+tankobon/manga.py,sha256=r9ofguWKxarD_eHd6RIewYbHbIah2LzKEQ6SMgvGKM0,9370
+tankobon/parsers.py,sha256=3C6XcpcJFOY7pNRE_q_qSelT-1x3GkfWHL2XbKB0Mho,3858
+tankobon/utils.py,sha256=kD3LZvChluNIQV-1xrLND_b07MyGPnVWNNI4_ZxLjWg,3834
+tankobon/_parsers/__init__.py,sha256=i0l7NkB0LrM7nGA3_Su_ES5THBcoW4zJMg2gKvJT1xY,15
+tankobon/_parsers/komi_san.py,sha256=9DhCJrU4S__fVE9jzRRe3ZVwzrHm2b0IMaaCNCVy9BA,1345
+tankobon/_parsers/mangabat.py,sha256=4TlI2RBkYE66wuq-dDUjZmQjnXbAjtog8xLK0_6Hkio,859
+tankobon/_parsers/mangadex.py,sha256=Z8LbyRhzeLrT0ML5zFMoJxVpjVNJguqtetzTvPVUiHo,1974
+tankobon/_parsers/mangakakalot.py,sha256=sYLtAwzDsNVfaTmKWvgLJTK5k5MLk8njU80SkYpYhtk,738
+tankobon-5.0.0b0.dist-info/entry_points.txt,sha256=vSyqM_9I8_LPxSMyXgOuYg2-0ddEter5Qalke_ZOyJk,45
+tankobon-5.0.0b0.dist-info/LICENSE,sha256=Xw2jB2_o76f0hh2_d2Vky6gXUkmeJp79o9LeoJ513GU,1079
+tankobon-5.0.0b0.dist-info/WHEEL,sha256=CqyTrkghQBNsEzLD3HbCSEIJ_fY58-XpoU29dUzwHSk,81
+tankobon-5.0.0b0.dist-info/METADATA,sha256=qhH0gRZUIq2hxUwn1dSHP0xzT0F-fUhNq41f__Me840,4224
+tankobon-5.0.0b0.dist-info/RECORD,,
