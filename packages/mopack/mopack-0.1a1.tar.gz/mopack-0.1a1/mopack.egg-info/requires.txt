@@ -1,0 +1,16 @@
+colorama
+pyparsing
+pyyaml
+setuptools
+
+[dev]
+bfg9000
+conan
+coverage
+flake8>=3.6
+
+[test]
+bfg9000
+conan
+coverage
+flake8>=3.6
