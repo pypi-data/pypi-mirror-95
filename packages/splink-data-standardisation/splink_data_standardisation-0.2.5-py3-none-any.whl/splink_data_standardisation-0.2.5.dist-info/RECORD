@@ -1,0 +1,11 @@
+splink_data_standardisation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splink_data_standardisation/arrays.py,sha256=BFV5e43DkDfrpvvBDInc1kaC1YNBG-hnGrXFFrLxa3g,2040
+splink_data_standardisation/date_of_birth.py,sha256=U0RpAYbpiBxvDFpcQMQ6M5Hs6K4qFzl62tNU__WH7Co,1982
+splink_data_standardisation/fix_string.py,sha256=gJzwR1bXOjm6ovCxi4tc6YOkz6alqA6OHg3_tu8kscs,1224
+splink_data_standardisation/freq.py,sha256=9aSuVzk5y32re0aCYNVp9GS5CPUj2SRLg9qKM2hP6wg,1593
+splink_data_standardisation/names.py,sha256=IvSwFCtISlfzu8MrrXWNubmujT-DEIFxgdncqFs_kps,1885
+splink_data_standardisation/postcode.py,sha256=uTPVzcJvJQlizdBnnidpry-KlKzs3KxqyhV7VxeyzYY,1370
+splink_data_standardisation/remove_anomalies.py,sha256=0V2n0zQZERaH0sWM4BbJMySlFRJtXwOBZFenpJY8djg,3173
+splink_data_standardisation-0.2.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+splink_data_standardisation-0.2.5.dist-info/METADATA,sha256=jco44HOUtIYd3_X3CVBevNvnS23Mhz5e8Jg7o-Md0Tc,494
+splink_data_standardisation-0.2.5.dist-info/RECORD,,
