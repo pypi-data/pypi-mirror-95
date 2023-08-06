@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: caffeination
+Version: 0.1
+Summary: Caffeination makes sure your computer does not go to sleep.
+Home-page: https://github.com/neisor/caffeination
+Author: Antonio Raffaele Iannaccone
+Author-email: antonio.iannaccone7@gmail.com
+License: MIT
+Download-URL: https://github.com/neisor/caffeination/releases/download/Caffeination0.1/caffeination-0.1.tar.gz
+Keywords: caffeination,caffe,caffeine,sleep preventer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyautogui
+
+Caffeination is a sleep preventer created purely in Python3.
+
+You can install by runnig:
+pip3 install caffeination
+
+You can use it by running:
+caffeination [seconds]
+
+For printing the manual you can run:
+caffeination --help
+
+
