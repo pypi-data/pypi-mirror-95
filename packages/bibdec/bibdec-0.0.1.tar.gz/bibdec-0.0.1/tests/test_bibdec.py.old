@@ -1,0 +1,122 @@
+from functools import partial
+from string import ascii_letters
+from textwrap import dedent
+from typing import Dict, List, NamedTuple
+
+from numpy.random import randint, binomial
+import pytest
+from hypothesis import given, strategies
+
+
+
+def bernoulli(p):
+    """Return True with probability p.
+    """
+    return binomial(1, p)
+
+
+word_strategy = strategies.text(alphabet=ascii_letters, min_size=1, max_size=9)
+key_strategy = strategies.text(
+    alphabet=(ascii_letters + ":.-_"), min_size=3, max_size=15
+)
+year_strategy = strategies.integers(min_value=1900, max_value=2019)
+
+
+@partial(strategies.builds, num_names=strategies.integers(min_value=2, max_value=3))
+def name_strategy(num_names: int = None):
+    """Hypothesis strategy for a random name.
+    """
+    names = [word_strategy.example() for _ in range(self.num_names)]
+    return " ".join(names).title()
+
+
+@partial(strategies.builds, num_authors=strategies.integers(min_value=1, max_value=5))
+def authors_strategy(num_authors):
+    """Hypothesis strategy for a collection of random names.
+    """
+    names = [name_strategy.example() for _ in range(num_authors)]
+    return '"' + " and ".join(names) + '"'
+
+
+@partial(strategies.builds, words=strategies.integers(min_value=3, max_value=9))
+def title_strategy(num_words):
+    """Hypothesis strategy for a journal or book title.
+    """
+    title = " ".join(word_strategy.example() for _ in range(num_words)).capitalize()
+    return '"' + title + '"'
+
+
+@partial(strategies.builds, words=strategies.integers(min_value=1, max_value=5))
+def journal_strategy(num_words):
+    """Hypothesis strategy for a random journal name.
+    """
+    title = " ".join(word_strategy.example() for _ in range(num_words)).capitalize()
+    return '"' + title + '"'
+
+
+def generate_bibtex_entry(bib_type, bib_key, bibtex_specification):
+    entry = f"@{bib_type}{{{bib_key}"  # Becomes @bib_type{bib_key
+    for key, field in bibtex_specification.items():
+        field += f"\n    {key}={entry},"
+    entry = entry[:-1]
+    entry += "\n}"
+    return entry
+
+
+def generate_bibtex_strategy(bibtex_specification):
+    return strategies.builds(
+        generate_bibtex_entry,
+        bib_type=bib_type,
+        bibtex_key=key_strategy,
+        bibtex_specification=bibtex_specification
+    )
+
+
+article_strategy = strategies.builds(
+    partial(generate_bibtex_entry, bib_type="article"),
+    bib_key=word_strategy,
+    bibtex_specification=strategies.fixed_dictionaries({
+        "title": title_strategy,
+        "author": authors_strategy,
+        "journal": journal_strategy,
+        "year": year_strategy
+    })
+)
+
+
+book_strategy = generate_bibtex_strategy(
+    partial(generate_bibtex_entry, bib_type="book"),
+    bib_key=word_strategy,
+    bibtex_specification=strategies.fixed_dictionaries({
+        "title": title_strategy,
+        "author": authors_strategy,
+        "publisher": journal_strategy,
+        "editor": authors_strategy,
+        "year": year_strategy,
+    })
+)
+
+
+inproceedings_strategy = generate_bibtex_strategy(
+    generate_bibtex_entry,
+    bib_type="inproceedings",
+    bib_key=word_strategy,
+    bibtex_specification=strategies.fixed_dictionaries({
+        "title": title_strategy,
+        "author": authors_strategy,
+        "booktitle": title_strategy,
+        "year": year_strategy
+    })
+)
+
+
+
+class BibtexGenerator:
+    inproceedings = ""
+
+    def __init__(self, kind=None):
+        """
+        Generate a bibtex 
+        """
+
+        pass
