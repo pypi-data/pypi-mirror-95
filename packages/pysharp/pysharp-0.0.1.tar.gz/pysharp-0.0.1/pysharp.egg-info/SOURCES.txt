@@ -1,0 +1,7 @@
+README.md
+setup.py
+pysharp.egg-info/PKG-INFO
+pysharp.egg-info/SOURCES.txt
+pysharp.egg-info/dependency_links.txt
+pysharp.egg-info/not-zip-safe
+pysharp.egg-info/top_level.txt
