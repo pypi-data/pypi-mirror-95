@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ruuid
+Version: 0.2.0
+Summary: A fast UUID generator for Python using Rust
+Keywords: uuid hash
+Author: unrahul <rahulunair@gmail.com>
+Author-Email: unrahul <rahulunair@gmail.com>
+License: BSD-3-Clause
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+## ruuid
+
+A fast UUID generator for Python built using Rust. Its a simple wrapper on top
+of Rust's UUID library.
+
+
+### How to use?
+
+#### Installation:
+
+
+```bash
+pip install ruuid
+```
+
+#### Usage:
+
+```bash
+import ruuid
+ruuid.uuid4()
+
+'7a1ef475-904c-4d53-8985-528d09d57414'
+```
+
+
+
