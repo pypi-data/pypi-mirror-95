@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jruntime
+Version: 0.1.1
+Summary: J Language Runtime
+Home-page: https://github.com/zhihaoy/jsource
+Author: Zhihao Yuan
+Author-email: zy@simplerose.com
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+
+UNKNOWN
+
+
