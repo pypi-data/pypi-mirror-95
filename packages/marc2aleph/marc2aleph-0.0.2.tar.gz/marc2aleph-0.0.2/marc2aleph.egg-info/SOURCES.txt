@@ -1,0 +1,8 @@
+README.md
+setup.py
+marc2aleph/__init__.py
+marc2aleph/marc.py
+marc2aleph.egg-info/PKG-INFO
+marc2aleph.egg-info/SOURCES.txt
+marc2aleph.egg-info/dependency_links.txt
+marc2aleph.egg-info/top_level.txt
