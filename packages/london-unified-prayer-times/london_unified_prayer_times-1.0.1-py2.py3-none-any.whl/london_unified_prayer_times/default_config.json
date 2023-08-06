@@ -1,0 +1,34 @@
+{
+	"times": [
+		"fajrbegins", "fajrjamāah",
+		"sunrise",
+                "zuhrbegins", "zuhrjamāah",
+                "asrmithl1", "asrmithl2", "asrjamāah",
+                "maghribbegins", "maghribjamāah",
+                "ishābegins", "ishājamāah"],
+	"pm_times": [
+		"asrmithl1", "asrmithl2", "asrjamāah",
+                "maghribbegins", "maghribjamāah",
+                "ishābegins", "ishājamāah"],
+	"ambigious_times": [
+		"zuhrbegins", "zuhrjamāah"],
+	"ambigious_threshold": 4,
+ 	"timezone": "Europe/London",
+	"default_times": [
+		"fajrbegins", 
+		"sunrise",
+                "zuhrbegins",
+                "asrmithl1",
+                "maghribbegins",
+                "ishābegins"],
+	"default_replace_strings": [
+		["begins", ""],
+		["mithl1", ""],
+		["jamāah", " jamāah"]],
+	"json_data_path": ["data"],
+	"json_gregorian_date": "gregoriandate",
+	"json_islamic_day": "islamicday",
+	"json_islamic_month": "islamicmonth",
+	"json_islamic_year": "islamicyear",
+	"cache_expiry": 2
+}
