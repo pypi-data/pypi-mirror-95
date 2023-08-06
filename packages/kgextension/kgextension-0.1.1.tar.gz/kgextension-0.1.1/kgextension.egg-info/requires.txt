@@ -1,0 +1,15 @@
+networkx
+numpy
+pandas>=1.1.0
+info_gain
+scikit-learn
+tqdm
+lxml
+requests
+pyspotlight
+fuzzywuzzy
+strsimpy
+rdflib
+deckar01-ratelimit
+SPARQLWrapper
+validators
