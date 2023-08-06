@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sum-04734
+Version: 0.0.1
+Summary: Adding all number given in arguments
+Home-page: https://github.com/hashirsidd
+Author: Muhammad Hashir Siddiqui
+Author-email: hashirsid.1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Hashir Siddiqui
+# Package to add numbers
+
