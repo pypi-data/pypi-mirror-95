@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+fugle_realtime/__init__.py
+fugle_realtime/intraday.py
+fugle_realtime_compatible.egg-info/PKG-INFO
+fugle_realtime_compatible.egg-info/SOURCES.txt
+fugle_realtime_compatible.egg-info/dependency_links.txt
+fugle_realtime_compatible.egg-info/requires.txt
+fugle_realtime_compatible.egg-info/top_level.txt
+tests/__init__.py
+tests/test_fugle_realtime_py.py
+tests/test_intraday.py
