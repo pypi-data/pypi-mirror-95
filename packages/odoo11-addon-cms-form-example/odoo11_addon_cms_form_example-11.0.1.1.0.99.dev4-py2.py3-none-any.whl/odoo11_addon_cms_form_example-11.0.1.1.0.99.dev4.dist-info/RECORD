@@ -1,0 +1,17 @@
+odoo/addons/cms_form_example/README.rst,sha256=9ztgISnqY1kvpi_89MhNlQ90swMh-Iddq89e8RexNrk,1706
+odoo/addons/cms_form_example/__init__.py,sha256=zNT2NvGcEjwQgOVsavkpLiHe242IbOncVY4EC0mqhwk,47
+odoo/addons/cms_form_example/__manifest__.py,sha256=Bt1AYkWrkGD0XZkLU3zQT6RFWaqD9Pb4E6LCKn3Gm5Y,458
+odoo/addons/cms_form_example/controllers/__init__.py,sha256=4KFqEP2QHFbPN66eQJMdGsmNz2v7ywWv_FR1pW_kkLk,19
+odoo/addons/cms_form_example/controllers/main.py,sha256=aiOP2_mzL3WV_klRFgXI2cw_aWA5ME5X-LQISAY5fRg,2681
+odoo/addons/cms_form_example/i18n/ca.po,sha256=CmI6cUm4qSf4k6XfJPlUAX0E5_KwcuyXZK1WMge_zJE,1098
+odoo/addons/cms_form_example/i18n/cms_form_example.pot,sha256=Y_1_Rn2Wbom3w-tLcBeT7_1xhE6FAsrrQvCAXLRW1Lc,889
+odoo/addons/cms_form_example/i18n/es.po,sha256=MqpyxJBELEcy2CV09NNtzGvnfBu45IOAQyRO4b2oy54,1107
+odoo/addons/cms_form_example/models/__init__.py,sha256=ZHzKTFfSpVq36W0hYu-qO1QVE2JnMzRwrmoLSfR9ec4,22
+odoo/addons/cms_form_example/models/partner.py,sha256=N3HbGuHmAGB_8jBG5jCHR-_V74Xs8vlAGckJhK3_Diw,2233
+odoo/addons/cms_form_example/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/cms_form_example/static/src/js/cms_form_example.tour.js,sha256=-mqgtG-3Q_bF4Ct59BKwHew6n0p_APdgmZ_cQNSvIoU,1384
+odoo/addons/cms_form_example/templates/assets.xml,sha256=MMwsDW1sz2xsRiP3ZvhWoqRrayNCOwQUAMoE8bcWCW4,329
+odoo11_addon_cms_form_example-11.0.1.1.0.99.dev4.dist-info/METADATA,sha256=LBiNmq7mdj4qCxxastGWAmIe1sZucgMnJrWN7NLCEg0,2276
+odoo11_addon_cms_form_example-11.0.1.1.0.99.dev4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+odoo11_addon_cms_form_example-11.0.1.1.0.99.dev4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_cms_form_example-11.0.1.1.0.99.dev4.dist-info/RECORD,,
