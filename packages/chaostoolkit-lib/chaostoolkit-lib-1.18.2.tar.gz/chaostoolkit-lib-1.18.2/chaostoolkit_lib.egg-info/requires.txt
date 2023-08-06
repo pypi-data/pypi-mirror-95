@@ -1,0 +1,10 @@
+
+[decoders]
+cchardet>=2.1.4
+chardet>=3.0.4
+
+[jsonpath]
+jsonpath2>=0.2.1
+
+[vault]
+hvac>=0.7.2
