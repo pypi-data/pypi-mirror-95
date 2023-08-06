@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: emphasis
+Version: 0.1
+Summary: Emphatic debug prints
+Home-page: https://github.com/aminuolawale/emphasis
+Author: Aminu Mohammed O.
+Author-email: aminuolawalekan@gmail.com
+License: MIT
+Download-URL: https://github.com/aminuolawale/emphasis/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: print,debug,emphasis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
