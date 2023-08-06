@@ -1,0 +1,8 @@
+setup.py
+pytgcalls/__init__.py
+pytgcalls/group_call.py
+pytgcalls.egg-info/PKG-INFO
+pytgcalls.egg-info/SOURCES.txt
+pytgcalls.egg-info/dependency_links.txt
+pytgcalls.egg-info/requires.txt
+pytgcalls.egg-info/top_level.txt
