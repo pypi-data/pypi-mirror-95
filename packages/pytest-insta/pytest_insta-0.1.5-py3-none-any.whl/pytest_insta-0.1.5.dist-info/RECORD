@@ -1,0 +1,13 @@
+pytest_insta/__init__.py,sha256=HbmJPCfp393mkvCTh3kvlARffSQJhaQPFjDlntnz8fQ,91
+pytest_insta/fixture.py,sha256=q3U8yIu_LVTca2huBJmMt_0xbMp8ISGXElNw2AqZDbA,2392
+pytest_insta/format.py,sha256=YN7wVy7WcN9eDNu76Qo9UcDugfvMO9uKLByaZfUM26g,2416
+pytest_insta/plugin.py,sha256=JLl0TzC0jHlSzGOBAi3c7i_FaUpyeXZopPAMz_vGoFQ,1133
+pytest_insta/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_insta/review.py,sha256=AnjoDyC443jlPWpJVB5uBaNlUXXBe8Y2ldQRlNPKoac,3781
+pytest_insta/session.py,sha256=CLA8MAZdrTMtwGAR_eooPcLk-jcw4c0AD6hbu9Q_jiE,6857
+pytest_insta/utils.py,sha256=kYphGCWgSugEjTsGPELJNvOJ7erba8xs5HyDxGUyl2Y,1716
+pytest_insta-0.1.5.dist-info/entry_points.txt,sha256=sD1RMKvI0XTTBnhqPn9otiLkdQhXWxWFh69X_rX1rLI,38
+pytest_insta-0.1.5.dist-info/LICENSE,sha256=71AZ-oBXSovKxFMoYVEQTw8rpS2hUllt8_xX3cp0kgA,1073
+pytest_insta-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pytest_insta-0.1.5.dist-info/METADATA,sha256=15jOZt0wUJx3_HN1v-2Gil3Y4WaDM9zdp2fMD3V68qY,12460
+pytest_insta-0.1.5.dist-info/RECORD,,
