@@ -1,0 +1,17 @@
+kerykeion/__init__.py,sha256=wBGxuA2DIzZeVVsZx_lVEBWIgmZOsbGTVQEtgqGfSyg,216
+kerykeion/astrocore.py,sha256=BJwbL2DPFwLuFS_Mhpl5r7yR5RvCOmMrcqRxl6K41_g,23925
+kerykeion/geoname.py,sha256=cwPfiNtO4iJeR_OCffQbdRPDzG_-GWjhinSKiiiBBN0,3401
+kerykeion/output_exemple.py,sha256=B76mS6Tgxo98saHx3a6sHHK6aK-h5_1SpSq_JXV8pdE,2590
+kerykeion/synastry.py,sha256=5ye-IiwOQ3opCbgoO_TEOBtfXnlQ0imlY7np3uqszkk,9327
+kerykeion/synastry_old.py,sha256=9Rdvt4eQ7WqmppkijHbTtejhiDjG1A7qTlHCUqzkuDI,6480
+kerykeion/chart_svg/__init__.py,sha256=KTzi9XmbJ0vQWLg8G6tu3jaC7EPigarBSdFeHx__eQM,34
+kerykeion/chart_svg/chart_svg.py,sha256=9uDppxGpG6Iy7IHGPkiyszf0dgi3fw7Sa0PNmh35bXE,43787
+kerykeion/chart_svg/colors.json,sha256=EGSlu3Ea5wWSKYnbalTgtjJCa2cVS22FGPQ7XV1cpqQ,1866
+kerykeion/chart_svg/kerykeionSVG-svg.xml,sha256=7GgV9SdnKHX-p4w1loO_7xwXpmHrGkTUo7wfz1wk7WU,57968
+kerykeion/chart_svg/label.json,sha256=eZz1zN1Zbq9mg6mknEMzR_2IHKUmFZEFh5NmgkJSZYA,410
+kerykeion/chart_svg/settingsAspect.json,sha256=FXm3y1VmpmE9Fls0tSWlEfOeq3N-D-7sVcTKBwT7JUI,1881
+kerykeion/chart_svg/settingsPlanet.json,sha256=_PDcn8j9j168v-LYJAqMm2drlJ8vkIF6LkBSCbeFufA,3011
+kerykeion-1.0.5.dist-info/METADATA,sha256=OXXdZuJTHQfiiNrJ1FR8DG2-U2irazLx8oVjEtGkEnQ,4231
+kerykeion-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kerykeion-1.0.5.dist-info/top_level.txt,sha256=dksQHkHSOqfJo-O1gs0FBHhSHB-2UtVJKgDLgddatOg,10
+kerykeion-1.0.5.dist-info/RECORD,,
