@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+setup.py
+SameBrowser.egg-info/PKG-INFO
+SameBrowser.egg-info/SOURCES.txt
+SameBrowser.egg-info/dependency_links.txt
+SameBrowser.egg-info/top_level.txt
+samebrowser/__init__.py
