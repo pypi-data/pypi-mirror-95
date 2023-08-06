@@ -1,0 +1,9 @@
+trrsheadset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trrsheadset/__main__.py,sha256=eONjN0uyXPvBzNB7zJAA0yR0Q8Fu81p1dn01x6YhDGk,1625
+trrsheadset/controller.py,sha256=p3rrf2GDIQhiPf8vbmy0hcD5-NKKUKP_nKXNPbEx0N4,4645
+trrsheadset/runner.py,sha256=e9h-ZLh-6kMRjqkSqhWtx3XHm2bYRLASrF-S2fUrTjA,5280
+trrsheadset-0.0.1a1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+trrsheadset-0.0.1a1.dist-info/METADATA,sha256=3YZYZBRqVV4DPZbecNR7TF1wrUFPjUuxPKOf9E_Wna0,5103
+trrsheadset-0.0.1a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trrsheadset-0.0.1a1.dist-info/top_level.txt,sha256=z9trl7x63BcJqwTFLeWx9CMJRZq8x8YsX8hpl4xrJOo,12
+trrsheadset-0.0.1a1.dist-info/RECORD,,
