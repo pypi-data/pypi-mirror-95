@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ers
+Version: 1.0.2
+Summary: Wrapper around similarity and substructure searching functionality on enaminestore.com
+Home-page: https://github.com/xchem/enamine-real-search.git
+Author: Rachael Skyner
+Author-email: rachael.skyner@diamond.ac.uk
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests
+
+Wrapper around similarity and substructure searching functionality on enaminestore.com
+
+
