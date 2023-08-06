@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+clubhouse/__init__.py
+clubhouse/clubhouse.py
+clubhouse_py.egg-info/PKG-INFO
+clubhouse_py.egg-info/SOURCES.txt
+clubhouse_py.egg-info/dependency_links.txt
+clubhouse_py.egg-info/requires.txt
+clubhouse_py.egg-info/top_level.txt
