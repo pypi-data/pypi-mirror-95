@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sum-4914
+Version: 0.0.1
+Summary: adding number
+Home-page: https://github.com/Pushkar-Singh-14/
+Author: Zaid Raza
+Author-email: zaidraza22@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+this function takes any number orf values and gives there sum
+
+
