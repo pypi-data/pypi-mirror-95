@@ -1,0 +1,8 @@
+regex
+lxml
+anytree
+markdown
+namedentities
+
+[betacode]
+cltk
