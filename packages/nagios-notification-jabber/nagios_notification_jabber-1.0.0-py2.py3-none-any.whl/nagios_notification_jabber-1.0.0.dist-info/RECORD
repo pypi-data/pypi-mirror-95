@@ -1,0 +1,11 @@
+nagios_notification_jabber-1.0.0.data/data/share/doc/nagios-notification-jabber/AUTHORS,sha256=KjAWpPWPfFnGy2-1kWyDyJtJBJbZCL3V73A3AINAR2w,80
+nagios_notification_jabber-1.0.0.data/data/share/doc/nagios-notification-jabber/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+nagios_notification_jabber-1.0.0.data/data/share/doc/nagios-notification-jabber/README.rst,sha256=CtVd_nRDT-icy49QfI8-iFefWnP0pQZ_F5z_SDOdD1g,4479
+nagios_notification_jabber-1.0.0.data/data/share/doc/nagios-notification-jabber/notification_jabber.ini,sha256=Y76iVXZt7cK9-L-qhPPyaoQgOBiXU10X-BJG5BUA0BM,127
+nagios_notification_jabber-1.0.0.data/scripts/notification_jabber.py,sha256=mqT6e4W4RHz0srcOo82hCR8V2RLKyTzrJzdGhTF2m-0,6233
+nagios_notification_jabber-1.0.0.dist-info/AUTHORS,sha256=KjAWpPWPfFnGy2-1kWyDyJtJBJbZCL3V73A3AINAR2w,80
+nagios_notification_jabber-1.0.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+nagios_notification_jabber-1.0.0.dist-info/METADATA,sha256=c4fXkJtA7Ab7l5fMA2f4_pVv9tWiwV6anKUK6zfYwt8,7546
+nagios_notification_jabber-1.0.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+nagios_notification_jabber-1.0.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nagios_notification_jabber-1.0.0.dist-info/RECORD,,
