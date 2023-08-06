@@ -1,0 +1,7 @@
+pandas
+numpy
+pysolr
+nbsphinx
+textacy
+nltk
+srsly

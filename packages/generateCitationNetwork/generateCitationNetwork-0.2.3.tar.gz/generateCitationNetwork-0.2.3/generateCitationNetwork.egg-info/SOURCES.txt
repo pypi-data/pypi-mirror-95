@@ -1,0 +1,16 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+generateCitationNetwork/__init__.py
+generateCitationNetwork/generateCitationNetwork.py
+generateCitationNetwork/scientificTopics.py
+generateCitationNetwork.egg-info/PKG-INFO
+generateCitationNetwork.egg-info/SOURCES.txt
+generateCitationNetwork.egg-info/dependency_links.txt
+generateCitationNetwork.egg-info/not-zip-safe
+generateCitationNetwork.egg-info/requires.txt
+generateCitationNetwork.egg-info/top_level.txt
