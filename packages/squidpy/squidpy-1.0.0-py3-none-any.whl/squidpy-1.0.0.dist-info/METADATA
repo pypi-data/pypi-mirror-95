@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: squidpy
+Version: 1.0.0
+Summary: Squidpy - Spatial Single Cell Analysis in Python
+Home-page: https://github.com/theislab/squidpy
+Author: Theislab
+Author-email: giovanni.palla@helmholtz-muenchen.de, hannah.spitzer@helmholtz-muenchen.de
+Maintainer: Theislab
+Maintainer-email: giovanni.palla@helmholtz-muenchen.de, hannah.spitzer@helmholtz-muenchen.de
+License: BSD
+Download-URL: https://pypi.org/project/squidpy/
+Project-URL: Documentation, https://squidpy.readthedocs.io/en/latest
+Project-URL: Source Code, https://github.com/theislab/squidpy
+Keywords: bio-informatics,image analysis,single-cell,spatial data analysis,spatial data analysis,spatial transcriptomics
+Platform: Linux
+Platform: MacOSX
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: anndata (>=0.7.4)
+Requires-Dist: dask (>=2.30)
+Requires-Dist: docrep (>=0.3.1)
+Requires-Dist: ipywidgets (>=7.5.1)
+Requires-Dist: omnipath (>=1.0.4)
+Requires-Dist: pandas (>=1.1.4)
+Requires-Dist: rasterio (>=1.1.8)
+Requires-Dist: scanpy[leiden] (>=1.7.0)
+Requires-Dist: scikit-image (>=0.17.1)
+Requires-Dist: statsmodels (>=0.12.0)
+Requires-Dist: tifffile (>=2020.10.1)
+Requires-Dist: tqdm (>=4.50.2)
+Requires-Dist: typing-extensions
+Requires-Dist: xarray (>=0.16.1)
+Requires-Dist: zarr (>=2.6.1)
+Provides-Extra: all
+Requires-Dist: PyQt5 (>=5.15.0) ; extra == 'all'
+Requires-Dist: napari (>=0.4.2) ; extra == 'all'
+Requires-Dist: esda (>=2.3.1) ; extra == 'all'
+Requires-Dist: libpysal (>=4.3.0) ; extra == 'all'
+Requires-Dist: astropy (>=4.1) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pre-commit (>=2.9.0) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: nbsphinx (>=0.8.1) ; extra == 'docs'
+Requires-Dist: pyenchant (>=3.1.1) ; extra == 'docs'
+Requires-Dist: requests ; extra == 'docs'
+Requires-Dist: sphinx (>=3.3.0) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-annotation ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (>=1.10.3) ; extra == 'docs'
+Requires-Dist: sphinx-gallery (>=0.8.2) ; extra == 'docs'
+Requires-Dist: sphinx-last-updated-by-git ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex (>=2.1.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-spelling ; extra == 'docs'
+Provides-Extra: interactive
+Requires-Dist: PyQt5 (>=5.15.0) ; extra == 'interactive'
+Requires-Dist: napari (>=0.4.2) ; extra == 'interactive'
+Provides-Extra: test
+Requires-Dist: tox (>=3.20.1) ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+
+|PyPI| |Downloads| |CI| |Notebooks| |Docs| |Coverage|
+
+Squidpy - Spatial Single Cell Analysis in Python
+================================================
+
+.. image:: https://raw.githubusercontent.com/theislab/squidpy/master/docs/source/_static/img/squidpy_horizontal.png
+    :alt: Logo
+    :width: 400px
+    :align: center
+
+**Squidpy** is a tool for the analysis and visualization of spatial molecular data.
+It builds on top of `scanpy`_ and `anndata`_, from which it inherits modularity and scalability.
+It provides analysis tools that leverages the spatial coordinates of the data, as well as
+tissue images if available.
+
+.. image:: https://raw.githubusercontent.com/theislab/squidpy/master/docs/source/_static/img/figure1.png
+    :alt: Title figure
+    :width: 400px
+    :align: center
+    :target: https://www.biorxiv.org/content/10.1101/2021.02.19.431994v1
+
+Visit our `documentation`_ for installation, tutorials, examples and more.
+
+Manuscript
+----------
+Please see our `preprint`_ on **bioRxiv** to learn more.
+
+Squidpy's key applications
+--------------------------
+- Build and analyze the neighborhood graph from spatial coordinates.
+- Compute spatial statistics for cell-types and genes.
+- Efficiently store, analyze and visualize large tissue images, leveraging `skimage`_.
+- Explore `anndata`_ and the large tissue image in `napari`_.
+
+Installation
+------------
+Install Squidpy via PyPI by running::
+
+    pip install squidpy
+
+Contributing to Squidpy
+-----------------------
+We are happy about any contributions! Before you start, check out our `contributing guide <CONTRIBUTING.rst>`_.
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/squidpy.svg
+    :target: https://img.shields.io/pypi/v/squidpy.svg
+    :alt: PyPI
+
+.. |CI| image:: https://img.shields.io/github/workflow/status/theislab/squidpy/CI/master
+    :target: https://github.com/theislab/squidpy/actions
+    :alt: CI
+
+.. |Notebooks| image:: https://img.shields.io/github/workflow/status/theislab/squidpy_notebooks/CI/master?label=notebooks
+    :target: https://github.com/theislab/squidpy_notebooks/actions
+    :alt: Notebooks CI
+
+.. |Docs| image:: https://img.shields.io/readthedocs/squidpy
+    :target: https://squidpy.readthedocs.io/en/latest/
+    :alt: Documentation
+
+.. |Coverage| image:: https://codecov.io/gh/theislab/squidpy/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/theislab/squidpy
+    :alt: Coverage
+
+.. |Downloads| image:: https://pepy.tech/badge/squidpy
+    :target: https://pepy.tech/project/squidpy
+    :alt: Downloads
+
+.. _preprint: https://www.biorxiv.org/content/10.1101/2021.02.19.431994v1
+.. _scanpy: https://scanpy.readthedocs.io/en/latest/
+.. _anndata: https://anndata.readthedocs.io/en/latest/
+.. _napari: https://napari.org/
+.. _skimage: https://scikit-image.org/
+.. _documentation: https://squidpy.readthedocs.io/en/latest/
+
+
