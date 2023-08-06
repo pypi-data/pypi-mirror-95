@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyDoge-redis/__init__.py
+PyDoge-redis/redis_client.py
+PyDoge_redis.egg-info/PKG-INFO
+PyDoge_redis.egg-info/SOURCES.txt
+PyDoge_redis.egg-info/dependency_links.txt
+PyDoge_redis.egg-info/requires.txt
+PyDoge_redis.egg-info/top_level.txt
