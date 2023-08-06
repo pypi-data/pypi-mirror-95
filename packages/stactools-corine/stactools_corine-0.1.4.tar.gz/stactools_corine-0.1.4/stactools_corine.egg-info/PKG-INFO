@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stactools-corine
+Version: 0.1.4
+Summary: Subpackage for working with CORINE Land Cover data in stactools, a command line tool and Python library for working with STAC.
+Home-page: https://github.com/stac-utils/stactools.git
+Author: stac-utils
+Author-email: stac@radiant.earth
+License: Apache Software License 2.0
+Description: # stactools_corine
+        
+        A subpackage of stactools for working with CORINE data.
+Keywords: stactools,psytac,corine,imagery,landcover,land cover,catalog,STAC
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

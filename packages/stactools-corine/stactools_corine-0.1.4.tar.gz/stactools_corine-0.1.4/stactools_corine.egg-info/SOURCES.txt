@@ -1,0 +1,13 @@
+README.md
+setup.py
+stactools/corine/__init__.py
+stactools/corine/cog.py
+stactools/corine/commands.py
+stactools/corine/constants.py
+stactools/corine/stac.py
+stactools/corine/version.py
+stactools_corine.egg-info/PKG-INFO
+stactools_corine.egg-info/SOURCES.txt
+stactools_corine.egg-info/dependency_links.txt
+stactools_corine.egg-info/requires.txt
+stactools_corine.egg-info/top_level.txt
