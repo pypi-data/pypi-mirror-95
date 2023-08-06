@@ -1,0 +1,9 @@
+click
+pandas
+pytest
+pytest-cov
+spacy>=3.0.0
+tox
+tox-travis
+wasabi
+xlrd
