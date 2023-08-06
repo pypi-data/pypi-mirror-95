@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tgcalls
+Version: 0.0.1
+Summary: A python binding for tgcalls
+Home-page: UNKNOWN
+Author: Il'ya Semyonov
+Author-email: ilya@marshal.by
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+
+UNKNOWN
+
+
