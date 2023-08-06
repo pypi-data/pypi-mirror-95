@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: afisys-monitor
+Version: 0.2.0
+Summary: CLI monitor for various screens
+Author: Anders Johansen
+Author-email: afinvold@fastmail.fm
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: humanfriendly (>=9.1,<10.0)
+Requires-Dist: reprint (>=0.5.2,<0.6.0)
+Requires-Dist: tabulate (>=0.8.7,<0.9.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
