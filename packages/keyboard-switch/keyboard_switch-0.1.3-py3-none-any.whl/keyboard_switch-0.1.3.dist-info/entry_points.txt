@@ -1,0 +1,3 @@
+[console_scripts]
+kbswitch = keyboard_switch.kbswitch:main
+
