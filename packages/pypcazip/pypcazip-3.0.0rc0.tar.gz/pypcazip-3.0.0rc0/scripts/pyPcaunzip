@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+  
+from pypcazip._version import __version__
+
+import argparse
+import mdtraj as mdt
+from mdplus.pca import pcazipload
+
+parser = argparse.ArgumentParser(description='PyPcaunzip: PCA based trajectory file decompression.')
+parser.add_argument('-V', '--version', action='version', version=__version__)
+parser.add_argument('intraj', help='name of input compressed trajectory file')
+parser.add_argument('outtraj', help='name of output trajectory file')
+parser.add_argument('-p', '--prmtop', help='name of parameters/topology file')
+
+args = parser.parse_args()
+try:
+    xyz = pcazipload(args.intraj)
+except:
+    print('Error reading input file.')
+    exit(1)
+
+if args.prmtop is None:
+    try:
+        t = mdt.Trajectory(xyz, None)
+        t.save(args.outtraj)
+    except:
+        print('Error: {} requires a corresponding prmtop file.'.format(args.outtraj))
+        exit(1)
+
+else:
+    try:
+        top = mdt.load_topology(args.prmtop)
+        t = mdt.Trajectory(xyz, top)
+    except:
+        print('Error - incompatible prmtop file.')
+        exit(1)
+
+t.save(args.outtraj)

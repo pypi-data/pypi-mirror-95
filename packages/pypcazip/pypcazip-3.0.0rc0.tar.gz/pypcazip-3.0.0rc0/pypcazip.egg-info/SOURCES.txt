@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pypcazip/__init__.py
+pypcazip/_version.py
+pypcazip.egg-info/PKG-INFO
+pypcazip.egg-info/SOURCES.txt
+pypcazip.egg-info/dependency_links.txt
+pypcazip.egg-info/requires.txt
+pypcazip.egg-info/top_level.txt
+pypcazip.egg-info/zip-safe
+scripts/pyPcaunzip
+scripts/pyPcazip

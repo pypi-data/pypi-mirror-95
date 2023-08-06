@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+  
+from pypcazip._version import __version__
+
+import argparse
+import mdtraj as mdt
+from mdplus.pca import pcazipsave
+
+parser = argparse.ArgumentParser(description='PyPcazip: PCA based trajectory file compression.')
+parser.add_argument('-V', '--version', action='version', version=__version__)
+parser.add_argument('intraj', help='name of input trajectory file')
+parser.add_argument('outtraj', help='name of output compressed trajectory file')
+parser.add_argument('-p', '--prmtop', help='name of parameters/topology file')
+parser.add_argument('-q', '--quality', type=float, help='compression quality setting (0-1, default=0.95)', default=0.95)
+
+args = parser.parse_args()
+if args.prmtop is None:
+    try:
+        t = mdt.load(args.intraj)
+    except:
+        print('Error: {} requires a corresponding prmtop file.'.format(args.traj))
+        exit(1)
+
+else:
+    try:
+        t = mdt.load(args.intraj, top=args.prmtop)
+    except:
+        print('Error - could not read the given trajectory/prmtop files.')
+        exit(1)
+
+pcazipsave(t.xyz, args.outtraj, quality=args.quality)
