@@ -1,0 +1,7 @@
+grpcio<2.0.0,>=1.0.0
+opencensus-proto<1.0.0,>=0.1.0
+opentelemetry-api==1.0.0rc1
+opentelemetry-sdk==1.0.0rc1
+protobuf>=3.13.0
+
+[test]
