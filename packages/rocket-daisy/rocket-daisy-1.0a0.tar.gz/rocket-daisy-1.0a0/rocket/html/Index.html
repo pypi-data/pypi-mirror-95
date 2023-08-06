@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head> 
+    <script>
+        document.addEventListener("DOMContentLoaded", initDetect);
+
+        function initDetect()
+        {
+            window.addEventListener("resize", adaptlayout);
+            adaptlayout();
+        }
+
+        function adaptlayout()
+        {
+            let Device = 
+            {
+                device: !!navigator.maxTouchPoints ? 'mobile' : 'computer',
+                orientation: !navigator.maxTouchPoints ? 'desktop' : 
+                !window.screen.orientation.angle ? 'portrait' : 'landscape'
+            }
+            console.log(Device);
+
+            if (Device.device == "computer")
+                return;
+
+            if(Device.orientation == "portrait")
+            {
+                $("#flex-containerId").css("flex-direction", "column");
+            }
+            else
+            {
+                $("#flex-containerId").css("flex-direction", "row");
+            }
+            return Device;
+        }
+
+        function get_motionstream()
+        {
+            var myURL = window.location.href;
+            myURL = myURL.replace("8000", "8080");
+            let img = new Image();
+            img.src = myURL;
+            img.style = "-webkit-user-select: none; display: block; margin-left: auto; margin-right: auto;";
+            return img;
+        }
+    </script>
+    <script type="text/javascript" src="/daisy.js"></script>
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script type="text/javascript">
+        daisy().ready(function () {
+
+            var UpButton = daisy().createMacroButton("macro", "", "Forward");
+            $("#arrow-top").append(UpButton);
+
+            var LeftButton = daisy().createMacroButton("macro", "", "TurnLeft");
+            $("#arrow-left").append(LeftButton);
+
+            var RightButton = daisy().createMacroButton("macro", "", "TurnRight");
+            $("#arrow-right").append(RightButton);
+
+            var StopButton = daisy().createMacroButton("macro", "", "Stop");
+            $("#stop").append(StopButton);
+
+            var ReverseButton = daisy().createMacroButton("macro", "", "Reverse");
+            $("#arrow-down").append(ReverseButton);
+
+            /*var WakeUpButton = daisy().createMacroButton("macro", "Wake up", "Wakeup");
+            $("#credits").append(WakeUpButton);*/
+
+            var MotionStream = get_motionstream();
+            $("#preview").append(MotionStream);
+
+        });
+
+    </script>
+    <style type="text/css">
+        button
+        {
+            display: block;
+            margin: 5px 5px 5px 5px;
+            width: 120px;
+            height: 120px;
+            font-size: 24pt;
+            font-weight: normal;
+            color: white;
+        }
+        
+        table
+        {
+            margin: auto auto;
+        }
+        
+        .flex-container
+        {
+            border: none;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .joystick
+        {
+            flex: none;
+            align-self: auto;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        
+        .motionpicture
+        {
+            flex: none;
+            align-self: auto;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        
+        div
+        {
+            background-color: black;
+        }
+        
+        body 
+        {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            background-color: black;
+        }
+        
+        @media all and (min-width: 50em) 
+        {
+	        .flex-container 
+	        {
+		        flex-direction: row;
+	        }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="flex-container" id="flex-containerId">
+
+        <div class="motionpicture" id="preview"></div>
+
+        <div class="joystick" id="hmi">
+                <table>            
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            <div id="arrow-top">
+                            </div>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="arrow-left">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="stop">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="arrow-right">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="arrow-down">
+                            </div>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+                <div id="credits">
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
