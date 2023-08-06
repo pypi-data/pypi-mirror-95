@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: tensorflow_history_plot
+Version: 0.1.2
+Summary: A tool for visualize Tensorflow history result.
+Home-page: https://github.com/nofacer/TensorflowHistoryPlot
+Author: 九日木彡
+Author-email: nofacer@outlook.com
+License: MIT
+Description: 
+        # TensorflowHistoryPlot
+        
+        A tool for visualize Tensorflow history result.
+        
+        ## Install
+        
+        pip install tensorflow-history-plot
+        
+        ## Use
+        
+        ```python
+        num_classes = 5
+        
+        model = Sequential([
+            layers.Conv2D(16, 3, padding='same', activation='relu'),
+            layers.MaxPooling2D(),
+            layers.Conv2D(32, 3, padding='same', activation='relu'),
+            layers.MaxPooling2D(),
+            layers.Conv2D(64, 3, padding='same', activation='relu'),
+            layers.MaxPooling2D(),
+            layers.Flatten(),
+            layers.Dense(128, activation='relu'),
+            layers.Dense(num_classes)
+        ])
+        
+        model.compile(optimizer='adam',
+                      loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+                      metrics=['accuracy'])
+        
+        epochs = 10
+        history = model.fit(
+            train_ds,
+            validation_data=val_ds,
+            epochs=epochs
+        )
+        
+        from tensorflow_history_plot import show_acc
+        show_acc.plot(history)
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
