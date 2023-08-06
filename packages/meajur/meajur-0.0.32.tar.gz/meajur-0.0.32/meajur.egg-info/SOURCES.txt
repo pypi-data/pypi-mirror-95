@@ -1,0 +1,10 @@
+README.md
+meajur.py
+setup.py
+meajur/meajur.py
+meajur.egg-info/PKG-INFO
+meajur.egg-info/SOURCES.txt
+meajur.egg-info/dependency_links.txt
+meajur.egg-info/entry_points.txt
+meajur.egg-info/requires.txt
+meajur.egg-info/top_level.txt
