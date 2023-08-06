@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: snmp-requests
+Version: 0.0.3
+Summary: SNMP library developed for Network Management classes at University of Zaragoza. This library has been developed with teaching purposes and is based on pysnmp library.
+Home-page: https://github.com/jslarraz/snmp_requests
+Author: Jorge Sancho
+Author-email: jslarraz@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: snmp,development
+Platform: UNKNOWN
