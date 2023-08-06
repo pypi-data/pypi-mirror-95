@@ -1,0 +1,4 @@
+alibabacloud_tea_util<1.0.0,>=0.3.3
+alibabacloud_roa_util<1.0.0,>=0.1.2
+alibabacloud_credentials<1.0.0,>=0.1.2
+alibabacloud_pds_credentials<1.0.0,>=0.0.2
