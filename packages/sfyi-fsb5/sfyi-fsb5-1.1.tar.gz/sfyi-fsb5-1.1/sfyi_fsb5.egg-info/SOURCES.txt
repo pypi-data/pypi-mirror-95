@@ -1,0 +1,11 @@
+README.md
+setup.py
+fsb5/__init__.py
+fsb5/pcm.py
+fsb5/utils.py
+fsb5/vorbis.py
+fsb5/vorbis_headers.py
+sfyi_fsb5.egg-info/PKG-INFO
+sfyi_fsb5.egg-info/SOURCES.txt
+sfyi_fsb5.egg-info/dependency_links.txt
+sfyi_fsb5.egg-info/top_level.txt
