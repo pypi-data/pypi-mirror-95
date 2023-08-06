@@ -1,0 +1,3 @@
+[console_scripts]
+hook-run = hookrun:run
+

@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: hook-run
+Version: 1.1.0
+Summary: Run commands using Python virtual environment
+Home-page: https://github.com/Kirusi/hook-run
+Author: Kirusi Msafiri
+Author-email: kirusi.msafiri@gmail.com
+License: UNKNOWN
+Description: # hook-run
+        
+        Python bootstrap to activate a virtual environment (venv, or conda) and run a command. Intended to be used with pre-commit pypi package. Inspired by [venv-run](https://github.com/guludo/venv-run)
+        
+        Runs a command from an existing python virtual environment. Script looks
+        for a private configuration file in the current working directory
+        hook-run.json. If such file is found, it's expected to follow format:
+        
+        ```
+        {
+            "path": "/home/user/my_project/venv/bin"
+        }
+        ```
+        
+        Where `path` points to the virtual environment to be used.
+        If configuration file is not found, then no bootstrapping is performed, but script proceeds with command execution
+        
+        After bootstrapping is done, then specified command is executed.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
