@@ -1,0 +1,12 @@
+purplship/mappers/sendle/__init__.py,sha256=K91qCSoFgfs6nBY1XjkQe36zaL31aFVKMGPjuVliU2Q,543
+purplship/mappers/sendle/mapper.py,sha256=r3KRV9cZwnAtOp4cN7drnOAEb7aL-sd8_AWqKy18frY,4313
+purplship/mappers/sendle/proxy.py,sha256=BcD1tuI9xl0tiL8wWxu4XCWbyJ7ZB989A5zGTdotrGg,1036
+purplship/mappers/sendle/settings.py,sha256=uFYD4akD_VCWgw5epp-C6ZckKJSFbBfi38vD_1HXWKE,380
+purplship/providers/sendle/__init__.py,sha256=L9YKk7lV1cLrmo5V2YUnOQuz7gAqrR6MARADleZzQB0,781
+purplship/providers/sendle/error.py,sha256=HN_CnvTHGKShZRYe3km0xKjhz_oWcZJp_i0yga71mSE,760
+purplship/providers/sendle/tracking.py,sha256=RfiagWMlVB-JxmAEt278OhktUVLcn0u_uot-rQ9u5Rk,1678
+purplship/providers/sendle/units.py,sha256=WhIrqkJiBE2TAxWlj4JGeXj9KbviVtBa4ndob8kuJpc,1335
+purplship/providers/sendle/utils.py,sha256=FniGigRiIsJXjzPoiwgZ2kdGrds8CzsIkEWZ03g1Hlk,648
+purplship.sendle-2021.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+purplship.sendle-2021.2.dist-info/METADATA,sha256=noW8t240g2tqs0pS8AZAe_-5ny3sBGwbg82sG5P1J4g,1412
+purplship.sendle-2021.2.dist-info/RECORD,,
