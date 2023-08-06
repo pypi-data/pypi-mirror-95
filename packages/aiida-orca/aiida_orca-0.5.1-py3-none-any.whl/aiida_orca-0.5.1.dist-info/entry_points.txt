@@ -1,0 +1,10 @@
+[aiida.calculations]
+orca_asa = aiida_orca.calculations:OrcaAsaCalculation
+orca_main = aiida_orca.calculations:OrcaCalculation
+
+[aiida.parsers]
+orca_base_parser = aiida_orca.parsers:OrcaBaseParser
+
+[aiida.workflows]
+orca.base = aiida_orca.workchains:OrcaBaseWorkChain
+

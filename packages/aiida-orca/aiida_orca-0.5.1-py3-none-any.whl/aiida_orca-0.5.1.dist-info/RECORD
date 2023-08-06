@@ -1,0 +1,16 @@
+aiida_orca/__init__.py,sha256=gx_4bn6xXsxIjaCNHf7UDvgn8KRFsSNcZWZ143U6xU0,47
+aiida_orca/calculations/__init__.py,sha256=FikQNi-s87MgZqipFaqQ5X9ajztn0RWdtszDr0NWEAo,104
+aiida_orca/calculations/orca_asa.py,sha256=7kdiXHRe6CA-rZjE0EuohSnRUZWfDyrWL1LS8yZjpQo,1414
+aiida_orca/calculations/orca_main.py,sha256=qkWkwyX82DpLFX7MId6EjjbeggL6tBDYDOJBH95ZOlk,5129
+aiida_orca/parsers/__init__.py,sha256=XM7w2IMzZNwDcgPxRqn1GKer_hwiQXvguuw9oVpCBwc,3789
+aiida_orca/utils/__init__.py,sha256=DscYet9WFPSBC0PFSgrOIjQYwceD5jC59QghZHYjzRg,70
+aiida_orca/utils/input_generator.py,sha256=jnnDFoOkAe7p8uZBFEfnEE_bjOGSWIryKgfplqYRkZ4,1908
+aiida_orca/workchains/__init__.py,sha256=oEhqWLfq1GSSlYsjTY9kPQrRalDuFBceRPoXtym_TxI,71
+aiida_orca/workchains/base.py,sha256=GptH74Ben2_JcMZdM2MuZPaUZhiGDM81T-j1ZsSO0ig,1850
+aiida_orca-0.5.1.data/data/setup.json,sha256=uATIVALv8S3o_jWRYLjsDLZaicuNbz0b6yXDivPaxrY,1724
+aiida_orca-0.5.1.dist-info/LICENSE,sha256=5AabXi8O_Vxi9fmv4iqkgT-gkv67zlUzj_9DndOKJsU,1078
+aiida_orca-0.5.1.dist-info/METADATA,sha256=WR3q7frcIhNkdsjka5DnZGvY7m_6nhAXmbPOQDPFCXg,5513
+aiida_orca-0.5.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiida_orca-0.5.1.dist-info/entry_points.txt,sha256=HRsz6neQT26Omnpn8TcGWPoZlT9E3QIz9WITtszqNFE,269
+aiida_orca-0.5.1.dist-info/top_level.txt,sha256=VJWOKvOeFjn57zwdMfaeNYOe_zojpLXQoidHkChP0Bc,11
+aiida_orca-0.5.1.dist-info/RECORD,,
