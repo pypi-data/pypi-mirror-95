@@ -1,0 +1,10 @@
+AUTHORS.rst,sha256=fe3N4HLUEOWg3ZrAHl7zHzpGczqbXMA38EoM0I0d4vc,146
+CHANGES.rst,sha256=C_xqs3xrF3sC1bqvqCOh8MUSCiGtMw95dICHKrzRFJA,472
+LICENSE,sha256=S9QzfXfLJpHTyS7yl-qLeqy5SEWPzUqwFqSMD4dv5T8,557
+sphinxcontrib/__init__.py,sha256=q3JNmHn0CMPtEqkMR40lkjKQzuWUtT39xIFUYJ-MKIE,56
+sphinxcontrib/nvd3/__init__.py,sha256=6getZlF5-5zWAXVrmi9SVSoHO25aHRsEekt2qOISzp8,203
+sphinxcontrib/nvd3/directives.py,sha256=r2sZxSjC1VbYvBjPX_ILOk0grF6XzcxS6QfIPoZOedc,9391
+sphinxcontrib.nvd3-0.2.1.dist-info/LICENSE,sha256=S9QzfXfLJpHTyS7yl-qLeqy5SEWPzUqwFqSMD4dv5T8,557
+sphinxcontrib.nvd3-0.2.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+sphinxcontrib.nvd3-0.2.1.dist-info/METADATA,sha256=EZHpJPxv-OlaomOrmNEuE1O5c-Fbp8WJZsufZ9hdFk8,3127
+sphinxcontrib.nvd3-0.2.1.dist-info/RECORD,,
