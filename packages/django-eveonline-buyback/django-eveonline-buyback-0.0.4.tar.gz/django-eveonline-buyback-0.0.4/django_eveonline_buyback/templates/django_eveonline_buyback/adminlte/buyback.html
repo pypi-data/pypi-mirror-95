@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block header %}
+Buyback
+{% endblock %}
+
+{% block description %}
+Appraise Buyback Items
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 col-xs-12">
+        <div class="info-box">
+            <!-- Apply any bg-* class to to the icon to color it -->
+            <span class="info-box-icon bg-yellow"><i class="text-white fa fa-cog"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">General Rate</span>
+                <span class="info-box-number">{{buyback_settings.general_buyback_rate|stringformat:'0.2f'}}</span>
+            </div>
+            <!-- /.info-box-content -->
+
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+        <div class="info-box">
+            <!-- Apply any bg-* class to to the icon to color it -->
+            <span class="info-box-icon bg-blue"><i class="fa fa-gem"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">Blue Loot Rate</span>
+                <span class="info-box-number">{{buyback_settings.blue_loot_buyback_rate|stringformat:'0.2f'}}</span>
+            </div>
+            <!-- /.info-box-content -->
+
+        </div>
+    </div>
+
+</div>
+
+<div class="card card-info card-outline">
+    <div class="card-header with-border">
+        <h3 class="card-title">Instructions</h3>
+    </div>
+    <div class="card-body">
+        <ol>
+            <li>Prepare your items in the staging system.</li>
+            <li>Paste your items to receive their appraisal value.</li>
+            <li>Create an item exchange contract to <input type="text" value="{{buyback_settings.contract_corporation.name}}" disabled></input></li>
+            <li>The price of the contract should be the value you receive from the tool below</li>
+        </ol>
+
+        {% if buyback_settings.character_handlers.all %}
+        For issues, contact any of the following:
+        <ul>
+            {% for character in buyback_settings.character_handlers.all %}
+            <li>{{character.name}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+
+<form method="post" action="{% url 'django-eveonline-buyback' %}">
+{% csrf_token %}
+<div class="card card-success card-outline">
+    <div class="card-header with-border">
+        <h3 class="card-title">Item Appraisal</h3>
+    </div>
+
+    <div class="card-body">
+        <div class="form-group">
+            <textarea class="form-control" name="submission" id="buybackItems" rows="5" required
+                id="id_item_list"></textarea>
+        </div>
+    </div>
+    
+    <div class="card-footer">
+        <div class="float-left">
+            <button type="submit" class="btn btn-success">Appraise Items</button>
+        </div>
+        <div class="float-right">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Contract Price</span>
+                  </div>
+                <input type="text" class="form-control" value="{{total|intcomma}}" disabled aria-describedby="basic-addon1">
+            </div>
+        </div>
+        
+    </div>
+</div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+</script>
+{% endblock %}
