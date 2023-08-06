@@ -1,0 +1,5 @@
+setup.py
+onemanlib.egg-info/PKG-INFO
+onemanlib.egg-info/SOURCES.txt
+onemanlib.egg-info/dependency_links.txt
+onemanlib.egg-info/top_level.txt
