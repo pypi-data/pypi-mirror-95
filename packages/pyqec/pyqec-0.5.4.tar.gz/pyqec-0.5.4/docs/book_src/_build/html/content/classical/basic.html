@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review of basic concepts &#8212; The pyqec library</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Your first simulation" href="first_simulation.html" />
+    <link rel="prev" title="The pyqec library" href="../intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">The pyqec library</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   The pyqec library
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Classical error correction
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Review of basic concepts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="first_simulation.html">
+   Your first simulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pratice.html">
+   Let’s get some practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="solution.html">
+   Solution
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/classical/basic.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/maxtremblay/pyqec"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/maxtremblay/pyqec/issues/new?title=Issue%20on%20page%20%2Fcontent/classical/basic.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binary-numbers">
+   Binary numbers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-codes">
+   Linear codes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generator-matrices">
+   Generator matrices
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#parity-check-matrices">
+   Parity check matrices
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binary-noise-channels">
+   Binary noise channels
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-binary-symmetric-channel">
+     The binary symmetric channel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#decoding">
+   Decoding
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="review-of-basic-concepts">
+<h1>Review of basic concepts<a class="headerlink" href="#review-of-basic-concepts" title="Permalink to this headline">¶</a></h1>
+<p>In this section,
+I present a review of the basic notions
+of classical error correction that are useful
+to use <code class="docutils literal notranslate"><span class="pre">pyqec</span></code>.
+This is a concise review and I invite any
+unfamiliar reader to refer to one of the following books:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.wiley.com/en-gb/Error+Correction+Coding%3A+Mathematical+Methods+and+Algorithms-p-9780471739142">Error Correction Coding: Mathematical Methods and Algorithms by Todd K. Moon</a></p></li>
+<li><p><a class="reference external" href="https://www.cambridge.org/core/books/modern-coding-theory/A08C3B7B15351BF9C956CDFE5BE4846B">Modern Coding Theory by Tom Richardson and Rüdiger Urbanke</a></p></li>
+</ul>
+<p>If you are already familiar with those notions,
+you can safely skip this section.</p>
+<div class="section" id="binary-numbers">
+<h2>Binary numbers<a class="headerlink" href="#binary-numbers" title="Permalink to this headline">¶</a></h2>
+<p>Through this book,
+I use \(\mathbb{F}_2 = (\lbrace 0, 1 \rbrace, +, \cdot)\) to denote the
+Galois Field of order 2.
+For this field,
+the addition operator is defined as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c0f79bf0-01a4-49c4-8d90-a4340bde6c3d">
+<span class="eqno">(1)<a class="headerlink" href="#equation-c0f79bf0-01a4-49c4-8d90-a4340bde6c3d" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    0 + 0 = 1 + 1 = 0, \\
+    0 + 1 = 1 + 0 = 1
+\end{align}\]</div>
+<p>and the multiplication operator is defined with the standard relation.</p>
+<p>I use \( \mathbb{F}_2^n \) to denote a vector space
+of dimension \( n \) over \( \mathbb{F}_2 \).
+For simplicity,
+I often use a shortcut notation to reprensent elements of \( \mathbb{F}_2^n \).
+For example,
+I may write 00101 to represent the vector</p>
+<div class="amsmath math notranslate nohighlight" id="equation-92a1b931-72bf-42ff-afb9-5b154fb173b7">
+<span class="eqno">(2)<a class="headerlink" href="#equation-92a1b931-72bf-42ff-afb9-5b154fb173b7" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    \begin{pmatrix}
+        0 \\ 0 \\ 1 \\ 0 \\ 1
+    \end{pmatrix}.
+\end{align}\]</div>
+<p>The Hamming weight \( |x| \) of a binary vector
+\( x \in \mathbb{F}_2^n \)
+is the number of 1s in \( x \).</p>
+</div>
+<div class="section" id="linear-codes">
+<h2>Linear codes<a class="headerlink" href="#linear-codes" title="Permalink to this headline">¶</a></h2>
+<p>A linear code \( C \) of length \( n \) and dimension \( k \) is a linear subspace
+of \( \mathbb{F}_2^n \) containing \( 2^k \) elements.
+By linear,
+I mean that if \( x, y \in C \), then \( x + y \in C \).
+For brevity,
+I often denote a code by the set of its elements which are called codewords.
+For example,
+this is a code of length 5 and dimension 2:
+\[
+C =
+\lbrace
+00000,
+10101,
+01010,
+11111
+\rbrace.
+\]
+You can verify that the sum of any pair of codewords is also a codeword.</p>
+<p>The minimum distance \(d \) of a code is the minimum Hamming weight
+of the non-zero codewords.</p>
+<p>I often use \( [n, k] \) to talk about a linear code
+of length \( n \)
+and \( [n, k, d] \) to specify that the code has minimum distance \( d \).</p>
+</div>
+<div class="section" id="generator-matrices">
+<h2>Generator matrices<a class="headerlink" href="#generator-matrices" title="Permalink to this headline">¶</a></h2>
+<p>A \( [n, k] \) linear code if often described from a \( k \times n \) binary matrix
+called a generator matrix.
+Given a generator matrix \( G \),
+a code is defined as
+\[
+C(G) =
+\lbrace
+G^T x
+\ | \
+x \in \mathbb {F}_2^k
+\rbrace.
+\]
+For example,
+the code in the previous example can be defined from the generator matrix
+\[
+G =
+\begin{pmatrix}
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0
+\end{pmatrix}.
+\]
+This choice is not unique
+and any generator matrix that can be obtained from \( G \)
+via standard gaussian row operations defines the same code.</p>
+</div>
+<div class="section" id="parity-check-matrices">
+<h2>Parity check matrices<a class="headerlink" href="#parity-check-matrices" title="Permalink to this headline">¶</a></h2>
+<p>An other convenient description of a \( [n, k] \) linear code
+is from an \( m \times n \) binary matrix of rank \( k \),
+with \( m \geq n - k \),
+called a parity check matrix.
+Given a parity check matrix \( H \),
+a code is defined as
+\[
+C(H) =
+\lbrace
+x \in \mathbb {F}_2^n
+\ | \
+Hx = 0
+\rbrace.
+\]
+For example,
+the code in the previous example can be defined from the parity check matrix
+\[
+H =
+\begin{pmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0
+\end{pmatrix}.
+\]
+Again,
+this choice is not unique
+and any parity check matrix that can be obtained from \( H \)
+via standard gaussian row operations defines the same code.</p>
+<p>If the parity check matrix \( H \) and the generator matrix \( G \)
+define the same code,
+they satisfy the relation
+\[
+H \cdot G^T = 0.
+\]</p>
+<p>The syndrome \( \sigma(x) \) of a binary vector \( x \in \mathbb{F}_2^n \)
+is the value
+\[
+\sigma(x) = Hx.
+\]
+Thus, \( x \) is a codeword if and only if it has a zero syndrome.</p>
+</div>
+<div class="section" id="binary-noise-channels">
+<h2>Binary noise channels<a class="headerlink" href="#binary-noise-channels" title="Permalink to this headline">¶</a></h2>
+<p>Well,
+it is not called error correction for nothing.
+A binary noise channel is a stochastic map \( N: \mathbb{F}_2^n \to \mathbb{F}_2^n \).
+That is,
+it takes a binary vector and randomly map it to an other binary vector.
+If a binary noise channel acts independtly on each bit,
+we say that it is memoryless,
+otherwise with say that it is a channel with memory.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There exists other types of noise channels such as
+the erasure channel. However, they are not (yet) implemented
+in pyqec.</p>
+</div>
+<div class="section" id="the-binary-symmetric-channel">
+<h3>The binary symmetric channel<a class="headerlink" href="#the-binary-symmetric-channel" title="Permalink to this headline">¶</a></h3>
+<p>The binary symmetric channel is the simplest binary noise channel.
+It is a memoryless channel flipping the value of a bit with a given
+probability \( p \).
+For example,
+given the input 000,
+a binary symmetric channel outputs the followings:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Output</p></th>
+<th class="text-align:center head"><p>Probability</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>000</p></td>
+<td class="text-align:center"><p>\( (1 - p)^3 \)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>001, 010, 100</p></td>
+<td class="text-align:center"><p>\( (1 - p)^2 \cdot p \)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>110, 101, 011</p></td>
+<td class="text-align:center"><p>\( (1 - p) \cdot p^2 \)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>111</p></td>
+<td class="text-align:center"><p>\( p^3 \)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="decoding">
+<h2>Decoding<a class="headerlink" href="#decoding" title="Permalink to this headline">¶</a></h2>
+<p>For a code \( C \),
+a classical decoder is a map \( D: \mathbb{F}_2^n \to C \).
+Any sane decoder should map a codeword to itself.</p>
+<p>Given a binary noise channel \( N \),
+the failure rate of a decoder is the probability that,
+given any codeword \(x \),
+the decoder fails to recover \(x \) from \( N(x) \).</p>
+<p>For the code
+\[
+C = 
+\lbrace
+00000,
+11111
+\rbrace,
+\]
+a good decoder maps all binary vectors with Hamming weight at most 2 to the
+00000 codeword and the other binary vectors to the 11111 codeword.</p>
+<p>Given a binary symmetric channel with probability \( p &lt; 1/2 \),
+this decoder is optimal,
+that is,
+it has the minimum failure rate.
+However,
+if \( p &gt; 1/2 \),
+this decoder has the maximum failure rate.
+We say that \( p = 1/2 \) is the threshold value of the decoder.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/classical"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">The pyqec library</a>
+    <a class='right-next' id="next-link" href="first_simulation.html" title="next page">Your first simulation</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Maxime Tremblay<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

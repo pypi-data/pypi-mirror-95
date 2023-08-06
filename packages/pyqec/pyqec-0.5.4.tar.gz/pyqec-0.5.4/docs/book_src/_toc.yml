@@ -1,0 +1,12 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+- file: content/intro
+
+- part: Classical error correction
+  chapters:
+  - file: content/classical/basic
+  - file: content/classical/first_simulation
+  - file: content/classical/pratice
+  - file: content/classical/solution
+
