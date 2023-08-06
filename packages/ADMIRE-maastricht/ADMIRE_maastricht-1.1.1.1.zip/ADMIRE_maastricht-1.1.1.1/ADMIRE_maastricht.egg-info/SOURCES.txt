@@ -1,0 +1,20 @@
+MANIFEST.in
+setup.py
+ADMIRE_maastricht/ADMIRE.py
+ADMIRE_maastricht/ADMIRE_highres2.png
+ADMIRE_maastricht/ADMIRE_icon.ico
+ADMIRE_maastricht/ADMIREv1.py
+ADMIRE_maastricht/MatplotlibWidget5.py
+ADMIRE_maastricht/Qt5file.py
+ADMIRE_maastricht/Resource_rc5.py
+ADMIRE_maastricht/__init__.py
+ADMIRE_maastricht/__main__.py
+ADMIRE_maastricht/command_line.py
+ADMIRE_maastricht.egg-info/PKG-INFO
+ADMIRE_maastricht.egg-info/SOURCES.txt
+ADMIRE_maastricht.egg-info/dependency_links.txt
+ADMIRE_maastricht.egg-info/entry_points.txt
+ADMIRE_maastricht.egg-info/not-zip-safe
+ADMIRE_maastricht.egg-info/requires.txt
+ADMIRE_maastricht.egg-info/top_level.txt
+ADMIRE_maastricht/models/Human iPSC-CM (Kernik-2019).mmt

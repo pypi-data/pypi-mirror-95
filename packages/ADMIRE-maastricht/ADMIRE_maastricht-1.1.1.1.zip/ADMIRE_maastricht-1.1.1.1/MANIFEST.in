@@ -1,0 +1,3 @@
+include ADMIRE_maastricht/models/*.mmt
+include ADMIRE_maastricht/ADMIRE_icon.ico
+include ADMIRE_maastricht/ADMIRE_highres2.png
