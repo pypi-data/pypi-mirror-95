@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bypass-req
+Version: 0.0.1
+Summary: HTTP library made for web protection
+Home-page: UNKNOWN
+Author: Sergej Zivkovic
+Author-email: zivkovicsergej501@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/req/
+Keywords: HTTP,Requests
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: sgrequests (==0.1.3)
+
+UNKNOWN
+
+
