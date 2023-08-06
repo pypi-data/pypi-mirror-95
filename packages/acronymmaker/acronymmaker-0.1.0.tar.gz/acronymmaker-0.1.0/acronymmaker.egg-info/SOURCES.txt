@@ -1,0 +1,14 @@
+README.md
+setup.py
+acronymmaker/__init__.py
+acronymmaker/maker.py
+acronymmaker/matching.py
+acronymmaker/selection.py
+acronymmaker/token.py
+acronymmaker.egg-info/PKG-INFO
+acronymmaker.egg-info/SOURCES.txt
+acronymmaker.egg-info/dependency_links.txt
+acronymmaker.egg-info/not-zip-safe
+acronymmaker.egg-info/requires.txt
+acronymmaker.egg-info/top_level.txt
+bin/acronymmaker

@@ -1,0 +1,189 @@
+#!/usr/bin/env python3
+
+##############################################################################
+#                                                                            #
+#   AcronymMaker - Create awesome acronyms for your projects!                #
+#   Copyright (c) 2020-2021 - Romain Wallon (romain.gael.wallon@gmail.com)   #
+#                                                                            #
+#   This program is free software: you can redistribute it and/or modify     #
+#   it under the terms of the GNU General Public License as published by     #
+#   the Free Software Foundation, either version 3 of the License, or        #
+#   (at your option) any later version.                                      #
+#                                                                            #
+#   This program is distributed in the hope that it will be useful,          #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of           #
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                     #
+#   See the GNU General Public License for more details.                     #
+#                                                                            #
+#   You should have received a copy of the GNU General Public License        #
+#   along with this program.                                                 #
+#   If not, see <https://www.gnu.org/licenses/>.                             #
+#                                                                            #
+##############################################################################
+
+
+"""
+This script provides a command-line interface for AcronymMaker.
+"""
+
+
+from argparse import ArgumentParser, FileType
+from typing import Any, Dict
+
+from pyfiglet import Figlet
+
+import acronymmaker
+
+from acronymmaker.maker import AcronymMaker
+from acronymmaker.matching import GreedyOrderedMatchingStrategy
+from acronymmaker.matching import RegexBasedOrderedMatchingStrategy
+from acronymmaker.matching import UnorderedMatchingStrategy
+from acronymmaker.selection import select_all_letters, select_first_letter
+
+
+#########################
+# RECOGNIZED STRATEGIES #
+#########################
+
+
+# Associates the name of each selection strategy to the corresponding strategy.
+SELECTION_STRATEGIES = {
+    'all': select_all_letters,
+    'first': select_first_letter
+}
+
+
+# Associates the name of each matching strategy to the corresponding strategy.
+MATCHING_STRATEGIES = {
+    'ordered': RegexBasedOrderedMatchingStrategy,
+    'ordered-greedy': GreedyOrderedMatchingStrategy,
+    'unordered': UnorderedMatchingStrategy
+}
+
+
+#############
+# FUNCTIONS #
+#############
+
+
+def parse_arguments() -> Dict[str, Any]:
+    """
+    Parses the command line arguments.
+
+    :return: The options given to AcronymMaker.
+    """
+    parser = ArgumentParser(prog=acronymmaker.__name__,
+                            description=acronymmaker.__summary__)
+
+    # Registering the option used to display the version of the program.
+    parser.add_argument('-v', '--version',
+                        version=f'{acronymmaker.__name__} (Python) - {acronymmaker.__version__}',
+                        action='version')
+
+    # Registering the option used to set the letter selection strategy to use.
+    parser.add_argument('-l', '--select-letters',
+                        help='specifies the letter selection strategy to use',
+                        choices=SELECTION_STRATEGIES.keys(),
+                        default=['all'], nargs=1)
+
+    # Registering the option used to set the matching strategy to use.
+    parser.add_argument('-m', '--matching-strategy',
+                        help='specifies the matching strategy to use',
+                        choices=MATCHING_STRATEGIES.keys(),
+                        default=['ordered'], nargs=1)
+
+    # Registering the option used to set the maximum number of consecutive unused letters.
+    parser.add_argument('-c', '--max-consecutive-unused', metavar='<nb>',
+                        help='specifies the maximum number of consecutive unused letters allowed in an acronym',
+                        type=int, default=[3], nargs=1)
+
+    # Registering the option used to set the maximum number of total unused letters.
+    parser.add_argument('-u', '--max-total-unused', metavar='<nb>',
+                        help='specifies the maximum number of total unused letters allowed in an acronym',
+                        type=int, default=[5], nargs=1)
+
+    # Registering the option used to specify the input dictionaries.
+    parser.add_argument('-d', '--dictionary', metavar='<dict>',
+                        help='paths to input dictionaries',
+                        type=FileType('r'), required=True, nargs='+')
+
+    return vars(parser.parse_args())
+
+
+def create_acronym_maker(options: Dict[str, Any]) -> AcronymMaker:
+    """
+    Creates an AcronymMaker instance that is properly set up w.r.t. the
+    given options.
+
+    :param options: The options describing how to set up the maker.
+
+    :return: The AcronymMaker instance that has been set up.
+    """
+    # Getting the configuration for the maker.
+    selection_strategy = SELECTION_STRATEGIES[options['select_letters'][0]]
+    matching_strategy = MATCHING_STRATEGIES[options['matching_strategy'][0]]
+    max_consecutive_unused = options['max_consecutive_unused'][0]
+    max_total_unused = options['max_total_unused'][0]
+
+    # Initializing the instance of AcronymMaker.
+    acronym_maker = AcronymMaker(selection_strategy,
+                                 matching_strategy(max_consecutive_unused, max_total_unused),
+                                 lambda acronym: print(acronym))
+
+    # Feeding the maker with the words from the specified dictionaries.
+    for dictionary in options['dictionary']:
+        acronym_maker.add_known_words(dictionary)
+        dictionary.close()
+
+    # Returning the maker that has been set up.
+    return acronym_maker
+
+
+def print_header() -> None:
+    """
+    Prints the program's header, showing the name of the program and the
+    instructions for using it.
+    """
+    # Showing the name of the program.
+    figlet = Figlet(font='slant')
+    print(figlet.renderText('AcronymMaker'))
+
+    # Showing the instructions.
+    print('Enter the tokens to find acronyms for (there is no word limit).')
+    print('For example, type "foo/bar? baz" if you want an acronym for either')
+    print('"foo baz", "bar baz" or "baz" (the "?" marks optional tokens).')
+    print()
+
+
+########
+# MAIN #
+########
+
+
+if __name__ == '__main__':
+    # Initializing the application.
+    args = parse_arguments()
+    maker = create_acronym_maker(args)
+
+    # Showing the name of the program and its instructions.
+    print_header()
+
+    # Starting the REPL.
+    try:
+        while True:
+            # Reading the tokens.
+            tokens = input('> ').strip()
+
+            if tokens == '!exit' or tokens == '!quit':
+                # Exiting the application.
+                print('Bye!')
+                break
+
+            if tokens:
+                # Computing the acronyms for the tokens.
+                maker.find_acronyms_for_string(tokens)
+                print()
+
+    except (EOFError, KeyboardInterrupt):
+        # Gracefully exiting the application.
+        print('Bye!')
