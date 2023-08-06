@@ -1,0 +1,16 @@
+cattrs==1.1.1
+attrs==20.3
+appdirs==1.4
+structlog==20.2
+wrapt==1.12
+boto3==1.16
+urwid==2.1
+colorama
+sqlalchemy
+psutil
+
+[testing]
+pytest
+pytest-rerunfailures
+pytest-randomly
+pytest-cov
