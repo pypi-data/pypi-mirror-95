@@ -1,0 +1,3 @@
+[console_scripts]
+ultraplex_fish = ultraplex.__main__:main
+
