@@ -1,0 +1,8 @@
+[dffml.operation]
+cleanup_rpm = dffml_operations_binsec.operations:cleanup_rpm
+files_in_rpm = dffml_operations_binsec.operations:files_in_rpm
+is_binary_pie = dffml_operations_binsec.operations:is_binary_pie
+url_to_urlbytes = dffml_operations_binsec.operations:URLToURLBytes
+urlbytes_to_rpmfile = dffml_operations_binsec.operations:urlbytes_to_rpmfile
+urlbytes_to_tarfile = dffml_operations_binsec.operations:urlbytes_to_tarfile
+
