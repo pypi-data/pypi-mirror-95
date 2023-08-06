@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: alphabetic_number
+Version: 0.0.6
+Summary: Convert number to alphabetical from
+Home-page: https://github.com/danila-panteleev/alphabetic-number
+Author: Danila Panteleev
+Author-email: pont131995@gmail.com
+License: UNKNOWN
+Description: # alphabetic-number
+        Convert number to alphabetical from
+        
+        hi
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

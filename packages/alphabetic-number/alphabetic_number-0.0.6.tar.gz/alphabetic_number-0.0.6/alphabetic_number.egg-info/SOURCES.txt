@@ -1,0 +1,9 @@
+README.md
+setup.py
+alphabetic_number/__init__.py
+alphabetic_number/alphabetic_number.py
+alphabetic_number/tests.py
+alphabetic_number.egg-info/PKG-INFO
+alphabetic_number.egg-info/SOURCES.txt
+alphabetic_number.egg-info/dependency_links.txt
+alphabetic_number.egg-info/top_level.txt
