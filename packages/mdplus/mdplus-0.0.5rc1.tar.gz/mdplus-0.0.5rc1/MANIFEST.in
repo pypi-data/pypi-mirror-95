@@ -1,0 +1,3 @@
+include README.md
+include mdplus/fast/utils.pyx
+include mdplus/fast/matfit.c
