@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyls-flake8
+Version: 0.3.0
+Summary: A Flake8 plugin for the Python Language Server
+Home-page: https://github.com/emanspeaks/pyls-flake8
+Author: Randy Eckman
+Author-email: emanspeaks@gmail.com
+Maintainer: Peter Justin
+Maintainer-email: peter.justin@outlook.com
+License: MIT
+Description: # pyls-flake8
+        
+        A Flake8 plugin for the
+        [Python Language Server](https://github.com/palantir/python-language-server).
+        
+        Install this plugin in the same environment as `python-language-server`:
+        
+        ```shell
+        pip install pyls-flake8
+        ```
+        
+        pyls-flake8 will read its config from your project's ``setup.cfg``,
+        ``tox.ini`` or ``.flake8`` file if it has one.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

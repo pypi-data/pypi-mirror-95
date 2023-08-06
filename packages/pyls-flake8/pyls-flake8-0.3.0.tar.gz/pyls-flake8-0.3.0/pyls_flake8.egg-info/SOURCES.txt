@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyls_flake8/__init__.py
+pyls_flake8/plugin.py
+pyls_flake8.egg-info/PKG-INFO
+pyls_flake8.egg-info/SOURCES.txt
+pyls_flake8.egg-info/dependency_links.txt
+pyls_flake8.egg-info/entry_points.txt
+pyls_flake8.egg-info/requires.txt
+pyls_flake8.egg-info/top_level.txt
