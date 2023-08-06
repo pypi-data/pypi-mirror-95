@@ -1,0 +1,6 @@
+cliff
+requests
+setuptools
+
+[dev]
+pytest==6.1.0
