@@ -1,0 +1,7 @@
+ldap3
+pymysql
+docker
+sqlalchemy
+yamlarg
+pyyaml
+cryptography

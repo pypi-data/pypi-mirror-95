@@ -1,0 +1,10 @@
+README.md
+setup.py
+guacamole_compose/__init__.py
+guacamole_compose/cli.py
+guacamole_compose.egg-info/PKG-INFO
+guacamole_compose.egg-info/SOURCES.txt
+guacamole_compose.egg-info/dependency_links.txt
+guacamole_compose.egg-info/entry_points.txt
+guacamole_compose.egg-info/requires.txt
+guacamole_compose.egg-info/top_level.txt
