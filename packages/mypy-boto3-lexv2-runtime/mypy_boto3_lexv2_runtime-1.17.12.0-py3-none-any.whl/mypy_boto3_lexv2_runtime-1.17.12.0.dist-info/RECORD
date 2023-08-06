@@ -1,0 +1,13 @@
+mypy_boto3_lexv2_runtime/__init__.py,sha256=aqu-h4HG2PZ36Ai8cFV6ipvxg4kEWG3Slw6sj0egYGQ,497
+mypy_boto3_lexv2_runtime/__init__.pyi,sha256=lWRGLQ_JIVLlsds5dYy_EeWd02dl-Rg_LlQ3x-OD4ls,496
+mypy_boto3_lexv2_runtime/__main__.py,sha256=GJDih4Rm_tVr6kjm7YLyaOP9PSfM5I_LzRSutjCz0pc,405
+mypy_boto3_lexv2_runtime/client.py,sha256=usafsx0BNf0TzizAvicc_dalTrPp7zBA816HrIc3Mdk,4534
+mypy_boto3_lexv2_runtime/client.pyi,sha256=iOY_R-rSYxIlcR_7RidRMm5eEt0-gQKAba-FlCKySeo,4523
+mypy_boto3_lexv2_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_lexv2_runtime/type_defs.py,sha256=BGTpF31ubFR5ZZ-kttq57SSHUPUsLu34WqmFQCKVrdA,6077
+mypy_boto3_lexv2_runtime/type_defs.pyi,sha256=CkD0YH7uoYWXF_ODvqrRRPEbW7bgPVXzpfdo-P2ajmc,6066
+mypy_boto3_lexv2_runtime/version.py,sha256=utAZA-TReyDW12kqXL7x6nuNfRjjcWQ7I65FucAYIYg,57
+mypy_boto3_lexv2_runtime-1.17.12.0.dist-info/METADATA,sha256=MdOcCL3kpXyJrc-PP0rh3ZxW1rv-cY7we7lM4s_PS34,6679
+mypy_boto3_lexv2_runtime-1.17.12.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_lexv2_runtime-1.17.12.0.dist-info/top_level.txt,sha256=OL5V-JZXeqLbquMEd7fn8RNWKBQvTvEwDBufe_Ttd2U,25
+mypy_boto3_lexv2_runtime-1.17.12.0.dist-info/RECORD,,
