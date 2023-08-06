@@ -1,0 +1,12 @@
+README.md
+setup.py
+smof/__init__.py
+smof/functions.py
+smof/ui.py
+smof/version.py
+smof.egg-info/PKG-INFO
+smof.egg-info/SOURCES.txt
+smof.egg-info/dependency_links.txt
+smof.egg-info/entry_points.txt
+smof.egg-info/not-zip-safe
+smof.egg-info/top_level.txt
