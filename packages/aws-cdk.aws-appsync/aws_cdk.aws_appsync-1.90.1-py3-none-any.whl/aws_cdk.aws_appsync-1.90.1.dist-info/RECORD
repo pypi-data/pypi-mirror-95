@@ -1,0 +1,8 @@
+aws_cdk/aws_appsync/__init__.py,sha256=Mf7qJQ5yqRb-_YtgYx_qj57wYa84coXcMsMQaUE8vrA,494109
+aws_cdk/aws_appsync/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_appsync/_jsii/__init__.py,sha256=pk8drwZ35SNgSz0hfAGSsV6hOddK0o3i0_8Zz1qN_ZI,632
+aws_cdk/aws_appsync/_jsii/aws-appsync@1.90.1.jsii.tgz,sha256=zLGWg7iwooNu98-Ii3GFYUki1z2m92NrA0D1aLTPS4g,176014
+aws_cdk.aws_appsync-1.90.1.dist-info/METADATA,sha256=mQLldd5SOdZlGEAMg4CiK9rgibXnlwcOwc9z9h5QWHU,31688
+aws_cdk.aws_appsync-1.90.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_appsync-1.90.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_appsync-1.90.1.dist-info/RECORD,,
