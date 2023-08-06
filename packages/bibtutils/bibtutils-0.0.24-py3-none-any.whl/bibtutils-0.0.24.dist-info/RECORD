@@ -1,0 +1,16 @@
+bibtutils/__init__.py,sha256=xq4pJ6LR7c0NipaXXiDMAyZ5L9-6FTSbt4SI6Mg-Hec,272
+bibtutils/sanitycheck.py,sha256=Tf_DuOb1vZUmtdzNiUDQtL1FWriWV3IN-DAV6y5ZiWU,163
+bibtutils/version.py,sha256=BfmaIh5c2OZgGFl-IkAP1Dw7vU8-q5gSmwzgWrDY-0M,22
+bibtutils/gcp/__init__.py,sha256=wk7g9G01VFBZf4cpz3J8Oe76LyBlRszEb1T257KPRmw,304
+bibtutils/gcp/bigquery.py,sha256=zPx0XLOO8_xkg6ObQb2jAgVXEqT0OYLjDzuCzFFvNB4,2935
+bibtutils/gcp/pubsub.py,sha256=iQd_j6LA6FX2envb6zrzJATP9HWoaaD5Ki6B1I0OPTE,4294
+bibtutils/gcp/secrets.py,sha256=9cTq6r34Ch7fD44GOzYxSJXG6vTxAp78vuXe9hkrjXM,3291
+bibtutils/gcp/storage.py,sha256=QWKozbSd3x6Ix-omKl-OHn0IPtdy84SLzqI_pQJzrT4,3949
+bibtutils/slack/__init__.py,sha256=hxPTONU9yHqGT4lQ9neTtmUkRK7FFWwc7T-Y-3BfSsg,147
+bibtutils/slack/alert.py,sha256=iQRYacP6AH33w5OuRAwFtzzIAtKVPKTf1_poXDN0j0g,3963
+bibtutils-0.0.24.dist-info/LICENSE,sha256=ChmbcT7zcnKsqf-Qu2OXsfVoqgT8DjptX-Chos5zzm8,1053
+bibtutils-0.0.24.dist-info/METADATA,sha256=e99VhpMEb0gYWbe871PSAU_kCcYO5IJutUc4d0fIhL0,2679
+bibtutils-0.0.24.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bibtutils-0.0.24.dist-info/top_level.txt,sha256=bZOztm4JrTpH9QrKfw5MPbv79FDUUK8XmI8FsPRaIeo,10
+bibtutils-0.0.24.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bibtutils-0.0.24.dist-info/RECORD,,
