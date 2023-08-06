@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import sys
+
+from subpop.hub import Hub
+
+hub = Hub()
+
+import colorama
+import dyne.org.funtoo.powerbus as powerbus
+
+if __name__ == "__main__":
+	colorama.init()
+	powerbus.apply_config(ignore_inhibit=["gnome-session-binary"])
+	try:
+		server = powerbus.system.PowerBusDaemon()
+	except PermissionError:
+		sys.stdout.write(f"Please run {sys.argv[0]} as root.\n")
+		sys.exit(1)
+	hub.LOOP.run_until_complete(server.start())
