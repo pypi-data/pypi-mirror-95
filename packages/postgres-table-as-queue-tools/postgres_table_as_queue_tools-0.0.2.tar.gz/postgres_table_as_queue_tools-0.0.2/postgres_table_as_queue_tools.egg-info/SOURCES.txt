@@ -1,0 +1,8 @@
+README.md
+setup.py
+pg_table_as_queue_tools/__init__.py
+pg_table_as_queue_tools/read_batch.py
+postgres_table_as_queue_tools.egg-info/PKG-INFO
+postgres_table_as_queue_tools.egg-info/SOURCES.txt
+postgres_table_as_queue_tools.egg-info/dependency_links.txt
+postgres_table_as_queue_tools.egg-info/top_level.txt
