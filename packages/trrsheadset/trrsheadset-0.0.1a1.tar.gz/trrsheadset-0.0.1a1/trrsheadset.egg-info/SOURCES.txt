@@ -1,0 +1,11 @@
+README.md
+setup.py
+trrsheadset/__init__.py
+trrsheadset/__main__.py
+trrsheadset/controller.py
+trrsheadset/runner.py
+trrsheadset.egg-info/PKG-INFO
+trrsheadset.egg-info/SOURCES.txt
+trrsheadset.egg-info/dependency_links.txt
+trrsheadset.egg-info/requires.txt
+trrsheadset.egg-info/top_level.txt
