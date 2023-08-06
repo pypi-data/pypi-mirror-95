@@ -1,0 +1,12 @@
+donno/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donno/app.py,sha256=gbDNGDMzzCVLnFdvj5BRznSCy8Qr_0IhkKqgK9EKEHQ,3715
+donno/config.py,sha256=Cq9g1vgjSgmxGjIglu7TVU6f1mEmlZDzhUdOH_uHil4,1404
+donno/notes.py,sha256=557-dlxcGuGpzsmdTgQFLLJ-n17fyjyHcHeyvzW8KG0,8532
+donno/converters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donno/converters/joplin.py,sha256=JwasMIcmuXt1lPC_mPTMwJ4IUCRV9711WWPtlth0HgI,2614
+donno-0.13.0.dist-info/LICENSE,sha256=Vb5dztbJBzWo8D6VriUmiSdEgbHfKiS8Z0eqLrcZpGw,1156
+donno-0.13.0.dist-info/METADATA,sha256=mt261qJhcMjzj6DUbV4i-ljik2ebAyL1AE4_ezyG9fU,7930
+donno-0.13.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+donno-0.13.0.dist-info/entry_points.txt,sha256=MiMWGoWzViprJzfDz__iDEwXZL1iiQMPr_sjsGJeujo,40
+donno-0.13.0.dist-info/top_level.txt,sha256=OoxwwI8kSNmNvTvA4MbG2ryhY4u82wTMzQxq_A2iaX8,6
+donno-0.13.0.dist-info/RECORD,,
