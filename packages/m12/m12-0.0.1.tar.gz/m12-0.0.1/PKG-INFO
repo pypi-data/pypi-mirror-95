@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: m12
+Version: 0.0.1
+Summary: Template
+Home-page: https://github.com/microprediction/m12
+Author: microprediction
+Author-email: pcotton@intechinvestments.com
+License: MIT
+Description: # m12  ![tests](https://github.com/microprediction/m12/workflows/tests/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+        A mere template
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
