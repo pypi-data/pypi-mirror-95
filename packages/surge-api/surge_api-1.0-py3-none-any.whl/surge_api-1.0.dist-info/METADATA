@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: surge-api
+Version: 1.0
+Summary: Surge Python SDK
+Home-page: https://github.com/surge-ai/surge-python
+Author: Surge
+Author-email: team@surgehq.ai
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.20)
+
+UNKNOWN
+
+
