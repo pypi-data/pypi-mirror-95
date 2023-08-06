@@ -1,0 +1,7 @@
+bs4
+lxml
+pre-commit
+pytest
+pytest-cov
+requests
+sphinx-autodoc-typehints
