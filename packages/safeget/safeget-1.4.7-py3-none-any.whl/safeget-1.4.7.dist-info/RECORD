@@ -1,0 +1,12 @@
+safeget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safeget/safeget.asc,sha256=A0ih7jrpiuuNHyq8Y8EYoUKiX3CCjMwmOVFiL_FJisg,862
+safeget/safeget.py,sha256=RUBiPeyx5huShU1OWqwtPM7BI6D2nngoSkHIVplwNDg,42575
+safeget/version.py,sha256=716l-SrpxJ9IZN_pW6AbIiaO58UtXRo2zhj9c8uemX4,289
+safeget/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safeget/tests/test_safeget.py,sha256=BiBjX1AiQZP58DP1QABI-DaswejpjSM17j6JFFrVBFw,8092
+safeget-1.4.7.data/scripts/safeget,sha256=Kft7IO2zEVDIYtsBSXfwUl1Yz-dlff3I7eQQFrQjxCU,42560
+safeget-1.4.7.dist-info/LICENSE,sha256=G5G4_OL2PDHVNLeyNtCdwifraKoELJUVpMrjSNokodA,594
+safeget-1.4.7.dist-info/METADATA,sha256=DmMcDZrEPyti7pyGA9xsF2LxHzJt4iFixQEFPA8usVE,3517
+safeget-1.4.7.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+safeget-1.4.7.dist-info/top_level.txt,sha256=iW6-y6g-ISCDPLHYbmHstOerFE1TihNTIOLoBeUCew8,8
+safeget-1.4.7.dist-info/RECORD,,
