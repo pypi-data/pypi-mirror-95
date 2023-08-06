@@ -1,0 +1,17 @@
+bicm/BipartiteGraph.py,sha256=h0bCmz07_d8iowB4Bf7KpkmKEFpflYsgzP4ipCvv4Qg,53493
+bicm/Pval_class.py,sha256=sz-G7a9kkDRDuV7O_At4FcDxdPI4X6fZNyUAL7u23PU,6740
+bicm/PvaluesHandler.py,sha256=Q94Bb7Y7mw53w81nd09pCHUcUSNxIQ68P4fcXXI-1uc,9412
+bicm/__init__.py,sha256=nNQvUPoEzjlmA4Max14HvAEsbiAlG8cnVNajcf45Tns,469
+bicm/functions.py,sha256=6pBiu5oJR2f8eK08snqBTvzUD6huSsTiqZp3yT1WFKg,17615
+bicm/graph_classes.py,sha256=u9_VZeatZ9NDi8L_8u-ALF-TGI7mqvkaIpsUhELnvbw,104953
+bicm/models_functions.py,sha256=UEWXo9UEf5K5E82DeGjqXOY9fWCyBWw-acV7utN0V-k,16084
+bicm/network_functions.py,sha256=41ufV_xW6M30iO4A4IG7JYayFFu1QAhNjUNaoaFtJ9o,8681
+bicm/poibin.py,sha256=w8Oe23RRYUlrv5HTFbWPrIjaQbVByHail254njTvPIU,6409
+bicm/solver_functions.py,sha256=Ipn5glrZVHZMCpKcFulPbyl3-GBGJ3U_HoKxmrxVY_w,9434
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/bicm_test.py,sha256=BNuqOSsribuKeyvriaLQslNMmK42ukKtvXaiZ8p5a5U,9252
+bicm-2.0.dist-info/LICENSE.txt,sha256=YsZEgz087JjGAlCP4TArx6VHQIE0EnIR52GY_CYdxjQ,1068
+bicm-2.0.dist-info/METADATA,sha256=EJjSOEK1yyOb9wrQ1Jv3d3V5j9lpRBa-JmwNryik1m8,4151
+bicm-2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bicm-2.0.dist-info/top_level.txt,sha256=O2WGROauau5spQ5ejiNI-qsAkF4LUFbnI2aRRCC6CQg,11
+bicm-2.0.dist-info/RECORD,,
