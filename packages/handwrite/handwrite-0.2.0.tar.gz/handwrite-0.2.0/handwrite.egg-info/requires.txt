@@ -1,0 +1,6 @@
+opencv-python
+Pillow
+
+[dev]
+pre-commit
+black
