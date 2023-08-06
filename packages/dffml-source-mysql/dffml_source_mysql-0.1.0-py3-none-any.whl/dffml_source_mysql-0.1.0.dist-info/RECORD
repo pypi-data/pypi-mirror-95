@@ -1,0 +1,15 @@
+dffml_source_mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_source_mysql/db.py,sha256=xGmRDK2OG8ppXTWN97j6L55-IlDyIcjU9M9rJHOoCzs,4110
+dffml_source_mysql/source.py,sha256=cYcZHq0RcXD-gkPSUZFKr2e6N3xDM7NAbGyEVhAUQUI,8014
+dffml_source_mysql/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+dffml_source_mysql/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_source_mysql/util/mysql_docker.py,sha256=S5b_gQQewO3MFm8qRi-iWMCFWIo_5ahLX2w0jVta2cY,8416
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_db.py,sha256=x3k34-ON9og0B6i3PwvSw_5bJRKGaZjhqugWK9l3pg0,3968
+tests/test_source.py,sha256=ew4tFkajS0MUs6qANTvbJ7zXIPRaviZK6Fn6HN0YZnk,3249
+dffml_source_mysql-0.1.0.dist-info/LICENSE,sha256=6ZGvOwfnQ7XczBf35XQlToX-tQegAIFr19cXu0RobJk,1062
+dffml_source_mysql-0.1.0.dist-info/METADATA,sha256=XaSm44StMjudU0kiepKNhURwfWG1FeLwl2g20BfUz3Q,2201
+dffml_source_mysql-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_source_mysql-0.1.0.dist-info/entry_points.txt,sha256=JMeeZa2m-GZsvinHDH0GiOESCt3RmbRGK1Bfnu97T60,118
+dffml_source_mysql-0.1.0.dist-info/top_level.txt,sha256=vVY45Z79chIU6jAM8C5xrJgdfadW_4bS7czKYejyq5U,25
+dffml_source_mysql-0.1.0.dist-info/RECORD,,
