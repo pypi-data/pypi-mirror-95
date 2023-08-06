@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mkdocs_ezlinks_plugin/__init__.py
+mkdocs_ezlinks_plugin/plugin.py
+mkdocs_ezlinks_plugin.egg-info/PKG-INFO
+mkdocs_ezlinks_plugin.egg-info/SOURCES.txt
+mkdocs_ezlinks_plugin.egg-info/dependency_links.txt
+mkdocs_ezlinks_plugin.egg-info/entry_points.txt
+mkdocs_ezlinks_plugin.egg-info/requires.txt
+mkdocs_ezlinks_plugin.egg-info/top_level.txt
