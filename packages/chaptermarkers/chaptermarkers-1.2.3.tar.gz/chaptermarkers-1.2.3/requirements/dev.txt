@@ -1,0 +1,11 @@
+-r prod.txt
+-r test.txt
+
+bumpversion>=0.6.0
+wheel>=0.36.0
+watchdog>=1.0.0
+flake8>=3.8.0
+tox>=3.21.3
+Sphinx>=3.0.0
+twine>=3.0.0
+cryptography>=3.0.0
