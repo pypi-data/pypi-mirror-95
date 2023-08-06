@@ -1,0 +1,14 @@
+justplot_qt-0.1.0.data/scripts/justplot,sha256=_SAMtyKpiAZAQkTFHM9m_KS2B5xCQ_7bXp65vSsJfFs,78
+libjustplot/__init__.py,sha256=-bBNFYOq80A2Egtpo5V5zWJtYOxQfRZFQ_feve5lkFU,23
+libjustplot/color_picker.py,sha256=6BUNWXD0U_WITw-VZzBfCwBN5TVmaRYGqxw6YkPGM14,552
+libjustplot/exception.py,sha256=uiF6cgxSaJJz8GQBHHwvWymseKMP3mqDT96tH8Y3nCI,41
+libjustplot/main.py,sha256=k4DajEZGBfjsjvUfgGWvSe0RVP3DMzKkkPKH3r8fJaE,927
+libjustplot/main_window.py,sha256=RtnEP-b6CStbEe8EL8-IL_9ruxBl-4E-wt9UaXkt_0E,4992
+libjustplot/model.py,sha256=6byWExmCGjSgdgwEREn5ruWLvKj0bUdYxcavqzqAU9s,200
+libjustplot/tree_model.py,sha256=3j4apv-az9L-P_rzVeZspeMm9CAhxonabV0xmHwBEeM,7266
+libjustplot/ui/main.ui,sha256=PzsyA7MR8XRxX5ZrjCzzqxjPouoh7t1yNiP8od9XWpQ,2965
+justplot_qt-0.1.0.dist-info/LICENSE,sha256=YTNROPhhAvc41FhHRURbsRCaJgidweKmWCqifEApah4,1068
+justplot_qt-0.1.0.dist-info/METADATA,sha256=n4GoQevPLDl10qCSomPQ7zCbQZcAgxDtSEQzwFO7T9M,2366
+justplot_qt-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+justplot_qt-0.1.0.dist-info/top_level.txt,sha256=MC2s7ptyLc2u3PuyiRx6M9zbhs7gidVbsU7nsD0Fhc4,12
+justplot_qt-0.1.0.dist-info/RECORD,,
