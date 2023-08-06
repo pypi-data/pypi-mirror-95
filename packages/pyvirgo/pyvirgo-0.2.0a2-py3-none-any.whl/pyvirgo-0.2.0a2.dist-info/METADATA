@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyvirgo
+Version: 0.2.0a2
+Summary: A Python package for the Virgo language
+Home-page: https://github.com/jwg4/pyvirgo
+License: MIT
+Author: Jack Grahl
+Author-email: jack.grahl@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ply (>=3.11,<4.0)
+Project-URL: Repository, https://github.com/jwg4/pyvirgo
+Description-Content-Type: text/markdown
+
+# PyVirgo
+
+This is a Python implementation of Virgo, the graph declarative language.
+
+You can find details of Virgo with the Go implementation at https://github.com/r2d4/virgo
+
+

@@ -1,0 +1,10 @@
+virgo/.gitignore,sha256=805mn3Mq_6V9rrOkzpbAXC_-s7E5nociNW9D3mm_WSQ,23
+virgo/__init__.py,sha256=XJjXvucv6B4KOLoVct7q9PnzN5V2yYZvg3TcRBxLr3M,25
+virgo/graph.py,sha256=6H1QuxVjf6r8S1eaWMQln-I_iK5X22YF19ZaQP8OSUo,1236
+virgo/internal.py,sha256=9PQb9L0mfH4vp1yKLK4KH9E9olWcEy8NSLeK3T7hH5Q,146
+virgo/parse.py,sha256=tIQF5ZBsgWTMRQRsqxOO470chsxBIlkzv-VD8e5ylQ8,2445
+virgo/preprocess.py,sha256=U6PhE1Pb6HHsjwlykjhe2EI-uNT0DuLB6b_8LGFksYA,455
+pyvirgo-0.2.0a2.dist-info/LICENSE,sha256=9TofdYOxRCYYW9OWi9ennpJ2rTXgrZ6CfwakuGgfrIk,1061
+pyvirgo-0.2.0a2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pyvirgo-0.2.0a2.dist-info/METADATA,sha256=cbgPIwJnf2gJ2GxveenHEcp_-RGBVp43oIix7bMplIs,798
+pyvirgo-0.2.0a2.dist-info/RECORD,,
