@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: eQmaster
+Version: 0.0.23
+Summary: Query interface to retrieve data from destinated s3 location with proper authentication
+Home-page: https://github.com/avachen2005/ephodtech_query_master
+Author: ava.chen
+Author-email: ava.chen@ephodtech.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: botocore
+Requires-Dist: s3fs
+Requires-Dist: pyarrow
+Requires-Dist: boto3
+Requires-Dist: shioaji (==0.3.1.dev8)
+Requires-Dist: ewarrant (==0.0.2)
+Requires-Dist: cryptography
+
+No docutils, pandoc, or any other tricks! Just a `README.md` and a `setup.py`.
+
+See the source for this project here:
+<https://github.com/di/markdown-description-example>.
+
+Instructions to do this for your project are here:
+<https://dustingram.com/articles/2018/03/16/markdown-descriptions-on-pypi>
+
+## What we can do:
+
+We can do *italics* and **bold text**.
+
+* Lists
+* Are
+* Fun
+* Too
+  * (But please use responsibly)
+
+Code blocks:
+```
+>>> pypi_supports_markdown
+True
+```
+
+And much much more!
+
