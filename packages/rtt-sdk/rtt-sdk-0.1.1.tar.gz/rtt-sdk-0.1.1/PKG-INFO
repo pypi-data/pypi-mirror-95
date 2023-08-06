@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rtt-sdk
+Version: 0.1.1
+Summary: Scripting SDK for the Red Team Toolkit platform
+Home-page: https://netspi.com
+Author: Nick Landers, NetSPI
+Author-email: rtt.support@netspi.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
