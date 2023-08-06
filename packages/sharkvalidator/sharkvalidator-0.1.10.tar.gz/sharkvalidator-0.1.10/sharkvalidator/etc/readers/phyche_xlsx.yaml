@@ -1,0 +1,26 @@
+description: Reader for xlsx files according to the national datahost template 'Format Physical and chemical.xlsx'
+name: phyche_xlsx
+data_type: physicalchemical
+reader: !!python/name:sharkvalidator.readers.phyche.PhysicalChemicalExcelReader ''
+elements:
+    # element_specifier: can be a file_name, excel sheet_name or perhaps something else?
+    # key_values below are considered standard archive structure
+    delivery_note:
+        element_specifier: "Förklaring"
+        dtype: !!python/str
+        keep_default_na: false
+    data:
+        element_specifier: Kolumner
+        header: 2
+        dtype: !!python/str
+        keep_default_na: false
+    analyse_info:
+        element_specifier: Analysinfo
+        header: 2
+        dtype: !!python/str
+        keep_default_na: false
+    sampling_info:
+        element_specifier: Provtagningsinfo
+        header: 2
+        dtype: !!python/str
+        keep_default_na: false

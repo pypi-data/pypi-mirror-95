@@ -1,0 +1,14 @@
+description: Check for mandatory data elements in delivery (eg. delivery_note, analyse_info, sampling_info, data).
+name: elements
+validator: !!python/name:sharkvalidator.validators.elements.ElementValidator ''
+data_types:
+    physicalchemical:
+        element_list:
+          - delivery_note
+          - data
+          - analyse_info
+          - sampling_info
+    phytoplankton:
+        element_list:
+          - delivery_note
+          - data
