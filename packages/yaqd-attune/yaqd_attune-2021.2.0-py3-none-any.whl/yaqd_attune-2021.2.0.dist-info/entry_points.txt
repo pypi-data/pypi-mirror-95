@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-attune=yaqd_attune._attune:Attune.main
+
