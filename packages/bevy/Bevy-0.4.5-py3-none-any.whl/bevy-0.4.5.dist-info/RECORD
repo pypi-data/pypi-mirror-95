@@ -1,0 +1,8 @@
+bevy/__init__.py,sha256=WnCs7Dn-P2cTIh_bLeZN5UJBixtOx7kXxOYttZ4wLqk,176
+bevy/context.py,sha256=ZhXshDbR66yNZE1Fd3CEAesdqf6SkGlyN491SiUlPQU,11313
+bevy/factory.py,sha256=RrB7OfNYdQwLFACIs_AyEBxxMxQKPbAnQfraeUh3KGY,2269
+bevy/injectable.py,sha256=D6HJVYzq__8SfxY_DmC1ncNKptwo0ONLztIjGZcUWuU,1811
+bevy-0.4.5.dist-info/LICENSE,sha256=JnpmFHGtncdHGBgAQPR8vKICZwkfgANkWfJGfr55lcs,1076
+bevy-0.4.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+bevy-0.4.5.dist-info/METADATA,sha256=1EyueKC2ESTTaMKnSTPwXeJVoMMXZN_be7wgqr5nrXE,6632
+bevy-0.4.5.dist-info/RECORD,,
