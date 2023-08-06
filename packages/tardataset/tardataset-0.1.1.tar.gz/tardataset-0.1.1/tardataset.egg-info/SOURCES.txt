@@ -1,0 +1,13 @@
+README.md
+setup.py
+tardataset/__init__.py
+tardataset/bsontar.py
+tardataset/entries.py
+tardataset/tarfile.py
+tardataset.egg-info/PKG-INFO
+tardataset.egg-info/SOURCES.txt
+tardataset.egg-info/dependency_links.txt
+tardataset.egg-info/entry_points.txt
+tardataset.egg-info/requires.txt
+tardataset.egg-info/top_level.txt
+tardataset.egg-info/zip-safe
