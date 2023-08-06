@@ -1,0 +1,12 @@
+json_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_converter/data_node.py,sha256=054Gi3kMAebp4E0BGSDOlFIokIn2ByN9grI4GOEbp1M,1264
+json_converter/json_mapper.py,sha256=J-I4vlcqEgibqB75caF1Jo5mO5JAfF0en7qPNC5L9Uc,5036
+json_converter/post_process.py,sha256=aZg0mWYKxWZ5ck8PKI0Svqjk_VQTy44wKsve_DsQ_cE,496
+jsonconverter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonconverter/data_node.py,sha256=054Gi3kMAebp4E0BGSDOlFIokIn2ByN9grI4GOEbp1M,1264
+jsonconverter/json_mapper.py,sha256=AtVRXiybacxe2oajTzP3sH1kLiypceFUfjOx9ifj3cc,4696
+jsonconverter/post_process.py,sha256=aZg0mWYKxWZ5ck8PKI0Svqjk_VQTy44wKsve_DsQ_cE,496
+json_converter-0.4.0.dist-info/METADATA,sha256=f8Kjr8TX4VY3R844bc23d5RLOnnP9j9VlaJc-nWPtSk,16140
+json_converter-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+json_converter-0.4.0.dist-info/top_level.txt,sha256=WGVJEqoXDia0hhbG0V9r8mf8oEWq1nkgxYeAsYqjVBs,15
+json_converter-0.4.0.dist-info/RECORD,,
