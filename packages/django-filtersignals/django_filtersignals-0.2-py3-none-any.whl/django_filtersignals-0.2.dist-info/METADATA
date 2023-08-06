@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-filtersignals
+Version: 0.2
+Summary: Prioritized signals for Django projects
+Home-page: https://kumig.it/kumisystems/django-filtersignals
+Author: Kumi Systems e.U.
+Author-email: support@kumi.systems
+License: BSD-2-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Requires-Dist: django
+
+# django-filtersignals
+
+filtersignals are prioritized signals, that allow each signal receiver to modify the data provided to them, as processed by other receivers before them.
+
+This allows you to easily implement a system of filter hooks in your Django project.
+
