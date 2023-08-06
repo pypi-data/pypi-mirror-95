@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: ferramentas-do-Andre
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Andre Rafael
+Author-email: andrerafael2000@gmail.com
+License: MIT
+Description: Uma biblioteca para facilitar meu trabalho
+        
+        Change Log
+        ===========
+        
+        0.0.1 (18/02/2021)
+        -------------------
+        - First Release
+Keywords: ferramentas
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

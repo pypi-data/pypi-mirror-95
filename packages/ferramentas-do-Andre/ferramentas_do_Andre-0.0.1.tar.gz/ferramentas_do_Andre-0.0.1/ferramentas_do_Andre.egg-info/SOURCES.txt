@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ferramentas_do_Andre.egg-info/PKG-INFO
+ferramentas_do_Andre.egg-info/SOURCES.txt
+ferramentas_do_Andre.egg-info/dependency_links.txt
+ferramentas_do_Andre.egg-info/top_level.txt
+my_tools/Criador_de_planilha.py
+my_tools/Gerenciador_de_arquivos.py
+my_tools/leitorPDF.py
