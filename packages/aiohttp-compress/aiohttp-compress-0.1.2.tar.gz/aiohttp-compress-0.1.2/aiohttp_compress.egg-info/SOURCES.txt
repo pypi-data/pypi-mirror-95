@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+aiohttp_compress/__init__.py
+aiohttp_compress/middleware.py
+aiohttp_compress/version.py
+aiohttp_compress.egg-info/PKG-INFO
+aiohttp_compress.egg-info/SOURCES.txt
+aiohttp_compress.egg-info/dependency_links.txt
+aiohttp_compress.egg-info/requires.txt
+aiohttp_compress.egg-info/top_level.txt
