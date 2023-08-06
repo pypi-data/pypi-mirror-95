@@ -1,0 +1,3 @@
+[console_scripts]
+digitalocean-inventory = digitalocean_inventory.__main__:fetch
+
