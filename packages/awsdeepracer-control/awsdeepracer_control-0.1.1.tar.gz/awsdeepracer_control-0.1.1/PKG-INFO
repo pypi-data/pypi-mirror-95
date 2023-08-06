@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: awsdeepracer_control
+Version: 0.1.1
+Summary: awsdeepracer_control is a rewrite python package for control the DeepRacer vehicle via HTTP API.
+Home-page: https://github.com/lshw54/awsdeepracer_control
+Author: lshw54
+Author-email: lshw.5454@gmail.com
+License: MIT
+Description: # awsdeepracer_control
+         This python package rewrite to support the new version Deepracer Console Software ```version 1.0.606.0```
+        
+        # What's New
+        - Fix the video stream can not display
+        - Fix the `move` method add the new value to support new version web console
+        - Remove `move_forward`, `move_backward`, `turn_right`, `turn_left` method
+        
+        # Package Repo Link
+        https://github.com/lshw54/awsdeepracer_control
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
