@@ -1,0 +1,5 @@
+pelican/plugins/show_source/__init__.py,sha256=VN0EPglVIGuS3QtymT_HvmqE0iHWbdBQWA8S071zB5o,35
+pelican/plugins/show_source/show_source.py,sha256=ETtaQP8Uc-iRHgiN2rohhMlw6dnsTSrsXorwkDV4n5c,3135
+pelican_show_source-1.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pelican_show_source-1.0.0.dist-info/METADATA,sha256=pp92bN2Mazg5DBs1og30ujmugLoZ_JU-kjtDYHtbC_I,6567
+pelican_show_source-1.0.0.dist-info/RECORD,,
