@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: dimensigon
+Version: 0.3.4
+Summary: Distributed Management and orchestration through RESTful, Mesh Networking and with a flair of IoT.
+Home-page: https://github.com/dimensigon/dimensigon
+Author: Joan Prat
+Author-email: joan.prat@dimensigon.com
+License: GNU General Public License v3 or later (GPLv3+)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==3.7.3)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: coolname (==1.1.0)
+Requires-Dist: cryptography (==3.4.5)
+Requires-Dist: dataclasses (==0.6)
+Requires-Dist: dill (==0.3.3)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: Flask-JWT-Extended (==4.0.2)
+Requires-Dist: Flask-RESTFul (==0.3.8)
+Requires-Dist: Flask-SQLAlchemy (==2.4.4)
+Requires-Dist: jinja2 (==2.11.3)
+Requires-Dist: jinja2schema (==0.1.4)
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: netifaces (==0.10.9)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: passlib (==1.7.4)
+Requires-Dist: prompt-toolkit (==3.0.16)
+Requires-Dist: Pygments (==2.8.0)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: RestrictedPython (==5.1)
+Requires-Dist: rsa (==4.7.1)
+Requires-Dist: schema (==0.7.4)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: watchdog (==2.0.0)
+
+**Dimensigon (DM)** is our backend technology at store.dimensigon.com to bootstrap ELASTIC Services.
+
+As main features:
+
+- Polyglot or Heterogeneous orquestrations
+- Mesh Networking
+- Decentralization of IoT or IoT 2.0 as we understand it for our own implementation.
+- Distributed-Decentralized Server Management, High-complex orchestrations
+- Full RESTful and easily embeddable
+- Distributed Vault for Configuration Management or Secrets
+- Log Federation
+- Double Encryption (SSL + Encrypted messaging by default)
+- ACLs for higher granularity and security control on top of OS Security.
+
+
+All these functionality makes **Dimensigon (DM)** a good standard for companies serving as Coordination layer for all automation technologies (Polyglot).
+**Dimensigon** (DM) lowers the costs of administration and simplify the management of high-complex environments like Hybrid Multi-Cloud.
+
+
+**Dimensigon (DM)** is a 100% Python and REAL Open Source project.
+
+**REAL Open Source** => No Freemium or Enterprise versions would be available in the future
+
+
