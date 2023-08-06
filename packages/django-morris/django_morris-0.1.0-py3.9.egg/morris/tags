@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/h2sm/projects/dev/django-morris/morris/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+AnonymousFunction80e796930100	static/morris/js/hex_color.min.js	/^let ColorField=function(n){let o=[];function t(){o=document.querySelectorAll(".morris-hexcolor")/;"	f
+AnonymousFunctionb748f5c10100	static/morris/js/hex_color.js	/^window.addEventListener("load", function (ev) {$/;"	f
+ColorField	static/morris/js/hex_color.js	/^let ColorField = (function(window) {$/;"	f
+ColorField	static/morris/js/hex_color.min.js	/^let ColorField=function(n){let o=[];function t(){o=document.querySelectorAll(".morris-hexcolor")/;"	f
+HEX_COLOR_RE	fields.py	/^HEX_COLOR_RE = re.compile("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$")$/;"	v
+HexColorField	fields.py	/^class HexColorField(models.CharField):$/;"	c
+HexColorWidget	widgets.py	/^class HexColorWidget(forms.Widget):$/;"	c
+Media	widgets.py	/^    class Media:$/;"	c	class:HexColorWidget
+_	fields.py	/^from django.utils.translation import gettext_lazy as _$/;"	x	nameref:unknown:gettext_lazy
+__init__	fields.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:HexColorField
+default_validators	fields.py	/^    default_validators = [hex_color_validator]$/;"	v	class:HexColorField
+description	fields.py	/^    description = _("A css color with a preview")$/;"	v	class:HexColorField
+formfield	fields.py	/^    def formfield(self, **kwargs):$/;"	m	class:HexColorField
+hex_color_validator	fields.py	/^hex_color_validator = RegexValidator($/;"	v
+i	static/morris/js/hex_color.min.js	/^let ColorField=function(n){let o=[];function t(){o=document.querySelectorAll(".morris-hexcolor")/;"	f	function:ColorField
+init	static/morris/js/hex_color.js	/^  function init() {$/;"	f	function:ColorField
+isValidHexColor	static/morris/js/hex_color.js	/^  function isValidHexColor(text) {$/;"	f	function:ColorField
+js	widgets.py	/^        js = [$/;"	v	class:HexColorWidget.Media
+l	static/morris/js/hex_color.min.js	/^let ColorField=function(n){let o=[];function t(){o=document.querySelectorAll(".morris-hexcolor")/;"	f	function:ColorField
+makeBgImage	static/morris/js/hex_color.js	/^  function makeBgImage(color) {$/;"	f	function:ColorField
+r	static/morris/js/hex_color.min.js	/^let ColorField=function(n){let o=[];function t(){o=document.querySelectorAll(".morris-hexcolor")/;"	f	function:ColorField
+t	static/morris/js/hex_color.min.js	/^let ColorField=function(n){let o=[];function t(){o=document.querySelectorAll(".morris-hexcolor")/;"	f	function:ColorField
+template_name	widgets.py	/^    template_name = "morris\/hex_color.html"$/;"	v	class:HexColorWidget
+updateColor	static/morris/js/hex_color.js	/^  function updateColor(field) {$/;"	f	function:ColorField
+{{ widget.attrs.id }}	templates/morris/hex_color.html	/^ id="{{ widget.attrs.id }}"$/;"	I

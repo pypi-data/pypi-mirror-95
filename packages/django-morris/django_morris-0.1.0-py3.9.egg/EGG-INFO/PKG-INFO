@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: django-morris
+Version: 0.1.0
+Summary: A hexadecimal django color field with a preview.
+Home-page: https://gitlab.com/heg-ulmuten/django-morris
+Author: HeG Ulmuten
+Author-email: heg@ulmuten.net
+License: MIT
+Description: # django-morris
+        A hexadecimal color field with a preview.
+        
+        ## Installation
+        - Run `pip install django-morris`
+        - Add `morris` to `settings.INSTALLED_APPS`
+        - Run `python manage.py collectstatic`
+        - Restart your application server
+        
+        ## Usage
+        ### Models
+        Just add a color field to your models like this:
+        
+        ```python
+        from django.db import models
+        from morris.fields import HexColorField
+        
+        class MyModel(model.Model):
+            color = HexColorField()
+        ```
+        
+        ## Credits
+        *Heavily* inspired from
+        [django-colorfield](https://github.com/fabiocaccamo/django-colorfield). If you
+        need a color picker you should use `django-colorfield` instead of this package.
+        
+        ## License
+        Released under [MIT License](LICENSE.txt).
+        
+Keywords: admin,color,colorfield,colorpreview,django,field,python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Requires: django (>=2.2)
+Description-Content-Type: text/markdown
