@@ -1,0 +1,11 @@
+.gitignore
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+ansibeautifier.py
+setup.py
+ansibeautifier.egg-info/PKG-INFO
+ansibeautifier.egg-info/SOURCES.txt
+ansibeautifier.egg-info/dependency_links.txt
+ansibeautifier.egg-info/top_level.txt
