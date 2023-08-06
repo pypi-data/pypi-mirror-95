@@ -1,0 +1,12 @@
+yumemi/__init__.py,sha256=cQiMCIQ8aQi_UdX7KlEAi6YsImYGKr_z5_wMfGPJ4Fs,107
+yumemi/__main__.py,sha256=EwgrZujcMN1I6axkdOyOETWL-l1wZ1KyfhUc9hT9_gw,30
+yumemi/anidb.py,sha256=x0MvQSOJntvlA3lYZ31mII5OO9247YFc5H3J3DxOtLA,14219
+yumemi/cli.py,sha256=oGDkVAYiqSUQ2eEPpDxGaFNbrgXvWceHnj3ROdW9teI,5201
+yumemi/ed2k.py,sha256=Rj_KKfX82xlKp6s4jXa11Ewg10cPqdYAryqm_JdSfPc,2724
+yumemi/exceptions.py,sha256=VGBZxK7RPwm3TRtlfemWaVK8BqS6RngpJMCIO07sTwA,983
+yumemi-1.2.dist-info/LICENSE,sha256=f6nF9VPOHS6Yw7JZ47LG_hR7hGtj7lQQyM8XRNHDceY,1071
+yumemi-1.2.dist-info/METADATA,sha256=0qrrXnCBAlExNVtvfc2dJcFea3lBw4-iuQ9yZ1zu9vE,3417
+yumemi-1.2.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+yumemi-1.2.dist-info/entry_points.txt,sha256=ajj_j3umecC4ihow0NxqYRvuJ357o-DgwfQzhfUmWPs,44
+yumemi-1.2.dist-info/top_level.txt,sha256=chPRUAWERNgZmxKI6W8lOp_UkHZhD5eLsA-qAop7MGg,7
+yumemi-1.2.dist-info/RECORD,,
