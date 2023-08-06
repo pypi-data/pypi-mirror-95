@@ -1,0 +1,3 @@
+[console_scripts]
+reprex = reprexlite.cli:app
+
