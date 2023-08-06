@@ -1,0 +1,3 @@
+[console_scripts]
+pymetager = pymetager.cli:cli
+

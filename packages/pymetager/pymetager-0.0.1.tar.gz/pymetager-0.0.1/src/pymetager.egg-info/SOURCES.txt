@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/pymetager/__init__.py
+src/pymetager/cli.py
+src/pymetager/version_manager.py
+src/pymetager.egg-info/PKG-INFO
+src/pymetager.egg-info/SOURCES.txt
+src/pymetager.egg-info/dependency_links.txt
+src/pymetager.egg-info/entry_points.txt
+src/pymetager.egg-info/requires.txt
+src/pymetager.egg-info/top_level.txt
