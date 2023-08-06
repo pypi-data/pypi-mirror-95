@@ -1,0 +1,9 @@
+elasticsearch
+python-stdnum>=1.1.0
+werkzeug<2
+trytond_party<5.9,>=5.8
+trytond_product<5.9,>=5.8
+trytond_sale<5.9,>=5.8
+trytond_web_shop<5.9,>=5.8
+trytond_web_user<5.9,>=5.8
+trytond<5.9,>=5.8
