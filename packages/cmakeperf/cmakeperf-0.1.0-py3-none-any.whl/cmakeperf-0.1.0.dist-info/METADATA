@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cmakeperf
+Version: 0.1.0
+Summary: Measure compilation performance from cmake compilation database
+License: MIT
+Author: Paul Gessinger
+Author-email: hello@paulgessinger.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: pandas (>=1.0.5,<2.0.0)
+Requires-Dist: psutil (>=5.7.0,<6.0.0)
+Requires-Dist: tabulate (>=0.8.7,<0.9.0)

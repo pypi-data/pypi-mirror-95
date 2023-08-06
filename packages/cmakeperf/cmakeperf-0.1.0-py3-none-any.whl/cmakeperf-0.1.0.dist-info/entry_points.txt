@@ -1,0 +1,3 @@
+[console_scripts]
+cmakeperf=cmakeperf.cli:main
+
