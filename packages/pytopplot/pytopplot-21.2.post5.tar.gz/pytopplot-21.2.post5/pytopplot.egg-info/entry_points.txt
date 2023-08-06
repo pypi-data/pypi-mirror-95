@@ -1,0 +1,3 @@
+[console_scripts]
+pytopplot = pytopplot.__main__:main
+
