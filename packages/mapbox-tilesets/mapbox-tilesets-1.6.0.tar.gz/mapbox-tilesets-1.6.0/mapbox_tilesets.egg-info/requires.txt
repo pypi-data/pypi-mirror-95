@@ -1,0 +1,16 @@
+boto3
+click~=7.1.2
+cligj
+requests
+requests-toolbelt
+jsonschema~=3.0
+jsonseq~=1.0
+mercantile~=1.1.6
+supermercado~=0.2.0
+
+[test]
+pytest==4.6.11
+pytest-cov
+pre-commit
+black
+pep8
