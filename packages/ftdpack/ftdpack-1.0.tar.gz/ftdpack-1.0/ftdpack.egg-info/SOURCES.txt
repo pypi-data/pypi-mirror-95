@@ -1,0 +1,10 @@
+README.md
+setup.py
+ftd/__init__.py
+ftd/failuretodeliver.py
+ftdpack.egg-info/PKG-INFO
+ftdpack.egg-info/SOURCES.txt
+ftdpack.egg-info/dependency_links.txt
+ftdpack.egg-info/not-zip-safe
+ftdpack.egg-info/requires.txt
+ftdpack.egg-info/top_level.txt
