@@ -1,0 +1,3 @@
+[console_scripts]
+linuxprivchecker = linuxprivchecker:run_check
+

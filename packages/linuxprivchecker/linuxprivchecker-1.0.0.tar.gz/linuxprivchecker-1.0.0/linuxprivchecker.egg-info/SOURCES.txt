@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+linuxprivchecker/__init__.py
+linuxprivchecker/__main__.py
+linuxprivchecker.egg-info/PKG-INFO
+linuxprivchecker.egg-info/SOURCES.txt
+linuxprivchecker.egg-info/dependency_links.txt
+linuxprivchecker.egg-info/entry_points.txt
+linuxprivchecker.egg-info/top_level.txt
