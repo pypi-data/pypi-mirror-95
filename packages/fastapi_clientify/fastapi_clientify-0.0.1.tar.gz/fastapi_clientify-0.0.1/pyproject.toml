@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "fastapi_clientify"
+author = "hugoduar"
+author-email = "hugoduar1@gmail.com"
+home-page = "https://github.com/hugoduar/fastapi-clientify"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
