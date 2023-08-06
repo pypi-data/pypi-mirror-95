@@ -1,0 +1,619 @@
+#!/bin/bash
+#-------------------------------------------------------------------------------
+#
+# pamic configures noise suppression for Pulseaudio sources, e.g microphones.
+#
+# Copyright 2020 Jonathan Sambrook and Codethink Ltd.
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+#-------------------------------------------------------------------------------
+#
+# pamic is configurable on the commandline or via environment variables.
+#
+# By default it will try to apply noise suppression to the first available
+# Pulseaudio source.
+#
+# Run 'pamic --help' for more information on the commandline options.
+#
+# If you're not averse to editting this file you can override the defaults by
+# uncommenting and adjusting lines in the next section.
+#
+#-------------------------------------------------------------------------------
+#
+# PAMIC_LIB_DIR specifies the directory containing the LASPA rnnoise library.
+#PAMIC_LIB_DIR="${HOME}/.local/lib/"
+
+# PAMIC_MICROPHONE_SOURCE specifies which source to suppress noise for.
+# Here's an example from my machine:
+#PAMIC_MICROPHONE_SOURCE="alsa_input.pci-0000_00_1f.3.analog-stereo"
+
+# PAMIC_MICROPHONE_SINK specifies which output sink (e.g speakers) signal to
+# subtract from the input source (microphone) signal.
+# Warning: setting this here would force echo cancellation mode.
+# Here's an example from my machine:
+#PAMIC_MICROPHONE_SINK="alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1"
+
+# PAMIC_MICROPHONE_MODE specifies whether the source is mono or stereo.
+#PAMIC_MICROPHONE_MODE="mono"
+#PAMIC_MICROPHONE_MODE="stereo"
+
+# PAMIC_MICROPHONE_RATE specifies the source's frequency in Hz.
+#PAMIC_MICROPHONE_RATE=48000
+
+# PAMIC_VOLUME_IN specifies the recording level of the raw mic source.
+# PAMIC_VOLUME_OUT specifies the recording level of the suppressed source.
+# My laptop's mic is very sensitive (it saturates easily), so I set
+# PAMIC_VOLUME_IN low and compensate by setting PAMIC_VOLUME_OUT high.
+#PAMIC_VOLUME_IN="30%"
+#PAMIC_VOLUME_OUT="110%"
+
+# PAMIC_VAD_THRESHOLD specifies the cutoff level for noise.
+# Higher values mean more suppression.
+# Somewhere between 50 and 95 should be good.
+#PAMIC_VAD_THRESHOLD="95"
+
+#-------------------------------------------------------------------------------
+
+PROG="$(basename "${0}")"
+
+VERSION="0.1"
+
+# This is some text included somewhere in all the loaded modules' parameters.
+# It's used to remove them cleanly. Must not clash with other Pulseaudio use.
+TAG="pamic_cimap"
+
+# If the column utilty is available, configure its use. Fall back on cat.
+COLUMN_UTILITY="$(which column >/dev/null 2>&1 && echo "column -t" || echo cat)"
+
+#-------------------------------------------------------------------------------
+
+PAMIC_CONFIG_DIR="${HOME}/.config/pamic"
+PAMIC_STORED_COMMANDLINE="${PAMIC_CONFIG_DIR}/stored_commandline"
+
+PAMIC_ERR_GENERIC_ERR=1
+PAMIC_ERR_MODULE_EXISTS=2
+PAMIC_ERR_NOT_ACTIVE=3
+
+#-------------------------------------------------------------------------------
+
+function die {
+    [ -n "$@" ] && echo -e "$@"
+    exit ${PAMIC_ERR_GENERIC_ERR}
+}
+
+#-------------------------------------------------------------------------------
+
+function check_lib {
+    # Can we see the LADSPA rnnoise library?
+    /sbin/ldconfig -N -v "$(tr : ' ' <<< "${LD_LIBRARY_PATH}")" 2>/dev/null  | grep -q "${PAMIC_LIB}"
+
+    # ... if not, give some helpful suggestions and exit
+    if [ $? -ne 0 ]; then
+        die "$(cat <<- HERE
+		Can't see '${PAMIC_LIB}' on the default paths or LD_LIBRARY_PATH.
+		Make sure at least one of the following is true:
+		  *) Move '$(basename "${PAMIC_LIB}")' to a standard library path (e.g. '/usr/local/lib').
+		  *) Set 'LD_LIBRARY_PATH' environment variable appropriately.
+		  *) Set the 'PAMIC_LIB_DIR' environment variable to the correct directory."
+		HERE
+        )"
+    fi
+}
+
+#-------------------------------------------------------------------------------
+
+function check_source {
+	local sources="${1}"
+
+    if [ -z "${PAMIC_MICROPHONE_SOURCE}" ]; then
+        die "Can't see a suitable Pulseaudio source. Show the available sources with '${PROG} --list'."
+    else
+        # Is there a source with an exactly matching name?
+        cut -f2 <<< "${sources}" | grep -q "^${PAMIC_MICROPHONE_SOURCE}$"
+
+        if [ $? -ne 0 ]; then
+            die "'${PAMIC_MICROPHONE_SOURCE}' doesn't appear to be the name of a Pulseaudio source."
+        fi
+    fi
+}
+
+#-------------------------------------------------------------------------------
+
+function check_sink {
+	local sinks="${1}"
+
+	# Is there a source with an exactly matching name?
+	cut -f2 <<< "${sinks}" | grep -q "^${PAMIC_MICROPHONE_SINK}$"
+
+	if [ $? -ne 0 ]; then
+		die "'${PAMIC_MICROPHONE_SINK}' doesn't appear to be the name of a Pulseaudio sink."
+	fi
+}
+
+#-------------------------------------------------------------------------------
+
+function check_loaded {
+	local modules="${1}"
+	local src="$(sed -n 's/.*module-\(loopback\|echo-cancel\).*\s\+source\(_master\)\?=\([^ \t]\+\)\s.*'${TAG}'.*/\3/p' <<< "${modules}")"
+
+	if [ -n "${src}" ]; then
+		if [ -n "${force_load}" ]; then
+			unload
+		else
+			echo "Already working with input source '${src}'. Run '${PROG} --unload'?"
+			exit ${PAMIC_ERR_MODULE_EXISTS}
+		fi
+	fi
+}
+
+#-------------------------------------------------------------------------------
+
+function load {
+	local modules="$(pactl list modules short)"
+	local sources="$(pactl list sources short)"
+
+	# No double dipping
+	check_loaded "${modules}"
+
+
+	# Default to first available source if none already set.
+	if [ -z "${PAMIC_MICROPHONE_SOURCE}" ]; then
+		PAMIC_MICROPHONE_SOURCE="$(head -n 1 <<< "${sources}" | cut -f2)"
+	fi
+
+	check_source "${sources}"
+
+	# Fill in the module templates
+	if [ -n "${PAMIC_MICROPHONE_SINK}" ]; then
+		local mic_ec="${TAG}_src"
+		local spk_ec="${TAG}_snk"
+		local vsink_fx="${TAG}_vsink_fx"
+		local vsink_fx_mic="${TAG}_vsink_fx_mic"
+
+		local sinks="$(pactl list sinks short)"
+		check_sink "${sinks}"
+
+		# We're going ahead, let the user know what we're up to.
+		[ -n "${verbose}" ] && echo "$(cat <<- HERE
+		Applying echo cancellation / noise suppression from
+		  output sink:  '${PAMIC_MICROPHONE_SINK}' to
+		  input source: '${PAMIC_MICROPHONE_SOURCE}'
+		If these *aren't* the sink or source you want, either pass the ones you do via '--sink' or
+		'--source' on the commandline, or set them in the 'PAMIC_MICROPHONE_SINK' or
+		'PAMIC_MICROPHONE_SOURCE' environment variable(s). Run '${PROG} --list' to see the
+		available sources and sinks.
+		HERE
+		)"
+
+		modules=(
+			# Set up echo cancellation
+			"module-echo-cancel use_master_format=1 aec_method=webrtc aec_args='analog_gain_control=0\ digital_gain_control=1\ experimental_agc=1\ noise_suppression=1\ voice_detection=1\ extended_filter=1' source_master=${PAMIC_MICROPHONE_SOURCE} source_name=${mic_ec} source_properties=device.description='${PROG}\ virtual\ mic' sink_master=${PAMIC_MICROPHONE_SINK} sink_name=${spk_ec} sink_properties=device.description='${PROG}\ virtual\ speaker'"
+
+			# These allow for feeding sound effects etc in to the outbound stream
+
+			# Create virtual output devices
+	#		"module-null-sink sink_name=${vsink_fx}     sink_properties=device.description=${vsink_fx}"
+	#		"module-null-sink sink_name=${vsink_fx_mic} sink_properties=device.description=${vsink_fx_mic}"
+
+			# Create loopbacks
+	#		"module-loopback latency_msec=30 adjust_time=3 source=${mic_ec}           sink=${vsink_fx_mic}"
+	#		"module-loopback latency_msec=30 adjust_time=3 source=${vsink_fx}.monitor sink=${vsink_fx_mic}"
+	#		"module-loopback latency_msec=30 adjust_time=3 source=${vsink_fx}.monitor sink=${spk_ec}"
+		)
+	else
+		# If PAMIC_LIB_DIR is set, make sure it ends with a '/'.
+		[ -n "${PAMIC_LIB_DIR}" -a "${PAMIC_LIB_DIR: -1}" != "/" ] && PAMIC_LIB_DIR="${PAMIC_LIB_DIR}/"
+
+		# If PAMIC_LIB isn't set, generate the default.
+		[ -z "${PAMIC_LIB}" ] && PAMIC_LIB="${PAMIC_LIB_DIR}librnnoise_ladspa.so"
+
+		check_lib
+
+		# Default to checking source for stereosity, with mono as a fallback.
+		if [ -z "${PAMIC_MICROPHONE_MODE}" ]; then
+			PAMIC_MICROPHONE_MODE="$(grep -q "\s${PAMIC_MICROPHONE_SOURCE}\s.*\s2ch\s" <<< "${sources}" && echo stereo || echo mono)"
+		fi
+
+		if [ "${PAMIC_MICROPHONE_MODE}" == "stereo" ]; then
+			channels=2
+		elif [ "${PAMIC_MICROPHONE_MODE}" == "mono" ]; then
+			channels=1
+		else
+			die "Unknown PAMIC_MICROPHONE_MODE: '${PAMIC_MICROPHONE_MODE}'."
+		fi
+
+		# Look for frequency of source, falling back to 48KHz.
+		if [ -z "${PAMIC_MICROPHONE_RATE}" ]; then
+			PAMIC_MICROPHONE_RATE="$(sed -n 's/.*\s'${PAMIC_MICROPHONE_SOURCE}'\s.*\s\([0-9]\+\)Hz.*/\1/p' <<< "${sources}")"
+			[ -z "${PAMIC_MICROPHONE_RATE}" ] && PAMIC_MICROPHONE_RATE=48000
+		fi
+
+		# Set default VAD
+		if [ -z "${PAMIC_VAD_THRESHOLD}" ]; then
+			PAMIC_VAD_THRESHOLD=95
+		fi
+
+		# We're going ahead, so let the user know what we're up to.
+		[ -n "${verbose}" ] && echo "$(cat <<- HERE
+		Applying noise suppression to source '${PAMIC_MICROPHONE_SOURCE}'.
+		If this *isn't* the device you want, either pass the one you do via '--source' on the
+		commandline, or set it in the 'PAMIC_MICROPHONE_SOURCE' environment variable.
+		Run '${PROG} --list' to see the available sources.
+		HERE
+		)"
+
+		modules=(
+			"module-null-sink   sink_name=${TAG}_mic_out sink_properties=device.description='null\ sink\ for\ denoising' rate=${PAMIC_MICROPHONE_RATE}"
+
+			"module-ladspa-sink sink_name=${TAG}_mic_raw_in sink_master=${TAG}_mic_out label=noise_suppressor_${PAMIC_MICROPHONE_MODE} plugin="${PAMIC_LIB}" control=${PAMIC_VAD_THRESHOLD}"
+
+			"module-loopback source="${PAMIC_MICROPHONE_SOURCE}" sink=${TAG}_mic_raw_in channels=${channels}"
+
+			"module-remap-source source_name=${TAG}_src master=${TAG}_mic_out.monitor channels=${channels} source_properties=device.description='${PROG}\ virtual\ mic'"
+		)
+	fi
+
+	# Finally, showtime!
+	for m in "${modules[@]}"; do
+		pacmd load-module "${m}"
+	done
+
+	[ -n "${PAMIC_VOLUME_IN}"  ] && pactl set-source-volume "${PAMIC_MICROPHONE_SOURCE}" "${PAMIC_VOLUME_IN}"
+	[ -n "${PAMIC_VOLUME_OUT}" ] && pactl set-source-volume "${TAG}_src" "${PAMIC_VOLUME_OUT}"
+
+	pacmd set-default-source "${TAG}_src"
+	[ -n "${PAMIC_MICROPHONE_SINK}" ] && pacmd set-default-sink "${TAG}_snk"
+
+	save_commandline "${commandline}"
+}
+
+#-------------------------------------------------------------------------------
+
+function unload {
+	# Get the module index (first field, all digits) for any which have ${TAG} in their entry
+	module_indices=$(pactl list modules short | sed -n 's/^\([0-9]\+\)\s.*'${TAG}'.*/\1/p'   )
+
+	if [ -n "${module_indices}" ]; then
+		for i in ${module_indices}; do
+			pacmd unload-module ${i}
+		done
+	else
+		exit ${PAMIC_ERR_NOT_ACTIVE}
+	fi
+}
+
+#-------------------------------------------------------------------------------
+
+function list_sources_or_sinks {
+	local t="${1}"
+	echo "${t}:"
+	pactl list ${t} short | cut -f2- | ${COLUMN_UTILITY} | sed -e 's/\(.*\)/  \1/'
+}
+
+#-------------------------------------------------------------------------------
+
+function list {
+	list_sources_or_sinks sources
+	echo
+	list_sources_or_sinks sinks
+	echo -e "\nmodules loaded by ${PROG}:"
+	pactl list modules short | cut -f2- | sed -n 's/\(.*'${TAG}'.*\)/  \1/p'
+}
+
+#-------------------------------------------------------------------------------
+
+function save_commandline {
+	[ -d "${PAMIC_CONFIG_DIR}" ] || { mkdir -p "${PAMIC_CONFIG_DIR}" || die "Can't create '${PAMIC_CONFIG_DIR}'"; }
+	echo "${@}" | sed 's/ --save-cl//' > "${PAMIC_STORED_COMMANDLINE}"
+}
+
+#-------------------------------------------------------------------------------
+
+function load_cl {
+	if [ -e "${PAMIC_STORED_COMMANDLINE}" ]; then
+		exec "${0}" $(cat ${PAMIC_STORED_COMMANDLINE})
+	else
+		echo "No commandline stored at '${PAMIC_STORED_COMMANDLINE}'"
+	fi
+}
+
+#-------------------------------------------------------------------------------
+
+function display_help {
+	echo "$(cat <<- HERE
+	Echo cancellation mode:
+	${PROG} [<common options>] -S|--sink SNK -l|--load
+
+	Noise suppression mode:
+	${PROG} [<common options>] [--vad N] [--mic-mode mono|stereo] [--mic-rate] -l|--load
+
+	Common options: [-s|--source SRC] [--vin PCT] [--vout PCT]
+
+	Other modes:
+	${PROG} -u|--unload
+	${PROG} -L|--list
+	${PROG} -h|--help  ← use this to display loquacious help
+	${PROG} -V|--version
+	${PROG}    --load-cl
+
+	Other options:
+	-f|--force
+	   --save-cl
+	-v|--verbose
+	HERE
+	)"
+
+	if [ -n "$1" ]; then
+		if [ "${1}" == "long" ]; then
+			echo "$(cat <<- HERE
+
+			---------------------------------------------------------------------------------------
+			OVERVIEW
+
+			${PROG} has two main modes of operation:
+
+			   i) echo cancellation combined with noise suppression
+			  ii) stand alone noise suppression.
+
+			Echo cancellation mode detects the sound signal coming from a speaker output and
+			removes that signal from from a microphone's input. Inputs are known in Pulseaudio
+			as 'sources' and outputs are known as 'sinks'.
+
+			Echo cancellation mode is the more CPU intensive of the two modes. So if you only
+			require noise suppression, e.g you're using headphones and only need to remove fan
+			noise from your microphone input, use noise suppression mode instead.
+
+			Standalone noise suppression is more effective than the noise suppression built in to
+			echo cancellation mode.
+
+			${PROG} will set the newly create virtual microphone as Pulseaudio's default input.
+			In echo cancellation mode ${PROG} will set the newly created virtual speakers as the
+			default output sink. This should mean that applications configured to use the default
+			devices will work as expected. However, if an application is already connected to the
+			previous default device, or is configured to use a specific device, manual intervention
+			may be necessary.
+
+			Enter either of the two main modes by passing the '--load' option last on the
+			commandline.
+
+			Echo cancellation is selected by having also passed the '--sink SNK' option, where
+			'SNK' is a placeholder for the Pulseaudio output sink whose signal is to be removed
+			from the input source.
+
+			E.g:
+			  ${PROG} --sink alsa_output.usb-M-Audio_FastTrack_Pro-00.analog-stereo-a-output --load
+
+
+			If no '--sink' option has been given, noise suppression mode is selected.
+
+			In either mode the input source, usually a microphone, can be specified with the
+			'--source SRC' option.
+
+			E.g:
+			  ${PROG} --source alsa_input.pci-0000_00_1f.3.analog-stereo --load
+
+			If no source is specified, ${PROG} will use the first one it finds. This may not be the
+			one you expect, but if your machine only has one source, it may work fine for you.
+
+
+			Use list mode to display the available sources, sinks, and any modules already loaded
+			by ${PROG}.
+
+			I.e:
+			  ${PROG} --list
+
+
+			When you wish to stop either of the main modes, use the unload option.
+
+			I.e:
+			  ${PROG} --unload
+
+
+			---------------------------------------------------------------------------------------
+			MODULES/INSTALLATION
+
+			Each mode uses a different Pulseaudio module.
+
+			Echo cancellation uses the standard module-echo-cancel which comes with modern
+			Pulseaudio installations.
+
+			Standalone noise suppression uses librnnoise_ladspa.so which you likely need to compile
+			from source. Follow the instructions at
+			https://github.com/werman/noise-suppression-for-voice to build librnnoise_ladspa.so,
+			then move it to /usr/local/lib/librnnoise_ladspa.so
+
+			---------------------------------------------------------------------------------------
+			CONTROL OF MAIN MODES
+
+			In addition to the commandline options, equivalent environment variables are
+			available (noted in parentheses below):
+
+			--source SRC (PAMIC_MICROPHONE_SOURCE)                                     [both modes]
+
+				This value specifies a Pulseaudio source. Run the following command to see
+				the sources available:
+
+				    pactl list sources short
+
+				The source names are in the second column:
+
+				    pactl list sources short | cut -f2
+
+				By default ${PROG} will automatically select the first available source.
+
+			--sink SNK (PAMIC_MICROPHONE_SINK)	                         [echo cancellation only]
+
+				This value specifies the output sink needing stripping / cancelling from the
+				input source.
+
+				If not given, echo cancellation is not performed.
+
+
+			--vin PCT (PAMIC_VOLUME_IN)	                                                  [both]
+			--vout PCT (PAMIC_VOLUME_OUT)
+
+				These two values set the recording volumes of the raw device and the virtual
+				processed device.
+
+				The two volume enviroment variables can be either percentages or proportional.
+				Percentage volumes must end with '%'. E.g "50%".
+				Proportional volumes range from 0 indicating off, though 65536 indicating
+				0dB (a.k.a 100%), and up(!).
+
+				Note that the commandline versions are always interpreted as percentages.
+
+				These have no default values, and if they are not set, ${PROG} won't change
+				the volume(s).
+
+
+			--vad N (PAMIC_VAD_THRESHOLD)	                   [standalone noise suppression only]
+
+				This value controls the cutoff point for noise suppression. If the probability of
+				sound being a voice is lower than this threshold, silence will be returned.
+
+				By default ${PROG} will use a value of 95.
+
+			--mic-mode mono|stereo (PAMIC_MICROPHONE_MODE)	  [standalone noise suppression only]
+
+				By default ${PROG} will attempt to detect if the source is stereo, falling
+				back to mono.
+
+			--mic-rate HZ (PAMIC_MICROPHONE_RATE)	           [standalone noise suppression only]
+
+				By default ${PROG} will attempt to detect the source's rate, falling back
+				to 48000Hz.
+
+
+			--force                                                                          [both]
+
+				If pamic detects that it's modules are already in use, by default it
+				will point this out and exit. Passing '--force' will instead unload the
+				modules before loading the new configuration.
+
+			--save-cl                                                                      [both]
+
+				Save the commandline to '${PAMIC_STORED_COMMANDLINE}'.
+
+			--verbose                                                                        [both]
+
+				Display connexion message.
+
+			---------------------------------------------------------------------------------------
+			OTHER MODES
+
+			--help
+
+				Display this helpful information.
+
+			--list
+
+				Display the available sources, sinks, and any modules already loaded by ${PROG}.
+
+			--load-cl
+
+				Load using the commandline from '${PAMIC_STORED_COMMANDLINE}'.
+
+			--unload
+
+				Unload any Pulseaudio modules previously loaded by ${PROG}.
+
+			--version
+
+				Display the version number of ${PROG}.
+
+			HERE
+			)"
+		else
+			die "\n$@"
+		fi
+	fi
+}
+
+#-------------------------------------------------------------------------------
+
+function process_second_arg {
+	local arg="${1}"
+	local var_name_root="${2}"
+	local value="${3}"
+
+	[ -z "${value}" -o "${value:0:1}" == "-" ] && display_help "'${arg}' needs a value."
+
+	case "${arg}" in
+		"--vin"|"--vout") [ "${value: -1}" != "%" ] && value="${value}%" ;; # Ensure terminating '%'
+	esac
+
+	eval "PAMIC_${var_name_root}=${value}"
+}
+
+#-------------------------------------------------------------------------------
+
+commandline="${@}"
+
+do_load=
+do_unload=
+do_load_cl=
+do_save_cl=
+
+while [ -n "${1}" -a "${1:0:1}" == "-" ]; do
+    case "${1}" in
+        "-s"|"--source") process_second_arg "${1}" MICROPHONE_SOURCE "${2}"; shift;;
+        "-S"|"--sink")   process_second_arg "${1}" MICROPHONE_SINK   "${2}"; shift;;
+        "--mic-mode")    process_second_arg "${1}" MICROPHONE_MODE   "${2}"; shift;;
+        "--mic-rate")    process_second_arg "${1}" MICROPHONE_RATE   "${2}"; shift;;
+        "--vad")         process_second_arg "${1}" VAD_THRESHOLD     "${2}"; shift;;
+        "--vin")         process_second_arg "${1}" VOLUME_IN         "${2}"; shift;;
+        "--vout")        process_second_arg "${1}" VOLUME_OUT        "${2}"; shift;;
+
+        "-v"|"--verbose") verbose=1;;
+
+        "-h"|"--help")    display_help long; exit;;
+        "-L"|"--list")    list; exit;;
+        "-V"|"--version") echo "${VERSION}"; exit;;
+
+        "--force")       force_load=1;;
+
+        "-l"|"--load")   do_load=1;;
+        "-u"|"--unload") do_unload=1;;
+
+        "--load-cl") do_load_cl=1;;
+        "--save-cl") do_save_cl=1;;
+
+        *) display_help "Unknown argument: '${1}'" ;;
+    esac
+    shift
+done
+
+if [ -n "${do_load_cl}" ]; then
+    load_cl
+    exit
+fi
+
+if [ -n "${do_load}" ]; then
+    load
+    if [ -n "${do_save_cl}" ]; then
+		save_commandline "${commandline}"
+	fi
+    exit
+fi
+
+if [ -n "${do_unload}" ]; then
+    unload
+    exit
+fi
+
+display_help
+
+#-------------------------------------------------------------------------------
+# vi: sw=4:ts=4:noet:colorcolumn=100:number
