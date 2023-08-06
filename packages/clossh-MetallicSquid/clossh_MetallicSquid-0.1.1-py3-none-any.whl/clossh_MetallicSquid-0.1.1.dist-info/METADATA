@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: clossh-MetallicSquid
+Version: 0.1.1
+Summary: A simple and lightweight clustering library based on the ssh protocol.
+Home-page: https://github.com/MetallicSquid/clossh
+Author: Guillaume Macneil
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+
+# clossh
+A simple and lightweight clustering library based on the ssh protocol.
+
+
