@@ -1,0 +1,3 @@
+[console_scripts]
+pyautoproxy = pyautoproxy.main:pyautoproxy
+

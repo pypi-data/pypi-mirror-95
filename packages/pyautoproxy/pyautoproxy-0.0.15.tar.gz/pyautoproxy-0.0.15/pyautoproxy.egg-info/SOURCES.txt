@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyautoproxy/__init__.py
+pyautoproxy/main.py
+pyautoproxy.egg-info/PKG-INFO
+pyautoproxy.egg-info/SOURCES.txt
+pyautoproxy.egg-info/dependency_links.txt
+pyautoproxy.egg-info/entry_points.txt
+pyautoproxy.egg-info/top_level.txt
