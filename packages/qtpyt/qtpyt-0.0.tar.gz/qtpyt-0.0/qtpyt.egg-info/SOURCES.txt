@@ -1,0 +1,9 @@
+README.md
+setup.py
+qtpyt.egg-info/PKG-INFO
+qtpyt.egg-info/SOURCES.txt
+qtpyt.egg-info/dependency_links.txt
+qtpyt.egg-info/not-zip-safe
+qtpyt.egg-info/requires.txt
+qtpyt.egg-info/top_level.txt
+qtpyt/surface/_recursive.c
