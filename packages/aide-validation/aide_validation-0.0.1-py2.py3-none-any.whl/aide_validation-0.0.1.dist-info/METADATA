@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: aide-validation
+Version: 0.0.1
+Summary: Validation tool for AIDE (AguaClara Infrastructure Design Engine).
+Home-page: https://github.com/AguaClara/aide_validation
+Author: AguaClara Cornell and AguaClara Reach
+Author-email: fchapin@aguaclarareach.org
+License: MIT License
+Keywords: aide_validation
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aguaclara (>=0.2.9)
+Requires-Dist: fpdf (<1.8,>=1.7.2)
+Requires-Dist: numpy (<1.20,>=1.19.1)
+Requires-Dist: matplotlib (<3.4,>=3.3.1)
+Requires-Dist: onshape-client (<1.7,>=1.6.3)
+Requires-Dist: pint (<0.17,>=0.16.1)
+Provides-Extra: all
+Requires-Dist: aguaclara (>=0.2.9) ; extra == 'all'
+Requires-Dist: fpdf (<1.8,>=1.7.2) ; extra == 'all'
+Requires-Dist: numpy (<1.20,>=1.19.1) ; extra == 'all'
+Requires-Dist: matplotlib (<3.4,>=3.3.1) ; extra == 'all'
+Requires-Dist: onshape-client (<1.7,>=1.6.3) ; extra == 'all'
+Requires-Dist: pint (<0.17,>=0.16.1) ; extra == 'all'
+Requires-Dist: black (>=19.10b0) ; extra == 'all'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'all'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'all'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'all'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'all'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'all'
+Requires-Dist: pytest-html (>=2.1.1) ; extra == 'all'
+Requires-Dist: bumpversion (>=0.6.0) ; extra == 'all'
+Requires-Dist: coverage (>=5.1) ; extra == 'all'
+Requires-Dist: ipython (>=7.15.0) ; extra == 'all'
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'all'
+Requires-Dist: tox (>=3.15.2) ; extra == 'all'
+Requires-Dist: twine (>=3.1.1) ; extra == 'all'
+Requires-Dist: wheel (>=0.34.2) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black (>=19.10b0) ; extra == 'dev'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'dev'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'dev'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'dev'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'dev'
+Requires-Dist: pytest-html (>=2.1.1) ; extra == 'dev'
+Requires-Dist: bumpversion (>=0.6.0) ; extra == 'dev'
+Requires-Dist: coverage (>=5.1) ; extra == 'dev'
+Requires-Dist: ipython (>=7.15.0) ; extra == 'dev'
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'dev'
+Requires-Dist: tox (>=3.15.2) ; extra == 'dev'
+Requires-Dist: twine (>=3.1.1) ; extra == 'dev'
+Requires-Dist: wheel (>=0.34.2) ; extra == 'dev'
+Provides-Extra: setup
+Provides-Extra: test
+Requires-Dist: black (>=19.10b0) ; extra == 'test'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'test'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'test'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'test'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'test'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'test'
+Requires-Dist: pytest-html (>=2.1.1) ; extra == 'test'
+
+# Valadation Tool for AIDE
+
+[![Build Status](https://github.com/AguaClara/aide_validation/workflows/Build%20Master/badge.svg)](https://github.com/AguaClara/aide_validation/actions)
+[![Code Coverage](https://codecov.io/gh/AguaClara/aide_validation/branch/master/graph/badge.svg)](https://codecov.io/gh/AguaClara/aide_validation)
+
+Validation tool for the outputs in Onshape.
+
+# Installation
+**Stable Release:** `pip install aide_validation`<br>
+**Development Head:** `pip install git+https://github.com/AguaClara/aide_validation.git`
+
+## Quick Start
+```python
+from aide_validation import link_input
+link_input.main()
+```
+
+## Development
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+
+
