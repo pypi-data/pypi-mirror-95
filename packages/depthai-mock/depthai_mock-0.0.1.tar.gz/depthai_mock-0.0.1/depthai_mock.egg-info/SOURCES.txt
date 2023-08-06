@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+depthai_mock/__init__.py
+depthai_mock/cli.py
+depthai_mock/pipeline.py
+depthai_mock/test.py
+depthai_mock.egg-info/PKG-INFO
+depthai_mock.egg-info/SOURCES.txt
+depthai_mock.egg-info/dependency_links.txt
+depthai_mock.egg-info/entry_points.txt
+depthai_mock.egg-info/requires.txt
+depthai_mock.egg-info/top_level.txt
