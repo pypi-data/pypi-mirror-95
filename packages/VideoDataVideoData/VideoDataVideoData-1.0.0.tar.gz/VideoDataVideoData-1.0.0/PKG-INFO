@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: VideoDataVideoData
+Version: 1.0.0
+Summary: Get VideoData
+Home-page: https://github.com/
+Author: jasonchow
+Author-email: 125693535@qq.com
+License: UNKNOWN
+Description: Get VideoData
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
