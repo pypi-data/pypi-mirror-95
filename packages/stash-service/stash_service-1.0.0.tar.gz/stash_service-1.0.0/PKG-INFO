@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: stash_service
+Version: 1.0.0
+Summary: A PyPI packages that supports all the necessary error codes, validation exception, common exceptions of a webservice. This PyPI package includes a method that establishes the connection to your firebase account.
+Home-page: UNKNOWN
+Author: Maria Irudaya Regilan J
+Author-email: britsa.tech@gmail.com
+License: UNKNOWN
+Description: # Webservice Stash
+        
+        A PyPI packages that supports all the necessary error codes, validation exception, common exceptions of a webservice. This PyPI package includes a method that establishes the connection to your firebase account.
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        ```python
+        pip install stash-service
+        ```
+        
+        ## Usage
+        
+        ```python
+        import stash
+        
+        # Your python code
+        
+        ```
+        
+        MIT Licensed - 2021 : Britsa - britsa.tech@gmail.com
+        
+        Contributors:
+        Maria Irudaya Regilan J
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
