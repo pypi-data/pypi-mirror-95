@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+pamic.egg-info/PKG-INFO
+pamic.egg-info/SOURCES.txt
+pamic.egg-info/dependency_links.txt
+pamic.egg-info/entry_points.txt
+pamic.egg-info/requires.txt
+pamic.egg-info/top_level.txt
+pamicg/__init__.py
+pamicg/__main__.py
+pamicg/app.py
+pamicg/gui.py
+pamicg/pamic
