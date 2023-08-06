@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: aide_validation
+Version: 0.0.1
+Summary: Validation tool for AIDE (AguaClara Infrastructure Design Engine).
+Home-page: https://github.com/AguaClara/aide_validation
+Author: AguaClara Cornell and AguaClara Reach
+Author-email: fchapin@aguaclarareach.org
+License: MIT License
+Description: # Valadation Tool for AIDE
+        
+        [![Build Status](https://github.com/AguaClara/aide_validation/workflows/Build%20Master/badge.svg)](https://github.com/AguaClara/aide_validation/actions)
+        [![Code Coverage](https://codecov.io/gh/AguaClara/aide_validation/branch/master/graph/badge.svg)](https://codecov.io/gh/AguaClara/aide_validation)
+        
+        Validation tool for the outputs in Onshape.
+        
+        # Installation
+        **Stable Release:** `pip install aide_validation`<br>
+        **Development Head:** `pip install git+https://github.com/AguaClara/aide_validation.git`
+        
+        ## Quick Start
+        ```python
+        from aide_validation import link_input
+        link_input.main()
+        ```
+        
+        ## Development
+        See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+        
+Keywords: aide_validation
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: setup
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: all
