@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SUM-SB2-05054
+Version: 0.0.1
+Summary: adding number
+Home-page: https://github.com/Pushkar-Singh-14/
+Author: SIR QASIM
+Author-email: sajidnagri4u14@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+perform addition
+This is just for demo
+
+def add(*c):
+  d = sum(c)
+   return d
+
+
