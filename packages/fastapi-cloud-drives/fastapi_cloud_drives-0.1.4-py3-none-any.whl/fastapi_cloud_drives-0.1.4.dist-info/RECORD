@@ -1,0 +1,6 @@
+fastapi_cloud_drives/__init__.py,sha256=SNhRmTK2S8vBa_rJAW8sKKzu26fCsjwxVR5hFgGcEGo,214
+fastapi_cloud_drives/config.py,sha256=ud4bPv84078jL97WE3O_IwoatS1PjjZ7xUaPQUcGlF8,137
+fastapi_cloud_drives/fastapi_google.py,sha256=P2ZRgH_cUC5CiPAAvsv04AwgqZpSPmBB6XitiB4XhY0,6367
+fastapi_cloud_drives-0.1.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fastapi_cloud_drives-0.1.4.dist-info/METADATA,sha256=VToSZZAPtc7VzeWDEP7xpuZkTpXqQKm-71qp8rsgqtM,2474
+fastapi_cloud_drives-0.1.4.dist-info/RECORD,,
