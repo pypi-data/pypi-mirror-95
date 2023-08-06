@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: YouTube_ff
+Version: 0.0.3
+Summary: A module to search and download youtube videos.
+Home-page: UNKNOWN
+Author: Python.Stuff
+Author-email: <srinathngudi11@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,youtube,youtube_ff
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
