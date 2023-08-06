@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dffml-config-image
+Version: 0.1.0
+Summary: DFFML config dffml-config-image
+Home-page: https://github.com/dffml/blob/master/configloader/image/README.md
+Author: sakshamarora1
+Author-email: sakshamarora1001@gmail.com
+Maintainer: sakshamarora1
+Maintainer-email: sakshamarora1001@gmail.com
+License: MIT
+Description: # DFFML Config for Image
+        
+        ## About
+        
+        Allows for reading of `PNG`, `JPEG` and `TIFF` images
+        
+        ## License
+        
+        DFFML Config For Image are distributed under the terms of the
+        [MIT License](LICENSE).
+        
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
