@@ -1,0 +1,8 @@
+face_group/__init__.py,sha256=cRtTpwdjODMdAbka8JJpmJ9YkpQPs-FPCOIdN4hkDUw,58
+face_group/api.py,sha256=YJMfsn-gfI9D9lGK6MU-u0xzDQJT2r4K6zmZq_F4aCY,720
+face_group/cli.py,sha256=EgOA4cO6vRv4YpfylFUrU-Hz7JMzP8d3mHHMt5JSkJQ,664
+face_group/utils.py,sha256=ol8PLJOEIdMfWld26cNROz3qBfs8ZmZUHM0cb8J06E0,3257
+face_group-0.1.1.dist-info/entry_points.txt,sha256=1Tsj1yCugCpidsiP_0-kfa480GxmF7C2C8tt45SP8cQ,57
+face_group-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+face_group-0.1.1.dist-info/METADATA,sha256=Vkl8nTbrcaN9rbMvcwdvAcDa3Wajl8kn9gkB7ZQh7cA,1071
+face_group-0.1.1.dist-info/RECORD,,

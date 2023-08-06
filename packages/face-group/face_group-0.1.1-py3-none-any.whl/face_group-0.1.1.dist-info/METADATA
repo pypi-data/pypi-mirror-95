@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: face-group
+Version: 0.1.1
+Summary: Simple project for grouping faces of people by encodings.
+License: MIT
+Author: irlirion
+Author-email: irlirion@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: face-recognition (>=1.3.0,<2.0.0)
+Requires-Dist: rich (>=9.11.1,<10.0.0)
+Description-Content-Type: text/markdown
+
+# Face group
+> Grouping rgb and infra people`s faces by folders using face features
+
+`face-group` finds faces using dlib
+
+Parameters:
+- *input-dir* - path of directory with rgb and infra images
+- *output-dir* - path of output directory
+- *verbose* - show info or not
+
+## Installation
+
+## Usage
+```
+$ face-group --help
+Usage: face-group [OPTIONS]
+
+  It groups the faces of similar people
+
+Options:
+  -i, --input-dir PATH
+  -o, --output-dir PATH
+  -v, --verbose BOOLEAN
+  --help                 Show this message and exit.
+```
+
