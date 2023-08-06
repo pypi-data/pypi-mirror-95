@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pycoff
+Version: 0.1.0
+Summary: COFF(ELF on Linux, PE on Windows) parser
+Home-page: https://github.com/leafvmaple/pycoff
+Author: Zohar Lee
+Author-email: leafvmaple@gmail.com
+License: BSD License
+Description: # pycoff
+        
+        This is a Python package that can parse `COFF(ELF on Linux, PE on Windows)`.
+        
+        ## Install
+        
+        Binary installers for the latest released version are available at the `Pypi`.
+        
+        ```
+        python -m pip install --upgrade pycoff
+        ```
+        
+        ## License
+        
+        [BSD](https://github.com/leafvmaple/pycoff/blob/main/LICENSE)
+Keywords: coff,elf,pe,pycoff
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

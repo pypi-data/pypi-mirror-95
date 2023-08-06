@@ -1,0 +1,11 @@
+README.md
+setup.py
+pycoff/__init__.py
+pycoff/defs.py
+pycoff/elf.py
+pycoff/pe.py
+pycoff/utility.py
+pycoff.egg-info/PKG-INFO
+pycoff.egg-info/SOURCES.txt
+pycoff.egg-info/dependency_links.txt
+pycoff.egg-info/top_level.txt
