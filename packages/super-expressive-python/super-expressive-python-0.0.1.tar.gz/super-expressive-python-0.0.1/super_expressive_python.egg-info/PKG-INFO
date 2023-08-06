@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: super-expressive-python
+Version: 0.0.1
+Summary: python port of super-expressive
+Home-page: https://github.com/natedileas/super-expressive-python
+Author: Nathan Dileas
+Author-email: ndileas+super-expressive-python@gmail.com
+License: UNKNOWN
+Description: # super-expressive-python
+        
+        This is a python port of [super-expressive](https://github.com/francisrstokes/super-expressive).
+        
+        Notes on implementation choices are in [notes.md](notes.md).
+        
+        ## Example
+        
+            >>> import superexpressive as se
+            >>> se.to_regex(se.START_OF_INPUT, se.optional('0x'), se.capture(se.range(('a', 'f'), ('A', 'F'), ('0', '9')), se.exactly(4)), se.END_OF_INPUT)
+            '^(?:0x)?([a-fA-F0-9]{4})?$'
+        
+        ## Installation
+        
+        TODO
+        
+        ## Usage
+        
+        TODO
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
