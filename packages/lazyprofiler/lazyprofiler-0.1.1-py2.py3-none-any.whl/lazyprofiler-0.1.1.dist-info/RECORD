@@ -1,0 +1,11 @@
+lazyprofiler/GetStats.py,sha256=GYLPEMmUmNklriMOSJoGSxoUVLOsVZY6sI_7MYcCwws,11127
+lazyprofiler/__init__.py,sha256=PiUSiFLCm0YX5rbHS4xOLGdqdPDC8j3etV3nmEaelzI,92
+lazyprofiler/__main__.py,sha256=4oGa8flxOBSV2dlPruJex4886BdbQd8C1sgHaJCa5y0,40
+lazyprofiler/_version.py,sha256=7fSHKXCC6Oz0vp3jI8cvzcBldR5XC2KiFkCqpLohaXY,497
+lazyprofiler/cli.py,sha256=nRkB-ZPeTNL10CXD0972oBPiB6fPS05yw7MrH3fO1II,822
+lazyprofiler-0.1.1.dist-info/LICENSE,sha256=0OwBZSIdIt4ToKVYAMlj-xLxkAxxPCghudCSyWPkVTA,1078
+lazyprofiler-0.1.1.dist-info/METADATA,sha256=v1Bq-DYAFKg1v9siWn5apC1ttgBF_2SIA-VNlaXlqqw,565
+lazyprofiler-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+lazyprofiler-0.1.1.dist-info/entry_points.txt,sha256=YWcKgqJsTD0iR93QFq9yt7Fx_uYZw232Rf6xFO2ua58,55
+lazyprofiler-0.1.1.dist-info/top_level.txt,sha256=-IXuTpF90DVaitr9IxAHuqu1Mzwhn13OCiIeFjC_2U4,13
+lazyprofiler-0.1.1.dist-info/RECORD,,
