@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+transformer_embedder/__init__.py
+transformer_embedder/embedder.py
+transformer_embedder/tokenizer.py
+transformer_embedder/utils.py
+transformer_embedder.egg-info/PKG-INFO
+transformer_embedder.egg-info/SOURCES.txt
+transformer_embedder.egg-info/dependency_links.txt
+transformer_embedder.egg-info/requires.txt
+transformer_embedder.egg-info/top_level.txt
