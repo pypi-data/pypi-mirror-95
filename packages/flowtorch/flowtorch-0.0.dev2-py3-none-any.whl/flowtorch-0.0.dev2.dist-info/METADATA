@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: flowtorch
+Version: 0.0.dev2
+Summary: Normalizing Flows for PyTorch
+Home-page: https://www.github.com/stefanwebb/flowtorch
+Author: FlowTorch Development Team
+Author-email: info@stefanwebb.me
+License: MIT
+Project-URL: Documentation, https://www.github.com/stefanwebb/flowtorch
+Project-URL: Source, https://www.github.com/stefanwebb/flowtorch
+Keywords: Deep Learning,Bayesian Inference,Statistical Modeling,Variational Inference,PyTorch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.6.0)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: scipy ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+[![](https://github.com/stefanwebb/flowtorch/workflows/Python%20package/badge.svg)](https://github.com/stefanwebb/flowtorch/actions?query=workflow%3A%22Python+package%22)
+
+Copyright (c) FlowTorch Development Team.
+
+This source code is licensed under the MIT license found in the
+LICENSE.txt file in the root directory of this source tree.
+
+# Overview
+
+FlowTorch is a PyTorch library for the flexible representation of random distributions with Normalizing Flows.
+
+# Installing FlowTorch
+
+    git clone https://github.com/stefanwebb/flowtorch.git
+    cd flowtorch
+    pip install -e .
+
+# Developing
+
+To build documentation
+
+    cd docs
+    sphinx-apidoc -o source ../flowtorch/
+    make html
+
+To preview built HTML documentation
+
+    cd docs/_build/html
+    python -m http.server  # python 3 
+
+See `.github/workflows/python-package.yml` for how we build, lint, and test.
+
+# Developing
+
+Install dev dependencies
+
+    pip install -e .[dev]
+
+Running tests
+
+    pytest tests -W ignore::DeprecationWarning
+
+
