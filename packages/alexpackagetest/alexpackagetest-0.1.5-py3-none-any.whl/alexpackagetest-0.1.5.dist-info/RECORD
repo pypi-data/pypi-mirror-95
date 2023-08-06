@@ -1,0 +1,6 @@
+alexpackagetest/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+alexpackagetest/alextestmodule.py,sha256=8UQ78tSGOaJu06x9CCiLy2opsk2yFtonChFQqMEahnQ,370
+alexpackagetest-0.1.5.dist-info/entry_points.txt,sha256=KTAF_ABu4HFlfwB_DKapjzlJz12vPJL4cYNqcIkvb78,56
+alexpackagetest-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+alexpackagetest-0.1.5.dist-info/METADATA,sha256=ead4d9KMLTxADt1viwLSQ_GXV8Bzrr5faClWQjV1wTc,864
+alexpackagetest-0.1.5.dist-info/RECORD,,
