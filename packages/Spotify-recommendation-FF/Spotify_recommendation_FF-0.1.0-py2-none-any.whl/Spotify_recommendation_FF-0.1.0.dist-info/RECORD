@@ -1,0 +1,9 @@
+Scripts/Spotify.py,sha256=eS7DMJQbYPM08_0oaZldaWYzhJjXh06V42jGvk_-Pv0,64736
+Scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_tests/__init__.py,sha256=DKxZoNCJNaqomS3nOJjo5l6ePRk1QqiWyImeVxA0cn4,109
+my_tests/test_runDaily.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+my_tests/test_runHourly.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Spotify_recommendation_FF-0.1.0.dist-info/METADATA,sha256=bShm5cVczefWfnjJx6J6joqfaIdv38ysh2Xx-0QEkS8,272
+Spotify_recommendation_FF-0.1.0.dist-info/WHEEL,sha256=JVLwq00DBaOmm_1IYchP-5DIPZHeNfEBny0V-Pchy9Q,92
+Spotify_recommendation_FF-0.1.0.dist-info/top_level.txt,sha256=WD7-zKNytWW26H-RG7IaKq6Xu3Nl7sxtRjqffQphOB4,17
+Spotify_recommendation_FF-0.1.0.dist-info/RECORD,,
