@@ -1,0 +1,12 @@
+{
+    "SimExample8": {
+        "version": "NeuroMLlite v0.2.4",
+        "network": "Example8_Extension.json",
+        "duration": 1000.0,
+        "dt": 0.025,
+        "seed": 1111,
+        "recordTraces": {
+            "all": "*"
+        }
+    }
+}

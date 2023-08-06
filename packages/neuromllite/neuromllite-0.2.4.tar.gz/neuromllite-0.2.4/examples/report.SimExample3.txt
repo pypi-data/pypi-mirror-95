@@ -1,0 +1,12 @@
+# Report of running simulation with NEURON -- VERSION 7.7.2 7.7 (2b7985ba) 2019-06-20
+Simulator=NEURON
+SimulatorVersion=NEURON -- VERSION 7.7.2 7.7 (2b7985ba) 2019-06-20
+SimulationFile=/Users/padraig/NeuroMLlite/examples/LEMS_SimExample3_nrn.py
+PythonVersion=3.7.7 (default, May  6 2020, 04:59:01)  [Clang 4.0.1 (tags/RELEASE_401/final)]
+NeuroMLExportVersion=1.7.1
+SimulationSeed=5678
+Hostname=Padraigs-MacBook-Pro.local
+StartTime=2021-02-18 09:51:55
+SetupTime=0.013681173324584961
+RealSimulationTime=0.6429250240325928
+SimulationSaveTime=0.46967196464538574

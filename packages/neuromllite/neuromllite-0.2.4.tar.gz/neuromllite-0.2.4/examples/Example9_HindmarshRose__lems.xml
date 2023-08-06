@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<Lems xmlns="http://www.neuroml.org/lems/0.7.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.3 https://raw.githubusercontent.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.3.xsd">
+  <ComponentType description="     The Hindmarsh Rose model is a simplified point cell model which     captures complex firing patterns of single neurons, such as     periodic and chaotic bursting. It in a fast spiking subsystem,     which is a generalization of the Fitzhugh-Nagumo system, coupled     to a slower subsystem which allows the model to fire bursts. The     dynamical variables x,y,z correspond to the membrane potential, a     recovery variable, and a slower adaptation current, respectively.     " name="hindmarshRoseCell">
+    <Parameter dimension="none" name="a"/>
+    <Parameter dimension="none" name="b"/>
+    <Parameter dimension="none" name="c"/>
+    <Parameter dimension="none" name="d"/>
+    <Parameter dimension="none" name="I"/>
+    <Parameter dimension="none" name="r"/>
+    <Parameter dimension="none" name="s"/>
+    <Parameter dimension="none" name="x1"/>
+    <Parameter dimension="none" name="x0"/>
+    <Parameter dimension="none" name="y0"/>
+    <Parameter dimension="none" name="z0"/>
+    <Constant dimension="time" name="SEC" value="1s"/>
+    <Exposure dimension="none" name="x"/>
+    <Exposure dimension="none" name="y"/>
+    <Exposure dimension="none" name="z"/>
+    <Exposure dimension="none" name="phi"/>
+    <Exposure dimension="none" name="chi"/>
+    <Exposure dimension="none" name="rho"/>
+    <Dynamics>
+      <StateVariable dimension="none" exposure="x" name="x"/>
+      <StateVariable dimension="none" exposure="y" name="y"/>
+      <StateVariable dimension="none" exposure="z" name="z"/>
+      <DerivedVariable dimension="none" exposure="phi" name="phi" value="y - a * x^3 + b * x^2 + I"/>
+      <DerivedVariable dimension="none" exposure="chi" name="chi" value="c - d * x^2 - y"/>
+      <DerivedVariable dimension="none" exposure="rho" name="rho" value="s * ( x - x1 ) - z"/>
+      <TimeDerivative value="(phi - z) / SEC" variable="x"/>
+      <TimeDerivative value="chi / SEC" variable="y"/>
+      <TimeDerivative value="r * rho / SEC" variable="z"/>
+      <OnStart>
+        <StateAssignment value="x0" variable="x"/>
+        <StateAssignment value="y0" variable="y"/>
+        <StateAssignment value="z0" variable="z"/>
+      </OnStart>
+    </Dynamics>
+  </ComponentType>
+  <Component I="5" a="1" b="3" c="-3" d="5" id="hrCell" r="0.002" s="4" type="hindmarshRoseCell" x0="-1.3" x1="-1.3" y0="-1" z0="1"/>
+</Lems>

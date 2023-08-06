@@ -1,0 +1,168 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.5.8 (libNeuroML v0.2.54)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="SimSpikers" reportFile="report.SimSpikers.txt"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="PyNN.xml"/>
+    <Include file="Spikers.net.nml"/>
+    <Include file="../test_files/inputs.nml"/>
+   
+    <Simulation id="SimSpikers" length="10000.0ms" step="0.025ms" target="Spikers" seed="5678">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="pop0_v" title="Plots of pop0_v" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-80" ymax="40">
+            <Line id="pop0_0__v" quantity="pop0[0]/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="pop0_1__v" quantity="pop0[1]/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="pop0_2__v" quantity="pop0[2]/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+            <Line id="pop0_3__v" quantity="pop0[3]/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+            <Line id="pop0_4__v" quantity="pop0[4]/v" scale="1mV" color="#632794" timeScale="1ms"/>
+            <Line id="pop0_5__v" quantity="pop0[5]/v" scale="1mV" color="#8a5d88" timeScale="1ms"/>
+            <Line id="pop0_6__v" quantity="pop0[6]/v" scale="1mV" color="#df5954" timeScale="1ms"/>
+            <Line id="pop0_7__v" quantity="pop0[7]/v" scale="1mV" color="#52c8bf" timeScale="1ms"/>
+            <Line id="pop0_8__v" quantity="pop0[8]/v" scale="1mV" color="#bf0239" timeScale="1ms"/>
+            <Line id="pop0_9__v" quantity="pop0[9]/v" scale="1mV" color="#3f9fe8" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="pop1_v" title="Plots of pop1_v" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-80" ymax="40">
+            <Line id="pop1_0__v" quantity="pop1[0]/v" scale="1mV" color="#dda9d2" timeScale="1ms"/>
+            <Line id="pop1_1__v" quantity="pop1[1]/v" scale="1mV" color="#85ad96" timeScale="1ms"/>
+            <Line id="pop1_2__v" quantity="pop1[2]/v" scale="1mV" color="#59438f" timeScale="1ms"/>
+            <Line id="pop1_3__v" quantity="pop1[3]/v" scale="1mV" color="#5fa56f" timeScale="1ms"/>
+            <Line id="pop1_4__v" quantity="pop1[4]/v" scale="1mV" color="#b5b5a2" timeScale="1ms"/>
+            <Line id="pop1_5__v" quantity="pop1[5]/v" scale="1mV" color="#2ebe19" timeScale="1ms"/>
+            <Line id="pop1_6__v" quantity="pop1[6]/v" scale="1mV" color="#d30150" timeScale="1ms"/>
+            <Line id="pop1_7__v" quantity="pop1[7]/v" scale="1mV" color="#55490a" timeScale="1ms"/>
+            <Line id="pop1_8__v" quantity="pop1[8]/v" scale="1mV" color="#4bd9d0" timeScale="1ms"/>
+            <Line id="pop1_9__v" quantity="pop1[9]/v" scale="1mV" color="#69535e" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="pop2_v" title="Plots of pop2_v" timeScale="1ms" xmin="-1000.0" xmax="11000.0" ymin="-80" ymax="40">
+            <Line id="pop2_0__v" quantity="pop2[0]/v" scale="1mV" color="#27dae9" timeScale="1ms"/>
+            <Line id="pop2_1__v" quantity="pop2[1]/v" scale="1mV" color="#6143ed" timeScale="1ms"/>
+            <Line id="pop2_2__v" quantity="pop2[2]/v" scale="1mV" color="#aee102" timeScale="1ms"/>
+            <Line id="pop2_3__v" quantity="pop2[3]/v" scale="1mV" color="#a4e245" timeScale="1ms"/>
+            <Line id="pop2_4__v" quantity="pop2[4]/v" scale="1mV" color="#0c0af9" timeScale="1ms"/>
+            <Line id="pop2_5__v" quantity="pop2[5]/v" scale="1mV" color="#eaece2" timeScale="1ms"/>
+            <Line id="pop2_6__v" quantity="pop2[6]/v" scale="1mV" color="#add546" timeScale="1ms"/>
+            <Line id="pop2_7__v" quantity="pop2[7]/v" scale="1mV" color="#0dc1e8" timeScale="1ms"/>
+            <Line id="pop2_8__v" quantity="pop2[8]/v" scale="1mV" color="#d4b998" timeScale="1ms"/>
+            <Line id="pop2_9__v" quantity="pop2[9]/v" scale="1mV" color="#01c4cd" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="SimSpikers_pop0_v_dat" fileName="SimSpikers.pop0.v.dat">
+            <OutputColumn id="pop0_0__v" quantity="pop0[0]/v"/> 
+            <OutputColumn id="pop0_1__v" quantity="pop0[1]/v"/> 
+            <OutputColumn id="pop0_2__v" quantity="pop0[2]/v"/> 
+            <OutputColumn id="pop0_3__v" quantity="pop0[3]/v"/> 
+            <OutputColumn id="pop0_4__v" quantity="pop0[4]/v"/> 
+            <OutputColumn id="pop0_5__v" quantity="pop0[5]/v"/> 
+            <OutputColumn id="pop0_6__v" quantity="pop0[6]/v"/> 
+            <OutputColumn id="pop0_7__v" quantity="pop0[7]/v"/> 
+            <OutputColumn id="pop0_8__v" quantity="pop0[8]/v"/> 
+            <OutputColumn id="pop0_9__v" quantity="pop0[9]/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="SimSpikers_pop1_v_dat" fileName="SimSpikers.pop1.v.dat">
+            <OutputColumn id="pop1_0__v" quantity="pop1[0]/v"/> 
+            <OutputColumn id="pop1_1__v" quantity="pop1[1]/v"/> 
+            <OutputColumn id="pop1_2__v" quantity="pop1[2]/v"/> 
+            <OutputColumn id="pop1_3__v" quantity="pop1[3]/v"/> 
+            <OutputColumn id="pop1_4__v" quantity="pop1[4]/v"/> 
+            <OutputColumn id="pop1_5__v" quantity="pop1[5]/v"/> 
+            <OutputColumn id="pop1_6__v" quantity="pop1[6]/v"/> 
+            <OutputColumn id="pop1_7__v" quantity="pop1[7]/v"/> 
+            <OutputColumn id="pop1_8__v" quantity="pop1[8]/v"/> 
+            <OutputColumn id="pop1_9__v" quantity="pop1[9]/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="SimSpikers_pop2_v_dat" fileName="SimSpikers.pop2.v.dat">
+            <OutputColumn id="pop2_0__v" quantity="pop2[0]/v"/> 
+            <OutputColumn id="pop2_1__v" quantity="pop2[1]/v"/> 
+            <OutputColumn id="pop2_2__v" quantity="pop2[2]/v"/> 
+            <OutputColumn id="pop2_3__v" quantity="pop2[3]/v"/> 
+            <OutputColumn id="pop2_4__v" quantity="pop2[4]/v"/> 
+            <OutputColumn id="pop2_5__v" quantity="pop2[5]/v"/> 
+            <OutputColumn id="pop2_6__v" quantity="pop2[6]/v"/> 
+            <OutputColumn id="pop2_7__v" quantity="pop2[7]/v"/> 
+            <OutputColumn id="pop2_8__v" quantity="pop2[8]/v"/> 
+            <OutputColumn id="pop2_9__v" quantity="pop2[9]/v"/> 
+        </OutputFile>
+        
+        <EventOutputFile id="SimSpikers_input_pop0_spikes" fileName="SimSpikers.input_pop0.spikes" format="ID_TIME">
+            <EventSelection id="0" select="input_pop0[0]" eventPort="spike"/> 
+            <EventSelection id="1" select="input_pop0[1]" eventPort="spike"/> 
+            <EventSelection id="2" select="input_pop0[2]" eventPort="spike"/> 
+            <EventSelection id="3" select="input_pop0[3]" eventPort="spike"/> 
+            <EventSelection id="4" select="input_pop0[4]" eventPort="spike"/> 
+            <EventSelection id="5" select="input_pop0[5]" eventPort="spike"/> 
+            <EventSelection id="6" select="input_pop0[6]" eventPort="spike"/> 
+            <EventSelection id="7" select="input_pop0[7]" eventPort="spike"/> 
+            <EventSelection id="8" select="input_pop0[8]" eventPort="spike"/> 
+            <EventSelection id="9" select="input_pop0[9]" eventPort="spike"/> 
+        </EventOutputFile>
+        
+        <EventOutputFile id="SimSpikers_input_pop1_spikes" fileName="SimSpikers.input_pop1.spikes" format="ID_TIME">
+            <EventSelection id="0" select="input_pop1[0]" eventPort="spike"/> 
+            <EventSelection id="1" select="input_pop1[1]" eventPort="spike"/> 
+            <EventSelection id="2" select="input_pop1[2]" eventPort="spike"/> 
+            <EventSelection id="3" select="input_pop1[3]" eventPort="spike"/> 
+            <EventSelection id="4" select="input_pop1[4]" eventPort="spike"/> 
+            <EventSelection id="5" select="input_pop1[5]" eventPort="spike"/> 
+            <EventSelection id="6" select="input_pop1[6]" eventPort="spike"/> 
+            <EventSelection id="7" select="input_pop1[7]" eventPort="spike"/> 
+            <EventSelection id="8" select="input_pop1[8]" eventPort="spike"/> 
+            <EventSelection id="9" select="input_pop1[9]" eventPort="spike"/> 
+        </EventOutputFile>
+        
+        <EventOutputFile id="SimSpikers_pop0_spikes" fileName="SimSpikers.pop0.spikes" format="ID_TIME">
+            <EventSelection id="0" select="pop0[0]" eventPort="spike"/> 
+            <EventSelection id="1" select="pop0[1]" eventPort="spike"/> 
+            <EventSelection id="2" select="pop0[2]" eventPort="spike"/> 
+            <EventSelection id="3" select="pop0[3]" eventPort="spike"/> 
+            <EventSelection id="4" select="pop0[4]" eventPort="spike"/> 
+            <EventSelection id="5" select="pop0[5]" eventPort="spike"/> 
+            <EventSelection id="6" select="pop0[6]" eventPort="spike"/> 
+            <EventSelection id="7" select="pop0[7]" eventPort="spike"/> 
+            <EventSelection id="8" select="pop0[8]" eventPort="spike"/> 
+            <EventSelection id="9" select="pop0[9]" eventPort="spike"/> 
+        </EventOutputFile>
+        
+        <EventOutputFile id="SimSpikers_pop1_spikes" fileName="SimSpikers.pop1.spikes" format="ID_TIME">
+            <EventSelection id="0" select="pop1[0]" eventPort="spike"/> 
+            <EventSelection id="1" select="pop1[1]" eventPort="spike"/> 
+            <EventSelection id="2" select="pop1[2]" eventPort="spike"/> 
+            <EventSelection id="3" select="pop1[3]" eventPort="spike"/> 
+            <EventSelection id="4" select="pop1[4]" eventPort="spike"/> 
+            <EventSelection id="5" select="pop1[5]" eventPort="spike"/> 
+            <EventSelection id="6" select="pop1[6]" eventPort="spike"/> 
+            <EventSelection id="7" select="pop1[7]" eventPort="spike"/> 
+            <EventSelection id="8" select="pop1[8]" eventPort="spike"/> 
+            <EventSelection id="9" select="pop1[9]" eventPort="spike"/> 
+        </EventOutputFile>
+        
+        <EventOutputFile id="SimSpikers_pop2_spikes" fileName="SimSpikers.pop2.spikes" format="ID_TIME">
+            <EventSelection id="0" select="pop2[0]" eventPort="spike"/> 
+            <EventSelection id="1" select="pop2[1]" eventPort="spike"/> 
+            <EventSelection id="2" select="pop2[2]" eventPort="spike"/> 
+            <EventSelection id="3" select="pop2[3]" eventPort="spike"/> 
+            <EventSelection id="4" select="pop2[4]" eventPort="spike"/> 
+            <EventSelection id="5" select="pop2[5]" eventPort="spike"/> 
+            <EventSelection id="6" select="pop2[6]" eventPort="spike"/> 
+            <EventSelection id="7" select="pop2[7]" eventPort="spike"/> 
+            <EventSelection id="8" select="pop2[8]" eventPort="spike"/> 
+            <EventSelection id="9" select="pop2[9]" eventPort="spike"/> 
+        </EventOutputFile>
+        
+    </Simulation>
+
+</Lems>

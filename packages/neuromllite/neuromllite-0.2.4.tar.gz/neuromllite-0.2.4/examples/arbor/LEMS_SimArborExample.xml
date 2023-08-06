@@ -1,0 +1,36 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.5.7 (libNeuroML v0.2.53)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="SimArborExample" reportFile="report.SimArborExample.txt"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="PyNN.xml"/>
+    <Include file="ArborExample.net.nml"/>
+   
+    <Simulation id="SimArborExample" length="100.0ms" step="0.01ms" target="ArborExample" seed="5678">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="pop0_v" title="Plots of pop0_v" timeScale="1ms" xmin="-10.0" xmax="110.00000000000001" ymin="-80" ymax="40">
+            <Line id="pop0_0_test_arbor_cell_v" quantity="pop0/0/test_arbor_cell/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="SimArborExample_pop0_v_dat" fileName="SimArborExample.pop0.v.dat">
+            <OutputColumn id="pop0_0_test_arbor_cell_v" quantity="pop0/0/test_arbor_cell/v"/> 
+        </OutputFile>
+        
+        <EventOutputFile id="SimArborExample_pop0_spikes" fileName="SimArborExample.pop0.spikes" format="ID_TIME">
+            <EventSelection id="0" select="pop0/0/test_arbor_cell" eventPort="spike"/> 
+        </EventOutputFile>
+        
+    </Simulation>
+
+</Lems>

@@ -1,0 +1,11 @@
+digraph ArborExample {
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#ff0000" fontcolor="#000000" shape=ellipse style=filled]
+		pop0 [label=<pop0<br/><i>1 cell</i>>]
+	}
+	node [color="#444444" fontcolor="#444444" style=""]
+	stim [label=<stim<br/><i>1 input</i>>]
+	stim -> pop0 [arrowhead=empty]
+}

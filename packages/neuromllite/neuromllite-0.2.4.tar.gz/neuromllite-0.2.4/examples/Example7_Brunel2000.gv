@@ -1,0 +1,38 @@
+digraph Example7_Brunel2000 {
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#e50000" fontcolor="#000000" shape=ellipse style=filled]
+		Epop [label=<Epop<br/><i>400 cells</i>>]
+	}
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#e5b2b2" fontcolor="#000000" shape=ellipse style=filled]
+		expoisson [label=<expoisson<br/><i>400 cells</i>>]
+	}
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#0000e5" fontcolor="#ffffff" shape=ellipse style=filled]
+		Ipop [label=<Ipop<br/><i>100 cells</i>>]
+	}
+	subgraph cluster_region1 {
+		color="#444444" fontcolor="#444444"
+		label=region1
+		node [color="#b2b2e5" fontcolor="#000000" shape=ellipse style=filled]
+		inpoisson [label=<inpoisson<br/><i>100 cells</i>>]
+	}
+	edge [arrowhead=normal arrowsize=0.7000000000000005 color="#e5b2b2" fontcolor="#e5b2b2" penwidth=0.7000000000000005 style=solid]
+	expoisson -> Epop
+	edge [arrowhead=normal arrowsize=0.7 color="#b2b2e5" fontcolor="#b2b2e5" penwidth=0.7 style=solid]
+	inpoisson -> Ipop
+	edge [arrowhead=normal arrowsize=1 color="#e50000" fontcolor="#e50000" penwidth=4.1575328614765 style=solid]
+	Epop -> Epop
+	edge [arrowhead=normal arrowsize=1 color="#e50000" fontcolor="#e50000" penwidth=4.137184024266935 style=solid]
+	Epop -> Ipop
+	edge [arrowhead=dot arrowsize=1 color="#0000e5" fontcolor="#0000e5" penwidth=4.2 style=solid]
+	Ipop -> Epop
+	edge [arrowhead=dot arrowsize=1 color="#0000e5" fontcolor="#0000e5" penwidth=4.199999999999764 style=solid]
+	Ipop -> Ipop
+}

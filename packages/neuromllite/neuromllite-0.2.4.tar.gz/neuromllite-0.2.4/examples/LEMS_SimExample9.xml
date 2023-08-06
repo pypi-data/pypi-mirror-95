@@ -1,0 +1,49 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.5.8 (libNeuroML v0.2.54)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="SimExample9" reportFile="report.SimExample9.txt"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="PyNN.xml"/>
+    <Include file="Example9_HindmarshRose.net.nml"/>
+    <Include file="Example9_HindmarshRose__lems.xml"/>
+   
+    <Simulation id="SimExample9" length="1000000.0ms" step="25.0ms" target="Example9_HindmarshRose" seed="5678">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="hrPop_0_x" title="Plots of hrPop_0_x" timeScale="1ms" xmin="-100000.0" xmax="1100000.0" ymin="-1" ymax="1">
+            <Line id="hrPop_0__x" quantity="hrPop[0]/x" scale="1" color="#d54f33" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="hrPop_0_y" title="Plots of hrPop_0_y" timeScale="1ms" xmin="-100000.0" xmax="1100000.0" ymin="-1" ymax="1">
+            <Line id="hrPop_0__y" quantity="hrPop[0]/y" scale="1" color="#0534e4" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="hrPop_0_z" title="Plots of hrPop_0_z" timeScale="1ms" xmin="-100000.0" xmax="1100000.0" ymin="-1" ymax="1">
+            <Line id="hrPop_0__z" quantity="hrPop[0]/z" scale="1" color="#98e752" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="hrPop_0_x_dat" fileName="hrPop_0.x.dat">
+            <OutputColumn id="hrPop_0__x" quantity="hrPop[0]/x"/> 
+        </OutputFile>
+        
+        <OutputFile id="hrPop_0_y_dat" fileName="hrPop_0.y.dat">
+            <OutputColumn id="hrPop_0__y" quantity="hrPop[0]/y"/> 
+        </OutputFile>
+        
+        <OutputFile id="hrPop_0_z_dat" fileName="hrPop_0.z.dat">
+            <OutputColumn id="hrPop_0__z" quantity="hrPop[0]/z"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>

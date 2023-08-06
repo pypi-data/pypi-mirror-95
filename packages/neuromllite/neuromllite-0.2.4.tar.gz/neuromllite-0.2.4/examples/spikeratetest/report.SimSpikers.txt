@@ -1,0 +1,8 @@
+# Report of running simulation with jLEMS v0.10.3
+Simulator=jLEMS
+SimulatorVersion=0.10.3
+SimulationFile=/Users/padraig/NeuroMLlite/examples/spikeratetest/LEMS_SimSpikers.xml
+StartTime=2021-02-18 09:52:38
+SetupTime=0.216
+RealSimulationTime=20.498
+SimulationSaveTime=0.012

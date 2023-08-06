@@ -1,0 +1,3 @@
+node_type_id dynamics_params pop_name model_template model_type model_name 
+101 hhcell.json pop1 nest:iaf_psc_alpha point_process hhcell 
+100 hhcell.json pop0 nest:iaf_psc_alpha point_process hhcell 

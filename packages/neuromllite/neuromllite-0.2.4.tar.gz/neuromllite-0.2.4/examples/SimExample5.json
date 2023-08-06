@@ -1,0 +1,14 @@
+{
+    "SimExample5": {
+        "version": "NeuroMLlite v0.2.4",
+        "network": "BBP_5percent.json",
+        "duration": 500.0,
+        "dt": 0.025,
+        "recordTraces": {
+            "all": "*"
+        },
+        "recordSpikes": {
+            "all": "*"
+        }
+    }
+}

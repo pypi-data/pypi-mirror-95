@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<Lems xmlns="http://www.neuroml.org/lems/0.7.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.3 https://raw.githubusercontent.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.3.xsd">
+  <ComponentType description="The Lorenz system is a simplified model for atomspheric convection, derived from the Navier Stokes equations." name="lorenz">
+    <Parameter dimension="none" name="sigma"/>
+    <Parameter dimension="none" name="b"/>
+    <Parameter dimension="none" name="r"/>
+    <Parameter dimension="none" name="x0"/>
+    <Parameter dimension="none" name="y0"/>
+    <Parameter dimension="none" name="z0"/>
+    <Constant dimension="time" name="sec" value="1s"/>
+    <Exposure dimension="none" name="x"/>
+    <Exposure dimension="none" name="y"/>
+    <Exposure dimension="none" name="z"/>
+    <Dynamics>
+      <StateVariable dimension="none" exposure="x" name="x"/>
+      <StateVariable dimension="none" exposure="y" name="y"/>
+      <StateVariable dimension="none" exposure="z" name="z"/>
+      <TimeDerivative value="( sigma * (y - x) ) / sec" variable="x"/>
+      <TimeDerivative value="( r * x - y - x * z ) / sec" variable="y"/>
+      <TimeDerivative value="( x * y - b * z) / sec" variable="z"/>
+      <OnStart>
+        <StateAssignment value="x0" variable="x"/>
+        <StateAssignment value="y0" variable="y"/>
+        <StateAssignment value="z0" variable="z"/>
+      </OnStart>
+    </Dynamics>
+  </ComponentType>
+  <Component b="2.67" id="lorenzCell" r="28" sigma="10" type="lorenz" x0="1" y0="1" z0="1"/>
+</Lems>
