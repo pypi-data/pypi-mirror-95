@@ -1,0 +1,10 @@
+jncep/__init__.py,sha256=T0rOiHj-y7cZi4mMlLXwSZ_9qucOorfl1JHySEVL-1Y,70
+jncep/core.py,sha256=UBCs2r2mXlPJzF2mb_8j0W4Czl_TN5J9Dl6ptFeMV2Q,22787
+jncep/jncapi.py,sha256=QcPmlqMt6hjvT_p6p7hNmvnRDRJn3Bu60AH_aV_V2_c,5065
+jncep/jncep.py,sha256=ho8cDI1fEmBy9og0o0Zlb0i6SV5p8QAntcVakftnZeI,15863
+jncep-0.18.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+jncep-0.18.dist-info/METADATA,sha256=6hPKmh2sN6nWFiishBTArM3DmhjqscssFjWvRBpCHHk,17184
+jncep-0.18.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jncep-0.18.dist-info/entry_points.txt,sha256=uT9VXYnaHBcBSRTpIMfTeDAd2zLWNCSMvwCWLGkjBBg,44
+jncep-0.18.dist-info/top_level.txt,sha256=FpCdpbMbh3RLltf2_MsndjaXLpS3kwXgw4a_f6QJ0T4,6
+jncep-0.18.dist-info/RECORD,,
