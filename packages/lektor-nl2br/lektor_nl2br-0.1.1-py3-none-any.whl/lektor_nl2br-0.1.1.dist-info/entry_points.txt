@@ -1,0 +1,3 @@
+[lektor.plugins]
+nl2br=lektor_nl2br:Nl2BrPlugin
+
