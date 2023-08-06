@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fxparser"
+version = "2.3.4"
+description = "A forex message parser to extract information such as symbols, tps, and sls"
+authors = ["Danny"]
+license = "GNU GPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+spacy = "^2.3.5"
+emoji = "^0.6.0"
+tensorflow = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
