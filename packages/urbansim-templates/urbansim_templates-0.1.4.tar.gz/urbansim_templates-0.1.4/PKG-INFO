@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: urbansim_templates
+Version: 0.1.4
+Summary: UrbanSim extension for managing model steps
+Home-page: https://github.com/udst/urbansim_templates
+Author: UrbanSim Inc.
+Author-email: info@urbansim.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
