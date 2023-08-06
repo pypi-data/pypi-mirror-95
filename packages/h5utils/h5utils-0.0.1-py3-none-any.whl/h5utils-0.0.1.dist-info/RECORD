@@ -1,0 +1,13 @@
+h5utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h5utils/h5tovts.py,sha256=ab9_SL6STlro17qv0jxEsnqUuTWVMyEhc2oEdc4KbvA,4595
+h5utils/h5utils.py,sha256=KgXfNfXvoMios9--9oCWkTYneDJAh_8xWjJFmQNwfzA,30522
+h5utils/constants/__init__.py,sha256=bfF7eSzoVkr7tjclqAJfqo1fiXrhUdcdGlLK9f9cOPI,100
+h5utils/constants/physcon.py,sha256=bKDDbUibyP3gAdrlSDOsaLg-hymFGy0kAPEGvkD2deY,8679
+h5utils/data/lattice-cartesian-epsilon.h5,sha256=vZkYgjChLODNogYliKnrAXitIIKinBiCQ0L1f8jtpTg,13008293
+h5utils/data/lattice-non-cartesian-epsilon.h5,sha256=UU1-U5NVcrqLYcW9kUaZXWRl2uvJbA6Ori_JdMCRPwc,13008293
+h5utils-0.0.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+h5utils-0.0.1.dist-info/METADATA,sha256=FK1MiopW-GC5Rp0tJooFRFGuPoeUNsYiFPQk_LuvhHQ,1384
+h5utils-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+h5utils-0.0.1.dist-info/entry_points.txt,sha256=De2fjEgWVk4HS4JWAKhHHH_zsaxYzBIQyJS2wcFi6r4,50
+h5utils-0.0.1.dist-info/top_level.txt,sha256=BtJy7l6WArs_-EK1pq93b97dLiXrWZ6mEYweOV4Q32c,8
+h5utils-0.0.1.dist-info/RECORD,,
