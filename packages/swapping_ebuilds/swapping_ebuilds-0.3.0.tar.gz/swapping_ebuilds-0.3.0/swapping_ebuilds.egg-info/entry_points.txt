@@ -1,0 +1,3 @@
+[console_scripts]
+swapping_ebuilds = swapping_ebuilds.main:main
+
