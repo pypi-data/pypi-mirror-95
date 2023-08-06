@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: mcvariable
+Version: 0.1.0
+Summary: Monte Carlo(random) Variable Object 
+Home-page: https://gitlab.in2p3.fr/gregoire.henning/python-montecarlo-variable
+Author: Greg Henning
+Author-email: ghenning@iphc.cnrs.fr
+License: UNKNOWN
+Description: # MonteCarlo Variable object
+        
+        
+        This python object is a Monte Carlo variable. 
+        
+        - It is initialized with a central value, uncertainty and (optionnaly)
+        distribution law
+        - It stores a value according to this probability distirbution
+        - The value is returned when converted to `float` or `int` 
+        - The MC value is renewed only when calling `mcvariable.refresh()` 
+        - The module also includes a generator function to geneate multiple 
+        outcome of the random variable.
+        
+        ## `MCVariable` usage:
+        
+        The object is initialized with 
+        ```python
+        MCVariable(parameters: Sequence[Number], 
+                   law: Callable[..., Number],
+                   keep_positive: bool = True, 
+                   non_zero: bool = True,
+        		   replace_zero_with: float = 1e-20)
+        ```
+        
+        With the parameters: 
+        - `parameters`: parameters of the probability law.  
+                        As a tuple or list of numbers/
+        - `law` : Distribution law of the random variable  
+                  As a callable taking `*parameters` as arguments  
+        		  and returning a number/
+        - `keep_positive` (`bool`) = True : keep the value >=0
+        - `non_zero` (`bool`) = True    : prevent the value to be exactly 0.0000
+        - `replace_zero_with` (`float`) = 1e-20 : if the previous parameters is True,  
+                                                 replace all 0 by this value.
+        
+        
+        To be used, it is recommended to convert explicitely the variable 
+        as `int` or `float`:
+        
+        ```python
+        mcv = mcvariable.MCVariable((0., 1.))
+        print(f"{int(mcv)}")
+        ```
+        
+        ## Default probability laws
+        
+        The module includes two probability law by default:
+        
+        - `mcvariable.law_gaussian` which takes two parameters: `(`mean`, `stddev`)`
+        - `mcvariable.law_flat` whic takes to parameters: `(`central`, `delta`)`
+         (and retruns a value within the (central - delta, central + delta) range.
+        
+        ## Generator
+        
+        To obtain a series of realization of the random variable, 
+        use the `mcvariable.MCGenerator` function that returns a generator.
+        
+        ```python
+        
+        mcvariable.MCGenerator(mcv: MCVariable,
+                               nmax: Number = math.inf,
+        					   variable_type: type = float)
+        ```
+        
+        The parameters are :
+        - `mcv` the MCVariable instance to use to generate the values
+        - `nmax` number of elements to return (by defaultl infinite)
+        - `variable_type`: the type of value to return (`float` by default, 
+          can be changed to `int`).
+          
+        ## Testing
+        
+        The module comes with a test script `test_mcvariable.py`. 
+        
+        # Authors
+        
+        * **Greg Henning** - ghenning&#8203;*.at.*&#8203;iphc&#x2024;cnrs&#x2024;fr
+        
+        
+        # License
+        
+        This project is licensed under the CeCILL FREE SOFTWARE LICENSE AGREEMENT.
+        
+        See [LICENSE](LICENSE) for more.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

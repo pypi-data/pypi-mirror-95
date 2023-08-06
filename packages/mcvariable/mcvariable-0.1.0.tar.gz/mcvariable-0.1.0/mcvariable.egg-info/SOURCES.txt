@@ -1,0 +1,8 @@
+README.md
+setup.py
+mcvariable/__init__.py
+mcvariable/mcvariable.py
+mcvariable.egg-info/PKG-INFO
+mcvariable.egg-info/SOURCES.txt
+mcvariable.egg-info/dependency_links.txt
+mcvariable.egg-info/top_level.txt
