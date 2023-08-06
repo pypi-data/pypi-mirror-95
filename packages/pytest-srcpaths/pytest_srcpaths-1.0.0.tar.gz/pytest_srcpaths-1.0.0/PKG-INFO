@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pytest_srcpaths
+Version: 1.0.0
+Summary: Add paths to sys.path
+Home-page: https://github.com/okken/pytest-srcpaths
+Author: Brian Okken
+Author-email: brian+pypi@pythontest.com
