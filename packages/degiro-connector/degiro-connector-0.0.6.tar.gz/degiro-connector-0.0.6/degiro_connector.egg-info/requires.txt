@@ -1,0 +1,8 @@
+grpcio
+onetimepass
+orjson
+pandas
+protobuf
+requests
+wheel
+wrapt

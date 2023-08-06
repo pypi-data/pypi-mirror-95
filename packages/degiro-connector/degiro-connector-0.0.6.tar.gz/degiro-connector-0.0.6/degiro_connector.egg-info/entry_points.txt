@@ -1,0 +1,4 @@
+[console_scripts]
+quotecast = quotecast.applications.cli:cli
+trading = trading.applications.cli:cli
+
