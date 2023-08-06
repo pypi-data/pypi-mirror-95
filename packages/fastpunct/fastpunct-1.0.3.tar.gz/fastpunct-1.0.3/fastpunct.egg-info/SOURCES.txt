@@ -1,0 +1,9 @@
+README.md
+setup.py
+fastpunct/__init__.py
+fastpunct/fastpunct.py
+fastpunct.egg-info/PKG-INFO
+fastpunct.egg-info/SOURCES.txt
+fastpunct.egg-info/dependency_links.txt
+fastpunct.egg-info/requires.txt
+fastpunct.egg-info/top_level.txt
