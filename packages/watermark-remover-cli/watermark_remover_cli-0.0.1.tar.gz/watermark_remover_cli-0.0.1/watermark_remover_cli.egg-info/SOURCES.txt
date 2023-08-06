@@ -1,0 +1,10 @@
+README.md
+setup.py
+watermark_remover_cli/Watermarkremover.py
+watermark_remover_cli/__init__.py
+watermark_remover_cli/__main__.py
+watermark_remover_cli.egg-info/PKG-INFO
+watermark_remover_cli.egg-info/SOURCES.txt
+watermark_remover_cli.egg-info/dependency_links.txt
+watermark_remover_cli.egg-info/not-zip-safe
+watermark_remover_cli.egg-info/top_level.txt
