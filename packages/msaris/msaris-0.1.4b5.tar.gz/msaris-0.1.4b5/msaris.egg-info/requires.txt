@@ -1,0 +1,11 @@
+IsoSpecPy>=2.1.1
+PuLP>=2.4
+molmass>=2020.6.10
+multiprocess>=0.70.11.1
+numpy>=1.19.5
+openms>=3.6.1
+pandas>=1.2.0
+pyopenms>=2.6.0
+pytest>=6.2.2
+scipy>=1.6.0
+typer>=0.3.2

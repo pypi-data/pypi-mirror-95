@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: msaris
+Version: 0.1.4b5
+Summary: Python package to identify isotope patterns and their formulas
+Home-page: https://github.com/Borschevik/msaris
+Author: Anton Bondarenko, Yulia Vlasova, Mikhail Polynski
+License: MIT
+Description: 
+        Package of classes, methods and function to
+        perform search of isotope patterns, their identification and
+        identifying their formulas
+        
+Keywords: mass spectrometry,mass spec,isotopic,linear programming,isotope pattern,clusterization
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
