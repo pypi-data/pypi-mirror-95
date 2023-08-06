@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dora-cli"
+version = "0.0.5"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/doraproject/cli.git"
+description = "Dora Command Line Interface"
+authors = ["didone <didone@live.com>"]
+keywords = ["dora","cli","sandbox"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+clint = "^0.5.1"
+docopt = "^0.6.2"
+tabulate = "^0.8.7"
+huaweicloud-sdk-python = "^1.0.28"
+esdk-obs-python = "^3.20.11"
+docker = "^4.4.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.6.2"
+setuptools = "^53.0.0"
+wheel = "^0.36.2"
+twine = "^3.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
