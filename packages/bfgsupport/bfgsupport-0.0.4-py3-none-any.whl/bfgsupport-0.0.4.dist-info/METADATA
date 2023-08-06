@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bfgsupport
+Version: 0.0.4
+Summary: """A collection of modules that supports dealing and bidding in Bid for Game applications."""
+Home-page: https://psionman@bitbucket.org/psionman/bfgsupport.git
+Author: jeff watkins
+Author-email: support@bidforgame.com
+License: MIT
+Download-URL: https://pypi.org/project/bfgsupport/
+Keywords: Application, User
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: username
+Requires-Dist: nose
+
+# bfg_support
+A collection of modules that supports dealing and bidding in Bid for Game applications.
+
+## Installation
+```bash
+pip install bfgsupport
+```
+
+
+
+------
+Version 0.0.0 - 22 February 2021
+
+Created and uploaded
+
+---
+
+
