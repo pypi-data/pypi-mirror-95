@@ -1,0 +1,16 @@
+
+[all]
+anyconfig<0.10,>=0.9.1
+PyYAML<4,>=3.12
+Flask<2,>=1.1.1
+gunicorn<21,>=20.0.4
+gevent<21,>=20.6.2
+
+[config]
+anyconfig<0.10,>=0.9.1
+PyYAML<4,>=3.12
+
+[wsgi]
+Flask<2,>=1.1.1
+gunicorn<21,>=20.0.4
+gevent<21,>=20.6.2
