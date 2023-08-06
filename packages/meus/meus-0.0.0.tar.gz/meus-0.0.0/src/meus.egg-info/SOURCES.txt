@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/meus/__init__.py
+src/meus.egg-info/PKG-INFO
+src/meus.egg-info/SOURCES.txt
+src/meus.egg-info/dependency_links.txt
+src/meus.egg-info/top_level.txt
