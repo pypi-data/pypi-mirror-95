@@ -1,0 +1,4 @@
+pathlib
+tablewriter
+matplotlib
+PyPDF2
