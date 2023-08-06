@@ -1,0 +1,12 @@
+scholarly/__init__.py,sha256=gQrNWkglZtN-29IFZVKmon6sWIGB3iIKNBPyv_LFB-8,149
+scholarly/_navigator.py,sha256=-cBbdRZ7oQaNZm_OYUaWFTy5tL3emXW1kPG24Y90p7k,12344
+scholarly/_proxy_generator.py,sha256=-1dkdJ_-6KiDq0J0zjKNIx6cNyoWP7sTPXT4me74EtA,16757
+scholarly/_scholarly.py,sha256=lAZakYU-bQOau4367ajLYi1I2pPHeDNd9VofIhjXrKo,18146
+scholarly/author_parser.py,sha256=sDNthL8I5KXV126MinkHc4Aj35lZo0TorkO58Iq9CsE,16428
+scholarly/data_types.py,sha256=oT5fbkZI--OifJfOoF5W9KgAG1Yay48E5IreX_czmAY,10945
+scholarly/publication_parser.py,sha256=XrW-t_TIFSko7LQ6CeGhkPij0zC5Wb__QDmmAn0I70w,16481
+scholarly-1.1.0.dist-info/LICENSE.txt,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+scholarly-1.1.0.dist-info/METADATA,sha256=JL0AukrnUv8kYmFg7AwT_11TptFcc85l9pFulRrliQc,2820
+scholarly-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scholarly-1.1.0.dist-info/top_level.txt,sha256=mUQrzxtPxa-L-7-I2hoae7ICIPEbulaVey0HJQKcrL0,10
+scholarly-1.1.0.dist-info/RECORD,,
