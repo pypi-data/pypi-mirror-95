@@ -1,0 +1,13 @@
+README.md
+setup.py
+Cemotion_apple.egg-info/PKG-INFO
+Cemotion_apple.egg-info/SOURCES.txt
+Cemotion_apple.egg-info/dependency_links.txt
+Cemotion_apple.egg-info/requires.txt
+Cemotion_apple.egg-info/top_level.txt
+cemotion/__init__.py
+cemotion/app.py
+cemotion/dataset.py
+cemotion/download.py
+cemotion/models/__init__.py
+cemotion/models/requirements/__init__.py
