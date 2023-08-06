@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+from precipy import PRECIPY_VERSION
+from precipy.main import render_file
+from precipy.storage import AVAILABLE_STORAGES
+import argparse
+
+parser = argparse.ArgumentParser(
+        allow_abbrev=True,
+        description="Precipy version %s" % PRECIPY_VERSION
+        )
+parser.add_argument("path", help="Path to the config file you wish to run.")
+parser.add_argument("-module", action="append",
+        help="""Module names to use for analytics. Modules Can be installed modules,
+or local python files (leave off .py ext).
+Can add multiple modules with repeated call. Shortenable to -m.""")
+parser.add_argument('-storage', action="append", default=[],
+        help="""Cloud storage formats to use. Can add multiple storages.
+Shortenable to -s. Available options are: %s""" % ", ".join(AVAILABLE_STORAGES.keys()))
+
+args = parser.parse_args()
+
+render_file(args.path, args.module, storages=[AVAILABLE_STORAGES[k]() for k in args.storage])
