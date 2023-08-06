@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sensai
+Version: 0.0.8
+Summary: Library for sensible AI
+Home-page: UNKNOWN
+Author: jambit GmbH
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: torch
+Provides-Extra: tensorflow
+Provides-Extra: lightgbm
+Provides-Extra: full
