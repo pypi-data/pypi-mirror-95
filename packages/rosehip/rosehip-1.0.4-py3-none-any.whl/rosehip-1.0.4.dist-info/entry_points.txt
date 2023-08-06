@@ -1,0 +1,3 @@
+[console_scripts]
+rosehip = Rosehip.__init__:laptop
+
