@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+energy_pandas/__init__.py
+energy_pandas/edf_utils.py
+energy_pandas/energypandas.py
+energy_pandas/plotting.py
+energy_pandas/units.py
+energy_pandas.egg-info/PKG-INFO
+energy_pandas.egg-info/SOURCES.txt
+energy_pandas.egg-info/dependency_links.txt
+energy_pandas.egg-info/requires.txt
+energy_pandas.egg-info/top_level.txt

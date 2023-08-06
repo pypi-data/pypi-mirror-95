@@ -1,0 +1,17 @@
+outdated
+pint
+tabulate
+numpy
+matplotlib>=3.2
+scikit-learn
+tsam
+pandas==1.2.2
+
+[dev]
+pytest
+pytest-cov
+coverage
+coveralls
+sphinx>=2.1
+recommonmark
+sphinx_rtd_theme
