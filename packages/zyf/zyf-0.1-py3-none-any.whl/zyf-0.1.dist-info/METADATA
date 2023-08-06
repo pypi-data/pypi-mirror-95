@@ -1,0 +1,227 @@
+Metadata-Version: 2.1
+Name: zyf
+Version: 0.1
+Summary: 万能工具包
+Home-page: UNKNOWN
+Author: zhangyafei
+Author-email: zhangyafeii@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: prettytable
+
+## 安装
+
+> pip install zyf
+>
+> 或者
+>
+> pip install zyf -i https://pypi.python.org/simple
+
+## 使用
+
+### 函数计时
+
+#### 示例1：timeit
+
+```python
+from zyf import timeit
+
+@timeit
+def sleep(seconds: int):
+    time.sleep(seconds)
+```
+
+运行
+
+```bash
+>> sleep(1)
+Function sleep -> takes 1.001 seconds
+```
+
+#### 示例2：repeat_timeit
+
+```python
+from zyf import repeat_timeit
+
+@repeat_timeit(number=5)
+def list_insert_time_test():
+    l = []
+    for i in range(10000):
+        l.insert(0, i)
+
+
+@repeat_timeit(repeat=3, number=5)
+def list_append_time_test():
+    l = []
+    for i in range(1000000):
+        l.append(i)
+    return l
+
+
+@repeat_timeit(number=5, print_detail=True)
+def list_gen_time_test():
+    l = [i for i in range(1000000)]
+    return l
+
+
+@repeat_timeit(repeat=3, number=5, print_detail=True)
+def list_extend_time_test():
+    l = []
+    for i in range(1000000):
+        l.extend([i])
+
+
+@repeat_timeit(repeat=3, number=5, print_detail=True, print_table=True)
+def list_range_time_test():
+    l = list(range(1000000))
+```
+
+运行
+
+```bash
+>> list_insert_time_test()
+Function list_insert_time_test -> 5 function calls: average takes 0.097 seconds
+
+>> list_append_time_test()
+Function list_append_time_test -> 3 trials with 5 function calls per trial: average trial 3.269 seconds. average function call 0.654 seconds
+
+>> list_gen_time_test()
+Time Spend of 5 function calls:
+	Function -> list_gen_time_test: total 1.550 seconds, average 0.310 seconds
+Average: 0.310 seconds
+
+>> list_extend_time_test()
+Time Spend of 3 trials with 5 function calls per trial:
+	Function -> list_extend_time_test: 
+		best: 3.289 seconds, worst: 3.626 seconds, average: 3.442 seconds
+Average trial: 3.442 seconds. Average function call: 0.688 seconds
+
+>> list_range_time_test()
+Time Spend of 3 trials with 5 function calls per trial:
++----------------------+---------------+---------------+---------------+-----------------------+
+|       Function       |   Best trial  |  Worst trial  | Average trial | Average function call |
++----------------------+---------------+---------------+---------------+-----------------------+
+| list_range_time_test | 0.640 seconds | 0.714 seconds | 0.677 seconds |     0.135 seconds     |
++----------------------+---------------+---------------+---------------+-----------------------+
+```
+
+示例3：构建列表效率对比
+
+```python
+from zyf import repeat_timeit
+
+
+@repeat_timeit(number=3)
+def list_insert_time_test():
+    l = []
+    for i in range(100000):
+        l.insert(0, i)
+
+@repeat_timeit(number=5)
+def list_extend_time_test():
+    l = []
+    for i in range(100000):
+        l.extend([i])
+
+@repeat_timeit(number=5)
+def list_append_time_test():
+    l = []
+    for i in range(100000):
+        l.append(i)
+    return l
+
+
+@repeat_timeit(number=5)
+def list_gen_time_test():
+    l = [i for i in range(100000)]
+    return l
+
+
+@repeat_timeit(number=5)
+def list_range_time_test():
+    l = list(range(100000))
+
+
+if __name__ == '__main__':
+    list_range_time_test()
+    list_gen_time_test()
+    list_append_time_test()
+    list_extend_time_test()
+    list_insert_time_test()
+```
+
+运行结果
+
+```bash
+Function list_range_time_test -> 5 function calls: average takes 0.012 seconds
+Function list_gen_time_test -> 5 function calls: average takes 0.017 seconds
+Function list_append_time_test -> 5 function calls: average takes 0.038 seconds
+Function list_extend_time_test -> 5 function calls: average takes 0.067 seconds
+Function list_insert_time_test -> 3 function calls: average takes 13.747 seconds
+```
+
+### UserAgent
+
+#### 示例
+
+```python
+from zyf import UserAgent
+
+
+ua = UserAgent()
+
+print(ua.random)
+print(ua.chrome)
+print(ua.firefox)
+print(ua.opera)
+print(ua.uc)
+print(ua.mobile)
+```
+
+输出
+
+```bash
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3
+Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6
+Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.50
+Openwave/ UCWEB7.0.2.37/28/999
+Mozilla/5.0 (iPad; U; CPU OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5
+```
+
+### 文件操作
+
+- 扫描指定文件夹内所有文件，输出文件路径
+
+```python
+from zyf import scan_directory_contents
+
+
+for file in scan_directory_contents('D:/python/data'):
+    print(file)
+
+# 可以指定后缀
+for file in scan_directory_contents('D:/python/data', suffix='.csv'):
+    print(file)
+```
+
+- 词频统计
+
+  对`文献.xlsx`中关键词列的进行`词频统计`，可指定单词分隔符，默认为`; ',也可指定输出词频统计列名，默认为freq和word。
+
+```python
+from zyf import count_word_freq
+
+
+count_word_freq('文献.xlsx', col_name='关键词', sep='; ', to_col_freq='频数', to_col_word='单词', to_file='文献_关键词_统计.xlsx')
+```
+
+
+
+
+
