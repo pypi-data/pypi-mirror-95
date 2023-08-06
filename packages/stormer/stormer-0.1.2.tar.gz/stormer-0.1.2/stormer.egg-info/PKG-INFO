@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: stormer
+Version: 0.1.2
+Summary: this is a requester for requests.
+Home-page: https://github.com/sunglowrise/stormer/
+Maintainer: Murray
+Maintainer-email: sunglowrise@qq.com
+License: MIT
+Download-URL: https://github.com/sunglowrise/stormer/
+Description: ## DataClient
+        
+        ### Introduction
+        this is a request tool which packaging method server
+        
+        ### Usage
+        ```python
+        from stormer import Requester
+        
+        # init Requester instance
+        requester = Requester(
+            "https://www.baidu.com", 
+            redis_url="redis://127.0.0.1:6379/0", 
+            # redis_nodes="127.0.0.1:7000,127.0.0.1:7001,127.0.0.1:7002", 
+            # redis_password="",
+            timeout=30, # in seconds，global cache timeout
+            # headers={"Content-Type": "text/html;charset=utf8"},
+            encoding='utf8'
+        )
+        
+        # open debug
+        requester.set_debugging()
+        
+        # register request function
+        requester.register(
+            action="get", 
+            func="bd_index", 
+            uri="/", 
+            timeout=5  # in second, this requester cache timeout
+        )
+        
+        # execute function
+        rlt = requester.bd_index()
+        r_byte = rlt.bytes
+        print(rlt.data)
+        print(rlt.resp)
+        ```
+        
+        
+        
+        
+        
+Keywords: stormer,requester,redis,requests
+Platform: Platform Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
