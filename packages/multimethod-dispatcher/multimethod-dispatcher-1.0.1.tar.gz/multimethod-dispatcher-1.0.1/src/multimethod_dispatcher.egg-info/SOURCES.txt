@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/multimethod.py
+src/multimethod_dispatcher.egg-info/PKG-INFO
+src/multimethod_dispatcher.egg-info/SOURCES.txt
+src/multimethod_dispatcher.egg-info/dependency_links.txt
+src/multimethod_dispatcher.egg-info/requires.txt
+src/multimethod_dispatcher.egg-info/top_level.txt

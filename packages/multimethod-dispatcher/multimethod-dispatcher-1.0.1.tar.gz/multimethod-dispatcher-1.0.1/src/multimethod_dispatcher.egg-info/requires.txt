@@ -1,0 +1,7 @@
+
+[dev]
+pylint>=2.6
+coverage>=5.4
+
+[publishing]
+twine>=3.3
