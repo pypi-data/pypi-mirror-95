@@ -1,0 +1,13 @@
+README.rst
+setup.py
+Kadal.egg-info/PKG-INFO
+Kadal.egg-info/SOURCES.txt
+Kadal.egg-info/dependency_links.txt
+Kadal.egg-info/requires.txt
+Kadal.egg-info/top_level.txt
+kadal/__init__.py
+kadal/client.py
+kadal/media.py
+kadal/query.py
+kadal/user.py
+kadal/utils.py
