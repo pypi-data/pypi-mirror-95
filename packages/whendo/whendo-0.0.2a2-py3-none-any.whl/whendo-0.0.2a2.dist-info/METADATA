@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: whendo
+Version: 0.0.2a2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: beaver@electronhead.com
+License: MIT
+Keywords: scheduling,api
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Dist: uvicorn (>=0.13.3)
+Requires-Dist: fastapi (>=0.63.0)
+Requires-Dist: pydantic (>=1.7.3)
+Requires-Dist: schedule (>=1.0.0)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: netifaces (>=0.10.9)
+Requires-Dist: Mock.GPIO (>=0.1.7)
+
+UNKNOWN
+
+
