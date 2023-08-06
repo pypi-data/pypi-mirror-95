@@ -1,0 +1,13 @@
+pyclam/__init__.py,sha256=6jGJuTFukcU3fKf_OM8heio8FKKp7w61JC4R3fHa-qY,257
+pyclam/chaoda.py,sha256=F0zI2_w5iL5sf-EsJrGU3PTioZINPShaXO2UceSrIDU,24047
+pyclam/criterion.py,sha256=_pejbfBg3XYRaJi_i7L0J0EB79CMaYZ9l5SJlbqNcqs,13971
+pyclam/datasets.py,sha256=8GodaLZy-qbzIAYno8JCQz1xLF6tDGFaWlpcbFp4miI,4642
+pyclam/manifold.py,sha256=Z1K_crhO3q7E-qIhVVaGN4AIsBaZYH2utpaIp6RrZtY,48499
+pyclam/search.py,sha256=YHl2obJAdpIEvMjiJlkB6T29XSSMP4b_P7mQSB7tY6Y,9780
+pyclam/types.py,sha256=VkejqFIRn7ASaCCYwzVOTVtVlBmKpx-trgXnIEtMGDE,546
+pyclam/utils.py,sha256=9cygBRSM5GY2ZCCTwV9rEcCtcW56K7exwnxywmhZ5Fg,1839
+pyclam-0.3.11.dist-info/LICENSE,sha256=Wh2Ark3jPaCPr_j20drSpsnQnySEfbwrjElt6t7zqV4,1064
+pyclam-0.3.11.dist-info/METADATA,sha256=R7YC-EBwokSMCsCP3P8SJHNysLqqoO-va3SEAg3lqqg,2755
+pyclam-0.3.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyclam-0.3.11.dist-info/top_level.txt,sha256=WUN9DS5b9FgsfHV-nqT4vFZuvWBJw05fiHA_In7lgZY,7
+pyclam-0.3.11.dist-info/RECORD,,
