@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "numpy",
+    "networkx",
+    "seaborn",
+    "pybind11~=2.6.1"
+]
+build-backend = "setuptools.build_meta"
