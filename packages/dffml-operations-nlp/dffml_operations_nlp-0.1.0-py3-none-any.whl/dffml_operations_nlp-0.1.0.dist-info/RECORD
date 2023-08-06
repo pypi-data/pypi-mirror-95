@@ -1,0 +1,12 @@
+dffml_operations_nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_operations_nlp/operations.py,sha256=xIFhBjDZ41sBSiDMP8T88xEzjfaylZXIvquwLQbCOFI,13621
+dffml_operations_nlp/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_nlp_op_integration.py,sha256=1f90GbjORoGbjkTD8F9Wv-s-fvc2r5ZXDRf59kb-Zg0,3499
+tests/test_operations.py,sha256=M9zBT0rjo9Hyhkcll6ykmM-Vhe-5ni6B95fQ4d7XXS4,10724
+dffml_operations_nlp-0.1.0.dist-info/LICENSE,sha256=o1qvQ6DtiRB4dsv4lgZg8mqkXfRTuTnW6_fJVesB74Q,1072
+dffml_operations_nlp-0.1.0.dist-info/METADATA,sha256=nmzPVDiXduq690bDeJlvMIY4FLK9gxW2P3mnJQzHjnk,2497
+dffml_operations_nlp-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_operations_nlp-0.1.0.dist-info/entry_points.txt,sha256=Csiv1TfvMROdkHncOutw__FSquqsrSALJIABz_EUpHI,738
+dffml_operations_nlp-0.1.0.dist-info/top_level.txt,sha256=p4szQM3ztV2dSaoEqBDMPnq6M5NXU0ND8MGlwasu7oM,27
+dffml_operations_nlp-0.1.0.dist-info/RECORD,,
