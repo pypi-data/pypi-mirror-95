@@ -1,0 +1,5 @@
+future>=0.18.2
+requests>=2.23.0
+
+[tests]
+pyyaml>=5.3
