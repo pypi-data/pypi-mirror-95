@@ -1,0 +1,5 @@
+PyYAML==5.4.1
+Pygments==2.7.4
+dnspython==2.1.0
+docutils==0.16
+flask==1.1.2
