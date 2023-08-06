@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aiohttp-api-client
+Version: 0.2.0
+Summary: aiohttp based api client
+Home-page: https://github.com/xppt/py-aiohttp-api-client
+Author: xppt
+Author-email: 21246102+xppt@users.noreply.github.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3,<4)
+Description-Content-Type: text/markdown
+
+aiohttp-api-client
+===
+
+Requires: python 3.6+, aiohttp.
+
+Example:
+```python
+import aiohttp
+from aiohttp_api_client.json_api import \
+    JsonApiClient, JsonApiRequest, JsonApiError, JsonApiDetails
+
+async def run(http_client: aiohttp.ClientSession):
+    api_client = JsonApiClient(http_client)
+
+    response = await api_client(JsonApiRequest('GET', 'https://example.com/api/'))
+    assert response.json == {'ok': True}
+
+    try:
+        await api_client(JsonApiRequest('GET', 'https://example.com/api/bad-request/'))
+    except JsonApiError as e:
+        assert e.details == JsonApiDetails(
+            http_status=400, http_reason='Bad Request', content_type='application/json',
+            bytes=b'{"ok": false}', text='{"ok": false}',
+        )
+    else:
+        assert False
+```
+
