@@ -1,0 +1,12 @@
+README.md
+setup.py
+fellow_py/__init__.py
+fellow_py/discover.py
+fellow_py/exceptions.py
+fellow_py/kettle.py
+fellow_py.egg-info/PKG-INFO
+fellow_py.egg-info/SOURCES.txt
+fellow_py.egg-info/dependency_links.txt
+fellow_py.egg-info/not-zip-safe
+fellow_py.egg-info/requires.txt
+fellow_py.egg-info/top_level.txt
