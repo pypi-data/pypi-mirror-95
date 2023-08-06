@@ -1,0 +1,14 @@
+mkl_random/__init__.py,sha256=E2rWBeewjWBEJF8hPYJmkY--3nrX-FBUPAGf0m0hr0s,2041
+mkl_random/_version.py,sha256=KUauiqC-RpyaIW_Ukp1btaMRfRrO8ahpTlv_V1yrJNI,25
+mkl_random/mkl_distributions.h,sha256=M0dVPYP0S53ZlzJCN4nLQGPObWneNO18w37Ln4lK-Eg,8110
+mkl_random/mklrand.cp37-win_amd64.pyd,sha256=h0f7tv5D_kXiIcQ8m11kH97j3LLskWMHLAySYpC4yQs,970752
+mkl_random/randomkit.h,sha256=zbWXAccppfzMCUqfg44n_Pace-rksZWjjAmRq2Khdcw,4910
+mkl_random/setup.py,sha256=EkD45D0yYl5o1_2Ga_cWOiv04ESm3IAI5gVTLMZs2rI,5103
+mkl_random/tests/__init__.py,sha256=XOPf1sZIV07Ih_K5Y4oXHD6FHnJAj04ctTXM7OtQqM4,1597
+mkl_random/tests/test_random.py,sha256=QJ_KyKcL1tyjkQyi2Ph8CVjY8zlJysZ5fwGRYXwBe7U,43101
+mkl_random/tests/test_regression.py,sha256=gwffT6AvAi7YyXB1VQmgpyxbU8Y6J4WypCTDtznlrU4,7084
+mkl_random-1.2.0.dist-info/LICENSE.txt,sha256=_wf2ZlqM4MmQCml9cc5CoEeFfv96AyIpqNvDiJ0vYxM,1529
+mkl_random-1.2.0.dist-info/METADATA,sha256=yHHBUUlfZdsXL3cEl9Q2d5VB3e7T3eoyhsfyV4nviX8,1883
+mkl_random-1.2.0.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+mkl_random-1.2.0.dist-info/top_level.txt,sha256=SUK4RZZ9qodPlcJRqZW6jerWB5v4dsIBDWw0-uJ5Kv8,11
+mkl_random-1.2.0.dist-info/RECORD,,
