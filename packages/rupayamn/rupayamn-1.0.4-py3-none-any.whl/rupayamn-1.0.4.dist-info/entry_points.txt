@@ -1,0 +1,3 @@
+[console_scripts]
+rupayamn=rupayamn.rupayamn:main
+
