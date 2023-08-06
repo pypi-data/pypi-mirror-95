@@ -1,0 +1,11 @@
+README.md
+setup.py
+logistigate/__init__.py
+logistigate/lg.py
+logistigate/methods.py
+logistigate/utilities.py
+logistigate.egg-info/PKG-INFO
+logistigate.egg-info/SOURCES.txt
+logistigate.egg-info/dependency_links.txt
+logistigate.egg-info/requires.txt
+logistigate.egg-info/top_level.txt
