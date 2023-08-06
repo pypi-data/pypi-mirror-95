@@ -1,0 +1,6 @@
+[opentelemetry_configurator]
+configurator = opentelemetry.distro:Configurator
+
+[opentelemetry_distro]
+distro = opentelemetry.distro:OpenTelemetryDistro
+
