@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: reptile-network
+Version: 0.1.1
+Summary: # Короткое описание  coming soon...  
+Home-page: UNKNOWN
+Author: sTonKs
+Author-email: kisel@internet.ru
+License: UNKNOWN
+Description: 
+        
+        # reptile-network v0.1.1
+        
+        # Документация на библиотеку
+        
+        coming soon...
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
