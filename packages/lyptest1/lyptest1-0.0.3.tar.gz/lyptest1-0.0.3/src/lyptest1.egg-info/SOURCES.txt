@@ -1,0 +1,8 @@
+setup.py
+src/lgplibdemo/__init__.py
+src/lgplibdemo/lgpdemo.py
+src/lgplibdemo/lgplib.py
+src/lyptest1.egg-info/PKG-INFO
+src/lyptest1.egg-info/SOURCES.txt
+src/lyptest1.egg-info/dependency_links.txt
+src/lyptest1.egg-info/top_level.txt
