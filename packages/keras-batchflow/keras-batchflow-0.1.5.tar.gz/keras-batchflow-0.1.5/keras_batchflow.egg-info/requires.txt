@@ -1,0 +1,11 @@
+numpy>=1.9.1
+scipy>=0.14
+scikit-learn
+pandas
+
+[tests]
+pytest
+markdown
+
+[visualize]
+pydot>=1.2.4
