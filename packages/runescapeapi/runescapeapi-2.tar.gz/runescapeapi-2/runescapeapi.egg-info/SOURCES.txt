@@ -1,0 +1,10 @@
+MANIFEST.in
+readme.txt
+setup.py
+runescapeapi/__init__.py
+runescapeapi/runescapeapi.py
+runescapeapi.egg-info/PKG-INFO
+runescapeapi.egg-info/SOURCES.txt
+runescapeapi.egg-info/dependency_links.txt
+runescapeapi.egg-info/requires.txt
+runescapeapi.egg-info/top_level.txt
