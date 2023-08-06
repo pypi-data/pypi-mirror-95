@@ -1,0 +1,12 @@
+dffml_operations_image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_operations_image/log.py,sha256=PkzMCt8N9DGiteaPbvIJahM4zTfFELttmoV8o89OzS8,70
+dffml_operations_image/operations.py,sha256=Y-u7Kaa1iumLvPEgO4w8wwdck02xGQnluWeyjCxi-kk,3015
+dffml_operations_image/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_operations.py,sha256=3g4i2VyaSQcC3CzzXAAT5mKZ0wNDtQq4A4GIA6wOkbY,5796
+dffml_operations_image-0.1.0.dist-info/LICENSE,sha256=hyL5m07F9aNMhhsiLL6D9CTwI1kAfRG77yGbonHK7r4,1071
+dffml_operations_image-0.1.0.dist-info/METADATA,sha256=T5GyAr7g7MjLnzd__vxeXcByqw5dJgTac2u2MSxUIUg,2991
+dffml_operations_image-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_operations_image-0.1.0.dist-info/entry_points.txt,sha256=_XCf6hNdtYsX99Z_07E07SsfjFOTdOCd97t2b5_hD8I,405
+dffml_operations_image-0.1.0.dist-info/top_level.txt,sha256=uZE1C1q3fZRQ88rniNAhHMnwoWQEAnHMsZbc644ueNg,29
+dffml_operations_image-0.1.0.dist-info/RECORD,,

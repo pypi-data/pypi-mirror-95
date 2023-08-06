@@ -1,0 +1,9 @@
+[dffml.operation]
+Haralick = dffml_operations_image.operations:Haralick
+HuMoments = dffml_operations_image.operations:HuMoments
+calcHist = dffml_operations_image.operations:calcHist
+convert_color = dffml_operations_image.operations:convert_color
+flatten = dffml_operations_image.operations:flatten
+normalize = dffml_operations_image.operations:normalize
+resize = dffml_operations_image.operations:resize
+
