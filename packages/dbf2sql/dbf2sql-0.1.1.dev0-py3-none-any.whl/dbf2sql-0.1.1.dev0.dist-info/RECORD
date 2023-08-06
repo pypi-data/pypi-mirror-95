@@ -1,0 +1,14 @@
+dbf2sql/__init__.py,sha256=S0ZuhY7OA4aLdg3ZVPYh3zBVMMSeonjH3TyVE5a_Ce8,37
+dbf2sql/__main__.py,sha256=B4cDzNFJEXGqYap_9da1Emq1Vyz8aW7j64megvsp2Sk,32
+dbf2sql/__version__.py,sha256=5xvN_gb61nKeq5TER5dSfcArTP3DVasZGN_MQq5dNpA,23
+dbf2sql/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbf2sql/config/settings.py,sha256=D0WIesydvaUkcGj1NX4si2yKeBHn3Qa87y6LC-xzzb4,1994
+dbf2sql/constants.py,sha256=Umf0nDY9u42BUPTwSsiM53p-n7sQK9Sbnq0oV9ODMNk,427
+dbf2sql/main.py,sha256=NJzlmSa22-iGMCEIDB9ygfgYROwgsqxvTtxSrWZO9oc,3725
+dbf2sql/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbf2sql/utils/colors.py,sha256=EiE-ztvY6I4Ts5yh_NDhUsoUwZY_4jxsol4ewnIP_RE,750
+dbf2sql-0.1.1.dev0.dist-info/entry_points.txt,sha256=QDnpoBA_2A8nNOO26XzBjscDUYqUSe9x3M79IDea4DI,39
+dbf2sql-0.1.1.dev0.dist-info/LICENSE,sha256=tu2LlyyBMmt4Z_H1-WQNVrgHJZ7AlsmwTWlCvHDjYy8,1100
+dbf2sql-0.1.1.dev0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dbf2sql-0.1.1.dev0.dist-info/METADATA,sha256=HwnhmUdyo7MJkKnIviuO6Jj5kLa2Xo6EBTlQenMQD9g,1675
+dbf2sql-0.1.1.dev0.dist-info/RECORD,,
