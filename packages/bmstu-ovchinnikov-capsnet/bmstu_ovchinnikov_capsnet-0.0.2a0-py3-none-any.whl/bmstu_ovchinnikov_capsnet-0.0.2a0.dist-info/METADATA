@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bmstu-ovchinnikov-capsnet
+Version: 0.0.2a0
+Summary: В данной библиотеке находятся вспомогательные классы и функции для реализации и использованияразличных архитектур капсульных сетей
+Home-page: UNKNOWN
+Author: Vladislav Ovchinnikov
+Author-email: vladovchinnikov950@gmail.com
+License: Apache 2.0
+Keywords: capsnet ai classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: opencv-python
+Requires-Dist: patool
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: tensorflow (==2.3.0)
+
+В данной библиотеке находятся вспомогательные классы и функции для реализации и использованияразличных архитектур капсульных сетей
+
+
