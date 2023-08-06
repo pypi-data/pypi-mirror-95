@@ -1,0 +1,7 @@
+setup.py
+pyseparator/__init__.py
+pyseparator.egg-info/PKG-INFO
+pyseparator.egg-info/SOURCES.txt
+pyseparator.egg-info/dependency_links.txt
+pyseparator.egg-info/not-zip-safe
+pyseparator.egg-info/top_level.txt
