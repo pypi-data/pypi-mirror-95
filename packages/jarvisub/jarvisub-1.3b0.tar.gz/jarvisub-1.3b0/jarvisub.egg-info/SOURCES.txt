@@ -1,0 +1,15 @@
+README.md
+setup.py
+jarvis/__init__.py
+jarvis/__main__.py
+jarvis/events.py
+jarvis/google_imgs.py
+jarvis/jconfig.py
+jarvis/utils.py
+jarvis/function/__init__.py
+jarvis/function/jarvisfunction.py
+jarvisub.egg-info/PKG-INFO
+jarvisub.egg-info/SOURCES.txt
+jarvisub.egg-info/dependency_links.txt
+jarvisub.egg-info/requires.txt
+jarvisub.egg-info/top_level.txt
