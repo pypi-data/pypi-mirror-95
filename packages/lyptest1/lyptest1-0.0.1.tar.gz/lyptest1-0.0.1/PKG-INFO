@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: lyptest1
+Version: 0.0.1
+Summary: library 
+Home-page: https://github.com/ligaopan/lgp-library
+Author: pylyp456
+Author-email: 25506871@qq.com
+License: MIT Licence
+Description: library 
+Keywords: testing testautomation
+Platform: any
+Requires-Python: >=3.7.*
