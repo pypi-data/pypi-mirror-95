@@ -1,0 +1,4 @@
+[console_scripts]
+mpcll_read_ptt_state=mumble_ptt_caps_lock_led.read_ptt_state:main
+mpcll_set_caps_led_from_pipe=mumble_ptt_caps_lock_led.set_caps_led_from_pipe:main
+
