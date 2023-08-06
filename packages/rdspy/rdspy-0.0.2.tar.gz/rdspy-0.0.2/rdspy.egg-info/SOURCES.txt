@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+rdspy/__init__.py
+rdspy/math.py
+rdspy.egg-info/PKG-INFO
+rdspy.egg-info/SOURCES.txt
+rdspy.egg-info/dependency_links.txt
+rdspy.egg-info/top_level.txt
