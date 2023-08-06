@@ -1,0 +1,17 @@
+cdumay-error>=0.1.14
+cdumay-result>=0.1.12
+
+[confluent]
+confluent-kafka
+
+[http]
+cdumay-rest-client>=0.1
+
+[opentracing]
+cdumay-opentracing>=0.1.8
+
+[prometheus]
+prometheus_client
+
+[pykafka]
+kafka-python
