@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "surrosdk"
+author = "Surrogate Inc"
+home-page = "https://github.com/SurrogateInc/surrortgsdk-sdk"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
