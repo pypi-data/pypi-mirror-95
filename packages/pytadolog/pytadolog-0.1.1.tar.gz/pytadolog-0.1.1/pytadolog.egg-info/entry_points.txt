@@ -1,0 +1,3 @@
+[console_scripts]
+tadolog = pytadolog.__main__:main
+
