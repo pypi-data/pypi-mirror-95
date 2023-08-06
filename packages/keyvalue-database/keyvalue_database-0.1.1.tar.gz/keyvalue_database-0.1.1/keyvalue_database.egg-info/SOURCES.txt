@@ -1,0 +1,7 @@
+README.txt
+setup.py
+keyvalue_database.egg-info/PKG-INFO
+keyvalue_database.egg-info/SOURCES.txt
+keyvalue_database.egg-info/dependency_links.txt
+keyvalue_database.egg-info/top_level.txt
+kv_database/__init__.py
