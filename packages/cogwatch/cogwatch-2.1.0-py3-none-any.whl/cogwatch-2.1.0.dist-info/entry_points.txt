@@ -1,0 +1,3 @@
+[console_scripts]
+example=runner:__poetry_run
+
