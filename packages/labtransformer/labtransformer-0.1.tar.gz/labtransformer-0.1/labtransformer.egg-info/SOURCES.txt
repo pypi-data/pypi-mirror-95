@@ -1,0 +1,8 @@
+setup.py
+labtransformer/__init__.py
+labtransformer.egg-info/PKG-INFO
+labtransformer.egg-info/SOURCES.txt
+labtransformer.egg-info/dependency_links.txt
+labtransformer.egg-info/not-zip-safe
+labtransformer.egg-info/requires.txt
+labtransformer.egg-info/top_level.txt
