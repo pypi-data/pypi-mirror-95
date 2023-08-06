@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+aws_static_website/__init__.py
+aws_static_website/website_stack.py
+aws_static_website.egg-info/PKG-INFO
+aws_static_website.egg-info/SOURCES.txt
+aws_static_website.egg-info/dependency_links.txt
+aws_static_website.egg-info/requires.txt
+aws_static_website.egg-info/top_level.txt
+tests/__init__.py
+tests/test_website_stack.py
