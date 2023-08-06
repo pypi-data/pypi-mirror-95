@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: colab-frp
+Version: 0.0.6
+Summary: Google colab frp connector
+Home-page: https://github.com/WassimBenzarti/colab-ssh-connector.git
+Author: argszero
+Author-email: argszero@gmail.com
+License: UNKNOWN
+Description: # colab-frp
+        
+        ```
+        !pip install colab_frp --upgrade
+        from colab_frp import client
+        client('**','7000','**','argszero')
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
