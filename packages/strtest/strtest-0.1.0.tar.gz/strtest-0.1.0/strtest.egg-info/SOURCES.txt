@@ -1,0 +1,10 @@
+README.md
+run_str_test.py
+setup.py
+strtest/__init__.py
+strtest/mock_import.py
+strtest/str_test.py
+strtest.egg-info/PKG-INFO
+strtest.egg-info/SOURCES.txt
+strtest.egg-info/dependency_links.txt
+strtest.egg-info/top_level.txt
