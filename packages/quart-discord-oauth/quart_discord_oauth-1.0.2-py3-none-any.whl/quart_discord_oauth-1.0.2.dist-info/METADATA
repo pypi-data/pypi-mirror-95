@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: quart-discord-oauth
+Version: 1.0.2
+Summary: Discord OAuth Quart extension for APIs
+Home-page: https://github.com/Tert0/Quart-Discord-OAuth
+Author: Tert0
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: quart
+Requires-Dist: cachetools
+Requires-Dist: requests
+
+UNKNOWN
+
+
