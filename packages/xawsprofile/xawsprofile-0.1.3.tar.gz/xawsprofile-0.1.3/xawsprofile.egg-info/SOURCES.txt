@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+./xawsprofile/__init__.py
+./xawsprofile/aws.py
+./xawsprofile/cli.py
+xawsprofile.egg-info/PKG-INFO
+xawsprofile.egg-info/SOURCES.txt
+xawsprofile.egg-info/dependency_links.txt
+xawsprofile.egg-info/entry_points.txt
+xawsprofile.egg-info/requires.txt
+xawsprofile.egg-info/top_level.txt
