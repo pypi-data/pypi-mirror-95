@@ -1,0 +1,7 @@
+[console_scripts]
+lin2pbn = bridge_utils.lin2pbn:main
+mdbridge2html = bridge_utils.mdbridge2html:main
+mdbridge2latex = bridge_utils.mdbridge2latex:main
+pbn2html = bridge_utils.pbn2html:main
+xin2pbn = bridge_utils.xin2pbn:main
+
