@@ -1,0 +1,15 @@
+streamtracer/__init__.py,sha256=FpkMJ5R8kFJHnekkSdZtPB6_zY0KZ-Nb6WtlvCLHC8U,26
+streamtracer/streamline.py,sha256=C14dMhNDn5rCHlJ4LNhTh532pxFNyu1pAF6ljUzoXsY,7728
+streamtracer/.dylibs/libgfortran.5.dylib,sha256=qdWSlfqaPK8QidZDUfG9mN0XWsFQhmeKKPK-xQl6H8A,3305048
+streamtracer/.dylibs/libquadmath.0.dylib,sha256=ptbkXrJlHFZw1iZGqsZ_KV-slkZzx_In0Zu1Ie7utGo,343240
+streamtracer/.dylibs/libgcc_s.1.dylib,sha256=MBBiF9KiQqUuSRSMeA2993meCf4AVAhIWx7Xj8UwNs0,169040
+streamtracer/.dylibs/libgomp.1.dylib,sha256=sjV4Fgb5WJY8q4O65bj79AZAwmP6WrQzRDvTdNOTpvg,373352
+streamtracer/fortran/streamtracer.cpython-38-darwin.so,sha256=DBL2DPBYPiAehlxJIqm-9fo-jQM9LkgCCgomUP2ZF-U,87352
+streamtracer/fortran/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benchmarks/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+benchmarks/benchmarks.py,sha256=Pm6apv_COnR5iAfemCfved5JXtHtBh24lrL_6uBFAtE,809
+streamtracer-1.1.1.dist-info/RECORD,,
+streamtracer-1.1.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+streamtracer-1.1.1.dist-info/WHEEL,sha256=RA4ju32EWHpO-G1BhxTQ3AwXQWjnnrzYGkM9skoN7_I,109
+streamtracer-1.1.1.dist-info/top_level.txt,sha256=aaN8fVf94SDfhwa1t822vuee7-cGI-ftdgg8yTiYNU4,24
+streamtracer-1.1.1.dist-info/METADATA,sha256=y0BqvFV-ZCnhOTOVYlipRmraGPk-D_CJCAap5gjQNQ8,676
