@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: serving-agent
+Version: 0.2.0
+Summary: A middleware for model serving to speedup online inference.
+Home-page: https://github.com/HughWen/ServingAgent
+Author: wwen
+Author-email: wenwh@mail.sustech.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: serving_agent
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
