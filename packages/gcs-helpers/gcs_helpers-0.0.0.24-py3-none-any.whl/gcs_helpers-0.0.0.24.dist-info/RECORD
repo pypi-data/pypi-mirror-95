@@ -1,0 +1,9 @@
+gcs_helpers/__init__.py,sha256=c2el8GQ9zyysYHHgBpboPvxfWTin4OI_VmHeFr0yRa8,72
+gcs_helpers/fetch.py,sha256=w2m9buyAZD-Npz7OObKmjK7mXEe-3wknk1S_iAeZBig,6505
+gcs_helpers/save.py,sha256=qh4K37d0fQHJv9H1U-U-Rrb4dKiO4kpWzf7tQHbHPvA,6025
+gcs_helpers/utils.py,sha256=u-4KYr31iJYQVYgJM6R6FiiT0ndKxQuM5VtCeH6q7uE,2181
+gcs_helpers-0.0.0.24.dist-info/METADATA,sha256=E6DiKimqdIMKvmHqOcQBkTybLhkMAjWBT6oU9UqtZwc,567
+gcs_helpers-0.0.0.24.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gcs_helpers-0.0.0.24.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+gcs_helpers-0.0.0.24.dist-info/top_level.txt,sha256=dU7vbskXgFg8TYe0KJGad5dNntEUF97F_F5x-Q2Zefg,12
+gcs_helpers-0.0.0.24.dist-info/RECORD,,
