@@ -1,0 +1,9 @@
+[barbari.commands]
+build = barbari.commands.build:Command
+display-config = barbari.commands.display_config:Command
+generate-config = barbari.commands.generate_config:Command
+list-configs = barbari.commands.list_configs:Command
+
+[console_scripts]
+barbari = barbari.main:main
+
