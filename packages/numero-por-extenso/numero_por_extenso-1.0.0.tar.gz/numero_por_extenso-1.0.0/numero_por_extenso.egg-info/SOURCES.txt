@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+numero_por_extenso/__init__.py
+numero_por_extenso/numero_por_extenso.py
+numero_por_extenso.egg-info/PKG-INFO
+numero_por_extenso.egg-info/SOURCES.txt
+numero_por_extenso.egg-info/dependency_links.txt
+numero_por_extenso.egg-info/top_level.txt

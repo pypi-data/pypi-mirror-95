@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: numero-por-extenso
+Version: 1.0.0
+Summary: Conversor para escrever número por extenso
+Home-page: https://github.com/danielcdl/numero_por_extenso
+Author: Daniel Chaves de Lima
+Author-email: danielchaves001@gmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/danielcdl/numero_por_extenso
+Description: Conversor para escrever números por extenso no formato PT-br
+Keywords: número por extenso
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: User Interfaces
