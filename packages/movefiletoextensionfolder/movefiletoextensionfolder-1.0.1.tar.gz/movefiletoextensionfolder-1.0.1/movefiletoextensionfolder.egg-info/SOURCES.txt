@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+movefiletoextensionfolder/__init__.py
+movefiletoextensionfolder/movefile.py
+movefiletoextensionfolder.egg-info/PKG-INFO
+movefiletoextensionfolder.egg-info/SOURCES.txt
+movefiletoextensionfolder.egg-info/dependency_links.txt
+movefiletoextensionfolder.egg-info/requires.txt
+movefiletoextensionfolder.egg-info/top_level.txt
