@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sinusboard
+Version: 0.1.0
+Summary: 
+Author: Jeremiah Boby
+Author-email: mail@jeremiahboby.me
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=1.1.2,<2.0.0)
+Requires-Dist: gunicorn (>=20.0.4,<21.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: whitenoise (>=5.2.0,<6.0.0)

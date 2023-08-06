@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sinusboard</title>
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script defer src="/static/js/index.js"></script>
+  </head>
+  <body>
+    <data id="app">
+      <section class="section">
+        <div class="container">
+          <span class="logo mdi mdi-headphones"></span>
+          <h1 class="title">
+            Sinusboard
+          </h1>
+          {% for clip in clips %}
+            <button class="button is-info" v-on:mousedown="playClip('{{ clip.uuid }}')">{{ clip.name }}</button>
+          {% endfor %}
+        </div>
+      </section>
+    </data>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <a style="color: white" href="https://github.com/jerbob/sinusboard">
+          <span class="mdi mdi-github" style="font-size:2.1rem"></span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

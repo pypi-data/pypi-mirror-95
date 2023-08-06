@@ -1,0 +1,17 @@
+sinusboard/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+sinusboard/__main__.py,sha256=V3-O9OWfwOeWsxCJBB4bjerHjW5M7x6haswkL2EWlMg,84
+sinusboard/client/__init__.py,sha256=K4UIys6F_cVT_RWLCcDR-PGf_0eRYTmDKHt0r5vuJ6A,1320
+sinusboard/server/__init__.py,sha256=0vTKmsHM3flc5voYYoqmh9lCTZqD9WLz7pFozzc2Sfg,620
+sinusboard/server/static/css/index.css,sha256=XVoeYyLa0JJ3qvPENV0S2psZ6zDlEzJkf6APqxCyrlA,1369
+sinusboard/server/static/images/headphones.svg,sha256=L9pTvMMqFuddYMXIK2eNjI28S51A9xv59Time9Dvsp4,1646
+sinusboard/server/static/images/icon-192.png,sha256=Wh-nKW-fzG9ErmUmeXdYMuoPd2aUjwwAZWncvkjSJ6I,2874
+sinusboard/server/static/images/icon-512.png,sha256=w8XNyK0mjSl4xAvijebpnqMrrQNevhB1l9pZA6mCpVE,9336
+sinusboard/server/static/images/icon-64.png,sha256=JUTiXfV8YozxK1yh06KeBDruRPlRWQdiy6eIWxNVzrI,941
+sinusboard/server/static/images/icon-96.png,sha256=Eyk7CfjfEcYiNNAjlh1CHxMSZY6KYniSPrtvOUlM7Fo,1364
+sinusboard/server/static/js/index.js,sha256=95Qy7Izz7-Q2XiGirhNKcDjcr1u-WUZi5fmuEyuO0e0,545
+sinusboard/server/static/manifest.json,sha256=w9kBCwS6qd4OTgM44i5UABgxr9DAIJoRg3_XiDi1Ipc,679
+sinusboard/server/static/service-worker.js,sha256=n4IuLfvL_lJ7qk7l08WMRrnSAVtr9shqMgboHjNi_Hw,1539
+sinusboard/server/templates/index.html,sha256=C_U0QfzMBBPNTecD6r7tJoOQN8II6NYIAm1l-mz0luo,1433
+sinusboard-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sinusboard-0.1.0.dist-info/METADATA,sha256=84RjxM4zOYkK0pI7JMukjWUWe1aOpMD-S6qX1YxVoAc,413
+sinusboard-0.1.0.dist-info/RECORD,,
