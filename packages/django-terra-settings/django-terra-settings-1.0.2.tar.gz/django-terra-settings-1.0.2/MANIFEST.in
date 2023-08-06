@@ -1,0 +1,5 @@
+include *.md
+recursive-include terra_settings *.md
+recursive-include terra_settings *.mo
+recursive-include terra_settings *.py
+recursive-exclude test_terra_settings *
