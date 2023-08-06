@@ -1,0 +1,9 @@
+
+[dev]
+isort
+mypy
+pdoc3
+pyflakes
+pytest
+pytest-benchmark
+yapf
