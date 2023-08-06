@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: grandeur
+Version: 0.1.2
+Summary: This SDK has been designed to enable developers integrate Grandeur into SOCs with Python
+Home-page: https://github.com/grandeurtech/py-sdk
+Author: Grandeur Technologies
+Author-email: hi@grandeur.tech
+License: MIT
+Description: # Grandeur [![Version](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://cloud.grandeur.tech)
+        
+        Building a smart (IoT) product is an art because it is about unifying the physical world with the digital one. When you put a piece of hardware on the web, magic happens. But one device on the web is one thing. Think about tens of them, interconnected, forging an automated ecosystem of pure reverie. Now imagine tens of thousands of these ecosystems spread throughout the globe. Seems profound, no? But developing an IoT product and then managing it is just as profoundly difficult. It involves development across a huge technology stack (your IoT hardware itself, your apps to monitor/control your hardware and a server backend to manage them both) to make such products work in production. And then in production comes the hardest challenge; you are going to have to scale it up as your user base grows.
+        
+        We understand this because we have been there.
+        
+        Introducing Grandeur: A backend as a service (Baas) platform for IoT. We have designed this platform so you do not have to worry about the backend of your next big thing, and can focus on what matters the most: your hardware and your apps. It is designed specifically to accelerate your IoT product development and push your products to market in weeks rather than in months or years. So you can then actually build *grandeur* ecosystems like the one above.
+        
+        Check full [documentation](https://github.com/grandeurtech/py-sdk)
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
