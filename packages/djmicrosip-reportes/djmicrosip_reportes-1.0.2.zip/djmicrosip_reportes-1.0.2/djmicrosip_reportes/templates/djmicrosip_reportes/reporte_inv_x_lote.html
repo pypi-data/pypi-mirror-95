@@ -1,0 +1,71 @@
+{% extends "djmicrosip_reportes\base.html" %}
+{% load humanize %}
+{% block title %}Inicio{% endblock %}
+
+<!-- CSS Code -->
+{% block style_css %}{% endblock %}
+
+<!-- JavaScript Code -->
+{% block js_code %}
+{% include 'autocomplete_light/static.html' %}
+{{ block.super }}
+
+<script>
+
+</script>
+{% endblock %}
+
+{% block breadcrumb %}{{ block.super }} {% endblock %}
+{% block content %}
+<h4 align="center"><strong>Inventario por Lote</strong></h4> 
+<hr>
+<form method="POST" action="#" class="form-inline hidden-print" enctype='multipart/form-data'>{% csrf_token %}
+		{{ form.errors }}
+		<div align="center">Almacen:</div>
+		<div align="center">{{form.almacen}}</div>
+		<div align="center"><button type="submit" class="btn btn-default">Ver</button></div>
+</form>
+{% if lista %}
+
+<div  align="center">
+	<caption ><strong>{{almacen}}</strong></caption>
+	<div class="table-responsive">
+	<table class="table col-sm-12 table-bordered table-striped table-condensed cf" style="font-size:9pt" cellpadding="10" id="tab">
+		<thead>
+			<tr>
+				
+				<th>Clave</th>
+				<th>Articulo</th>
+				<th>Viaje</th>
+				<th>Proveedor</th>
+				<th>Costo</th>
+				<th>Unidades</th>
+				<th>Total</th>
+				<th>Fecha</th>
+				<th>Dias</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for item in lista %}
+			<tr {% if item.3 <= 0 %} class="danger" {% endif %}>
+				
+				<td width="5%" style="padding:3px"><small>{{item.1}}</small></td>
+				<td width="15%" style="padding:3px" align="left">{{item.2}}</td>
+				<td width="5%" style="padding:3px" >{{item.3}}</td>
+				<td width="15%" style="padding:3px" align="left">{{item.4}}</td>
+				<td width="5%" style="padding:3px" align="right">{{item.5|floatformat:2|intcomma}}</td>
+				<td width="5%" style="padding:3px" align="right">{{item.6|floatformat:2|intcomma}}</td>
+				<td width="5%" style="padding:3px" align="right">{{item.7|floatformat:2|intcomma}}</td>
+				<td width="10%" style="padding:3px" align="left">{{item.8}}</td>
+				<td width="5%" style="padding:3px" align="right">{{item.9}}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</div>
+
+{# <div class="col-xs-4"></div> #}
+{% endif %}
+<br style="clear:both">
+{% endblock %}
