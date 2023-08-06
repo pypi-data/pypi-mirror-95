@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: statice
+Version: 1.0.0
+Summary: A fake package to warn the user they are not installing the correct package.
+Home-page: https://www.statice.ai
+Author: Statice GmbH
+Author-email: support@statice.ai
+License: UNKNOWN
+Description: A fake package to warn the user they are not installing the correct package.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: POSIX
