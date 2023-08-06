@@ -1,0 +1,3 @@
+[console_scripts]
+kafkahood_python = kafkahood_python.cli:main
+
