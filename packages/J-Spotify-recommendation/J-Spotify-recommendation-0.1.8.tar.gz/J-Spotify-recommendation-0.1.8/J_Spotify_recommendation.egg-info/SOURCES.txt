@@ -1,0 +1,10 @@
+setup.py
+J_Spotify_recommendation.egg-info/PKG-INFO
+J_Spotify_recommendation.egg-info/SOURCES.txt
+J_Spotify_recommendation.egg-info/dependency_links.txt
+J_Spotify_recommendation.egg-info/top_level.txt
+Scripts/Spotify.py
+Scripts/__init__.py
+my_tests/__init__.py
+my_tests/test_runDaily.py
+my_tests/test_runHourly.py
