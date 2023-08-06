@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+alis/__init__.py
+alis/__main__.py
+alis/alis.sh
+alis_tool.egg-info/PKG-INFO
+alis_tool.egg-info/SOURCES.txt
+alis_tool.egg-info/dependency_links.txt
+alis_tool.egg-info/entry_points.txt
+alis_tool.egg-info/top_level.txt
