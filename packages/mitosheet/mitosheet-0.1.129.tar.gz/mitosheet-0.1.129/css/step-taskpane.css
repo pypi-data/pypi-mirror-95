@@ -1,0 +1,50 @@
+
+
+.step-taskpane-step-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 20px;
+
+    /* 
+        We position the container so that the absolute positioning of the dropdown
+        correctly locks to this!
+
+        TODO: update this in the documentation of the dropdown!
+    */
+    position: relative;
+}
+
+.step-taskpane-step-container-left {
+    display: flex;
+}
+
+.step-taskpane-step-container-right {
+    margin-top: 10px;
+}
+
+.step-taskpane-step-icon {
+    min-width: 30px;
+    margin-top: 6px;
+}
+
+.step-taskpane-missing-icon {
+    font-weight: bold;
+}
+
+.step-taskpane-step-text {
+    max-width: 250px;
+}
+
+.step-taskpane-step-header {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.step-taskpane-step-subtext {
+    /* The subtext can get long, so we allow users to scroll the subtext in this case */
+    overflow: scroll;
+    color: grey;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
