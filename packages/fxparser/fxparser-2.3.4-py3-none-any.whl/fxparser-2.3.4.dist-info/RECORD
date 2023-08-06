@@ -1,0 +1,16 @@
+fxparser/__init__.py,sha256=_AegIlcCXHwNFsHh8FAKWejJSDXp1YmBRtaGjyBp-64,456
+fxparser/actionParser.py,sha256=RhzkiyRM457ekao_MGsq8Mr1kMHsTcNPP6F4MNwONXg,793
+fxparser/assets/forexlist.json,sha256=7Moj7lp76ci1F6Dsy_HAJgbQO3cNwCVw4JRFbM7ehfw,1528
+fxparser/assets/saved_model.pb,sha256=RVGyRTZwLjAb79AxFc_GVXcl3Nxitvu9cX4gfsJ2QAs,13004482
+fxparser/baseParser.py,sha256=aE1sfuE6i3cGTpQLSKk91bvjkLPuFcsbTc13iR58_Z0,1387
+fxparser/flagParser.py,sha256=wF5kGLE7hBvLswJ2Eq-T8S7GfTrkbjCeJ_Ep642F640,1375
+fxparser/parserHelper.py,sha256=u9Gt4A3POuTnk1EK-B3NCH9URn82XwYwZ-bMpgv2OxE,2152
+fxparser/priceParser.py,sha256=SWGLgt6HA_q5qstcRHasJvIr4RYtLvBzlLHSUfytaY4,1046
+fxparser/slParser.py,sha256=4j5qwxRVhPbk-34OzcuaIpvOBWeSjpwyA6cuzMJBN4c,994
+fxparser/symbolParser.py,sha256=9yo_WYtMR0Onv28k98IQkBCZapPqtMb6nIjRrpM2B0A,908
+fxparser/tpParser.py,sha256=WGa3xbLH2oZJlnxGM7W8MB2HVgujhhH7xWpBcAe3VBg,1292
+fxparser/urgencyParser.py,sha256=_n53OgGq5IuIfXBROLqf-Eglf0loeY4nG6YCpYa-ZQs,618
+fxparser-2.3.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fxparser-2.3.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fxparser-2.3.4.dist-info/METADATA,sha256=Tww-UtYmKC0YtOiPycVtPvBQEVGcIJpxAsu9FAX8LfQ,614
+fxparser-2.3.4.dist-info/RECORD,,

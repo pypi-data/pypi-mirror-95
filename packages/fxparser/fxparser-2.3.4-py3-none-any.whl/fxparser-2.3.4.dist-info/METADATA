@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fxparser
+Version: 2.3.4
+Summary: A forex message parser to extract information such as symbols, tps, and sls
+License: GNU GPLv3
+Author: Danny
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: emoji (>=0.6.0,<0.7.0)
+Requires-Dist: spacy (>=2.3.5,<3.0.0)
+Requires-Dist: tensorflow (>=2.4.0,<3.0.0)
