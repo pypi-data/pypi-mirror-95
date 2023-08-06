@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ftest
+Version: 0.3
+Summary: Integration Test Framework for Formula Student Lisboa
+Home-page: https://gitlab.com/projectofst/software10e
+Author: Gonçalo Silva, Joao Freitas
+Author-email: goncalo.acbs@gmail.com, joaj.freitas@gmail.com
+License: GPLv3
+Description: # FTest
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
