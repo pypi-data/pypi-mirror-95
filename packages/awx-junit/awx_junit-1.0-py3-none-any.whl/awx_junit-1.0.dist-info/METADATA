@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: awx-junit
+Version: 1.0
+Summary: A Ansible Tower or AWX utility to generate a JUnit XML report from a job.
+Home-page: https://github.com/thushjandan/awx-junit
+Author: Thushjandan Ponnudurai
+Author-email: thushjandan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
+Requires-Dist: junit-xml
+
+# awx-junit
+> A command utility to generate a JUnit XML report from an Ansible Tower or AWX Job.
+
+## Installation
+Install awx-junit with pip.
+```sh
+pip install awx-junit
+```
+
+## Usage Example
+Use the AWX cli (awxkit) to get job events of a certain job from an Ansible Tower or AWX instance. Pipe the resulting JSON output from awxcli to awx-junit utility
+```sh
+awx job_events list --job <job_id> --all | awx-junit
+```
+
+
