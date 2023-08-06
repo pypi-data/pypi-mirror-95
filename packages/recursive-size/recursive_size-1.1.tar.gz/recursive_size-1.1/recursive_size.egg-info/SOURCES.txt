@@ -1,0 +1,7 @@
+README.md
+setup.py
+recursive_size/__init__.py
+recursive_size.egg-info/PKG-INFO
+recursive_size.egg-info/SOURCES.txt
+recursive_size.egg-info/dependency_links.txt
+recursive_size.egg-info/top_level.txt

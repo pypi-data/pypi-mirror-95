@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: recursive_size
+Version: 1.1
+Summary: Recursively get the size of folder
+Home-page: https://github.com/deuteronomy-works/recursive_size
+Author: Deuteronomy Works
+Author-email: deutworks@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/deuteronomy-works/recursive_size/issues
+Project-URL: Documentation, https://github.com/deuteronomy-works/recursive_size/wiki
+Project-URL: Source Code, https://github.com/deuteronomy-works/recursive_size
+Description: # recursive_size
+         Recursively calculate the size of a folder or file
+        
+        
+        ## Install
+        ```pip install recursive-size```
+        
+        ## Usage
+        ```python
+        from recursive_size import get_size
+        size = get_size('path/to/folder')
+        print(size)
+        ```
+        
+Keywords: size,get_size,get size,recursive size,recursive_size
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
