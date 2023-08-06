@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+translateAPI/__init__.py
+translateAPI/translateAPI.py
+translation_api_python_client.egg-info/PKG-INFO
+translation_api_python_client.egg-info/SOURCES.txt
+translation_api_python_client.egg-info/dependency_links.txt
+translation_api_python_client.egg-info/top_level.txt
