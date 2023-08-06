@@ -1,0 +1,8 @@
+opentelemetry/instrumentation/redis/__init__.py,sha256=9bXBpIt4x9CyAEEuy3ih_3Lhh9gfBvTVDRC1fFycYts,5553
+opentelemetry/instrumentation/redis/util.py,sha256=r9qYiiTl6iCaqmwcCYNtcNpX-dtmJ-cxtoAAMldSLuE,1807
+opentelemetry/instrumentation/redis/version.py,sha256=OZiDNkn_Qwd74MhXJcGBLuqtSsc3u97UhRif_aEcrpw,608
+opentelemetry_instrumentation_redis-0.18b0.dist-info/METADATA,sha256=zZiLmNElcWtgyN670ugN0UzKq2N65CZm3UZgtWYV9xQ,1865
+opentelemetry_instrumentation_redis-0.18b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_redis-0.18b0.dist-info/entry_points.txt,sha256=wIJ6b5gYU-DL6pIFURH3UB2jHppNtSkZU0NPwGZM_HM,92
+opentelemetry_instrumentation_redis-0.18b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_redis-0.18b0.dist-info/RECORD,,
