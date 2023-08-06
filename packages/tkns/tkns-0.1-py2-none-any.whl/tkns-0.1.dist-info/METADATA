@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: tkns
+Version: 0.1
+Summary: A token and keys generation utility package
+Home-page: https://github.com/furby32/tkns
+Author: Alex Lopez
+Author-email: pedrolop15@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+long_description
+
+
