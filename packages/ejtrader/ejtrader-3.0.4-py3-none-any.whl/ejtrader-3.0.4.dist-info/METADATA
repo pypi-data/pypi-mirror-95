@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ejtrader
+Version: 3.0.4
+Summary: Financial Data and API
+Home-page: https://ejtrader.readthedocs.io/
+Author: Emerson Pedroso
+Author-email: support@ejtrader.com
+License: MIT License
+Download-URL: https://ejtrader.com
+Project-URL: Bug Reports, https://github.com/traderpedroso/ejtrader/issues
+Project-URL: Source, https://github.com/traderpedroso/ejtrader
+Project-URL: Documentation, https://ejtrader.readthedocs.io/
+Keywords: investing,investing-api,historical-data,financial-data,stocks,funds,etfs,indices,currency crosses,bonds,commodities,crypto currencies
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: Unidecode (>=1.1.1)
+Requires-Dist: setuptools (>=41.2.0)
+Requires-Dist: numpy (>=1.17.2)
+Requires-Dist: pandas (>=0.25.1)
+Requires-Dist: lxml (>=4.4.1)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: pytz
+Requires-Dist: matplotlib (>=1.15.0)
+Requires-Dist: pyzmq (>=19.0.2)
+Requires-Dist: ejtrader-iq (>=0.0.1)
+Provides-Extra: docs
+Requires-Dist: sphinx (==2.4.4) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'docs'
+Requires-Dist: recommonmark (==0.6.0) ; extra == 'docs'
+
+UNKNOWN
+
+
