@@ -1,0 +1,4 @@
+httpx
+rdflib
+pydantic
+SPARQLWrapper
