@@ -1,0 +1,13 @@
+polarization/__init__.py,sha256=Dgowtbw_VLUTkfHIKzymNNEWDkMKxU9mtJR5qbijQvs,237
+polarization/__main__.py,sha256=hhNmks6xoUtb27JuuX_wDuTxqsSvWcM3EJRGD6Rh9aM,9465
+polarization/jonesmatrix.py,sha256=CGjy9OHLr5hHq614Na2Nf4iXPQYDDS_WhnaOX95lK0o,13529
+polarization/jonesmatrixgroup.py,sha256=pNX8sbgDB3r7WMBv4av8tzp-kJXeSv-FzuNQ9mCENOg,190
+polarization/jonesvector.py,sha256=4GnBKMyOfUjEamv8rUm_wUutBcs7vlhK9-16CMpTYAo,7313
+polarization/stokesvector.py,sha256=oT6ID4marDaSPo0JnCJEq8mLW9MtmuD51rfCSPvAzOg,415
+polarization/utils.py,sha256=DECWJFyfl4jwdXqYm99swQArcgHWITlamCKTuq9WXzk,2688
+polarization/vector.py,sha256=KAakbQOgTXzCiD0kvT2H6ScAwUhWxoDUG1v0ikIf4p8,11600
+polarization-1.0.4.dist-info/LICENSE,sha256=neazyPywbJ-MyM65slJeb68gDjoZIuNaWYn-CiYZcok,1063
+polarization-1.0.4.dist-info/METADATA,sha256=O7IWRAPFhk_yqWBqRwpN-jXu43F3xZ0fV4pdYE_pE3c,7784
+polarization-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+polarization-1.0.4.dist-info/top_level.txt,sha256=_X24lw8Si_6VsNr2AM087nw5aaNfixQvcplowj5SvBU,13
+polarization-1.0.4.dist-info/RECORD,,
