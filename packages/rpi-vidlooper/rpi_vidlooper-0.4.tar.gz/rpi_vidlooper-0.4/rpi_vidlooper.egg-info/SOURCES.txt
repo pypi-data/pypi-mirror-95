@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+rpi_vidlooper/__init__.py
+rpi_vidlooper/_version.py
+rpi_vidlooper/vidlooper.py
+rpi_vidlooper.egg-info/PKG-INFO
+rpi_vidlooper.egg-info/SOURCES.txt
+rpi_vidlooper.egg-info/dependency_links.txt
+rpi_vidlooper.egg-info/entry_points.txt
+rpi_vidlooper.egg-info/requires.txt
+rpi_vidlooper.egg-info/top_level.txt
+rpi_vidlooper.egg-info/zip-safe

@@ -1,0 +1,3 @@
+[console_scripts]
+vidlooper = rpi_vidlooper.vidlooper:main
+
