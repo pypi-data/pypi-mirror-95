@@ -1,0 +1,4 @@
+axial_positional_embedding
+einops>=0.3
+torch>=1.6
+vector-quantize-pytorch
