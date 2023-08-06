@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "d2d-utils"
+packages = [
+    { include = "d2dutils" },
+]
+version = "0.0.1"
+description = ""
+authors = ["Toby Nance <toby.nance@draft2digital.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+typing = "3.6.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
