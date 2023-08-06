@@ -1,0 +1,12 @@
+pypinfo/__init__.py,sha256=NRR_9WRRZ-HGfOOfhMd9iQSm0Dj4U2Ldp7i1LySgw0I,23
+pypinfo/cli.py,sha256=s-CnsxJgIt3LzLHX3eg2dZlI_JyG0eRMx_lBDWdRk68,6676
+pypinfo/core.py,sha256=EAA4n76olf75wvXSwLJus-7w5gEXOY39O_Q_rvUHUUE,7746
+pypinfo/db.py,sha256=yZXp2OgihZgI0oL_1VSxq7CoBi8PqBWLBpL4c7bbiF8,936
+pypinfo/fields.py,sha256=wgfTv2Rqyulm8913yc7pf029HLHl26JMnzfBFstl6AE,1858
+pypinfo-19.0.0.dist-info/AUTHORS.rst,sha256=ktnH8XMieAqr7KsFjk7dGud9Yt-WfdL3HVWsRF1snfI,572
+pypinfo-19.0.0.dist-info/LICENSE.txt,sha256=nkLjKROM9YBOjWYdMaKF1heXgVD7rguEcEMUVzQxvQw,1052
+pypinfo-19.0.0.dist-info/METADATA,sha256=wzYTx9O0wEt-lOunOmu1se01Jy22lSOV-0BnXVgJv4o,16711
+pypinfo-19.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pypinfo-19.0.0.dist-info/entry_points.txt,sha256=mBQk-0DXimQ_hLfGHDAqcbgair4pE4x8L9cUSAzzQKI,49
+pypinfo-19.0.0.dist-info/top_level.txt,sha256=k6j4hVGvLFJpHt-KRSTjuV33iTkw93dFrg7iqI8-tSo,8
+pypinfo-19.0.0.dist-info/RECORD,,
