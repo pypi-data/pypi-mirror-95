@@ -1,0 +1,8 @@
+requests[security]>=2.7.0
+requests-futures>=0.9.8
+six>=1.10.0
+whatthepatch>=0.0.4
+python-dateutil>=2.5.2
+icalendar>=3.10
+setuptools>=28.6.1
+python-hglib>=2.6.1
