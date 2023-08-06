@@ -1,0 +1,14 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include mdshare/data/mdshare-catalogue.yaml
+include mdshare/data/mdshare-catalogue.md5
+include mdshare/data/template.md5
+
+# exclude compiled bytecode
+global-exclude *.pyc
+# exclude git backup files
+global-exclude *.orig
+
+# do not include eventually present eggs (installed during setup runtime)
+prune .eggs
