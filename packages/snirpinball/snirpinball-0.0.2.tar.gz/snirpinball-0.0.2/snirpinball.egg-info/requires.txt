@@ -1,0 +1,7 @@
+mss
+opencv-python
+opencv-contrib-python
+Pillow
+pydirectinput
+pyautogui
+pygetwindow
