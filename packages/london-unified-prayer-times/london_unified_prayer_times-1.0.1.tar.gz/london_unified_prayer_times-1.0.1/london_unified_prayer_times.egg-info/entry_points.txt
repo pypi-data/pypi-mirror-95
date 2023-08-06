@@ -1,0 +1,3 @@
+[console_scripts]
+lupt = london_unified_prayer_times.cli:main
+
