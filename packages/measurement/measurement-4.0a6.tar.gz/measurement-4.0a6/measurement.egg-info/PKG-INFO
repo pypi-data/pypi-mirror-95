@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: measurement
+Version: 4.0a6
+Summary: Easily use and manipulate unit-aware measurements in Python
+Home-page: http://github.com/coddingtonbear/python-measurement
+Author: Adam Coddington
+Author-email: me@adamcoddington.net
+License: MIT
+Description: ==================
+        Python measurement
+        ==================
+        
+        **High precision unit-aware measurement objects in Python.**
+        
+        .. code-block:: python
+        
+            >>> from measurement import measures
+            >>> measures.Distance("12 megaparsec")["British yard"]
+            Decimal('404948208659679393828910.8771')
+        
+        This package provides a large reference collection of various measure and
+        their corresponding SI (Metric), US or Imperial units. Its high precision
+        supports use cases all the way from quantum mechanics to astrophysics.
+        
+        - Documentation for python-measurement is available an
+          `ReadTheDocs <https://python-measurement.readthedocs.org/>`_.
+        - Please post issues on
+          `Github <https://github.com/coddingtonbear/python-measurement/issues>`_.
+        
+Keywords: measurement
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Localization
+Description-Content-Type: text/x-rst
