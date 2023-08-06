@@ -1,0 +1,3 @@
+[console_scripts]
+isalt = isalt.scripts:main
+
