@@ -1,0 +1,14 @@
+README.md
+setup.py
+jai/__init__.py
+jai/applications.py
+jai/jai.py
+jai/auxiliar_funcs/__init__.py
+jai/auxiliar_funcs/auxiliar.py
+jai/auxiliar_funcs/classes.py
+jai/auxiliar_funcs/utils_funcs.py
+jai_sdk.egg-info/PKG-INFO
+jai_sdk.egg-info/SOURCES.txt
+jai_sdk.egg-info/dependency_links.txt
+jai_sdk.egg-info/requires.txt
+jai_sdk.egg-info/top_level.txt
