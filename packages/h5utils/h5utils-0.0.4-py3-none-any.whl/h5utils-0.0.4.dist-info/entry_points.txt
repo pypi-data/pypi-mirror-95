@@ -1,0 +1,3 @@
+[console_scripts]
+h5tovts = h5utils.h5tovts:main
+

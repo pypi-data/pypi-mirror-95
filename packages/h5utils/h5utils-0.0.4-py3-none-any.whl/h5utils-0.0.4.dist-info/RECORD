@@ -1,0 +1,16 @@
+h5utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h5utils/h5tovts.py,sha256=TWM1QHTmen3pcTKrOAnZwtTOxfCLo5w9oQ0CiiSDPpg,5431
+h5utils/h5utils.py,sha256=wTZ6Y8tXxj5hcm3x5JCTRPGWU6HXcDgZxZb3oFN1dn0,31946
+h5utils/constants/__init__.py,sha256=bfF7eSzoVkr7tjclqAJfqo1fiXrhUdcdGlLK9f9cOPI,100
+h5utils/constants/physcon.py,sha256=ASAeqo_v156U2leuL32MuJjuiHXa_wRczv0c7wIoLl4,12798
+h5utils/data/lattice-cartesian-epsilon.h5,sha256=vZkYgjChLODNogYliKnrAXitIIKinBiCQ0L1f8jtpTg,13008293
+h5utils/data/lattice-non-cartesian-epsilon.h5,sha256=NrmGOHKyfT5GDmc-4UbomLNlNvHLc66t-Q-hOUT-K8c,13008293
+h5utils/data/lattice-non-cartesian.ctl,sha256=4kNLkl_QK6Ie8LPUQuTZXK0vuZ_AR9WH0j0ivMXac7M,823
+h5utils/data/lattice-visualization-non-cartesian.pvsm,sha256=nqLQtG2KVj2bjhr5JvPXvQmBR7u_CVp34IFZ0X3Omdo,488553
+h5utils/data/lattice-visualization.ctl,sha256=KklOevQ8GSxakc7FLxigS-W_btgdb9z10Gvvd_dqAvo,1346
+h5utils-0.0.4.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+h5utils-0.0.4.dist-info/METADATA,sha256=5LWtp5hDJTzi1nf15yxm8UAbNF_6go9D4MCkNJmDkz4,1703
+h5utils-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+h5utils-0.0.4.dist-info/entry_points.txt,sha256=De2fjEgWVk4HS4JWAKhHHH_zsaxYzBIQyJS2wcFi6r4,50
+h5utils-0.0.4.dist-info/top_level.txt,sha256=BtJy7l6WArs_-EK1pq93b97dLiXrWZ6mEYweOV4Q32c,8
+h5utils-0.0.4.dist-info/RECORD,,
