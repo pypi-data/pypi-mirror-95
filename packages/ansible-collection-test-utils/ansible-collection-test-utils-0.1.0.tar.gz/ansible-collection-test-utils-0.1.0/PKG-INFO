@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ansible-collection-test-utils
+Version: 0.1.0
+Summary: Repackage the mock folder from ansible/tests for use in collection tests
+Home-page: https://github.com/klorenz/ansilbe-collection-test-utils
+Author: Kay-Uwe (Kiwi) Lorenz
+Author-email: tabkiwi@gmail.com
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
