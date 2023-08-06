@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+disbotapipy/__init__.py
+disbotapipy/disbotapipy.py
+disbotapipy.egg-info/PKG-INFO
+disbotapipy.egg-info/SOURCES.txt
+disbotapipy.egg-info/dependency_links.txt
+disbotapipy.egg-info/requires.txt
+disbotapipy.egg-info/top_level.txt
