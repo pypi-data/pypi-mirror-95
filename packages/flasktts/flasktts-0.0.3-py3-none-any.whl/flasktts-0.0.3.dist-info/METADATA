@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: flasktts
+Version: 0.0.3
+Summary: flasktts
+Home-page: https://github.com/kkristof200/py_flask_tts
+Author: Kristof
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (>=1.1.2)
+Requires-Dist: kcu (>=0.0.61)
+Requires-Dist: kffmpeg (>=0.2.39)
+Requires-Dist: pyttsx3 (>=2.90)
+Requires-Dist: Unidecode (>=1.2.0)
+
+# flasktts
+![python_version](https://img.shields.io/static/v1?label=Python&message=3.5%20|%203.6%20|%203.7&color=blue) [![PyPI downloads/month](https://img.shields.io/pypi/dm/flasktts?logo=pypi&logoColor=white)](https://pypi.python.org/pypi/flasktts)
+
+## Description
+
+
+## Install
+~~~~bash
+pip install flasktts
+# or
+pip3 install flasktts
+~~~~
+
