@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: django-kelove-database
+Version: 0.1.0
+Summary: DJANGO 数据库增强插件
+Home-page: https://gitee.com/itxq/django-kelove-database
+License: Apache-2.0
+Keywords: django,django-kelove,django-kelove-database
+Author: IT小强xqitw.cn
+Author-email: mail@xqitw.cn
+Maintainer: IT小强xqitw.cn
+Maintainer-email: mail@xqitw.cn
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django-kelove-setting (>=0.3,<0.4)
+Requires-Dist: pillow (>=8.0,<9.0)
+Project-URL: Documentation, https://gitee.com/itxq/django-kelove-database/blob/master/README.md
+Project-URL: Repository, https://gitee.com/itxq/django-kelove-database.git
+Description-Content-Type: text/markdown
+
+DJANGO 数据库增强
+================
+
+[![Django Kelove Setting Version](https://img.shields.io/badge/stable-v0.1.0-blue.svg)](https://gitee.com/itxq/django-kelove-database)
+[![Python Version](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
+[![Django Version](https://img.shields.io/badge/Django-v3.1+-important.svg)](https://www.djangoproject.com/)
+[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://gitee.com/itxq/django-kelove-database/blob/master/LICENSE)
+
+### 主要功能
+
++ 迁移支持写入表注释及字段注释
+
++ 迁移支持写入字段默认值
+
++ 在线数据库设计文档生成
+
++ CKFinder文件上传字段集成
+
++ CKEditor编辑器字段集成 
+
++ Markdown编辑器字段集成
+
++ JSON字段集成
