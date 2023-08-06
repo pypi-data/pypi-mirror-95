@@ -1,0 +1,10 @@
+README.md
+setup.py
+discord/ext/forms/__init__.py
+discord/ext/forms/form.py
+discord/ext/forms/reactions.py
+discord_ext_forms.egg-info/PKG-INFO
+discord_ext_forms.egg-info/SOURCES.txt
+discord_ext_forms.egg-info/dependency_links.txt
+discord_ext_forms.egg-info/requires.txt
+discord_ext_forms.egg-info/top_level.txt
