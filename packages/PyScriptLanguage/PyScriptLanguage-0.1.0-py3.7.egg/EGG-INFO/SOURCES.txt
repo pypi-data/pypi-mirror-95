@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyScriptLanguage.egg-info/PKG-INFO
+PyScriptLanguage.egg-info/SOURCES.txt
+PyScriptLanguage.egg-info/dependency_links.txt
+PyScriptLanguage.egg-info/entry_points.txt
+PyScriptLanguage.egg-info/top_level.txt
+pyscript/__init__.py
+pyscript/__main__.py
