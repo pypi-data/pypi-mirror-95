@@ -1,0 +1,9 @@
+include LICENSE
+exclude *.sh
+exclude *.py
+exclude tests/pytest.ini
+exclude README.md
+recursive-include sfb *.py
+recursive-exclude config *.yaml
+recursive-exclude sql *.sql
+recursive-exclude tests *
