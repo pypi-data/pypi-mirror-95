@@ -1,0 +1,27 @@
+Change Log
+==========
+
+0.0.1 (15/02/2021)
+------------------
+- First release
+
+1.0.0 (16/02/2021)
+------------------
+ - First release (2nd attempt)
+
+1.0.1 (16/02/2021)
+------------------
+ - First release (3rd attempt)
+
+1.0.2 (16/02/2021)
+------------------
+ - Fixed README
+
+1.0.3 (17/02/2021)
+------------------
+ - Fixed transform()
+ - Added colorlist to README
+
+1.0.4 (17/02/2021)
+------------------
+ - Fixed transform()
