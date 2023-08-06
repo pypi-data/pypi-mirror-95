@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyqec
+Version: 0.5.1
+Requires-Dist: multiprocess==0.70.11
+Requires-Dist: matplotlib==3.3.4
+Author: maxtremblay <matrem@protonmail.com>
+Author-Email: maxtremblay <matrem@protonmail.com>
+License: MIT
