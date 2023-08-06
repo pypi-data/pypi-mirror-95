@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+simple_csv_reader/__init__.py
+simple_csv_reader/csv_reader.py
+simple_csv_reader/getch.py
+simple_csv_reader/helpers.py
+simple_csv_reader.egg-info/PKG-INFO
+simple_csv_reader.egg-info/SOURCES.txt
+simple_csv_reader.egg-info/dependency_links.txt
+simple_csv_reader.egg-info/top_level.txt
