@@ -1,0 +1,5 @@
+django
+xmltodict
+firebase_admin
+stripe
+requests
