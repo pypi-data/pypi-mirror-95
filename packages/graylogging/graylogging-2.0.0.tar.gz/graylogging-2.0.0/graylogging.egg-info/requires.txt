@@ -1,0 +1,6 @@
+requests[security]
+
+[docs]
+Sphinx
+SimpleHTTPServer
+sphinx_rtd_theme
