@@ -1,0 +1,12 @@
+diemlib/__init__.py,sha256=77oEur8BQaq6E9b2Sq3x2VaVDV06Cby0J6jqUqPAdWA,336
+diemlib/box.py,sha256=nlwg6lR3bz6NJlgyjzyVfKB9bjPIA2qkv-aAFhOa1-A,1915
+diemlib/config.py,sha256=eV4zPLikSCCRbFzN-Bl7-QoXO-6WmHDSxZHOFTsms5s,337
+diemlib/filehandler.py,sha256=FMCXH2iGEsvXt0e2Etbm2E6nxgXWqEjyID_YwYWwtJM,5143
+diemlib/mailhandler.py,sha256=CfIpanp2nuZg8dfrloX_b9-irVRmnK_h4ysZNak1wHM,2568
+diemlib/main.py,sha256=YwUTwyiLtXjo3Kz98gudLxqO8qSXN-Uwjkn90_bhBO4,3594
+diemlib/util.py,sha256=OTyc9ryQQc652_hVa6Th1fZe2RsoyA_sVW8LTX3YWHo,439
+diemlib-0.0.7.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+diemlib-0.0.7.dist-info/METADATA,sha256=-nUWL4rTw8Ce9ZmtBgER5lPbUVWaniIVM1uO4oHR4O8,860
+diemlib-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+diemlib-0.0.7.dist-info/top_level.txt,sha256=pBEAaFeBPDwUyAa_mIcw6YO3igEKalLWxPiIZjZTMX0,8
+diemlib-0.0.7.dist-info/RECORD,,
