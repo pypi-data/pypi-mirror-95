@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: MCServerLib
+Version: 0.2.0
+Summary: Minecraft Server Setup Library
+Home-page: https://github.com/myoung2namur/MCServerLib
+Author: 명이
+Author-email: aiden080605@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cpython
+
+MCServerLib
+===========
+
+MCServerLib is a Python library that helps build Minecraft servers.
+
+[한국어 README 바로가기](https://github.com/myoung2namur/MCServerLib/blob/master/docs/README-kr.md)
+# Installation
+
+### From PyPi:
+
+`pip install MCServerLib`
+
+
+### From Repo:
+
+`python -m pip install git+https://github.com/myoung2namur/MCServerLib`
+
+# Usage
+
+```py
+import MCServerLib as mcs
+
+properties = mcs.Prop.Properties()
+properties.properties['enable-command-block'] = 'true'
+
+setup = mcs.Setup.Setup(version='1.16.5',xmx='1024M',xms='3G',properties=properties)
+
+# Setup Server Files
+
+# Download All Basic Server Files
+setup.downloadAll() 
+
+# Download Only Paper Bukkit
+setup.downloadPaper()
+
+# Make Only Batch File
+setup.makeBatch()
+
+# Make only Eula File
+setup.makeEula()
+```
+
