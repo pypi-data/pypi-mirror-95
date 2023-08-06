@@ -1,0 +1,5 @@
+=== 1.0.0 ===
+- Added some error handling and updated required psu_base version
+
+=== 0.6.1 ===
+- Initial Release
