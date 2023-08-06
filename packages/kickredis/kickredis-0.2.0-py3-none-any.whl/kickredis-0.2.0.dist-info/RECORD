@@ -1,0 +1,10 @@
+kickredis/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+kickredis/client.py,sha256=2Z_QfGS4PqIfODEOQVV39Wjvog-PigrL04mIA-bGGBo,1957
+kickredis/config.py,sha256=9dZ-658TmDg2ZWpOBXjmQb_VZNDVOm537MUq0zHW2R4,201
+kickredis/registry.py,sha256=8OM4uxtVFt0QEAC-R8P1MiR_LkIB2R05oX87A5f8P_M,4373
+kickredis/runtime.py,sha256=7yh_WufH1y43yAvUlj64istBDMoeTGd2L9_LdOAquk8,630
+kickredis/services.py,sha256=RkgTWDBVIfCSHM8vN82vZgMjplap6iREAUKDKRKM5bE,1643
+kickredis/shared.py,sha256=s6vhktN94H22b2dCbypaqhMYN-fAP2QmliuuCVFR5TU,77
+kickredis-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+kickredis-0.2.0.dist-info/METADATA,sha256=brsUJODj90E0fdTsa1C1lwXjcympJMPH3i32SJZf0W4,561
+kickredis-0.2.0.dist-info/RECORD,,
