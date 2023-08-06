@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: fastapi_clientify
+Version: 0.0.2
+Summary: FastAPI Clientify - Reduce server load using Local Storage
+Home-page: https://github.com/hugoduar/fastapi-clientify
+Author: hugoduar
+Author-email: hugoduar1@gmail.com

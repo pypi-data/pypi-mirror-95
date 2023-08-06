@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "fastapi_clientify"
+author = "hugoduar"
+author-email = "hugoduar1@gmail.com"
+home-page = "https://github.com/hugoduar/fastapi-clientify"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Intended Audience :: Developers",
+    ]
+description-file = "README.md"
+requires-python=">=3.5"
+
+[tool.flit.metadata.urls]
+Documentation = "https://fastapi-clientify.readthedocs.io/en/latest/"
