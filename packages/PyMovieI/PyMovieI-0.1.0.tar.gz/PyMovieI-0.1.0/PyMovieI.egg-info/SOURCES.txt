@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyMovieI/__init__.py
+PyMovieI/helper.py
+PyMovieI.egg-info/PKG-INFO
+PyMovieI.egg-info/SOURCES.txt
+PyMovieI.egg-info/dependency_links.txt
+PyMovieI.egg-info/requires.txt
+PyMovieI.egg-info/top_level.txt
