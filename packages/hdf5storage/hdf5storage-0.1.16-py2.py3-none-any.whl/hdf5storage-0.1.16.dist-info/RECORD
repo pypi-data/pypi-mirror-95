@@ -1,0 +1,9 @@
+hdf5storage/Marshallers.py,sha256=m96y3eR2LnWhToH_TOdp3CCwCpBDz4iuyB6kLSYrHDs,78525
+hdf5storage/__init__.py,sha256=3sLY7yv1soSezVZJK9hE8oaIdh8ZxWpq7a2CZb0sw1Y,68112
+hdf5storage/lowlevel.py,sha256=_5NgSslCiuU22Nt9nZED-yC5uk9L1y-TFtV30p_IYW0,5964
+hdf5storage/utilities.py,sha256=3WHuc3_lHMLpTKiR7Caib0Q1RTDNDgPoz2Cfvi5h_U0,36301
+hdf5storage-0.1.16.dist-info/COPYING.txt,sha256=Uw3A0uk98PcyyRyQQnrGXLT8nQJNdHK0R1WAbEkvyRE,1322
+hdf5storage-0.1.16.dist-info/METADATA,sha256=aWlInLGL6Di-dPqPr4C8Uo0q5mzgfFPPznyLdDNFxGQ,22503
+hdf5storage-0.1.16.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+hdf5storage-0.1.16.dist-info/top_level.txt,sha256=_E6HN8gxPxKUjXQbbnU2ZOImLaAZlCalxC-G-EmgUL4,12
+hdf5storage-0.1.16.dist-info/RECORD,,
