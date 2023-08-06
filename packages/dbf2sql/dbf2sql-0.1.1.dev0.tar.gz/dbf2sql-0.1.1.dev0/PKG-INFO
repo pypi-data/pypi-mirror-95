@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dbf2sql
+Version: 0.1.1.dev0
+Summary: Convert DBF files to SQL tables
+Home-page: https://github.com/cjadeveloper/dbf2sql
+License: MIT
+Author: Cristian Javier Azulay
+Author-email: cjadeveloper@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: ipy
+Provides-Extra: mssql
+Provides-Extra: nvim
+Requires-Dist: dataset (>=1.4.1,<2.0.0)
+Requires-Dist: dbfread (>=2.0.7,<3.0.0)
+Requires-Dist: ipython (>=7.19.0,<8.0.0); extra == "ipy"
+Requires-Dist: neovim (>=0.3.1,<0.4.0); extra == "nvim"
+Requires-Dist: pandas (>=1.1.2,<2.0.0)
+Requires-Dist: pefile (>=2019.4.18,<2020.0.0)
+Requires-Dist: pynvim (>=0.4.2,<0.5.0); extra == "nvim"
+Requires-Dist: pyodbc (>=4.0.30,<5.0.0); extra == "mssql"
+Requires-Dist: sqlalchemy (>=1.3.19,<2.0.0)
+Description-Content-Type: text/markdown
+
+# dbf2sql
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
+
+DBF2SQL is a Python CLI program that offers an interface to Convert DBF files in SQL Server tables
+
+## Pre-requirements
+
+- [Download ODBC Driver for SQL Server](https://docs.microsoft.com/es-es/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15)
+
+## License
+
+This library is published under the terms of the MIT License. Please check the LICENSE file for more details.
+
