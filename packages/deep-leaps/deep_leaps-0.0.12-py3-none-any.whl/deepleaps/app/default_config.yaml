@@ -1,0 +1,86 @@
+App:
+  device: cuda # *
+  gpu_ids: [0] # *
+  DEBUG: False
+  parallel: 'data' #  model
+  Variables:
+    base: ''
+    directory_root: 'resource/output/'
+
+COMMAND_CONTROLLER:
+  ipc_host: '127.0.0.1'
+  ipc_port: 1568
+  command_path: 'resource/configs/command/default_runnable_command.yaml'
+
+DATA_LOADER:
+  transform_modules: []
+  required_loader:
+    # NAME, args
+    default:
+      config:
+        reload: true
+        mode: eval
+        obj_epoch: 1
+      transforms: [ToTensor]
+      loader_args:
+        batch_size: 1
+        shuffle: False
+        pin_memory: True
+        num_workers: 3
+    training:
+      dataset: 'resource/configs/dataset/Example.yaml'
+      config:
+        reload: false
+        mode: train
+        obj_epoch: 10
+      transforms: [ToTensor]
+      loader_args:
+        batch_size: 1
+        shuffle: True
+        pin_memory: True
+        num_workers: 3
+    validation:
+      dataset: 'resource/configs/dataset/Example.yaml'
+      transforms: [ToTensor]
+      loader_args:
+        batch_size: 1
+        shuffle: True
+        pin_memory: True
+        num_workers: 3
+    testing:
+      dataset: 'resource/configs/dataset/Example.yaml'
+      transforms: [ToTensor]
+      loader_args:
+        batch_size: 1
+        shuffle: True
+        pin_memory: True
+        num_workers: 3
+
+SYSTEM:
+  SEED: 42
+  REPRODUCIBILITY: False
+
+  LOGGER:
+    version: 1
+    disable_existing_loggers: true
+
+    formatters:
+      standard:
+        format: "[%(asctime)s]/[%(name)s]/[%(levelname)s]: %(message)s"
+      error:
+        format: "%(levelname)s <PID %(process)d:%(processName)s> %(name)s.%(funcName)s(): %(message)s"
+      training:
+        format: "[%(levelname)s] %(message)s => [%(filename)s:%(lineno)d].%(classname)s"
+      testing:
+        format: "%(levelname)s <PID %(process)d:%(processName)s> %(name)s.%(funcName)s(): %(message)s"
+
+    root:
+      level: DEBUG
+      handlers: []
+      propagate: no
+
+    loggers:
+      DEFAULT:
+        level: DEBUG
+        handlers: []
+        propagate: no
