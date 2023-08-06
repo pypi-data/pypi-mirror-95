@@ -1,0 +1,17 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+env/Lib/site-packages/webencodings-0.5.1.dist-info/metadata.json
+misty2py/__init__.py
+misty2py/action.py
+misty2py/allowed_actions.json
+misty2py/allowed_data.json
+misty2py/allowed_infos.json
+misty2py/information.py
+misty2py/robot.py
+misty2py.egg-info/PKG-INFO
+misty2py.egg-info/SOURCES.txt
+misty2py.egg-info/dependency_links.txt
+misty2py.egg-info/requires.txt
+misty2py.egg-info/top_level.txt
+venv/Lib/site-packages/requests-2.5.4.1.dist-info/metadata.json
