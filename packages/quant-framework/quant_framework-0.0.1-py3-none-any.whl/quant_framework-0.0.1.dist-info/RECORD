@@ -1,0 +1,16 @@
+quant_framework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quant_framework/main.py,sha256=dycvzlZBv_ERRCk7PnZt8pCf_ofzh6zw-ewdKAWf7y0,1266
+quant_framework/brokers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quant_framework/brokers/broker.py,sha256=Tgb0mKmLRyInZe04Bu_Rv5qP_icKTYWFxcOEERIHsuQ,208
+quant_framework/brokers/mock_broker.py,sha256=HCiGX-_LRSjl88AnODT459iUHGXXs6jaRJ49yokTMEY,1971
+quant_framework/data_providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quant_framework/data_providers/data_provider.py,sha256=KX-ZsfsYTFguCHvfNv4BFPbjRH1b2sd-DLROMiOdaTI,233
+quant_framework/data_providers/mock_data_provider.py,sha256=bRzdBqWgSOJXT0dCQ5hjfr-_kkZn0dIZCljA-5IKX_Y,1345
+quant_framework/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quant_framework/strategies/mock_buy_and_hold.py,sha256=i8MePZSPLTGXkiEeZs6vGQE_hsRA8sHAi00gtcHzDD0,1289
+quant_framework/strategies/strategy.py,sha256=qmOFD6mBaBteo05nmd0Qgqe0SukO0OIDdoti4-PgTi4,949
+quant_framework-0.0.1.dist-info/METADATA,sha256=X-xlxGGGpv5zaBbgV8QM_THYbYooxsIsbcU7uQenK1Q,481
+quant_framework-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quant_framework-0.0.1.dist-info/entry_points.txt,sha256=bytzvRDwew89pfda_NvfENmPbcIir2RNBZT76Bug0ww,63
+quant_framework-0.0.1.dist-info/top_level.txt,sha256=lc1DpuF0wJGuyTBytFJ5O98809lL2J3yvRNSRYH5FMU,16
+quant_framework-0.0.1.dist-info/RECORD,,
