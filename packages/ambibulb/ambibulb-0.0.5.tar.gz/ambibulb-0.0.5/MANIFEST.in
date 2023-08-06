@@ -1,0 +1,2 @@
+recursive-include lirc_conf *.conf
+recursive-include ambibulb *.py

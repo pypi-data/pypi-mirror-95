@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+ambibulb/__init__.py
+ambibulb/__main__.py
+ambibulb/ambibulb_config.py
+ambibulb/color_detect.py
+ambibulb/ir_light_bulb.py
+ambibulb.egg-info/PKG-INFO
+ambibulb.egg-info/SOURCES.txt
+ambibulb.egg-info/dependency_links.txt
+ambibulb.egg-info/entry_points.txt
+ambibulb.egg-info/requires.txt
+ambibulb.egg-info/top_level.txt
+lirc_conf/osram-rgb-led.conf
