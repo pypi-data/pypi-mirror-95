@@ -1,0 +1,4 @@
+requests
+twine
+beautifulsoup4
+pyyaml
