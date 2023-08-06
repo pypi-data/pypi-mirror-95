@@ -1,0 +1,3 @@
+[console_scripts]
+beamspy = beamspy.__main__:main
+
