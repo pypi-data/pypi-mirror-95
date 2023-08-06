@@ -1,0 +1,11 @@
+traderep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traderep/__main__.py,sha256=rDV01t0JAxoNrhL1QPvcnmHf2jjZ60mPhXG1yCkKpsA,34
+traderep/display_value.py,sha256=DtMHTHrL6jm9024IT-kY4CidsRPN38ixPR47Jr4RJ1g,2810
+traderep/parse_pdfs.py,sha256=LZVObpkQAdhdedV2T5IewT7j2VmpGcWAaSb-naVD-II,861
+traderep/traderep.py,sha256=NcQNDtJn2PJP80TxjT1rGW7mBa8DR0euEdUnsG69iy8,629
+traderep-1.0.dist-info/LICENSE,sha256=OLquKIoTQJMhmYJswspb2xQDxXrij6-Em1Zqls5gR24,1065
+traderep-1.0.dist-info/METADATA,sha256=4ofz32UZadkL2wE9viaG38eizY5x2UaQHnr_nvIuFNQ,1884
+traderep-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+traderep-1.0.dist-info/entry_points.txt,sha256=Gk2jpY5wpGOkFhdy4M7or-EUguXxGC4jiGFH5HMGCLw,53
+traderep-1.0.dist-info/top_level.txt,sha256=XLB6tddR4vhQvKWqlww1jArS2xH9grhI8el5vjlK2H0,9
+traderep-1.0.dist-info/RECORD,,
