@@ -1,0 +1,4 @@
+[console_scripts]
+pythiags=pythiags.cli:main
+pythiags-launch=pythiags.cli:pythiags_launch
+
