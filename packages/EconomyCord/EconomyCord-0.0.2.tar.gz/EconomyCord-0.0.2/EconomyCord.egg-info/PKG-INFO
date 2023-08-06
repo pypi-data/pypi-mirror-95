@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: EconomyCord
+Version: 0.0.2
+Summary: A simple-compact economy package for discord.py with documentation
+Home-page: https://docs.economycord.xyz
+Author: Lukas Canter
+Author-email: lukascanter07@outlook.com
+License: MIT
+Description: You can find all docs at https://docs.economycord.xyz
+        
+        Change Log
+        ==========
+        
+        0.0.1 (2/19/2021)
+        -----------------
+        - Release of package
+        
+        0.0.2 (2/19/2021)
+        -----------------
+        - Added transfer_balance(fromid, toid, amount)
+        - You no longer have to define discord_client
+        
+        
+Keywords: discord.py
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

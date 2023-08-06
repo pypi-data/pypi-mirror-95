@@ -1,0 +1,12 @@
+Change Log
+==========
+
+0.0.1 (2/19/2021)
+-----------------
+- Release of package
+
+0.0.2 (2/19/2021)
+-----------------
+- Added transfer_balance(fromid, toid, amount)
+- You no longer have to define discord_client
+

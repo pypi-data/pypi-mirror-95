@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+EconomyCord.egg-info/PKG-INFO
+EconomyCord.egg-info/SOURCES.txt
+EconomyCord.egg-info/dependency_links.txt
+EconomyCord.egg-info/requires.txt
+EconomyCord.egg-info/top_level.txt
+economycord/__init__.py
