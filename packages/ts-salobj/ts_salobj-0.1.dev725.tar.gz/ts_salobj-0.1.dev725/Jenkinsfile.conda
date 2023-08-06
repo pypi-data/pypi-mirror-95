@@ -1,0 +1,2 @@
+@Library('JenkinsShared@noarch_fix') _
+SalobjPipeline(["ts_config_ocs"])
