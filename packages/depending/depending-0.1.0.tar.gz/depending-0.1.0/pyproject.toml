@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "depending"
+version = "0.1.0"
+description = ""
+authors = ["Blake <blakeinvictoria@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.6"
+redbaron = "^0.9.2"
+astunparse = "^1.6.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-asyncio = "^0.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
