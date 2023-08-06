@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: valorant-api
+Version: 0.0.1
+Summary: Python wrapper for valorant-api.com
+Home-page: https://github.com/MinshuG/valorant-api
+Author: MinshuG
+License: MIT
+Keywords: valorant,valorant-api.com
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# valorant_api
+python wrapper for valorant-api.com
+
+# Installation
+`pip install git+https://github.com/MinshuG/valorant-api`
+
+# Usages
+```py
+from valorant_api import SyncValorantApi, AsyncValorantApi
+
+#sync
+api = SyncValorantApi(language="ru-RU")
+agents = api.get_agents()
+
+#Async
+api = AsyncValorantApi(language="ru-Ru")
+agents = await api.get_agents()
+```
+
+# Requirements
+
+* python-dateutil==2.8.1
+* aiohttp==3.7.3
+* requests==2.25.1
+
