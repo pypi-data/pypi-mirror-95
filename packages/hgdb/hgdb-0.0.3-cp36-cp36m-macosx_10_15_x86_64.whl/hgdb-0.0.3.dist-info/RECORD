@@ -1,0 +1,9 @@
+_hgdb.cpython-36m-darwin.so,sha256=o0S9peisi2zMLsgm33JChwvXX1_Bm9kwf_oYBwlbJBE,385512
+hgdb/__init__.py,sha256=4ao4lmT7dFN-0paIznf5_WDySbcUOGJnYDUyeEPNx34,103
+hgdb/client.py,sha256=9_WBdyC3_hiinSuFNhzlR7-nRGaqxZKYw7aA6xX4NeI,7198
+hgdb/db.py,sha256=r5Jx2vLszyxN8xgbITXrlP3kIP8kD7Ofm-aS-0f1Qdg,2569
+hgdb-0.0.3.data/scripts/toml2hgdb,sha256=3yRhNRvjgoRa-xKRLUYvLlBQIGFAsWUgYsDMODVxwUU,2706
+hgdb-0.0.3.dist-info/METADATA,sha256=xrjAKxapagg9mlFfmNWRldi6_Ri7BpXYHoUU7WPNxeA,494
+hgdb-0.0.3.dist-info/WHEEL,sha256=OgMGXG1Y7b08is1eoZUOQAX6Pnk3rJR5aLEIJNmT4Eo,111
+hgdb-0.0.3.dist-info/top_level.txt,sha256=N1f3jwbBIh-Lv6RRGvLryhrTR9ENverTvHLi3ranzMk,11
+hgdb-0.0.3.dist-info/RECORD,,
