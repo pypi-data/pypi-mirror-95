@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: aiotempfile
+Version: 0.5.0
+Summary: Provides asynchronous temporary files.
+Home-page: https://pypi.org/project/aiotempfile/
+Author: Richard Davis
+Author-email: crashvb@gmail.com
+License: Apache License 2.0
+Keywords: aio aiotempfile async asynchronous file files temp temporary
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# aiotempfile
+
+## Overview
+
+Provides asynchronous temporary files.
+
+## Compatibility
+
+* Tested with python 3.8
+
+## Installation
+### From [pypi.org](https://pypi.org/project/aiotempfile/)
+
+```
+$ pip install aiotempfile
+```
+
+### From source code
+
+```bash
+$ git clone https://github.com/crashvb/aiotempfile
+$ cd aiotempfile
+$ virtualenv env
+$ source env/bin/activate
+$ python -m pip install --editable .[dev]
+```
+
+## Usage
+TODO
+
+## Development
+
+[Source Control](https://github.com/crashvb/aiotempfile)
+
+
