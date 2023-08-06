@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jawiki-cleaner
+Version: 0.1.1
+Summary: Japanese Wikipedia cleaner
+Home-page: https://github.com/hpprc/jawiki-cleaner
+Author: hppRC
+Author-email: hpp.ricecake@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/hpprc/jawiki-cleaner
+Description-Content-Type: text/markdown
+
+# Japanese Wikipedia Cleaner
+
+Apply extracted wikipedia text by WikiExtractor.
+
+
+```
+$ jawiki-cleaner --input ./wiki.txt --output ./cleaned-wiki.txt
+$ jawiki-cleaner -i ./wiki.txt -o ./cleaned-wiki.txt
+$ jawiki-cleaner -i ./wiki.txt # output path will be `./cleaned-wiki.txt`
+```
