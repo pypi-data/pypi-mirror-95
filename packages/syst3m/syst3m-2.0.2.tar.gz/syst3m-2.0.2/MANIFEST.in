@@ -1,0 +1,11 @@
+include syst3m/README.md
+include syst3m/v1/classes/browser/drivers/macos/*
+include syst3m/v1/classes/browser/drivers/linux/*
+include syst3m/syst3m/v1/classes/browser/drivers/macos/*
+include syst3m/syst3m/v1/classes/browser/drivers/linux/*
+include syst3m/static/media/icons/*
+include syst3m/static/media/icons/*/**
+include syst3m/static/media/logos/*
+include syst3m/static/media/logos/*/**
+include syst3m/static/media/folders/*
+include syst3m/static/media/folders/*/**
