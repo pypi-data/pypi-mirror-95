@@ -1,0 +1,17 @@
+on:
+  ControlRequest:
+    - !ControlReqDriver {}
+  SearchRequest:
+    with:
+      traversal_paths: ['r']
+    drivers:
+      - !ExcludeQL
+        with:
+          fields:
+            - embedding
+            - buffer
+            - blob
+            - text
+      - !RankEvaluateDriver
+        with:
+          id_tag: 'id'
