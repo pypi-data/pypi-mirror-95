@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pioneer-common-gui
+Version: 1.1.1
+Summary: Pioneer gui utility package
+Home-page: UNKNOWN
+Author: Leddartech
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6.0
+Requires-Dist: future
+Requires-Dist: transforms3d
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: PyOpenGL
+Requires-Dist: PyQt5 (==5.14)
+Requires-Dist: PyQtChart (==5.14)
+Requires-Dist: pycollada
+Requires-Dist: utm
+Requires-Dist: Shapely
+Requires-Dist: pioneer-common
+Requires-Dist: tqdm
+
+UNKNOWN
+
+

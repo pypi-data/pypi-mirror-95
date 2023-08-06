@@ -1,0 +1,8 @@
+module UI2D
+
+TracesChart      1.0 TracesChart.qml
+TracesView       1.0 TracesView.qml
+PZQImagePainter  1.0 PZQImagePainter.qml
+PoseEditor       1.0 PoseEditor.qml
+SmallCheckBox    1.0 SmallCheckBox.qml
+IntervalsEditor  1.0 IntervalsEditor.qml
