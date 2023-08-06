@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sfeatpy
+Version: 0.0.1
+Summary: Functions to extract signal speech parameters
+Home-page: https://github.com/linto-ai/sfeatpy.git
+Author: Rudy Baraglia
+Author-email: rbaraglia@linagora.com
+License: AGPLv3+
+Project-URL: github, https://github.com/linto-ai/sfeatpy.git
+Project-URL: pypi, https://pypi.org/project/sfeatpy/
+Keywords: speech features mfcc lmfe
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: scipy (>=1.6.0)
+
+Details on github
+
+
