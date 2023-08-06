@@ -1,0 +1,7 @@
+setup.py
+jrlib/__init__.py
+jrlib/jrlib.py
+jrlib.egg-info/PKG-INFO
+jrlib.egg-info/SOURCES.txt
+jrlib.egg-info/dependency_links.txt
+jrlib.egg-info/top_level.txt
