@@ -1,0 +1,15 @@
+README.md
+setup.py
+flasktts/__init__.py
+flasktts/_utils.py
+flasktts/secret.py
+flasktts/server.py
+flasktts/text_to_speech.py
+flasktts.egg-info/PKG-INFO
+flasktts.egg-info/SOURCES.txt
+flasktts.egg-info/dependency_links.txt
+flasktts.egg-info/requires.txt
+flasktts.egg-info/top_level.txt
+flasktts/_constants/__init__.py
+flasktts/_constants/constants.py
+flasktts/_constants/keys.py

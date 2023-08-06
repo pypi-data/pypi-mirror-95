@@ -1,0 +1,5 @@
+Flask>=1.1.2
+kcu>=0.0.61
+kffmpeg>=0.2.39
+pyttsx3>=2.90
+Unidecode>=1.2.0
