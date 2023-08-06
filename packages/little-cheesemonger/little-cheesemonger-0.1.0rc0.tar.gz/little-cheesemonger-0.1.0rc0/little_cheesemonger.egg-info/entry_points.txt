@@ -1,0 +1,3 @@
+[console_scripts]
+little-cheesemonger = little_cheesemonger._cli:entrypoint
+
