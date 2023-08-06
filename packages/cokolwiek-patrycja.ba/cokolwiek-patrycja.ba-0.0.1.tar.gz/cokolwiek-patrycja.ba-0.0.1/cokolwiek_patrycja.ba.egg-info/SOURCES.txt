@@ -1,0 +1,7 @@
+README.md
+setup.py
+cokolwiek/__init__.py
+cokolwiek_patrycja.ba.egg-info/PKG-INFO
+cokolwiek_patrycja.ba.egg-info/SOURCES.txt
+cokolwiek_patrycja.ba.egg-info/dependency_links.txt
+cokolwiek_patrycja.ba.egg-info/top_level.txt
