@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: marc2aleph
+Version: 0.0.2
+Summary: Conversion from MARC(2709) to Aleph sequential and vice-versa
+Home-page: https://github.com/turricula/marc2aleph
+Author: zhv
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Introduction
+============
+This module is intended to provide users with a simple way to convert
+MARC(2709) to Aleph sequential and vice-versa.
+
+
+Installation
+------------
+
+From PyPI:
+
+    pip install marc2aleph
+
+From GitHub:
+
+    git clone https://github.com/turricula/marc2aleph
+    cd marc2aleph
+    python setup.py install
+
+
