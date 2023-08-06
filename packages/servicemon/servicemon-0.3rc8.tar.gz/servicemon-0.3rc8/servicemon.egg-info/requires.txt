@@ -1,0 +1,12 @@
+astroquery
+requests
+pyvo
+codetiming
+ec2_metadata
+
+[docs]
+sphinx-astropy
+sphinxcontrib-programoutput
+
+[test]
+pytest-astropy
