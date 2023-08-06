@@ -1,0 +1,8 @@
+dpt-file>=1,<2
+dpt-json>=1,<2
+dpt-logging>=1.1.0,<2
+dpt-module-loader>=1,<2
+dpt-runtime>=2,<3
+dpt-settings>=1,<2
+dpt-threading>=2,<3
+dpt-vfs>=1,<2
