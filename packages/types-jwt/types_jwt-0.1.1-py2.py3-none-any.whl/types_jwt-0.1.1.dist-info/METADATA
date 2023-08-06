@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: types-jwt
+Version: 0.1.1
+Summary: Typing stubs for jwt
+Home-page: https://github.com/python/typeshed
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Requires-Dist: types-cryptography
+
+## Typing stubs for jwt
+
+This is an auto-generated PEP 561 type stub package for `jwt` package.
+It can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code
+that uses `jwt`. The source for this package can be found at
+https://github.com/python/typeshed/tree/master/stubs/jwt. All fixes for
+types and metadata should be contributed there.
+
+See https://github.com/python/typeshed/blob/master/README.md for more details.
+This package was generated from typeshed commit `97f9acf4eee019d4ca8d179f33ebd11f09452045`.
+
+

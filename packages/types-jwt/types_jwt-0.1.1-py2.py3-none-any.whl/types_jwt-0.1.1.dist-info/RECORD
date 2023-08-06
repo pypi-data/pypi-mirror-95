@@ -1,0 +1,11 @@
+jwt-stubs/METADATA.toml,sha256=rCzqvCnIHmg5fycrwYbmCnGkF1OQ1f1jeaGxDBdDE1Q,50
+jwt-stubs/__init__.pyi,sha256=975_sUWTv0BaJ04jZpVTmd7WNFmu25f82KqqMReqI3k,1724
+jwt-stubs/algorithms.pyi,sha256=chU6Dgt_K3aWQbLPZmMc8VpAyIrzwAEO-PJ7Htulh_k,4358
+jwt-stubs/contrib/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jwt-stubs/contrib/algorithms/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jwt-stubs/contrib/algorithms/py_ecdsa.pyi,sha256=43zFcZpLRNwzuol7DXZi7jGaQ0M6jDzfyTNeWsuwtRk,251
+jwt-stubs/contrib/algorithms/pycrypto.pyi,sha256=w-Prvq6u6oOOCt6KPuTT1p86AW7cABIOj8iDa00gvyM,252
+types_jwt-0.1.1.dist-info/METADATA,sha256=PghZfv_vrv8E8ErbBot05NuiSq0gvYnCKtoI0vjrqf8,802
+types_jwt-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+types_jwt-0.1.1.dist-info/top_level.txt,sha256=632XWqD3i-OD3EyFV02pG9is2i3EustwKpNmJ88Tuq8,10
+types_jwt-0.1.1.dist-info/RECORD,,
