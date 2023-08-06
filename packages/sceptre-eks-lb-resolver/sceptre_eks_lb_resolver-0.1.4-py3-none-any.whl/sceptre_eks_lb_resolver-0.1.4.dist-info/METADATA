@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: sceptre-eks-lb-resolver
+Version: 0.1.4
+Summary: A Sceptre resolver to retrieve a kubernetes service load balancer URI
+Home-page: https://github.com/pantuza/sceptre-eks-lb-resolver
+Author: Gustavo Pantuza
+Author-email: gustavopantuza@gmail.com
+License: Apache2
+Keywords: sceptre,sceptre-resolver,AWS EKS,k8s service load balancer,k8s lb URI,Load Balancer URI,Kubernetes Load Balancer URI,k8s lb dns,k8s service dns
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: packaging (==16.8)
+Requires-Dist: sceptre (>=2.4.0)
+Requires-Dist: kubernetes (>=12.0.1)
+Provides-Extra: test
+Requires-Dist: pytest (>=3.2) ; extra == 'test'
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![PyPI version](https://badge.fury.io/py/sceptre-eks-lb-resolver.svg)](https://badge.fury.io/py/sceptre-eks-lb-resolver)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/sceptre-eks-lb-resolver)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/sceptre-eks-lb-resolver.svg)](https://pypi.python.org/pypi/sceptre-eks-lb-resolver/)
+[![PyPI license](https://img.shields.io/pypi/l/sceptre-eks-lb-resolver.svg)](https://pypi.python.org/pypi/sceptre-eks-lb-resolver/)
+
+# sceptre-eks-lb-resolver
+[Sceptre](https://github.com/Sceptre/sceptre) custom resolver you can use to dynamically read [AWS EKS](https://aws.amazon.com/eks/) 
+Load Balancer URI into your Sceptre config. 
+
+It reads services inside your Kubernetes cluster that type is `LoadBalancer` and returns its External DNS/URI.
+
+
+## Installation
+
+```bash
+$> pip install sceptre-eks-lb-resolver
+```
+
+
+## Usage
+
+Simply call the resolver inside your Sceptre configuration files:
+
+```yaml
+template_path: mystack.yaml
+
+parameters:
+  ProjectName: "My k8s API"
+  LoadBalancerURI: !eks_lb_uri -n backend -s data_api 
+```
+
+You can use your Sceptre variables as arguments for the resolver:
+
+```yaml
+  ...
+  LoadBalancerURI: !eks_lb_uri -n {{ var.namespace }} -s {{ var.service }}
+```
+
+
+## Syntax
+
+Resolver expects two arguments: `-n | --namespace` and `-s | --service-name`.
+The `--namespace` argument is optional. It assumes kubeernetes `default` namespace
+as its default value. 
+
+All available ways of using this resolver are as follows:
+
+```yaml
+  LBArn: !eks_lb_uri --namespace {{ var.namespace }} --service-name {{ var.service }}
+  LBArn: !eks_lb_uri -n {{ var.namespace }} -s {{ var.service }}
+  LBArn: !eks_lb_uri -s {{ var.service }}  # Assumes default namespace
+  LBArn: !eks_lb_uri -s "my_api_service_name"
+  LBArn: !eks_lb_uri -n backend -s data_api
+```
+
+
+## How does it works?
+
+The resolver is called by Sceptre in order to retrieve remote k8s cluster services.
+The EKS Load Balancer Resolver uses kubernetes python client to connect on the remote
+cluster and retrieve data of the given service name from a given namespace.
+
+The K8s Load Balancer URI resolver simply tries to get the Load Balancer DNS as if you run:
+
+```bash
+$> kubectl --namespace backend get service api-service
+NAME               TYPE           CLUSTER-IP       EXTERNAL-IP                               PORT(S)         AGE
+api-service        LoadBalancer   10.0.42.123      XXXXXXXXXXX.us-east-1.elb.amazonaws.com   443:32214/TCP   12h40m
+```
+
+The resolver goes after the `XXXXXXXXXXX.us-east-1.elb.amazonaws.com` value. When succeeds, it loads in place this
+value in your Sceptre template.
+
+
+## Notes
+
+Be aware that the shell which sceptre will be called MUST be authenticated on AWS and 
+your kubeconfig properly updated to point to your AWS EKS remote cluster.
+
+You can refer to the following links for either AWS and Kubernetes authentication:
+
+* [AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+* [AWS EKS Kubeconfig setup](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)
+
+
+## Contributing
+
+Fork, change, make test, make check, Pull Request.
+I will review the code and if Github Actions pipeline succeeds: congratulations! We are going to merge ;)
+
+
