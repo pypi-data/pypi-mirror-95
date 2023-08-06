@@ -1,0 +1,3 @@
+[console_scripts]
+traderep = traderep.traderep:main
+

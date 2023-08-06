@@ -1,0 +1,12 @@
+README.md
+setup.py
+traderep/__init__.py
+traderep/__main__.py
+traderep/display_value.py
+traderep/parse_pdfs.py
+traderep/traderep.py
+traderep.egg-info/PKG-INFO
+traderep.egg-info/SOURCES.txt
+traderep.egg-info/dependency_links.txt
+traderep.egg-info/entry_points.txt
+traderep.egg-info/top_level.txt
