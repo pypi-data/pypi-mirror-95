@@ -1,0 +1,8 @@
+Flask
+click
+flask-sqlalchemy
+graphene
+graphene_sqlalchemy
+flask-graphql
+flask-cors
+ps.basic

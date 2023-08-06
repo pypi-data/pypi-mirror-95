@@ -1,0 +1,4 @@
+graft src/ps/herald/static
+graft src/ps/herald/templates
+graft src/ps/herald/graph_ql
+global-exclude *.pyc
