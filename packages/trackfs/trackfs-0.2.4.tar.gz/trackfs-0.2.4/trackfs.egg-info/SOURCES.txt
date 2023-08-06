@@ -1,0 +1,14 @@
+README.md
+setup.py
+trackfs/__init__.py
+trackfs/albuminfo.py
+trackfs/cuesheet.py
+trackfs/flactracks.py
+trackfs/fuseops.py
+trackfs/fusepath.py
+trackfs.egg-info/PKG-INFO
+trackfs.egg-info/SOURCES.txt
+trackfs.egg-info/dependency_links.txt
+trackfs.egg-info/entry_points.txt
+trackfs.egg-info/requires.txt
+trackfs.egg-info/top_level.txt
