@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: i2b
+Version: 2.2.1
+Summary: Convert image into base64 string and store into the txt file
+Home-page: https://github.com/sachinchavan9/image-encode-decode
+Author: Sachin Chavan
+Author-email: sachinewx@gmail.com
+License: UNKNOWN
+Description: # IMAGE TO _BASE64 STRING_
+        
+        ## Convert Image into base64 format.
+        
+        ### Supprted image format is:
+        
+        * _**jpg**_
+        * _**png**_
+        * _**jpeg**_
+        * _**JPG**_
+        * _**JPEG**_
+        * _**TIF**_
+        
+        ### Install Package
+        Install package from
+        [pypi.org](https://pypi.org/project/i2b/)
+        ```
+        pip install i2b
+        ```
+        ### Usage
+        
+        ```
+        i2b -h
+        usage: i2b [-h] [-i IMG]
+        
+        Convert Image into base64 format, supported format is jpg and png.
+        
+        optional arguments:
+          -h, --help         show this help message and exit
+          -i IMG, --img IMG  Input image or image path to convert into base64
+        ```
+        
+Keywords: image base64 jpg png jpeg JPG JPEG TIF
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Artistic Software
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

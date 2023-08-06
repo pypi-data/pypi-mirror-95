@@ -1,0 +1,10 @@
+README.md
+setup.py
+i2b.egg-info/PKG-INFO
+i2b.egg-info/SOURCES.txt
+i2b.egg-info/dependency_links.txt
+i2b.egg-info/entry_points.txt
+i2b.egg-info/not-zip-safe
+i2b.egg-info/top_level.txt
+img2b64/__init__.py
+img2b64/img2b64.py
