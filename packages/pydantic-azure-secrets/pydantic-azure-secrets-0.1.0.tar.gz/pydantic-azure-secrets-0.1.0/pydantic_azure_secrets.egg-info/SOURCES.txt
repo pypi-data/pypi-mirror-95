@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pydantic_azure_secrets/__init__.py
+pydantic_azure_secrets/azure_vault_settings.py
+pydantic_azure_secrets.egg-info/PKG-INFO
+pydantic_azure_secrets.egg-info/SOURCES.txt
+pydantic_azure_secrets.egg-info/dependency_links.txt
+pydantic_azure_secrets.egg-info/requires.txt
+pydantic_azure_secrets.egg-info/top_level.txt
+tests/__init__.py
+tests/test_azure_vault_settings.py
