@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+# OTP-CR-117/19 otp.informationdesk@icc-cpi.int http://pypi.org/project/genocide !
+#
+# This file is placed in the Public Domain.
+
+"daemon"
+
+# imports
+
+from op.dbs import last
+from op.obj import cfg
+from op.hdl import Core
+from op.run import run
+from op.utl import privileges, os
+
+# functions
+
+def main():
+    last(cfg)
+    cfg.wd = "/var/lib/genocide/"
+    cfg.mods += ",irc,rss"
+    privileges("genocide")
+    h = Core()
+    h.tablename = "gcd.tbl"
+    h.fromdir(os.path.join(cfg.wd, "mod"))
+    h.load_mod(cfg.mods)
+    h.start()
+    h.init(cfg.mods)
+    h.wait()
+
+# runtime
+
+run(main)
