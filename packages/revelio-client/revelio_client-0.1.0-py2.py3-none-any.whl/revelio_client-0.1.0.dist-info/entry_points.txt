@@ -1,0 +1,3 @@
+[console_scripts]
+revelio_client = revelio_client.cli:main
+
