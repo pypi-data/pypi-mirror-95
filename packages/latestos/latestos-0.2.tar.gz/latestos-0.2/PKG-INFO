@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: latestos
+Version: 0.2
+Summary: Latest OS version checker for Linux Distros using the Arizona Mirror
+Home-page: https://github.com/rennym19/latestos
+Author: Renny Montero
+Author-email: rennym19@gmail.com
+License: MIT
+Download-URL: https://github.com/rennym19/latestos/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: OS,LINUX,VERSION,CHECKER,SCRAPER
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

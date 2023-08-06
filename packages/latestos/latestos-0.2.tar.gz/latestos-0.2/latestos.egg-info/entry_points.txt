@@ -1,0 +1,3 @@
+[console_scripts]
+latestos = latestos.commands:main
+
