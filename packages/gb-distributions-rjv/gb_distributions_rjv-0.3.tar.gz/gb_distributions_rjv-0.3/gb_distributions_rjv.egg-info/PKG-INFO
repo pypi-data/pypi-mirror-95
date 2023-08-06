@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: gb-distributions-rjv
+Version: 0.3
+Summary: Gaussian distributions
+Home-page: UNKNOWN
+Author: Rajeev
+Author-email: rjv.kumar18@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # Upload python package to PyPi
+        
+        ### Table of Contents
+        
+        1. [Installation](#installation)
+        2. [Project Motivation](#motivation)
+        3. [File Descriptions](#files)
+        4. [Results](#results)
+        5. [Licensing, Authors, and Acknowledgements](#licensing)
+        
+        ## Installation <a name="installation"></a>
+        
+        The code should run with no issues using Python versions 3.*.
+        
+        ## Project Motivation<a name="motivation"></a>
+        
+        This is an example project to upload a python package to PyPi
+        
+        
+        ## File Descriptions <a name="files"></a>
+        
+        Mainly, there is one package named gb_distributions_rjv and 3 .py files under it.
+        
+        ## Results<a name="results"></a>
+        
+        N.A
+        
+        ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+        
+        You can find the Licensing details in the file licence.txt.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.*
