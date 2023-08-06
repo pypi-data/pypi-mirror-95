@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dffml-operations-image
+Version: 0.1.0
+Summary: DFFML operations image
+Home-page: https://github.com/sakshamarora1/dffml-operations-image
+Author: Saksham Arora
+Author-email: sakshamarora1001@gmail.com
+Maintainer: Saksham Arora
+Maintainer-email: sakshamarora1001@gmail.com
+License: MIT
+Description: # DFFML image Operations
+        
+        * Contains operations to pre-process image data.
+        
+        ## Usage
+        
+        Example usage
+        <!-- TODO -->
+        
+        ## License
+        
+        DFFML image is distributed under the [MIT License](LICENSE).
+        
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
