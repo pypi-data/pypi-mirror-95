@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pytest-custom-scheduling
+Version: 0.1
+Summary: Custom grouping for pytest-xdist
+Home-page: https://github.com/fungaegis/pytest-custom-scheduling
+Author: fungaegis
+Author-email: fungaegis@gmail.com
+License: MIT License
+Description: Custom grouping for pytest-xdist;
+         Usage: cmd line or main function --switch={on:off}
+Keywords: pytest,py.test,pytest_custom_scheduling,concurrency,xdist,pytest-xdist
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.7
