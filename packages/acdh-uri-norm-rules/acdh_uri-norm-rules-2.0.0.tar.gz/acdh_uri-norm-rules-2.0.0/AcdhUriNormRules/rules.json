@@ -1,0 +1,46 @@
+[
+   {
+      "match" : "^https?://([^.]*[.])?chronontology[.]dainst[.]org/period/([A-Za-z0-9]+)$",
+      "replace" : "https://chronontology.dainst.org/period/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?d-nb[.]info/gnd/([-A-Z0-9]+)/?$",
+      "replace" : "https://d-nb.info/gnd/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?gazetteer[.]dainst[.]org/([A-Za-z]+/)*([0-9]+)([^0-9].*)?$",
+      "replace" : "https://gazetteer.dainst.org/place/\\3"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?geonames[.]org/([0-9]+)(/.*)?$",
+      "replace" : "https://www.geonames.org/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?n2t[.]net/ark:/99152/(p0[a-z0-9]+)$",
+      "replace" : "https://n2t.net/ark:/99152/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?orcid[.]org/([-A-Z0-9]+)/?$",
+      "replace" : "https://orcid.org/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?pleiades[.]stoa[.]org/places/([0-9]+)(/.*)?$",
+      "replace" : "https://pleiades.stoa.org/places/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?viaf[.]org/viaf/([0-9]+)(/.*)?$",
+      "replace" : "https://viaf.org/viaf/\\2"
+   },
+   {
+      "match" : "^https?://([^.]*[.])?wikidata[.]org/([A-Za-z:]+/)*(Q[0-9]+)([^[0-9].*)?$",
+      "replace" : "https://www.wikidata.org/entity/\\3"
+   },
+   {
+      "match" : "^https?://vocab[.]getty[.]edu/(page/)?aat/([0-9]+)([.][a-z]+)?$",
+      "replace" : "http://vocab.getty.edu/page/aat/\\2"
+   },
+   {
+      "match" : "^https?://vocab[.]getty[.]edu/(page/)?tgn/([0-9]+)([.][a-z]+)?$",
+      "replace" : "http://vocab.getty.edu/page/tgn/\\2"
+   }
+]

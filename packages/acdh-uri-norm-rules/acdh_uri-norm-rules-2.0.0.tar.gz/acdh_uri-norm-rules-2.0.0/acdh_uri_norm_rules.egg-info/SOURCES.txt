@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+AcdhUriNormRules/AcdhUriNormRules.py
+AcdhUriNormRules/__init__.py
+AcdhUriNormRules/rules.json
+acdh_uri_norm_rules.egg-info/PKG-INFO
+acdh_uri_norm_rules.egg-info/SOURCES.txt
+acdh_uri_norm_rules.egg-info/dependency_links.txt
+acdh_uri_norm_rules.egg-info/top_level.txt
+tests/__init__.py
+tests/test_normalizer.py
