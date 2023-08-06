@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: QCGym
+Version: 0.0.3a0
+Summary: A Collection of Gym environments used in Quantum control
+Home-page: https://github.com/oddgr8/QCGym
+Author: Onkar Deshpande
+Author-email: onkardeshpande07@gmail.com
+License: MIT
+Download-URL: https://github.com/oddgr8/QCGym/archive/v0.0.3-alpha.tar.gz
+Description: UNKNOWN
+Keywords: Quantum,Control,Gym,RL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8

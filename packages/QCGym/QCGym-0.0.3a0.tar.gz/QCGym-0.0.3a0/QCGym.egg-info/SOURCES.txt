@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+QCGym/__init__.py
+QCGym.egg-info/PKG-INFO
+QCGym.egg-info/SOURCES.txt
+QCGym.egg-info/dependency_links.txt
+QCGym.egg-info/requires.txt
+QCGym.egg-info/top_level.txt
