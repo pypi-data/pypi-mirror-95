@@ -1,0 +1,6 @@
+[console_scripts]
+macops_change = macops.change:change_mac
+macops_generate = macops.generate:generate_mac
+macops_get = macops.get:get_current_mac
+macops_reset = macops.reset:reset_original_mac
+
