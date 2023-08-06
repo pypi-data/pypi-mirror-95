@@ -1,0 +1,2 @@
+pycryptodome>=3.7.2
+pproxy>=2.0.0
