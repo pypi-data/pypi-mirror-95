@@ -1,0 +1,3 @@
+[console_scripts]
+highchartexport = highchartexport.__main__:main
+
