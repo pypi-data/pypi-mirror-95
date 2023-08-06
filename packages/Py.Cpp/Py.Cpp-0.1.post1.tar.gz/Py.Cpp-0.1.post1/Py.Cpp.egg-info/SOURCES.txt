@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+Py.Cpp.egg-info/PKG-INFO
+Py.Cpp.egg-info/SOURCES.txt
+Py.Cpp.egg-info/dependency_links.txt
+Py.Cpp.egg-info/requires.txt
+Py.Cpp.egg-info/top_level.txt
+PyCpp/__init__.py
+PyCpp/iostream.py
