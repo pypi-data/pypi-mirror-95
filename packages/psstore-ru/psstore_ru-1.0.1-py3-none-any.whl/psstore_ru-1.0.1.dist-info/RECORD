@@ -1,0 +1,13 @@
+psstore4ru/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psstore4ru/crawler.py,sha256=JFd1bsbup0ucvw0OyGuog7fBz3IX1jarbpGjNIZQQ4s,8200
+psstore4ru/enmasse.py,sha256=JIIobfYbfUUns3zQt9YErPn6yO8zuD-W7_NGDniVRH4,3067
+psstore4ru/games.py,sha256=q5h2IGt06pzJ4pEiIfb64QWdWyE81T3F-9pS4D2Wd5U,7156
+psstore4ru/homepage.py,sha256=I7qRBNKY6D0Pro614WrtjjLSiL5DEjR3XzlZSzmHlO8,2467
+psstore4ru/tests.py,sha256=cJQ7kdSWia1NaoJLT6ikIXmHf_rPguC3OLJtRezOYL4,3881
+psstore4ru/utils.py,sha256=3YsNsNpRqBuV4BQuWVtJA5JcFtHBeFRnwYZNbVAqKQk,543
+psstore4ru/variables.py,sha256=j1GnoLPnJwS7eYlmqNGexu_GN2zFk_5ISM5tjOsYJs8,2695
+psstore_ru-1.0.1.dist-info/LICENSE,sha256=MsI0SXRV9_iSivUlo9w5lI-st2PuzRAkXocpKPDKsN8,1078
+psstore_ru-1.0.1.dist-info/METADATA,sha256=xR7F3Yw4NxBnOsMC9v6iYGXUVJ73ONYzNI_Ougkw4nY,1012
+psstore_ru-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+psstore_ru-1.0.1.dist-info/top_level.txt,sha256=ygzKXzNUBGijCwxK_2eiJIUjaAWdLYjjSURLipFwaX0,11
+psstore_ru-1.0.1.dist-info/RECORD,,
