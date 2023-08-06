@@ -1,0 +1,6 @@
+requests
+SQLObject
+tqdm
+bullet
+termcolor
+feedparser
