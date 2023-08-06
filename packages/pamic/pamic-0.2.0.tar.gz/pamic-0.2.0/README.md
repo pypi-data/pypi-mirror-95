@@ -1,0 +1,174 @@
+[[_TOC_]]
+
+# Pamic - Funking up Pulseaudio microphone use
+
+![Pamic Microphone Icon](https://gitlab.com/eBardie/pamic/-/blob/master/pamicg/img/vintage-microphone.png)
+
+## Overview
+
+**Pamic** aims to simplify finessing microphone use with Pulseaudio.
+
+There are two modes available:
+
+- Echo cancellation (combined with some level of noise suppression)
+
+  Echo cancellation mode is for when you need to use a microphone with ordinary
+  speakers. For example, your system has speakers attached, you're not using
+  headphones, your microphone is picking up the sound coming from the speakers
+  and echoing it back out to everyone else on the conference call! 
+
+  The Pulseaudio echo cancellation module can also perform noise suppression,
+  and **Pamic** makes use of that when in echo cancellation mode. It's not
+  quite as capable as the freestanding noise suppression, but it saves the
+  overhead of using two separate modules.
+
+- Standalone noise suppression
+
+  Standalone noise suppression mode is for when you are using headphones, but
+  your microphone is picking up unwanted background noise. In my case this is
+  my laptop's fan, but it's also good for office hubbub, crowds, construction,
+  planes, trains, automobiles...
+
+  This mode requires an extra library (librnnoise) to be installed. See below for details.
+
+**Pamic**'s changes are not persistent by default. Configure the autostart feature in the `Preferences` dialogue if you want the changes to persist across reboots.
+
+## Installation 
+
+Run the following command:
+
+	pip3 install pamic  # You may need to use "pip" rather than "pip3".
+	                    # "python3 -m pip install pamic" or 
+	                    # "python -m pip install pamic" are also options here.
+
+Echo cancellation is performed by a standard Pulse audio module, so if you're running the latest version of Pulseaudio that should be covered.
+
+Note: I've only tested **Pamic** on Pulseaudio version 13.0. If you're using a different version, please let me know how it goes.
+
+### Installing librnnoise
+
+For standalone noise suppression **Pamic** makes use of the marvellous https://github.com/werman/noise-suppression-for-voice
+
+Download the latest `linux_rnnoise_bin_x64.tar.gz` tarball from https://github.com/werman/noise-suppression-for-voice/releases/
+
+Extract `librnnoise_ladspa.so` and place it in `/usr/local/lib/`:
+
+	tar xf ~/Downloads/linux_rnnoise_bin_x64.tar.gz bin/ladspa/librnnoise_ladspa.so
+	sudo mv librnnoise_ladspa.so /usr/local/lib/
+
+## Using **Pamic**
+
+1. Launch **Pamic**'s GUI. At a terminal run:
+
+		pamicg
+
+	Note: **Pamic** is made up of two components, the GUI `pamicg`, and the script `pamic`. (For more information on the script see [README_SCRIPT.md](README_SCRIPT.md).)
+
+2. Now select the devices you want to use, i.e. the source (microphone) and sink (sound output device), from the dropdown boxes. 
+
+3. And finally, click the `Apply` button.
+
+All being well, that should be it. Pamic should be working. See [Troubleshooting](#troubleshooting) if not.
+
+See also [Configuring individual applications](#configuring-individual-applications) below.
+
+### Unloading **Pamic**
+
+Once loaded a **Pamic** configuration will remain active until **Pulseaudio** is told to unload the modules, or is stopped. 
+
+To unload an active configuration, click on the down arrow to the right of the `Apply` button and select `Unload`.
+
+### Configuring **Pamic**
+
+Pamic has the following configuration options available in the `Preferences` dialogue:
+
+* Force unload if already active
+
+	If this box is ticked, Pamic will unload any existing configuration before applying the new one. If the box is not ticked, Pamic will not apply the new configuration if there is one already loaded.
+	
+	This is on by default.
+
+* Display monitor devices
+
+	In most instances the Pulseaudio monitor devices will not be of interest, so they are not displayed unless this box is ticked. Which it isn't by default.
+
+* Display device names
+
+	The human readable device descriptions are always displayed.
+
+	In most instances the Pulseaudio device names will not be of interest, so they are not displayed unless this box is ticked. Which it isn't by default.
+
+* Autostart
+
+	The following tasks can be automatically started when you login:
+	
+	* Pamic
+		
+		Reinstate the last applied Pamic configuration
+	
+	* Pamic GUI
+	
+		Start the Pamic GUI
+
+	These two are independent options, you can have one, the other, both, or neither.
+
+---
+
+### Configuring individual applications
+
+Once **Pamic** has configured its new virtual devices, any freshly started applications should use **pamic virtual speaker** as their sound output device. 
+
+You may still need to change the routing for applications which are already connected to a different output device, or for applications which have been configured to use a specific output.
+
+I usually use [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) to control which app uses what output. If you're using Pulseaudio, **pavucontrol** (or something similar) is probably already installed. 
+
+![Change output (sink) in pavucontrol](https://gitlab.com/eBardie/pamic/-/blob/master/pamicg/img/pavucontrol_select_sink.gif)
+
+---
+
+### Using **Pamic** with **PulseEffects**
+
+[PulseEffects](https://github.com/wwmm/pulseeffects) makes it a simple matter to extensively tweak the sound coming through PulseAudio.
+
+Install it via your usual package management tool (e.g. `sudo apt install pulseeffects`).
+
+I use **PulseEffects** to boost bass, add some [audio excitation](https://en.wikipedia.org/wiki/Exciter_(effect)), and [fettle](https://en.wiktionary.org/wiki/fettle#Verb) the stereo image.
+
+The gotcha here is that **Pamic**'s **Echo-Cancel Sink Stream** *must* be blacklisted, otherwise Pulseaudio will detect a loop and there'll be only silence.
+
+1. In **PulseEffects**'s main tab...
+2. select **Applications**...
+3. find the **Echo-Cancel Sink Stream** item and...
+4. click its **Blacklist** button.
+5. Restart **PulseEffects**
+
+(**Pamic** and **PulseEffects** must both be running of course.)
+
+![Blacklist 'Echo-Cancel Sink Stream'](https://gitlab.com/eBardie/pamic/-/blob/master/pamicg/img/pulseeffects_blacklist_echo_cancel_sink_stream.jpg)
+
+*[This image is of PulseEffects 4.8.0, using some GTK theme or other, and displayed in AwesomeWM. YMWV😄]*
+
+
+## Troubleshooting
+
+Pulseaudio can get its knickers in a twist. My setup is more complicated than the average in that my sound output device is a remote connexion to Pulseaudio running on a different computer, but I find that restarting Pulseaudio *and any streams using it*, usually solves most problems.
+
+I do this by running:
+
+	pkill pulseaudio
+
+**Pulseaudio** automatically restarts.
+
+The most common exception to this resolving a problem for me has been when **Pulseaudio** chooses to alternate between the two physical outputs on a device after **Pulseaudio** and the device have been restarted. I click **Pamic**'s `Refresh` button, select the new device, click `Apply`, and I'm back up and running. (I should probably try to force one or other of the physical outputs to always be used, but it only happens infrequently.)
+
+I'm expecting other problems to surface once **Pamic** is running on different **Pulseaudio** configurations. Please submit any [issues](https://gitlab.com/eBardie/pamic/-/issues), and if you have solutions, please post them too :)
+
+
+## Suggestions/problems/solutions?
+
+Please open an [issue](https://gitlab.com/eBardie/pamic/-/issues).
+
+
+## Ingredients not already mentioned
+
+Microphone icon from [free-icon-download.com](http://free-icon-download.com/modules/PDdownloads/singlefile.php?cid=17&lid=67).
