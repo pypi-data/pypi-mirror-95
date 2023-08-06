@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+django_ext_utils/__init__.py
+django_ext_utils/rest_utils.py
+django_ext_utils/utils.py
+django_ext_utils.egg-info/PKG-INFO
+django_ext_utils.egg-info/SOURCES.txt
+django_ext_utils.egg-info/dependency_links.txt
+django_ext_utils.egg-info/requires.txt
+django_ext_utils.egg-info/top_level.txt

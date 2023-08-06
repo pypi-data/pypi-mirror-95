@@ -1,0 +1,5 @@
+Django>=2.0
+Pillow
+
+[with_rest]
+djangorestframework>=3.0
