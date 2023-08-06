@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: monotone-bipartition
+Version: 0.3.0
+Summary: Compute Monotone Threshold Surfaces and compute distances between surfaces.
+License: MIT
+Author: Marcell Vazquez-Chanlatte
+Author-email: mvc@linux.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=20,<21)
+Requires-Dist: funcy (>=1.14,<2.0)
+Requires-Dist: lazytree (>=0.3.1,<0.4.0)
+Requires-Dist: lenses (>=1.0.0,<2.0.0)
+Requires-Dist: numpy (>=1.19.1,<2.0.0)
