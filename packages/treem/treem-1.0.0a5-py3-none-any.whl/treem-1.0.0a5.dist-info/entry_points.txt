@@ -1,0 +1,3 @@
+[console_scripts]
+swc = treem.cli:cli
+
