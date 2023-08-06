@@ -1,0 +1,9 @@
+jawiki_cleaner/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+jawiki_cleaner/break_line.py,sha256=FDdJXDCbF97YsLk3raA6HleXk3d4S0YFkQ6LpGOiWqM,1664
+jawiki_cleaner/clean_text.py,sha256=anHnZVuDbs3fh-wPzYfPsJh4c0PhnGI12-p2Hq6dhEo,1641
+jawiki_cleaner/cli.py,sha256=N6jfZ2wS6iZ9b8iVC29N354JMBTeNDalqcqrt7CAYAc,2063
+jawiki_cleaner/process.py,sha256=y-sXtilmnbfuRpqxcoxDWQogUXAwATXmnwzVsEHuD9I,230
+jawiki_cleaner-0.1.5.dist-info/entry_points.txt,sha256=5DUAr1dW6oKmIyHqOMb-iQhzPsGsog8Ef5yGm175xhM,58
+jawiki_cleaner-0.1.5.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+jawiki_cleaner-0.1.5.dist-info/METADATA,sha256=yhxifNk1UkQWG1jHlyI9sZmKhROgCWQXbsRd2b4r9lc,4888
+jawiki_cleaner-0.1.5.dist-info/RECORD,,
