@@ -1,0 +1,3 @@
+[console_scripts]
+gdpr-scrub=redash_toolbelt.examples.gdpr_scrub:lookup
+
