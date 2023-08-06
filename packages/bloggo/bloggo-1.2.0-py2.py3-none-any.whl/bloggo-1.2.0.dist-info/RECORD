@@ -1,0 +1,10 @@
+bloggo/__init__.py,sha256=dYH6_UAFJ9i18B6YD6z8e6adeXM7vLUT-aGNGl0151c,16
+bloggo/__main__.py,sha256=GNrIiBRpYT3Ugs457bZvsGO_VKulzQUYKcMi7Oh4vII,36
+bloggo/core.py,sha256=3ypXSj8pifgxFYPzdpdrt-rJq2MmUSji4mgezE8fPeQ,8883
+bloggo/hbs.py,sha256=tIuhzn_8yQcqsifMEZQ8nh8tb0EW1sl70IvLVnXhSJg,164
+bloggo-1.2.0.data/scripts/bloggo,sha256=Umj7hUtgfyMYe5iPPwN5wuTuaGvop5gIq-q5j_xSciQ,46
+bloggo-1.2.0.dist-info/LICENSE.txt,sha256=UbrZsksRG7LwwloE0fQhl3pOuhHkgC8Dhlmqmynto0I,1066
+bloggo-1.2.0.dist-info/METADATA,sha256=cvBks-Eh6sA3m_wZp3yaL-85ouRwzHtAaSriyxXSdXY,5763
+bloggo-1.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bloggo-1.2.0.dist-info/top_level.txt,sha256=ib4ZMLYXcUg0QHXNiVLTefZ5rc70mWSgDNSMCWzwM44,7
+bloggo-1.2.0.dist-info/RECORD,,
