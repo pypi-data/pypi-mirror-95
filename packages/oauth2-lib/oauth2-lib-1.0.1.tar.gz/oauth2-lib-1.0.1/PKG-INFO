@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: oauth2-lib
+Version: 1.0.1
+Summary: This is the SURF Oauth2 module that interfaces with the oauth2 setup.
+Home-page: https://github.com/workfloworchestrator/oauth2-lib
+Author: SURF
+Author-email: automation-beheer@surf.nl
