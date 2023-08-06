@@ -1,0 +1,17 @@
+•	ChannelPositionPlots.py
+Create plots of cell locations within samples on different channels.
+
+•	combineSets.py
+Used to combine LAM-created data sets from split datasets.
+
+•	ManualVectorPlots.py
+Create plots of sample vectors with one datachannel on background, e.g. DAPI + vector
+
+•	rotator.py
+Rotate coordinates of dataset around origin to properly orientate samples for LAM vector creation.
+
+•	split_dataset.py
+Split all data and vectors in a dataset based on defined cut points.
+
+•	SubsetDataChannel.py
+Filter a datachannel for all samples found in LAM's Samples-folder to create a new datachannel.
