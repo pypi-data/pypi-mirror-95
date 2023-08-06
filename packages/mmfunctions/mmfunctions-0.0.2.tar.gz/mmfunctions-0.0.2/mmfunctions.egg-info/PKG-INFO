@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mmfunctions
+Version: 0.0.2
+Summary: Helper package to be used in conjunction with the Maximo Asset Manager pipeline
+Home-page: https://github.com/sedgewickmm18/mmfunctions
+Author: Markus Müller
+Author-email: sedgewickmm18@googlemail.com
+License: UNKNOWN
+Description: ## mmfunctions
+        
+        Playground for Maximo Asset Monitor
+        
+        Please see the [repo wiki](https://github.com/sedgewickmm18/mmfunctions/wiki) for more information.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
