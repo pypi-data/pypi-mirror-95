@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vnet-manager
+Version: 0.7.0
+Summary: UNKNOWN
+Home-page: https://github.com/Erik-Lamers1/vnet-manager
+Author: Erik Lamers
+License: MIT
+Download-URL: https://github.com/Erik-Lamers1/vnet-manager/archive/0.7.0.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: PyYAML
+Requires-Dist: colorama
+Requires-Dist: distro
+Requires-Dist: psutil
+Requires-Dist: pylxd (==2.2.10)
+Requires-Dist: pyroute2
+Requires-Dist: tabulate
+
+UNKNOWN
+
+
