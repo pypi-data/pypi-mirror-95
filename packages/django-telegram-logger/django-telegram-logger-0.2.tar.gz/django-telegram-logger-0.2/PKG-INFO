@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: django-telegram-logger
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://github.com/Arteemoon/django-telegram-logger
+Author: Arteemoon
+Author-email: ivasheco45@gmail.com
+License: MIT
+Download-URL: https://github.com/Arteemoon/django-telegram-logger/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: logger,telegram,django
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
