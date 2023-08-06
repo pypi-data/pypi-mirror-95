@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dora-cli
+Version: 0.0.2
+Summary: 
+Author: didone
+Author-email: didone@live.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: clint (>=0.5.1,<0.6.0)
+Requires-Dist: docker (>=4.4.2,<5.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: esdk-obs-python (>=3.20.11,<4.0.0)
+Requires-Dist: huaweicloud-sdk-python (>=1.0.28,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: tabulate (>=0.8.7,<0.9.0)
