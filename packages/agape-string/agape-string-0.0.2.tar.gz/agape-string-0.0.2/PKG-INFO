@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: agape-string
+Version: 0.0.2
+Summary: String manipulation
+Home-page: https://gitlab.com/MiverikMinett/agape
+Author: Maverik Minett
+Author-email: maverik.minett@gmail.com
+License: All rights reserved.
+Description: # Agape
+        
+        String manipulation
+        
+        
+        ## Functions
+        
+        ### `slugify( string )`
+        
+        Returns a URL safe slug from a string
+        
+        ### `tokenize( string )`
+        
+        Returns a string formatted in snake-case
+        
+        ### `pluralize( string )`
+        
+        Convert singular noun to plural noun
+        
+        
+        ## License
+        
+        Copyright (C) 2021 Maverik Minett
+        
+        The (MIT) license.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
