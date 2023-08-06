@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: ghm
+Version: 0.1.0
+Summary: GitHub Mirrorer - Bulk mirror GitHub repositories
+Home-page: https://github.com/mconigliaro/ghm
+Author: Mike Conigliaro
+Author-email: mike@conigliaro.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pygit2 (<2.0,>=1.4)
+Requires-Dist: PyGithub (<2.0,>=1.5.3)
+
+# Github Mirrorer
+
+[![ghm](https://circleci.com/gh/mconigliaro/ghm.svg?style=svg)](https://circleci.com/gh/mconigliaro/ghm)
+
+Simple command-line utility for bulk mirroring GitHub repositories
+
+## Installation
+
+    pip install ghm
+
+## Running the Application
+
+    ghm [options] <path>
+
+Use `--help` to see available options.
+
+## Development
+
+### Getting Started
+
+    pip install pipenv
+    pipenv install --dev
+    pipenv shell
+    ...
+
+### Running Tests
+
+    pytest
+
+### Releases
+
+1. Bump `VERSION` in [ghm/meta.py](ghm/meta.py)
+1. Update [CHANGELOG.md](CHANGELOG.md)
+1. Run `make release`
+
+
