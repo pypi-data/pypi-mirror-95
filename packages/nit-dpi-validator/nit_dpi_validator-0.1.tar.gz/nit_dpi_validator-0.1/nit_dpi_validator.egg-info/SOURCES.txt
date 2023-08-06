@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+nit_dpi_validator/__init__.py
+nit_dpi_validator/dpi.py
+nit_dpi_validator/nit.py
+nit_dpi_validator.egg-info/PKG-INFO
+nit_dpi_validator.egg-info/SOURCES.txt
+nit_dpi_validator.egg-info/dependency_links.txt
+nit_dpi_validator.egg-info/top_level.txt
