@@ -1,0 +1,16 @@
+py_gzdoom_launcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_gzdoom_launcher/configure_window.py,sha256=28SmoLknjo71_j12HbjB6H6Mf1cOHIglDQE7Sclwo1w,6875
+py_gzdoom_launcher/create_profile.py,sha256=VF3tRYPV-WwwTLuqdpKvBv94B8Y3RZasirY7tnDaKeQ,13447
+py_gzdoom_launcher/gameplay_options.py,sha256=WaQPp9AHpQezjT8kQ9lhKUA5WW6Mr5T3eephVbxw41g,6195
+py_gzdoom_launcher/main.py,sha256=TSn4QiXueX7MNXilPJtDSVt7wHPzKo9GeUfGtnaDw_s,3070
+py_gzdoom_launcher/profile.py,sha256=3NJzGM11lcpzfRKohqDF_Lpqzp6k9gfmo4JfXTiQsLA,3307
+py_gzdoom_launcher/run_command.py,sha256=S6xleLyOi7vaMZ3EII_zqE2vN1edwXelSVoVipJo8SE,2533
+py_gzdoom_launcher/select_profile.py,sha256=k98sJwHB3-sUfWGEELT3yEOnVzU-Xb4l5zlbcYtsxU0,12641
+py_gzdoom_launcher/variables.py,sha256=VpJa4L4e2WeMGGzfZOMMRIy8uiekHOWwmUe_6j4BLcI,1554
+py_gzdoom_launcher/version.py,sha256=SINxKS1CsbwHmdvRqABqmAdkI392tLgOOjc2YLrwhdI,24
+py_gzdoom_launcher-0.0.19.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+py_gzdoom_launcher-0.0.19.dist-info/METADATA,sha256=GEWVVnaT2Qs-b3DNpUGg6L1YhHVqvHUbnrKjWy10dmg,623
+py_gzdoom_launcher-0.0.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+py_gzdoom_launcher-0.0.19.dist-info/entry_points.txt,sha256=GGw3VolSuKC_PrOVYt90HdfkXDJHO80kjHMH8G5ZJIc,121
+py_gzdoom_launcher-0.0.19.dist-info/top_level.txt,sha256=CkgrhF34t_h4U1vZgdd9xPwEWYbYeRmOWE_yNErAzTQ,19
+py_gzdoom_launcher-0.0.19.dist-info/RECORD,,
