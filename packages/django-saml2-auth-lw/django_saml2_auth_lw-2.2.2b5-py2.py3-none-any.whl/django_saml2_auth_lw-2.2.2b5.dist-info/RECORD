@@ -1,0 +1,11 @@
+django_saml2_auth_lw/__init__.py,sha256=gHEKa8aZIIISAI3nbVdCUgvGBVgnTA7vyJy6PY_QxZc,24
+django_saml2_auth_lw/urls.py,sha256=5mprRFrFDMs1qzKBOTCDcmKhDmbAEkL-l1-z-XmZ2IA,254
+django_saml2_auth_lw/views.py,sha256=bDGKueGFHqff9Q36a5aikmRqry7fTB_0r4Ou5jsWz3s,8930
+django_saml2_auth_lw/templates/django_saml2_auth/denied.html,sha256=05_q8edXdlUZman8fBD8VIs_TQ7CXYp8v_yjOxsKzoA,327
+django_saml2_auth_lw/templates/django_saml2_auth/signout.html,sha256=nKiy8LhA9cu_LFm8AZHHpccVPr0ZhbD7U81tWWHBQss,308
+django_saml2_auth_lw-2.2.2b5.dist-info/AUTHORS.rst,sha256=-gUIl5pZYGk8I6ImmDGLcQ1qEiZtI-B--RjLm3eHKWY,799
+django_saml2_auth_lw-2.2.2b5.dist-info/LICENSE,sha256=1--rXQWiGchW7Tj77ZwMvqou4dN1klHLZzQnOaKs_AU,567
+django_saml2_auth_lw-2.2.2b5.dist-info/METADATA,sha256=hagSkTh8E4ScAP5hLu0tkCb7JntPJTQ5WJ5scDe7Dx0,11853
+django_saml2_auth_lw-2.2.2b5.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+django_saml2_auth_lw-2.2.2b5.dist-info/top_level.txt,sha256=dCsRX-lP8bJf5l64I4_LZ8tbzhDc2YZhN_KiJ0zj9-I,21
+django_saml2_auth_lw-2.2.2b5.dist-info/RECORD,,
