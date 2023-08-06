@@ -1,0 +1,7 @@
+[asdf_extensions]
+jwst_datamodel = jwst.datamodels.extension:DataModelExtension
+jwst_pipeline = jwst.transforms.jwextension:JWSTExtension
+
+[stpipe.steps]
+jwst = jwst.stpipe.integration:get_steps
+
