@@ -1,0 +1,17 @@
+embo/VERSION,sha256=FXXhr0qV8S9wtO5qatzoFglT2T6hfcJhG5CIPMw607g,6
+embo/__init__.py,sha256=JgKYWl3CF6j9VZu2izKRWd3SSJk8gd-CM_WIXmloQUk,160
+embo/core.py,sha256=9OlHHeoYtFsJq-MmmtZxrlvW3u0NgpKx1pMMljCBclk,18236
+embo/utils.py,sha256=2R8_3cpITTq8-QnHsxOSgQpRgEvz8LPkAqJARhGv__o,4540
+embo/examples/Basic-Example.ipynb,sha256=jKJAEjwuzKKPKaTySmSRCaKPV0gN6J9daCWpEr1uyUg,102196
+embo/examples/Compare-embo-dit.ipynb,sha256=herHJfGKrybbSbvVMe33nMGK27kaqHB6oMtizGuTSx4,189994
+embo/examples/Deterministic-Bottleneck.ipynb,sha256=CeQ2OUDcHOpchP2KH-hn04tAENx5A9o6vWdDsbqeZj0,114564
+embo/examples/Markov-Chains.ipynb,sha256=X0bDYZzs84Nc9VVE0xnU9QZa3UI4gjVtQnbVAQ1BDbw,220235
+embo/examples/README.md,sha256=j7DDNVqYyhGakeik42rLmY3rbxnVlqOPAUGd0j9xhBU,961
+embo/examples/style.mplstyle,sha256=Iaw7xy9k5d4aj8CBTPHGd1l-BiSiBTZildkqTt8srNM,411
+embo/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embo/test/test_embo.py,sha256=hPRcQfV3xveIwsYoamJdZXVPVisaNcSw9yJVxn2s2Nk,10428
+embo-1.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+embo-1.1.0.dist-info/METADATA,sha256=s51UP6nYGCMX9uZuGQW2NFYYAIbAUqih8Vs6-BGE8js,6920
+embo-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+embo-1.1.0.dist-info/top_level.txt,sha256=ljAtnrIrMeLMZ8DJzi192OpO8Bp11wJeXNKHv44ykwE,5
+embo-1.1.0.dist-info/RECORD,,
