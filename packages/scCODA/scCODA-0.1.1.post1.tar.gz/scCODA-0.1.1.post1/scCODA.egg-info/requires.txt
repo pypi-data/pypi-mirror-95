@@ -1,0 +1,14 @@
+numpy
+scipy
+tensorflow
+tensorflow-probability
+arviz
+seaborn
+pandas
+matplotlib
+scanpy
+anndata
+patsy
+sklearn
+statsmodels
+rpy2
