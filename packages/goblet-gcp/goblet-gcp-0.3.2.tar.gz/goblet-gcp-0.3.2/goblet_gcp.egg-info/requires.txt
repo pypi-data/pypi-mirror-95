@@ -1,0 +1,7 @@
+apispec
+click
+google-api-python-client
+google-cloud-storage
+functions-framework
+marshmallow
+ruamel.yaml
