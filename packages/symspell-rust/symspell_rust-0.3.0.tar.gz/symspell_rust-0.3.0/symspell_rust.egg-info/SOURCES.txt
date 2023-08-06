@@ -1,0 +1,14 @@
+Cargo.toml
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lib.rs
+src/symspell_rust.rs
+symspell_rust/__init__.py
+symspell_rust.egg-info/PKG-INFO
+symspell_rust.egg-info/SOURCES.txt
+symspell_rust.egg-info/dependency_links.txt
+symspell_rust.egg-info/not-zip-safe
+symspell_rust.egg-info/top_level.txt

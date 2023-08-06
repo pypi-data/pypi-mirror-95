@@ -1,0 +1,29 @@
+[package]
+name = "symspell_rust"
+version = "0.1.0"
+license = "MIT"
+authors = ["zoho-labs"]
+keywords = ["spellcheck, symspell, rust, python, pyo3"]
+description = "Fast and Accurate Spelling correction"
+homepage = "https://github.com/zoho-labs/symspell"
+repository = "https://github.com/zoho-labs/symspell"
+exclude = [
+    "data/*","examples/*","Cargo.lock",
+]
+
+[profile.release]
+overflow-checks = true
+
+[profile.dev]
+opt-level = 3
+
+[lib]
+name = "symspell_rust" 
+crate-type = ["cdylib"]
+
+[dependencies]  
+symspell = "0.4.1"
+
+[dependencies.pyo3]
+version = "0.8.5"
+features = ["extension-module"]
