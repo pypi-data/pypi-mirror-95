@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "bankedpy"
+version = "0.1.4"
+description = "A python client for consuming Banked API"
+authors = ["Aryan Curiel <aryan.curiel@gmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/acuriel/bankedpy"
+repository = "https://github.com/acuriel/bankedpy"
+keywords = ["banked", "api", "client", "pydantic"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+pydantic = "^1.7.3"
+iso4217 = "^1.6.20180829"
+email-validator = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
