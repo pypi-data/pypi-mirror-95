@@ -1,0 +1,9 @@
+bioportal/__init__.py,sha256=WFhNluEU1TdCl3oBXooWV18f9OoMcg93ps5d928omOA,45
+bioportal/bioportal_client.py,sha256=SlWcs8jLS681bZk8d3ht1yc-oneKHbCLFnYyYDoPPx0,6968
+bioportal-apis/__init__.py,sha256=WFhNluEU1TdCl3oBXooWV18f9OoMcg93ps5d928omOA,45
+bioportal-apis/bioportal_client.py,sha256=CSuQuoFKeab2kIQ3zXK835W_Mc22SowU8kAbIGZ67aI,5968
+bioportal-0.0.4.dist-info/LICENSE,sha256=xrhBfZLVJEHVgJ13Q0ccg0hXIGKbdw3Lh5LPZVe5o-Y,1098
+bioportal-0.0.4.dist-info/METADATA,sha256=g53M4om3r-ySmAKPhls8m1RYUibNY3KK47jntH5baB4,4187
+bioportal-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bioportal-0.0.4.dist-info/top_level.txt,sha256=dt6ghwrHp2hOyZZYEhWKqAksoqTg41-LZCVVrgvbQ1I,10
+bioportal-0.0.4.dist-info/RECORD,,
