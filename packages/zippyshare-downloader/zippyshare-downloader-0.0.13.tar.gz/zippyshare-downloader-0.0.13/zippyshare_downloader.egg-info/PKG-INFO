@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: zippyshare-downloader
+Version: 0.0.13
+Summary: Download file from zippyshare directly from python
+Home-page: https://github.com/trollfist20/zippyshare-downloader
+Author: Rahman Yusuf
+Author-email: danipart4@gmail.com
+License: MIT
+Download-URL: https://github.com/trollfist20/zippyshare-downloader/archive/v0.0.13.tar.gz
+Description: ## zippyshare-downloader
+        
+        Download file from zippyshare directly from python
+        
+        ### Installation
+        ```
+        pip install zippyshare-downloader
+        ```
+        
+        ### Simple usage:
+        
+        ```python
+        
+        from zippyshare_downloader import Zippyshare
+        
+        z = Zippyshare()
+        z.download('give zippyshare url here')
+        
+        ```
+        
+        ### extract info usage:
+        
+        ```python
+        
+        from zippyshare_downloader import Zippyshare
+        
+        z = Zippyshare()
+        info = z.extract_info('give zippyshare url here')
+        
+        print(info)
+        
+        # {'name_file': ..., 'size': ..., 'date_upload': ....}
+        ```
+        
+Keywords: zippyshare,zippyshare-download
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
