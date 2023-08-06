@@ -1,0 +1,5 @@
+parameterized
+pillow
+python-telegram-bot
+pymongo
+pytz
