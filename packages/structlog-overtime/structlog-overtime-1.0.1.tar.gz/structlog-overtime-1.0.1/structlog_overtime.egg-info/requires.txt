@@ -1,0 +1,17 @@
+structlog>=20.2.0
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+black
+carthorse
+flake8
+isort
+mypy
+pytest
+pytest-cov
+setuptools>=38.6.0
+testfixtures
+twine
+wheel
