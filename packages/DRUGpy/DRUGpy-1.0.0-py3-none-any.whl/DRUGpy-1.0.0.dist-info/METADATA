@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: DRUGpy
+Version: 1.0.0
+Summary: Some PyMOL utilities
+Home-page: https://github.com/labimm/DRUGpy
+Author: Pedro Sousa Lacerda
+Author-email: pslacerda@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: requests
+Requires-Dist: cached-property
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: jinja2
+
+Installation
+============
+
+Go to Plugin Manager to Install New Plugin, then Fetch the URL
+https://raw.githubusercontent.com/labimm/DRUGpy/master/scripts/DRUGpy.py.
+
+
+Command Manual
+==============
+
+Go to https://raw.githubusercontent.com/labimm/DRUGpy/master/COMMANDS.html.
+
+
+
