@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Kadal
+Version: 0.2.5
+Summary: Async wrapper for the Anilist API
+Home-page: https://github.com/SynderBlack/Kadal
+Author: SynderBlack
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: multio
+Provides-Extra: asyncio
