@@ -1,0 +1,7 @@
+[console_scripts]
+generate_poisson_data = mud_examples.poisson:run
+mud_examples = mud_examples.runner:run
+mud_run_all = mud_examples.runner:run_all
+mud_run_ode = mud_examples.runner:run_ode
+mud_run_pde = mud_examples.runner:run_pde
+
