@@ -1,0 +1,7 @@
+setup.py
+eiprice/__init__.py
+eiprice.egg-info/PKG-INFO
+eiprice.egg-info/SOURCES.txt
+eiprice.egg-info/dependency_links.txt
+eiprice.egg-info/requires.txt
+eiprice.egg-info/top_level.txt
