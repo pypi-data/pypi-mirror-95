@@ -1,0 +1,12 @@
+bucket_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bucket_adapter/adapter.py,sha256=n9Bt2Laqsb94T-zj33y1VrDLF5-ktaoTQs03aB0jStY,856
+bucket_adapter/django_adapter.py,sha256=q34lJ99s731CLWkqDj07L-2zsvxaiNx-ouL7Yxg_GXg,173
+bucket_adapter/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bucket_adapter/aws/adapter.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bucket_adapter/gcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bucket_adapter/gcp/adapter.py,sha256=3SgHWiJesshorV-Bzk23Q1jbBzuE18W7CPbT7r9JJys,1973
+bucket_adapter-0.1.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+bucket_adapter-0.1.3.dist-info/METADATA,sha256=pS4-QSl5x03iiF9Pr6T3uchs5kIighDfn9dRb5RhSWA,931
+bucket_adapter-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bucket_adapter-0.1.3.dist-info/top_level.txt,sha256=LN-lEZxZwuvdsiybfOlcpV5YLjouclK8TAz-ZnowGXE,15
+bucket_adapter-0.1.3.dist-info/RECORD,,
