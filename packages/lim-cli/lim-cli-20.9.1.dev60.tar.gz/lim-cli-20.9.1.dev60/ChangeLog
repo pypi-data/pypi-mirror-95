@@ -1,0 +1,548 @@
+CHANGES
+=======
+
+* Optimize test runs a bit
+* Change order of tests
+* Switch channel
+* Only install tox in base env
+* Missing tox
+* Fix missing miniconda in Travis CI
+* Ignore pep8 findings
+* Fix recursive get
+* Preserve stdout/stderr to debug docker-compose
+* Work around removal of --show-current option
+* Change default to install package
+* Fix recursive download logic
+* Clean up unused code
+* Only run skip check once
+* Normalize scenario names to make case irrelevant
+* Major rewrite to use new CTU JSON index
+* Move container checks to bats test and use skip
+* Force timezone in test
+* Change default Makefile target
+* Improve --help text and documentation formatting
+* Update tox configuration
+* Extend test coverage for 'ctu' subcommands
+* Improve Makefile
+* Temporary commit of work to leave keyboard
+* Improve handling of no data
+* Convert more format() to f-strings
+* Limit output while debugging
+* Resolve pep8 findings
+* Improve comments
+* Initial code changes for new index
+* Switch to using gitpython module
+* Normalize some logger output
+* Improve README content
+* Resolve pep8 findings
+* Move general functions up one module level
+* Refine browser selection code and documentation
+* Add hack to open Windows browser from WSL
+* Handle Docker not running exception
+* Rename python file to match command renaming
+* Rename 'cafe containers' subcommands
+* Don't put out UI message on --debug
+* Allow proceeding with changes in repo (dirty)
+* Add missing directives
+* Add option to expose workers.json definitions
+* Improve branch status check
+* Finish fixing remote option handling
+* More sigh..
+* Sigh..
+* And \*now\* the quotes become a problem?!?
+* Now we're getting somewhere
+* And now they are missing?
+* Remove extraneous paren
+* How did the indentation get messed up?
+* Is this better?
+* Still broken
+* OK, is THAT better?
+* Fix yaml error
+* Fix logic related to publishing artifacts
+
+20.9.0
+------
+
+* Prepare for release
+* Resolve pep8 finding
+* Get containers list from workers.json file
+* Improve repo update checking
+* Add option control of GitHub remote
+* Continue updating documentation
+* Handle default situation better
+* Refactor and DRY out web browser handling
+* Update help text file
+* Add asciicast for installing lim and packet\_cafe
+
+20.8.7
+------
+
+* Prepare for release
+* Improve handling of repo updates for containers
+* Abort (or not) on failed job while tracking
+* Increase buffer size for asyncio reads
+* Handle dirty repo directory
+* Handle server error better
+* Ensure packet\_cafe containers ready for testing
+* Disable daemon mode on "up" when --debug used
+* Enable all columns if user passes -c flag
+* Reduce number of default columns for images
+* Fix update check logic
+* Fix conditional
+* Pass along return code on clone
+* Provide feedback when checking out branch
+* Fix bug in setting subprocess environment
+* Don't operate on release branch pushes
+* Improve git repo checks
+* Use environment variable in launch.json
+* Switch to using "production" clone directory
+* Fix error message
+
+20.8.6
+------
+
+* Prepare for release
+* Resolve pep8 findings
+
+20.8.5
+------
+
+* Prepare for release
+* Rename network-tools with underscore not hyphen
+* Update documentation for packet\_cafe commands
+* Ensure VOL\_PREFIX set
+* Fix asciinema link (updated asciicast)
+* Handle repo update when pulling containers
+* Ensure VOL\_PREFIX is set for docker-compose
+* Fix bug in environment preparation
+* Collapse function call to one line
+* Fix f strings
+* Add toolspace version support and use .env default
+* Use asyncio coroutine for subprocess output
+* Fix options spelling
+* Switch file being used to match other tests
+* Fix logic error
+* Improve container image removal
+* Add more robust checks for cloning repo
+* Switch to using a smaller CTU file for testing
+* Attempting to fix test that fails on Kali
+* Fix typo in test
+* Complete feature set for managing containers
+* Resolve bandit finding
+* Update test
+* Resolve pep8 finding
+* Left out return call
+* Initial working expansion of container subcommands
+* Update documentation
+* Start supporting multiple namespaces in Makefile
+* Remove obsolete commands
+* Add debugging launch configuration
+* Add target to pull service and worker containers
+* Attempting to minimize runs
+* Add job context for debugging
+* Expose more context for debugging
+
+20.8.4
+------
+
+* Prepare for release
+* Fix conditional syntax
+* Fix conditionals publishing releases
+
+20.8.3
+------
+
+* Prepare for release
+* Improve comments
+* Normalize echo statements
+* Consolidate variable setting/displaying
+* Can't access outputs for same step within step
+* Deleted one too many line
+* Consolidate into fewer steps
+* Fix syntax error
+* Change fetch\_depth to try to fix version 0.0.1
+* Clean up workflow file
+* Fix order of steps
+* Continuing to debug
+* Try changing task order
+* Fix shell syntax error
+* Continue to debug version problem
+* Clean up variable output
+* Expose more variables to debug this
+* Wrong YAML syntax
+* Echo version number for debugging
+* Make sure setup.py and tox.ini use same versions
+* Try to work around 0.0.0 version bug
+* Try a different identifier (version was 0.0.0)
+* Use '.RC' in tag for conditional on publish
+* Only publish on tags (e.g., use X.X.X.RCY tag)
+
+20.8.2
+------
+
+* Prepare for release
+* Only do bats tests once (moved into tox)
+* Add target
+* Add GitHub Actions badge
+* Work around inability to share vars across jobs
+* Attempting to fix variable use
+* Remove quotation marks
+* Remove redundant make target
+* Correct directory path
+* Use proper artifact path
+* Expose paths and fix download
+* Fix artifact upload/download (multiple artifacts)
+* Ensure wheel package is present
+* Improve and extend bats testing
+* Normalize "no sessions" checking and error messages
+* Add bdist\_wheel
+* Fix artifact name
+* Fix artifact name
+* Adjust global conditional for Publish
+* Fix incorrect expression
+* Refine conditional in workflow
+* Update asciinema asciicast
+
+20.8.1
+------
+
+* Bump version
+* Change secrets variables
+
+20.8.0
+------
+
+* Bump version and prepare ChangeLog for release
+* Fix broken link
+* Add twine
+* Add GitHub workflows directory and actions
+* Add tests for last session and request ID state
+* Port session+request state mgmt to packet\_cafe
+* cyberreboot -> iqtlabs
+* Improve README.rst
+* Refine runtime tests for packet\_cafe subcommands
+* Fix bugs re: saving session/request state
+* Update test output docs
+* Refactor tox configuration
+* Fix regression error in testing
+* Fix setuptools warning
+* Resolve pep8 findings
+* Ignore python warnings in tests
+* Fix typo in test
+* More edits related to renaming of packet\_cafe repo
+* Rename github repo for packet\_cafe
+* Fix bug in extracting packet\_cafe container data
+* Fix bug in saving last request ID state
+* Remove redundant flag
+* Tighten up documentation
+* Resolve warning message
+* Update documentation
+* Extend packet\_cafe control in Makefile
+* Update help text
+* Be more clear about lim being a CLI
+
+20.6.3
+------
+
+* Bump version
+* Prevent recurring BrokenPipeError exceptions
+* Update documentation and help text
+* Fix spacing in asciicast explanatory text
+* Add screen captures to docs/images
+* Add example commands and asciicast file
+* Keep track of nodes with full path (dirs repeat)
+* Add packet\_cafe cleanup targets to Makefile
+* Get rid of ChangeLog when installing for devtest
+* Ignore broken pipe exceptions
+* Add test for VOL\_PREFIX export
+* Add '--tree' option for files, results
+* Don't stop for ChangeLog
+* Fix test
+* Don't need to know about pipes we broke
+* Fix spacing in error message
+* Add pyreadline for Ubuntu on WSL to work
+
+20.6.2
+------
+
+* Bump version for release
+* Fix test
+* Resolve pep8 findings
+* Add method to get dict of session+request IDs
+* Improve reporting
+* Fix bug in containers check
+* Add failure assertions to other failure tests
+* Add failure test for wrong tool
+* Resolve option '-c' conflict
+* Clarify how the options work
+* Fix bugs in class methods, logic, and use
+* Fix bug in logic
+* Improve help text
+* Improve container status checking
+* Add missing kwarg parameter
+* Update VSCode test configuration
+* Improve test coverage
+* Add tty enforcement for opening browser
+* Fix logic and grammar
+* Improve help output
+* Fix documentation link
+* Add method to get dict of session+request IDs
+* Improve reporting
+* Fix bug in containers check
+* Add failure assertions to other failure tests
+* Add failure test for wrong tool
+* Resolve option '-c' conflict
+* Clarify how the options work
+* Fix bugs in class methods, logic, and use
+* Fix bug in logic
+* Improve help text
+* Improve container status checking
+* Add missing kwarg parameter
+* Update VSCode test configuration
+* Improve test coverage
+* Add tty enforcement for opening browser
+* Fix logic and grammar
+* Improve help output
+* Fix documentation link
+
+20.6.1
+------
+
+* Bump version
+* Add missing requirements for generating docs
+* Finish "cafe containers" subcommand
+* Add check for all containers in 'running' state
+* Raise exception if no sessions available at all
+* Add initial "cafe containters" subcommand
+* Make error handling more DRY
+* Extend packet-cafe runtime tests
+* Improve argv[0] correction
+* Refactor API calls to be more class-y :)
+* Split runtime tests into better parts
+* Fixed tox (setup.py -> pytest upgrade)
+* Resolve syntax error
+* Add "cafe ui" subcommand to documentation
+* Add images for documentation
+* Add Python 3.8 to pypi metadata
+
+20.6.0
+------
+
+* Bump version
+* Update doc example
+* Update release status to "4 - Beta"
+* Add status badges back in
+* Update OS versions
+* Add travis-ci config
+* Fix broken link
+* Hide output
+* Add URL feedback, screenshot, for "lim cafe about"
+* Narrow clean target actions in docs/
+* Add Docker dashboard packet-cafe image
+* Oops on file name
+* Note "test" Makefile target
+* Resolve pep8 findings
+* Update help and test related docs
+* Fix asynchronous processing bug in testing
+* Add packet-cafe section to docs
+* Update README.rst
+* Convert boolean to "yes" or "no"
+* Update docs installation and testing sections
+* Fix changes section
+* Update installation instructions to include pipx
+
+20.5.2
+------
+
+* Bump version
+* Update help test
+* Update "cafe admin delete" documentation
+* Remove unused code from feature branch
+* Finish functional "cafe report" subcommand
+* Add elapsed timing feedback to "cafe upload"
+* Add VS Code test launch configs
+* Missed "chose" vs. "choose" on merge
+* Temp save while developing networkml reporting
+* Add "cafe report" subcommand and debug config
+* Fix "chose" vs. "choose"
+* Normalize exception error messages
+* Work around pbr version determination bug
+
+20.5.1
+------
+
+* Bump version: 20.5.0 → 20.5.1
+* Clean up last request and session state on delete
+* Refine package creation and release
+* Don't tag on bumpversion (use hubflow instead)
+* Update usage and testing documentation
+* Make execute-as-module work properly
+* Fix bug related to last session id
+* Expand runtime tests
+* Update help documentation
+* Be more verbose if no sessions found
+* Clean up runtime feedback output
+* Add "cafe admin delete" subcommand
+* Flatten lists when outputting
+* Try to keep ChangeLog clean until release
+* Add reminder when reusing sess\_id or req\_id
+* Add interactive tool choice
+* Generalize "ctu stats" to quantify any attribute
+* Add 'ctu show' subcommand
+* Add debugging config
+* Fix bug in hash matching logic
+* Don't repeat tests
+* Clarify project description
+* Add long description type variable per error msg
+* Update feature list and introduction
+* Change package name in setup.cfg as well
+* Changed name and location of cache file out of cwd
+* Ignore ChangeLog changes
+* More documentation updates
+* Be transparent about columns, groups in help text
+* Move default path to CTU cache file to home dir
+* Rename project due to pypi name clash. :(
+* Only create sdist (no bdist, egg)
+* Trying to take control of rtd build for cliff sake
+* Fixing readthedocs (setup.py?)
+* Update ChangeLog
+* Fix regression bug re: where to get file
+* Update ChangeLog
+
+20.5.0
+------
+
+* Fix tests
+* Bump version
+* More documentation updates
+* Change variable initialization
+* Fix copyright+license in help output
+* Update documentation
+* Remove redundant file encoding setting
+* Clean up state files
+* Fix default data directory option
+* Remove obsolete file
+* Restructure "pcap" subcommand
+* Restructure "ctu" subcommand
+* Fix missed merge conflict
+* Resolve pep8 findings
+* Start generalizing web browser control
+* Correct logic mistake
+* Add documentation
+* Add "cafe ui" subcommand
+* Save and use last session and request ID state
+* Add "cafe about" subcommand for online docs
+* Add "cafe stop" subcommand
+* Add "cafe results" subcommand
+* Handle situation where no sessions exist
+* Track worker progress in realtime on "cafe upload"
+* Fix issues with f strings
+* Add global options for packet\_cafe host IP & port
+* Fixed missed merge conflict resolution target
+* Add more launch targets
+* Add another debug option
+* Update README.md to reflect API coverage
+* Add "cafe raw" subcommand
+* Add filtering to "cafe admin results" subcommand
+* Rename functions to better clarify purpose
+* Add interactive selection using bullet
+* Remove unused file
+* Initial working packet-cafe CLI subcommands
+* Arrow no longer issues parse warning
+* Can't use env variables in bats test titles
+* Add more launch targets
+* Add another debug option
+* Update documentation
+* Fix testing
+* Add support for added IoT datasets
+* Ignore Python cache directories
+* Fix tox configuration
+* Replace relative imports
+* Fix typo in file name
+* Add more launch targets
+* Fix type in VSCode launch.json file
+* Update README.md to reflect API coverage
+* Add "cafe raw" subcommand
+* Add filtering to "cafe admin results" subcommand
+* Rename functions to better clarify purpose
+* Add interactive selection using bullet
+* Remove unused file
+* Initial working packet-cafe CLI subcommands
+* Fix type error
+* Resolve pep8 findings
+* Keep .vscode/launch.json in Git
+* Add VSCode launch.json file
+* Log reconstructed command line on -vv
+* Up cache timeout from 7 to 30 days
+* Add help about old->new time logging
+* Clarify time conversion usage
+* Fix formatting
+* Fixes to Makefile
+* Log shifted packet timestamps on -vv
+* Add to help output
+* Improve robustness of ctu recursive get
+* Ignore output explicitly
+* Add recursive get (wget) of all scenario data
+* Update ChangeLog
+* Resolve pep8 findings
+
+v19.8.2
+-------
+
+* Bump version: 19.8.1 → 19.8.2
+* Add pcap subcommands
+* Default to just primary attributes
+* Add WeblogNG file to attributes
+* Support short names for Malware group
+* Invoke web browser for visiting URLs in "overview"
+* Add searching for string in scenario description
+* Add .gitignore file
+
+19.8.1
+------
+
+* Forgot to bump version
+
+19.8.0
+------
+
+* Squashed commit of the following:
+* Relabel CTU section
+* Fix docs-tests to generate text for docs
+* Improve cache handling
+* Improve getting scenario attributes
+* Handle bats in a simpler way than Git submodules
+* Document CTU subcommands with examples
+* Add ability to limit output
+* Only log debug messages when debug is True
+* Only log debug messages when debug is True
+* Resolve pep8 findings
+* Fix Makefile
+* Git ignore Sphinx build directory
+* Make help txt file on install
+* Temporarily remove LANL commands
+* Update Changelog
+* Forgot to commit added command 'ctu overview'
+* Finish 'ctu get' logic
+* Improve unit tests
+* Fix module id and version numbers
+* Only apply CTU disclaimer to 'ctu' commands
+* Fix use of test cache file
+* Add more methods and unit tests
+* Improve OO nature of CTU\_Dataset class & scraping
+* Add initial unit tests for CTU\_Dataset class
+* Update documentation
+* Resolve pep8 findings
+* Simplify and generalize ctu commands
+* Fix help text and include CTU disclaimer
+* Make elapsed time an option (default off)
+* Fix command name in docs
+* Fix timer
+* Rename lim/ctu13.py to lim/ctu.py
+* Finish asyncio web scraper for CTU datasets
+* Clean up cache file
+
+19.7.0
+------
+
+* Initial commit
