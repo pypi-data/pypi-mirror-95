@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+indy_vdr/__init__.py
+indy_vdr/bindings.py
+indy_vdr/error.py
+indy_vdr/ledger.py
+indy_vdr/pool.py
+indy_vdr/request.py
+indy_vdr/test_server.py
+indy_vdr/version.py
+indy_vdr.egg-info/PKG-INFO
+indy_vdr.egg-info/SOURCES.txt
+indy_vdr.egg-info/dependency_links.txt
+indy_vdr.egg-info/top_level.txt
