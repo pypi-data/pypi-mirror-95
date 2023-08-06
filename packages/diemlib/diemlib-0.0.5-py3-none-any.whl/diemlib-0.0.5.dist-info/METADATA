@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: diemlib
+Version: 0.0.5
+Summary: Python Utilities for DIEM
+Home-page: https://github.ibm.com/CIO-SETS/diem
+Author: Guy Huinen
+Author-email: guy_huinen@be.ibm.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python utilities for DIEM
+
+Diem is an IBM ETL Package
+
+
