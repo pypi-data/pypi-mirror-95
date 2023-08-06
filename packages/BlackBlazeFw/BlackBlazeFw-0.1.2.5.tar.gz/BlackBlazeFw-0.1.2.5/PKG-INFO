@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BlackBlazeFw
+Version: 0.1.2.5
+Summary: A Minimalistic Web Framework
+Home-page: https://github.com/Black-Blaze/web-fw/
+Author: Black Blaze
+Author-email: blckblze@gmail.com
+License: UNKNOWN
+Description: # Black Blaze-WEBfw
+        
+        Black Blaze-WEBfw is a minimalistic web framework for python. Documentation Available At
+        [Github](https://github.com/Black-Blaze/web-fw/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,12 @@
+gunicorn==20.0.4
+WebOb==1.8.6
+sniffio
+rfc3986
+hstspreload
+h11
+hpack
+hyperframe
+h2
+httpcore
+httpx
+googletrans
