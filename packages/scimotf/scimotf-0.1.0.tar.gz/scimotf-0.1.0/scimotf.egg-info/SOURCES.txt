@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+scimotf/__init__.py
+scimotf/__main__.py
+scimotf/base.py
+scimotf.egg-info/PKG-INFO
+scimotf.egg-info/SOURCES.txt
+scimotf.egg-info/dependency_links.txt
+scimotf.egg-info/entry_points.txt
+scimotf.egg-info/requires.txt
+scimotf.egg-info/top_level.txt
