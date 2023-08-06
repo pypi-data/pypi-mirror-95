@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fugle-realtime-compatible
+Version: 0.2.8rc0
+Summary: fugle_realtime_compatible
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: numpy (==1.20.1)
+Requires-Dist: pandas (==1.2.2)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: urllib3 (==1.26.3)
+
+使用方法同 [fugle-realtime](https://pypi.org/project/fugle-realtime/) 主要只是兼容 python3.8、python3.9
+
+
