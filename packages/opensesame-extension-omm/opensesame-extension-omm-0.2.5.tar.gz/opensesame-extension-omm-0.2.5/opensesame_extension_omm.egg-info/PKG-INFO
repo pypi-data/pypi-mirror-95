@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: opensesame-extension-omm
+Version: 0.2.5
+Summary: OpenMonkeyMind plugins and extension for OpenSesame
+Home-page: https://github.com/open-cogsci/omm-client
+Author: Sebastiaan Mathot
+Author-email: s.mathot@cogsci.nl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
