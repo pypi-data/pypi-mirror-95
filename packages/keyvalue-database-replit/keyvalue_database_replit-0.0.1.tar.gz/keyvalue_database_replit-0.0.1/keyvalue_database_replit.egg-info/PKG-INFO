@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: keyvalue-database-replit
+Version: 0.0.1
+Summary: Key Value DataBase
+Home-page: UNKNOWN
+Author: Miguel Merheb/ Ahmad Zaaroura
+Author-email: ahmad.zaaroura.123@gmail.com
+License: MIT
+Description: New version of keyvalue_database module that is designed to work on repl.it
+Keywords: DataBase
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
