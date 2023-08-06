@@ -1,0 +1,10 @@
+aiohttp<4
+
+[develop]
+coverage!=4.3
+coveralls
+pylava
+pytest
+pytest-aiohttp
+pytest-cov
+tox>=2.4
