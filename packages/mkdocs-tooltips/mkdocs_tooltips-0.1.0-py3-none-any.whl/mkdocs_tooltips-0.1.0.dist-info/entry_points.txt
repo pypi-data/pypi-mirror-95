@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+tooltips=mkdocs_tooltips.plugin:Tooltips
+
