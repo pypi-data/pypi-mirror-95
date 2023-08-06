@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Python-Directory-Compiler
+Version: 0.1.0
+Summary: A wrapper for Nuitka that walks through a directory tree and compiles all .py Python source files into (.so/.pyd) files.
+Home-page: UNKNOWN
+Author: krazykirby99999
+Author-email: krazykirby99999@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: nuitka
+
+# python-directory-compiler
+[Github Repository](https://github.com/KrazyKirby99999/python-directory-compiler)
+
+A wrapper for Nuitka that walks through a directory tree and compiles all .py Python source files into (.so/.pyd) files.
+
+usage: py-dir-compiler [-h] [-e EXCLUDE [EXCLUDE ...]] [-ds]
+
+optional arguments:
+
+  -h, --help            show this help message and exit
+
+  -e EXCLUDE [EXCLUDE ...], --exclude EXCLUDE [EXCLUDE ...]
+                        (Usage: -e <filename>) (Usage: -e <foldername>)
+                        Exclude folder(s)/file(s) from compilation. Use
+                        absolute path if multiple folders share the same name.
+
+  -ds, --delete_source  (Usage: -ds) Removes source .py files after
+                        compilation. Preserves folder structure.
+
+
