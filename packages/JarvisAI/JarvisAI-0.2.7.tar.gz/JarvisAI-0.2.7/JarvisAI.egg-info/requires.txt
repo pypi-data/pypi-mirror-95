@@ -1,0 +1,12 @@
+numpy==1.18.5
+gtts==2.2.1
+playsound==1.2.2
+SpeechRecognition==3.8.1
+pipwin==0.5.0
+lxml==4.6.1
+pyjokes
+beautifulsoup4==4.9.3
+wikipedia==1.4.0
+auto_face_recognition
+transformers==4.3.2
+lazyme
