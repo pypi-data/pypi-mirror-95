@@ -1,0 +1,11 @@
+README.md
+setup.py
+library_package_porechna/BookClass.py
+library_package_porechna/LibraryClass.py
+library_package_porechna/ReaderClass.py
+library_package_porechna/__init__.py
+library_package_porechna.egg-info/PKG-INFO
+library_package_porechna.egg-info/SOURCES.txt
+library_package_porechna.egg-info/dependency_links.txt
+library_package_porechna.egg-info/requires.txt
+library_package_porechna.egg-info/top_level.txt
