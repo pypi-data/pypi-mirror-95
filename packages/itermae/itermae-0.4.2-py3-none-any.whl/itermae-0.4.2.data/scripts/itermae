@@ -1,0 +1,269 @@
+#!python
+
+import itermae
+
+import argparse
+import re
+import sys
+import regex
+import time
+
+# Using argparse module to define the arguments
+
+# Name and description of this program
+parser = argparse.ArgumentParser(description=""+
+    "itermae - iteratively chop up sequences using fuzzy regular expressions"+
+    "\n\n"+
+    "There is no parallelization internal to this script, so for practical "+
+    "performance you should use multiple files or stream in chunks via "+
+    "STDIN. I recommend you use the later, with GNU parallel, see examples "+
+    "in the README.")
+
+# Input determination 
+parser.add_argument("--input",default="STDIN",
+    help="Where the input reads are. The default is standard input "+
+        "( STDIN ), but this can also be a filepath to read. ")
+# Is it gzip'd ?
+parser.add_argument("-z","--gzipped",action="store_true",
+    help="If the input is gzipped.")
+# Input format
+parser.add_argument("-if","--input-format",default='fastq',
+    help="What format the input is. Default is 'FASTQ'. I expect this, or "+
+        "'SAM', 'FASTA', or 'txt' formats. "+
+        "Anything other than 'SAM' and 'txt' are handled by BioPython SeqIO, "+
+        "so it *should* read anything that can read. "+
+        "'SAM' uses a custom function that loses the input tags, but uses the "+
+        "ID and quality. "+
+        "'txt' means only one sequence per line, and "+
+        "sets the sequence as sequence ID and PHRED qualities as 40.")
+
+# Output determination
+parser.add_argument("--output",default="STDOUT",
+    help="Where to output matches to. The recommended default is standard out "+
+        "( STDOUT ), but this can also be a filepath to write. ")
+parser.add_argument("-of","--output-format",default='sam',
+    help="What format the output should be in. Default is an unmapped SAM "+
+        "('SAM'), also available are 'FASTQ' and 'FASTA', case insensitive.")
+parser.add_argument("--failed",default=None,
+    help="Optional filepath for writing a file containing reads that failed "+
+        "at any stage, like matching, filtering, or forming outputs. Also "+
+        "available is specifying 'STDOUT'.")
+parser.add_argument("--report",default=None,
+    help="Optional filepath for writing a report of read-level statistics. "+
+        "This is heavy disk usage, but useful for debugging runs with a "+
+        "limit (see '--limit') set.")
+
+# verbosity
+parser.add_argument("-v","--verbose",action="count",default=0,
+    help="Level of information to pipe out to STDERR. "+
+        "None is nothing, "+
+        "-v is setup messages and start-stop messsages, "+
+        "-v -v is read-level details, "+
+        "-v -v -v is operation-level details.")
+
+### CLI operation and output specification
+# Operations
+parser.add_argument("-o","--operation",action="append",required=True,
+    help="The operation of matching and extracting. For details about syntax, "+
+        "please refer to the README, documentation, and tutorials, and the "+
+        "regex module documentation about writing fuzzy regexes. "+
+        "\n\n"+
+        "Each operation has a named input group, then a pattern using named "+
+        "capture groups. The input sequence read is called 'input', and is a "+
+        "reserved name (as is 'dummyspacer', reserved for output forming). "+
+        "Each operation is done in the order you specify, so later "+
+        "operations can use previous matching groups as inputs. "+
+        "\n\n"+
+        "Importantly, all input sequences are converted to uppercase, so "+
+        "write all regex in uppercase. The alphabet is unrestricted but "+
+        "untested beyond ATCGN.")
+# Filter specification
+parser.add_argument("-f","--filter",action="append",
+    help="Filters to prevent output of reads that do not pass a criteria. "+
+        "These must evaluate to True or False (in python), and can use "+
+        "some attributes of the matches or matched groups. The 'statistics' "+
+        "package is loaded to permit using summary statistics of these "+
+        "properties. For examples, "+
+        "'umi.length == 5', 'statistics.mean(barcode.quality)',  "+
+        "'sample_barcode == \"TTCAC\"'. See tutorial/documentation for more.")
+
+# Outputs
+parser.add_argument("-oid","--output-id",action="append",required=True,
+    help="Each specification of record IDs to output, per read. "+
+        "These should evaluate to a string in python, and you can access "+
+        "properties of the input and matched groups such as 'input.id' or "+
+        "'umi+seq', and combine these like 'input.id+\"_\"+umi.seq'. " 
+        "to append the index sequence to the FASTQ ID. "+
+        "Multiple arguments of this can be supplied, will be output in "+
+        "the same file, and if output in SAM will have a tag 'IE:Z' "+
+        "specifying which output it is.")
+
+parser.add_argument("-oseq","--output-seq",action="append",
+    help="Each specification of record sequences to output, per read. "+
+        "This must be in the same order as the record IDs, as they are "+
+        "paired. This is evaluated to form a BioPython SeqRecords, so "+
+        "can be assembled by combining the names of matched groups with "+
+        "plus-signs. For example, 'sample+barcode+umi' would append the "+
+        "sequence of these three groups together. "+
+        "'dummyspacer' is also available to insert an 'X' for "+
+        "use in later parsing.")
+
+### Parse the arguments, check them.
+
+args = parser.parse_args()
+
+# Operations, outputs are read as an array of dicts to keep it ordered.
+operations_array = []
+outputs_array = []
+# Here we read on through to add those on, and complain loudly if someone
+# tries to use our reserved names.
+try:
+    for each in args.operation:
+        if each.find("<dummyspacer>") > 0:
+            print("Hey, you can't name a capture group "+
+                "'dummyspacer', I'm using that! Pick a different name.",
+                file=sys.stderr)
+            exit(1)
+
+        if each.find("<input>") > 0:
+            print("Hey, you can't name a capture group "+
+                "'input', I'm using that! Pick a different name.",
+                file=sys.stderr)
+            exit(1)
+        # Here, we use the ` > ` to specify the flow of input to
+        # the regex
+        (input_string, regex_string) = re.split("\s>\s",each.strip())
+        compiled_regex = regex.compile(
+            regex_string.strip(), # We use this regex
+            regex.BESTMATCH # And we use the BESTMATCH strategy, I think
+            )
+        # append that to the operations array
+        operations_array.append( [input_string.strip(), compiled_regex] )
+except:
+    # Failure likely from lack of operations to do
+    print("Wait a second, I don't understand the operations to be done! "+
+        "Are there any? Maybe there's small part I'm choking on? Maybe "+
+        "try adding steps in one at a time in an interactive context with "+
+        "'--limit' set, to debug easier. Exiting...",file=sys.stderr)
+    exit(1)
+
+# Next we build the array of outputs, by combining the named output IDs
+# and seq specifications.
+try:
+    # We need output sequences, so we go through that list, by index
+    for i in range(len(args.output_seq)):
+        if args.output_id is None:
+            # or, use the default of input ID
+            outputs_array.append( [
+                    compile("input.id",'<string>','eval',optimize=2), 
+                    compile(args.output_seq[i],'<string>','eval',optimize=2) 
+                    ])
+        else:
+            # append that to the outputs array
+            outputs_array.append( [
+                    compile(args.output_id[i],'<string>','eval'), 
+                    compile(args.output_seq[i],'<string>','eval') 
+                    ])
+except:
+    # Failure likely from lack of operations to do
+    print("Wait a second, I don't understand the outputs to be done! "+
+        "Are there any? Maybe there's small part I'm choking on? Maybe "+
+        "try adding steps in one at a time in an interactive context with "+
+        "'--limit' set, to debug easier. Exiting...",file=sys.stderr)
+    exit(1)
+
+if args.verbose >= 1:
+    print("\n["+str(time.time())+"] : "+
+        "I'm reading in a "+args.input_format+" format file, "+
+        " applying these operations of matching:\n",file=sys.stderr)
+    for each in operations_array:
+        print("  - from : "+each[0]+"\n"+
+            "    extract groups with regex : '"+str(each[1]),
+            file=sys.stderr)
+
+if args.input == "STDIN" and args.gzipped:
+    print("I can't handle gzipped inputs on STDIN ! Un-gzip for me. "+
+        "Or write to a file, and point me that-a-way.",file=sys.stderr) 
+    exit(1)
+
+if args.verbose >= 1:
+    print("\n["+str(time.time())+"] : ...and with these filters:\n",
+        file=sys.stderr)
+    try:
+        for i in args.filter:
+            print("  - "+i,file=sys.stderr)
+    except:
+        print("  ( no filters defined )",file=sys.stderr)
+
+if args.verbose >= 1:
+    print("\n["+str(time.time())+"] : "+
+        "Then I'm going to construct outputs that look like:\n",
+        file=sys.stderr)
+    if args.output_id is None:
+        oids = ["input.id"]
+    else:
+        oids = args.output_id
+    for oid, oseq in zip(oids,args.output_seq):
+        print("  - With ID of : "+oid+"\n"+
+            "    and the sequence is the group(s) : "+oseq,file=sys.stderr)
+
+filter_array = []
+# If it's omitted, we believe that means no filter, and we make it True
+# because it gets `eval`'d in the function. 
+try:
+    for i in args.filter:
+        filter_array.append( compile(i,'<string>','eval',optimize=2) )
+except:
+    filter_array.append( compile('True','<string>','eval',optimize=2) )
+
+if args.verbose >= 1:
+    print("\n["+str(time.time())+"] : Then, I'm going to write out a "+
+        args.output_format+" format file to "+
+        args.output+"",file=sys.stderr)
+    if args.report is not None:
+        print("\n["+str(time.time())+"] : and a report to '"+
+            vars(args)["report"]+".",file=sys.stderr)
+
+# I should implement the below ... but really?
+#    # checking file existance for outputs, zipping together the 
+#    # output base with each of the three. 
+#    exit_flag = 0
+#    for each in zip( [vars(args)["output-base"]]*20,            \
+#                    ["_fail.fastq", "_pass.fastq",              \
+#                        "_report.fastq", "_report.csv" ] ):
+#        # At this stage, the tuple is joined to make the filename
+#        this_path = ''.join(each)
+#        # If the write-report flag is off and the path is the report,
+#        # then this won't trip True for that path existing
+#import os.path
+#        if os.path.isfile(this_path) and              \
+#                not( not(args.write_report) and       \
+#                    (this_path.find("_report")>=0) ):
+#            print("\n"+"["+str(time.time())+"]"+" : "+"File "+this_path+
+#                " exits, so I'm quitting before you ask me to do "+
+#                "something you might regret.")
+#            exit_flag = 1
+#    if exit_flag == 1:
+#        exit(1)
+
+# We begin
+if args.verbose >= 1:
+    print("\n["+str(time.time())+"] : BEGIN RUNNING",file=sys.stderr)
+
+itermae.reader(
+    input_file=vars(args)["input"], is_gzipped=args.gzipped,
+    operations_array=operations_array, filters=filter_array, 
+    outputs_array=outputs_array,
+    in_format=args.input_format.lower(),
+    out_format=args.output_format.lower(),
+    output_file=vars(args)["output"],failed_file=vars(args)["failed"],
+    report_file=vars(args)["report"],
+    verbosity=args.verbose
+    )
+
+if args.verbose >= 1:
+    print("\n"+"["+str(time.time())+"]"+" : "+
+        "All worked 'till the work is done --- or some fatal error.",
+        file=sys.stderr)
+
+exit(0)
