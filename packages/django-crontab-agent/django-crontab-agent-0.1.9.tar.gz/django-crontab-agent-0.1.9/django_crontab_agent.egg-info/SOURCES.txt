@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+django_crontab_agent/__init__.py
+django_crontab_agent/cli.py
+django_crontab_agent/services.py
+django_crontab_agent.egg-info/PKG-INFO
+django_crontab_agent.egg-info/SOURCES.txt
+django_crontab_agent.egg-info/dependency_links.txt
+django_crontab_agent.egg-info/entry_points.txt
+django_crontab_agent.egg-info/requires.txt
+django_crontab_agent.egg-info/top_level.txt

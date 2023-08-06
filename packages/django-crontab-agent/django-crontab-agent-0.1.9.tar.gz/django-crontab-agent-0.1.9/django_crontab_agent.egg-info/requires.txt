@@ -1,0 +1,4 @@
+fastutils>=0.39.1
+click
+pyyaml
+requests

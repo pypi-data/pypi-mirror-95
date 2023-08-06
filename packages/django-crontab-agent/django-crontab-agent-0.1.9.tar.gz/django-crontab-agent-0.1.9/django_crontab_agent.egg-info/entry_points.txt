@@ -1,0 +1,3 @@
+[console_scripts]
+django-crontab-agent = django_crontab_agent.cli:agent
+
