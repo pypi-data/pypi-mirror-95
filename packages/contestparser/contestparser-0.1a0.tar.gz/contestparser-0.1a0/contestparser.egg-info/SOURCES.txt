@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+contestparser/__init__.py
+contestparser/contestparser.py
+contestparser/contestparser_test.py
+contestparser.egg-info/PKG-INFO
+contestparser.egg-info/SOURCES.txt
+contestparser.egg-info/dependency_links.txt
+contestparser.egg-info/top_level.txt
