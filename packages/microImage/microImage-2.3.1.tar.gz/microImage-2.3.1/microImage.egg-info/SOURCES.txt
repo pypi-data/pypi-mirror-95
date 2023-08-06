@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+microImage/__init__.py
+microImage/correction.py
+microImage/image_classes.py
+microImage/input_output.py
+microImage/labelling.py
+microImage/modification.py
+microImage.egg-info/PKG-INFO
+microImage.egg-info/SOURCES.txt
+microImage.egg-info/dependency_links.txt
+microImage.egg-info/requires.txt
+microImage.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+bottleneck
+ffmpeg-python
+matplotlib
+numpy
+Pillow
+pims
+scikit-image
