@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: emoprint
+Version: 0.1.0
+Summary: 'The most uesless Python library ever' -- Cheuk 😅 Emoprint let you have more fun with your buildin print function by adding a random emoji to whatever you are printing!
+Author: Cheukting
+Author-email: cheukting.ho@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
