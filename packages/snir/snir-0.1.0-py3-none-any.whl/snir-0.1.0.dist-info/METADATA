@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: snir
+Version: 0.1.0
+Summary: a package to handle sounds and text colors
+Home-page: UNKNOWN
+Author: snir dekel
+Author-email: snirdekel101@gmail.com
+License: MIT
+Keywords: sound
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+the package contains sounds and text colors
+
+
