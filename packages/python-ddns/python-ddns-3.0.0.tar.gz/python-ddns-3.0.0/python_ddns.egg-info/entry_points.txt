@@ -1,0 +1,3 @@
+[console_scripts]
+pddns = pddns.pddns:run
+
