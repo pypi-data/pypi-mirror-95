@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+ProText/Textprocess.py
+ProText/__init__.py
+ProText.egg-info/PKG-INFO
+ProText.egg-info/SOURCES.txt
+ProText.egg-info/dependency_links.txt
+ProText.egg-info/top_level.txt
