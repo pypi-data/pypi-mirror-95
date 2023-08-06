@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+machine_plugins/__init__.py
+machine_plugins/__meta__.py
+machine_plugins/commander/__init__.py
+slack_machine_plugins.egg-info/PKG-INFO
+slack_machine_plugins.egg-info/SOURCES.txt
+slack_machine_plugins.egg-info/dependency_links.txt
+slack_machine_plugins.egg-info/top_level.txt
+tests/__init__.py
+tests/test_commander.py
