@@ -1,0 +1,5 @@
+watchdog
+Flask
+natsort
+flask-ipban
+pyyaml
