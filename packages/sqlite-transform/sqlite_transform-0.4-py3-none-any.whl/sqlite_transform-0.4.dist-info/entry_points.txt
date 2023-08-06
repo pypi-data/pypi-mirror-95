@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        sqlite-transform=sqlite_transform.cli:cli
+    
