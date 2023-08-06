@@ -1,0 +1,7 @@
+setup.py
+eval_ellipsis/__init__.py
+eval_ellipsis/main.py
+eval_ellipsis.egg-info/PKG-INFO
+eval_ellipsis.egg-info/SOURCES.txt
+eval_ellipsis.egg-info/dependency_links.txt
+eval_ellipsis.egg-info/top_level.txt
