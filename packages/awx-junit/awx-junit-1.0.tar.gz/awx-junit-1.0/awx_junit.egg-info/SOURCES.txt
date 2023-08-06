@@ -1,0 +1,10 @@
+README.md
+setup.py
+awx_junit/__init__.py
+awx_junit/awx_junit.py
+awx_junit.egg-info/PKG-INFO
+awx_junit.egg-info/SOURCES.txt
+awx_junit.egg-info/dependency_links.txt
+awx_junit.egg-info/entry_points.txt
+awx_junit.egg-info/requires.txt
+awx_junit.egg-info/top_level.txt
