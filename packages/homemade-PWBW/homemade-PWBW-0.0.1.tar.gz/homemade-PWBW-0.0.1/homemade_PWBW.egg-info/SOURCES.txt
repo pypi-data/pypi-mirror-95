@@ -1,0 +1,5 @@
+setup.py
+homemade_PWBW.egg-info/PKG-INFO
+homemade_PWBW.egg-info/SOURCES.txt
+homemade_PWBW.egg-info/dependency_links.txt
+homemade_PWBW.egg-info/top_level.txt
