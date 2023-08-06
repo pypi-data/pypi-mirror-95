@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyorbs
+Version: 1.4.0
+Summary: A tool for managing Python virtual environments.
+Home-page: https://pyorbs.readthedocs.io
+Author: Logikal
+Maintainer: Logikal
+License: MIT
+Project-URL: Documentation, https://pyorbs.readthedocs.io
+Project-URL: Issue tracker, https://github.com/logikal-code/pyorbs/issues
+Project-URL: Release notes, https://pyorbs.readthedocs.io/en/v1.4.0/sections/changelog.html
+Project-URL: Source code, https://github.com/logikal-code/pyorbs
+Keywords: development virtual environment
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+pyorbs
+======
+A tool for managing Python virtual environments.
+
+Getting Started
+---------------
+Please visit the `project documentation <https://pyorbs.readthedocs.io>`_ to learn more about
+working with pyorbs.
+
+Contributing
+------------
+Before you start contributing to this project, please make sure you have read the entire
+"Development" section of the project documentation.
+
+
