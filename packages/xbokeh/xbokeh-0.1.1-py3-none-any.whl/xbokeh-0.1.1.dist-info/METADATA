@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xbokeh
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/phaesoo/xbokeh
+Author: phaesoo
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+[![Build Status](https://travis-ci.org/phaesoo/xbokeh.svg?branch=main)](https://travis-ci.org/phaesoo/xbokeh)
+
+# xBokeh
+Bokeh-based visualization library
+
+
