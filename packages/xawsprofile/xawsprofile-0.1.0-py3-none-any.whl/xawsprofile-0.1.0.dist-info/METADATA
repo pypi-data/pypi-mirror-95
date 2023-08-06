@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xawsprofile
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Daniel Clayton
+Author-email: dclayton@godaddy.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.1
+Requires-Dist: click (==7.*,>=7.1.2)
+Provides-Extra: dev
+Requires-Dist: dephell (==0.*,>=0.8.3) ; extra == 'dev'
+Requires-Dist: pytest (==5.*,>=5.2.0) ; extra == 'dev'
+
+UNKNOWN
+
+
