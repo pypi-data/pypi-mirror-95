@@ -1,0 +1,14 @@
+alpacka/Pipeline.py,sha256=-5SQbxxxDbf05L7WUgwTDGSAF26rT3qC3fH5-pMpfIg,454
+alpacka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alpacka/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alpacka/functions/presentation_functions.py,sha256=TQRzufGzAYhoD1NWq9J7xMY9D_AKoIUkuiVoamiSSqg,10421
+alpacka/functions/statistic_methods.py,sha256=-T16RRmemVCRYSA2Ezfa8-t9PDJbaUtqjChhbKKm8AA,5604
+alpacka/pipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alpacka/pipes/lrp_pipe.py,sha256=jJy_4-AbHg4HgD8QL-I2P0opvw76LvmvU_80K_8eBrw,4716
+alpacka/pipes/ncof_pipeline.py,sha256=VP4Nju2aorInU6e_OIREB6lw1rPDqA8PQM7258XTUgY,7818
+alpacka/pipes/tfidf_pipeline.py,sha256=_iTpTtiqvJrrreF-i0rki1ozadtVqWwMvGZrZkFDc18,10497
+alpacka-0.0.92.dist-info/LICENCE,sha256=td4eBVECrjSj-r3Vj4Da_FRJVz6ULorDVCOQBmfpsPw,1095
+alpacka-0.0.92.dist-info/METADATA,sha256=9gRI2pQJEYuK1Gn8eKtstSvVu68jyBWc0GCeyiPo47E,8901
+alpacka-0.0.92.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+alpacka-0.0.92.dist-info/top_level.txt,sha256=XX5J3haNAjLysA9CauqclC7kTeXZstybPWCbbitSepM,8
+alpacka-0.0.92.dist-info/RECORD,,
