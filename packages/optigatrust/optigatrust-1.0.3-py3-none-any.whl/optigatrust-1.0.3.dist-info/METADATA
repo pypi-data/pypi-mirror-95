@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: optigatrust
+Version: 1.0.3
+Summary: The ctypes Python wrapper for the Infineon OPTIGA(TM) Trust family of security solutions
+Home-page: https://github.com/infineon/python-optiga-trust
+Author: Infineon Technologies AG
+Author-email: DSSTechnicalSupport@infineon.com
+License: MIT
+Keywords: ECDHE ECDSA RSA ECC X509 NISTP256 NIST384 OPTIGA TRUST TRUSTX TRUSTM
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: optigatrust
+Requires-Dist: asn1crypto
+Requires-Dist: jinja2
+Requires-Dist: cryptography
+
+# optigatrust
+
+A ctypes based Python wrapper to work with the OPTIGA™ Trust security solutions.
+
+[![PyPI](https://img.shields.io/pypi/v/optigatrust.svg)](https://pypi.org/project/optigatrust/)
+
+## Features
+
+*optigatrust* is a library which helps to manage the OPTIGA Trust family of security solutions
+Find more about these products here:
+* [OPTIGA™ Trust M](https://github.com/Infineon/optiga-trust-m)
+* [OPTIGA™ Trust Charge](https://github.com/Infineon/optiga-trust-charge)
+* [OPTIGA™ Trust X](https://github.com/Infineon/optiga-trust-x)
+
+[Documentation]()
+
+## Required Hardware
+
+* Any of the following
+    - OPTIGA™ Trust M1/M3/Charge Evaluation Kit. See :doc:`Provisioning mode <prov_mode>` for more details.
+    - OPTIGA™ Trust Personalisation Board, or any FTDI USB-HID/I2C Converter board
+    - Raspberry Pi + Shield2Go RPi Adapter_
+* OPTIGA™ Trust X/M sample or a Security Shield2Go
+
+## Installation
+
+```bash
+$ pip install optigatrust
+```
+
+### Examples
+
+```python
+import optigatrust as optiga
+from optigatrust import objects, crypto
+import json
+
+chip = optiga.Chip()
+chip.current_limit = 15
+
+ecc_key_0 = objects.ECCKey(0xe0f0) 
+
+print('Pretty metadata: {0}'.format(json.dumps(ecc_key_0.meta, indent=4)))
+
+public_key, private_key = crypto.generate_pair(ecc_key_0, curve='secp256r1', export=True)
+
+print('Pulic Key = {0}, Privat key = {1}'.format(public_key, private_key))
+
+```
+
+## License
+
+*optigatrust* is licensed under the terms of the MIT license. See the
+[LICENSE](LICENSE) file for the exact license text.
+
