@@ -1,0 +1,8 @@
+README.md
+setup.py
+rtt-sdk/__init__.py
+rtt-sdk/__version__.py
+rtt_sdk.egg-info/PKG-INFO
+rtt_sdk.egg-info/SOURCES.txt
+rtt_sdk.egg-info/dependency_links.txt
+rtt_sdk.egg-info/top_level.txt
