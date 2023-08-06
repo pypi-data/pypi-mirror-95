@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+opencv-python
+
+[dev]
+check-manifest
+pytest>=3.7
+
+[test]
+coverage
+unittest
