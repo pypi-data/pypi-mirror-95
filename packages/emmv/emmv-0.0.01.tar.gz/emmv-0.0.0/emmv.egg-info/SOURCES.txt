@@ -1,0 +1,8 @@
+README.md
+setup.py
+emmv/__init__.py
+emmv.egg-info/PKG-INFO
+emmv.egg-info/SOURCES.txt
+emmv.egg-info/dependency_links.txt
+emmv.egg-info/requires.txt
+emmv.egg-info/top_level.txt
