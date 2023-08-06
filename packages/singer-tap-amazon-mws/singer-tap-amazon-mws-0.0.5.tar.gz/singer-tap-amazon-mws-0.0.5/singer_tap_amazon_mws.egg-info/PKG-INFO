@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: singer-tap-amazon-mws
+Version: 0.0.5
+Summary: Singer.io tap for extracting data from the Amazon MWS API. Forked from https://github.com/fishtown-analytics/tap-amazon-mws
+Home-page: https://github.com/imcallister/singer-tap-amazon-mws
+Author: ian@mcallisternevins.com
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
