@@ -1,0 +1,10 @@
+scidmg/__init__.py,sha256=B-Hq8ob_fGJck8TZRKWFJjL19kHHaZJD7qQ1-7Cg-08,1522
+scidmg/__main__.py,sha256=Pzxu3rDa_rmruO0jWfObwZjrCCKEgcQ5H-Yon3S0WYk,5919
+scidmg/base.py,sha256=IO5Veoy2nCqvroaWoSNQp2PLIcRRQ6vNyD34NDPPARU,16816
+scidmg-1.0.0.data/data/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scidmg-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scidmg-1.0.0.dist-info/METADATA,sha256=w8ICsSX4j65-w0aBi7CFUPWr9JH8KPIt0CmtnLJ4uE4,6098
+scidmg-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+scidmg-1.0.0.dist-info/entry_points.txt,sha256=M5lYbAGDd8KYOrzmsIl2KkY-3h2IvdgglPgMIr1jG-U,49
+scidmg-1.0.0.dist-info/top_level.txt,sha256=HFvPPu_ZDLKc59u3z1KnDUcMeupsO8mzwZ7h9-C6nho,7
+scidmg-1.0.0.dist-info/RECORD,,
