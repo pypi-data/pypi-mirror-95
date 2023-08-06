@@ -1,0 +1,8 @@
+aws_cdk/lambda_layer_kubectl/__init__.py,sha256=22zUvfuoWOqgLTYRkHUT7JKj4Yof6vN_R2LQ0lohuCo,2050
+aws_cdk/lambda_layer_kubectl/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/lambda_layer_kubectl/_jsii/__init__.py,sha256=Ke1h8b9GK_pRqt3g3sG_pBqomBEBfdstlrT2dj5qtiI,434
+aws_cdk/lambda_layer_kubectl/_jsii/lambda-layer-kubectl@1.90.0.jsii.tgz,sha256=5EoabuRG4JKua4hhyUCamySvgonz6JvDgep45NLfFhU,25139765
+aws_cdk.lambda_layer_kubectl-1.90.0.dist-info/METADATA,sha256=hXM6XHrdSeK7OFyUXzOOQr2BjYVFB9PGgU3czuLFgIg,2428
+aws_cdk.lambda_layer_kubectl-1.90.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.lambda_layer_kubectl-1.90.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.lambda_layer_kubectl-1.90.0.dist-info/RECORD,,
