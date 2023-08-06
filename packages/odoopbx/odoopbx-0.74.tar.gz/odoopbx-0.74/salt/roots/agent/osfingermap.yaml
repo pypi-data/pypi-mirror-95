@@ -1,0 +1,16 @@
+CentOS Linux-7:
+  pkgs:
+    - gcc
+    - ipset
+    - iptables
+    - logrotate
+    - openssl-devel
+    - python34-devel
+CentOS Linux-8:
+  pkgs:
+    - gcc
+    - ipset
+    - iptables
+    - logrotate
+    - openssl-devel
+    - python36-devel
