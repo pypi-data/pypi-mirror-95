@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: json_key_press
+Version: 2.0
+Summary: Tool for compression and decompression of dictionary keys for json transfer over limited networks
+Home-page: https://github.com/elsholz/json_key_press
+Author: Hendrik Lankers
+Author-email: hendrik.lankers.hl@googlemail.com
+License: UNKNOWN
+Description: 
+        # JSON Key Press
+        
+        This project aims at minimizing the size of json when transferring data over the network
+        by compressing the keys of a dictionary.
+        
+        A more detailed description can be found [on github](https://github.com/elsholz/json_key_press).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
