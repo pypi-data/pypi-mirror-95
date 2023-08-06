@@ -1,0 +1,15 @@
+rapidfuzz/__init__.py,sha256=KBIyjz1Y8TlRmQPRHD6mlAVsgoaw65AHp48rbADJ8vo,188
+rapidfuzz/cpp_fuzz.cp36-win_amd64.pyd,sha256=KBsrvVbky3x2HCjG44EtxcR5gbruFvOHorf5g_IbO3U,560640
+rapidfuzz/cpp_process.cp36-win_amd64.pyd,sha256=yE2rpeiDKQ1ov-oCtuvQN7v9WNBKpdERZzk9Q4-pksw,602624
+rapidfuzz/cpp_string_metric.cp36-win_amd64.pyd,sha256=AiuA7Fnv_uVdEuYzEOoqdiv-1bQl7GbyM6si6-bzWlI,265216
+rapidfuzz/cpp_utils.cp36-win_amd64.pyd,sha256=lCXTc2Ww9i1wiMAWtba_epvJnWH3nSk7sMMQLG--X1E,135680
+rapidfuzz/fuzz.py,sha256=CmXcIKvDggOFn4Jo98yynl-ol8SdddmA0bYw2ytpYZI,313
+rapidfuzz/levenshtein.py,sha256=gl7_LzUQAZgSIYKCFITxaM9WkFWKufHazJTI5AjJA3U,1950
+rapidfuzz/process.py,sha256=Nfe4QwS9NtVhZjhcr3OFOyx2DsV5T9Y-rKeLW7CKexQ,138
+rapidfuzz/string_metric.py,sha256=iWTGCtP0bY48QW1D0t94KtzssvB9vsoiuVswfMG3ya0,200
+rapidfuzz/utils.py,sha256=V69-peEFf8FkHrw63Q2cDIpa0Gn7XRQf7sCaTrAUh_c,116
+rapidfuzz-1.1.0.dist-info/LICENSE,sha256=UZLgcFzb_G2cBTxv8lxLs-mCG06VPshbwdvBkgWotIo,1102
+rapidfuzz-1.1.0.dist-info/METADATA,sha256=HiOGL6fQxi0jFVz3sP5quyvCaWY9KLJYI4jz29I_Ikc,7828
+rapidfuzz-1.1.0.dist-info/WHEEL,sha256=SktxJNdVgf2GQ0Rnj47KhGrFXFhp4j6ROtWy0UXB1eM,106
+rapidfuzz-1.1.0.dist-info/top_level.txt,sha256=Oxm3Kk-v28hdkOkW3AVE1EMl8Ml5FPFl32w6V65shvg,10
+rapidfuzz-1.1.0.dist-info/RECORD,,
