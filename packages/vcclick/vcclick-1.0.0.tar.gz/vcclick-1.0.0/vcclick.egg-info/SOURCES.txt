@@ -1,0 +1,6 @@
+setup.py
+vcclick.egg-info/PKG-INFO
+vcclick.egg-info/SOURCES.txt
+vcclick.egg-info/dependency_links.txt
+vcclick.egg-info/requires.txt
+vcclick.egg-info/top_level.txt
