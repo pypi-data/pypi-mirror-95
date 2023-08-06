@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+py_maia.egg-info/PKG-INFO
+py_maia.egg-info/SOURCES.txt
+py_maia.egg-info/dependency_links.txt
+py_maia.egg-info/top_level.txt
