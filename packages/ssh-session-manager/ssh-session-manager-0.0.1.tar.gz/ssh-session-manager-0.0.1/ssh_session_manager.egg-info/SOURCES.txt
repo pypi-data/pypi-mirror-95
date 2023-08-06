@@ -1,0 +1,11 @@
+README.md
+setup.py
+ssh_session_manager/Command.py
+ssh_session_manager/SSHSession.py
+ssh_session_manager/SSHSessionManager.py
+ssh_session_manager/__init__.py
+ssh_session_manager.egg-info/PKG-INFO
+ssh_session_manager.egg-info/SOURCES.txt
+ssh_session_manager.egg-info/dependency_links.txt
+ssh_session_manager.egg-info/requires.txt
+ssh_session_manager.egg-info/top_level.txt
