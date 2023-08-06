@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pretty-text
+Version: 0.1.1
+Summary: Add font and color to your Python text.
+Home-page: https://github.com/khuyentran1401/pretty_text
+Keywords: text
+Author: khuyentran1401
+Author-email: khuyentran1476@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://github.com/khuyentran1401/pretty_text
+Description-Content-Type: text/markdown
+
+# Pretty Text 
+
+This package enables you to print pretty text like below
+![image](pretty_hello.png).
+
+To install this package, use 
+
+```bash
+pip install pretty-text
+```
