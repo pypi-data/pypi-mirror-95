@@ -1,0 +1,9 @@
+humiocli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humiocli/cli.py,sha256=zVrQf5xkQ8u0r-9W_zPGbnxLTjpYZON5UyzsfLPvl8A,23287
+humiocli/prettyxml.py,sha256=0XtkfLM-FWALiMI-C9CM51RnhpoxZfZUEWzlluZ0C8Q,4315
+humiocli/utils.py,sha256=k8M8PWtBvgGEC59QIcw4JvTVa3i4qvE8bGzD45-We6s,9709
+humiocli-0.8.1.dist-info/entry_points.txt,sha256=DMWDVj8lIjPWERHCBr1XciWjanOV6_iPrZhVkE8pn1k,39
+humiocli-0.8.1.dist-info/LICENSE,sha256=9dCt8Kvxgig-K8z_lSbHAC8Rjknsx9tTY4Qp9WdjNyk,1064
+humiocli-0.8.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+humiocli-0.8.1.dist-info/METADATA,sha256=Z71AScd0Jy1Fafvz2wgoy3IPPfNN-hnR0OE4Qao4FXk,5840
+humiocli-0.8.1.dist-info/RECORD,,
