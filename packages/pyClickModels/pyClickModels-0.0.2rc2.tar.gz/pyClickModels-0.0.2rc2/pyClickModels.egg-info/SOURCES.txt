@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyClickModels/DBN.cpp
+pyClickModels/__init__.py
+pyClickModels/__version__.py
+pyClickModels.egg-info/PKG-INFO
+pyClickModels.egg-info/SOURCES.txt
+pyClickModels.egg-info/dependency_links.txt
+pyClickModels.egg-info/not-zip-safe
+pyClickModels.egg-info/requires.txt
+pyClickModels.egg-info/top_level.txt
+tests/test_cy_DBN.cpp
