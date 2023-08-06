@@ -1,0 +1,6 @@
+boltons
+
+[test]
+coverage
+pytest
+pytest-cov
