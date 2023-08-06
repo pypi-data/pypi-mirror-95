@@ -1,0 +1,15 @@
+eco/__init__.py,sha256=9oVnSbinYRV8hni4PmVqAIB97tFtZQnYAIRJx4OsX6o,23
+eco/__main__.py,sha256=DlB_-tjGSvnTv_8RE4fKv2rvDT4U4TXDUY6wZg8_Spc,7283
+eco/eco_scrapper.py,sha256=38BwIfN_ea1_MSUyO3NuUdl_XAZTl41UFw7PqdzKAIo,468
+eco/eco_utils.py,sha256=hgQXAz7DoQtqiPlvKABchxRmgMxwJJNGTnbMiDXCdZU,2872
+eco/tables/appdata.json,sha256=4h4egDTSgVVK_yBPlW8cZuM8XiVn7eAaVqD_OkxQ1FA,97
+eco/tables/daily.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco/tables/income.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco/tables/savings.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco/tables/spendings.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eco_cli-1.2.0.dist-info/LICENSE,sha256=1aflSjj61DzkkgOLudgVFNCKQqqH5R6jl88fFnsKumY,1061
+eco_cli-1.2.0.dist-info/METADATA,sha256=o607UYc20Zx4ZzDRKwHL6OTpTo3lPF6_r8-OAb6FrHQ,555
+eco_cli-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eco_cli-1.2.0.dist-info/entry_points.txt,sha256=fFe_RQFEHkcsmm1x6OlszM4h0Gf86mse7ONUOhVFi80,43
+eco_cli-1.2.0.dist-info/top_level.txt,sha256=6WrL0efWHKrkrrDbEJxO2-97kplDDY-mzDeWzDcsnHo,4
+eco_cli-1.2.0.dist-info/RECORD,,
