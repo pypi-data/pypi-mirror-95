@@ -1,0 +1,6 @@
+README.md
+setup.cfg
+Multi_function_clock.egg-info/PKG-INFO
+Multi_function_clock.egg-info/SOURCES.txt
+Multi_function_clock.egg-info/dependency_links.txt
+Multi_function_clock.egg-info/top_level.txt
