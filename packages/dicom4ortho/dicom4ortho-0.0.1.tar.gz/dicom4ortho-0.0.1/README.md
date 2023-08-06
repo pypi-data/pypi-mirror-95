@@ -1,0 +1,251 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/open-ortho/dicom4ortho">
+    <img src="images/open-ortho.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">dicom4ortho</h3>
+
+  <p align="center">
+    A Python library to create fully defined orthodontic photographs in DICOM.
+    <br />
+    <a href="https://github.com/open-ortho/dicom4ortho/docs"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/open-ortho/dicom4ortho">View Demo</a>
+    ·
+    <a href="https://github.com/open-ortho/dicom4ortho/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/open-ortho/dicom4ortho/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [CSV Image file format](#csv-image-file-format)
+    - [`patient_firstname`](#patient_firstname)
+    - [patient_lastname](#patient_lastname)
+    - [patient_id](#patient_id)
+    - [patient_sex](#patient_sex)
+    - [patient_birthdate](#patient_birthdate)
+    - [dental_provider_firstname](#dental_provider_firstname)
+    - [dental_provider_lastname](#dental_provider_lastname)
+    - [image_type](#image_type)
+    - [manufacturer](#manufacturer)
+    - [input_image_filename](#input_image_filename)
+    - [study_instance_uid](#study_instance_uid)
+    - [study_description](#study_description)
+    - [series_instance_uid,series_description](#series_instance_uidseries_description)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![dicom4ortho Screen Shot][product-screenshot]](https://example.com)
+
+The DICOM standard is ready for any developer in the orthodontic community to
+implement. However, it can be complicated and implementation can be time
+consuming. We want to create a proof of concept to demonstrate how to
+properly store orthodontic visible light images (aka photographs) using
+DICOM, while ensuring all codes (necessary to uniquely identify each image
+type) are in the proper place.
+
+Here's why:
+
+* Your time should be focused on creating something amazing.
+* Being able to import and export DICOM images to and from your orthodontic
+  software will open doors to you and the orthodontic provider.
+* No one software will serve all orthodontic providers completely. Adding
+  interoperability will allow your product to integrate with others, giving
+  additional value to your solution.
+
+You may suggest changes by forking this repo and creating a pull request or
+opening an issue. Thanks to all the people have have contributed to this
+project!
+
+A list of commonly used resources that we find helpful are listed in the
+acknowledgements.
+
+### Built With
+
+* [pydicom](https://pydicom.github.io/)
+* [pillow](https://python-pillow.org/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Like any other Python module, install the module than use it. There is a CLI
+interface as well.
+
+### Prerequisites
+
+An installation of Python 3+.
+
+### Installation
+
+Install unsing pipenv by running
+
+    $ pipenv install dicom4ortho
+
+Install using pip by running
+
+    $ pip install dicom4ortho
+
+Only Python 3+ is supported
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+The DICOM images require a lot of information which is not contained in a
+flat PNG or JPEG image. This information would, in a production environment,
+usually come from the practice management software, or photo management
+software.
+
+The easiest way to feed this information to `dicom4ortho`'s CLI is using a
+CSV file. You can find an example CSV file [here](resources/example/input_from.csv)
+
+Once installed, if necessary, start the virtual environment:
+
+    pipenv shell
+
+then use dicom4ortho like this:
+
+    $ dicom4ortho <filename>
+
+Where `filename` should be a `.csv` file. Passing a single image file with
+metadata through arguments is planned for future implementations.
+
+### CSV Image file format
+
+The CSV file should be:
+
+- with `,` as separator
+- `UTF-8` encoded
+
+Each CSV file should containt the following columns (header)
+
+#### `patient_firstname`
+
+Patient first name. First part of DICOM tag `(0010, 0010) Patient's Name`.
+
+#### patient_lastname
+
+Patient last name. Second part of DICOM tag `(0010, 0010) Patient's Name`.
+
+#### patient_id
+
+Patient ID. DICOM `(0010, 0020) Patient ID` tag.
+
+#### patient_sex
+
+Patient's gender. DICOM `(0010, 0040) Patient's Sex` tag.
+
+#### patient_birthdate
+
+Patient's date of birth in YYYY-MM-DD format. DICOM `(0010, 0030) Patient's
+Birth Date` tag.
+
+#### dental_provider_firstname
+
+First name of orthodontic (or dental) provider. First part of DICOM `(0008,
+0090) Referring Physician's Name` tag.
+
+#### dental_provider_lastname
+
+Last name of orthodontic (or dental) provider. Second part of DICOM `(0008,
+0090) Referring Physician's Name` tag.
+
+#### image_type
+
+Image type as defined by ADA SCDI WP-1100. Type
+
+    dicom4ortho list-image-types
+
+for a list of allowed image types.
+
+#### manufacturer
+
+Manufacturer of Camera. For example, when using an iPhone, use `Apple`
+here. Overrides input file's EXIF metadata.
+
+#### input_image_filename
+
+Full path of flat JPG/PNG/TIFF image file to use as input.
+
+#### study_instance_uid
+
+The unique identifier that distinguishes this study from any other study.
+This is a DICOM UID object, and goes into the the DICOM `(0020, 000d) Study
+Instance UID` tag.
+
+#### study_description
+#### series_instance_uid,series_description
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/open-ortho/dicom4ortho/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+<!-- CONTACT -->
+## Contact
+
+Toni Magni- [@zgypa](https://twitter.com/zgypa) - open-ortho@afm.co
+
+Project Link: [https://github.com/open-ortho/dicom4ortho](https://github.com/open-ortho/dicom4ortho)
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+- [DICOM](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [American Dental Association Standards Committee for Dental Informatics](https://www.ada.org/en/science-research/dental-standards/standards-committee-on-dental-informatics)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/open-ortho/dicom4ortho.svg?style=for-the-badge
+[contributors-url]: https://github.com/open-ortho/dicom4ortho/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/open-ortho/dicom4ortho.svg?style=for-the-badge
+[forks-url]: https://github.com/open-ortho/dicom4ortho/network/members
+[stars-shield]: https://img.shields.io/github/stars/open-ortho/dicom4ortho.svg?style=for-the-badge
+[stars-url]: https://github.com/open-ortho/dicom4ortho/stargazers
+[issues-shield]: https://img.shields.io/github/issues/open-ortho/dicom4ortho.svg?style=for-the-badge
+[issues-url]: https://github.com/open-ortho/dicom4ortho/issues
+[license-shield]: https://img.shields.io/github/license/open-ortho/dicom4ortho.svg?style=for-the-badge
+[license-url]: https://github.com/open-ortho/dicom4ortho/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/open-ortho
+[product-screenshot]: images/screenshot.png
+[example-csv-url]: resources/example/input_from.csv
