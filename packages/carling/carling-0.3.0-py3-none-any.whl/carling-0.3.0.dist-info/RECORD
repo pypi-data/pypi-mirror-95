@@ -1,0 +1,15 @@
+carling/__init__.py,sha256=amMqNcwh6YnjdamsAt5cIIPXBPud_whvqFbVGJwKaeg,586
+carling/categorical.py,sha256=n3wD3i7uzNLSEPGDGHjqAcyZsk6c3Wp3a9yLD0S0C-E,5319
+carling/group.py,sha256=jmQD3ElyFPzujX0Y-plHANv5acvKzgTQBaeyKvlPFYM,11062
+carling/io/__init__.py,sha256=MHI29VHPXajViMiL9ISBwOiaH7vugTa0hqrK0bvkE0o,102
+carling/io/avro_schema.py,sha256=tKWIbrZh-l48X4kzoRCtc9UxCrI27fdo7zPdXnE6wrk,854
+carling/iter_utils/__init__.py,sha256=WAjd_ZF5LEltBQCl8g_ufiehuCGNzZT8HQoJJJlgke0,123
+carling/iter_utils/iter_utils.py,sha256=LNIUGJ5exiehGyGunL0OqpD7Ojg80nvdLtrxUnF7M2o,679
+carling/mapping.py,sha256=V5tQkJeUzpcKUmf0ltpPqWJ8rfcT_5MiyK180IwikyM,2209
+carling/test_utils/__init__.py,sha256=jS0g3rpHGI27JaIhKIZ3NA6kVULpmifEc0ghZt7HRhM,40
+carling/test_utils/test_utils.py,sha256=r0UURF3qRhTs_sDsILioQfG55feWNKfm90qKSMD6jtQ,2831
+carling/util.py,sha256=hqbS32vjUTB-S1NJSs9IZUPIxC7SBsGP9KgYYfPt47o,2349
+carling-0.3.0.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+carling-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+carling-0.3.0.dist-info/METADATA,sha256=69FPbJSvgJpqxsbHx4Nbm24LZl3QxQkm5dzmitylHas,424
+carling-0.3.0.dist-info/RECORD,,
