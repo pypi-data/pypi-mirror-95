@@ -1,0 +1,3 @@
+[console_scripts]
+determine-docker-tags=determine_docker_tags.__init__:main
+
