@@ -1,0 +1,7 @@
+include date_filter_dash/date_filter_dash.min.js
+include date_filter_dash/date_filter_dash.min.js.map
+include date_filter_dash/metadata.json
+include date_filter_dash/package-info.json
+include README.md
+include LICENSE
+include package.json
