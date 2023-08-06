@@ -1,0 +1,9 @@
+README.md
+setup.py
+samodipdf/__init__.py
+samodipdf/pdf2img.py
+samodipdf/pdf2text.py
+samodipdf.egg-info/PKG-INFO
+samodipdf.egg-info/SOURCES.txt
+samodipdf.egg-info/dependency_links.txt
+samodipdf.egg-info/top_level.txt
