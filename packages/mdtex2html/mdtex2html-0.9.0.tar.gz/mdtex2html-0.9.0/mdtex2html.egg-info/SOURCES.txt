@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+mdtex2html/__init__.py
+mdtex2html/mdTeX2html.py
+mdtex2html.egg-info/PKG-INFO
+mdtex2html.egg-info/SOURCES.txt
+mdtex2html.egg-info/dependency_links.txt
+mdtex2html.egg-info/top_level.txt
