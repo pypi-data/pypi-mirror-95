@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: payfast-client
+Version: 0.1.0
+Summary: Python client for interacting with the Payfast API
+Author: Fergus Strangways-Dixon
+Author-email: fergusdixon101@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytz (>=2021.1,<2022.0)
+Requires-Dist: requests-futures (>=1.0.0,<2.0.0)
