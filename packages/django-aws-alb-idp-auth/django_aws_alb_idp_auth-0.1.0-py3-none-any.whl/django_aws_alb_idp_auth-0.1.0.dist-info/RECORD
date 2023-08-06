@@ -1,0 +1,8 @@
+django_aws_alb_idp_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_aws_alb_idp_auth/backends.py,sha256=r-LPnlXsXK1PJAncBunhZK4kL0U3EtO8XJxRxXCNK78,257
+django_aws_alb_idp_auth/identifier.py,sha256=_i9Zpwj1u3mEvl5eQTacXoDdovm9I9A1h_4nZ0U2MFs,1646
+django_aws_alb_idp_auth/middleware.py,sha256=J55NzZskurSbvvbpmNSNyEQHUuMCDO30jO4Gn0BmRJ4,1073
+django_aws_alb_idp_auth-0.1.0.dist-info/LICENSE,sha256=F_WPCJHoMEv_kxCS6M_Fs6uwnp4UYaL6k-LmgfhJiis,1066
+django_aws_alb_idp_auth-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+django_aws_alb_idp_auth-0.1.0.dist-info/METADATA,sha256=3LQs1JWILym5MbeC-GkMaazxE6c6Kemrbkc1TbR0nuo,407
+django_aws_alb_idp_auth-0.1.0.dist-info/RECORD,,
