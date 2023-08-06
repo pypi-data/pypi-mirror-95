@@ -1,0 +1,10 @@
+README.md
+setup.py
+protocolScraper/__init__.py
+protocolScraper/protocolScraper.py
+protocol_scraper.egg-info/PKG-INFO
+protocol_scraper.egg-info/SOURCES.txt
+protocol_scraper.egg-info/dependency_links.txt
+protocol_scraper.egg-info/entry_points.txt
+protocol_scraper.egg-info/requires.txt
+protocol_scraper.egg-info/top_level.txt
