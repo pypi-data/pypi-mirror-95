@@ -1,0 +1,25 @@
+# Author            : Jingxin Fu <jingxinfu.tj@gmail.com>
+# Date              : 26/02/2020
+# Last Modified Date: 26/02/2020
+# Last Modified By  : Jingxin Fu <jingxinfu.tj@gmail.com>
+language: python
+python:
+ - 3.5
+ - 3.8
+
+os:
+  - linux
+
+branches:
+  only:
+  - master
+  - /^v.*$/
+install: 
+- pip install .
+# # command to run tests, e.g. python setup.py test
+script:  
+  - python --version
+  - wget http://tide.dfci.harvard.edu/download/GSE78220.self_subtract.zip
+  - tidepy GSE78220.self_subtract.zip -c Melanoma -o test 
+after_sucess:
+ 
