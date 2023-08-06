@@ -1,0 +1,138 @@
+NAME
+模块名称
+========
+::
+
+    console_tool
+
+DESCRIPTION
+简介
+====
+::
+
+    提供创建命令行程序工具的模块,包含Console类。
+    A module for creating command line programs.
+
+包含的类 CLASSES
+''''''''''''''''
+类继承顺序::
+
+    builtins.object::
+        ColoredTextWrapper
+        Console
+    colorama.ansi.AnsiCursor(builtins.object)::
+        Cursor
+
+class Console
+""""""""""""""""""""""""""""""
+    bell(self, times=1, delay=False)::
+
+        将振铃符发送至终端,发出响铃声。
+        times:响铃次数
+        delay:开始响铃后是否立即返回,默认为False。
+    
+    clear(self)
+        清除命令行窗口中的所有文本, 这将调用系统的cls或clear命令。
+    
+    color(self, backcolor='', forecolor='')::
+
+        改变命令行窗口的前景和背景颜色
+        与coloredtext方法不同,color改变整个窗口的颜色
+        该方法调用系统的color命令
+        如::
+
+           color("blue","green") -- 设置前景颜色为绿色,背景颜色为蓝色
+           color() -- 恢复默认颜色
+
+        可用的颜色: black, blue, green, aqua, red, purple, yellow, white, gray, light_blue, light_green, light_aqua, light_red, light_purple, light_yellow, bright_white
+
+    coloredtext(self, string, color='white', highlight=None, \*args, end='\n', flush=False, reset=True)::
+
+        输出一段带颜色的文本
+        如:coloredtext("Hello world!",color="green",highlight="black","bold") --
+        输出绿色、加粗的文字'Hello world!'
+        别名: ctext
+
+    colorize(self, stdout='blue', stderr='red', bold=True)::
+
+        初始化带颜色的输出,类似于IDLE。
+        colorize(stdout="cyan",stderr="magenta") - 设置输出消息为青色,错误消息为紫色。
+        colorize(stderr=None) - 只设置输出消息(sys.stdout)的颜色。
+
+    input(self, prompt='', chars_to_read=None, \*\*kwargs)::
+
+        获取用户的输入。
+        prompt:提示(默认显示为白色)
+        chars_to_read:要从sys.stdin读取多少个字符
+
+    print_slowly(self, iterable_of_str, delay=0, \*args, \*\*kwargs)::
+
+        缓慢地打印出一段文本
+        iterable_of_str:待打印的内容(字符串或可迭代对象)
+
+    reset(self)::
+
+        与colorize方法相反,停止带颜色的输出。
+
+    title(self, title)::
+
+        设置命令行窗口标题。
+
+    新增方法:
+
+    resize(self, cols, lines)::
+
+        缩放窗口。cols: 列数, lines: 行数
+
+    chcp(self, codepage)::
+
+        改变活动代码页, 使用chcp命令
+
+
+class Cursor
+""""""""""""""""""""""""""""""""""""""
+    Cursor(outfile=sys.stdout)
+    
+    命令行中的光标类
+    
+    down(self, distance=1)
+        向下移动光标,距离为distance。
+    
+    left(self, distance=1)
+        向左移动光标,距离为distance。
+    
+    pos(self, x=1, y=1)
+        移动光标至指定位置(x,y)。
+        如果不提供参数x,y,则移动光标至屏幕左上角。
+    
+    right(self, distance=1)
+        向右移动光标,距离为distance。
+    
+    up(self, distance=1)
+        向上移动光标,距离为distance。
+
+class ColoredTextWrapper(builtins.object)
+    ColoredTextWrapper(file=sys.stdout, color='white', bold=True)
+
+    在命令行提供带颜色的输出流,类似于IDLE
+    
+    flush(self)
+    
+    write(self, string)
+
+示例代码 EXAMPLES
+=================
+.. code-block:: python
+
+    c=Console() #初始化Console对象
+    c.colorize() 
+    c.title("console_tool.py (Test)")
+    c.coloredtext("Hello world!","green","magenta","blink") # 输出绿色的Hello world!
+
+版本 VERSION
+============
+    1.2.2
+
+作者 AUTHOR
+===========
+    *七分诚意 qq:3076711200 百度账号:徐丹34  邮箱:3416445406@qq.com*
