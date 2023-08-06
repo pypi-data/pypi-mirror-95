@@ -1,0 +1,10 @@
+s3_log_query/S3LogQuery.py,sha256=bPNvr4PBvtNVRhduKfRCi4JiAL04CXSrDq3fy68WKI8,4975
+s3_log_query/__init__.py,sha256=fBZaYbMmrWzRvz2DJ5otgT835i0oT_eCJ9CPfFF4FLQ,67
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_s3_log_query.py,sha256=fVtfk0JFq_ck5Ozzl32vHEQ34rYT55bo_NexJQPRzmk,1598
+s3_log_query-1.0.0.dist-info/AUTHORS.rst,sha256=auCHWzUous09P2c6fyvvPyMxHfIXR7PygUJmzXe1UNg,74
+s3_log_query-1.0.0.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+s3_log_query-1.0.0.dist-info/METADATA,sha256=12KI0TDUkHsY77DnfLWAVV3b4g16-IkIyVxHsqULE3c,1512
+s3_log_query-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+s3_log_query-1.0.0.dist-info/top_level.txt,sha256=u1HpGSbQX3PMefX95oLcVKZFIyVsCepvKekHTB_8uaA,19
+s3_log_query-1.0.0.dist-info/RECORD,,
