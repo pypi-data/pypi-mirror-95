@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "repoly"
+version = "0.2102.40"
+description = "Rectilinear polygons"
+authors = ["davips <dpsabc@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.7.*"
+PySide6 = "^6.0.1"
+python-dotenv = "^0.15.0"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-cov = "^2.11.1"
+autoreadme = "^0.2101.17"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+#[tool.poetry.scripts]
+#repoly = "repoly.app.main:run"
+
+[tool.poetry.plugins."console_scripts"]
+repoly = "repoly.app.main:run"
