@@ -1,0 +1,8 @@
+README.md
+setup.py
+goes2go.egg-info/PKG-INFO
+goes2go.egg-info/SOURCES.txt
+goes2go.egg-info/dependency_links.txt
+goes2go.egg-info/not-zip-safe
+goes2go.egg-info/requires.txt
+goes2go.egg-info/top_level.txt
