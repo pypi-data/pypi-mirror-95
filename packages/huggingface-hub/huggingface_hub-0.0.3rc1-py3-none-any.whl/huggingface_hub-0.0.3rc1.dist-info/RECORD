@@ -1,0 +1,16 @@
+huggingface_hub/__init__.py,sha256=8YkdIeKglthLamomhN-2TGvd6NxebVmhWV39FCF6i4c,1116
+huggingface_hub/constants.py,sha256=eHsbgYTs9Hw2oLYQf6lfNZGZYK_5-0u1mEotqQXW7cw,792
+huggingface_hub/file_download.py,sha256=hcKGJhqOakGbNOB6TkshriztUiGG9k5O24qmdEj0UAk,13021
+huggingface_hub/hf_api.py,sha256=0A1uHFk7OhW8LryMcyi6I77wCP1zonKF6ayhiecLtx4,7333
+huggingface_hub/lfs.py,sha256=c5fAseY6gpNJXaSEKGqvwchbDQ-u6r1i_FB3GTveoUs,670
+huggingface_hub/repository.py,sha256=QA-QkZRcSUJns960KVKrN44mge7k_sv1Ch9Xu7UHNZw,8687
+huggingface_hub/commands/__init__.py,sha256=QjeVMVdjTN2AozGyQ6hJ-2MV5rMZxBzs9YIdPbmkL8Y,922
+huggingface_hub/commands/huggingface_cli.py,sha256=3nGsyBPbXF5ZhwggDTcGLhvuPSGnL_RA_KDDrlgFDig,1334
+huggingface_hub/commands/lfs.py,sha256=W6c9WZn-kuAaBjB4V-Ok8s2gLN5DUJ2oyok_2ONB2Rg,7764
+huggingface_hub/commands/user.py,sha256=O6pyLemr2apve_lQaoAhehOGJYw1azAoJaXQIg1QjGI,9357
+huggingface_hub-0.0.3rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+huggingface_hub-0.0.3rc1.dist-info/METADATA,sha256=dq4bJ3d7KP4BStYqD4AuKqmGP4MM2InM0V5YdQGm8C8,8271
+huggingface_hub-0.0.3rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+huggingface_hub-0.0.3rc1.dist-info/entry_points.txt,sha256=7-_O79Kk26OM9R3QgywVzfyrNjZ3F8tCUhDtozJ7yIc,83
+huggingface_hub-0.0.3rc1.dist-info/top_level.txt,sha256=8KzlQJAY4miUvjAssOAJodqKOw3harNzuiwGQ9qLSSk,16
+huggingface_hub-0.0.3rc1.dist-info/RECORD,,
