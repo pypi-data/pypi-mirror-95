@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: mopack
+Version: 0.1a1
+Summary: A multiple-origin package manager
+Home-page: https://github.com/jimporter/mopack
+Author: Jim Porter
+Author-email: itsjimporter@gmail.com
+License: BSD
+Keywords: package manager
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: pyparsing
+Requires-Dist: pyyaml
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: bfg9000 ; extra == 'dev'
+Requires-Dist: conan ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 (>=3.6) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: bfg9000 ; extra == 'test'
+Requires-Dist: conan ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 (>=3.6) ; extra == 'test'
+
+# mopack
+**mopack** (pronounced "ammopack" - name subject to change) is an experimental
+*multiple origin* package manager, with an emphasis on C/C++ packages. It's
+designed to allow users to resolve package dependencies from multiple package
+managers ("origins").
+
+## Design Goals
+
+### No configuration necessary
+
+By default, mopack will assume all package dependencies are already fetched
+(downloaded and ready to use) and will attempt to resolve each dependency using
+common methods for the relevant platform/runtime (e.g. pkg-config, searching
+system paths).
+
+### Builders can override developers
+
+In typical usage, a project's developers will provide an mopack configuration to
+make it easier for development builds to resolve dependencies. However, people
+who *build* the project may prefer to resolve packages differently (e.g. if a
+project defaults to resolving packages via Conan, someone building for `apt`
+would likely override the config to point to `apt` packages).
+
+## License
+
+This project is licensed under the [BSD 3-clause license](LICENSE).
+
+[documentation-image]: https://img.shields.io/badge/docs-mopack-blue.svg
+[documentation-link]: https://jimporter.github.io/mopack/
+[ci-image]: https://github.com/jimporter/mopack/workflows/build/badge.svg
+[ci-link]: https://github.com/jimporter/mopack/actions?query=branch%3Amaster+workflow%3Abuild
+[codecov-image]: https://codecov.io/gh/jimporter/mopack/branch/master/graph/badge.svg
+[codecov-link]: https://codecov.io/gh/jimporter/mopack
+
+
