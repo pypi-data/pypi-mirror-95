@@ -1,0 +1,7 @@
+kogpt2_transformers/__init__.py,sha256=nlYr3Dmdy3XD-MwcxJqe170tm3TqOy8-RWMYRTlB2Pk,140
+kogpt2_transformers/load_model.py,sha256=6wI1MiwzTLNLPgaFD46bn-CtxDGinXuTbxLzRrY9Ius,438
+kogpt2_transformers/tokenization_kogpt2.py,sha256=o39Xh1Oa6By1CmhojdOLSd9kYQEz9fufgzyEA-_c5kE,3246
+kogpt2_transformers-0.4.0.dist-info/METADATA,sha256=aI4ty56HJxM2Ca6i2BB5UmwwU0u5zKoJFZzco0nswg8,3895
+kogpt2_transformers-0.4.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+kogpt2_transformers-0.4.0.dist-info/top_level.txt,sha256=ODfnZ7yO5Fd2LhP8N0CinLQZcMynDNh8cfaVS2yPr4E,20
+kogpt2_transformers-0.4.0.dist-info/RECORD,,
