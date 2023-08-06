@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: owlapy
+Version: 0.0.0
+Summary: OWLAPy - loosely based on OWL API
+Home-page: https://github.com/AKSW/owlapy
+Author: Simon Bin
+Author-email: sbin@informatik.uni-leipzig.de
+License: UNKNOWN
+Description: # OWLAPy
+        
+        loosely based on OWL API
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

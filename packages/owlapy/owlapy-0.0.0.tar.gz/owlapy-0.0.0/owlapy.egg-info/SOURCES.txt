@@ -1,0 +1,6 @@
+README.md
+setup.cfg
+owlapy.egg-info/PKG-INFO
+owlapy.egg-info/SOURCES.txt
+owlapy.egg-info/dependency_links.txt
+owlapy.egg-info/top_level.txt
