@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: dc_helpers
+Version: 0.6.3
+Summary: DC utility functions and classes
+Home-page: UNKNOWN
+Author: Viktor Makarov
+Author-email: viktor.makarov@corp.mail.ru
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: utility
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
