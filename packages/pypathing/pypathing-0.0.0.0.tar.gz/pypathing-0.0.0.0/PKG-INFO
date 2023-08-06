@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pypathing
+Version: 0.0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/JulianWww/pyPathing
+Author: Julian Wandhoven
+Author-email: julian.wandhoven@gmail.com
+License: apache-2.0
+Description: UNKNOWN
+Keywords: pathfinding
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3
