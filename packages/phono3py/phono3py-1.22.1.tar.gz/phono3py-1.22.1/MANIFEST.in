@@ -1,0 +1,8 @@
+graft c/harmonic
+graft c/anharmonic
+graft c/spglib
+graft c/kspclib
+graft example
+include setup.py
+include __nanoversion__.txt
+include LICENSE
