@@ -1,0 +1,23 @@
+title: 1D scan
+iterations: 1
+actions: 1
+items:
+- type: iterative
+  input: relative
+  device_id: X
+  attribute: Position
+  trigger_log: true
+  as_step: false
+  scanner: None
+  bidirectional: false
+  return_back: true
+  on_warning: Abort macro
+- type: action
+  device_id: Detector
+  step: Execute method
+  trigger_log: true
+  scanner: None
+  on_warning: Abort macro
+  method: start_acquisition
+measurement_groups:
+- Sample motors
