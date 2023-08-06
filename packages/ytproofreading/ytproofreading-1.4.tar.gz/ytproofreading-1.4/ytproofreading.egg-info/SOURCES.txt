@@ -1,0 +1,8 @@
+README.md
+setup.py
+ytproofreading/__init__.py
+ytproofreading/ytproofreading.py
+ytproofreading.egg-info/PKG-INFO
+ytproofreading.egg-info/SOURCES.txt
+ytproofreading.egg-info/dependency_links.txt
+ytproofreading.egg-info/top_level.txt
