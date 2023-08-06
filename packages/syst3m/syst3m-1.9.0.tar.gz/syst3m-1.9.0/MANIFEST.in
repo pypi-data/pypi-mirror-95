@@ -1,0 +1,5 @@
+include syst3m/README.md
+include syst3m/v1/classes/browser/drivers/osx/*
+include syst3m/v1/classes/browser/drivers/linux/*
+include syst3m/syst3m/v1/classes/browser/drivers/osx/*
+include syst3m/syst3m/v1/classes/browser/drivers/linux/*
