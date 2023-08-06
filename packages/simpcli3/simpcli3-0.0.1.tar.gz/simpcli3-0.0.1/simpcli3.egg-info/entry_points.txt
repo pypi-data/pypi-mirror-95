@@ -1,0 +1,3 @@
+[console_scripts]
+simpcli3 = simpcli3.scripts.cli:simpcli3
+

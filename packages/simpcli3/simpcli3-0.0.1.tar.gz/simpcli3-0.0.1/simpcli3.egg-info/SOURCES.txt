@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+simpcli3/__init__.py
+simpcli3/app.py
+simpcli3/cli.py
+simpcli3/logging.py
+simpcli3/simpcli.py
+simpcli3.egg-info/PKG-INFO
+simpcli3.egg-info/SOURCES.txt
+simpcli3.egg-info/dependency_links.txt
+simpcli3.egg-info/entry_points.txt
+simpcli3.egg-info/not-zip-safe
+simpcli3.egg-info/requires.txt
+simpcli3.egg-info/top_level.txt
