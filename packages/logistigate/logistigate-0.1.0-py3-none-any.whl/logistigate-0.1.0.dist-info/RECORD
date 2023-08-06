@@ -1,0 +1,17 @@
+logistigate/__init__.py,sha256=bPQBoKdLPsIiR3CiYnIDH31FMXI3W8eioZOt5m92-eM,42
+logistigate/lg.py,sha256=hm_jGx19Rr0dcprZCjgOxjtwhdHaS7Rbn45bqKp69dI,8429
+logistigate/methods.py,sha256=rtqprdUY3kT1lWRP1uJZvHgsSPNBprIfJkbreOyVXCk,24994
+logistigate/utilities.py,sha256=Ksqlq9sn_905QzwEs3hpK_oywyKMzH0FZ4CHrLd9iT0,25989
+logistigate/data/example1TestData.csv,sha256=Xr32WYobcpYM6-HteBliNlpAWotGeUzNR1RFv0sh5Sw,96000
+logistigate/data/example1TransitionMatrix.csv,sha256=6azgQY_e8lEoWz7mvOQcgDFOkIwv7aLa4fqmhJid-Uc,351
+logistigate/data/example1TrueRates.csv,sha256=lPu5Zwm2vrB8TcxTT2X4EGWksC573atmfAKpBOLYL-w,236
+logistigate/data/example1bTestData.csv,sha256=TEWBn0Vsw2lodytgxxdchhiVaSV2pH0CmxJlypSjeSc,24000
+logistigate/data/example1cTestData.csv,sha256=dmYm9FjMhg2WmWY0njwSpsLR47CuqFrCj8xJPNP6XLk,96000
+logistigate/data/example2TestData.csv,sha256=5kr4_W436jqFEDZ6n3hZ8_4Xf1kHZUV6FQIOT4q3pRw,52000
+logistigate/data/example2TransitionMatrix.csv,sha256=6azgQY_e8lEoWz7mvOQcgDFOkIwv7aLa4fqmhJid-Uc,351
+logistigate/data/example2TrueRates.csv,sha256=lPu5Zwm2vrB8TcxTT2X4EGWksC573atmfAKpBOLYL-w,236
+logistigate-0.1.0.dist-info/LICENSE.txt,sha256=lmCJWFi3tai-dhjZDQrGVwXv2rzT1e4dhrbwq2HXLmA,1140
+logistigate-0.1.0.dist-info/METADATA,sha256=KvKb-ydXiAA-hP7KFeCKz_4mJncgX6Z6yc6j26xtxQs,2673
+logistigate-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+logistigate-0.1.0.dist-info/top_level.txt,sha256=rSjPj4BXj7Kr42mF_JaQTKnrY9EFjyt4jC6BzdCoZfQ,12
+logistigate-0.1.0.dist-info/RECORD,,

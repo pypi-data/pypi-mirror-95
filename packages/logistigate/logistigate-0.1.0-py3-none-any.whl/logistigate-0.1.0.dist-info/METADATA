@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: logistigate
+Version: 0.1.0
+Summary: python implementation of logistigate for supply-chain aberration inference
+Home-page: https://github.com/eugenewickett/logistigate
+Author: Eugene Wickett, Karen Smilowitz, Matthew Plumlee
+Author-email: eugenewickett@u.northwestern.edu
+License: UNKNOWN
+Keywords: supply chains,statistical inference,pharmaceutical regulation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/plain
+Requires-Dist: nuts
+Requires-Dist: numpy
+Requires-Dist: tabulate
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# logistigate
+python implementation of logistigate
+
+Overview of logistigate
+----------------
+Generally speaking, the logistigate methods infer aberration likelihoods at
+entities within a two-echelon supply chain, only using testing data from sample
+points taken from entities of the lower echelon. It is assumed that products
+originate within the system at one entity of the upper echelon, and are
+procured by one entity of the lower echelon. The likelihood of a lower-echelon
+entity obtaining product from each of the upper-echelon entities is stored in
+what is deemed the "transition matrix" for that system. Testing of products at
+the lower echelon yields aberrational (recorded as "1") or acceptable ("0")
+results. We then distinguish possible information-availability settings into
+two categories, Tracked and Untracked:
+ - In the Tracked case, both the upper-echelon and lower-echelon entities
+     traversed by the tested product are known upon testing.
+ - In the Untracked case, only the lower-echelon entity is entirely known, in
+     addition to the system's transition matrix.
+It is further assumed that products are aberrational at their origin in the
+upper echelon with some entity-specific fixed probability, and that products
+acceptable at the upper echelon become aberrational at the destination in the
+lower echelon with some other entity-specific fixed probabiltiy. It is these
+fixed probabilities that the logistigate methods attempt to infer.
+
+More specifically, the logistigate methods were developed with the intent of
+inferring sources of substandard or falsified products within a pharmaceutical
+supply chain. Entities of the upper echelon are referred to as importers, and
+entities of the lower echelon are referred to as outlets. This terminology is
+used interchangeably throughout the logistigate package.
+
