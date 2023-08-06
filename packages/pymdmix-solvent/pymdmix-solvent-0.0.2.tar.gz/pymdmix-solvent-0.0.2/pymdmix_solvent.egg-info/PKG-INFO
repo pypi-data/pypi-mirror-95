@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pymdmix-solvent
+Version: 0.0.2
+Summary: pymdmix plugin for solvent management
+Home-page: https://github.com/ggutierrez-bio/mdmix4
+Author: ggutierrez-bio
+Author-email: 
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
