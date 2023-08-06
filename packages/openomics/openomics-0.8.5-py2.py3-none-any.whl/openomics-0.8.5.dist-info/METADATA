@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: openomics
+Version: 0.8.5
+Summary: OpenOmics provides a bioinformatics API and web-app platform integrate and visualize the multiomics and clinical data.
+Home-page: https://github.com/BioMeCIS-Lab/OpenOmics
+Author: Jonny Tran
+Author-email: nhat.tran@mavs.uta.edu
+License: MIT license
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: biopython
+Requires-Dist: large-image
+Requires-Dist: bokeh
+Requires-Dist: dask[complete]
+Requires-Dist: networkx (>=2.1)
+Requires-Dist: numpy (>=1.16.5)
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: astropy
+Requires-Dist: h5py
+Requires-Dist: requests
+Requires-Dist: setuptools
+Requires-Dist: typing
+Requires-Dist: bioservices
+Requires-Dist: itsdangerous
+Requires-Dist: dash
+Requires-Dist: dash-daq
+Requires-Dist: dash-bootstrap-components
+Requires-Dist: gunicorn
+Requires-Dist: six
+Requires-Dist: validators
+Requires-Dist: sqlalchemy
+Requires-Dist: filetype
+Requires-Dist: gtfparse
+Requires-Dist: scikit-allel
+Requires-Dist: rarfile
+Requires-Dist: goatools
+Requires-Dist: obonet
+
+=========
+OpenOmics
+=========
+
+.. image:: https://github.com/BioMeCIS-Lab/OpenOmics/raw/master/openomics_web/assets/openomics_logo.png
+
+.. image:: https://img.shields.io/pypi/v/OpenOmics.svg
+        :target: https://pypi.python.org/pypi/OpenOmics
+
+.. image:: https://img.shields.io/travis/BioMeCIS-Lab/OpenOmics.svg
+        :target: https://travis-ci.org/BioMeCIS-Lab/OpenOmics
+
+.. image:: https://codecov.io/gh/BioMeCIS-Lab/OpenOmics/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/BioMeCIS-Lab/OpenOmics
+
+.. image:: https://readthedocs.org/projects/openomics/badge/?version=latest
+        :target: https://openomics.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://pyup.io/repos/github/BioMeCIS-Lab/OpenOmics/shield.svg
+     :target: https://pyup.io/repos/github/BioMeCIS-Lab/OpenOmics/
+     :alt: Updates
+
+
+OpenOmics provides a bioinformatics API and web-app platform integrate, analyze, and visualize the multi-omics and clinical data.
+
+
+* Free software: MIT license
+* Documentation: https://openomics.readthedocs.io.
+
+
+Features
+--------
+
+* Provides a bioinformatics workflow to generate integrative results from multi-omics data.
+* Facilitates integration of various bio-databases, multi-omics expression, genomics, and clinical data.
+* Highly flexible to different data types and missing data.
+* Provides researchers with means to consistently store and explore their experimental datasets.
+* Enables scalable performance with parallel computing, while easily configurable to deploy on both single machine and a cluster.
+* Usable by both developers and scientists with its intuitive Python API and web-app dashboard interface (WIP).
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `pyOpenSci/cookiecutter-pyopensci`_ project template, based off `audreyr/cookiecutter-pypackage`_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`pyOpenSci/cookiecutter-pyopensci`: https://github.com/pyOpenSci/cookiecutter-pyopensci
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.8.5 (Pending)
+_______________
+* Build web-app dashboard interface for importing user multiomics data files
+
+
+0.8.4 (2020-01-07)
+------------------
+* Replace Pandas Dataframe with Dask DataFrame for parallel processings
+
+
+0.7.2 (2019-09-01)
+------------------
+
+* Added compatibility for Python 2.7
+* Refactored ClinicalData
+* Built working documentations with Sphinx on readthedocs
+* Added pytests for MultiOmicsData
+* First successful build on Travis CI on Python 3.4-3.7, 2.7
+
+
+0.6.0 (2019-08-31)
+------------------
+
+* First release on PyPI.
+
+
