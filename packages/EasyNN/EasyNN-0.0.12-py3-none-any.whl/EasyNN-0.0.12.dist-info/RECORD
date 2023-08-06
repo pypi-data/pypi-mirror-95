@@ -1,0 +1,13 @@
+EasyNN/DeepNeuralNetwork.py,sha256=mTAmCuYo-j2QrC302wLBSK6y6sCii_kDy61cHv8Lorc,167
+EasyNN/EasyNN.py,sha256=-3bS7qilzVuOPsqSq6uxsZxr21Zp7g5CDHzNuGl4Rzs,311
+EasyNN/NeuralNetwork.py,sha256=CpvaaJDfQAgE_1CHUz00-GxnYmBHeivZRCs1M86gHsQ,6295
+EasyNN/Point.py,sha256=dbtm4FvxwbMu7xJuTLvHnqARihL5URVuXYlGmNGHZ5c,5101
+EasyNN/__init__.py,sha256=d1zS5bz9UkhUh1bus2NqsNIctSy0k_dPLnOEzT5jhMU,40
+EasyNN/run.py,sha256=YBXqXHL_M8Q2UxkcOZjgimfu5kxm1Bc7Jg2nG6mZO1o,258
+EasyNN/examples/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+EasyNN/examples/mnist.py,sha256=zqH_cGNLc99zUnAc9oxO84pjf1utUa2NxOPjF7nCtVI,3622
+EasyNN-0.0.12.dist-info/LICENSE.txt,sha256=7cYjhXLc3bXbp0Y8-b1EdjOctbU7ciT-L5nUjzKJ4H4,1075
+EasyNN-0.0.12.dist-info/METADATA,sha256=V-bHJA-3RDt5p1j0zzjyV2o_94hT-erPPFbtD_hZEGE,1151
+EasyNN-0.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+EasyNN-0.0.12.dist-info/top_level.txt,sha256=4Mt30-hlm5LYGJPNP6QeWj5P51Kpeev4TteZ8fre250,7
+EasyNN-0.0.12.dist-info/RECORD,,
