@@ -1,0 +1,3 @@
+pyodbc
+click
+psycopg2-binary
