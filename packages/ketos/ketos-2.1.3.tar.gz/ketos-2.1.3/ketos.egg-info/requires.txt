@@ -1,0 +1,15 @@
+numpy
+tables
+scipy
+pandas
+setuptools>=41.0.0
+tensorflow>=2.2
+numba==0.48.0
+scikit-learn
+scikit-image
+librosa
+datetime_glob
+matplotlib
+tqdm
+pint
+psutil
