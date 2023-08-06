@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: flask-midtrans
+Version: 0.0.1a0
+Summary: flask_midtrans is a package for integrate midtrans to flask framework
+Home-page: https://github.com/agung96tm/flask_midtrans
+Author: Agung Yuliyanto
+Author-email: agung.96tm@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (<2.0.0,>=1.1.0)
+Requires-Dist: midtransclient (<1.3.0,>=1.2.0)
+
+## Flask Midtrans
+
+
+### How to use:
+```python
+from flask_midtrans import Midtrans
+from flask import Flask
+
+# set environments
+app = Flask(__name__)
+app.config['MIDTRANS_IS_PRODUCTION'] = False
+app.config['MIDTRANS_SERVER_KEY'] = 'SB-Mid-server-fRTQ4YyV5mVXB'
+app.config['MIDTRANS_CLIENT_KEY'] = 'SB-Mid-client-hdv0voYgqK'
+
+# instance
+midtrans = Midtrans(app)
+
+@app.route('/')
+def hello_world():
+    param = {
+        "transaction_details": {
+            "order_id": "test-transaction-123",
+            "gross_amount": 200000
+        }, "credit_card": {
+            "secure": True
+        }
+    }
+
+    # midtrans.snap or midtrans.core
+    # https://github.com/Midtrans/midtrans-python-client
+    response = midtrans.snap.create_transaction(param)
+
+    # >> response
+    #  {'token': 'thistoken', 'redirect_url': 'http://midtrans..'}
+    return response['token']
+```
+
+
+### Contributes:
+- agung96tm ( [github](https://github.com/agung96tm) | [website](https://agung96tm.com/) )
+
+
