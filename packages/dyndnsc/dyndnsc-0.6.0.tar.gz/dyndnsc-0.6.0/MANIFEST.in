@@ -1,0 +1,9 @@
+include AUTHORS
+include *.rst
+include LICENSE
+include example.ini
+recursive-include dyndnsc *.py
+recursive-include dyndnsc/resources *
+recursive-include docs *
+global-exclude *.py[co]
+recursive-exclude packaging *
