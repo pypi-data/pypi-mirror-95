@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bert-token-tagger
+Version: 0.2.0
+Summary: 
+Home-page: https://github.com/Qordobacode/library.bert.token.tagger
+Keywords: bert,huggingface
+Author: melisa-qordoba
+Author-email: melisa@qordoba.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: torch (>=1.7.1,<2.0.0)
+Requires-Dist: transformers (>=4.1.1,<5.0.0)
+Project-URL: Repository, https://github.com/Qordobacode/library.bert.token.tagger
