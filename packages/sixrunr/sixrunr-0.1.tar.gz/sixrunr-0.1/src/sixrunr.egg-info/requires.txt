@@ -1,0 +1,8 @@
+pyyaml
+paramiko
+
+[dev]
+pre-commit
+pydocstyle
+pytest
+tox
