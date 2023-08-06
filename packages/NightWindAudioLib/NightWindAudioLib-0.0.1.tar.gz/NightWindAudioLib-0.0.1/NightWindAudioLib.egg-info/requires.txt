@@ -1,0 +1,2 @@
+pydub>=0.24
+simpleaudio>=1.0
