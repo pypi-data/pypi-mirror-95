@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: skedulord
+Version: 1.0.3
+Summary: UNKNOWN
+Home-page: https://koaning.github.io/skedulord/
+Author: Vincent D. Warmerdam
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (>=5.1.1)
+Requires-Dist: rich (>=9.10.0)
+Requires-Dist: clumper (>=0.2.8)
+Requires-Dist: typer (>=0.3.2)
+Requires-Dist: python-crontab (>=2.5.1)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mkdocs-material (>=6.2.8) ; extra == 'dev'
+
+![](docs/full-logo.png)
+
+Skedulord is a tool that automates scheduling and logging of jobs. It's a 
+layer on top of cron meant for python users. 
+
+## Installation 
+
+```python
+> pip install skedulord
+```
+
+## Usage 
+
+These are all the commands available: 
+
+```
+> python -m skedulord
+Usage: __main__.py [OPTIONS] COMMAND [ARGS]...
+
+  SKEDULORD: helps with cronjobs and logs.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  schedule  Set (or reset) cron jobs based on config.
+  run       Run a single command, which is logged by skedulord.
+  history   Shows a table with job status.
+  summary   Shows a summary of all jobs.``
+  build     Builds static html files so you may view a dashboard.
+  serve     Opens the dashboard in a browser.
+  wipe      Wipe the disk or schedule state.
+  version   Show the version.
+```
+
+
