@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: beaker-client
+Version: 28.2
+Summary: Command-line client for interacting with Beaker
+Home-page: https://beaker-project.org/
+Author: Red Hat, Inc.
+Author-email: beaker-devel@lists.fedorahosted.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Requires-Dist: beaker-common
+Requires-Dist: lxml
+Requires-Dist: six
+Requires-Dist: requests
+Requires-Dist: PrettyTable
+Requires-Dist: Jinja2
+Requires-Dist: gssapi
+
+UNKNOWN
+
+
