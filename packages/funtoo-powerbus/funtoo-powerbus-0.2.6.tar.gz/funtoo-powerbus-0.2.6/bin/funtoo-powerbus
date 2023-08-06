@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+import logging
+import sys
+
+from subpop.hub import Hub
+
+hub = Hub()
+
+import colorama
+import dyne.org.funtoo.powerbus as powerbus
+
+logging.basicConfig(filename='/var/tmp/funtoo-powerbus.log', level=logging.DEBUG)
+
+if __name__ == "__main__":
+	try:
+		colorama.init()
+		powerbus.apply_config(ignore_inhibit=["gnome-session-binary"])
+		try:
+			server = powerbus.system.PowerBusDaemon()
+		except PermissionError:
+			logging.error(f"Please run {sys.argv[0]} as root.\n")
+			sys.exit(1)
+		hub.LOOP.run_until_complete(server.start())
+	except BaseException as e:
+		logging.error("Exception encountered:", exc_info=e)
+		sys.exit(1)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../funtoo-dbus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../funtoo-metatools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../kit-fixups" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../subpop" vcs="Git" />
+  </component>
+</project>
