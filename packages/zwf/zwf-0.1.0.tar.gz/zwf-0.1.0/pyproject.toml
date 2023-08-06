@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "zwf"
+version = "0.1.0"
+description = "Tools for Zwift WAD files"
+authors = ["Hal Blackburn <hal.blackburn@gmail.com>"]
+homepage = "https://github.com/h4l/zwf"
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only"
+]
+
+[tool.poetry.scripts]
+zwf = "zwf:main"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+docopt = "^0.6.2"
+"hurry.filesize" = "^0.9"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
