@@ -1,0 +1,6 @@
+NXP Lite Tools
+
+This is an abstract bundle of lite tools, follow next to install detail tools:
+
+1. NXP power performance data submitter:
+$ pip install -UI nxp_lite_tools[pp]
