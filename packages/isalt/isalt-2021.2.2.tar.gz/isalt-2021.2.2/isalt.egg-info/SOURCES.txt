@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+docs/man/isalt.1
+isalt/__init__.py
+isalt/scripts.py
+isalt.egg-info/PKG-INFO
+isalt.egg-info/SOURCES.txt
+isalt.egg-info/dependency_links.txt
+isalt.egg-info/entry_points.txt
+isalt.egg-info/namespace_packages.txt
+isalt.egg-info/requires.txt
+isalt.egg-info/top_level.txt
