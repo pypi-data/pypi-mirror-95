@@ -1,0 +1,9 @@
+mimetype_description/__init__.py,sha256=DomwXpw0_7jBIR4FCDzoy6FShlplq7UZjafwBgdoyXE,1858
+mimetype_description/freedesktop.org.xml,sha256=EdhGX_Mxb8kkmZIxaGsdrLlzKB9QxZoCOEklwtDET6w,2341532
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_mimetype_description.py,sha256=HZSFouA2oixsH2BxR8E0fznqJ-zluuQ9yYN9zXSXqPI,1002
+mimetype_description-0.0.6.dist-info/LICENSE,sha256=KNkmWFBTlZP_DUO9bjol_9mWeXJEFUAz-aso8GZnMA0,1076
+mimetype_description-0.0.6.dist-info/METADATA,sha256=QI-0t17b0MHW19JKM4SumuhKhon17TzD5v9tvNvzkWI,1060
+mimetype_description-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mimetype_description-0.0.6.dist-info/top_level.txt,sha256=X1jTPUQYqhnZvVa5ek9xjLzgg4kgehGAkeUWvtz4tVM,27
+mimetype_description-0.0.6.dist-info/RECORD,,

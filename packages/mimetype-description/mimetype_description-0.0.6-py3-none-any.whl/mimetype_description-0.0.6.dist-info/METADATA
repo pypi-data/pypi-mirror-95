@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: mimetype-description
+Version: 0.0.6
+Summary: Human readable MIME type descriptions
+Home-page: https://github.com/chesstrian/mimetype-description
+Author: Christian Gutierrez
+Author-email: chesstrian@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: importlib-resources ; python_version < "3.7.0"
+
+# MIME Type Description
+
+Human readable MIME type descriptions based on [shared-mime-info](https://www.freedesktop.org/wiki/Software/shared-mime-info/).
+
+## Install
+
+```bash
+pip install mimetype-description
+```
+
+## Usage
+
+```python
+from mimetype_description import guess_mime_type, get_mime_type_description
+
+mime_type = guess_mime_type('file.txt')
+description = get_mime_type_description(mime_type)
+print(description)  # plain text document
+```
+
+## Test
+
+```bash
+pytest
+```
+
+
