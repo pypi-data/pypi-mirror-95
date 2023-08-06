@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+fetchcreds/__init__.py
+fetchcreds/test.py
+fetchcreds.egg-info/PKG-INFO
+fetchcreds.egg-info/SOURCES.txt
+fetchcreds.egg-info/dependency_links.txt
+fetchcreds.egg-info/top_level.txt
