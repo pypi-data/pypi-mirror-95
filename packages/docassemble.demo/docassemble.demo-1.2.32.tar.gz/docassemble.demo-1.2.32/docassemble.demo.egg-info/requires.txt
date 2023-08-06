@@ -1,0 +1,2 @@
+docassemble.base==1.2.32
+docassemble==1.2.32
