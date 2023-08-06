@@ -1,0 +1,3 @@
+[console_scripts]
+magicformulabr = src.magicformulabr:main
+

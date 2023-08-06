@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+magicformulabr.egg-info/PKG-INFO
+magicformulabr.egg-info/SOURCES.txt
+magicformulabr.egg-info/dependency_links.txt
+magicformulabr.egg-info/entry_points.txt
+magicformulabr.egg-info/requires.txt
+magicformulabr.egg-info/top_level.txt
+src/__init__.py
+src/__version__.py
+src/magicformulabr.py
