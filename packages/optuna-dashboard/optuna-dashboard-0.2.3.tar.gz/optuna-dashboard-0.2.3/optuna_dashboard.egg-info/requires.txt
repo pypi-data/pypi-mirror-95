@@ -1,0 +1,11 @@
+optuna>=2.4
+bottle
+
+[lint]
+black
+flake8
+mypy
+
+[release]
+wheel
+twine
