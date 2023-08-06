@@ -1,0 +1,7 @@
+docopt
+ipympl
+matplotlib
+numpy
+NeuNorm
+pandas
+tqdm
