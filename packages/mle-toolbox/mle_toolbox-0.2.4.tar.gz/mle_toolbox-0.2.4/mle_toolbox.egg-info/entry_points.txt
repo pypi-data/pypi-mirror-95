@@ -1,0 +1,6 @@
+[console_scripts]
+monitor-cluster = mle_toolbox.monitor_cluster:main
+report-experiment = mle_toolbox.report_experiment:main
+retrieve-experiment = mle_toolbox.retrieve_experiment:main
+run-experiment = mle_toolbox.run_experiment:main
+
