@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sharkvalidator
+Version: 0.1.6
+Summary: Validate data delivery at the Swedish NODC
+Home-page: https://github.com/sharksmhi/sharkvalidator
+Author: SMHI - NODC
+Author-email: shark@smhi.se
+License: UNKNOWN
+Description: [![PyPi version](https://pypip.in/v/sharkvalidator/badge.png)](https://crate.io/packages/sharkvalidator/)
+        [![PyPi wheel](https://pypip.in/wheel/sharkvalidator/badge.png)](https://crate.io/packages/sharkvalidator/)
+        [![PyPi license](https://pypip.in/license/sharkvalidator/badge.png)](https://crate.io/packages/sharkvalidator/)
+        
+        Python 3 library developed by Shd at SMHI.
+        
+        Usage:
+        - Read any kind of data delivery within the NODC at SMHI (eg. Biological or Physical and Chemical data according to the datahost format or the SMHI LIMS-format)
+        - Validate format
+        - Write validation to log
+        
+        Installation
+        ------------
+        
+        SHARKvalidator can be installed from PyPI with pip:
+        
+        .. code-block:: bash
+        
+            pip install sharkvalidator
+        
+        Important:
+        ------------
+        This package is not intendent to save any copies/corrections of data, only to validate its format.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
