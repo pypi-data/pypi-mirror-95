@@ -1,0 +1,7 @@
+setup.py
+ezmaker/__init__.py
+ezmaker/demo.py
+ezmaker.egg-info/PKG-INFO
+ezmaker.egg-info/SOURCES.txt
+ezmaker.egg-info/dependency_links.txt
+ezmaker.egg-info/top_level.txt
