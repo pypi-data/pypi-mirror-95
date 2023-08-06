@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: openwsn-coap
+Version: 0.0.8
+Summary: A CoAP Python library
+Home-page: http://www.openwsn.org/
+Author: Thomas Watteyne
+Author-email: watteyne@eecs.berkeley.edu
+License: /*
+ * Copyright (c) 2010-2013, Regents of the University of California.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *  - Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ *  - Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ *  - Neither the name of the Regents of the University of California nor the
+ *    names of its contributors may be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+Keywords: CoAP,Internet of Things,IETF CORE
+Platform: platform-independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: scons
+Requires-Dist: PyDispatcher
+Requires-Dist: pylint
+Requires-Dist: pycryptodome
+Requires-Dist: cbor
+Requires-Dist: hkdf
+Requires-Dist: pytest
+
+coap
+====
+
+[![Health](https://landscape.io/github/openwsn-berkeley/coap/develop/landscape.png)](https://landscape.io/github/openwsn-berkeley/coap/develop)
+[![Travis](https://travis-ci.org/openwsn-berkeley/coap.png?branch=develop)](https://travis-ci.org/openwsn-berkeley/coap)
+[![Builder](http://builder.openwsn.org/buildStatus/icon?job=CoAP Unit Tests)](http://builder.openwsn.org/job/CoAP%20Unit%20Tests/)
+
+A CoAP Python library
+
+This package implements the Constrained Application Protocol (CoAP)
+developed by the IETF CORE working group.
+
+This package aims at implementing:
+http://tools.ietf.org/html/draft-ietf-core-coap-18
+
+In particular, it implements:
+- a CoAP client
+- a CoAP server with an arbitrary number of resources
+
+Full documentation at https://openwsn.atlassian.net/wiki/display/OW/CoAP+Python+Library.
+
+Report bugs at https://openwsn.atlassian.net/browse/COAP.
+
+This package is part of Berkeley's OpenWSN project,
+http://www.openwsn.org/.
+
+
