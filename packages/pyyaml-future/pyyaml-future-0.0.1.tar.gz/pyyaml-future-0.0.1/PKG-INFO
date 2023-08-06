@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyyaml-future
+Version: 0.0.1
+Summary: Use YAML 1.3 Features in PyYAML (YAML 1.1)
+Home-page: https://github.com/yaml/pyyaml-future
+Author: Ingy döt Net
+Author-email: ingy@ingy.net
+License: MIT
+Description: UNKNOWN
+Keywords: yaml,future
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
