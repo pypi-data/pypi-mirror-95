@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easy-baidu-api
+Version: 0.1.1
+Summary: Simply call Baidu API
+Home-page: https://github.com/CNlong-Py/Pythonlibrarty.git
+Author: CNlong
+Author-email: T3464356490@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
