@@ -1,0 +1,3 @@
+[console_scripts]
+pupg = pupg._cli:main
+

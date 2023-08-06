@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pupg
+Version: 0.0.1
+Summary: Upgrade all python packages.
+Home-page: https://github.com/romanstrazanec/pupg
+Author: Roman Stražanec
+Author-email: strazanec.roman@gmail.com
+Maintainer: Roman Stražanec
+Maintainer-email: strazanec.roman@gmail.com
+License: MIT
+Download-URL: https://github.com/romanstrazanec/pupg/archive/v0.0.1.tar.gz
+Keywords: pip install upgrade package all
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Other/Nonlisted Topic
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+
+# PIPUP
+
+Python script for upgrading all python packages, which is still a big missing pip functionality.
+The script runs `pip list -o` command to get all outdated packages.
+Then it creates a thread for all of the found upgradable packages and runs `pip install -U %pckg` on them.
+
+## Installation
+
+`pip install pipu`
+
+## Usage
+
+`python -m pipup [-h] [-l LIMIT] [-c] [-v]`
+
+### optional arguments:
+
+- `-h, --help` - show help message and exit
+- `-l LIMIT, --limit LIMIT` - set default upgrade try limit (default=3) allowing safely abort upgrade of a package after given number of tries
+- `-c, --check` - check if upgrade was successful at the and of the script; simply runs `pip list -o` again and check if the list is zero
+- `-v, --verbose` - not implemented yet
+
+## VERSIONS
+
+- 1.1.0
+  - multiprocessing functionality replaced by threads
+- 1.0.0
+  - created script for installing all packages
+
+
