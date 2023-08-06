@@ -1,0 +1,242 @@
+[
+  {
+    "constraint": [],
+    "upper-bound": "unsolvable",
+    "lower-bound": "unsolvable",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 0
+  },
+  {
+    "constraint": ["111"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 1
+  },
+  {
+    "constraint": ["111", "121"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 2
+  },
+  {
+    "constraint": ["111", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 3
+  },
+  {
+    "constraint": ["111", "222"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 4
+  },
+  {
+    "constraint": ["121", "112"],
+    "upper-bound": "(log n)",
+    "lower-bound": "(log n)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 5
+  },
+  {
+    "constraint": ["112", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 6
+  },
+  {
+    "constraint": ["121", "212"],
+    "upper-bound": "(n)",
+    "lower-bound": "(n)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 7
+  },
+  {
+    "constraint": ["121", "111", "112"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 8
+  },
+  {
+    "constraint": ["111", "112", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 9
+  },
+  {
+    "constraint": ["111", "112", "222"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 10
+  },
+  {
+    "constraint": ["121", "111", "212"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 11
+  },
+  {
+    "constraint": ["111", "212", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 12
+  },
+  {
+    "constraint": ["111", "212", "222"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 13
+  },
+  {
+    "constraint": ["111", "121", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 14
+  },
+  {
+    "constraint": ["121", "112", "212"],
+    "upper-bound": "(log n)",
+    "lower-bound": "(log n)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 15
+  },
+  {
+    "constraint": ["112", "212", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 16
+  },
+  {
+    "constraint": ["121", "111", "112", "212"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 17
+  },
+  {
+    "constraint": ["111", "112", "212", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 18
+  },
+  {
+    "constraint": ["111", "112", "212", "222"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 19
+  },
+  {
+    "constraint": ["121", "111", "112", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 20
+  },
+  {
+    "constraint": ["121", "111", "112", "222"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 21
+  },
+  {
+    "constraint": ["111", "112", "222", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 22
+  },
+  {
+    "constraint": ["121", "111", "212", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 23
+  },
+  {
+    "constraint": ["121", "111", "212", "222"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 24
+  },
+  {
+    "constraint": ["121", "112", "212", "122"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 25
+  },
+  {
+    "constraint": ["112", "122", "111", "212", "121"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 26
+  },
+  {
+    "constraint": ["112", "222", "111", "212", "121"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 27
+  },
+  {
+    "constraint": ["222", "122", "111", "212", "112"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 28
+  },
+  {
+    "constraint": ["112", "222", "122", "111", "212", "121"],
+    "upper-bound": "(1)",
+    "lower-bound": "(1)",
+    "unsolvable-count": "",
+    "solvable-count": "",
+    "id": 29
+  }
+]
