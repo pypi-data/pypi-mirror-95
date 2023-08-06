@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pysisso
+Version: 0.3.1
+Summary: Python interface to the SISSO (Sure Independence Screening and Sparsifying Operator) method.
+License: See LICENCE file.
+Author: David Waroquiers
+Author-email: david.waroquiers@matgenix.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: custodian (>=2020.4.27,<2021.0.0)
+Requires-Dist: monty (>=3.0.4,<5)
+Requires-Dist: pandas (>=1.0.5,<2.0.0)
+Requires-Dist: scikit-learn (>=0.23.1,<0.24.0)
