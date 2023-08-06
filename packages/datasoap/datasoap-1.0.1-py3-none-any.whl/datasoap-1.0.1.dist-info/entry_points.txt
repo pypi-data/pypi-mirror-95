@@ -1,0 +1,3 @@
+[console_scripts]
+datasoap=datasoap:main
+
