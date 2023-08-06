@@ -1,0 +1,9 @@
+README.md
+setup.py
+alis_pdf/__init__.py
+alis_pdf/pdf2image.py
+alis_pdf/pdf2text.py
+alis_pdf.egg-info/PKG-INFO
+alis_pdf.egg-info/SOURCES.txt
+alis_pdf.egg-info/dependency_links.txt
+alis_pdf.egg-info/top_level.txt
