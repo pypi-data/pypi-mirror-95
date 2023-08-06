@@ -1,0 +1,5 @@
+aws_ssm_tunnel_agent-1.3.2.data/scripts/ssm-tunnel-agent,sha256=rtSy2n8RBZ4yidJlzSVacJ3jXGn4J7JdCgysVBvulu0,4397
+aws_ssm_tunnel_agent-1.3.2.dist-info/METADATA,sha256=-s2M12OzQhuuhoD4BCj89Hdmt-xITIY4CL1iGZ2NgKY,1787
+aws_ssm_tunnel_agent-1.3.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+aws_ssm_tunnel_agent-1.3.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_ssm_tunnel_agent-1.3.2.dist-info/RECORD,,
