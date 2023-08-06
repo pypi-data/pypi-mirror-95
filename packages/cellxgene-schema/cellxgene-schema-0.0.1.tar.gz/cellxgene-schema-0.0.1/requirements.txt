@@ -1,0 +1,7 @@
+Click
+PyYAML
+anndata
+numpy
+pandas
+requests
+scanpy<1.7.0
