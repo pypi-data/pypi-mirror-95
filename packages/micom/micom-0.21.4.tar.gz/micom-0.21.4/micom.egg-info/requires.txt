@@ -1,0 +1,15 @@
+cobra>=0.17.1
+optlang>=1.4.4
+pandas>=0.20.0
+rich>=9.10.0
+jinja2>=2.10.0
+scikit-learn>=0.22.0
+scipy>=1.0.0
+symengine>=0.6.1
+
+[dev]
+
+[test]
+coverage
+pytest
+pytest-cov
