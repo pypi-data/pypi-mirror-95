@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+akita_fastapi/__init__.py
+akita_fastapi/testclient.py
+akita_fastapi.egg-info/PKG-INFO
+akita_fastapi.egg-info/SOURCES.txt
+akita_fastapi.egg-info/dependency_links.txt
+akita_fastapi.egg-info/requires.txt
+akita_fastapi.egg-info/top_level.txt

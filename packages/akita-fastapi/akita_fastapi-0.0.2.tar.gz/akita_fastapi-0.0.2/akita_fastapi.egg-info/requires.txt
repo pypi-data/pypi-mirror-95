@@ -1,0 +1,4 @@
+akita-har
+fastapi
+requests
+starlette
