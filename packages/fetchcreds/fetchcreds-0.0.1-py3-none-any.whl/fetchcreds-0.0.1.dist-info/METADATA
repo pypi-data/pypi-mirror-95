@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fetchcreds
+Version: 0.0.1
+Summary: A very small wrapper-package for bitwarden_rs credentials retrieval
+Home-page: https://github.com/opencareer/security
+Author: Alexandr Moskalev
+Author-email: alexandr@reveliolabs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# fetchcreds
+
+This is a very small wrapper-package for easy bitwarden_rs credentials retrieval from python scripts. The package requires the initial CLI credentials retrieval setup to work.
+
+
+
