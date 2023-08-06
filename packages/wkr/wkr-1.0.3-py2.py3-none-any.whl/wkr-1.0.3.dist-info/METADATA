@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: wkr
+Version: 1.0.3
+Summary: Python utility library
+Home-page: https://github.com/wroberts/wkr.py
+Author: Will Roberts
+Author-email: wildwilhelm@gmail.com
+License: MIT license
+Keywords: wkr
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+=======================
+Will's Python Utilities
+=======================
+
+
+.. image:: https://img.shields.io/pypi/v/wkr.svg
+        :target: https://pypi.python.org/pypi/wkr
+
+.. image:: https://img.shields.io/travis/wroberts/wkr.py.svg
+        :target: https://travis-ci.org/wroberts/wkr.py
+
+.. image:: https://coveralls.io/repos/wroberts/wkr.py/badge.svg?branch=master
+  :target: https://coveralls.io/r/wroberts/wkr.py?branch=master
+     :alt: Test code coverage
+
+.. image:: https://readthedocs.org/projects/wkr/badge/?version=latest
+        :target: https://wkr.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://pyup.io/repos/github/wroberts/wkr.py/shield.svg
+     :target: https://pyup.io/repos/github/wroberts/wkr.py/
+     :alt: Updates
+
+
+Python utility library
+
+
+* Free software: MIT license
+* Documentation: https://wkr.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+---------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+1.0.0 (2017-06-23)
+------------------
+
+* First release on PyPI.
+
+
