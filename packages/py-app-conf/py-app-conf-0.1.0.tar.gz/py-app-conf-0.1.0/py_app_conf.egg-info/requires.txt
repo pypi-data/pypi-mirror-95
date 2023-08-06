@@ -1,0 +1,5 @@
+pydantic
+appdirs
+PyYAML
+toml
+python-dotenv
