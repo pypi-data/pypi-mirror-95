@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab-issue-delete = gitlab_operations.deleteissue:main
+
