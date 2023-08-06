@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: racepretextproc
+Version: 0.0.3
+Summary: Race Text processing library
+Home-page: https://github.com/race-ai01-srgs/racepretextproc
+Author: Saby, Rakesh, Shashi, Gurushanth
+Author-email: author@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+Requires-Dist: NLTK
+Requires-Dist: textblob
+Requires-Dist: emot
+Requires-Dist: WordCloud
+Requires-Dist: matplotlib
+
+# NLP
+
+
