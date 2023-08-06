@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: citable
+Version: 0.0.2
+Summary: Citable Loader
+Home-page: https://github.com/biersabrina/citablePyPI
+Author: Gerd Graßhoff, Florian Kotschka, Sabrina Bier
+Author-email: gerd.grasshoff@opensciencetechnology.com
+License: UNKNOWN
+Description: #Readme
+        
+        The Citable Package for downloading datasets from Zenodo by use of DOIs.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
