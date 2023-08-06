@@ -1,0 +1,9 @@
+opengeode_io/__init__.py,sha256=p5mw2RBo4-LygYh-LJtyeq11F_7q3fFNzcrHQiqpfA8,1237
+opengeode_io/libOpenGeode-IO_mesh.dylib,sha256=demxNnXv0XkZCYCKk1pMfvrtjTEn3RolkC3tNMYMP5k,2010112
+opengeode_io/libOpenGeode-IO_model.dylib,sha256=hP0Fq-uKg5SOdbRmQgJ4JsUAJZ0dbQKCy78Hmg0VLro,575184
+opengeode_io/opengeode_io_py_mesh.cpython-38-darwin.so,sha256=DF2o7hV6PTzB41XkCq-GmKfaqIrYM_qtDcg9dkR9VfE,130480
+opengeode_io/opengeode_io_py_model.cpython-38-darwin.so,sha256=mV9PzopIoJBoA9bs_3bGbI9vRUaiOSjkqP6ZxXhvLgs,130496
+OpenGeode_IO-5.7.1.dist-info/METADATA,sha256=WDsXTNmaW13q5MCyQveN3nUuay2_tomp-3wtd6iZqKw,3198
+OpenGeode_IO-5.7.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+OpenGeode_IO-5.7.1.dist-info/top_level.txt,sha256=UbHospLC99KjjzaIpg_8PZkv87pJ67SRlIyMrWV58CY,13
+OpenGeode_IO-5.7.1.dist-info/RECORD,,
