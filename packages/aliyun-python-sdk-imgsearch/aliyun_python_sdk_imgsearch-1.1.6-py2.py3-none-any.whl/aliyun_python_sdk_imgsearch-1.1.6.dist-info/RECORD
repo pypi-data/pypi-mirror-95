@@ -1,0 +1,16 @@
+aliyunsdkimgsearch/__init__.py,sha256=PPeazHnddT7GQ0azvFuJ1BZxeYqQJ3q1i6m0vXQDcx4,21
+aliyunsdkimgsearch/endpoint.py,sha256=sMY18QlXlQM2FwvoeHUMpRty-ZItdR5yKvzA0_N4KsI,1088
+aliyunsdkimgsearch/request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyunsdkimgsearch/request/v20200320/AddImageRequest.py,sha256=2o2_By404ZAG6sB1N7mTGT7HhQPGytmEDwlg2RRD_Qk,1906
+aliyunsdkimgsearch/request/v20200320/CreateImageDbRequest.py,sha256=NaHOFdir0vF92OpvSQHDrrRQL00JGxaxaDJzoUIsizQ,1418
+aliyunsdkimgsearch/request/v20200320/DeleteImageDbRequest.py,sha256=bJl2wsSbM_wZTvehp0XywfpeopIgxPznc2IoDAJErQE,1418
+aliyunsdkimgsearch/request/v20200320/DeleteImageRequest.py,sha256=EyR-TsyzspTHhAdTWc3dno2vtB-W7LqUpdPP6HaZ89Q,1586
+aliyunsdkimgsearch/request/v20200320/ListImageDbsRequest.py,sha256=O1UKqEZeeDXRUd6t-WrUfgOTo-kKefkJ5hiKIG92yY4,1280
+aliyunsdkimgsearch/request/v20200320/ListImagesRequest.py,sha256=F8rvV7trXkttE0Cvta9Q9Yzx-pIqVOJiKTmWaeO2mbc,2194
+aliyunsdkimgsearch/request/v20200320/SearchImageRequest.py,sha256=wuavhV4ZDU1QwKutnBkbaKUADTV0E47maGBcRdT52tA,1728
+aliyunsdkimgsearch/request/v20200320/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_python_sdk_imgsearch-1.1.6.dist-info/LICENSE,sha256=CvyZB4el1cZGT3cy9OYoITxta_Ea2maondKqmi8EcpU,575
+aliyun_python_sdk_imgsearch-1.1.6.dist-info/METADATA,sha256=ikTD4P5oijQbLc1OLLVTdDImfHlEHSpr1yYpPg7lZc8,1485
+aliyun_python_sdk_imgsearch-1.1.6.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+aliyun_python_sdk_imgsearch-1.1.6.dist-info/top_level.txt,sha256=-EurGmrJtwMC44rnFopOXJcyVJtG6SX3frng9RKyoHY,19
+aliyun_python_sdk_imgsearch-1.1.6.dist-info/RECORD,,
