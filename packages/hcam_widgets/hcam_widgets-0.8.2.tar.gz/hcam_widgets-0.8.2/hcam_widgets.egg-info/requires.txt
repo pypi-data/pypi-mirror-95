@@ -1,0 +1,4 @@
+astropy
+requests
+twisted
+hcam_devices
