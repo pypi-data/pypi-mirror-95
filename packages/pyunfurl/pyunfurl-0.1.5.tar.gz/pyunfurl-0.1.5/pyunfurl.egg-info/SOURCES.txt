@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyunfurl/__init__.py
+pyunfurl/example.py
+pyunfurl/unfurl.py
+pyunfurl.egg-info/PKG-INFO
+pyunfurl.egg-info/SOURCES.txt
+pyunfurl.egg-info/dependency_links.txt
+pyunfurl.egg-info/requires.txt
+pyunfurl.egg-info/top_level.txt
+pyunfurl/provider_data/__init__.py
+pyunfurl/provider_data/custom.py
+pyunfurl/provider_data/noembed.py
+pyunfurl/provider_data/oembed.py
