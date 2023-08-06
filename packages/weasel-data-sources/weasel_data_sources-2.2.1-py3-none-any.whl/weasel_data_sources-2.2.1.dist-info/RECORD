@@ -1,0 +1,10 @@
+weasel_data_sources/__init__.py,sha256=mRkbaLRCsxp4num5AAVQZc35jDZa9YdlYc_y4chABtg,149
+weasel_data_sources/mapping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weasel_data_sources/mapping/mapping.py,sha256=gqShf2tSwTRPNi4uDkWC6MObDfZCRNQ-lj4MoHL07_Y,4315
+weasel_data_sources/mapping/sources.py,sha256=OBmmagnjqRaf23AX1ffgDFx-UqVeWMRUEdsAfUaZgOQ,8871
+weasel_data_sources/releases.py,sha256=4OSneKjLo0MiaumaIOuK4pZ_sNOjD7TYy9Ee68d-htU,6144
+weasel_data_sources/utils.py,sha256=16O60HOqaTSdUPaa3lyU1fynuiyO4ULv2bpS5UesDPU,947
+weasel_data_sources/vulnerabilities.py,sha256=Z7YGwj_4Z4rvFIGpQ5tCkEy6LoXW02Oz6h7hxdqFM0E,1835
+weasel_data_sources-2.2.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+weasel_data_sources-2.2.1.dist-info/METADATA,sha256=YcH5IgJ4o1PkqEwzqcaCoRfQTCk8vmvMhR2bGsYhEX0,639
+weasel_data_sources-2.2.1.dist-info/RECORD,,
