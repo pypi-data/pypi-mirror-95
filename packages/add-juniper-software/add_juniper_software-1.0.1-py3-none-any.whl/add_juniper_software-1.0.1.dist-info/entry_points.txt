@@ -1,0 +1,3 @@
+[console_scripts]
+add-juniper-software = add_juniper_software.add_juniper_software:add_juniper_software
+
