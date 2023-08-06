@@ -1,0 +1,2 @@
+recursive-include vfb2ufo3/resources *
+recursive-include vfb2ufo3 *.pyd *.py
