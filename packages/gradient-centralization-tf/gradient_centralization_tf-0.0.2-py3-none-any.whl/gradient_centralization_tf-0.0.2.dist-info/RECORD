@@ -1,0 +1,9 @@
+gctf/__init__.py,sha256=lj_cmDu-xMF7o1vvhk8E97WjOflTxLNCnwksl3XP2Wg,192
+gctf/centralized_gradients.py,sha256=ikByngcIFLQ0jQ4OagT5c8V9P2-Wk1wrIKiHxdhpnmE,2690
+gctf/optimizers.py,sha256=XO3h7kLHbORj0VNsWTyttcvUpVHRxnn6IcLz4cEKNUI,3081
+gctf/version.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+gradient_centralization_tf-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gradient_centralization_tf-0.0.2.dist-info/METADATA,sha256=nJ_0SapH6F5_uBkpYN9PRdc5VSkFKisEMiH6ZBnveIc,6504
+gradient_centralization_tf-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gradient_centralization_tf-0.0.2.dist-info/top_level.txt,sha256=zlf8xT9xn3PNs8UpYkC9j0hg4S89oHRT7GbeSf4wGOg,5
+gradient_centralization_tf-0.0.2.dist-info/RECORD,,
