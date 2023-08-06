@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: translation-api-python-client
+Version: 1.0.0
+Summary: Use this library to access this api(https://rapidapi.com/iamapythongeek/api/translation37?endpoint=apiendpoint_6a2e356d-da99-444d-8ed4-579e4f554732)
+Home-page: https://github.com/geekjr/translate_module
+Author: iamapythongeek
+Author-email: iamapythongeek@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# This is the library to used to access the API
+
+
