@@ -1,0 +1,12 @@
+tchess/__init__.py,sha256=nmRsstQAL7i185vjcjyTVaGnk6qVbwRv1oiioJvrrEs,103
+tchess/__main__.py,sha256=mnevlNfpC09x5mZgwKL4kcbdBy28E_9KKz5o2XrwP5k,99
+tchess/moves.py,sha256=9MyzrS7GJSdrJ_NIigMkh-PSl1z66ApYnQEUZjs05l8,5829
+tchess/server.py,sha256=paRJhwx5bqNpY_3jg11BCbTOBPyn-1pEPutB5eGsPlg,2782
+tchess/tchess.py,sha256=4rBYRV_64oP4RuYuPOMLAfKFY7rvEMl6oc1oiuMckLg,32868
+tchess-0.0.16.data/data/man/man1/tchess.1,sha256=9z-vf3mCRw8jS1tYGyYIMkaDXNNOjs03fP_iLQeZPOY,7419
+tchess-0.0.16.data/scripts/tchess,sha256=88ocfFnDYYJyXQB1-1BHn7bFYyTe0IRj0-U3kJz8Y4o,61
+tchess-0.0.16.dist-info/LICENSE,sha256=BMMLMWR6AbE4Qyk3OGMm00KCSkk5IVhUQ1_8ysxulnE,1110
+tchess-0.0.16.dist-info/METADATA,sha256=WBGyKNLawOhRumZ2v5Szd4ocZI0Fl3dO9aFVpJWAdU8,7808
+tchess-0.0.16.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+tchess-0.0.16.dist-info/top_level.txt,sha256=0dXiNkXunA8ZvRZjiOBHZcm6cikAf0Y04y_FYrtbJkc,7
+tchess-0.0.16.dist-info/RECORD,,
