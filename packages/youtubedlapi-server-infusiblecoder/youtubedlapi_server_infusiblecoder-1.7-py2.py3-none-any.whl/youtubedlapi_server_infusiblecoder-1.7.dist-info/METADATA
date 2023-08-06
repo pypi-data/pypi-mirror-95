@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: youtubedlapi-server-infusiblecoder
+Version: 1.7
+Summary: An API server based on youtube_dl
+Home-page: https://github.com/syedusama5556/youtubedlapi-server-infusiblecoder
+Author: Syed Usama Ahmad
+Author-email: syedusama5556@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Requires-Dist: Flask
+Requires-Dist: youtube-dl (>=2021.02.10)
+
+Get the videos from different sites using a server running youtube_dl
+
+
