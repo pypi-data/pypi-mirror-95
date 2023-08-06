@@ -1,0 +1,9 @@
+setup.py
+realPython/__init__.py
+realPython/math.py
+realPython/translations.py
+realPython.egg-info/PKG-INFO
+realPython.egg-info/SOURCES.txt
+realPython.egg-info/dependency_links.txt
+realPython.egg-info/requires.txt
+realPython.egg-info/top_level.txt
