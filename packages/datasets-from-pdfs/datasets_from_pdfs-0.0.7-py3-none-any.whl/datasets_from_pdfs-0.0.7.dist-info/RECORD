@@ -1,0 +1,12 @@
+datasets_from_pdfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datasets_from_pdfs/build_dictionary.py,sha256=mwCoepzxcFEuR_7-r3sf7KlYI-ruMJxpDQtXtdbkoGo,11483
+datasets_from_pdfs/readpdf.py,sha256=z_FWAdgC1xv9-awbGtmcRM5tfbQql9zyn1l9oG1gaEc,66308
+pdf2dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf2dataset/build_dictionary.py,sha256=mwCoepzxcFEuR_7-r3sf7KlYI-ruMJxpDQtXtdbkoGo,11483
+pdf2dataset/readpdf.py,sha256=3u3JsXsgtC_WtsLtBelIReRW0fHNdVbserdgFwKmkQc,66229
+datasets_from_pdfs-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+datasets_from_pdfs-0.0.7.dist-info/METADATA,sha256=Kx5YiT1Uul3BQ693UpHAYvieL_h-Vyn_izSIB0QsJlw,10013
+datasets_from_pdfs-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasets_from_pdfs-0.0.7.dist-info/entry_points.txt,sha256=6hdw5b3H4umU4Nv61ePSd1vidc91VHYxlj43dNHJK0A,72
+datasets_from_pdfs-0.0.7.dist-info/top_level.txt,sha256=h0dDtN3k5bxO3K1twZJ28Jo2wKlpgT9ImUOZxfkScEs,19
+datasets_from_pdfs-0.0.7.dist-info/RECORD,,
