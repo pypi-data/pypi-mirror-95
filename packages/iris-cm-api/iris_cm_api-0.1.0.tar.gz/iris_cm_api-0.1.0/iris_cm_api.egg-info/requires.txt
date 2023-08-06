@@ -1,0 +1,2 @@
+vkbottle@ git+https://github.com/timoniq/vkbottle@master
+tortoise-orm
