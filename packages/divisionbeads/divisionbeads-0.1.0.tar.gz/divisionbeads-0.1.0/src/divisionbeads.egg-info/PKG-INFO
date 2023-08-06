@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: divisionbeads
+Version: 0.1.0
+Summary: A small Python CLI app of the "divison beads" math education tool.
+Home-page: https://github.com/asweigart/divisionbeads
+Author: Al Sweigart
+Author-email: al@inventwithpython.com
+License: MIT
+Description: # divisonbeads
+        A small Python CLI app of the "divison beads" math education tool.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
