@@ -1,0 +1,10 @@
+AcdhUriNormRules/AcdhUriNormRules.py,sha256=6mojNfF0qP4gAmW9lv0Xvo1OOyl5gYonK5cV0weYZxo,552
+AcdhUriNormRules/__init__.py,sha256=ezPnATLnPWOk_hqm7v0YmtRYMxYyzXGY_MtD47kAiRs,31
+AcdhUriNormRules/rules.json,sha256=kHy9a_G-bMw6k3lVETdtUqBAL8wx_4vUwGs2LCWg0m8,1599
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_normalizer.py,sha256=jH3uINCJa4csJdGUz3YSMSmveRQMgdCSVpvxXQICu-E,753
+acdh_uri_norm_rules-2.0.0.dist-info/LICENSE,sha256=Ryd90ykPgL15kWkWQMVNJNcsU403vcsNMdMMaJrEZ30,1115
+acdh_uri_norm_rules-2.0.0.dist-info/METADATA,sha256=LcvTlf-gOwsbYZL18lH9sUvZfVeiTfbyiFzekfX4wWg,1705
+acdh_uri_norm_rules-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+acdh_uri_norm_rules-2.0.0.dist-info/top_level.txt,sha256=3BmEf-JAQIpI6qV7yDwwG1-lbjxdHUL3ywLV966iPRw,23
+acdh_uri_norm_rules-2.0.0.dist-info/RECORD,,
