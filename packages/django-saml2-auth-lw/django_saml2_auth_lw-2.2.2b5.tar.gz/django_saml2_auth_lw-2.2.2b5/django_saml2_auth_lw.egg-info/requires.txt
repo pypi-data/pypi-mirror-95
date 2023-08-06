@@ -1,0 +1,3 @@
+pysaml2>=4.5.0
+drf-jwt
+django-rest-auth
