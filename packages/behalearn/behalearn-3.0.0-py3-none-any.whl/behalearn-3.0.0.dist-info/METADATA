@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: behalearn
+Version: 3.0.0
+Summary: Library for processing and visualizing behavioral biometric data
+Home-page: https://gitlab.com/behametrics/behalearn
+Author: Behametrics
+Author-email: tp2018tim4@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: bokeh
+
+# behalearn
+
+behalearn is a library that simplifies data preparation and feature extraction for behavioral biometric data
+(such as mouse movements, touch movements, accelerometer data).
+Such data may be subsequently used for e.g. implicit user authenticaton. 
+behalearn also provides a handful of simple, interactive visualizations of raw data, pre-processed data
+and reports of prediction results (such as the [DET curve](https://en.wikipedia.org/wiki/Detection_error_tradeoff)).
+
+# Installation
+The source code is currently hosted on [GitLab](https://gitlab.com/behametrics/behalearn).
+
+The easiest way to install behalearn is via `pip`:
+```
+pip install behalearn
+```
+
+# Usage
+Simply import individual behalearn modules or their functions/classes, for example:
+```
+from behalearn.features import FeatureExtractor
+```
+
+The [DEMO.ipynb](DEMO.ipynb) file shows examples of basic behalearn usage.
+
+# Documentation
+The official documentation and structure of the library is available [here](https://behametrics.gitlab.io/behalearn/).
+
+# License
+Source code is provided under the [MIT License](LICENSE).
+
+
