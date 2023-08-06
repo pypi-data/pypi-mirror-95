@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: zwf
+Version: 0.1.0
+Summary: Tools for Zwift WAD files
+Home-page: https://github.com/h4l/zwf
+License: MIT
+Author: Hal Blackburn
+Author-email: hal.blackburn@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: hurry.filesize (>=0.9,<0.10)
+Description-Content-Type: text/markdown
+
+# zwf — Zwift WAD file tool
+
+A tool to list/extract files from Zwift WAD files — the asset archives (like a tar/zip file) that Zwift uses.
+
+## Limitations
+
+**Compressed .wad files are not supported**. The .wad files which ship with Zwift under `assets/**/*.wad` are compressed. This tool can work with the decompressed versions, but does not implement decompression itself. 
+
+You might find decompressed versions in a memory dump of a Zwift process, but that may be against the Zwift TOS.
+
