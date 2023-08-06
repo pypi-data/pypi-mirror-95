@@ -1,0 +1,86 @@
+{
+"": """\
+[b]interactive help mode[/b]
+
+1st tap on marked screen parts
+    shows a specific help text.
+2nd tap at same screen part will
+    be processed as normal.
+
+tap on icon with question mark ([b]?[/b])
+to exit the help mode.""",
+#----------------------------------
+"help_app_state#font_size": """\
+adjust font size
+
+current size: {round(state_value)}Px""",
+#----------------------------------
+"help_app_state#pending_requests_frequency": """\
+frequency to update/poll
+pending requests and animations
+
+current frequency: {round(state_value, 1)}Hz""",
+#----------------------------------
+"help_app_state#sound_volume": """\
+change sound volume
+
+tap all to the left
+to mute all sounds.
+
+current volume: [b]{round(state_value * 100)}%[/b]""",
+#==================================
+"help_app_state#vibration_volume": """\
+vibration intensity
+
+tap all to the left
+to mute all vibrations.
+
+current vibration: {round(state_value * 100)}%""",
+#==================================
+"help_flow#change_lang_code": """\
+change default language to
+[b]'{main_app.get_txt_(self.lang_code)}'[/b].""",
+#----------------------------------
+"help_flow#change_light_theme": """\
+switch app between [b]light[/b]
+and [b]dark[/b] theme.""",
+#----------------------------------
+"help_flow#open_color_editor":
+    {'': """\
+tap to open color editor to
+change the [b]{self.color_name.replace('_', ' ')}[/b].""",
+    'after': """\
+tap to close the color
+editor.
+
+double tap at color circle
+or use the sliders to
+change [b]{self.color_name.replace('_', ' ')}[/b].""", },
+#----------------------------------
+"help_flow#open_user_preferences":
+    {'': """\
+tap to open the user preferences
+drop down menu.""",
+    'after': """\
+in this drop down menu you can
+change e.g. the theme (dark or
+light), the preferred font
+size or the colors.
+
+tap on the available menu
+options to display more
+detailed help texts.""", },
+#==================================
+"ado": "app documents",
+"app": "app data",
+"cwd": "current working directory",
+"de": "deutsch",
+"doc": "documents",
+"en": "english",
+"es": "español",
+"flow_id_ink": "{'color of the ' if app.landscape else ''}focussed item",
+"flow_path_ink": "list navigation{' button color' if app.landscape else ''}",
+"selected_item_ink": "{'color of the ' if app.landscape else ''}selected items",
+"unselected_item_ink": "{'color of the ' if app.landscape else ''}unselected items",
+"usr": "user data",
+}
