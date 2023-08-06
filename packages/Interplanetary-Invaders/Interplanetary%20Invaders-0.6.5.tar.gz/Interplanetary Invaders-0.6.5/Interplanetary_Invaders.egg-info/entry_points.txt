@@ -1,0 +1,3 @@
+[console_scripts]
+interplanetary-invaders = interplanetary_invaders.main:run
+
