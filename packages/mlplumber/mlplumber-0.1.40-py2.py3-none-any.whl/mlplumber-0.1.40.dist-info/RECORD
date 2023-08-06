@@ -1,0 +1,9 @@
+mlplumber/__init__.py,sha256=D_r1UaY3A0sQwAx4Tz1vO437nqFxtkLJxtiKO6rMOZA,92
+mlplumber/pandas_adapter.py,sha256=BWefp_LF8UxdxffYEBgLeFDkcdus3vriH35WQaHaDXY,2015
+mlplumber/steps.py,sha256=pbbdrcE-03e2FbnRDpetfweyg0nZou4r1HOe-tVKwU4,700
+mlplumber/transformers.py,sha256=lIM7K7FgLdDfJhRpGQlwGjW5I4-Bucri703ezy5eqlo,918
+mlplumber-0.1.40.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mlplumber-0.1.40.dist-info/METADATA,sha256=pUPHHNyE2t2ltQIEJTS5ylMUfNgCQlCbSHDMBSqwwsI,372
+mlplumber-0.1.40.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+mlplumber-0.1.40.dist-info/top_level.txt,sha256=xh-cjgv4XwQnLYOPQlApPKOJ0lcOIXEpV28MUfREptE,10
+mlplumber-0.1.40.dist-info/RECORD,,
