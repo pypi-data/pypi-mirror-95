@@ -1,0 +1,5 @@
+aiohttp_api_client/__init__.py,sha256=SFh_Kzyz3traDzJKZ38a1XEwYnJ5zxalz2-zjW6hELA,23
+aiohttp_api_client/json_api.py,sha256=WsRTbJqpYJ-1Lfj0CEVBYQJ6f-fImkPJbXiIu2GKF54,3845
+aiohttp_api_client-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aiohttp_api_client-0.2.0.dist-info/METADATA,sha256=PKxlcvk5MmsGIGpSeQruDhvjGzIAjXzmMgfTHU84emo,1351
+aiohttp_api_client-0.2.0.dist-info/RECORD,,
