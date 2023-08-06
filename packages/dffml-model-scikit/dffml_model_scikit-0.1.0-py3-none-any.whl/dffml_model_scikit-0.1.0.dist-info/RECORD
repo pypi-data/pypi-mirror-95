@@ -1,0 +1,13 @@
+dffml_model_scikit/__init__.py,sha256=GfteSxgp2JOiZ6kBQs6YmY619yet7aDrd1dICuCePaQ,26993
+dffml_model_scikit/scikit_base.py,sha256=yQWqVbK5BC9mR-GtBioyEGmEg8gXza3PxGPbMaDr-OY,11135
+dffml_model_scikit/scikit_models.py,sha256=BhRMYWa3y1XKCN1NdyDDiMEiBj6Ubr9SGSMxzoj4DIo,5701
+dffml_model_scikit/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_scikit.py,sha256=9vKap-hxPlWs7PVuuU6hISvPDAFfw6EXNn8xoy-wAkk,11197
+tests/test_scikit_integration.py,sha256=4kiKtugMCc5Bp7aycnQvAPuKAVKv3oL1HVp6CuiaYLc,13182
+dffml_model_scikit-0.1.0.dist-info/LICENSE,sha256=6ZGvOwfnQ7XczBf35XQlToX-tQegAIFr19cXu0RobJk,1062
+dffml_model_scikit-0.1.0.dist-info/METADATA,sha256=LW-OW4h3TZ56hDvNP1WFId5BM1SCxcjsXyCMwAZF8hQ,5082
+dffml_model_scikit-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_scikit-0.1.0.dist-info/entry_points.txt,sha256=OJ3m_Q1z6bcHAChfTvAoC4trEEjgdeyydYwaRvbDMjo,2361
+dffml_model_scikit-0.1.0.dist-info/top_level.txt,sha256=OVdAmF5rcZbee_gvVOwlgTRzuGfq3bxzX5c9WwoLJ9Q,25
+dffml_model_scikit-0.1.0.dist-info/RECORD,,
