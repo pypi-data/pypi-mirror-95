@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+DGSD.egg-info/PKG-INFO
+DGSD.egg-info/SOURCES.txt
+DGSD.egg-info/dependency_links.txt
+DGSD.egg-info/requires.txt
+DGSD.egg-info/top_level.txt
+dgsd/__init__.py
+dgsd/main.py
+dgsd.egg-info/PKG-INFO
+dgsd.egg-info/SOURCES.txt
+dgsd.egg-info/dependency_links.txt
+dgsd.egg-info/requires.txt
+dgsd.egg-info/top_level.txt
