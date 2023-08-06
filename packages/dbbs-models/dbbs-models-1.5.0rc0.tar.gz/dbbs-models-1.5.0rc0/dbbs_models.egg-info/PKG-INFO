@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dbbs-models
+Version: 1.5.0rc0
+Summary: Collection of neuron models for the NEURON simulator
+Home-page: https://github.com/dbbs-lab/models
+Author: Martina Rizza, Stefano Masoli, Robin De Schepper, Egidio D'Angelo
+Author-email: robingilbert.deschepper@unipv.it
+License: GPLv3
+Description: # dbbs-models
+        Collection of neuron models for the NEURON simulator.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
