@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nit-dpi-validator
+Version: 0.1
+Summary: Validador NIT, DPI Guatemala
+Home-page: https://github.com/monroy95/nit_dpi_validator
+Author: Mario Monroy Canizales
+Author-email: m.monroyc22@hotmail.com
+License: LGPL
+Keywords: dpi,nit,Validador NIT Guatemala,NIT Guatemala
+Platform: UNKNOWN
+Requires-Python: >=2.7
+
+# nit_dpi_validator
+Validador de NIT, DPI Guatemala
+
+The project is hosted on GitHub. Contributions are welcome.
+
+ GitHub: [monroy95/nit_dpi_validator: Validador de NIT, DPI Guatemala (github.com)](https://github.com/monroy95/nit_dpi_validator)
+
+Instalación
+------------
+
+La forma fácil de instalar `nit_dpi_validator` es usando **pip**:
+
+    pip install nit_dpi_validator
+
+Uso
+-----
+
+    >>> from nit_dpi_validator import nit
+    >>> nit.nit_validator('xxxxxxxx-x')
+    True
+
+
