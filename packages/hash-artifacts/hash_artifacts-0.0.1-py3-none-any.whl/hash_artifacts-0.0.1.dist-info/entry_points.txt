@@ -1,0 +1,3 @@
+[console_scripts]
+hash-artifacts = hash_artifacts.hash_artifacts:main
+
