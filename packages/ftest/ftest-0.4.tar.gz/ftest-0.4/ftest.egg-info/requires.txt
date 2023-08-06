@@ -1,0 +1,6 @@
+fcp
+colored
+click
+termcolor
+loguru
+result==0.6.0-rc.1
