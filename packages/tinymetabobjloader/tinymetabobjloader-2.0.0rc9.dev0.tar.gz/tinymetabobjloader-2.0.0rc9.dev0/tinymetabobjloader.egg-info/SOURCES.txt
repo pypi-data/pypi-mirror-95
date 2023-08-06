@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+bindings.cc
+pyproject.toml
+setup.py
+tiny_obj_loader.cc
+tiny_obj_loader.h
+../tiny_obj_loader.h
+tinymetabobjloader.egg-info/PKG-INFO
+tinymetabobjloader.egg-info/SOURCES.txt
+tinymetabobjloader.egg-info/dependency_links.txt
+tinymetabobjloader.egg-info/top_level.txt
