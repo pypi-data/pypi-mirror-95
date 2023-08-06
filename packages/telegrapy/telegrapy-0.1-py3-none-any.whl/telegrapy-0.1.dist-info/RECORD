@@ -1,0 +1,10 @@
+telegrapy/__init__.py,sha256=RxlRDAMozS3ZyIACQuStfUa2cFxO5UEtM2xdA3UshLU,151
+telegrapy/bot.py,sha256=NuBPtIoM8F23hvL9tVyMYkhnzJW1kRWgNOIMmz7Js5M,8579
+telegrapy/telegram.py,sha256=sOVOC8srgC9SKjZoTT6pxoMlhfVb--fnXfSTr3dY0o0,3749
+telegrapy/telegram_error.py,sha256=gKLUdWA9XOn8KWguOeOLOM0_eysIcMzy3huxDAq_xqc,394
+telegrapy/telegram_parser.py,sha256=XOd3xbzs02kHMfBQU77xI3ocxwKCvWfpT0Zx99M8eRg,1751
+telegrapy-0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+telegrapy-0.1.dist-info/METADATA,sha256=Kt4W4Y5HoC2zpMaW9DxCONIo42E5BpJbWhjtZ1Jekcs,4393
+telegrapy-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+telegrapy-0.1.dist-info/top_level.txt,sha256=hNiR5idud61ELe7mhq961lgmxi-3_AapMr-zZIgHSZo,10
+telegrapy-0.1.dist-info/RECORD,,
