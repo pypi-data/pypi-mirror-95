@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: mlplumber
+Version: 0.1.32
+Summary: ML Utilities for constructing pipeline
+Home-page: https://github.com/ragrawal/mlplumber
+Maintainer: Ritesh Agrawal
+Maintainer-email: ragrawal@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: scikit,sklearn,pandas,baikal
+Platform: UNKNOWN
