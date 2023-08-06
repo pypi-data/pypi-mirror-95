@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "djangorestframework-types"
+version = "0.4.0"
+description = "Type stubs for Django Rest Framework"
+authors = ["Steve Dignam <steve@dignam.xyz>"]
+repository = "https://github.com/sbdchd/djangorestframework-types"
+readme = "README.md"
+license = "MIT"
+keywords = ["django", "djangorestframework", "types", "mypy", "stubs"]
+packages = [
+  { include = "rest_framework-stubs" },
+  { include = "coreapi-stubs" },
+  { include = "coreschema-stubs" },
+  { include = "rest_framework_swagger-stubs" },
+  { include = "openapi_codec-stubs" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.19"
+isort = "^4.3"
+mypy = "^0.790.0"
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+mongo-types = "^0.7.5"
+django-types = "^0.3.1"
+django = "^3.1"
+flake8 = "^3.8"
+flake8-pyi = "^20.10"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
