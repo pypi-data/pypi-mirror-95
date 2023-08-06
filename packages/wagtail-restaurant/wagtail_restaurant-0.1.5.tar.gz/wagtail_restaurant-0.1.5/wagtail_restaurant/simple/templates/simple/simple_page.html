@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+
+
+
+<section class="container page__simple {% if page.hero %}page__uberuns{% endif %}">
+{% if page.hero %}
+	{% for block in page.hero %}
+		{% image block.value.image original as img__hero %}
+		<div class="page__hero" style="background-image: url('{{ img__hero.url }}');"></div>
+		<div class="inner">
+			<h1>{{ self.title }}</h1>
+			<div class="body">{{ self.body|richtext }}</div>
+		</div>
+	{% endfor %}
+{% endif %}
+
+
+
+
+
+{% if page.impressum %}
+	<div class="inner">
+	<h1>{{ self.title }}</h1>
+	{% for block in page.impressum %}
+		{% include_block block %}
+	{% endfor %}
+	</div>
+{% endif %}
+
+
+
+
+</section>
+{% endblock %} 
+

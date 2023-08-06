@@ -1,0 +1,47 @@
+{% load wagtailimages_tags %}
+<div class="inner restaurant__menu restaurant__menu__flat">
+    <div class="restaurant__menu_content">
+        <div>
+            <h3>{{ self.title }}</h3>
+            {% image self.image fill-394x299 as img__group%}
+            <img src="{{ img__group.url }}" alt="{{ img__group.alt }}" />
+        </div>
+        <div class="menu__list">
+            <div class="items">
+                {% for food in self.foods %}
+                <div class="item">
+                    {% image food.image width-160 as img__food %}
+                    <div class="image">
+                        <img data-src="{{ img__food.url }}" class="lazyload" alt="{{ img__food.alt }}" />
+                        <div class="click_to">
+                            <div class="inner">
+                                {% for block in settings.company.CompanyInfo.company_contact %}
+                                <a href="tel:{{block.value.phone_call}}" class="click_to_call">
+                                    <div class="click_to_call__icon"></div>
+                                    <div class="click_to_call__hidden__content">{{block.value.phone_short}}</div>
+                                    <div class="click_to_call__content">Jetzt<br>Anrufe!</div>
+                                </a>
+                                {% endfor %}
+                                {% for block in settings.company.CompanyInfo.company_sales %}
+                                    {% if block.value.slug == 'lieferando'%}
+                                        <a href="{{block.value.url}}" class="click_to_buy" target="_blank">
+                                    {% endif %}
+                                {% endfor %}
+                                    <div class="click_to_buy__icon"></div>
+                                    <div class="click_to_buy__hidden__content"></div>
+                                    <div class="click_to_buy__content">Bestellen sie bei</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4><span>{{ food.title }}</span></h4>
+                        <p>{{ food.description }}</p>
+                    </div>
+                    <p class="food__price">{{ food.price }} €</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>    

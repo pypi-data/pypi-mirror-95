@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+ 
+{% block content %}
+
+		<section class="container">
+			{% for block in page.hero %}
+				{% include_block block %}
+			{% endfor %}
+		</section>
+
+		<section class="container">
+			{% for block in page.menu %}
+				{% include_block block %}
+			{% endfor %}
+		</section>
+
+		<section class="container">
+			{% for block in page.menu_flat %}
+				{% include_block block %}
+			{% endfor %}
+		</section>
+
+		<section class="container">
+			<div class="inner restaurant__menu restaurant__menu__column">
+			{% for block in page.menu_column %}
+				{% include_block block %}
+			{% endfor %}
+			</div>
+		</section>
+
+
+		<section class="container">
+			{% include "include/callout/home__opening_hours.html" %}
+		</section>
+{% endblock %}
+

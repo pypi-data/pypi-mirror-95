@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags opening_hours_tags%}
+
+
+{% block extra_js %}
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH_mhi5AhxwDxglcIiEbWQhjskOWxAXiw&map_ids=14c56fe434987346&callback=initMap">
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="container">
+    <div class="inner block__column page__contact">
+        <div class="column__map"><div id="map"></div></div>
+        <div class="column__form" id="contact_form">
+            <h2>Kontaktformular</h2>
+            <div class="form_intro">{{ self.intro|richtext }}</div>
+            <form action="{% pageurl page %}" method="POST">
+                {% csrf_token %}
+                    <ul class="form__container">
+                        {{ form.as_ul }}
+                        <li><button type="submit">Senden</button></li>
+                    </ul>
+            </form>
+        </div>
+    </div>
+</section>
+{{ form.company }}
+
+
+
+<script>
+    const marker_icon = 'http://34.78.6.163:8000/static/img/google_map_marker.svg';
+    {% for block in settings.company.CompanyInfo.company_google_map %}
+        const latitude = '{{block.value.latitude}}';
+        const longitude = '{{block.value.longitude}}';
+    {% endfor %}
+    {% for block in settings.company.CompanyInfo.company_settings %}
+        const title = '{{block.value.company_name}}';
+    {% endfor %}
+    {% for block in settings.company.CompanyInfo.company_address %}
+        const address = '{{block.value.street}} {{block.value.post_code}} {{block.value.city}} / {{block.value.region}}';
+    {% endfor %}
+    {% for block in settings.company.CompanyInfo.company_contact %}
+        const email = '{{block.value.email}}';
+        const phone = '{{block.value.phone}}';
+    {% endfor %}
+</script>
+{% endblock %}
+

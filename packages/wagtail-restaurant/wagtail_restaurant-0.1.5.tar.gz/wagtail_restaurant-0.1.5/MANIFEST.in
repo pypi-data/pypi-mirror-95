@@ -1,0 +1,7 @@
+include README.md
+recursive-include wagtail_restaurant/contact/templates *
+recursive-include wagtail_restaurant/gallery/templates *
+recursive-include wagtail_restaurant/menu/templates *
+recursive-include wagtail_restaurant/simple/templates *
+
+recursive-include docs *

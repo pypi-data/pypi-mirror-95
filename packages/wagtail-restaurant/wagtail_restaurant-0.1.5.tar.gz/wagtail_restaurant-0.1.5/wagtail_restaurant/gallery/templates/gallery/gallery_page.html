@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+<section class="container">
+    <div class="inner block__column page__gallery">
+    	{% for block in page.instagram %}
+            {% include_block block %}
+        {% endfor %}
+    </div>
+</section>    
+{% endblock %}
+
+

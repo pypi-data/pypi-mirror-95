@@ -1,0 +1,30 @@
+{% load wagtailcore_tags %}
+<div class="row_block">
+	<h2>Angaben gemäß § 5 TMG</h2>
+	{% for block in settings.company.CompanyInfo.company_address %}
+		{% if block.value.street %}
+			<p>{{block.value.street}}<br>{{block.value.post_code}} {{block.value.city}}</p>
+		{% endif %}
+	{% endfor %}
+
+	{% for block in settings.company.CompanyInfo.company_settings %}
+		{% if block.value.representative %}
+			<p><strong>Vertreten durch:</strong> {{block.value.representative}}</p>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<div class="row_block">
+	<h2>Kontakt</h2>
+	{% for block in settings.company.CompanyInfo.company_contact %}
+		{% if block.value.phone %}
+			<p><strong>Telefon:</strong>{{block.value.phone}}</p>
+		{% endif %}
+		{% if block.value.email %}
+			<p><strong>E-Mail:</strong> {{block.value.email}}</p>
+		{% endif %}
+	{% endfor %}
+</div>
+<div class="row_block">
+	{{ self.content }}
+</div>
