@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyeffects/Either.py
+pyeffects/Future.py
+pyeffects/Monad.py
+pyeffects/Option.py
+pyeffects/Try.py
+pyeffects/__init__.py
+pyeffects/__version__.py
+pyeffects.egg-info/PKG-INFO
+pyeffects.egg-info/SOURCES.txt
+pyeffects.egg-info/dependency_links.txt
+pyeffects.egg-info/not-zip-safe
+pyeffects.egg-info/top_level.txt
