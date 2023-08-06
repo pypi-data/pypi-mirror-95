@@ -1,0 +1,11 @@
+arrayqueues/__init__.py,sha256=nJAAa2DQzxwaji2pxjmvmt2__K2KsmboiZJvXHMDyMI,242
+arrayqueues/portable_queue.py,sha256=LUztbu5iLr_vR3UlooHDQnEjfUcCUTfEwLbOPHsDeBI,3045
+arrayqueues/shared_arrays.py,sha256=KIEcYZPrGTuUzZT9N-m6I9r0pw_n8UCTdr1ye6wpLXg,5683
+arrayqueues/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrayqueues/tests/test_portable_queue.py,sha256=a4u3MKtVRwuCLy0oIudrBBe_p1O8G1BR7pHCV6VSfyo,1014
+arrayqueues/tests/test_shared_arrays.py,sha256=eu54aupDKc1ECCAzf6ZVQd9a0zyLSgSTRpz2M6rZRz8,3421
+arrayqueues-1.3.0.dist-info/LICENSE.txt,sha256=DGX8jy0T_Du2S4gINc_lZryqQ4jNhDRlbXh0WZuYp6E,1054
+arrayqueues-1.3.0.dist-info/METADATA,sha256=FVKWmfa3rELR2WcFjZMs7PS6paOXzUac-GYJEfYFeT0,1127
+arrayqueues-1.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+arrayqueues-1.3.0.dist-info/top_level.txt,sha256=1XeQuft5bxLmzqGzbMduNDphsYYDbdhzakHVGdvvl-4,12
+arrayqueues-1.3.0.dist-info/RECORD,,
