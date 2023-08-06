@@ -1,0 +1,10 @@
+README.md
+setup.py
+degoogle/__init__.py
+degoogle/degoogle.py
+degoogle.egg-info/PKG-INFO
+degoogle.egg-info/SOURCES.txt
+degoogle.egg-info/dependency_links.txt
+degoogle.egg-info/entry_points.txt
+degoogle.egg-info/requires.txt
+degoogle.egg-info/top_level.txt
