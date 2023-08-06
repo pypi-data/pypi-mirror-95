@@ -1,0 +1,3 @@
+[console_scripts]
+notify-send.py=notify_send_py.notify_send_py:main
+

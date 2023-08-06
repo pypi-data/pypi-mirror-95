@@ -1,0 +1,10 @@
+notify_send_py/__init__.py,sha256=rzN8xGphefi31UR4sz1KxheSOlae3vXWTQ0t5fbAl2o,81
+notify_send_py/notify_send_py.py,sha256=6oKJRGDny1GtFwu0WkVpx483r5olaDhzV2OXCMB3PrU,7867
+notify_send_py/notify3/__init__.py,sha256=yWvPoKwGP-xLuqlTo_nxTd5nQCYofKmtqziOjXCUfwQ,70
+notify_send_py/notify3/notify3.py,sha256=IrdQcU6ElP-RIBjBixaiqnhVvi5d1Tmm9w1rA8NJ4fo,13695
+notify_send.py-1.2.7.dist-info/entry_points.txt,sha256=pw4CUQ7SgBR9_F3fN0epvZFECBdNblT4jb-_w2wPbmY,69
+notify_send.py-1.2.7.dist-info/LICENSE,sha256=q9IWVXe5uqmegFOKFMCWOP2myMuot0DI7kC9t8npuGg,1136
+notify_send.py-1.2.7.dist-info/LICENSE_notify2,sha256=NoHyI4snFVvbzHBQOXzjJmt5fzxurk3pojDcgH9oieM,1750
+notify_send.py-1.2.7.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+notify_send.py-1.2.7.dist-info/METADATA,sha256=qCN-VvPAqU8utkviLenH1qTeKbfSSABiAw4m7ed-4_w,6391
+notify_send.py-1.2.7.dist-info/RECORD,,
