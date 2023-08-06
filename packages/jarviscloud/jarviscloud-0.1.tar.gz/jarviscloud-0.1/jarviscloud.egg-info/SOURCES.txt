@@ -1,0 +1,9 @@
+README.md
+setup.py
+jarviscloud/__init__.py
+jarviscloud/jarviscloud.py
+jarviscloud.egg-info/PKG-INFO
+jarviscloud.egg-info/SOURCES.txt
+jarviscloud.egg-info/dependency_links.txt
+jarviscloud.egg-info/not-zip-safe
+jarviscloud.egg-info/top_level.txt
