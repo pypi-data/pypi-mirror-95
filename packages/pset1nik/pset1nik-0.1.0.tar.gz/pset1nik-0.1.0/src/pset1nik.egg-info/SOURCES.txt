@@ -1,0 +1,14 @@
+.travis.yml
+MANIFEST.in
+Makefile
+Pipfile
+Pipfile.lock
+README.md
+pyproject.toml
+setup.py
+test_pset.py
+src/pset1nik.egg-info/PKG-INFO
+src/pset1nik.egg-info/SOURCES.txt
+src/pset1nik.egg-info/dependency_links.txt
+src/pset1nik.egg-info/requires.txt
+src/pset1nik.egg-info/top_level.txt
