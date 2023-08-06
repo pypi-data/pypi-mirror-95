@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "django-cleavejs"
+version = "0.1.0"
+description = "Cleave.js integration for Django forms"
+authors = ["Dominik George <dominik.george@teckids.org>"]
+license = "Apache-2.0"
+readme = "README.rst"
+repository = "https://edugit.org/AlekSIS/libs/django-cleavejs"
+keywords = ["django", "forms", "input"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+]
+packages = [
+    { include = "dj_cleavejs" },
+]
+include = ["LICENSE", "example/"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Django = ">2.1,<4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
