@@ -1,0 +1,4 @@
+heist>=3
+pop>=16.3
+salt
+aiohttp~=3.7.2
