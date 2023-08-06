@@ -1,0 +1,1 @@
+this is auto starter for python scripts like nodemon

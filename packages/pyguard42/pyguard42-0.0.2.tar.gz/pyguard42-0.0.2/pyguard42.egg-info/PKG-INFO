@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: pyguard42
+Version: 0.0.2
+Summary: auto-starter for python scripts
+Home-page: UNKNOWN
+Author: Mevlüt Kaan Karakoç
+Author-email: karakockaan326@gmail.com
+License: MIT
+Description: this is auto starter for python scripts like nodemon
+        
+        Change Log
+        ==========
+        
+        0.0.1 (16/02/2021)
+        -------------------
+        - First Release
+Keywords: auto-starter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
