@@ -1,0 +1,3 @@
+[console_scripts]
+TMTool = TMTool.command_line:main
+
