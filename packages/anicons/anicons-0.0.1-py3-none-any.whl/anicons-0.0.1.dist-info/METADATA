@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: anicons
+Version: 0.0.1
+Summary: Anime icon creation tool!
+Home-page: https://github.com/RobiMez/Anicons_py
+Author: robimez
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: jikanpy
+Requires-Dist: pyfiglet
+Requires-Dist: PyInquirer
+Requires-Dist: PIL
+
+# Anicons_py
+
+A semi automated solution for most of your degenerate needs.
+
+## Requirements
+
+    python 3.7.7
+    (thats what i used but anything above 3 should be fine i hope )
+    jikanpy | To get data and posters of the folder
+    pyfiglet | For the awesome ascii art 
+    PyInquirer | For the interactive title chooser 
+    PIL | pillow for the image conversion process 
+
+## Instructions
+
+### This step assumes that you have python and pip installed
+
+place anicons.py on the same level as your anime folder like:
+
+    Anime
+        Naruto
+        .
+        .
+        .
+    anicons.py
+
+open cmd ,powershell or a terminal and type :
+
+    pip install -r requirements.txt
+
+    python anicons.py
+
+
