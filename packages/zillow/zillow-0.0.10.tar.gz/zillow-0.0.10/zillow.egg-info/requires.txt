@@ -1,0 +1,7 @@
+jsoncodable>=0.0.12
+kffmpeg>=0.2.39
+ksimpleapi>=0.0.38
+kstopit>=0.0.10
+m3u8>=0.8.0
+randomua>=0.0.7
+simple-multiprocessing>=0.0.13
