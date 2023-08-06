@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: hyMethod
+Version: 0.0.1
+Summary: 学而思火焰方法库
+Home-page: https://github.com/
+Author: Junshuo Tan
+Author-email: 3357135715@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
