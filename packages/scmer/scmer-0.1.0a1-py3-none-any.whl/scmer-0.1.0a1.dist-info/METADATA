@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: scmer
+Version: 0.1.0a1
+Summary: Manifold preserving marker selection for single-cell data
+Home-page: https://scmer.readthedocs.io/
+Author: Shaoheng Liang
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+
+# SCMER - Manifold Preserving Feature Selection 
+[![Documentation Status](https://readthedocs.org/projects/scmer/badge/?version=latest)](https://scmer.readthedocs.io/en/latest/?badge=latest) [![PyPI](https://img.shields.io/pypi/v/scmer-lshh125?color=blue&logo=pypi)](https://pypi.org/project/scmer-lshh125)
+
+SCMER is a feature selection methods designed for single-cell data analysis. 
+It selects a compact sets of markers that preserve the manifold in the original data.
+It can also be used for data integration by using features in one modality to match the manifold of another modality.
+
+## Tutorials ##
+Tutorials are available at https://scmer.readthedocs.io/en/latest/examples.html
+
+You may start with the [Melanoma data (Tiorsh et al.)](https://scmer.readthedocs.io/en/latest/melanoma.html).
+
+## Full Documentation ##
+Detailed documentation is available at https://scmer.readthedocs.io/en/latest/
+
+Preprint: https://www.biorxiv.org/content/10.1101/2020.12.01.407262v1.full
+
+The mechanism and capabilities of SCMER is detailed in our pre-print [Single-Cell Manifold Preserving Feature Selection (SCMER)](https://www.biorxiv.org/content/10.1101/2020.12.01.407262v1)
+
+
