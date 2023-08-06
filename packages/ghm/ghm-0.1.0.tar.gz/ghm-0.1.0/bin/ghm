@@ -1,0 +1,50 @@
+#!/usr/bin/env python
+
+import ghm
+import ghm.options as options
+import threading
+import queue
+
+
+opts = options.parse()
+
+all_repos = ghm.discover_repos(opts.token, opts.user, opts.org)
+repos = ghm.filter_repos(
+    all_repos,
+    match_owner=opts.match_owner,
+    match_repo=opts.match_repo,
+    exclude_owner=opts.exclude_owner,
+    exclude_repo=opts.exclude_repo,
+    exclude_forks=opts.exclude_forks
+)
+
+git_credentials = ghm.git_credentials_callback(token=opts.token)
+
+q = queue.Queue()
+for repo in repos:
+    q.put(repo)
+
+
+def worker():
+    while not q.empty():
+        repo = q.get()
+        path = ghm.clone_path(opts.path, repo)
+        cloned = ghm.clone_repo(
+            repo,
+            path,
+            callbacks=git_credentials,
+            dry_run=opts.dry_run
+        )
+        if not cloned:
+            ghm.fetch_repo(
+                path,
+                callbacks=git_credentials,
+                dry_run=opts.dry_run
+            )
+        q.task_done()
+
+
+for i in range(opts.workers):
+    threading.Thread(target=worker, daemon=True).start()
+
+q.join()
