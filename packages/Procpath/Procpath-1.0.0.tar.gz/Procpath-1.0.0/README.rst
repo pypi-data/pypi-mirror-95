@@ -1,0 +1,832 @@
+.. image:: https://badge.fury.io/py/Procpath.svg
+  :target: https://pypi.python.org/pypi/Procpath
+
+********
+Procpath
+********
+Procpath is a process tree analysis command-line workbench. Its goal is to
+provide natural interface to the tree structure of processes running on a
+Linux system for inspection and later analysis.
+
+.. contents::
+
+Installation
+============
+.. sourcecode::
+
+   pip install --user Procpath
+
+For installing Procpath into a dedicated virtual environment ``pipx`` [12]_
+can be used.
+
+.. sourcecode::
+
+   pipx install Procpath
+
+Quickstart
+==========
+Get comma-separated PIDs of the process subtree (including the parent process
+``pid=2610``).
+
+.. sourcecode::
+
+   procpath query -d , '$..children[?(@.stat.pid == 2610)]..pid'
+
+Get JSON document of said process subtree.
+
+.. sourcecode::
+
+   procpath query -i 2 '$..children[?(@.stat.pid == 2610)]'
+
+Get total RSS in MiB of said process subtree (this is an example that
+``query`` produces JSON that can be further processed outside of ``procpath``,
+and below is a much easier way to calculate aggregates).
+
+.. sourcecode::
+
+   procpath query '$..children[?(@.stat.pid == 2610)]' \
+     | jq '[.. | .stat? | objects | .rss] | add / 1024 * 4'
+
+Get total RSS in MiB of said process subtree the easy way.
+
+.. sourcecode::
+
+   procpath query '$..children[?(@.stat.pid == 2610)]' \
+     'SELECT SUM(stat_rss) / 1024.0 * 4 total FROM record'
+
+Get total RSS in MiB of a docker-compose stack.
+
+.. sourcecode::
+
+   L=$(docker ps -f status=running -f name='^project_name' -q | xargs -I{} -- \
+     docker inspect -f '{{.State.Pid}}' {} | tr '\n' ,)
+   procpath query "$..children[?(@.stat.pid in [$L])]" \
+     'SELECT SUM(stat_rss) / 1024.0 * 4 total FROM record'
+
+Record process trees of two Docker containers once a second, re-evaluating the
+containers' root process PIDs once per 30 recordings. Then visualise RSS of
+each process (which is also just an example, that output SQLite database can
+be visualised in different ways, including exporting CSV, ``sqlite3 -csv ...``,
+and doing it the old way, to using proper UI described in Visualisation
+section below).
+
+.. sourcecode::
+
+   procpath record \
+     -e C1='docker inspect -f "{{.State.Pid}}" project_db_1' \
+     -e C2='docker inspect -f "{{.State.Pid}}" project_app_1' \
+     -i 1 -v 30 -d out.sqlite '$..children[?(@.stat.pid in [$C1, $C2])]'
+   # press Ctrl + C
+   sqlite3 out.sqlite \
+     "SELECT stat_pid, group_concat(stat_rss / 1024.0 * 4) \
+      FROM record \
+      GROUP BY stat_pid" \
+     | sed -z 's/\n/\n\n\n/g' | sed 's/|/\n/' | sed 's/,/\n/g' > special_fmt
+   gnuplot -p -e \
+     "plot for [i=0:*] 'special_fmt' index i with lines title columnheader(1)"
+
+Visualisation
+=============
+This section describes two methods of visualisation of SQLite databases
+produced by ``procpath record``.
+
+Built-in
+--------
+Procpath comes with built-in SVG visualisation for temporal process analysis
+tasks. The data for visualisation can be fetch from the SQLite database in
+3 ways:
+
+1. Built-in named queries (currently "cpu" and "rss"): ``--query-name rss``
+   and ``--query-name cpu``.
+2. Custom value ``SELECT`` expression for any numeric column, e.g.
+   ``--custom-value-expr "stat_majflt / 1000.0"`` with scaling, or
+   ``--custom-value-expr IFNULL(io_rchar - LAG(io_rchar) OVER (PARTITION BY
+   stat_pid ORDER BY record_id), 0)`` converting cumulative series to series
+   of deltas.
+3. Custom SQL file with whatever calculation you can think of. The result-set
+   must have 3 columns: ``ts``, ``pid``, ``value``. The built-in queries can
+   be used as an example, see ``procpath.procret`` module.
+
+Plotting features include the following (see the listing of
+``procpath plot --help`` below).
+
+- filtering by time range and PIDs
+- post-processing using Ramer-Douglas-Peucker algorithm and moving average
+- comparison plot with two Y axes
+- logarithmic scale plot
+- Pygal plot styles and value formatters, and custom plot title
+
+This example plots all processes' RSS from the recorded database, using
+Ramer-Douglas-Peucker algorithm to remove redundant points from the SVG
+with ε=0.5, and with moving average window of 10.
+
+.. sourcecode::
+
+   procpath plot -d out.sqlite -f rss.svg -q rss -e 0.5 -w 10
+
+If opened in a browser alone this SVG has some interactivity. SVG is
+produced by Pygal [13]_.
+
+.. image:: https://bit.ly/3gUCbFp
+   :alt: Procpath RSS SVG
+
+This example plots RSS vs CPU for PIDs 10543 and 22570 between 2020-07-26
+21:30:00 and 2020-07-26 22:30:00 UTC from the recorded database, with moving
+average window of 4, on logarithmic scale and using Pygal's
+``LightColorizedStyle`` and forced integer value formatter.
+
+.. sourcecode::
+
+   procpath plot -d out.sqlite -q rss -q cpu --formatter integer -l -w 4 \
+     -p 10543,22570 --after 2020-07-26T21:30:00 --before 2020-07-26T22:30:00 \
+     --style LightColorizedStyle
+
+.. image:: https://bit.ly/2ZBHYJU
+   :alt: Procpath RSS vs CPU SVG
+
+Ad-hoc
+------
+A GUI-driven ad-hoc visualisation can be done in Sqliteviz [11]_.
+
+Ad-hoc visualisation in the `online version <sqliteviz_>`_ of Sqliteviz is
+straightforward.
+
+1. Drop an SQLite database file into Sqliteviz
+2. Create new query
+3. Enter the SQL query (see examples in the section below) and run it
+4. Switch to *Chart* tab
+5. Click *+ Trace*, select *Line* chart
+6. Choose ``X = ts``
+7. Choose ``Y`` to the expression to plot, for instance, ``rss``
+8. Switch to *Transforms*, click *+ Transform*, add *Split* and choose
+   ``stat_pid``
+
+It should look something like this.
+
+.. image:: https://bit.ly/3372pjJ
+   :alt: Sqliteviz screenshot
+
+Procpath integrates with Sqliteviz via ``procpath explore``. On first execution
+the command downloads latest GitHub build of Sqliteviz into
+``~/.cache/procpath``, makes Procpath queries (and visualisation for them)
+available to Sqliteviz, starts a HTTP served from that directory and opens
+``/`` in a browser. Subsequent runs use the downloaded version and are fully
+offline. For the CLI options of the commands, see the listing of
+``procpath explore --help`` below.
+
+SQL query
+---------
+This section lists SQL queries to back the most basic temporal process
+analysis tasks. Similar queries with filters are used by ``procpath plot``.
+
+1. RSS in MiB per process.
+
+   .. sourcecode:: sql
+
+      SELECT
+        datetime(ts, 'unixepoch', 'localtime') ts,
+        stat_pid,
+        stat_rss / 1024.0 / 1024 * (SELECT value FROM meta WHERE key = 'page_size') rss
+      FROM record
+
+2. CPU usage percent per process.
+
+   .. sourcecode:: sql
+
+      WITH diff AS (
+        SELECT
+          ts,
+          stat_pid,
+          stat_utime + stat_stime - LAG(stat_utime + stat_stime) OVER (
+            PARTITION BY stat_pid
+            ORDER BY record_id
+          ) tick_diff,
+          ts - LAG(ts) OVER (
+            PARTITION BY stat_pid
+            ORDER BY record_id
+          ) ts_diff
+        FROM record
+      )
+      SELECT
+        datetime(ts, 'unixepoch', 'localtime') ts,
+        stat_pid,
+        100.0 * tick_diff
+          / (SELECT value FROM meta WHERE key = 'clock_ticks') / ts_diff cpu_load
+      FROM diff
+
+   .. note::
+
+      1. Window function support was first added to SQLite with release
+         version 3.25.0 (2018-09-15)
+      2. The above only accounts for user and system time
+
+Suggested desktop SQLite database explorers are SQLiteStudio [14]_ and
+Sqliteman [15]_. The latter may be available in your OS' repositories.
+The former may need manual replacement of ``libsqlite3`` it is shipped with,
+to a newer one with window function support (e.g. this Debian Stretch backport
+3.27 [16]_ depends on ``libc6`` >= 2.14).
+
+Delegation to other tools
+=========================
+Procpath itself is only concerned with ``procfs`` [4]_, but there is a wide
+range of Linux tools, language-specific or not, from profilers to system call
+tracers which can provide the key to the problem at hand. These tools
+typically accept a PID or list of PIDs, and hence benefit from the process
+tree query capability Procpath provides. It's a convenience to avoid
+unnecessary scripting and/or terminal multiplexers in case of many process
+tries of interest (e.g. Celery nodes).
+
+Procpath has ``watch`` command which is analogous to ``procps`` ``watch``.
+In this example ``watch`` delegates two process trees to ``smemstat`` [17]_
+and ``py-spy`` [18]_.
+
+.. sourcecode::
+
+   procpath watch --interval 601 \
+     -e TS='date +%s' \
+     -e S1='systemctl show --property MainPID redis-server | cut -d "=" -f 2' \
+     -e C1='docker inspect -f "{{.State.Pid}}" app_gunicorn_1' \
+     -q L1='$..children[?(@.stat.pid == $S1)]..pid' \
+     -c 'smemstat -q -o redis-memdiff-$TS.json -p $L1 30 20' \
+     -c 'timeout --foreground --signal SIGINT 600 \
+         py-spy record --subprocesses --output app-flamegraph-$TS.svg --pid $C1'
+
+Notes:
+
+1. Typical ``watch`` pattern is:
+
+   a. take the root PID from you process supervisor (systemd, Docker, etc)
+   b. query all PIDs of its descendant processes
+   c. pass the PID list to the analysis tool of choice
+
+2. The command environment is re-evaluated each ``--interval`` seconds
+3. A process is restarted each ``--interval`` seconds only if it has stopped
+   and unless ``--no-restart`` is provided
+4. A process's ``stdout`` output is forwarded as ``INFO``, and ``stderr`` as
+   ``WARNING`` logging records
+5. If the analysis tool of choice needs to work continuously and doesn't have
+   a means to terminate itself, it's suggested to wrap in into
+   ``timeout --foreground --signal SIGINT INTERVAL ...``
+6. ``watch`` expects to be interrupted by SIGINT (Ctrl+C), where it
+   sends SIGINT (by default) to all its descendant processes
+7. ``watch`` can run fixed number of repetitions specified by ``--repeat``
+
+Sharing and ops
+===============
+Procpath commands are typically multi-line shell commands, and when it comes
+to sharing them as such, it can become unwieldy. The spectrum here can go from
+having a couple of queries to diagnose your workstation you'd like to share
+with your colleagues, to distributing a part of a commercial product's, say
+delivered on premises of the customers as systemd services, troubleshooting
+operations procedure.
+
+Playbook
+--------
+To make writing and sharing of command bundles easy, Procpath comes with
+another convenience layer -- playbooks. Procpath playbooks are a Python
+``configparser`` representation of its command-line interface, with a few bits
+of custom semantics. It looks like::
+
+   [stack]
+   environment:
+     L=docker ps -f status=running -f name='^project_name' -q | xargs -I{} -- \
+       docker inspect -f '{{.State.Pid}}' {} | tr '\n' ,
+   query: $..children[?(@.stat.pid in [$L])]
+   procfile_list: stat
+
+   # this section inherits some options, and overrides one of them
+   [stack:status:query]
+   extends: stack
+   sql_query: SELECT SUM(status_vmrss) total FROM record
+   procfile_list: stat,status
+
+   [stack:stat:query]
+   extends: stack
+   sql_query: SELECT SUM(stat_rss) * 4 total FROM record
+
+Here's how playbooks are read and interpreted:
+
+1. A CLI minus-separated argument is written as an underscore-separated option.
+2. The option value delimiter is ``:``. A comment is prefixed with ``#``.
+3. A multi-value option is written one per line. The long line can be broken up
+   by placing a backslash before the newline.
+4. A section name can be compound. Segments are delimited by ``:``. If the
+   section represents a command, its last segment must be the command's name.
+5. A section inherits from other sections via ``extends`` option.
+6. Single-value option search stops, going from the command section up, on the
+   first match.
+7. A multi-value option is joined across the section's and its parent
+   sections' values.
+
+A playbook can be saved as a ``.procpath`` file and run like::
+
+   procpath play -f example.procpath '*:query'
+
+For the playbook CLI, see the listing of ``procpath play --help`` below.
+
+Advanced usage
+--------------
+- Setting and/or overriding options via CLI::
+
+     [python:record]
+     environment:
+       PIDS=docker ps -f status=running -f name='^project_name' -q | xargs -I{} -- \
+            docker inspect -f '{{.State.Pid}}' {} | tr '\n' ,
+     query: $..children[?(@.stat.pid in [$PIDS] and 'python' in @.stat.comm)]
+     interval: 10
+     recnum: 30
+
+     [python:plot]
+     query_name:
+       cpu
+       rss
+
+  ``database_file`` is required for both ``record`` and ``plot``. It can be set
+  via CLI like the following. Hence this will record the database and make
+  CPU vs RSS plot out of it::
+
+     procpath play -f demo.procpath -o 'database_file=db.sqlite' '*'
+
+- Running playbook with escalated privileges::
+
+     [python:watch]
+     environment:
+       DT=date +"%Y%m%dT%H%M%S"
+       STACK=docker ps -f status=running -f name='^project_name' -q | xargs -I{} -- \
+             docker inspect -f '{{.State.Pid}}' {} | tr '\n' ,
+     query:
+       PIDS=$..children[?(@.stat.pid in [$STACK] and 'python' in @.stat.comm)]..pid
+     interval: 10
+     repeat: 30
+     command:
+       procpath record -i 1 -d db_$DT.sqlite \
+         '$..children[?(@.stat.pid in [$PIDS])]'
+       echo $PIDS | tr ',' '\n' | xargs -P0 -I{} -- \
+         py-spy record --idle --pid {} -o py_{}_$DT.svg
+
+  ``py-spy`` typically requires escalated privileges to access the target
+  Python process' memory. ``xargs -P0`` can be used to spawn ``py-spy`` per
+  PID, because ``py-spy`` doesn't support multiple targets natively. A playbook
+  running ``py-spy`` with ``sudo`` can be run like the following::
+
+     sudo env "PATH=$PATH" procpath play -f demo.procpath python:watch
+
+- A playbook can cover full target process measurement life-cycle i.e. start
+  the process of interest, run ``procpath record`` against it, and automatically
+  stop with the target process::
+
+     [watch]
+     environment:
+       DT=date +"%Y%m%dT%H%M%S"
+     interval: 1
+     no_restart: 1
+     command:
+       xz -9 /some/big/database.sqlite
+       procpath record -i 0.1 -f stat -d xz_$DT.sqlite --stop-without-result \
+         -p $WPS1 "$..children[?(@.stat.pid == $WPS1)]"
+
+Design
+======
+This section describes the problem and the solution in general. What preceded
+Procpath and why it didn't solve the problem.
+
+Problem statement
+-----------------
+On servers and desktops processes have become treelike long ago. For instance,
+this is a process tree of Chromium browser with few opened tabs::
+
+    chromium-browser ...
+    ├─ chromium-browser --type=utility ...
+    ├─ chromium-browser --type=gpu-process ...
+    │  └─ chromium-browser --type=broker
+    └─ chromium-browser --type=zygote
+       └─ chromium-browser --type=zygote
+          ├─ chromium-browser --type=renderer ...
+          ├─ chromium-browser --type=renderer ...
+          ├─ chromium-browser --type=renderer ...
+          ├─ chromium-browser --type=renderer ...
+          └─ chromium-browser --type=utility ...
+
+On a server environment it can be substituted with a dozen of task queue worker
+process trees, processes of the connection pool of a database, several
+web-server process trees or anything-goes in a bunch of Docker containers.
+
+This environment begs some operational questions, point-in-time and temporal.
+When I have several trees like above, how do I know the (sub)tree's current
+resource profile, like total main memory consumption, CPU time and so on? How
+do I track these profiles in time when, for instance, I suspect a memory leak?
+How to point other process analysis and introspection tools to these trees?
+
+Existing approaches for outputting a tree's PIDs include applying bash-fu on
+``pstree`` output [1]_ or nested ``pgrep`` for shallower cases. ``procps``
+(providing ``top`` and ``ps``) is inadequate for any of above from embracing
+process hierarchy to collecting temporal metrics. ``psmisc`` (providing
+``pstree``) is only good for displaying the hierarchy, and doesn't
+cover any programmatic interaction. ``htop`` is great for interactive
+inspection of process trees with its filter and search, but for programmatic
+interaction is also useless. ``glances`` has the JSON output feature, but it
+doesn't have process-level granularity...
+
+For process metrics collection alone (given you know the PIDs), ``sysstat``
+(providing ``pidstat``) is likely the only simple solution, which still
+requires some ad-hoc scripting [2]_.
+
+Solution
+--------
+The solution lies in applying the right tool to the job principle.
+
+1. Represent ``procfs`` [4]_ processes as a forest structure (a disjoint union
+   of trees).
+2. Expose this structure to queries in a compact tree query language.
+3. Flatten and store a query result in a ubiquitous format allowing for
+   easy transmission and transformation.
+
+A major non-functional requirement here is ease of installation, preferably in
+the form of pure-python package. That's because an ad-hoc investigation may
+not allow installing compiler toolchain on the target machine, which discards
+``psutil`` [10]_ and discourages XML as the tree representation format, as it
+would require ``lxml`` for XPath.
+
+Representation is relatively simple. Read all ``/proc/N/stat``, build the
+forest and serialise it as JSON. The ubiquitous form is even simpler. SQLite!
+
+The step in between is much less obvious. Discarding special graph query
+languages and focusing on ones targeting JSON the list goes like this. But
+it's unfortunately, taking into account the Python implementations, is not
+about choosing the best requirement match, but about choosing the lesser evil.
+
+1. JSONPath [5]_ and its Python port. Informal, regex-based (obscure error
+   messages and edge-cases), what-if-XPath-worked-on-JSON prototype. Most
+   popular non-regex Python implementation are a sequence of forks, none of
+   which supports recursive descent. One grammar-based package would work [6]_,
+   but its filter expressions are just Python ``eval``.
+2. JSON Pointer [7]_. No recursive descent supported.
+3. JMESPath (AWS ``boto`` dependency). No recursive descent supported [8]_.
+4. ``jq`` and its Python bindings [9]_. ``jq`` is a programming language
+   in disguise of JSON transformation CLI tool. Even though there's lengthy
+   documentation, on occasional use ``jq`` feels very counter-intuitive and
+   requires lot of googling and trial-and-error.
+
+Pondering and playing with these, item 1 and ``JSONPyth`` [6]_ was the choice.
+Filter Python expression syntax can be "jsonified" by the ``AttrDict`` idiom,
+and the security concern of ``eval`` is justified by the CLI use cases.
+
+Data model
+----------
+``procpath query`` outputs the root process nodes with all their descendants
+into stdout.
+
+.. sourcecode:: json
+
+   [
+     {
+       "stat": {"pid": 1, "ppid": 0, ...}
+       "cmdline": "a root node",
+       "other_stat_file": ...,
+       "children": [
+         {
+           "cmdline": "cmdline of some process",
+           "stat": {"pid": 1, "ppid": 323, ...},
+           "other_stat_file": ...
+         },
+         {
+           "cmdline": "cmdline of another process with children",
+           "stat": {"pid": 1, "ppid": 324, ...},
+           "other_stat_file": ...,
+           "children": [...]
+         },
+         ...
+       ]
+     },
+     {
+       "stat": {"pid": 2, "ppid": 0, ...},
+       "cmdline": "another root node",
+       "other_stat_file": ...,
+       "children": [...]
+     },
+     ...
+   ]
+
+When JSONPath query is provided to the command, the output only contains the
+nodes (or their parts depending on the query) matching the query list of
+process nodes.
+
+When recorded into a SQLite database, schema is inferred from used procfs
+files. The node list is flattened and recorded into the ``record`` table having
+the DDL like the following.
+
+.. sourcecode:: sql
+
+   CREATE TABLE record (
+       record_id        INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+       ts               REAL    NOT NULL,
+       cmdline          TEXT,
+       stat_pid         INTEGER,
+       stat_comm        TEXT,
+       ...
+   )
+
+Procpath doesn't pre-processes procfs data. For instance, ``rss`` is expressed
+in pages, ``utime`` in clock ticks and so on. To properly interpret data in
+``record`` table, there's also ``meta`` table containing the following
+key-value records.
+
+=====================  ============================
+``platform_node``      ``platform.node()``
+---------------------  ----------------------------
+``platform_platform``  ``platform.platform()``
+---------------------  ----------------------------
+``page_size``          ``resource.getpagesize()``
+                       typically 4096
+---------------------  ----------------------------
+``clock_ticks``        ``os.sysconf('SC_CLK_TCK')``
+                       typically 100
+=====================  ============================
+
+Procpath supports ``stat``, ``cmdline``, ``io`` and ``status`` procfs files.
+``stat`` and ``cmdline`` are the default ones. Each procfs file field is
+described in ``procpath.procfile`` module [3]_.
+
+Command-line interface
+======================
+``query``
+---------
+.. sourcecode::
+
+   $ procpath query --help
+   usage: procpath query [-h] [-f PROCFILE-LIST] [-d DELIMITER] [-i INDENT]
+                         [-e ENVIRONMENT]
+                         [query] [sql_query]
+
+   Execute given JSONPath and/or SQL query against process tree producing JSON or
+   separator-delimited values.
+
+   positional arguments:
+     query                 JSONPath expression, for example this query returns PIDs
+                           for process subtree including the given root's:
+                           $..children[?(@.stat.pid == 2610)]..pid
+     sql_query             SQL query to further filter and/or aggregate collected
+                           process nodes. Note that if JSONPath query is present it
+                           must return full nodes, e.g. $..children[?(@.stat.pid ==
+                           2610)]. For example this query returns total RSS of the
+                           processes: SELECT SUM(stat_rss) / 1024.0 * 4 total FROM
+                           record
+
+   optional arguments:
+     -h, --help            show this help message and exit
+
+   named arguments:
+     -f PROCFILE-LIST, --procfile-list PROCFILE-LIST
+                           Procfs files to read per PID. Comma-separated list. By
+                           default: stat, cmdline. Available: stat, cmdline, io,
+                           status.
+     -d DELIMITER, --delimiter DELIMITER
+                           Join query result using given delimiter
+     -i INDENT, --indent INDENT
+                           Format result JSON using given indent number
+     -e ENVIRONMENT, --environment ENVIRONMENT
+                           Commands to evaluate in the shell and template the
+                           queries, like VAR=date. Multiple occurrence is possible.
+
+``record``
+----------
+.. sourcecode::
+
+   $ procpath record --help
+   usage: procpath record [-h] [-f PROCFILE-LIST] [-e ENVIRONMENT] -d DATABASE-FILE
+                          [-p PID-LIST] [-i INTERVAL] [-r RECNUM] [-v REEVALNUM]
+                          [--stop-without-result]
+                          [query]
+
+   Record the nodes of process tree matching given JSONPath query into a SQLite
+   database in given intervals.
+
+   positional arguments:
+     query                 JSONPath expression, for example this query returns a
+                           node including its subtree for given PID:
+                           $..children[?(@.stat.pid == 2610)]
+
+   optional arguments:
+     -h, --help            show this help message and exit
+
+   named arguments:
+     -f PROCFILE-LIST, --procfile-list PROCFILE-LIST
+                           Procfs files to read per PID. Comma-separated list. By
+                           default: stat, cmdline. Available: stat, cmdline, io,
+                           status.
+     -e ENVIRONMENT, --environment ENVIRONMENT
+                           Commands to evaluate in the shell and template the
+                           query, like VAR=date. Multiple occurrence is possible.
+     -d DATABASE-FILE, --database-file DATABASE-FILE
+                           Path to the recording database file
+     -p PID-LIST, --pid-list PID-LIST
+                           Keep only branches with given PIDs in the tree before
+                           running query against it. Comma-separated list. It can
+                           include environment variables.
+
+   loop control arguments:
+     -i INTERVAL, --interval INTERVAL
+                           Interval in second between each recording, 10 by
+                           default.
+     -r RECNUM, --recnum RECNUM
+                           Number of recordings to take at --interval seconds
+                           apart. If not specified, recordings will be taken
+                           indefinitely.
+     -v REEVALNUM, --reevalnum REEVALNUM
+                           Number of recordings after which environment must be re-
+                           evaluate. It's useful when you expect it to change while
+                           recordings are taken.
+     --stop-without-result
+                           Prematurely stop recording when target processes can no
+                           longer be found, or otherwise when the query and/or PID
+                           filter don't yield a result.
+
+``plot``
+--------
+.. sourcecode::
+
+   $ procpath plot --help
+   usage: procpath plot [-h] -d DATABASE-FILE [-f PLOT-FILE] [-q QUERY-NAME]
+                        [--custom-query-file CUSTOM-QUERY-FILE]
+                        [--custom-value-expr CUSTOM-VALUE-EXPR] [-a AFTER]
+                        [-b BEFORE] [-p PID-LIST] [-l] [--style STYLE]
+                        [--formatter FORMATTER] [--title TITLE] [-e EPSILON]
+                        [-w MOVING-AVERAGE-WINDOW]
+
+   Plot previously recorded SQLite database using predefined or custom SQL
+   expression or query.
+
+   optional arguments:
+     -h, --help            show this help message and exit
+
+   named arguments:
+     -d DATABASE-FILE, --database-file DATABASE-FILE
+                           Path to the database file to read from.
+     -f PLOT-FILE, --plot-file PLOT-FILE
+                           Path to the output SVG file, plot.svg by default.
+
+   query control arguments:
+     -q QUERY-NAME, --query-name QUERY-NAME
+                           Built-in query name. Available: rss,cpu. Can occur once
+                           or twice (including other query-contributing options).
+                           In the latter case, the plot has two Y axes.
+     --custom-query-file CUSTOM-QUERY-FILE
+                           Use custom SQL query in given file. The result-set must
+                           have 3 columns: ts, pid, value. See procpath.procret.
+                           Can occur once or twice (including other query-
+                           contributing options). In the latter case, the plot has
+                           two Y axes.
+     --custom-value-expr CUSTOM-VALUE-EXPR
+                           Use custom SELECT expression to plot as the value. Can
+                           occur once or twice (including other query-contributing
+                           options). In the latter case, the plot has two Y axes.
+
+   filter control arguments:
+     -a AFTER, --after AFTER
+                           Include only points after given UTC date, like
+                           2000-01-01T00:00:00.
+     -b BEFORE, --before BEFORE
+                           Include only points before given UTC date, like
+                           2000-01-01T00:00:00.
+     -p PID-LIST, --pid-list PID-LIST
+                           Include only given PIDs. Comma-separated list.
+
+   plot control arguments:
+     -l, --logarithmic     Plot using logarithmic scale.
+     --style STYLE         Plot using given pygal.style, like LightGreenStyle.
+     --formatter FORMATTER
+                           Force given pygal.formatter, like integer.
+     --title TITLE         Override plot title.
+
+   post-processing control arguments:
+     -e EPSILON, --epsilon EPSILON
+                           Reduce points using Ramer-Douglas-Peucker algorithm and
+                           given ε.
+     -w MOVING-AVERAGE-WINDOW, --moving-average-window MOVING-AVERAGE-WINDOW
+                           Smooth the lines using moving average.
+
+
+``watch``
+---------
+.. sourcecode::
+
+   $ procpath watch --help
+   usage: procpath watch [-h] [-e ENVIRONMENT] [-q QUERY] -c COMMAND -i INTERVAL
+                         [-r REPEAT] [-s STOP-SIGNAL] [-f PROCFILE-LIST]
+                         [--no-restart]
+
+   Execute given commands in given intervals. It has similar purpose to procps
+   watch, but allows JSONPath queries to the process tree to choose processes of
+   interest. In each next process' environment exist variables WSP1, WSP2 and so on
+   containing PIDs of previous shells that run watched processes.
+
+   optional arguments:
+     -h, --help            show this help message and exit
+
+   command control arguments:
+     -e ENVIRONMENT, --environment ENVIRONMENT
+                           Commands to evaluate in the shell, like C1='docker
+                           inspect -f "{{.State.Pid}}" nginx' or D='date +%s'.
+                           Multiple occurrence is possible.
+     -q QUERY, --query QUERY
+                           JSONPath expressions that typically evaluate into a list
+                           of PIDs. The environment defined with -e can be used
+                           like L1='$..children[?(@.stat.pid == $C1)]..pid'.
+                           Multiple occurrence is possible.
+     -c COMMAND, --command COMMAND
+                           Target command to "watch" in the shell. The environment
+                           and query results can be used like 'smemstat -o
+                           smemstat-$D.json -p $L1'. Query result lists are joined
+                           with comma. Multiple occurrence is possible.
+
+   named arguments:
+     -i INTERVAL, --interval INTERVAL
+                           Interval in second after which to re-evaluate the
+                           environment and the queries, and re-run each command if
+                           one has finished.
+     -r REPEAT, --repeat REPEAT
+                           Fixed number to repetitions instead of infinite watch.
+     -s STOP-SIGNAL, --stop-signal STOP-SIGNAL
+                           Signal to send to the spawned processes on watch stop.
+                           By default: SIGINT.
+     -f PROCFILE-LIST, --procfile-list PROCFILE-LIST
+                           Procfs files to read per PID. Comma-separated list. By
+                           default: stat, cmdline. Available: stat, cmdline, io,
+                           status.
+     --no-restart          Do not restart watched processes when they stop, and
+                           stop watching once no watched process is running.
+
+``play``
+---------
+.. sourcecode::
+
+   $ procpath play --help
+   usage: procpath play [-h] -f PLAYBOOK-FILE [-l] [-n] [-o OPTION]
+                        target [target ...]
+
+   Play one or more sections from given playbook.
+
+   positional arguments:
+     target                Name or glob-expression of the section from the
+                           playbook.
+
+   optional arguments:
+     -h, --help            show this help message and exit
+
+   named arguments:
+     -f PLAYBOOK-FILE, --playbook-file PLAYBOOK-FILE
+                           Path to the playbook to play.
+     -l, --list-sections   List matching sections in the playbook.
+     -n, --dry-run         Collect and print target sections.
+     -o OPTION, --option OPTION
+                           A key-value pair to override the option in the playbook,
+                           like database_file=db.sqlite. Multiple occurrence is
+                           possible.
+
+``explore``
+-----------
+.. sourcecode::
+
+   $ procpath explore --help
+   usage: procpath explore [-h] [--reinstall] [--build-url BUILD-URL] [-b ADDRESS]
+                           [-p PORT] [--no-browser]
+
+   Serve a Sqliteviz build from a local web-server for exploratory or ad-hoc
+   visualisation. On first invocation Sqliteviz is downloaded and saved locally for
+   later offline use. Procpath exports pre-defined queries into Sqliteviz.
+
+   optional arguments:
+     -h, --help            show this help message and exit
+
+   named arguments:
+     --reinstall           Remove local copy and fetch Sqliteviz build again.
+     --build-url BUILD-URL
+                           Sqliteviz build URL. By default: https://github.com/
+                           lana-k/sqliteviz/releases/latest/download/dist.zip.
+     -b ADDRESS, --bind ADDRESS
+                           Specify alternate bind address. By default: all
+                           interfaces.
+     -p PORT, --port PORT  Specify alternate port. By default: 8000.
+     --no-browser          Do not open a browser after startup.
+
+____
+
+.. _sqliteviz: https://lana-k.github.io/sqliteviz/
+.. [1] https://unix.stackexchange.com/q/67668/124219
+.. [2] https://stackoverflow.com/a/59182595/2072035
+.. [3] https://heptapod.host/saajns/procpath/-/blob/branch/default/procpath/procfile.py
+.. [4] https://en.wikipedia.org/wiki/Procfs
+.. [5] https://goessner.net/articles/JsonPath/
+.. [6] https://pypi.org/project/JSONPyth/
+.. [7] https://tools.ietf.org/html/rfc6901
+.. [8] https://github.com/jmespath/jmespath.py/issues/110
+.. [9] https://pypi.org/project/jq/
+.. [10] ``psutil`` gained manylinux wheels in 5.8.0 released in Decemeber 2020
+.. [11] https://github.com/lana-k/sqliteviz
+.. [12] https://pypi.org/project/pipx/
+.. [13] https://pypi.org/project/pygal/
+.. [14] https://github.com/pawelsalawa/sqlitestudio
+.. [15] https://sourceforge.net/projects/sqliteman/
+.. [16] https://packages.debian.org/stretch-backports/libsqlite3-0
+.. [17] https://kernel.ubuntu.com/~cking/smemstat/
+.. [18] https://pypi.org/project/py-spy/
