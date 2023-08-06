@@ -1,0 +1,8 @@
+README.md
+setup.py
+masterprograming/__init__.py
+masterprograming/master.py
+masterprograming.egg-info/PKG-INFO
+masterprograming.egg-info/SOURCES.txt
+masterprograming.egg-info/dependency_links.txt
+masterprograming.egg-info/top_level.txt
