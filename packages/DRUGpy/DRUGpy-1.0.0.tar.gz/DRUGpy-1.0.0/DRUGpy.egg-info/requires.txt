@@ -1,0 +1,8 @@
+lxml
+pandas
+scipy
+requests
+cached_property
+matplotlib
+seaborn
+jinja2
