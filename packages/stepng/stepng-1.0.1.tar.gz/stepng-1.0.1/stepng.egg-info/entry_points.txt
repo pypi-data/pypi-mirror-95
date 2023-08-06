@@ -1,0 +1,3 @@
+[console_scripts]
+stepng = stepng.__init__:main
+
