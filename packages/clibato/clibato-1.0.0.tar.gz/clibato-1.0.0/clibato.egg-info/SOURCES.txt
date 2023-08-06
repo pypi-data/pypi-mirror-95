@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+clibato.egg-info/PKG-INFO
+clibato.egg-info/SOURCES.txt
+clibato.egg-info/dependency_links.txt
+clibato.egg-info/entry_points.txt
+clibato.egg-info/requires.txt
+clibato.egg-info/top_level.txt
+test/test_clibato.py
+test/test_config.py
+test/test_content.py
+test/test_destination.py
