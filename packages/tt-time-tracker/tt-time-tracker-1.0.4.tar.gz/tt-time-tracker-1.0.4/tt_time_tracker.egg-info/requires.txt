@@ -1,0 +1,10 @@
+colorama
+lark-parser
+mock
+pytz
+pyyaml
+tzlocal==2.1
+
+[docs]
+ghp-import
+pygreen
