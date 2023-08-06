@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "tikotapi"
+version = "1.0.1"
+description = "API by TikOt. Connect to account (testing account): tikotapi.connect(). Next to dashboard: tikotapi.panel_service (panel_tikotshop)(\"login\", \"password\")."
+authors = ["tikotstudio <tikotstudio@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
