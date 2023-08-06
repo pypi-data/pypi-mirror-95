@@ -1,0 +1,10 @@
+zfapi/__init__.py,sha256=6GRYxRVpLXVhAtArASZTC43m4fEK4-dzeIdGNchzlB0,33
+zfapi/config.py,sha256=Kprv0pKaVQNVnby8u38qYH6xEDjlEU6Nnbyx00mZ3Ts,536
+zfapi/api/__init__.py,sha256=IZUQabeE_hdx0QNMpYiwZsdMKOxGXJ6QXjvxNDXYlTw,70
+zfapi/api/get_info.py,sha256=hZ-4tEWXzIr4p_exK6vscwtTjqx8g-O6bIHyrhiY0Wg,13989
+zfapi/api/login.py,sha256=ioYU7PpnWuqiIB7lXMhRDMEyTDaV1J17bHakrR5ir4I,2543
+zfapi-0.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+zfapi-0.0.1.dist-info/METADATA,sha256=BVwWhmVKVFDCfwPu76ltwTmI8gdNv93vjNjhh-TNBaY,2841
+zfapi-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+zfapi-0.0.1.dist-info/top_level.txt,sha256=Cnms7bXAXEq8z8GBiygvYJ0fB-7lL5yfsvth77zslVc,6
+zfapi-0.0.1.dist-info/RECORD,,
