@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: gybe
+Version: 0.1.0
+Summary: A simple YAML transpilation tool for rendering kubernetes manifests
+Home-page: https://github.com/petermorrow/gybe
+Author: Peter Morrow
+Author-email: peterthehacker3@gmail.com
