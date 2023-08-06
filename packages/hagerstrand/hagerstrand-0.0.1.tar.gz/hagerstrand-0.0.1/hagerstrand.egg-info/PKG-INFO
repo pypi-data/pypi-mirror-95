@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hagerstrand
+Version: 0.0.1
+Summary: A Python package for an interactive space-time Geographic Information System (GIS)
+Home-page: https://github.com/jimmy-feng/hagerstrand
+Author: Jimmy Feng
+Author-email: jfeng1996@gmail.com
+License: MIT license
+Description: # hagerstrand
+        
+        
+        [![image](https://img.shields.io/pypi/v/hagerstrand.svg)](https://pypi.python.org/pypi/hagerstrand)
+        
+        
+        **A Python package for an interactive space-time Geographic Information System (GIS)**
+        
+        
+        -   Free software: MIT license
+        -   Documentation: https://jimmy-feng.github.io/hagerstrand
+            
+        
+        ## Features
+        
+        -   TODO
+        
+        ## Credits
+        
+        This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
+        
+Keywords: hagerstrand
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
