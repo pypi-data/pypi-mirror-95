@@ -1,0 +1,12 @@
+dill
+flake8
+gitpython
+pandas
+pyyaml
+xlrd
+
+[docs]
+sphinx_autodoc_typehints
+
+[pdf]
+pymupdf
