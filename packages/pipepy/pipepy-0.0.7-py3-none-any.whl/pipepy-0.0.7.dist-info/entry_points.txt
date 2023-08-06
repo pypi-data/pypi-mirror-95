@@ -1,0 +1,4 @@
+[console_scripts]
+_pymake_complete = pipepy.pymake:pymake_complete
+pymake = pipepy.pymake:pymake
+

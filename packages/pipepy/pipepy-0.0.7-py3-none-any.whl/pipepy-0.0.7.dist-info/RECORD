@@ -1,0 +1,12 @@
+pipepy/__init__.py,sha256=UbI7bEWjgWHdSKnvaF-WdNUgPR7ZWrJjOT1RyOrgPaw,201
+pipepy/exceptions.py,sha256=OeZxmOA60jLHnnSkeHkNyKDNbEcFiwzJK8Q7whRWJM8,417
+pipepy/misc.py,sha256=CyezoCEv0spcmp4ZB0Fh7O0vN4tvkQ5uS0wOriZPQiU,3846
+pipepy/pipepy.py,sha256=Mmw6aWY6udt9DG4vFFzLpeu1i7v7DyX5WTcXBvn5Jxo,27235
+pipepy/pymake.py,sha256=9Q-2O3u2DAj4xexY-uVrbxSUQEQW_fFbSOKk_dWjHWo,1640
+pipepy/utils.py,sha256=cuEixdKupZ6gZ_NzDwWgmIqcXIwmLLY0fk58h44DNgU,323
+pipepy-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pipepy-0.0.7.dist-info/METADATA,sha256=VAfF-PflnDYJziTIVXjZEAiEV0HsLwMGyZ_AwOZ3CEA,31271
+pipepy-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pipepy-0.0.7.dist-info/entry_points.txt,sha256=iw0W5HCkiaFyujxzAjcrVB2kZEZX3GPe2XxKJMoTD7Y,98
+pipepy-0.0.7.dist-info/top_level.txt,sha256=XdAJEzVhbbmRuyw9wLv_SXCe3KKDHJDHPFfEprhsiLY,7
+pipepy-0.0.7.dist-info/RECORD,,
