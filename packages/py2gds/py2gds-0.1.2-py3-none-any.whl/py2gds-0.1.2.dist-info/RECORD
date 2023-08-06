@@ -1,0 +1,15 @@
+py2gds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py2gds/algorithm.py,sha256=pAy5Q3fGviEwMz05pY3xFDdK9D4_qyd8FRiJ47gCvo0,2357
+py2gds/collection.py,sha256=eSzqXr2pkNPVzybn3rCPEd0kHxint3QNJjVO2TDwPSc,1203
+py2gds/connection.py,sha256=EHpxPS89RqIO87TbnRqBV4Yyl1N_ZVQMzRSLcihRWuI,673
+py2gds/dsl.py,sha256=LGYE0MADmhUbMzQG2ovwBcNZPwnItippbl2hyThXqY0,11762
+py2gds/exceptions.py,sha256=NAALbVmSaH2by0drRSHn-PHcIJ_M985Tv-gT6Z8pgWs,166
+py2gds/projection.py,sha256=_Dbte12O3LQQvlHFbrdAbnlePCWm2kATm0GNtFBIuJo,4316
+py2gds/queries.py,sha256=l5Zqkz6kulhdsu9lhwN-JanN-f_9NBNNela0gMA-K88,5708
+py2gds/query.py,sha256=VvlEPsyJwaUtQQe3xpfmOtvYVjtXmAKRyzTjLkFu4Hs,503
+py2gds/rank.py,sha256=NHXdfpPadZu_c9cMRM0bXKNGF_PDUvyajJzax8qhrUI,8016
+py2gds/utils.py,sha256=vfggXP7YedxuTYO8kkds7Pfc-cLrb8SAh2OEe_35gz4,1505
+py2gds-0.1.2.dist-info/LICENSE,sha256=GH64Y4quIxnABpxV9m8CGJWdWs7ua83NOyrtHfIA89g,1097
+py2gds-0.1.2.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+py2gds-0.1.2.dist-info/METADATA,sha256=RMB60_YKs8QUDL1ummRt1jy32k3OY_JorvSjLff_mBc,430
+py2gds-0.1.2.dist-info/RECORD,,
