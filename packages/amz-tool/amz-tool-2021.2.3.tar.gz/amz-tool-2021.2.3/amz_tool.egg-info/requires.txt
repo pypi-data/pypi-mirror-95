@@ -1,0 +1,8 @@
+pyyaml>=5.3.0
+requests
+pylint>=2.6.0
+cpplint>=1.5.4
+pre-commit>=2.9.3
+yapf>=0.30.0
+argcomplete
+packaging

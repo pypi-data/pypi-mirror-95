@@ -1,0 +1,4 @@
+graft amz/data/*
+graft amz/config/*
+include amz/data/*
+include amz/config/*
