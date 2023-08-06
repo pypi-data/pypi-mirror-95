@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dffml-model-vowpalWabbit
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/intel/dffml/blob/master/model/vowpalWabbit/README.md
+Author: Himanshu Tripathi
+Author-email: himanshutripathi366@gmail.com
+Maintainer: John Andersen
+Maintainer-email: john.s.andersen@intel.com
+License: MIT
+Description: # DFFML Vowpal Wabbit Models
+        
+        ## About
+        
+        Vowpal Wabbit models.
+        
+        ## Documentation
+        
+        Documentation is hosted at https://intel.github.io/dffml/plugins/dffml_model.html#dffml-model-vowpalWabbit
+        
+        
+        ## License
+        
+        dffml_model_vowpalWabbit Models are distributed under the terms of the
+        [MIT License](LICENSE).
+        
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown

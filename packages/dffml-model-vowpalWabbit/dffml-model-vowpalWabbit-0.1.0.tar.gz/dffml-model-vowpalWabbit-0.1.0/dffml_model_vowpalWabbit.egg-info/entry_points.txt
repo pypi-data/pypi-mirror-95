@@ -1,0 +1,3 @@
+[dffml.model]
+vwmodel = dffml_model_vowpalWabbit.vw_base:VWModel
+
