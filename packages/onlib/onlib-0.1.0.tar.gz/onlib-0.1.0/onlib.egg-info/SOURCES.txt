@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+onlib/__init__.py
+onlib/onlib.py
+onlib.egg-info/PKG-INFO
+onlib.egg-info/SOURCES.txt
+onlib.egg-info/dependency_links.txt
+onlib.egg-info/not-zip-safe
+onlib.egg-info/top_level.txt
