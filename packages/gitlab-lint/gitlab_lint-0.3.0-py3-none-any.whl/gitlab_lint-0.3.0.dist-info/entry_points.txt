@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gll=gitlab_lint.gll:gll
+    
