@@ -1,0 +1,9 @@
+boa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boa/boa.py,sha256=zUxSTjn3tM9QyEjyrIwtZRCMSm_LINNThtQ89QMFjIg,2681
+boa/settings.py,sha256=FilkVqGvA43yz0piDY2dc0UKVMuP2Qa_cWrGObwN9MM,55
+boa/templates.py,sha256=jWx_p0Nfrl_8isM_eZqemEieBUVS3br7HvbB104v6_Y,2583
+pboa-0.0.2a0.dist-info/METADATA,sha256=5uv4mqaISk9fklPUZczV4Tv1mMj6NgQkaFQx0USBAx4,1791
+pboa-0.0.2a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pboa-0.0.2a0.dist-info/entry_points.txt,sha256=br48OxXjREVz_cdh9gAtp0J8Sl_uXEUd3QNCkwP1Kvc,33
+pboa-0.0.2a0.dist-info/top_level.txt,sha256=nJza4qy5vzj423FL5EAxCYqBvs57hKC1Q5m5ROt9P3A,17
+pboa-0.0.2a0.dist-info/RECORD,,
