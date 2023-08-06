@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: clot
+Version: 2.0.0
+Summary: Bencoding helpers
+Home-page: https://github.com/elliptical/clot
+Author: Andrei Boulgakov
+Author-email: andrei.boulgakov@outlook.com
+License: MIT
+Download-URL: https://github.com/elliptical/clot/archive/2.0.0.tar.gz
+Description: # clot
+        Essentially, this is a playground for my tcm package.
+        
+        On top of that, I'll get some experience with Python descriptors and tkinter package.
+        
+Keywords: bencode
+Platform: All
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

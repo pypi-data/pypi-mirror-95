@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+clot/__init__.py
+clot.egg-info/PKG-INFO
+clot.egg-info/SOURCES.txt
+clot.egg-info/dependency_links.txt
+clot.egg-info/top_level.txt
+clot.egg-info/zip-safe
+clot/bencode/__init__.py
+clot/bencode/decoder.py
+clot/bencode/encoder.py
+test/__init__.py
+test/test_decoder.py
+test/test_encoder.py
