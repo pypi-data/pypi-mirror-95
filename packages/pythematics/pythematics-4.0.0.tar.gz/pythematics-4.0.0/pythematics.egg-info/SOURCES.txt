@@ -1,0 +1,15 @@
+pythematics/__init__.py
+pythematics/basic.py
+pythematics/constants.py
+pythematics/functions.py
+pythematics/linear.py
+pythematics/num_theory.py
+pythematics/polynomials.py
+pythematics/powers.py
+pythematics/random.py
+pythematics/setup.py
+pythematics/trigonometric.py
+pythematics.egg-info/PKG-INFO
+pythematics.egg-info/SOURCES.txt
+pythematics.egg-info/dependency_links.txt
+pythematics.egg-info/top_level.txt
