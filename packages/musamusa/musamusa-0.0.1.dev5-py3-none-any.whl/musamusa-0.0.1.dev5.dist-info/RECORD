@@ -1,0 +1,14 @@
+musamusa/aboutproject.py,sha256=NFx5Vs9KSZE82Cvm2mzySKCYw2vnfcfljFMgBooUNYg,1996
+musamusa/cfgini.py,sha256=1qpS-jcQSZGuswmbV6yyF6bT2SSPDE9YMdoXX0om8yQ,2360
+musamusa/cmdline_checkenv.py,sha256=H31cyBJ59_xtqjDsvm22_v8rpjK_LgDHeZf9AxB9UhM,2338
+musamusa/cmdlineargs.py,sha256=P30Rex3sei0SW4fKLmDC4tzWj5FLcCLEsTWvqp6rMcc,3456
+musamusa/global_logger.py,sha256=qsowySwNnIL52gk3sFHaiTiqxk7NKQieJJF23EyLv4A,1258
+musamusa/global_maincfgini.py,sha256=FbG_RGzjdd2HfsU_4e1OuGU1yw9A2l2_x-t6zUIfolQ,1227
+musamusa/logging_facilities.py,sha256=0UDuef6-qfrcRtETbdq6aOwxyT6aopAGK6HC0h2U4RM,429
+musamusa/main.py,sha256=FZ2IXi94mUQCJhfYmrWwzlmK8EJWLmGrd_O2duzqRsw,5435
+musamusa/maincfgfile.py,sha256=h8P-7PtjZH9sQiwfeZAFQTWutE6kTNUKcs9KFSx7Hxc,963
+musamusa/utils.py,sha256=TRTeCDni5VjnepQBCkyzOOp6An_sGWJtEK90E2m2Xkk,1659
+musamusa-0.0.1.dev5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+musamusa-0.0.1.dev5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+musamusa-0.0.1.dev5.dist-info/METADATA,sha256=purRAk5-95ZmG46n_z2bx-XyQrxSc1XH-vyuSMO1oWY,382
+musamusa-0.0.1.dev5.dist-info/RECORD,,
