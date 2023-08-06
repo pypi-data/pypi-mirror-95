@@ -1,0 +1,2 @@
+dbus-python==1.2.16
+pygobject==3.34.0

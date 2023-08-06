@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: notify-send.py
+Version: 1.2.7
+Summary: Script and module for sending desktop notifications
+Home-page: https://github.com/phuhl/notify-send.py
+Author: Philipp Uhl
+Author-email: git@ph-uhl.com
