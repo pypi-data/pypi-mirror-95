@@ -1,0 +1,25 @@
+0.1.4
+=====
+* En la clase "Reportes" se crearon los siguientes métodos:
+-  Método interno "__mxn_usd"¨:  Carga el tipo de cambio FIX MXN/USD publicado por Banxico
+-  Método interno "--reportan_usd":  Genera una lista con todas las emisoras que reportan en USD, genera atributo ".reportan_usd"
+-  Método "informacion":  Despliega en pantalla la moneda que utiliza la emisora consultada
+* Cambios al método "comparar":
+-  Se agrega el atributo "usd_a_mxn=False".   "True" cambian USD a MXN 
+-  Se arreglaron las columnas de manera ascendente 
+* Suspendida la version en inglés...  se hará un spinoff donde el usuario decidirá instalar en inglés o español
+0.1.3
+=====
+2021-02-14
+* Correct pypi deployment
+
+0.1.2
+=====
+2021-02-14
+* Incorrect pypi deployment
+
+0.1.1
+=====
+2021-02-13
+* Inital beta relase
+* Incorrect pypi depolyment

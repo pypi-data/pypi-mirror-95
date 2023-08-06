@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requires.txt
+setup.py
+dabu/__init__.py
+dabu.egg-info/PKG-INFO
+dabu.egg-info/SOURCES.txt
+dabu.egg-info/dependency_links.txt
+dabu.egg-info/requires.txt
+dabu.egg-info/top_level.txt
