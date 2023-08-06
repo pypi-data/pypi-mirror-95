@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: i3-swap-focus
+Version: 0.2
+Summary: i3 script to toggle between last windows
+Home-page: https://github.com/olivierlemoal/i3-swap-focus
+Author: Olivier Le Moal
+Author-email: mail@olivierlemoal.fr
+License: MIT
+Description: UNKNOWN
+Platform: any
