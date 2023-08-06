@@ -1,0 +1,13 @@
+scrapingant_client/__init__.py,sha256=cEdeW3BunefD1MQUxRWyrMKCxUiMSEXKj2nyVQ6cz1Q,393
+scrapingant_client/client.py,sha256=HEmfrsKXzv1mIU7xY954oRImpxubQxxUrek8fUVCJ4I,1960
+scrapingant_client/constants.py,sha256=1EbODyia5622KVfhG7gjMy4o9JvVlOS1q5rN2JO_5kw,386
+scrapingant_client/cookie.py,sha256=HYHrslRWomiMj_kKbLgxRh1Vq6fTfnfQy5Sb_72fvss,902
+scrapingant_client/errors.py,sha256=4WdkqZiCQK7Ra_l-TId6p5Gj_yK3nKq3_WIc2c9o6Cg,122
+scrapingant_client/response.py,sha256=rgLS0UYPceKADD210aicM6ryPptt48Pn8mACwTV4Dhw,211
+scrapingant_client/utils.py,sha256=tQYZaCJ7X6HymgfPBR7MiqBc9KRptJGep1DzNQ8del8,224
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cookies.py,sha256=hynVhbvTEOFpHiS-6qrRlOIvwu_pI9Lyl2zqwZTMbi4,995
+scrapingant_client-0.1.0.dist-info/METADATA,sha256=VITtjtZHHEdiw7vxxBZZSbo6AThp1soRrdXpSFU0ZUw,4355
+scrapingant_client-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scrapingant_client-0.1.0.dist-info/top_level.txt,sha256=evkGH8VAcBqgYrdF6rxntE97AEegiPOuj9A3NDLeb8M,25
+scrapingant_client-0.1.0.dist-info/RECORD,,
