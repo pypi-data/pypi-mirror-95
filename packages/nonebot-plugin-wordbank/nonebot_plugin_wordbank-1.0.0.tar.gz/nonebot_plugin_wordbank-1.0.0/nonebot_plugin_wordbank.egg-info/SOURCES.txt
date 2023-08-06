@@ -1,0 +1,9 @@
+README.md
+setup.py
+nonebot_plugin_wordbank/__init__.py
+nonebot_plugin_wordbank/data_source.py
+nonebot_plugin_wordbank/util.py
+nonebot_plugin_wordbank.egg-info/PKG-INFO
+nonebot_plugin_wordbank.egg-info/SOURCES.txt
+nonebot_plugin_wordbank.egg-info/dependency_links.txt
+nonebot_plugin_wordbank.egg-info/top_level.txt
