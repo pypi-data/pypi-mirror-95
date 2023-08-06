@@ -1,0 +1,3 @@
+[console_scripts]
+juju-verify = juju_verify:main
+
