@@ -1,0 +1,12 @@
+quick_context/__init__.py,sha256=hRhbeBEc1DHiEBs-9AF2vHFoUcQi_2R0RcmTDPHUo40,907
+quick_context/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+quick_context/apps.py,sha256=KqYf_27-SCm93eIAlLlgH7xMKnSD3hbUnfdu2QXMtKs,100
+quick_context/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+quick_context/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+quick_context/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+quick_context/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_quick_context-1.0.dist-info/LICENSE.txt,sha256=cQ6x4cLXfTV5jdkMPSBxxuFCRXCzQeYjoDUdKg6n3rg,1478
+django_quick_context-1.0.dist-info/METADATA,sha256=YU5G8Um8beO0ELUtQSS7c103FOHlA0iiUd-lB25MyeY,1309
+django_quick_context-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_quick_context-1.0.dist-info/top_level.txt,sha256=48sK6ZsCUiqVtDaUnTTKzeRBxezK-mjQukLIou5j7_I,14
+django_quick_context-1.0.dist-info/RECORD,,
