@@ -1,0 +1,6 @@
+regex
+NLTK
+textblob
+emot
+WordCloud
+matplotlib
