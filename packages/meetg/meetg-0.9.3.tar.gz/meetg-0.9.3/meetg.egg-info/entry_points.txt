@@ -1,0 +1,3 @@
+[console_scripts]
+meetg-admin = meetg.scripts:admin
+
