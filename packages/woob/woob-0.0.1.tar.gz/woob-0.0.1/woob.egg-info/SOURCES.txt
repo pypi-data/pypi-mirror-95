@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+setup.py
+woob/__init__.py
+woob.egg-info/PKG-INFO
+woob.egg-info/SOURCES.txt
+woob.egg-info/dependency_links.txt
+woob.egg-info/top_level.txt
