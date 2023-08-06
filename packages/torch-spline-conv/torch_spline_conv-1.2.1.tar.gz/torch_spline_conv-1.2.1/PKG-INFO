@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: torch_spline_conv
+Version: 1.2.1
+Summary: Implementation of the Spline-Based Convolution Operator of SplineCNN in PyTorch
+Home-page: https://github.com/rusty1s/pytorch_spline_conv
+Author: Matthias Fey
+Author-email: matthias.fey@tu-dortmund.de
+License: MIT
+Description: UNKNOWN
+Keywords: pytorch,geometric-deep-learning,graph-neural-networks,spline-cnn
+Platform: UNKNOWN
+Requires-Python: >=3.6
