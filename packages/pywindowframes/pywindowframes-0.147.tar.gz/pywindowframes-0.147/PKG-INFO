@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pywindowframes
+Version: 0.147
+Summary: Window based GUI for pygame
+Home-page: https://github.com/afmelin/pywindowframes
+Author: afmelin
+Author-email: 79141108+afmelin@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pygame (>=2.0.1,<3.0.0)
