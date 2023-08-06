@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: highchartexport
+Version: 0.0.1
+Summary: Python package that convert highchart configuration into image file
+Home-page: https://github.com/jitendra29mishra/highchartexport
+Author: Jitendra Mishra
+Author-email: jitendra29mishra@gmail.com
+License: MIT
+Description: # highchartexport
+        This package help to convert highchart configuration in image file.
+        
+Keywords: Highchart Visualization Chart Map
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
