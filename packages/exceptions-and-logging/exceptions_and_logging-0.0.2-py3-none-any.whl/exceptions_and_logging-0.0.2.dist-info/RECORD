@@ -1,0 +1,11 @@
+exceptions_and_logging/__init__.py,sha256=R25DrRmEDHLVOpAL5QJMoh3vhZOvg8oKslBtNDqqoos,77
+exceptions_and_logging/apps.py,sha256=tS8_UOcOL9F-Kr2Wea41_9II9VrNy0EZz4SRBKUtJqY,563
+exceptions_and_logging/exception_handler.py,sha256=JzPbplh83AdFD9QpU89eG5viZgnyoOw7vaSTFNMbDAE,541
+exceptions_and_logging/exceptions.py,sha256=kfRIRnOpkzB6AhWF514CdkX4s0uWtoz7B5d4ZVyzVNM,2593
+exceptions_and_logging/logging_settings.py,sha256=evCniWmz8GCUqbw3n_afi1uY8cJZJC-4l8Eq_GpUYyg,1523
+exceptions_and_logging/settings.py,sha256=TVl06o9LSvpPvlggRXNeQIvDyc7ITVNjnHYG-I9uxkg,90
+exceptions_and_logging-0.0.2.dist-info/LICENSE.txt,sha256=bGHj60eEyu_CYwr-oihcsIg7yij-eZNNF_yFgTjh8M0,1087
+exceptions_and_logging-0.0.2.dist-info/METADATA,sha256=rqNICw9ywKCSHrwAu7vp4bHpRCNeplZyDA372yjwXaE,4532
+exceptions_and_logging-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+exceptions_and_logging-0.0.2.dist-info/top_level.txt,sha256=e09Afq2IMXkbVlbwa2WH0IuFp4jsro3wn91bx3KAS1c,23
+exceptions_and_logging-0.0.2.dist-info/RECORD,,
