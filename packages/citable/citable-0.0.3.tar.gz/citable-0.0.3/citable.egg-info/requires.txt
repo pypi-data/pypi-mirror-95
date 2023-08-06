@@ -1,0 +1,5 @@
+zipfile
+requests
+IPython
+pandas
+pyyaml
