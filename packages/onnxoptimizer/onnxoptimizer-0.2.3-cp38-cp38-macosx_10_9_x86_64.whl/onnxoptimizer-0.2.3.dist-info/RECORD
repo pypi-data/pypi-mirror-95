@@ -1,0 +1,8 @@
+onnxoptimizer/__init__.py,sha256=TfwXujzN8GRNg6Fn7HPEiWBpo4BW_8OU1bMBOgwPR2A,1820
+onnxoptimizer/onnx_opt_cpp2py_export.cpython-38-darwin.so,sha256=RfTux8rAHrYdsTZrzk_fWz2QekcL47sE5twi_mgj9TU,1285856
+onnxoptimizer/version.py,sha256=jmc7tkxVoZXd4ua7iX-ZWnkhSkB_Q4OhS3yMhGCOfng,277
+onnxoptimizer-0.2.3.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+onnxoptimizer-0.2.3.dist-info/METADATA,sha256=nlN8oZPlc1Y7PtBwE_7anpVdfDeruvNOWaIS1LuawIs,377
+onnxoptimizer-0.2.3.dist-info/WHEEL,sha256=RA4ju32EWHpO-G1BhxTQ3AwXQWjnnrzYGkM9skoN7_I,109
+onnxoptimizer-0.2.3.dist-info/top_level.txt,sha256=c6tzddKT8vXQk8-8a2ukqEENCaU0HqKWjCU7FiVBn1A,14
+onnxoptimizer-0.2.3.dist-info/RECORD,,
