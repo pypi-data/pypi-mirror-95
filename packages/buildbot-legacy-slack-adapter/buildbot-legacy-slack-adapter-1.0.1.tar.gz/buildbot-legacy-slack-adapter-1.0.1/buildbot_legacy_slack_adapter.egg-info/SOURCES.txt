@@ -1,0 +1,10 @@
+README.md
+setup.py
+buildbot_legacy_slack_adapter/__init__.py
+buildbot_legacy_slack_adapter/reporter.py
+buildbot_legacy_slack_adapter.egg-info/PKG-INFO
+buildbot_legacy_slack_adapter.egg-info/SOURCES.txt
+buildbot_legacy_slack_adapter.egg-info/dependency_links.txt
+buildbot_legacy_slack_adapter.egg-info/entry_points.txt
+buildbot_legacy_slack_adapter.egg-info/requires.txt
+buildbot_legacy_slack_adapter.egg-info/top_level.txt
