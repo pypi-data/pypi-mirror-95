@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: teensytoany
+Version: 0.0.23
+Summary: A pythonic way to access the teensytoany board
+Home-page: https://github.com/ramonaoptics/python-teensytoany
+Author: Ramona Optics Inc.
+Author-email: info@ramonaoptics.com
+License: BSD license
+Keywords: teensytoany
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+
+# Python TeensyToAny
+
+
+[![pypi](https://img.shields.io/pypi/v/teensytoany.svg)](https://pypi.python.org/pypi/teensytoany)
+[![Travis](https://img.shields.io/travis/ramonaoptics/python-teensytoany.svg)](https://travis-ci.org/ramonaoptics/python-teensytoany)
+[![Docs](https://readthedocs.org/projects/python-teensytoany/badge/?version=latest)](https://python-teensytoany.readthedocs.io/en/latest/?badge=latest)
+
+
+A pythonic way to access the teensytoany board
+
+
+* Documentation: https://python-teensytoany.readthedocs.io.
+* See: https://github.com/ramonaoptics/teensy-to-any
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter)
+and the
+[hmaarrfk/cookiecutter-pypackage](https://github.com/hmaarrfk/cookiecutter-pypackage)
+project template.
+
+
+
+# History
+
+## 0.0.23 (2021-02-13)
+
+* Ensure compatibility with pyserial 3.X
+* Power a ``start_poweroff`` parameter to ``TeensyPower`` to start the device
+  in the on state.
+* Added the ability to close and open the device without deleting the python
+  object.
+
+## 0.0.22 (2020-06-18)
+
+* Added the ability to control a power switch that is connected to the
+  nominally on port.
+
+## 0.0.20 (2019-12-14)
+
+* Added capabilities for SPI and Analog functions
+
+## 0.0.16 (2019-11-30)
+
+* `TeensyPower` destructor will not raise an error when the device had failed
+   to open.
+
+## 0.0.15 (2019-11-29)
+
+* `TeensyPower` devices will automatically poweroff the output when
+  closed.
+
+## 0.0.14 (2019-11-29)
+
+* Added the specialized `TeensyPower` driver.
+
+## 0.0.13 (2019-11-20)
+
+* Added a few more serial numbers to the `teensytoany.known_devices`
+
+## 0.0.1 (2019-11-07)
+
+* First release on PyPI.
+
+
