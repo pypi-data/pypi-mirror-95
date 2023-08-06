@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: Flask-Rollup
+Version: 0.2.0
+Summary: Rollup integration with Flask web framework
+Home-page: https://github.com/zgoda/flask-rollup
+Author: Jarek Zgoda
+License: BSD-3-Clause
+Project-URL: Documentation, https://flask-rollup.readthedocs.io/
+Project-URL: Source, https://github.com/zgoda/flask-rollup
+Project-URL: Issues, https://github.com/zgoda/flask-rollup/issues
+Description: Flask-Rollup
+        ============
+        
+        .. image:: https://github.com/zgoda/flask-rollup/workflows/Tests/badge.svg
+            :target: https://github.com/zgoda/flask-rollup/actions?query=workflow%3ATests
+        
+        .. image:: https://coveralls.io/repos/github/zgoda/flask-rollup/badge.svg?branch=master
+            :target: https://coveralls.io/github/zgoda/flask-rollup?branch=master
+        
+        `Rollup <https://rollupjs.org/>`_ integration with `Flask <https://palletsprojects.com/p/flask/>`_ web framework. Because we need modern tools for modern web development.
+        
+        Links
+        -----
+        
+        * `releases <https://pypi.org/project/Flask-Rollup/>`_
+        * `documentation <https://flask-rollup.readthedocs.io/>`_
+        * `issues <https://github.com/zgoda/flask-rollup/issues>`_
+        
+        Copyright (c) 2020, Jarek Zgoda.
+        
+        Distributed under terms of 3-Clause New (or Revised) BSD license. See file LICENSE in top level directory for exact terms.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: ~=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dev
