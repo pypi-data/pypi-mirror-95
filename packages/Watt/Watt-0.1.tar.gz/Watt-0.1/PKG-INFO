@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Watt
+Version: 0.1
+Summary: This library is high-level, straightforward, and yet extremely powerful library for management and creation of objects of the tree data structure in general(general trees), binary trees, and binary search trees. It is loaded with simple classes and functions to help you grow as a programmer and make your work easier.
+Home-page: https://github.com/user/CriticalQuizzicalBooleanValue
+Author: Kanav Bhasin
+Author-email: kanbhasin@gmail.com
+License: MIT
+Download-URL: https://github.com/BleepLogger/CriticalQuizzicalBooleanValue/archive/main.zip
+Description: UNKNOWN
+Keywords: Data,Tree,Structure,Data Structure,Binary Tree,Binary Trees,Data Science,Coding,Good
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
