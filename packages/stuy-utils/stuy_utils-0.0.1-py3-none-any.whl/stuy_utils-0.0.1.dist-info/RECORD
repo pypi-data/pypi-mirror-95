@@ -1,0 +1,14 @@
+stuy_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stuy_utils/errors.py,sha256=xeeeUr0uqMaxcS9fVKwgmas-Up8aLbR-NK1lXoXuocs,598
+stuy_utils/schedule.py,sha256=5y29gVKT0T2Jqg_yLyA5FXJ6c-01Mh2cZl33VIXB-L8,8085
+stuy_utils/data/bell_schedule.csv,sha256=xtJXMN8oQkV_uHLpn0OczRpxTGzbcKzUqja0Lm-Zj1w,295
+stuy_utils/data/term_days.csv,sha256=jEJlhbZEIZyYDZrWDbUsQgoUqxKIlV_DEjIiR9TRB7o,3992
+stuy_utils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stuy_utils/tests/schedule_test.py,sha256=1rwaTmzxpeUxO9fO17kbiO45iO_amVJ2xxk2X5jOjQ8,563
+stuy_utils-0.0.1.data/data/bell_schedule/bell_schedule.csv,sha256=xtJXMN8oQkV_uHLpn0OczRpxTGzbcKzUqja0Lm-Zj1w,295
+stuy_utils-0.0.1.data/data/term_days/term_days.csv,sha256=jEJlhbZEIZyYDZrWDbUsQgoUqxKIlV_DEjIiR9TRB7o,3992
+stuy_utils-0.0.1.dist-info/LICENSE,sha256=1T8aNzUxir0FWKAxrAhiGSwIVV0A78iYhm3pB9Laa8M,1089
+stuy_utils-0.0.1.dist-info/METADATA,sha256=-e0bh6kBvUOXwn4YsRfuB_PoB98l0zOVEGNhxZGp2gE,620
+stuy_utils-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stuy_utils-0.0.1.dist-info/top_level.txt,sha256=M5YzyERgRcxpSlmnu1aDP6eGqemJOTAlOuBrXegYPGk,11
+stuy_utils-0.0.1.dist-info/RECORD,,

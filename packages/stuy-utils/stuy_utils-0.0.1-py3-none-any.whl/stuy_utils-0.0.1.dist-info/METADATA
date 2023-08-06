@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stuy-utils
+Version: 0.0.1
+Summary: Useful functions & utilities for Stuyvesant High School.
+Home-page: https://github.com/achen318/StuyUtils
+Author: Anthony Chen
+Author-email: anthonychen318@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# StuyUtils
+
+> Useful functions & utilities for Stuyvesant High School.
+
+To download this module, run `pip install stuy-utils` in the terminal.
+
+
