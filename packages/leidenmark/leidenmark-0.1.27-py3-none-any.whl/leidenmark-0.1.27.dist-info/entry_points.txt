@@ -1,0 +1,4 @@
+[markdown.extensions]
+leiden_escape = leidenmark:LeidenEscape
+leiden_plus = leidenmark:LeidenPlus
+
