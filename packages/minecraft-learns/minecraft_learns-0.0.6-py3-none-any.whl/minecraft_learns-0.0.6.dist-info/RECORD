@@ -1,0 +1,16 @@
+minecraft_learns/__init__.py,sha256=bBveRxl7I6FHF5LJF48fSmv_-Ru6gWMB9cM7ot2y1r0,190
+minecraft_learns/data.py,sha256=ZzMWCU3CaCe5RjIQ4gp4-WfcVsiMae5IBjZZd4ucfu8,1471
+minecraft_learns/errors.py,sha256=WcU4iVggQGk7y50ZrGNuQXqjEDDOE6XQIl7Bop-lIws,1079
+minecraft_learns/models/__init__.py,sha256=1eAIyhNKVeRNStFFCKc19AnwanG7ItOVGuru-ZUQdDE,614
+minecraft_learns/models/decision_tree.py,sha256=kmUN1VnV08EqOj4n2K3ehVTaa8SmLNzBCz1GkSJYxsM,984
+minecraft_learns/models/kmeans.py,sha256=TKYFoVqMGj9HJCPuUHTPXstQTrw_CDLbLYAJDMRSG5Y,1053
+minecraft_learns/models/knn.py,sha256=FZWfx4Mq7mxC16TWBC-9SjEuCIVWHg_StKGgZIuoISg,1105
+minecraft_learns/models/lda.py,sha256=A3Qjtz6NjcdMdv5FU6Ci2eiazmiKjnZ8fZRw282JRBM,1860
+minecraft_learns/models/linear_regression.py,sha256=5UmQ0yz68ITJQ4JI79o8YLK8lGK4cvQKE1pznI9iGEU,3730
+minecraft_learns/models/pls.py,sha256=DU7mUhPHTGVk_e7tB4fwZSy7aNwOZ1fav6A56KEU7ZQ,3358
+minecraft_learns/models/random_forest_classifcation.py,sha256=AjksxXZPPy3MmwjbufgM9P9MVC-Ym2w_MEGuNiCed_s,928
+minecraft_learns/models/random_forest_regression.py,sha256=PCl3vfIQD7eb0jZ7WEh0Jvalvf9JVPeVZnp438GOdCM,907
+minecraft_learns-0.0.6.dist-info/METADATA,sha256=rAo1AogfxSkclr1JIph5nnXjtO2Nlz28fk49fZWEVnk,780
+minecraft_learns-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+minecraft_learns-0.0.6.dist-info/top_level.txt,sha256=UpjA5g8jof0tDEvfzbJDoLk8Hh05L-6eUl9uDxlJE2c,17
+minecraft_learns-0.0.6.dist-info/RECORD,,
