@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "getipping"
+version = "0.0.1"
+description = "Do you want to know the ip or ping? If yes, then write this country and find out the ip site: getip.ip (\"site.site\", port). If you want to see the ping enter this line: getip.ping (\"site.site\")"
+authors = ["TikOt Studio <tikotstudio@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
