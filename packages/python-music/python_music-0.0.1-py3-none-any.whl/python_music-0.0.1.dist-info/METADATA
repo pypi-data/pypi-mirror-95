@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-music
+Version: 0.0.1
+Summary: Python music module.
+Home-page: https://github.com/medilocus/python-music
+Author: Medilocus
+Author-email: huangpatrick16777216@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# python-music
+Python music module.
+
+
