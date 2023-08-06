@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+seafood_hs.egg-info/PKG-INFO
+seafood_hs.egg-info/SOURCES.txt
+seafood_hs.egg-info/dependency_links.txt
+seafood_hs.egg-info/top_level.txt
+shellcommands/__init__.py
+shellcommands/shellcommands.py
