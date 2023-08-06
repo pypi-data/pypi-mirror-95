@@ -1,0 +1,3 @@
+[console_scripts]
+how_many_fish = how_many_fish.__main__
+

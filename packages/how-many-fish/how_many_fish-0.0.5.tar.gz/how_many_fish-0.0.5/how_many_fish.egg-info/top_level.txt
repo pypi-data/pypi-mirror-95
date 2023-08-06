@@ -1,0 +1,2 @@
+fish_multiplier
+how_many_fish
