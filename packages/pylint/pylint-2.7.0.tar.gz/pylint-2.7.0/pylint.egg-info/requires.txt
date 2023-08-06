@@ -1,0 +1,11 @@
+astroid==2.5.0
+isort<6,>=4.2.5
+mccabe<0.7,>=0.6
+toml>=0.7.1
+
+[:sys_platform=="win32"]
+colorama
+
+[docs]
+sphinx~=3.2
+python-docs-theme
