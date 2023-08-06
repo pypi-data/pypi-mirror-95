@@ -1,0 +1,1 @@
+This is a collection of commonly used algorithms to make the life of many devlopers much easier.

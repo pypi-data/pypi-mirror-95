@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pylgorithm
+Version: 0.0.1
+Summary: A Package That Contains Lots Of Commonly Used Algorithms To Make The Developer's Life Easier
+Home-page: UNKNOWN
+Author: Gilad Barak
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: gilad
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
