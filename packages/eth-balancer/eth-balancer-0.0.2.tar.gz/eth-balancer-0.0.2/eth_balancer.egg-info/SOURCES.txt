@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+eth_balancer/__init__.py
+eth_balancer.egg-info/PKG-INFO
+eth_balancer.egg-info/SOURCES.txt
+eth_balancer.egg-info/dependency_links.txt
+eth_balancer.egg-info/requires.txt
+eth_balancer.egg-info/top_level.txt
+eth_balancer/resources/version
