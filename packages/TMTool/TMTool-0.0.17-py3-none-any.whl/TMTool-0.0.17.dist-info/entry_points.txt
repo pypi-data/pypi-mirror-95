@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        TMTool=TMTool.cli:cli
+    
