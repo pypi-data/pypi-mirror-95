@@ -1,0 +1,13 @@
+splitp/__init__.py,sha256=gOflO7Refu0nMMBOkRLjujGWEqnI0KCrbKE8LOOIHT4,147
+splitp/nx_tree.py,sha256=67BaE5mUn6SZHQqbd3LzKZZ62Df45VkQ0DsUH1r9KD4,26308
+splitp/parsers.py,sha256=JlcrqXmWN9KES61jz0SeHZR36W6C3Xt6YFugG2XpB_4,2565
+splitp/squangles.py,sha256=di3fUWGyIzCTaCVYFe0ZGqnKGeK1uQOVbJq3Pe7RWG8,2177
+splitp/tree_helper_functions.py,sha256=JF52LX8cDLRllFxyLHaHAWYDArFHaqH6gm3DpdEyVnw,6220
+splitp/polynomials/sqg1.txt,sha256=widP5ii5nUEIO6i1RstmtVpKwgxaYGI7jYGsJi0np_A,1291236
+splitp/polynomials/sqg2.txt,sha256=4NBFMvJODOqYGJFCivGmDdaRn2lEw1y9mvW9wc-3g_k,1287780
+splitp/polynomials/sqg3.txt,sha256=8QpeOykBUOM6mdEkSxBn96mdTme7XKfgIbYHKY5DA5U,1287780
+splitp-0.1.4.dist-info/LICENSE,sha256=KTn9sX9ZQf0oZhR6qDUlStqFJqoCHp4UPUqUAHosABA,1073
+splitp-0.1.4.dist-info/METADATA,sha256=aVL7BZvQR7PztAFb4iGB8d90zGlS2Lcil11kEU9aczs,1476
+splitp-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+splitp-0.1.4.dist-info/top_level.txt,sha256=cuXsftjn8n38lJRk2L79Wb8a_bQKerdK-sarJ0XSkjc,7
+splitp-0.1.4.dist-info/RECORD,,
