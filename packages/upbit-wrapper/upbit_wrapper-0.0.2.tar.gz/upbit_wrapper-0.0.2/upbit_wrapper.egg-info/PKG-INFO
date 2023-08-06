@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: upbit-wrapper
+Version: 0.0.2
+Summary: Python wrapper for upbit
+Home-page: https://github.com/beomsu317/upbit_wrapper
+Author: BS LEE
+Author-email: beomsu317@gmail.com
+License: MIT
+Description: # upbit warpper
+        upbit wrapper
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
