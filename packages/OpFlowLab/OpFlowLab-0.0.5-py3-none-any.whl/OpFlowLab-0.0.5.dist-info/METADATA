@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: OpFlowLab
+Version: 0.0.5
+Summary: Calculation of optical flow velocity field in biological images
+Home-page: https://gitlab.com/xianbin.yong13/OpFlowLab
+Author: Xianbin Yong
+Author-email: xianbin.yong@u.nus.edu
+License: GPLv3
+Project-URL: Documentation, https://opflowlab.readthedocs.io/
+Project-URL: Research group, https://ctlimlab.org/
+Project-URL: Source, https://gitlab.com/xianbin.yong13/OpFlowLab
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: opencv-python (>4.3.0)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: matplotlib (>=3.0.0)
+Requires-Dist: numba (>=0.47.0)
+Requires-Dist: scikit-image (>=0.17.1)
+Requires-Dist: pykdtree (>=1.3.4)
+Requires-Dist: scipy (>=1.5.0)
+Requires-Dist: PyQt5 (>=5.9.2)
+Requires-Dist: tqdm (>=4.40.0)
+Requires-Dist: ruamel.yaml (>=0.16.0)
+Requires-Dist: pyqtgraph (>=0.11.0)
+Requires-Dist: QtAwesome (>=1.0.2)
+
+================================
+OpFlowLab
+================================
+
+OpFLowLab is a user-friendly motion estimation framework that seeks to help cell biologist try out optical flow algorithms on their own dataset.
+
+Key Features
+------------
+- Graphical interface to assess CUDA optimized optical flow algorithms provided by OpenCV
+- Post processing of velocities using FlowMatch, an object matching routine.
+- Velocity field validation using artificial tracers and image warping
+- Visualization of velocity pattern using pathlines
+- Calculation of velocity field derivatives
+
+Installing
+----------
+OpFLowLab can be installed with pip::
+
+    $ python -m pip install OpFLowLab
+
+Alternatively, the latest source code is available from GitLab::
+
+    $ git clone git@gitlab.com:xianbin.yong13/OpFlowLab.git
+    $ python setup.py install
+
+Graphical user interface
+------------------------
+To start OpFlowLab::
+
+    $ opflowlab
+
+Documentation
+-------------
+Documentation for OpFlowLab can be found at https://opflowlab.readthedocs.io/en/latest/.
+
+How to cite
+-----------
+If you use OpFlowLab, we would appreciate if you could cite the following paper:
+
+License
+--------
+OpFlowLab is provided under the GPLv3 license.
+
