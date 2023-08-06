@@ -1,0 +1,11 @@
+ftpshutil/__init__.py,sha256=pm5Ya72fn5x7ZT4owkmSKGVGaRuHDITIcc3HyCiEBho,59
+ftpshutil/dircrc.py,sha256=K9VmxGakGLEHNr5Fz6OuAw9VS6G7IRgW1HhlgNABPgQ,9098
+ftpshutil/ftpconfig.py,sha256=stwTY-aXLnQrm9-FBAJKV_EwQKKrZTvheVnb4ARMoII,716
+ftpshutil/ftpshutil.py,sha256=8vQ9Ko6e7jNK0Yq_EusCQ2ySq5WHOxK6ETXPmgulPJs,15660
+ftpshutil/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftpshutil/tests/test_all.py,sha256=FtsijnkoRttkiSjcHtiLBrKcZpUk5xpMavSdj4gphqM,2268
+ftpshutil-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ftpshutil-0.0.1.dist-info/METADATA,sha256=zTCMZJzGEZw-S-JrYxnyQxK5O8eMpDvw0eDPd98nVPE,3745
+ftpshutil-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ftpshutil-0.0.1.dist-info/top_level.txt,sha256=1GutUsu4EC1LtfhmOUhB0-T69dNRhrgiac1X4BofzGQ,10
+ftpshutil-0.0.1.dist-info/RECORD,,
