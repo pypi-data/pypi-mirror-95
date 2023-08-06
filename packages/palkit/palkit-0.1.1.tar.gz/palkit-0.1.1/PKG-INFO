@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: palkit
+Version: 0.1.1
+Summary: Useful functions
+Home-page: https://github.com/predictive-analytics-lab/palkit
+Author: PAL
+Author-email: info@predictive-analytics-lab.com
+License: Apache License 2.0
+Description: # PAL kit
+        
+        This is a collection of useful functions for code that we write in our group.
+        
+        ## Install
+        
+        Run
+        ```
+        pip install palkit
+        ```
+        
+        or install directly from GitHub:
+        ```
+        pip install git+https://github.com/predictive-analytics-lab/palkit.git
+        ```
+        
+Keywords: typing,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
