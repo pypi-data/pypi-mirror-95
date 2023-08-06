@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: upbit-wrapper
+Version: 0.0.1
+Summary: Python wrapper for upbit
+Home-page: https://github.com/beomsu317/upbit
+Author: BS LEE
+Author-email: beomsu317@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Requires-Dist: requests
+Requires-Dist: websocket
+Requires-Dist: websocket-client
+
+# upbit warpper
+upbit wrapper
+
+
