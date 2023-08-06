@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: staticXYZ
+Version: 0.0.2
+Summary: A static site builder written in Python
+Home-page: https://github.com/cole-wilson/xyz
+Author: Cole Wilson
+Author-email: cole@colewilson.xyz
+License: none
+Keywords: static site jekyll xyz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: toml
+Requires-Dist: jinja2
+Requires-Dist: markdown
+
+# XYZ
+A static site builder written in Python
+### Contributors
+- Cole Wilson
+### Contact
+<cole@colewilson.xyz> 
+
