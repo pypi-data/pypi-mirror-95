@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+bridget/__init__.py
+bridget.egg-info/PKG-INFO
+bridget.egg-info/SOURCES.txt
+bridget.egg-info/dependency_links.txt
+bridget.egg-info/not-zip-safe
+bridget.egg-info/requires.txt
+bridget.egg-info/top_level.txt
+bridget/sap_flow/__init__.py
+bridget/sap_flow/sap_flow.py
+bridget/sap_flow/util.py
+bridget/tests/__init__.py
