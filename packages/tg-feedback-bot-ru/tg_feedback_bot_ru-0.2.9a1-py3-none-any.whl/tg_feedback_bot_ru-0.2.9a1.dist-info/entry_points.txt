@@ -1,0 +1,3 @@
+[console_scripts]
+feedback-bot = feedback_bot.feedback_bot:main
+

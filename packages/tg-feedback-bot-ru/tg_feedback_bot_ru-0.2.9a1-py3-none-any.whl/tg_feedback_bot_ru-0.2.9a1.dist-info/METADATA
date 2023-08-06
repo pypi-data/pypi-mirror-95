@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tg-feedback-bot-ru
+Version: 0.2.9a1
+Summary: Telegram feedback bot
+Home-page: https://github.com/gleb-chipiga/tg-feedback-bot-ru
+Author: Gleb Chipiga
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications :: Chat
+Classifier: Framework :: AsyncIO
+Requires-Python: >=3.8,<3.10
+Requires-Dist: aiotgbot[sqlite] (<0.8.0,>=0.7.0a3)
+Requires-Dist: aiojobs
+Requires-Dist: aiojobs-stubs (>=0.2.2.post1)
+Requires-Dist: attrs
+Requires-Dist: uvloop (>=0.15.1)
+Requires-Dist: more-itertools
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
