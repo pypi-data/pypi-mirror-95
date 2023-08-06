@@ -1,0 +1,12 @@
+README.md
+setup.py
+SSO_UI_auth_client_cas.egg-info/PKG-INFO
+SSO_UI_auth_client_cas.egg-info/SOURCES.txt
+SSO_UI_auth_client_cas.egg-info/dependency_links.txt
+SSO_UI_auth_client_cas.egg-info/requires.txt
+SSO_UI_auth_client_cas.egg-info/top_level.txt
+sso_ui_auth_client/__init__.py
+sso_ui_auth_client/cas.py
+sso_ui_auth_client/faculty_info.py
+tests/__init__.py
+tests/server.py

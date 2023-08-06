@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SSO-UI-auth-client-cas
+Version: 1.0.0
+Summary: General SSO UI Auth client for Python project
+Home-page: https://github.com/anggardhanoano/sso-ui-auth-client
+Author: Anggardha Febriano
+Author-email: anggardha.febriano@ui.ac.id
+License: MIT
+Description: # SSO-UI-auth-client
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
