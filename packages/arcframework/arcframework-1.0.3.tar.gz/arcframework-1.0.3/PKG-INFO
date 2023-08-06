@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: arcframework
+Version: 1.0.3
+Summary: A Python micro web framework for creating dynamic websites.
+Home-page: https://github.com/AbooMinister25/arc
+Author: Rayyan Cyclegar
+Author-email: aboominister@gmail.com
+License: UNKNOWN
+Description: # Arc 1.0.0
+        ### Python micro web framework for creating dynamic websites.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
