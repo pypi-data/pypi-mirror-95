@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fedvision-deploy-toolkit
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fabric
+Requires-Dist: typer
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
