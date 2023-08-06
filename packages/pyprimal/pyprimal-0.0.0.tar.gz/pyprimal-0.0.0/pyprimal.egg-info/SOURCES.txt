@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pyprimal/VERSION
+pyprimal/__init__.py
+pyprimal/core.py
+pyprimal/libpath.py
+pyprimal/model.py
+pyprimal.egg-info/PKG-INFO
+pyprimal.egg-info/SOURCES.txt
+pyprimal.egg-info/dependency_links.txt
+pyprimal.egg-info/not-zip-safe
+pyprimal.egg-info/requires.txt
+pyprimal.egg-info/top_level.txt
+pyprimal/lib/libpsm.dylib
