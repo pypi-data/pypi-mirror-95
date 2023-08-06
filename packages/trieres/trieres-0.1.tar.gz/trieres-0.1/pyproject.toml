@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "trieres"
+author = "Dionysios Diamantopoulos"
+author-email = "did@zurich.ibm.com"
+home-page = "https://github.com/cloudFPGA/trieres"
+requires-python=">=3.7"
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
