@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: brotli-asgi
+Version: 1.1.0
+Summary: A compression AGSI middleware using brotli
+Home-page: https://github.com/fullonic/brotli-asgi
+Author: Diogo B Freitas
+Author-email: somnium@riseup.net
+License: MIT
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: starlette (>=0.13.4)
+Requires-Dist: brotli (>=1.0.7)
+Provides-Extra: test_brotli
+Requires-Dist: requests (==2.23.0) ; extra == 'test_brotli'
+Requires-Dist: mypy (==0.770) ; extra == 'test_brotli'
+Provides-Extra: test_brotlipy
+Requires-Dist: requests (==2.23.0) ; extra == 'test_brotlipy'
+Requires-Dist: mypy (==0.770) ; extra == 'test_brotlipy'
+Requires-Dist: brotlipy (==0.7.0) ; extra == 'test_brotlipy'
+
+A compression AGSI middleware using brotli.
+
+Built using starlette under the hood, it can be used as a drop in replacement to
+GZipMiddleware for Starlette or FastAPI.
+
+
