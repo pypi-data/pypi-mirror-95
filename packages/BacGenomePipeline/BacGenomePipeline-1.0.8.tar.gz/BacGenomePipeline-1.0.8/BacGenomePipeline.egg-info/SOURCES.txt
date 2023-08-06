@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+BacGenomePipeline/BacGenomePipeline.py
+BacGenomePipeline/__init__.py
+BacGenomePipeline.egg-info/PKG-INFO
+BacGenomePipeline.egg-info/SOURCES.txt
+BacGenomePipeline.egg-info/dependency_links.txt
+BacGenomePipeline.egg-info/entry_points.txt
+BacGenomePipeline.egg-info/requires.txt
+BacGenomePipeline.egg-info/top_level.txt
