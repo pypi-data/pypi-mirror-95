@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: manifoldy
+Version: 0.3.3
+Summary: A package to generate customizable manifold synthetic datasets.
+Home-page: https://github.com/laracabrera/manifoldy
+Author: Raul Lara-Cabrera
+Author-email: lara.cabrera@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.18)
+Requires-Dist: scipy (>=1.4)
+
+# Manifoldy
+
+A package to generate customizable manifold synthetic datasets.
+
+
