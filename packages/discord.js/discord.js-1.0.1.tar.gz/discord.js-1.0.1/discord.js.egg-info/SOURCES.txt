@@ -1,0 +1,6 @@
+djs.py
+setup.py
+discord.js.egg-info/PKG-INFO
+discord.js.egg-info/SOURCES.txt
+discord.js.egg-info/dependency_links.txt
+discord.js.egg-info/top_level.txt
