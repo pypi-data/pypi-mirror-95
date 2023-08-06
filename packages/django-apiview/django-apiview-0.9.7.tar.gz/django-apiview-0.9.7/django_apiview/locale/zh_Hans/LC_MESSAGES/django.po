@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-21 20:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\django_apiview\apps.py:9
+msgid "Django Apiview"
+msgstr "接口服务管理"
+
+#: .\django_apiview\models.py:10
+msgid "Add Time"
+msgstr "创建时间"
+
+#: .\django_apiview\models.py:11 .\django_apiview\models.py:23
+msgid "Api Path"
+msgstr "接口地址"
+
+#: .\django_apiview\models.py:12
+msgid "Response Time"
+msgstr "响应时间"
+
+#: .\django_apiview\models.py:12
+msgid "Response time in microsecond. 1,000,000 microseconds == 1 second."
+msgstr "单位：微秒（1,000,000微秒==1秒）"
+
+#: .\django_apiview\models.py:15
+msgid "Api Response Time Log"
+msgstr "接口响应时间记录"
+
+#: .\django_apiview\models.py:16
+msgid "Api Response Time Logs"
+msgstr "接口响应时间记录"
+
+#: .\django_apiview\models.py:24
+msgid "Count"
+msgstr "请求数"
+
+#: .\django_apiview\models.py:25
+msgid "Min Response Time"
+msgstr "最小响应时间"
+
+#: .\django_apiview\models.py:26
+msgid "Avg Response Time"
+msgstr "平均响应时间"
+
+#: .\django_apiview\models.py:27
+msgid "Max Response Time"
+msgstr "最大响应时间"
+
+#: .\django_apiview\models.py:28
+msgid "Last Update Time"
+msgstr "最后更新时间"
+
+#: .\django_apiview\models.py:31 .\django_apiview\models.py:32
+msgid "Api Response Time Stats"
+msgstr "接口响应时间统计"
