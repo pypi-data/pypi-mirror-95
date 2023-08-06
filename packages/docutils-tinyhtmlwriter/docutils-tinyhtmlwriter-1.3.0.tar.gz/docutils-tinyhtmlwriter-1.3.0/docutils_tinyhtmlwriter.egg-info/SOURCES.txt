@@ -1,0 +1,17 @@
+COPYING
+ChangeLog
+MANIFEST.in
+README.rst
+TODO
+md2html-tiny
+rst2html-tiny
+setup.py
+docutils_tinyhtml/__init__.py
+docutils_tinyhtml/py.typed
+docutils_tinyhtml/tiny-writer.css
+docutils_tinyhtml/__pycache__/__init__.cpython-36.pyc
+docutils_tinyhtmlwriter.egg-info/PKG-INFO
+docutils_tinyhtmlwriter.egg-info/SOURCES.txt
+docutils_tinyhtmlwriter.egg-info/dependency_links.txt
+docutils_tinyhtmlwriter.egg-info/requires.txt
+docutils_tinyhtmlwriter.egg-info/top_level.txt

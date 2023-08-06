@@ -1,0 +1,9 @@
+include MANIFEST.in
+include README.rst
+include COPYING
+include TODO
+include ChangeLog
+graft docutils_tinyhtml
+global-exclude *~
+global-exclude *.swp
+prune venv

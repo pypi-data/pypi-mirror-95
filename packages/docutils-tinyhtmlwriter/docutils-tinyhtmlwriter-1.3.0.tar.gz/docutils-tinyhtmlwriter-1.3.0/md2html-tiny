@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+# Author: Ondrej Tuma <mcbig@zeropage.cz>
+# Copyright: This module has been placed in the BSD Licence.
+
+"""
+A minimal front end to CommonMarkParser, producing Tiny HTML.
+"""
+
+from docutils.core import publish_cmdline, default_description
+from docutils.parsers.rst import Parser as RstParser
+
+from m2r import convert
+
+from docutils_tinyhtml import Writer
+
+
+DESCRIPTION = ('Generates Tiny HTML documents from standalone '
+               'MarkDown sources.  ' + default_description)
+
+
+class Mark2Resturctured(RstParser):
+    """Converting from MarkDown to reStructuredText before parse."""
+
+    def parse(self, inputstring, document):
+        return super().parse(convert(inputstring), document)
+
+
+publish_cmdline(parser=Mark2Resturctured(), writer=Writer(),
+                writer_name='html', description=DESCRIPTION)
