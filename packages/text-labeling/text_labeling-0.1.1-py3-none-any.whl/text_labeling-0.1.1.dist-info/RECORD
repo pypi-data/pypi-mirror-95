@@ -1,0 +1,9 @@
+TextLabeling/__init__.py,sha256=E5myBdEPz9nlJFJI87AhGigEvkajl6pVE3HTFAMvPZU,186
+TextLabeling/_comm_api.py,sha256=Cp2_DA3KUlSQeJXCE07SE53YpXV2JWUGm02fX5dhXXw,1182
+TextLabeling/_data_preprocessing.py,sha256=vyJByPxTuYwfttujl5bxcFay353oK2RkrzEy9zpOJZo,20874
+TextLabeling/_demodata.py,sha256=y6nJC43lva34-y3gkym7jnvK1XkxCXxpT-BHkpBDEEg,246
+text_labeling-0.1.1.dist-info/LICENSE,sha256=g1Xo6Br4rAFmA6NdkprTIUAyMk-M3M9TZVzlG4ZSF8Y,1527
+text_labeling-0.1.1.dist-info/METADATA,sha256=RZTvYEgeZLLXxe3ltC4qTfKGNjHvMeBpHGg1LwKXBW4,955
+text_labeling-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+text_labeling-0.1.1.dist-info/top_level.txt,sha256=t8VThb4XUG9aRSYdqKFwgJSMfNl9K-hAkAUfoQYqSO8,13
+text_labeling-0.1.1.dist-info/RECORD,,
