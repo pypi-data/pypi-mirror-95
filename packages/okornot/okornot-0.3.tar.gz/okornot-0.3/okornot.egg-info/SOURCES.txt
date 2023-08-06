@@ -1,0 +1,6 @@
+setup.py
+okornot.egg-info/PKG-INFO
+okornot.egg-info/SOURCES.txt
+okornot.egg-info/dependency_links.txt
+okornot.egg-info/not-zip-safe
+okornot.egg-info/top_level.txt
