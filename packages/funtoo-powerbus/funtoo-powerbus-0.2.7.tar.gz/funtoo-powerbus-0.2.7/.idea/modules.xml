@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../funtoo-dbus/.idea/funtoo-dbus.iml" filepath="$PROJECT_DIR$/../funtoo-dbus/.idea/funtoo-dbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../funtoo-metatools/.idea/funtoo-metatools.iml" filepath="$PROJECT_DIR$/../funtoo-metatools/.idea/funtoo-metatools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/funtoo-powerbus.iml" filepath="$PROJECT_DIR$/.idea/funtoo-powerbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../kit-fixups/.idea/kit-fixups.iml" filepath="$PROJECT_DIR$/../kit-fixups/.idea/kit-fixups.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../subpop/.idea/subpop.iml" filepath="$PROJECT_DIR$/../subpop/.idea/subpop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../x-ldap/.idea/x-ldap.iml" filepath="$PROJECT_DIR$/../x-ldap/.idea/x-ldap.iml" />
+    </modules>
+  </component>
+</project>

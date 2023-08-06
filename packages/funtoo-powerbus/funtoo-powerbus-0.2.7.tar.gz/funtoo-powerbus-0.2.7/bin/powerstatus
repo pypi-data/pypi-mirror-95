@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import logging
+import sys
+import time
+
+from subpop.hub import Hub
+
+hub = Hub()
+
+import dyne.org.funtoo.powerbus as powerbus
+
+if __name__ == "__main__":
+	status_client = powerbus.session.FuntooStatusClient()
+	hub.LOOP.run_until_complete(status_client.connect())

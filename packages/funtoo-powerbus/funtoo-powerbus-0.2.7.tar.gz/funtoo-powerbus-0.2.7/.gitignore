@@ -1,0 +1,8 @@
+*.log
+*.egg-info
+.idea/workspace.xml
+__pycache__
+dist/
+docs/_build
+.vscode
+build/
