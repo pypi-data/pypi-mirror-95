@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        download-tiles=download_tiles.cli:cli
+    
