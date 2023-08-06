@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION
+setup.py
+cp36-cp36m-win_amd64/Fiona-1.8.17-cp36-cp36m-win_amd64.whl
+cp36-cp36m-win_amd64/GDAL-3.1.4-cp36-cp36m-win_amd64.whl
+cp36-cp36m-win_amd64/Rtree-0.9.4-cp36-cp36m-win_amd64.whl
+cp36-cp36m-win_amd64/Shapely-1.7.1-cp36-cp36m-win_amd64.whl
+cp36-cp36m-win_amd64/pyproj-3.0.0.post1-cp36-cp36m-win_amd64.whl
+mapy_dependencies_py36.egg-info/PKG-INFO
+mapy_dependencies_py36.egg-info/SOURCES.txt
+mapy_dependencies_py36.egg-info/dependency_links.txt
+mapy_dependencies_py36.egg-info/not-zip-safe
+mapy_dependencies_py36.egg-info/top_level.txt
+py2.py3-none-any/geopandas-0.6.2-py2.py3-none-any.whl
