@@ -1,0 +1,4 @@
+cdumay-http-client>=0.0.8
+
+[opentracing]
+cdumay-opentracing>=0.1.8
