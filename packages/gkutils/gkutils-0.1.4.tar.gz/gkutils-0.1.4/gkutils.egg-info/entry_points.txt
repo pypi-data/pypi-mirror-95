@@ -1,0 +1,3 @@
+[console_scripts]
+bruteForceConeSearchATLAS = gkutils.commonutils.bruteForceConeSearchATLAS:main
+
