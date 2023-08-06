@@ -1,0 +1,12 @@
+trrex/__init__.py,sha256=gjpeO32823kVI7xh5BH_A9xvrayYJejzs8sqVV2kC-4,104
+trrex/_version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+trrex/trrex.py,sha256=fWEPGnAVgZvU_ug2SFrSYkWSPRE_WA67nAzmaYi5qjM,3430
+trrex/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trrex/tests/test_advanced_usage.py,sha256=qc7h1joHK1Klev5yk1RqZGaSa-hodfu-S25Dh85USNY,1124
+trrex/tests/test_basic_functions.py,sha256=TIv3zEd94zfJYa4McO0L2kLxN9_3MaP1hOi31YjkmlE,2459
+trrex/tests/test_pandas_integration.py,sha256=_Rpfxzzm6pK-4sB_RPxSzb7xTj9tuI8EXLvNsgnIW30,423
+trrex-0.0.4.dist-info/LICENSE,sha256=uua627oLeycvPHO6Ss3dPSYhtWW4fOp2Pju58WLL9qU,1076
+trrex-0.0.4.dist-info/METADATA,sha256=Y6oQrVCWvqXdFWAQ6-pzepzLOb37cfxFrNNOZB-hEn8,2925
+trrex-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+trrex-0.0.4.dist-info/top_level.txt,sha256=LlwQtJdS1eHwc7Tjxz3rJ1iJr3umDo69tMbj6nCZML8,6
+trrex-0.0.4.dist-info/RECORD,,
