@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+mt2gf/__init__.py
+mt2gf/gform.py
+mt2gf/mturk.py
+mt2gf/preprocess.py
+mt2gf/utils.py
+mt2gf/watcher.py
+mt2gf/widgets.py
+mt2gf.egg-info/PKG-INFO
+mt2gf.egg-info/SOURCES.txt
+mt2gf.egg-info/dependency_links.txt
+mt2gf.egg-info/requires.txt
+mt2gf.egg-info/top_level.txt
