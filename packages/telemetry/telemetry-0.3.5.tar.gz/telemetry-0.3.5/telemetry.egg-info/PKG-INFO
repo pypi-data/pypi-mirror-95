@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: telemetry
+Version: 0.3.5
+Summary:  Remote measuring abstraction for software applications.  `telemetry` serves as a simple facade or abstraction for various telemetry frameworks (e.g. statsd, graphite, slack)  allowing the end user to plug in the desired telemetry framework at deployment time. Think [slf4j](https://www.slf4j.org/) but for events and numbers, not logs.  This library borrows from their example (and copy.)     
+Home-page: http://github.com/trevorgrayson/telemetry
+Author: trevor grayson
+Author-email: trevor@retentionscience.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Logging
+Provides-Extra: statsd
+Provides-Extra: slack
