@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-server-ux
+Version: 14.0.20210216.0
+Summary: Meta package for oca-server-ux Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo14-addon-base-technical-features
+Requires-Dist: odoo14-addon-base-tier-validation
+Requires-Dist: odoo14-addon-base-tier-validation-formula
+Requires-Dist: odoo14-addon-base-tier-validation-forward
+Requires-Dist: odoo14-addon-base-tier-validation-server-action
+Requires-Dist: odoo14-addon-date-range
+Requires-Dist: odoo14-addon-mass-editing
+
+UNKNOWN
+
+
