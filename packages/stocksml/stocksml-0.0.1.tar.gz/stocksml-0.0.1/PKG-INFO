@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: stocksml
+Version: 0.0.1
+Summary: Stock Prediction using Machine Learning
+Home-page: https://github.com/ryanraba/stocksml
+Author: Ryan Raba
+Author-email: stocksml@ryanraba.com
+License: GPL-3.0
+Description: # Stocks_ML
+        machine learning techniques for predicting the stock market
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
