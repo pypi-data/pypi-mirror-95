@@ -1,0 +1,9 @@
+mdmix_core:
+    installed_plugins:
+        - pymdmix_core
+    orm:
+        dialect: sqlite
+        db_file: pymdmix.db
+
+mdmix_core_runtime:
+    mdmix_home: None
