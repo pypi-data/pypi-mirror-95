@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "base-client-api"
+version = "1.0.0"
+description = ""
+authors = ["Jerod Gawne <jerodgawne@gmail.com>"]
+
+[[tool.poetry.source]]
+name = '53'
+url = 'http://slflokydcaims01.info53.com:3141/root/pypi/+simple/'
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "^0.5.3"
+aiodns = "^2.0.0"
+aiofiles = "^0.6.0"
+aiohttp = "^3.7.3"
+cchardet = "^2.1.7"
+python-rapidjson = "^1.0"
+tenacity = "^6.3.1"
+toml = "^0.10.2"
+
+[tool.poetry.dev-dependencies]
+pytest-asyncio = "^0.14.0"
+pytest-cov = "^2.11.1"
+pytest-runner = "^5.2"
+pytest = "^6.2.2"
+twine = "^3.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
