@@ -1,0 +1,3 @@
+[console_scripts]
+codecount = code_counter.__main__:main
+
