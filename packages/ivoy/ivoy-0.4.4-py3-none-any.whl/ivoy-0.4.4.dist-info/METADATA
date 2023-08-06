@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ivoy
+Version: 0.4.4
+Summary: Client library for iVoy
+Home-page: https://github.com/cuenca-mx/ivoy-python
+Author: Cuenca
+Author-email: dev@cuenca.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: iso8601 (==0.1.12)
+Requires-Dist: dataclasses (>=0.6) ; python_version < "3.7"
+Provides-Extra: test
+Requires-Dist: pytest (==5.4.3) ; extra == 'test'
+Requires-Dist: pytest-vcr (==1.0.2) ; extra == 'test'
+Requires-Dist: pycodestyle (==2.6.0) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.10.0) ; extra == 'test'
+Requires-Dist: black (==19.10b0) ; extra == 'test'
+Requires-Dist: isort[pipfile] (==4.3.21) ; extra == 'test'
+Requires-Dist: flake8 (==3.8.3) ; extra == 'test'
+Requires-Dist: mypy (==0.782) ; extra == 'test'
+Requires-Dist: iso8601 (==0.1.12) ; extra == 'test'
+
+# iVoy
+
+[![test](https://github.com/cuenca-mx/ivoy-python/workflows/test/badge.svg)](https://github.com/cuenca-mx/ivoy-python/actions?query=workflow%3Atest)
+[![codecov](https://codecov.io/gh/cuenca-mx/ivoy-python/branch/master/graph/badge.svg)](https://codecov.io/gh/cuenca-mx/ivoy-python)
+
+[iVoy Mensajería](https://ivoy.mx) Python3.6+ Client Library
+
+## Install
+
+To setup your environment:
+
+```bash
+pip install ivoy
+```
+
+## Tests
+
+```bash
+make test
+```
+
+## Create Client
+
+```python
+from ivoy import Client
+
+client = Client(
+	auth_user= your_auht_user,
+	auth_password= your_auth_password,
+	ivoy_user= ivoy_system_user,
+	ivoy_password= ivoy_system_password
+)
+```
+
