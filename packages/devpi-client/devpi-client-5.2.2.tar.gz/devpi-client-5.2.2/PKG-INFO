@@ -1,0 +1,123 @@
+Metadata-Version: 1.2
+Name: devpi-client
+Version: 5.2.2
+Summary: devpi upload/install/... workflow commands for Python developers
+Home-page: https://github.com/devpi/devpi
+Maintainer: Holger Krekel
+Maintainer-email: holger@merlinux.eu
+License: MIT
+Description: ===============================================================
+        devpi-client: manage devpi-server, Python packaging and testing
+        ===============================================================
+        
+        The ``devpi`` command line tool is typically used in conjunction
+        with `devpi-server <https://pypi.org/project/devpi-server/>`_.
+        It allows to upload, test and install packages from devpi indexes.
+        
+        See https://doc.devpi.net for quickstart and more documentation.
+        
+        Support
+        =======
+        
+        If you find a bug, use the `issue tracker at Github`_.
+        
+        For general questions use the #devpi IRC channel on `freenode.net`_ or the `devpi-dev@python.org mailing list`_.
+        
+        For support contracts and paid help contact `merlinux.eu`_.
+        
+        .. _issue tracker at Github: https://github.com/devpi/devpi/issues/
+        .. _freenode.net: https://freenode.net/
+        .. _devpi-dev@python.org mailing list: https://mail.python.org/mailman3/lists/devpi-dev.python.org/
+        .. _merlinux.eu: https://merlinux.eu
+        
+        
+        =========
+        Changelog
+        =========
+        
+        
+        
+        .. towncrier release notes start
+        
+        5.2.2 (2021-02-19)
+        ==================
+        
+        Bug Fixes
+        ---------
+        
+        - fix #406: support ``--all`` to show all versions when listing more than one project.
+        
+        - Pin tox to <4dev. The next major version of devpi-client will use tox as a binary to support newer versions.
+        
+        
+        5.2.1 (2020-09-13)
+        ==================
+        
+        Deprecations and Removals
+        -------------------------
+        
+        - Support for basic authentication and client side certificates is deprecated now. Take a look at devpi-lockdown instead.
+        
+        
+        Bug Fixes
+        ---------
+        
+        - Hide password from index url in pip config with ``devpi use``.
+        
+        
+        5.2.0 (2020-05-04)
+        ==================
+        
+        Features
+        --------
+        
+        - fix #140: support ``-f/--force`` option for deletion on non-volatile indexes with devpi-server >= 6.0.0.
+        
+        
+        Bug Fixes
+        ---------
+        
+        - fix #799: proper error message for devpi login without prior devpi use
+        
+        - Support for check_manifest>=0.42.
+        
+        
+        5.1.1 (2019-12-18)
+        ==================
+        
+        Bug Fixes
+        ---------
+        
+        - Fix removing a range of versions with index inheritance.
+        
+        
+        5.1.0 (2019-10-31)
+        ==================
+        
+        Features
+        --------
+        
+        - Add keyring support for ``devpi push`` to external repositories like pypi.org. This is compatible with ``twine``, see https://twine.readthedocs.io/en/latest/#keyring-support
+        
+        
+        Bug Fixes
+        ---------
+        
+        - fix #666: output nicer error message when section couldn't be found in pypirc.
+        
+        - the 410 status for the register action isn't marked as error anymore for push to external repository.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
