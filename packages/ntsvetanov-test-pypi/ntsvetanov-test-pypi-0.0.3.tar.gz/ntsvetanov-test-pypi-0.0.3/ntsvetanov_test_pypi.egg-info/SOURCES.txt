@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+ntsvetanov_test_pypi/__init__.py
+ntsvetanov_test_pypi/auth.py
+ntsvetanov_test_pypi/main.py
+ntsvetanov_test_pypi.egg-info/PKG-INFO
+ntsvetanov_test_pypi.egg-info/SOURCES.txt
+ntsvetanov_test_pypi.egg-info/dependency_links.txt
+ntsvetanov_test_pypi.egg-info/requires.txt
+ntsvetanov_test_pypi.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+pandas
+
+[dev]
+pytest
+
+[google-auth]
+google-auth
+
+[jwt]
+pyjwt
