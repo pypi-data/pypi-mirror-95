@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+dist/anicons-0.0.1-py3-none-any.whl
+src/anicons.py
+src/anifolds.egg-info/PKG-INFO
+src/anifolds.egg-info/SOURCES.txt
+src/anifolds.egg-info/dependency_links.txt
+src/anifolds.egg-info/requires.txt
+src/anifolds.egg-info/top_level.txt
