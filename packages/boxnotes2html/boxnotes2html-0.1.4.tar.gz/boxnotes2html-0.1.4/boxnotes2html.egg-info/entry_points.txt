@@ -1,0 +1,4 @@
+[console_scripts]
+boxnote2html = boxnotes2html.cli:run
+boxnotes2html = boxnotes2html.cli:run
+

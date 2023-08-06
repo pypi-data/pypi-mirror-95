@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+boxnotes2html/__init__.py
+boxnotes2html/boxnote.py
+boxnotes2html/cli.py
+boxnotes2html/html.py
+boxnotes2html/markdown.py
+boxnotes2html/style.css
+boxnotes2html/table.py
+boxnotes2html.egg-info/PKG-INFO
+boxnotes2html.egg-info/SOURCES.txt
+boxnotes2html.egg-info/dependency_links.txt
+boxnotes2html.egg-info/entry_points.txt
+boxnotes2html.egg-info/top_level.txt
