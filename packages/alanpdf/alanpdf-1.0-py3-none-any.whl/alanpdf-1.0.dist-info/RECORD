@@ -1,0 +1,8 @@
+alanpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alanpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alanpdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+alanpdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+alanpdf-1.0.dist-info/METADATA,sha256=GccvexwJBKmhlgcQi8XbkGGEv7uVFOk55DW1hkmRoxg,169
+alanpdf-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+alanpdf-1.0.dist-info/top_level.txt,sha256=LvF3xO2JKNJQb-3xkTwkPV0ExMbAhztX8MmyeXAvpSk,8
+alanpdf-1.0.dist-info/RECORD,,
