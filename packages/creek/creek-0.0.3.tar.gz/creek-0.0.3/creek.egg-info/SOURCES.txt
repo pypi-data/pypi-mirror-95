@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+creek/__init__.py
+creek/base.py
+creek/infinite_sequence.py
+creek.egg-info/PKG-INFO
+creek.egg-info/SOURCES.txt
+creek.egg-info/dependency_links.txt
+creek.egg-info/not-zip-safe
+creek.egg-info/top_level.txt
+creek/scrap/__init__.py
+creek/scrap/creek_layers.py
+creek/scrap/multi_streams.py
+creek/tests/__init__.py
+creek/tests/infinite_sequence.py
