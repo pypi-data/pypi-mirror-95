@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: yonwog
+Version: 0.0.1
+Summary: a python 3 games cli package project for school
+Home-page: UNKNOWN
+Author: Yonatan shani
+Author-email: sth@sth.com
+License: yon
+Description: UNKNOWN
+Keywords: yonwog
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
