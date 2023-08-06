@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+README.md
+setup.cfg
+setup.py
+jikanpy/__init__.py
+jikanpy/aiojikan.py
+jikanpy/exceptions.py
+jikanpy/jikan.py
+jikanpy/py.typed
+jikanpy/utils.py
+jikanpy.egg-info/PKG-INFO
+jikanpy.egg-info/SOURCES.txt
+jikanpy.egg-info/dependency_links.txt
+jikanpy.egg-info/not-zip-safe
+jikanpy.egg-info/requires.txt
+jikanpy.egg-info/top_level.txt
