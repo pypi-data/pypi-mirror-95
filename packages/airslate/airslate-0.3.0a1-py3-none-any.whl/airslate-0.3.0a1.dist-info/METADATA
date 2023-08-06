@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: airslate
+Version: 0.3.0a1
+Summary: Official Python client library for the airSlate API v1
+Home-page: https://github.com/airslate-oss/python-airslate
+Author: airSlate
+Author-email: dev-support@airslate.com
+Maintainer: airSlate
+Maintainer-email: dev-support@airslate.com
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/airslate-oss/python-airslate/issues
+Project-URL: Source Code, https://github.com/airslate-oss/python-airslate
+Keywords: airslate,crm,nocode,addons,bots
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/x-rst
+Requires-Dist: requests (==2.*,>=2.20.0)
+Requires-Dist: urllib3 (<1.27,>=1.21.1)
+Provides-Extra: develop
+Requires-Dist: twine (>=3.3.0) ; extra == 'develop'
+Requires-Dist: setuptools (>=53.0.0) ; extra == 'develop'
+Requires-Dist: wheel (>=0.36.2) ; extra == 'develop'
+Requires-Dist: check-wheel-contents (>=0.2.0) ; extra == 'develop'
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.2.2) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.11.1) ; extra == 'testing'
+Requires-Dist: responses (>=0.12.0) ; extra == 'testing'
+Requires-Dist: pylint (==2.6.0) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'testing'
+
+=================================================================
+airslate: Official Python client library for the airSlate API v1
+=================================================================
+
+
+``airslate`` is a Python client library for the `airSlate <https://www.airslate.com>`__ API v1.
+
+This Python client library has been designed to quickly and easily implement
+the airSlate REST API. It offers a simple and elegant way to interact with
+airSlate API resources within your Python applications. Sign up for our API here:
+https://developers.airslate.com
+
+.. teaser-end
+
+.. -project-information-
+
+Project Information
+===================
+
+``airslate`` is released under the `Apache Licence 2.0 <https://choosealicense.com/licenses/apache-2.0/>`_,
+the code lives on `GitHub <https://github.com/airslate-oss/python-airslate>`_,
+and the latest release on `PyPI <https://pypi.org/project/airslate/>`_.
+It’s rigorously tested on Python 3.7+.
+
+If you'd like to contribute to ``airslate`` you're most welcome!
+
+.. -support-
+
+Support
+=======
+
+Should you have any question, any remark, or if you find a bug, or if there is
+something you can't do with the ``airslate``, please
+`open an issue <https://github.com/airslate-oss/python-airslate/issues>`_.
+
+
+Release Information
+===================
+
+3.0a1 (2021-02-18)
+--------------------
+
+Features
+^^^^^^^^
+
+* Provided ability to get and assign Tags for a given Slate.
+* Provided ability to get and update Fields for a given Document.
+* Introduced ``airslate.exceptions.NotFoundError`` to raise from client
+  when the server can not find the requested resource.
+* Introduced ``airslate.facades`` facade module to provide an easy to access API resources:
+
+  * ``client.addons.auth()`` - get access token for an Addon installed in an Organization
+  * ``client.addons.files.get()`` - get the requested Slate Addon File
+  * ``client.addons.files.download()`` - download contents of the requested Slate Addon File
+  * ``client.documents.fields()`` - get Fields for a given Document
+  * ``client.documents.update_fields()`` - update Fields for a given Document
+  * ``client.flows.documents.collection()`` - get supported Documents for a given Flow
+  * ``client.slates.tags.assign()`` - assign Tags to a given Slate
+  * ``client.slates.tags.collection()`` - get all Slate Tags for a given Flow
+
+* Entity attributes are now accessible via dot notation,
+  i.e. ``entity['id']`` is the same as ``entity.id``.
+* Implement ``airslate.entities.base.BaseEntity.to_dict()`` to convert entities
+  to a dictionary.
+* Implement ``airslate.entities.base.BaseEntity.__getstate__()`` as well as
+  ``airslate.entities.base.BaseEntity.__setstate__()`` to provide ability to persist
+  and load entities state.
+* Implement ``airslate.client.Client.patch()`` to send ``PATCH`` requests.
+
+
+Breaking Changes
+^^^^^^^^^^^^^^^^
+
+* Moved ``client.addons.access_token()`` ``client.addons.auth()`` facade.
+* Moved ``client.slate_addon_files`` to ``client.addons.files()`` facade.
+* Moved ``client.flow_documents`` to ``client.flows.documents()`` facade.
+* ``BaseEntity.set_attributes()`` from ``airslate.entities.base`` module has been
+  removed. Users are recommended to use ``entity.attributes.update(dict)``.
+* ``BaseEntity.original_included`` from ``airslate.entities.base`` module has been
+  removed.
+
+
+Bug Fixes
+^^^^^^^^^
+
+* Fixed ``included`` parsing for ``BaseEntity.from_one`` and ``BaseEntity.from_collection``
+  when call ``filter_included``.
+
+
+Trivial/Internal Changes
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Provided ``utils`` utility module for be use within ``airslate`` package:
+
+  * ``airslate.client.Client.DEFAULT_HEADERS`` was moved to ``airslate.utils.default_headers()``
+  * ``airslate.session.USER_AGENT`` was moved to ``airslate.utils.default_user_agent()``
+
+`Full changelog <https://github.com/airslate-oss/python-airslate/blob/master/CHANGELOG.rst>`_.
+
+Credits
+=======
+
+``airslate`` is written and maintained by `airSlate <https://www.airslate.com/>`_.
+
+A full list of contributors can be found in `GitHub's overview <https://github.com/airslate-oss/python-airslate/graphs/contributors>`_.
+
+
