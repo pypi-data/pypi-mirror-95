@@ -1,0 +1,8 @@
+README.md
+setup.py
+golay/__init__.py
+golay/golay.py
+golay.egg-info/PKG-INFO
+golay.egg-info/SOURCES.txt
+golay.egg-info/dependency_links.txt
+golay.egg-info/top_level.txt

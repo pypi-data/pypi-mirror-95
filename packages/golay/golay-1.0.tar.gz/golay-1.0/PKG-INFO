@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: golay
+Version: 1.0
+Summary: Binary Golay error-correcting codes
+Home-page: https://github.com/CuckooEXE/golay
+Author: Axel Persinger
+Author-email: me@axelp.io
+License: UNKNOWN
+Description: # Binary Golay Codes
+        
+        Python library to handle Binary Golay Codes
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
