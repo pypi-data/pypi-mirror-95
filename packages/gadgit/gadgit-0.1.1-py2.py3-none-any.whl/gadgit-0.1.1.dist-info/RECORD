@@ -1,0 +1,14 @@
+gadgit/GAInfo.py,sha256=erl3GWQI_MaUGw3r17L4d507htyOe1WgkzClsCQtu5A,1044
+gadgit/GeneInfo.py,sha256=taWMkavyZCMOdTVDgvdYH4YRpdfx8oRewRkmr5Adqfw,1286
+gadgit/__init__.py,sha256=ZPdxuf5NXOa7_lvi17ljYr-TGkUShoa2nDBK5-UBN38,217
+gadgit/ga_single.py,sha256=K4xp8Aej6sajT90Dm080xZUBJo181nAKjGVyuPmTGbU,4110
+gadgit/gadgit.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+gadgit/post_run.py,sha256=MQopSXwyuicF_7wgSNI-qCN0i0HaLdtcbP2IKKcSljE,941
+gadgit/helpers/__init__.py,sha256=-cTqwMuuubyr_UN1sLJQm3bxGvhxIDP0LowFPAv0n8Y,57
+gadgit/helpers/make_centrality_frame.py,sha256=nzNo9Y0z4NHsyFwylx8zN1E9wmkrDoqz2XuQIhNPius,1486
+gadgit-0.1.1.dist-info/AUTHORS.rst,sha256=AOLBLKszUUrONLqO7MmrCXTB_HAup58JdSif3lWBmXc,157
+gadgit-0.1.1.dist-info/LICENSE,sha256=3WDKkeSlv-vIzhwk-S-e8utTR0_JoBpsyK8c4XMG3XY,1072
+gadgit-0.1.1.dist-info/METADATA,sha256=DuT9Dwg5x-ctTkmb_OrLW7C91YnkBdeJHTt0200hFF0,1646
+gadgit-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+gadgit-0.1.1.dist-info/top_level.txt,sha256=EP9f-OEQqfaVMkjBgqA9gWA2kXxs5GYYUIaMj_fLxCg,7
+gadgit-0.1.1.dist-info/RECORD,,
