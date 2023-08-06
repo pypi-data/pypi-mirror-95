@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: meajur
+Version: 0.0.31
+Summary: Command line 
+Home-page: UNKNOWN
+Author: Athmane Bouazzouni
+Author-email: Athmane2dz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: prettytable (==2.0.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: soupsieve (==2.2)
+Requires-Dist: texttable (==1.6.3)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: validators (==0.18.2)
+
+UNKNOWN
+
+
