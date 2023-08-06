@@ -1,0 +1,17 @@
+napari_plugin_engine
+numpy
+flammkuchen
+split_dataset
+
+[dev]
+sphinx
+sphinx_rtd_theme
+pydoc-markdown
+pytest-cov
+pytest
+gitpython
+coverage
+pre-commit
+black
+flake8
+isort
