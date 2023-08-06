@@ -1,0 +1,12 @@
+htmlfactory/InnerHtml.py,sha256=vY4ETS62nCWiS1niaH1OOB98av2Ap0LIMl1EsZTrvkA,1359
+htmlfactory/SingletonTag.py,sha256=REgM1ppaeNqk4mNo95qZ9fzM9Q49AxxdpsmXw4qG0Sw,724
+htmlfactory/TagAndClassStr.py,sha256=T_b333QGP4JtsXNmnmu0tPUfVdw70Q2NsdXupSwdNMo,1716
+htmlfactory/TagAttribute.py,sha256=p_xq750WgQoYxysDyo88a5SZzcfLz-D0KDxbPc6NKw4,585
+htmlfactory/TagAttributeList.py,sha256=BeXkBqv06Eof_e9Y4GxSBGBeKgfNYQXscB0tS-Fw2EQ,429
+htmlfactory/TagFactory.py,sha256=nTFDKwJG1SnReSugXPl8JpIJGY-mkmTW808cKgZNwzQ,2045
+htmlfactory/__init__.py,sha256=d_X2ZumI85o8dT0cKOuGMoWC_cdLIkOjPYcRMV58_x0,49
+htmlfactory-0.0.1.dist-info/LICENSE,sha256=eMdEnzS-s1-imUomTOGN7_p95vShhv69oxp1-6BB8YQ,1071
+htmlfactory-0.0.1.dist-info/METADATA,sha256=Ph9SCgtAXXbqiDs3vqiugjTkYfpbj-gnguexLhStvbo,4410
+htmlfactory-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+htmlfactory-0.0.1.dist-info/top_level.txt,sha256=P9ZWxKxIJl5oWy484cT3hfEC6guHEes0D7Im_51r5Us,12
+htmlfactory-0.0.1.dist-info/RECORD,,
