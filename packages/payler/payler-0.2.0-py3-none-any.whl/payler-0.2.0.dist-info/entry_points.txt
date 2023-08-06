@@ -1,0 +1,3 @@
+[console_scripts]
+payler=payler.client:run_payler
+
