@@ -1,0 +1,3 @@
+[console_scripts]
+depthai_mock = depthai_mock.cli:record_depthai_mockups
+
