@@ -1,0 +1,10 @@
+README.md
+setup.py
+UDPComms/UDPComms.py
+UDPComms/__init__.py
+UDPComms/version.py
+UDPComms.egg-info/PKG-INFO
+UDPComms.egg-info/SOURCES.txt
+UDPComms.egg-info/dependency_links.txt
+UDPComms.egg-info/requires.txt
+UDPComms.egg-info/top_level.txt
