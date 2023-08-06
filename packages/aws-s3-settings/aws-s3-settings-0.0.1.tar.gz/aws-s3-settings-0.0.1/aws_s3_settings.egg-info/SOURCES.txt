@@ -1,0 +1,9 @@
+README.md
+setup.py
+aws_s3_settings/__init__.py
+aws_s3_settings.egg-info/PKG-INFO
+aws_s3_settings.egg-info/SOURCES.txt
+aws_s3_settings.egg-info/dependency_links.txt
+aws_s3_settings.egg-info/entry_points.txt
+aws_s3_settings.egg-info/requires.txt
+aws_s3_settings.egg-info/top_level.txt
