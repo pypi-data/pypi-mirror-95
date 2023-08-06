@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyMicVoiceDetection/__init__.py
+pyMicVoiceDetection/demo.py
+pyMicVoiceDetection.egg-info/PKG-INFO
+pyMicVoiceDetection.egg-info/SOURCES.txt
+pyMicVoiceDetection.egg-info/dependency_links.txt
+pyMicVoiceDetection.egg-info/requires.txt
+pyMicVoiceDetection.egg-info/top_level.txt
