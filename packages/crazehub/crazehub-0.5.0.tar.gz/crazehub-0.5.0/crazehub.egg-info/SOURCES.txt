@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+crazehub.egg-info/PKG-INFO
+crazehub.egg-info/SOURCES.txt
+crazehub.egg-info/dependency_links.txt
+crazehub.egg-info/requires.txt
+crazehub.egg-info/top_level.txt
+pyexample/__init__.py
+pyexample/main.py
