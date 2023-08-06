@@ -1,0 +1,8 @@
+README.md
+setup.py
+odb2psql/__init__.py
+odb2psql/__main__.py
+odb2psql.egg-info/PKG-INFO
+odb2psql.egg-info/SOURCES.txt
+odb2psql.egg-info/dependency_links.txt
+odb2psql.egg-info/top_level.txt
