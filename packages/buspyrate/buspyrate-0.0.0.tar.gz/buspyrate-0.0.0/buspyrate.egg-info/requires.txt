@@ -1,0 +1,9 @@
+pyserial
+
+[test]
+isort
+mypy
+pylama
+pytest
+pytest-cov
+pytest-mypy
