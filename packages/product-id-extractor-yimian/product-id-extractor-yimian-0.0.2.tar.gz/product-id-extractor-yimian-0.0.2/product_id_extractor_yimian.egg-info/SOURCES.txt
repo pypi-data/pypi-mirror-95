@@ -1,0 +1,8 @@
+README.md
+setup.py
+product_id_extractor/__init__.py
+product_id_extractor/config.py
+product_id_extractor_yimian.egg-info/PKG-INFO
+product_id_extractor_yimian.egg-info/SOURCES.txt
+product_id_extractor_yimian.egg-info/dependency_links.txt
+product_id_extractor_yimian.egg-info/top_level.txt
