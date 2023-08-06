@@ -1,0 +1,14 @@
+xls2moodle/__init__.py,sha256=30ddbovaqnh3HmsMwqetweRdNB1ZaMuihOosh6GI_O4,273
+xls2moodle/__main__.py,sha256=iADVqjpx88HIFevX55EujYMqA7jFzcAeeRs6u7AK9pM,15634
+xls2moodle/_version.py,sha256=Sujeo-nY6y1KTnaFqr7xDh1rM70YuvcwQrbs6FnO9NE,517
+xls2moodle/xml_templates/four_correct.xml,sha256=Ui44rUxGV9yPdxDwYEYlzJugqwqtvHJDbVFG8EXRc-s,1540
+xls2moodle/xml_templates/one_correct.xml,sha256=oegNOo_A_lOn_bgJYsCkzEpVPZWJCsWk2tE1xTikQ0w,1567
+xls2moodle/xml_templates/template.xml,sha256=-yo-ULPND0D0d2nYQvJ15JHilhdcue3c3epJgCEgG_A,55
+xls2moodle/xml_templates/three_correct.xml,sha256=48NWoPuf43xOUh1QqllCVjFxFcP8qIB_hjNJDgYnBa0,1557
+xls2moodle/xml_templates/two_correct.xml,sha256=xwpk-z69kejgYqqRgyDheqRVFcbVrIqLxVTaZrJk4pA,1538
+xls2moodle-1.12.dist-info/LICENSE,sha256=IG7FU8Kh-0-SN7ExD5Bhg3FNqUu9HT7ewsTwmnoUUZY,1084
+xls2moodle-1.12.dist-info/METADATA,sha256=4aaxZ1bXymE7SvUFG9R_f72jCvsKPLfB24Xs_rsg3S8,2443
+xls2moodle-1.12.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+xls2moodle-1.12.dist-info/entry_points.txt,sha256=LPIDUt8cNSQmr2jsD6iWjN5cZtAYTnnLCMNjw77gLW8,57
+xls2moodle-1.12.dist-info/top_level.txt,sha256=iIlxiwhQF3zjGtciqOrhQ10Ol8UqrS3ROMFql-oFugE,11
+xls2moodle-1.12.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+xls2moodle = xls2moodle.__main__:main
+
