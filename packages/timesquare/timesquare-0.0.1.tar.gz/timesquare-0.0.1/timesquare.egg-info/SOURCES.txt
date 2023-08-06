@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+timesquare/__init__.py
+timesquare.egg-info/PKG-INFO
+timesquare.egg-info/SOURCES.txt
+timesquare.egg-info/dependency_links.txt
+timesquare.egg-info/top_level.txt

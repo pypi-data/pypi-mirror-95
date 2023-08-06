@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: timesquare
+Version: 0.0.1
+Summary: Solve Quadratic Equations
+Home-page: UNKNOWN
+Author: Ilay Furst
+Author-email: furstilay11@gmail.com
+License: MIT
+Description: This module solve Quadratic equation using Quadratic Formula.
+        
+        To use the module in your python code first thing add 'import timesquare'
+        Now when you want to solve a Quadratic equation just tpye 'timesquare.solve(a, b, c)'
+        Write your a b c variables in the a b c.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (17/2/2021)
+        - - - - - - - - - - - - - - - - 
+        - First Release
+Keywords: quadratic
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
