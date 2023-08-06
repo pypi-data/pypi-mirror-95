@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: nlutils
+Version: 0.0.2
+Summary: Toolkit for Mr. Liu
+Home-page: UNKNOWN
+Author: Nikola Liu
+Author-email: nikolaliu@icloud.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: coloredlogs
+Requires: matplotlib
