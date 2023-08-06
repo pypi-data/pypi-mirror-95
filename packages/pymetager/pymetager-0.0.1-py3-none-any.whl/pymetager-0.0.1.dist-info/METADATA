@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: pymetager
+Version: 0.0.1
+Summary: A Python package metadata manager by BuildNN.
+Home-page: https://github.com/buildnn/pypack-metager
+Author: BuildNN Team
+Author-email: dev@buildnn.com
+Maintainer: BuildNN Team
+Maintainer-email: dev@buildnn.com
+License: BSD 4-Clause License
+Project-URL: Repository, https://github.com/buildnn/pypack-metager
+Project-URL: Documentation, https://github.com/buildnn/pypack-metager
+Project-URL: Code, https://www.github.com/buildnn/pypack-metager
+Project-URL: Issue tracker, https://github.com/buildnn/pypack-metager/issues
+Keywords: pypack_metager,buildnn
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: packaging
+
+\pypack_metager\
+================
+
+A `BuildNN <https://www.buildnn.com>`_ Open Source project.
+
+Installing
+----------
+
+.. code-block:: text
+
+  $ pip install pymetager
+
+or from source
+
+.. code-block:: text
+
+  $ git clone https://github.com/buildnn/pymetager
+  $ cd pymetager
+  $ pip install -e .
+
+Quickstart
+----------
+
+.. code-block:: text
+
+  $ pymetager --help
+  Usage: pymetager [OPTIONS] COMMAND [ARGS]...
+
+  Options:
+    -q, --quiet       Flag for minimal output.
+    --config_fp FILE  Custom path for setup.cfg.  [default: ./setup.cfg]
+    --help            Show this message and exit.
+
+  Commands:
+    echo-meta-elm
+    increment
+
+
+let's use info print function
+
+.. code-block:: text
+
+  $ pymetager echo-meta-elm --help
+  --- PYPACK-METAGER ---
+  A BuildNN Open Source project.
+  Reading/Writing from/to ./setup.cfg
+  Usage: pymetager echo-meta-elm [OPTIONS] [NAME]
+
+  Options:
+    -s, --section TEXT
+    --help              Show this message and exit
+
+
+.. code-block:: text
+
+  $ pymetager echo-meta-elm version
+  --- PYPACK-METAGER ---
+  A BuildNN Open Source project.
+  Reading/Writing from/to ./setup.cfg
+  0.0.1
+
+Or, concisely
+
+.. code-block:: text
+
+  $ pymetager -q echo-meta-elm version
+  0.0.1
+
+

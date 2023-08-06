@@ -1,0 +1,9 @@
+pymetager/__init__.py,sha256=xbHoKJ4FTC1tEEt2CT5grsdxv3xk8_6omgONFjIFpso,143
+pymetager/cli.py,sha256=c1A5D7gwByHczpZUWhsZZQINkkDJ1zjBzPSeVGHL8Sw,3075
+pymetager/version_manager.py,sha256=GHHL3Df4h7y5Sp2gEU3EdtLZGCtNX2B3SVhcobMR888,3831
+pymetager-0.0.1.dist-info/LICENSE,sha256=INB26iGL4H0S4GRFYD_XzQFSmXG-RzJHAm5APFPuvaQ,1746
+pymetager-0.0.1.dist-info/METADATA,sha256=J6jo1Q29DbTFxJ1lxrxWEzW5CnV4bEUaw2vSIXUg3gU,2194
+pymetager-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pymetager-0.0.1.dist-info/entry_points.txt,sha256=0rXZjUERja92y9v3cc9kxrgv6Rs-SMiYw-bJcLoS0g0,49
+pymetager-0.0.1.dist-info/top_level.txt,sha256=ByvWAtwbbypA7C2oG4tLhzH2X905sJKwCmA_wDTZOr0,10
+pymetager-0.0.1.dist-info/RECORD,,
