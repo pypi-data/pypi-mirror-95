@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: opentelemetry-instrumentation-botocore
+Version: 0.18b0
+Summary: OpenTelemetry Botocore instrumentation
+Home-page: https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-botocore
+Author: OpenTelemetry Authors
+Author-email: cncf-opentelemetry-contributors@lists.cncf.io
+License: Apache-2.0
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: botocore (~=1.0)
+Requires-Dist: opentelemetry-api (==1.0.0rc1)
+Requires-Dist: opentelemetry-instrumentation (==0.18b0)
+Provides-Extra: test
+Requires-Dist: moto (~=1.0) ; extra == 'test'
+Requires-Dist: opentelemetry-test (==0.18b0) ; extra == 'test'
+
+OpenTelemetry Botocore Tracing
+==============================
+
+|pypi|
+
+.. |pypi| image:: https://badge.fury.io/py/opentelemetry-instrumentation-botocore.svg
+   :target: https://pypi.org/project/opentelemetry-instrumentation-botocore/
+
+This library allows tracing requests made by the Botocore library.
+
+Installation
+------------
+
+::
+
+    pip install opentelemetry-instrumentation-botocore
+
+
+References
+----------
+
+* `OpenTelemetry Botocore Tracing <https://opentelemetry-python-contrib.readthedocs.io/en/latest/instrumentation/botocore/botocore.html>`_
+* `OpenTelemetry Project <https://opentelemetry.io/>`_
+
+
