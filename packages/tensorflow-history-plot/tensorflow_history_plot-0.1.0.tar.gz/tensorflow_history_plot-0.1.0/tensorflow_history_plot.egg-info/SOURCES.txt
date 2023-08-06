@@ -1,0 +1,9 @@
+README.md
+setup.py
+tensorflow_history_plot/__init__.py
+tensorflow_history_plot/main.py
+tensorflow_history_plot.egg-info/PKG-INFO
+tensorflow_history_plot.egg-info/SOURCES.txt
+tensorflow_history_plot.egg-info/dependency_links.txt
+tensorflow_history_plot.egg-info/requires.txt
+tensorflow_history_plot.egg-info/top_level.txt
