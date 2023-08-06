@@ -1,0 +1,9 @@
+README.md
+autoreadme
+setup.py
+autoreadme.egg-info/PKG-INFO
+autoreadme.egg-info/SOURCES.txt
+autoreadme.egg-info/dependency_links.txt
+autoreadme.egg-info/top_level.txt
+autoreadme_/__init__.py
+autoreadme_/autoreadme.py
