@@ -1,0 +1,93 @@
+Metadata-Version: 1.1
+Name: anonjail
+Version: 1.0.0
+Summary: Control firejail and tor desktop integration.
+Home-page: https://boards.420chan.org/
+Author: K
+Author-email: anon@anon.com
+License: GPLv2+
+Description: Torjailctl
+        ==========
+        
+        |pyversions|
+        
+        Torjailctl is a tool to integrate `Firejail +
+        Tor <https://firejail.wordpress.com/>`__ sandboxing in the Linux
+        desktop. Enable Torjailctl for an application and enjoy a more private
+        and more secure desktop.
+        
+        Those are the real coders behind this code, i’ve only made some brainless tweaks:
+        =================================================================================
+        
+        https://github.com/orjail/orjail
+        
+        &
+        
+        https://github.com/rahiel/firectl
+        
+        Usage
+        =====
+        
+        To see which applications you can enable:
+        
+        .. code:: bash
+        
+           torjailctl status
+        
+        To enable tor + firejail for all program:
+        
+        .. code:: bash
+        
+           sudo torjailctl enable firefox --all --tor
+        
+        To enable tor + firejail torjailctl for a program:
+        
+        .. code:: bash
+        
+           sudo torjailctl enable firefox --tor
+        
+        To enable firejail for a program:
+        
+        .. code:: bash
+        
+           sudo torjailctl enable firefox
+        
+        To disable firejail for a program:
+        
+        .. code:: bash
+        
+           sudo torjailctl disable firefox
+        
+        Install
+        -------
+        
+        Install torjailctl with pip:
+        
+        .. code:: bash
+        
+           sudo pip3 install torjailctl
+        
+        Uninstall
+        ---------
+        
+        To uninstall torjailctl:
+        
+        .. code:: bash
+        
+           sudo torjailctl disable --all
+           sudo pip3 uninstall torjailctl
+           sudo rm /etc/firejail/firejail.config
+        
+        .. |pyversions| image:: https://img.shields.io/badge/python-3.3%2B-blue.svg
+           :target: https://pypi.org/project/torjailctl/
+        
+Keywords: firejail and tor sandbox desktop integration
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security

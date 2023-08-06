@@ -1,0 +1,10 @@
+README.md
+setup.py
+torjailctl.py
+anonjail.egg-info/PKG-INFO
+anonjail.egg-info/SOURCES.txt
+anonjail.egg-info/dependency_links.txt
+anonjail.egg-info/entry_points.txt
+anonjail.egg-info/requires.txt
+anonjail.egg-info/top_level.txt
+torjail/install.bash
