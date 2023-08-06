@@ -1,0 +1,9 @@
+pip
+numpy<2.0,>=1.0
+dask<2.26,>=2.25
+distributed<2.26,>=2.25
+dask-jobqueue<0.8,>=0.7.1
+fsspec>=0.3.3
+bokeh
+h5py<3,>=2.9
+tqdm>=4.31
