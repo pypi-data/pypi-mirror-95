@@ -1,0 +1,14 @@
+README.rst
+setup.py
+./HCCeval.py
+./HCCeval_fastANI.py
+./__init__.py
+./getDistance.py
+./pHierCC.py
+./pHierCC_fastANI.py
+pHierCC.egg-info/PKG-INFO
+pHierCC.egg-info/SOURCES.txt
+pHierCC.egg-info/dependency_links.txt
+pHierCC.egg-info/entry_points.txt
+pHierCC.egg-info/requires.txt
+pHierCC.egg-info/top_level.txt

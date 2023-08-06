@@ -1,0 +1,4 @@
+[console_scripts]
+HCCeval = pHierCC.HCCeval:evalHCC
+pHierCC = pHierCC.pHierCC:phierCC
+
