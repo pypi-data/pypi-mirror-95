@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+openMINDS/MetaSchemaContainer.py
+openMINDS/__init__.py
+openMINDS/openminds_helper.py
+openMINDS/python_compiler.py
+openMINDS/schema_discovery.py
+openMINDS.egg-info/PKG-INFO
+openMINDS.egg-info/SOURCES.txt
+openMINDS.egg-info/dependency_links.txt
+openMINDS.egg-info/top_level.txt
