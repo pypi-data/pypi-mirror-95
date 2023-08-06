@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: debekCalc
+Version: 0.0.1
+Summary: Czesc
+Home-page: UNKNOWN
+Author: Marcin Debowski
+Author-email: mdebowski78@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: debekCalc
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

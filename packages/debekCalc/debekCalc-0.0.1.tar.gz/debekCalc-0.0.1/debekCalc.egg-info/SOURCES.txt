@@ -1,0 +1,7 @@
+README.txt
+setup.py
+basicCalc/__init__.py
+debekCalc.egg-info/PKG-INFO
+debekCalc.egg-info/SOURCES.txt
+debekCalc.egg-info/dependency_links.txt
+debekCalc.egg-info/top_level.txt
