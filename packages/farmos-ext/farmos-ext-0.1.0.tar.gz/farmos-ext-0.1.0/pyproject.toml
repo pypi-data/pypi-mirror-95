@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "farmos-ext"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Brendel <lucasbrendel@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+farmOS = "^0.2.0"
+colorama = "^0.4.4"
+prompt-toolkit = "^3.0.16"
+
+[tool.poetry.dev-dependencies]
+rope = "^0.18.0"
+pycodestyle = "^2.6.0"
+pydocstyle = "^5.1.1"
+pylint = "^2.7.0"
+pytest = "^6.2.2"
+coveralls = "^3.0.0"
+isort = "^5.7.0"
+autopep8 = "^1.5.5"
+mock = "^4.0.3"
+pytest-cov = "^2.11.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
