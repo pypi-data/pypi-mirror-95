@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: vix_utils
+Version: 0.0.0.0.1
+Summary: A library for preparing   VIX Futures and Cash Term Structures for analysis,
+Home-page: http://github.com/vix_utils
+Author: Doug Ransom
+Author-email: doug.ransom@gmail.com
