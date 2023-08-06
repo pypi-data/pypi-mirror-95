@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyDoge-mysql
+Version: 0.1.0
+Summary: A mysql library
+Home-page: https://github.com/ezeportela/pydoge-mysql
+Author: Ezequiel Portela
+Author-email: eportelab@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyDoge
+Requires-Dist: mysql-connector-python
+
+# PyDoge-mysql
+
+![alt logo](./static/doge.png)
+
+A mysql library
+
+
