@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: FuzzingTool
+Version: 3.6.2
+Summary: Software for fuzzing, used on web application pentestings.
+Home-page: https://github.com/NESCAU-UFLA/FuzzingTool/
+Author: Vitor Oriel C N Borges
+Author-email: vitorwixmix@gmail.com
+License: MIT
+Keywords: pentesting-tools python3 fuzzing web-security
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+UNKNOWN
+
+
