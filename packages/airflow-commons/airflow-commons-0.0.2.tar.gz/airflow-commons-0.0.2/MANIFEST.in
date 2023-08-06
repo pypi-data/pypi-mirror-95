@@ -1,0 +1,3 @@
+include README.md
+include airflow_commons/sql/*.sql
+include airflow_commons/utils/sql/*.sql
