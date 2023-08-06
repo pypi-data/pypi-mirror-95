@@ -1,0 +1,6 @@
+README.md
+setup.py
+protobuf_decoder.egg-info/PKG-INFO
+protobuf_decoder.egg-info/SOURCES.txt
+protobuf_decoder.egg-info/dependency_links.txt
+protobuf_decoder.egg-info/top_level.txt
