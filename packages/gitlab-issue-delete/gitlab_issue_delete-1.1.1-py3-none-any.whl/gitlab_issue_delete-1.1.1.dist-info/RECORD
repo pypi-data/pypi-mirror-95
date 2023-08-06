@@ -1,0 +1,10 @@
+gitlab_operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlab_operations/deleteissue.py,sha256=BTNsa3PxrbSkodTTkL2lFU_Rfedm8ZPo0-p3K5UD3nE,4396
+gitlab_operations/gitinstance.py,sha256=xdE-XgJDE8dRNzL_mk_pJCwQ7GPiQA4ohGdqN3B3NRo,1862
+gitlab_operations/userconfig.py,sha256=pmRI-MxtHM8PWMaphd7WQCjbi3d9EXrUA0n2QjoXMWI,1108
+gitlab_issue_delete-1.1.1.dist-info/LICENSE,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+gitlab_issue_delete-1.1.1.dist-info/METADATA,sha256=bqIPI13yqAlhRd0hKaBeDsMJOWKqNLdizkIg3ZpzR_s,1726
+gitlab_issue_delete-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gitlab_issue_delete-1.1.1.dist-info/entry_points.txt,sha256=HltFMOq4RuxLC32wPPfFFx_Sit8iqDwdE4kkx02rf1M,76
+gitlab_issue_delete-1.1.1.dist-info/top_level.txt,sha256=uGdAB7FgNhdTxBTz2RTX8YC_NFN-6eoA9yJuDc1QBLw,18
+gitlab_issue_delete-1.1.1.dist-info/RECORD,,
