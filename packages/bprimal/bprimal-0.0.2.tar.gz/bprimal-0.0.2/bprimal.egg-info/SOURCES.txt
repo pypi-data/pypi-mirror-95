@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+bprimal.egg-info/PKG-INFO
+bprimal.egg-info/SOURCES.txt
+bprimal.egg-info/dependency_links.txt
+bprimal.egg-info/top_level.txt
+maths/__init__.py
