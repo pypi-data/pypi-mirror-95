@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: discord.js
+Version: 1.0
+Summary: The Python module for discord.js.
+Home-page: UNKNOWN
+Author: Swas.py
+Author-email: cwswas.py@gmail.com
+License: UNKNOWN
+Description: The Python module that's never gonna let you down.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Sociology
