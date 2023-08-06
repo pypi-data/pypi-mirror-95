@@ -1,0 +1,17 @@
+# Include the README
+include *.md
+
+# Include the license file
+include LICENSE.txt
+
+# include the MMS configuration files YAML
+include pyrfu/mms/*.yml
+
+# include the MMS FEEPS sun contamination CSV files
+include pyrfu/mms/sun/*.csv
+
+# include the models CSV files
+include pyrfu/models/*.csv
+
+# include the PYRF configuration files YAML
+include pyrfu/pyrf/*.yml
