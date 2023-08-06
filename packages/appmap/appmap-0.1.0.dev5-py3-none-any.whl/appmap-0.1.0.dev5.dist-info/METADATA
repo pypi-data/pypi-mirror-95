@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: appmap
+Version: 0.1.0.dev5
+Summary: Create AppMap files by recording a Python application.
+Author: Alan Potter
+Author-email: alan@app.land
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: orjson (==3.4.6)
