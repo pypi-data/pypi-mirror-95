@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+Recosso/__init__.py
+recosso.egg-info/PKG-INFO
+recosso.egg-info/SOURCES.txt
+recosso.egg-info/dependency_links.txt
+recosso.egg-info/requires.txt
+recosso.egg-info/top_level.txt
