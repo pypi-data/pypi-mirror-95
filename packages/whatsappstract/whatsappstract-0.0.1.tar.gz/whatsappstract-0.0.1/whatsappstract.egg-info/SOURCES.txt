@@ -1,0 +1,7 @@
+README.md
+setup.py
+whatsappstract.egg-info/PKG-INFO
+whatsappstract.egg-info/SOURCES.txt
+whatsappstract.egg-info/dependency_links.txt
+whatsappstract.egg-info/requires.txt
+whatsappstract.egg-info/top_level.txt
