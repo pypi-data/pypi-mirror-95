@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: zodb-cm
+Version: 0.1
+Summary: ZODB context manager
+Home-page: https://github.com/baloan/zodb-cm
+Author: Andreas Balogh
+Author-email: baloand@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/baloan/zodb-cm/CHANGELOG.md
+Project-URL: Documentation, https://...
+Project-URL: Source, https://github.com/baloan/zodb-cm
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: ZODB
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ZODB
+Requires-Dist: ZEO
+
+# ZODB context manager
+
+## Installation
+
+`pip install zodb-cm`
+
+
+### ZConnection()
+
+- Provides a ZODB connection with auto-abort (default).
+- Provides a tuple of connection and root object:
+
+```
+      with ZConnection(db) as cx, root:
+          root.one = "ok"
+```
+- ZConnection implements a connection context manager.
+- Transaction context managers in contrast do auto-commit:
+  1. with db.transaction() as connection, or
+  1. with cx.transaction_manager as transaction, or
+  1. with transaction.manager as transaction  (for the thread-local transaction manager)
+- See also http://www.zodb.org/en/latest/guide/transactions-and-threading.html
+
+
+### ZDatabase()
+
+- Provides a ZODB database context manager.
+
+
+Change History
+
+### 0.1.0 (2021-02-17)
+
+* Package creation
+
