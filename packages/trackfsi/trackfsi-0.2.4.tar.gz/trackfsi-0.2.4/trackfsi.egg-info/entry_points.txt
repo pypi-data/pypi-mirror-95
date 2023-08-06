@@ -1,0 +1,3 @@
+[console_scripts]
+trackfsi = trackfs.__init__:main
+
