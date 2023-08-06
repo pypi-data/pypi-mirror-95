@@ -1,0 +1,9 @@
+phonenumbers
+webbot
+pygame
+curses
+socket
+re
+uuid
+urllib
+requests
