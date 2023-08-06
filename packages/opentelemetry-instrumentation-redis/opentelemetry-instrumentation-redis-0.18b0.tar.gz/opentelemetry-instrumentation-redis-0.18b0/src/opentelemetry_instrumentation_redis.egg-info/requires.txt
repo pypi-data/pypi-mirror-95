@@ -1,0 +1,8 @@
+opentelemetry-api==1.0.0rc1
+opentelemetry-instrumentation==0.18b0
+redis>=2.6
+wrapt>=1.12.1
+
+[test]
+opentelemetry-test==0.18b0
+opentelemetry-sdk==1.0.0rc1
