@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cry"
+version = "0.2.1"
+description = "Cry: SageMath/Python Toolkit for Cryptanalytic Research"
+authors = ["hellman"]
+license = "MIT"
+readme = "README.md"
+keywords = ["cryptanalysis", "cryptography", "S-Boxes"]
+classifiers = [
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Mathematics',
+    'Topic :: Security :: Cryptography',
+]
+
+[tool.poetry.urls]
+homepage = "http://github.com/hellman/cry"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+bint = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
