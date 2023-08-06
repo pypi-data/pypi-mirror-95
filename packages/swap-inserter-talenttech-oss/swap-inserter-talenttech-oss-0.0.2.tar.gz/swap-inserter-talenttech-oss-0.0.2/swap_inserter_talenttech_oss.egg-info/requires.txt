@@ -1,0 +1,2 @@
+clickhouse-balanced-talenttech-oss==0.0.1
+vertica-connector-talenttech==1.1.3
