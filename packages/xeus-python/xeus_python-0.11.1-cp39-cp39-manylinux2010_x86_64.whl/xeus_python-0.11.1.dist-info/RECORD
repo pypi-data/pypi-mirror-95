@@ -1,0 +1,11 @@
+xpython_launcher.py,sha256=zSY-TG6liqImrhTeKMEXRdsEuCvzkpXsZ4ZkeW4MHnw,385
+xpython/xpython_extension.cpython-39-x86_64-linux-gnu.so,sha256=QlnigV6fq9XzDIvw6p-0iB8bZxqZDg0TVQh5wMx7ojw,5206424
+xpython/__init__.py,sha256=CbW79f27_ZXHOjNBJEglG4Dn5GBijJvXJwmf5a2SbjI,39
+xeus_python-0.11.1.data/data/share/jupyter/kernels/xpython/logo-32x32.png,sha256=jbE1V2z-E-ol3NzZY_jYKnZyhSrY-Qb8WZgO1tj9Ipk,1379
+xeus_python-0.11.1.data/data/share/jupyter/kernels/xpython/kernel.json,sha256=MQZKTUO7-KmSV8wjCEUliYwmk5PasxiRatcseh8OISQ,217
+xeus_python-0.11.1.data/data/share/jupyter/kernels/xpython/logo-64x64.png,sha256=L2Wd22HYX7X7dyzLvff7nOZ5gyC2h4OvnViWCN-UIC0,3131
+xeus_python-0.11.1.dist-info/LICENSE,sha256=WvdF-7mGwDyzMvBMaZQHGbNiSAlWm1n4fhmQyyvB_MM,1552
+xeus_python-0.11.1.dist-info/METADATA,sha256=QufguRaKFm2gUIBE_4InPIbTD1CqozECqm5xeupHz0Q,333
+xeus_python-0.11.1.dist-info/top_level.txt,sha256=XtzggjVzmp4R-5T4I4R_gyLydIcRMhatWCkrCrsPDE0,25
+xeus_python-0.11.1.dist-info/WHEEL,sha256=_TfTpUMQPP_RbVg8LiDE-xKY7V9uCY3Zp4BtYMftbOY,105
+xeus_python-0.11.1.dist-info/RECORD,,
