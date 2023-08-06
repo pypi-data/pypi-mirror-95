@@ -1,0 +1,5 @@
+Click>=7.0
+cy_components>=0.3.4
+cy_widgets>=0.4.18
+cy_data_access>=0.4.19
+fracdiff==0.2.5
