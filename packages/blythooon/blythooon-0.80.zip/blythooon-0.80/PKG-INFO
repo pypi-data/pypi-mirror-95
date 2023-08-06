@@ -1,0 +1,77 @@
+Metadata-Version: 1.1
+Name: blythooon
+Version: 0.80
+Summary: (Net-) Installer for semi-automatically creating a Python runtime environment comprising all libraries necessary to run scientific applications with (Qt 4.8 based) GUIs.
+Home-page: https://www.blackward.de
+Author: Dominik Niedenzu
+Author-email: blythooon@blackward.de
+License: Proprietary License
+Description: Blythooon is a powershell script based (net-) installer for semi-automatically creating a Python runtime environment comprising also and in particular:
+        
+         + Python      2.7.18
+         + Virtualenv 20.2.2
+         + PySide      1.2.2
+         + NumPy       1.16.6
+         + PyQtGraph   0.10.0
+         + Matplotlib  2.2.5
+         + SciPy       1.1.0
+         + PySerial    3.5
+         + Pyadaaah    0.90
+        
+        (Blythooon yet is available/working just for Windows 10). Said Python runtime environment has everything on board to run high quality scientific applications with GUIs based on Qt 4.8.
+        
+        
+        Download and save this Blythooon-ZIP-archive anywhere on your PC, unzip it resp. extract it's contents and then start the installation process by double-clicking the file "blythooonInstaller.bat". You might need administrator privileges or/and you might have to temporarily disable your firewall before that.
+        
+        
+        After said installation you can find the python.exe in the path:
+        
+        $home\Blythooon\Environments\PysideGui\Scripts\python.exe
+        
+        whereby $home is the path to your home directory (e.g. C:\Users\DN).
+        
+        
+        At the end of the installation process the Blythooon-Test program is started. If all buttons are green (and not yellow or red instead), your Blythooon environment seems to work (resp. your installation seems to have worked).
+        
+        
+        If you e.g. want to install further packages into said Python environment, you can do so by:
+        
+        $home\Blythooon\Environments\PysideGui\Scripts\python.exe -m pip install packageName
+        
+        whereby packageName stands for any valid packageName e.g. from pypi.org. . Naturally you can also use other pip commands alike 'pip list' in the same way.
+        
+        
+        Please note, that you also can run the Blythooon installer powershell script using the cmd console, by e.g. typing (navigate to the belonging directory before that):
+        
+        powershell -executionpolicy bypass .\blythooon.ps1 -license
+        
+        
+        Available options are:
+        
+        blythooon.ps1
+        blythooon.ps1 -download
+        blythooon.ps1 -download -verbose
+        blythooon.ps1 -check
+        blythooon.ps1 -install
+        blythooon.ps1 -uninstall
+        blythooon.ps1 -help
+        blythooon.ps1 -license
+        
+        Have fun...
+        
+        
+        Further informations and links can be found on my homepage (see the link on the left hand).
+        
+        
+        
+Platform: Windows 10
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: Other/Proprietary License
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development
