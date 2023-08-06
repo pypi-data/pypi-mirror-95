@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+urbangrammar_graphics.egg-info/PKG-INFO
+urbangrammar_graphics.egg-info/SOURCES.txt
+urbangrammar_graphics.egg-info/dependency_links.txt
+urbangrammar_graphics.egg-info/requires.txt
+urbangrammar_graphics.egg-info/top_level.txt
