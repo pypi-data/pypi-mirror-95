@@ -1,0 +1,17 @@
+mypy_boto3_sns/__init__.py,sha256=I16ZB5Aa-_8ctuVRthdvwdveBFuCcA0uR8e7j0nk0qs,2227
+mypy_boto3_sns/__init__.pyi,sha256=-mANRawd3f1kXLHaM5GcNhDxnTytSNX9vtQHmSXX4xA,2225
+mypy_boto3_sns/__main__.py,sha256=3uD_H29FY_Ichq5QXhdEZi-ncA3ygGNSlvMZeUFzXvA,384
+mypy_boto3_sns/client.py,sha256=T30rDPqfCuNc0sfHEahjpMuKoA79hAAjoZIBC8EzQkA,16579
+mypy_boto3_sns/client.pyi,sha256=qQn2CJVYYiRsAg7Ccx1jrMu5An81MJiAm_9_6evWR5Q,16533
+mypy_boto3_sns/paginator.py,sha256=U6fVmEVZKZ9B9v2K7QsTa2R7tTvWSEqNKdRVmrACn3Q,5542
+mypy_boto3_sns/paginator.pyi,sha256=OZnHvVPF3UEQ8sYQhy2emfpuVXDGo8jxA5H0Z9Z9w6M,5536
+mypy_boto3_sns/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_sns/service_resource.py,sha256=Y36rs8zAwNcWvMK_cu2DmP1yzAuccCBB3UNwR4l_g6g,16063
+mypy_boto3_sns/service_resource.pyi,sha256=gLdOQjpsGENy3fKNiGid720u1EX4YAB_HfSgsfkrZXc,15990
+mypy_boto3_sns/type_defs.py,sha256=621iG1Uw5GhO7BdwsLKCr6Wm_ZbdGTKoAhsnGdS0NZc,5346
+mypy_boto3_sns/type_defs.pyi,sha256=OikzxjymEoC6orDfBUqoEWihFPt2B5c6B_xlALImwc4,5343
+mypy_boto3_sns/version.py,sha256=dNkxa6WRzlHG0iWDYd0Jt16JX2-UHdcdRqX5eIIS6Cc,56
+mypy_boto3_sns-1.17.9.0.dist-info/METADATA,sha256=LwtvO83zEjCx7gbQJT6f1XYPuIbSzaSqkFB-L_9nkdU,10039
+mypy_boto3_sns-1.17.9.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_sns-1.17.9.0.dist-info/top_level.txt,sha256=0kmwqPeYy0ccacbtqdREvSNW0HFDg5wZyEXNkY1Y7iY,15
+mypy_boto3_sns-1.17.9.0.dist-info/RECORD,,
