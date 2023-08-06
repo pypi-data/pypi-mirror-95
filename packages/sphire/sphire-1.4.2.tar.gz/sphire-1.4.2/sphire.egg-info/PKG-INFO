@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sphire
+Version: 1.4.2
+Summary: Python binaries and libraries for the SPHIRE cryo-EM package
+Home-page: https://github.com/cryoem/eman2
+Author: SPHIRE Development Team
+Author-email: sphire-devel@mpi-dortmund.mpg.de
+License: GPLv3
+Description: # SPHIRE
+        
+        This package contains the python executables and libraries of the SPHIRE Software Package. 
+        It needs to be installed in an EMAN Environment. 
+        It's not a standalone package.
+        
+        # Compatibility
+        
+        Version 1.4.x needs EMAN >= 2.9
+        
+        # More information
+          
+        https://sphire.mpg.de
+         
+        
+Platform: UNKNOWN
+Requires-Python: >3.4.0
+Description-Content-Type: text/markdown
