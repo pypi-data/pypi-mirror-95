@@ -1,0 +1,10 @@
+cornflow_client/__init__.py,sha256=H-Dls7XOBuX14dZ_lDR967jxWKxv-iC4Cn0sRzzInUo,123
+cornflow_client/constants.py,sha256=-GWqgqXSe64dxM2KkfmfNfdbVKVnJ8LRJCAhBwvYMVQ,380
+cornflow_client/cornflow_client.py,sha256=G3nfPw2zL-7KHaK7YIN0pYg8vKyF7IJ5UOyHu6dG7RM,9274
+cornflow_client/schema_dict_functions.py,sha256=Xt3BqzrnuaKJGCh1JBPY9sYusIqVaPRA_GaA5StjOjI,3127
+cornflow_client/schema_manager.py,sha256=v5kujXwKDhdc3dBYQrlgCPDX3IwNPDSv00GChC_6t5Y,15972
+cornflow_client-0.0.17.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cornflow_client-0.0.17.dist-info/METADATA,sha256=B8IbS37ND95ZxV1gBwU2_TVay5w5736vPwyIbn8AM84,1542
+cornflow_client-0.0.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cornflow_client-0.0.17.dist-info/top_level.txt,sha256=aGt4Rpe6lqFx0nYSam0KJP_CQuROdjZtte62ER2u3Zo,16
+cornflow_client-0.0.17.dist-info/RECORD,,
