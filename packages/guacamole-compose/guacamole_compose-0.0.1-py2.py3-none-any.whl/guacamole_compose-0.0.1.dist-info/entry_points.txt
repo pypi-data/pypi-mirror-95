@@ -1,0 +1,3 @@
+[console_scripts]
+guacamole-compose = __init__:main
+
