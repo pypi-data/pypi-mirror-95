@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: streamlit-image-crop
+Version: 0.2.0
+Summary: A Streamlit component based on React Image Crop.
+Home-page: https://github.com/mitsuse/streamlit-image-crop
+License: ISC
+Keywords: streamlit
+Author: Tomoya Kose
+Author-email: tomoya@mitsuse.jp
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: streamlit (>=0.76.0,<0.77.0)
+Project-URL: Repository, https://github.com/mitsuse/streamlit-image-crop
+Description-Content-Type: text/markdown
+
+# Streamlit Image Crop
+
+A [Streamlit](https://www.streamlit.io/) component based on [React Image Crop](https://github.com/DominicTobias/react-image-crop).
+
+![Screenshot](https://raw.githubusercontent.com/mitsuse/streamlit-image-crop/master/screenshot.png)
+
+## Installation
+
+```
+pip install streamlit-image-crop
+```
+
+## Example
+
+Try [example.py](https://github.com/mitsuse/streamlit-image-crop/blob/master/example.py).
+
+First, you need to install dependencies:
+
+```
+git clone https://github.com/mitsuse/streamlit-image-crop.git && cd streamlit-image-crop
+pip install poetry
+poetry install
+```
+
+Next, run `react-scripts start`:
+
+```
+cd streamlit-image-crop/frontend/ && npm run start
+```
+
+Finally, run the example:
+
+```
+poetry run streamlit run example.py
+```
+
+## License
+
+Streamlit Image Crop is licensed under the ISC license.
+Please read [LICENSE](https://github.com/mitsuse/streamlit-image-crop/blob/master/LICENSE) for the detail.
+
