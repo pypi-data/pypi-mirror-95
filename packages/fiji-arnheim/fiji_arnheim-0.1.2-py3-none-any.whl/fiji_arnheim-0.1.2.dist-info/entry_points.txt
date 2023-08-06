@@ -1,0 +1,3 @@
+[console_scripts]
+fiji-arnheim=fiji_arnheim.run:main
+
