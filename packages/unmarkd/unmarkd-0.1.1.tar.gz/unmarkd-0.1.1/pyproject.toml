@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "unmarkd"
+version = "0.1.1"
+license = "GPL-3.0-or-later"
+description = "A markdown reverser."
+authors = ["Bryan Hu <bryan.hu.2020@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/ThatXliner/unmarkd/tree/master"
+documentation = "https://github.com/ThatXliner/unmarkd/tree/master#documentation"
+classifiers = ["Development Status :: 5 - Production/Stable", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Typing :: Typed", "Topic :: Text Processing :: Markup :: Markdown", "Topic :: Text Processing :: Markup :: HTML", "Topic :: Software Development :: Libraries :: Python Modules"]
+include = ["LICENSE.md", "README.md"]
+[tool.poetry.dependencies]
+python = "^3.6"
+beautifulsoup4 = "^4.9.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.812"
+pylint = "^2.6.2"
+toml = "^0.10.2"
+pytest-cov = "^2.11.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
