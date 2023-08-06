@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: snirpinball
+Version: 0.2.0
+Summary: a bot that can play pinball by himself
+Home-page: UNKNOWN
+Author: snir dekel
+Author-email: snirdekel101@gmail.com
+License: MIT
+Description: cool bot that plays pinball by tracking the ball
+Keywords: computer vision
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
