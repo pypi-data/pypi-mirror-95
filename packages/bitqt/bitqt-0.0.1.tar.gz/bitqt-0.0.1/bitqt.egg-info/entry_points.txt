@@ -1,0 +1,3 @@
+[console_scripts]
+bitqt = bitqt.__main__:main
+

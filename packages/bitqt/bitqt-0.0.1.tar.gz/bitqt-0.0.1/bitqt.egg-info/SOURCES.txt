@@ -1,0 +1,11 @@
+README.md
+setup.py
+bitqt/__init__.py
+bitqt/__main__.py
+bitqt.egg-info/PKG-INFO
+bitqt.egg-info/SOURCES.txt
+bitqt.egg-info/dependency_links.txt
+bitqt.egg-info/entry_points.txt
+bitqt.egg-info/requires.txt
+bitqt.egg-info/top_level.txt
+test/test_.py
