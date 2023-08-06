@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: rhutils
+Version: 0.1.0
+Summary: Rhesus factor utilities
+Home-page: https://github.com/allanbreyes/rhutils
+Author: Allan Reyes
+Author-email: pypi@reyes.sh
+License: MIT license
+Keywords: rhutils
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+
+=======
+rhutils
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/rhutils.svg
+        :target: https://pypi.python.org/pypi/rhutils
+
+.. image:: https://img.shields.io/travis/allanbreyes/rhutils.svg
+        :target: https://travis-ci.com/allanbreyes/rhutils
+
+.. image:: https://readthedocs.org/projects/rhutils/badge/?version=latest
+        :target: https://rhutils.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Rhesus factor utilities
+
+
+* Free software: MIT license
+* Documentation: https://rhutils.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-02-19)
+------------------
+
+* First release on PyPI.
+
+
