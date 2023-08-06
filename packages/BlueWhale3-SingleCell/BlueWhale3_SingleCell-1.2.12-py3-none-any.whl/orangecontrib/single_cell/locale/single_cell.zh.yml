@@ -1,0 +1,387 @@
+package_label: "单因素描述"
+package_desc: "单因素描述"
+
+common:
+  data: "数据"
+  genes: "基因"
+  transformed_data: "转换后的数据"
+  genes_components: "每n.组成部分的基因数"
+  selected_data: "选择的数据"
+  contingency_table: "列联表"
+  scorer: "计分器"
+  reduced_data: "减少的数据"
+  scores: "计分器"
+  preprocessed_data: "预处理数据"
+
+scbnorm:
+  identity_link: "身份链接"
+  log_link: "日志链接"
+
+owaligndatasets:
+  name: "对齐数据集"
+  desc: "将多个数据集与相关可视化图对齐。"
+  row_score: "评分："
+  btn:
+    apply: "应用"
+    apply_automatically: "自动应用"
+  label:
+    num_components: "组件数量"
+    num_genes: "基因数量"
+    correlation_component: "相关分量"
+    correlation_strength: "相关强度"
+  box:
+    data_source_indicator: "数据源指示符"
+    canonical_correlation_analysis: "典型相关分析"
+    post-process: "后期处理"
+    shared_genes: "共用基因"
+  msg:
+    no_features: "至少需要有1个特征"
+    no_instances: "每个类至少需要2个数据实例"
+    no_class: "至少需要一个离散类变量"
+    nan_class: "数据包含所选数据源指示器的未定义实例"
+    nan_input: "输入数据包含非数值"
+    sparse_data: "不支持稀疏数据"
+    only_one_dataset: "数据源指示符属性列必须至少指示两个数据集。"
+  gbox:
+    pearson_correlation: "皮尔逊相关"
+    spearman_correlation: "斯皮尔曼相关"
+    biweights_midcorrelation: "双权中相关"
+    quantile_normalization: "分位数标准化"
+    dynamic_time_warping: "动态时间归整"
+  report:
+    source_id: "源ID"
+    num_components: "所选组件数"
+    num_genes: "所选基因数"
+    score: "得分"
+    quantile_normalization: "分位数标准化"
+    quantile_normalization_percentage": "分位数标准化百分比"
+    dynamic_time_warping: "动态时间归整"
+
+owbatchnorm:
+  name: "批量效应消除"
+  desc: "单个单元数据集的批量处理效果标准化。"
+  label:
+    var: "变量"
+    score: "分数"
+  checkbox:
+    skip_zeros: "跳过零表达式"
+  box:
+    info: "信息"
+    info_label: "输入端没有数据。"
+    method: "方法"
+    batch_box: "批量变量选择"
+  msg:
+    discrete_attributes: "无法处理具有离散属性的数据。"
+    missing_values: "缺少的值已替换为0。"
+    negative_values: "由于数据中存在负值，无法使用当前设置。"
+  btn:
+    apply: "应用"
+    apply_automatically: "自动应用"
+  text:
+    input_no_data: "输入端没有数据。"
+    cell_gene: "{} 个细胞，{} 个基因\n"
+    meta_features: "{} 元特征"
+    no_meta_feature: "（无元特征）"
+  report:
+    method: "方法"
+    var: "批量变量选择"
+    none: "无"
+    skip_zero_expression: "（跳过零表达式）"
+
+owdotmatrix:
+  name: "点阵"
+  desc: "执行聚类分析。"
+  info_format_str: "{}基因\n{}细胞\n{}簇"
+  btn:
+    apply: "&应用"
+  checkbox:
+    biclustering: "排列细胞和基因"
+    transpose: "转置"
+    log_scale: "日志数目"
+    normalize: "标准化数据"
+  box:
+    cluster_var: "群集变量"
+    aggregation: "聚合"
+    options: "选项"
+    plot_size: "绘图大小"
+  msg:
+    no_discrete_variable: "数据中没有离散变量。"
+    to_many_attributes: "输入的基因太多，首先显示{}个基因。"
+  gbox:
+    mean: "均值表达式"
+    median: "中位数表达式"
+    min: "最小值表达式"
+    max: "最大值表达式"
+    fraction: "分数表达"
+
+owdropout:
+  name: "退出基因选择"
+  desc: "基于退出的基因选择"
+  label:
+    bottom: "平均log2非零表达式"
+    left: "零表达式频率"
+  box:
+    info: "信息"
+    filter: "过滤器"
+  btn:
+    send_selection: "发送所选项"
+    send_automatically: "自动发送"
+    number_genes: "基因数量："
+    apply_exp: "应用 exp(-a(x-b))+c"
+  msg:
+    less_selected: "不能选择超过{}个基因。"
+    missing_entrez_id: "基因表中缺少“Entred ID”。"
+  text:
+    input_no_data: "输入端没有数据"
+  report:
+    number_genes: "基因数量"
+
+owfilter:
+  name: "筛选器"
+  desc: "筛选细胞/基因"
+  btn:
+    min: "最小"
+    max: "最大"
+    data_points: "显示数据点"
+    log_scale: "日志数目"
+    commit: "提交"
+    cells: "细胞"
+    genes: "基因"
+    data: "数据"
+    select_all: "全选"
+  box:
+    info: "信息"
+    info_label: "输入端没有数据\n"
+    filter_type: "筛选器类型"
+    filter: "筛选器"
+    plot_options: "绘图选项"
+  msg:
+    sampling_in_effect: "数据点太多，无法显示。{}数据点的{}采样。"
+    invalid_range: "输入数据中的负值。此筛选器仅为非负值定义。"
+    invalid_domain:  "无效域\n域包含非数字列。"
+  gbox:
+    total_counts: "总数"
+    total_counts_tip: "细胞/基因所有计数之和"
+    detection_count: "检测计数"
+    detection_count_tip: "非零表达的细胞/基因数量"
+  label:
+    cell: "细胞筛选器"
+    cell_tip: "通过总计数（库大小）或表达基因的数量过滤细胞（行）。"
+    genes: "基因筛选器"
+    genes_tip: "通过映射到基因或基因表达细胞数量的总计数筛选基因（列）。"
+    data: "数据筛选器"
+    data_tip: "过滤掉零值和小测量值"
+    total_counts_library: "总数（库大小）"
+    express_genes: "表达基因数"
+    total_counts: "总数"
+    number_cells: "基因表达的细胞数量"
+    gene_expression: "基因表达"
+    log_scale: "1 + '{}' <i>()</i>"
+  text:
+    missing_data: "输入端没有数据。\n"
+    info: "{N}个细胞和{M}个基因的数据"
+    select_subject: "{} {subject}可选"
+    out_filtered: "所有的{}被过滤掉"
+    cell: "细胞"
+    gene: "基因"
+
+owloaddata:
+  label:
+    file: "文件："
+  row:
+    data_start: "数据始于"
+    header_row: "标题行"
+    first: "首先"
+    column_row_label: "行标签是列"
+    cell: "% 细胞"
+    gene: "% 基因"
+  box:
+    header_row_label: "标题和行标签"
+    data_struct: "输入数据结构"
+    sample_data: "样本数据"
+    annotation_files: "细胞&&基因注释文件"
+  btn:
+    gene_cell: "行为基因，列为细胞"
+    cell_gene: "行为细胞，列为基因"
+    cell_annotation: "细胞注释"
+    gene_annotation: "基因注释"
+    load_data: "加载数据"
+    reload: "重新加载"
+  text:
+    rows: "{:n} 行"
+    columns: "{:n} 列"
+  format:
+    count: "计数文件(*.count)"
+    tab: "Tab分隔文件 (*.tsv *.tab)"
+    csv: "Comma分隔文件(*.csv)"
+    matrix: "10倍基因条形码矩阵(matrix.mtx)"
+    xls: "Excel工作表(*.xls *.xlsx)"
+    pickle: "Pickled Python对象文件(*.pkl *.pickle)"
+    all_file: "所有文件(*.*)"
+    meta: "元文件(*.meta)"
+
+owmultisample:
+  name: "加载数据"
+  desc: "为多样本分析加载样本"
+  tooltip_missing_file_system: "文件系统丢失"
+  text:
+    recent_files: "最近文件"
+    add_files: "添加文件："
+    browse: "浏览…"
+  msg:
+    file_in_list: "文件{}已在列表中。"
+  btn:
+    intersection: "交集"
+    union: "并集"
+    output_genes: "输出基因："
+    load_data: "加载数据"
+  label:
+    file: "文件"
+    source_name: "来源名称"
+    cells: "细胞"
+    genes: "基因"
+    size: "大小"
+    sparsity: "稀疏"
+  report:
+    concatenated_sample: "连接的样本"
+    file: "文件"
+    no_file: "没有文件。"
+    output_genes: "输出基因"
+
+owscdatasets:
+  name: "单个单元数据集"
+  desc: "从联机存储库加载数据集"
+  label:
+    title: "标题"
+    size: "大小"
+    cells: "细胞"
+    genes: "基因"
+    organism: "生物体"
+    target: "目标"
+    tags: "标签"
+
+owscorecells:
+  name: "计分细胞"
+  desc: "根据给定的一组基因添加一个细胞分数"
+  placeholder_column_name: "列名称…"
+  btn_apply: "&应用"
+  report_gene: "基因"
+  info:
+    data: "数据：{}细胞，{}基因。\n"
+    markers: "标记：{}基因。\n"
+    missing_data: "输入端没有基因。\n"
+    gene_matching: "基因匹配：{}在输入数据中找到标记。\n"
+  box:
+    input_info: "输入信息"
+    aggregation: "聚合"
+    column_name_output: "输出数据中的分数列名："
+  msg:
+    no_genes: "数据中没有匹配的基因"
+    some_genes : "{} ({}的)数据中未找到基因"
+    organism_mismatch: "输入数据中的生物体与标记基因不匹配"
+    missing_annotation_input: "输入基因数据中缺少对基因ID和生物体的注释。"
+    missing_gene_id_input: "输入基因数据中缺少基因识别信息。"
+    missin_organism_input: "输入基因数据中缺少生物体信息"
+    missing_annotation_marker: "标记基因数据中缺少对基因id和生物体的注释。"
+    missing_gene_id_marker: "标记基因数据中缺少基因识别信息。"
+    missin_organism_marker: "标记基因数据中缺失的生物体信息。"
+  gbox:
+    mean_expression: "均值表达式"
+    mean_normalized: "均值标准化表达式"
+    nanmedian: "中位数表达式"
+    nanmax: "最大值表达式"
+    percent_nonzero: "表达标记的分数"
+    score: "分数"
+
+owscoregenes:
+  name: "计分基因"
+  desc: "根据基因的相关性对基因进行评分和筛选。"
+  box:
+    scoring_methods: "计分方法"
+    select_genes: "选择基因"
+  btn:
+    none: "无"
+    all: "全部"
+    manual: "使用手册"
+    best_ranked: "最优排名："
+    send: "发送"
+    mean: "均值"
+    variance: "方差"
+    dispersion: "离散"
+    cv: "科夫变异系数（CV）"
+    info_gain: "信息增益"
+    univar_reg: "一元回归"
+  lable:
+    info_gain: "信息增益"
+    univar_reg: "Univar. reg."
+    mean: "均值"
+    variance: "方差"
+    dispersion: "；离散"
+    cv: "CV"
+  msg:
+    no_target_var: "数据没有单个目标变量。你仍然接入无监督的记分器，如PCA。"
+    missings_imputed: "缺失值将根据需要进行插补。"
+    invalid_type: "无法处理目标变量类型{}"
+    inadequate_learner: "记分器{}不足：{}"
+    no_attributes: "没有属性"
+  status:
+    running: "运行中"
+  report:
+    input: "输入"
+    ranks: "排名"
+    output: "输出"
+
+owscpreprocess:
+  name: "单细胞预处理"
+  desc: "预处理单个单元数据集"
+  label:
+    gene_groups: "基因群组。"
+    logarithmic_scale: "对数标度"
+    logarithmic_scale_desc: "对数标度"
+    binarize_exp: "二进制表达式"
+    binarize_exp_desc: "二进制表达式"
+    normalize: "标准化样本"
+    normalize_desc: "标准化样本"
+    standardize: "标准化基因"
+    standardize_desc: "标准化基因"
+    select_genes: "选择变量最多的基因"
+    select_genes_desc: "选择变量最多的基因"
+    dropout: "退出基因选择"
+    dropout_desc: "退出基因选择"
+  btn:
+    cpm: "百万分之一"
+    med: "中位数"
+    cell_group: "细胞群组："
+    lower_bound: "下限："
+    upper_bound: "上限："
+    dispersion: "离散"
+    variance: "方差"
+    mean: "均值"
+    compute_statistics: "计算统计信息"
+  row:
+    logarithm_base: "对数基数："
+    condition: "条件："
+    threshold: "阈值："
+    clipping: "裁剪"
+    number_genes: "基因数："
+    genes_number: "基因数："
+  gbox:
+    binary_logarithm: "2（二进制对数）"
+    natural_logarithm: "e（自然对数）"
+    common_logarithm: "10（常用对数）"
+    greater_equal: "大于或等于"
+    greater: "更优"
+  msg:
+    discrete_attributes: "具有离散属性的数据无法进行预处理。"
+    missing_values: "缺失值已替换为0。"
+    bad_pp_combination: "在标准化/日志转换后不应使用Dropout。"
+  report:
+    condition_threshold: "条件：{}，阈值：{}"
+    group_by: "，分组依据：{}"
+    method: "方法：{}"
+    lower_bound: "下限：{}"
+    upper_bound: "上限：{}"
+    no_clipping: "不裁剪"
+    method_genes: "方法：{}，基因数：{}"
+    number_groups: "，群组数：{}"
+    number_genes: "基因数：{}"
