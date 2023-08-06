@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: wire4-auth
+Version: 1.1.0
+Summary: Wire4Authenticator
+Home-page: http://wire4.mx
+Author: Wire4
+Author-email: speiok-team@tcpip.tech
+License: UNKNOWN
+Description:     Herramienta para autenticación de la API de Wire4  # noqa: E501
+            
+Keywords: Swagger,Wire4Authenticator
+Platform: UNKNOWN
