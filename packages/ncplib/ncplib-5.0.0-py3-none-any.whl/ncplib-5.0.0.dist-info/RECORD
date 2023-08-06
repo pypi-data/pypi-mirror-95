@@ -1,0 +1,13 @@
+ncplib/__init__.py,sha256=fLSxbSkfx2wPdwvsNyZ1En8xkGw2B91hyvT6HOxTfl4,916
+ncplib/client.py,sha256=eznqJV43htODDLrxBt-uq877qwVmYJRBkbxqajleOFo,5846
+ncplib/connection.py,sha256=xFaFfVT9cB3i3bU9fsDiJqeXoWSX25LmzZ0YQv9CIj8,19193
+ncplib/errors.py,sha256=ssxOZaqNefWsPF14ZkkEu2VoLq_Rtg1vrS4moLdGUrk,3167
+ncplib/packets.py,sha256=veU2cfvtE7SGGxG78neFEbj7W66zp3tjnSdTfYoyr3k,10916
+ncplib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ncplib/server.py,sha256=1XsmxXXWy8JtVeH3I7tZkHEhR3P_iotVfGLxrZu8fCs,9907
+ncplib/values.py,sha256=cZuNiXKrggPHdvkT2DfN_thyk_lrlFsL5ZwPcpq0uCs,2070
+ncplib-5.0.0.dist-info/LICENSE,sha256=oI4FyQPzEtgmhNqfE9-VexNmH2rzy8ZmMGcjjI-h4qA,1048
+ncplib-5.0.0.dist-info/METADATA,sha256=66R4zY9MuWxznz4kYTY2GU1hjQhZqIYhyJF9GJQtUVw,591
+ncplib-5.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ncplib-5.0.0.dist-info/top_level.txt,sha256=t6j6B4rZZaq4FGOBZ15hO_FXoYoXuXK-3X8ag22M_M0,7
+ncplib-5.0.0.dist-info/RECORD,,
