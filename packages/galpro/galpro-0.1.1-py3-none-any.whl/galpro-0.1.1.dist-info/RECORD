@@ -1,0 +1,12 @@
+galpro/__init__.py,sha256=OyxJQ5Dqsm5Eo9M4LZKfhOI07KS0feZzucbC4cCLxrM,25
+galpro/conf.py,sha256=ScMseEaoRcfAOamre_smgmfOkEwar7CUoaOP3J4t3PE,1758
+galpro/model.py,sha256=2LDVZz9WOpvpUjr8uKN9QogeBvpeRte8RY4Oh2MtFAk,12233
+galpro/plot.py,sha256=kHREl-vnXUdaOSgPHyi-kFqczvpZHch00uE1DDulWOs,16344
+galpro/test.py,sha256=M52akg5e_2Q52kGzn24vYm-8LfxXpHKrcN5FPzAl-QM,2779
+galpro/utils.py,sha256=B4akF4oLP56zRgQDXrwqnHijRjwWMC8-Wdmm8UMElIA,5712
+galpro/validation.py,sha256=KPjZDLNfGDYO1H-KQ9SVlgppVnfZDpc9jhyGKlaYoB8,7353
+galpro-0.1.1.dist-info/LICENSE,sha256=-etpFKmWAzGj6OEQxa6maBkVGQuNUNXUs2Sqf34-vPM,1064
+galpro-0.1.1.dist-info/METADATA,sha256=xae_JLX3GA0of1S47xCJrudMKHy0kN3Ua1nady5n8wA,660
+galpro-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+galpro-0.1.1.dist-info/top_level.txt,sha256=-C8Kyu4URnfgDt6q_d8qnxJtCaJWpGfGr9iRxuUfxmY,7
+galpro-0.1.1.dist-info/RECORD,,
