@@ -1,0 +1,11 @@
+nostocalean/__init__.py,sha256=8ssZBuYCRDYRTvGRw9BB02Le7bjaKMQGhvIsly2rxu8,149
+nostocalean/flavor.py,sha256=T9vMYQO0V2dEroO8lb875_wzlHp-_3KDt7Rv4zgsfpU,751
+nostocalean/functions.py,sha256=-6d0ITEBhI915zGGzY7SNsk2TCZpyzBKeRsXfJCC__U,1467
+nostocalean/ols.py,sha256=FDIWebjVYNAD0iU1oupyd3HhxGKEAE8Arw96Ti1jnv4,2396
+nostocalean/plotting.py,sha256=nnhq15DBcBXigJUB__liIOBS3ftAYHT_CoRgoDoXZaA,2741
+nostocalean/utility_functions.py,sha256=gEGT_gvpM7fr51lWZaDDVbBgZ3-P5M68junUH5iUECE,392
+nostocalean-0.0.4.dist-info/LICENSE,sha256=02WVckEJAC3CYg4S-02QMr70RJVdNJqYGmguV5akH1A,1073
+nostocalean-0.0.4.dist-info/METADATA,sha256=Vqm0Tz2-tA7P426_FpkypXjfgXygkEteHyAE4REZGEA,425
+nostocalean-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nostocalean-0.0.4.dist-info/top_level.txt,sha256=Pm4TGT59p3DdWr72lMGUP-JcHrc0mPN2JzkjZN0JV44,12
+nostocalean-0.0.4.dist-info/RECORD,,
