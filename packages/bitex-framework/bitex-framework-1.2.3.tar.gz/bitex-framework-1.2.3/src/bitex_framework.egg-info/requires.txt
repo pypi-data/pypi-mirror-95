@@ -1,0 +1,15 @@
+pluggy
+requests
+
+[ci]
+twine
+
+[dev]
+black
+flake8
+isort
+
+[test]
+pytest
+pytest-cov
+tox
