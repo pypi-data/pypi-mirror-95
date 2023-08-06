@@ -1,0 +1,13 @@
+mbf_pandas_msgpack/__init__.py,sha256=9_niyVCr2y-eaQBDMnHJU5JkWOb7usCCHojE8CodBbY,715
+mbf_pandas_msgpack/_move.cpython-36m-darwin.so,sha256=lY7pvyepB99MRPLdPoC-Y9CPJUECKhmSY1rQc12cztY,35040
+mbf_pandas_msgpack/packers.py,sha256=nbCZ_UEfcwG9CjBEdnJc1kHHP9hae7qmrEVC9hBhmII,26783
+mbf_pandas_msgpack/msgpack/__init__.py,sha256=V6sWhwHsUbQm0mYzivTBk1YWGgZyY3Y3sFo2Jb95mlc,1154
+mbf_pandas_msgpack/msgpack/_packer.cpython-36m-darwin.so,sha256=bSWHQlo1WrIDzmLuD_at3Y_FzJlzIgN5WbsjjHFcoRo,101248
+mbf_pandas_msgpack/msgpack/_unpacker.cpython-36m-darwin.so,sha256=Z6c6fX9Ny3FaAQJJOh57fIM_sDmcruz-TYLl2_ykWBM,129872
+mbf_pandas_msgpack/msgpack/_version.py,sha256=QXoo6iFXPa7HetqR8eOrP1u3Z8qNt3S3zl_GyDwCT6Y,20
+mbf_pandas_msgpack/msgpack/exceptions.py,sha256=dZWm1HSUintMEwZ89VgJPZjZGokzKvM0f9pdB44Jh68,505
+mbf_pandas_msgpack-0.5.1.dist-info/LICENSE.md,sha256=GdeiZYtWrq2E9HPFfv-q4V2flgVIxiaQgsYon7M2DUo,3777
+mbf_pandas_msgpack-0.5.1.dist-info/METADATA,sha256=Lonr49YbPGJpqHZmmMkcz99EBa3ZnkDFmHHzr2chexI,2184
+mbf_pandas_msgpack-0.5.1.dist-info/WHEEL,sha256=SCcPaD1xriZouD6EXl7AgcYiQmH1NgiskymVTsykSG4,110
+mbf_pandas_msgpack-0.5.1.dist-info/top_level.txt,sha256=2wOMmAEB9RB0c0dkXofOyHbJeixK-7SdovVqMzrLRKM,19
+mbf_pandas_msgpack-0.5.1.dist-info/RECORD,,
