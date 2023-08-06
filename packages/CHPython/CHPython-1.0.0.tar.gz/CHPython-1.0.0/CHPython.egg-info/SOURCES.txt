@@ -1,0 +1,7 @@
+setup.py
+CHP/CHP.py
+CHP/__init__.py
+CHPython.egg-info/PKG-INFO
+CHPython.egg-info/SOURCES.txt
+CHPython.egg-info/dependency_links.txt
+CHPython.egg-info/top_level.txt
