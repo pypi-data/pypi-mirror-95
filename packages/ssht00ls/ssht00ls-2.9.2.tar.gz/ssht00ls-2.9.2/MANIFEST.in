@@ -1,0 +1,8 @@
+include ssht00ls/lib/*/
+include ssht00ls/lib/*/**
+include ssht00ls/lib/opensc/macos/*.so
+include ssht00ls/lib/opensc/macos/*.dylib
+include ssht00ls/classes/utils/*
+include ssht00ls/classes/utils/*/**
+include ssht00ls/static/media/icons/*
+include ssht00ls/static/media/icons/*/**
