@@ -1,0 +1,9 @@
+vision_transformer_pytorch/__init__.py,sha256=xfC2f0SRTj3gA1EgVV7_dYIxkFLD54dphE6VIwG-_xM,153
+vision_transformer_pytorch/model.py,sha256=Zh4EQ2LRN37rWqAB5YQN5yP66682FKKaUHVLZG8UK10,12525
+vision_transformer_pytorch/resnet.py,sha256=xZNe2gNzrafw5KQT0dSK4sqZviMqwPd72xSf-ALvIaM,6533
+vision_transformer_pytorch/utils.py,sha256=9NgXEayEk2GriVzYHHD19-S_wxo2yeOJg_VwpV6YaBA,5937
+vision_transformer_pytorch-1.0.3.dist-info/LICENSE,sha256=E_YoHOtNffLJjm7qVEVVQT5i-ZfffezU5eBrl3hwpKw,11342
+vision_transformer_pytorch-1.0.3.dist-info/METADATA,sha256=elruvGg4BYdwOAzfIHSacntF4VTpHfpkQCjcNV6u5wM,3938
+vision_transformer_pytorch-1.0.3.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+vision_transformer_pytorch-1.0.3.dist-info/top_level.txt,sha256=Wfp0CPF844oldLagPXjVmHqH0VZTylqXJyG9B2o419A,27
+vision_transformer_pytorch-1.0.3.dist-info/RECORD,,
