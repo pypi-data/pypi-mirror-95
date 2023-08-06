@@ -1,0 +1,12 @@
+attrs
+numpy
+kubernetes
+docker
+packaging
+requests
+pydantic
+cloudpickle
+python-rclone
+seldon-deploy-sdk
+conda-pack
+tensorflow
