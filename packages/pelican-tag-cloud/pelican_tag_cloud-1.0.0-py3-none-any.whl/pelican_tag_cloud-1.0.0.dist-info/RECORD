@@ -1,0 +1,11 @@
+pelican/plugins/tag_cloud/__init__.py,sha256=7Vt9NLOCZ4p1avetyPCVXAsKUOH8HpPFq_8iFiaP1so,33
+pelican/plugins/tag_cloud/tag_cloud.py,sha256=5Nm57lY0H87Atc7AvfA05sm9_E1230GpjyGNZG-MCwQ,2717
+pelican/plugins/tag_cloud/test_data/article_1.md,sha256=2vzl1Kxt6p1L4tKa168n45IMxnaDIjq6-G8AnvIL9Oc,59
+pelican/plugins/tag_cloud/test_data/article_2.md,sha256=PvUB0t1RTLX12Xf-MKPph52qOdXx6IatVscPYQiP5UA,65
+pelican/plugins/tag_cloud/test_data/article_3.md,sha256=HMXS3yIxFRrF3cr3EvvNGeJf4NtZU_ufHXz6f_5xnAI,57
+pelican/plugins/tag_cloud/test_data/article_4.md,sha256=QCG-6kKkk4LUt34O2M9TDGwxWZ0S8D_7ehAe9A6uKdg,53
+pelican/plugins/tag_cloud/test_data/article_5.md,sha256=tm_27JhnjFdttO7FeeTaCU-4Zf4zctr4uXMrTPN9RNg,62
+pelican/plugins/tag_cloud/test_tag_cloud.py,sha256=Ot9eKcZ_x76rxbBpQBHZ007bYrPSvPYeYOMIMV51Zu8,4313
+pelican_tag_cloud-1.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pelican_tag_cloud-1.0.0.dist-info/METADATA,sha256=POWpyAo_Epb8fmqwsUnVyLRV2tv2hx4MBcRa3Rcctls,5310
+pelican_tag_cloud-1.0.0.dist-info/RECORD,,
