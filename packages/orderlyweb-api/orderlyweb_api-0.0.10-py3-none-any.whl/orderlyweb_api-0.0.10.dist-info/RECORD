@@ -1,0 +1,17 @@
+orderlyweb_api/__init__.py,sha256=bauSd1vJbHhu_FBdp5oQHfFw02fcDcNtasfDJ8Yz4IQ,317
+orderlyweb_api/orderly_web_api.py,sha256=YailXD0sgoW06zsJzflg_ZSX42kc67Iof0UQgsyaHPw,2704
+orderlyweb_api/orderly_web_response_error.py,sha256=jDkNcBfByo1x8erSBnVnFPiDpvWDUCmn2xv1jtcTPmg,470
+orderlyweb_api/result_models.py,sha256=S2-Z80iw8VCeWXD4bOLa8X0gXpYLV1vTrFi8IlrA6H4,954
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/integration/test_orderly_web_api.py,sha256=on9bQqTezLAd4pOJtl6iQ_l-QjAiOKzlkyDIjuN7u1A,3979
+test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/test_orderly_web_api.py,sha256=aotpG5AeUG7fG0bCkXPdsldRy633wDpMKNy5vdP2mj0,3864
+test/unit/test_orderly_web_response_error.py,sha256=f_ZeRRixihiSflRozS8_uYliRLyCX2YEK3xCwrVW5WM,920
+test/unit/test_report_status_result.py,sha256=iSR-axnnIQXhHaJeMDYb9OKso0c6iE8rPnz5lWimb2A,2233
+test/unit/test_version_details.py,sha256=fdAUDVXRDczn2cOZ_VAu16SVXDM_rhZmGkzbFb5b5a8,1350
+orderlyweb_api-0.0.10.dist-info/LICENSE,sha256=PIL12O4gSic4vcp3H7d9vTZ55rT-U9TqAOOvPxKha5A,1092
+orderlyweb_api-0.0.10.dist-info/METADATA,sha256=bF2d8sLhwygoWa3v9aoh2UVfqLbI8oZrgfjHDzy3toY,3056
+orderlyweb_api-0.0.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+orderlyweb_api-0.0.10.dist-info/top_level.txt,sha256=xVtReKNpUxyZEXKNufKY47r38Tg68ZVF9cCEs6lTsNA,20
+orderlyweb_api-0.0.10.dist-info/RECORD,,
