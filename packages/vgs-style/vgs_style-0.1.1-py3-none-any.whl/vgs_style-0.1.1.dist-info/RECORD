@@ -1,0 +1,11 @@
+vgsstyle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vgsstyle/cli.py,sha256=ibiCIYMEQO8ASg7lgK_nCyqDkWLycBnimzjdSU36nGU,1617
+vgsstyle/config.py,sha256=0ZBLoX9A-IEtqlZgfC7gF37Adrxztu8hwiZuzENyi98,884
+vgsstyle/linters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vgsstyle/linters/base.py,sha256=iFaDwsMoqW_0wNprkg1eS3U-3bYwjAQx3kixh2MiEsg,444
+vgsstyle/linters/black.py,sha256=shcxU1DMU0EOqK1pAISoglRpIloPBR1vz1Y5nL-p71k,3296
+vgsstyle/linters/flake.py,sha256=fSzqryqA0VZJ8pDkvi6E8PfkigWdtxSVsWxsZu6MVVM,1490
+vgs_style-0.1.1.dist-info/entry_points.txt,sha256=pgDMAk8x7NuK1TY393GTT1iqUFK_wz1P0nwpl52lK_M,47
+vgs_style-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+vgs_style-0.1.1.dist-info/METADATA,sha256=DOjNq_1HB6iMcc8-6e8luOtQq7FnS502NpGbWlbp2Nc,659
+vgs_style-0.1.1.dist-info/RECORD,,
