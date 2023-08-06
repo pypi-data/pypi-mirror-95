@@ -1,0 +1,12 @@
+dippy/__init__.py,sha256=zOui4XDHWwFUwL0Xssq7LkBqH6Uy2jZ2MbtgdxGoYxg,152
+dippy/__main__.py,sha256=DbFDe9zpJ64QRWLEm4WbbGEBHgTfDZhKzdBGl47LLmM,520
+dippy/client.py,sha256=RNUC-akxA-FSyCkKk5pi9b3go45SbPdcHmlYEJmP8r8,1158
+dippy/events.py,sha256=6eFSArzyQSCaZzUV6p-EXMy2aEzqMERq-xhGF00eroM,2738
+dippy/extensions/__init__.py,sha256=mLjgaxX8hRNP0w5bt9OlLJ4FaIoBRkBZkgboYgDUeUg,75
+dippy/extensions/extension.py,sha256=wNxePY43mcjsUy3lN7SEgHimA6DjM3yDpQzPqWIf8Wk,707
+dippy/extensions/extension_manager.py,sha256=vV1BZE6MWTCeyNebtrSaCt_-sc7FJ4PMf6dGuXXx0Os,2302
+dippy/extensions/listener.py,sha256=6rq1wHcNUR2VbBz7yKVojbR5I3tTfLpMz6S2rYc5bcM,1070
+dippy/logging.py,sha256=tAHfyoscVlyjsBTL3M6cEwZh4NZbHuK8QeYtYxUJTPk,1038
+dippy.bot-0.1.1a3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dippy.bot-0.1.1a3.dist-info/METADATA,sha256=U1r1-p-1GiCUT7oBrPlmg6qewviCc9Dc-Z2IUOE_B9Y,1109
+dippy.bot-0.1.1a3.dist-info/RECORD,,
