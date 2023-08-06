@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include windows_auth/static *
+recursive-include windows_auth/templates *
