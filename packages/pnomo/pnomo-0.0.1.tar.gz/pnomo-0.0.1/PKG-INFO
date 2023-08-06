@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pnomo
+Version: 0.0.1
+Summary: This is a bookmark!
+Home-page: https://github.com/patod01/beta-beam
+Author: Patricio C. V. - patod01
+Author-email: patod01@telegmail.com
+License: WTFPL
+Description: this is __πνομο__ stuff and stuff like that...
+        
+            pip install pnomo
+        
+        you cannot steal this!
+        
+Platform: windous
+Classifier: License :: Freeware
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: asdf

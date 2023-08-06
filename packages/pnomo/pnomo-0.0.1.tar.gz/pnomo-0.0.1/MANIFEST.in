@@ -1,0 +1,11 @@
+# include
+# exclude
+# recursive-include dp p
+# recursive-exclude dp p
+# global-include
+# global-exclude
+# graft dp
+# prune dp
+
+include readme
+recursive-include pnomo *Co*
