@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: BAClangUtils
+Version: 1.0.7
+Summary: Clang utils for parse Objective-C code
+Home-page: https://github.com/BenArvin/BAClangUtils
+Author: BenArvin
+Author-email: benarvin93@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# BAClangUtils
+
+[![PyPI version](https://badge.fury.io/py/BAClangUtils.svg)](https://badge.fury.io/py/BAClangUtils)
+[![Build Status](https://travis-ci.org/BenArvin/BAClangUtils.svg?branch=master)](https://travis-ci.org/BenArvin/BAClangUtils)
+
+Clang utils for parse Objective-C code
+
+## 1. ShellUtil
+Run shell command get response and error silently.
+
+## 2. RawTokenUtil
+Parse OC code file by Clang and get all raw tokens.
+
