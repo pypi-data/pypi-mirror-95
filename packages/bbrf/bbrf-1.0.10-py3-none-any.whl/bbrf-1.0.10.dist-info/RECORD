@@ -1,0 +1,10 @@
+bbrf/__init__.py,sha256=rF5OAu7QLZQiSxP0gx4p4gFxARknYrVq0McFSBaM83g,29
+bbrf/bbrf.py,sha256=eEu0W0tPocv-Wq3YcaJuQutfCadFBvpBC0WxdtfMjms,40973
+bbrf/bbrf_api.py,sha256=JnO_ALB7H_5GTZdFUHL5LGyKHcG6NUe3XIEyZ2x6Sd0,31733
+bbrf/lambda.py,sha256=6fmn4rQh4PYqTrznKRRw9tHf1vWIyG1XMsDXtGSdsME,1000
+bbrf-1.0.10.dist-info/LICENSE,sha256=46wQNCZKKJBYLWTZ2cMEY9yBx0XrZTgpmgQjSwhLZ5Y,1052
+bbrf-1.0.10.dist-info/METADATA,sha256=K0Cs0q4H6FyTg5N3kp4ZfVVfb1lAeDHuNv4B6vhSPAk,3447
+bbrf-1.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bbrf-1.0.10.dist-info/entry_points.txt,sha256=tFYcl0nDhVn5WK87T6DgElN4R4EYIwjuQM5XIeZ_2dI,41
+bbrf-1.0.10.dist-info/top_level.txt,sha256=jfzsCa50D2ZrpKqPsNi-Kv2WiypE0FGhnW9kyekOvnE,5
+bbrf-1.0.10.dist-info/RECORD,,
