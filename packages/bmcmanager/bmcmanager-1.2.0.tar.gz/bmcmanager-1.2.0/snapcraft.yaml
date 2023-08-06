@@ -1,0 +1,44 @@
+name: bmcmanager
+version: git
+summary: bmcmanager
+description: BMCManager tool
+base: core18
+confinement: strict
+grade: stable
+license: GPL-3.0
+architectures:
+  - build-on: amd64
+  - build-on: arm64
+
+parts:
+  bmcmanager:
+    plugin: python
+    python-version: python3
+    source: .
+    build-environment:
+      - PBR_VERSION: $SNAPCRAFT_PROJECT_VERSION
+    stage-packages:
+      - freeipmi
+      - ipmitool
+  completer:
+    plugin: nil
+    override-prime: bmcmanager complete > bmcmanager-autocomplete.bash
+
+apps:
+  bmcmanager:
+    command: env XDG_CACHE_HOME=$SNAP_USER_COMMON XDG_CONFIG_HOME=$SNAP_USER_COMMON PATH=$PATH:$SNAP/usr/bin:$SNAP/usr/sbin $SNAP/bin/bmcmanager
+    plugs: [home, network]
+    completer: bmcmanager-autocomplete.bash
+  ipmitool:
+    command: usr/bin/ipmitool
+    plugs: [network]
+  ipmi-sensors:
+    command: usr/sbin/ipmi-sensors
+    plugs: [network]
+  ipmi-sel:
+    command: usr/sbin/ipmi-sel
+    plugs: [network]
+  ipmi-dcmi:
+    command: usr/sbin/ipmi-dcmi
+    plugs: [network]
+version: 'v1.2.0'

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bmcmanager
+Version: 1.2.0
+Summary: BMCManager is a tool for bare-metal server management
+Home-page: https://github.com/grnet/bmcmanager.git
+Author: Aggelos Kolaitis
+Author-email: akolaitis@admin.grnet.gr
+License: UNKNOWN
+Description: BMCManager is a tool for bare-metal server management
+Platform: UNKNOWN
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
