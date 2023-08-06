@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: postgres_table_as_queue_tools
+Version: 0.0.1
+Summary: There are just only several function to getting SQL queries for manage your table as a queue.
+Home-page: https://github.com/vinger4/pg_table_as_queue_tools
+Author: Evgenii Kozhanov
+Author-email: evgenii.kozhanov@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
