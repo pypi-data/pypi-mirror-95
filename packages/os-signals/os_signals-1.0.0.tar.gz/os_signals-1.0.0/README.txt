@@ -1,0 +1,1 @@
+A simple module for convinient system singal sending. (made for linux, might work on other os'es as well idk.)

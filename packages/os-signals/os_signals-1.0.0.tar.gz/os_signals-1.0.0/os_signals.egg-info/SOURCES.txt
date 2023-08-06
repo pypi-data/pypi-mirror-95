@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+os_signals/__init__.py
+os_signals.egg-info/PKG-INFO
+os_signals.egg-info/SOURCES.txt
+os_signals.egg-info/dependency_links.txt
+os_signals.egg-info/top_level.txt
