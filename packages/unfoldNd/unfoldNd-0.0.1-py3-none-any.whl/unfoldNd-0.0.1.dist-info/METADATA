@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: unfoldNd
+Version: 0.0.1
+Summary: N-dimensional unfold in PyTorch
+Home-page: https://github.com/f-dangel/unfoldNd
+Author: Felix Dangel
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+N-dimensional unfold in PyTorch using one-hot convolution
+
+
