@@ -1,0 +1,6 @@
+README.md
+tralala.egg-info/PKG-INFO
+tralala.egg-info/SOURCES.txt
+tralala.egg-info/dependency_links.txt
+tralala.egg-info/top_level.txt
+tralala.egg-info/zip-safe
