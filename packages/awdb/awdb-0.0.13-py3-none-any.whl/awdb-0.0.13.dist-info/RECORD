@@ -1,0 +1,13 @@
+awdb/__init__.py,sha256=VKW2aQ96KKVBZOfjw0Vbqr7wkidF_ZOvMJlx2rmbFsw,29
+awdb/cli.py,sha256=mnvSQllqcK-NdvE3WzyRxOfIbBxp59g1QG8ciD79jVY,11879
+awdb/trace.py,sha256=jQaS_IgfLo7VFT9JTzTB_qi-mIwxxQKOuA-IAqSbz2Y,16612
+awdb/utils.py,sha256=xKrGpPheMTQ_Tjs3QO5s5sjOGMaEu-HOMFLbWJELOk4,3331
+awdb/cli/__init__.py,sha256=xRp6aFkVLzOFX5wXwDHLWeOzpUKvtgHbfNPFgm2zPD8,54
+awdb/cli/client.py,sha256=APuZB2NG14dLOFtyGf0YbPSZvfPaCi6ZYJymHAMyh7E,8899
+awdb/cli/commands.py,sha256=ApkQXLkQgzabBYv2b_kKKmMBhErAZPifd0gQr8NtwK4,2449
+awdb/cli/server.py,sha256=KvGzGnN05Pf_OFtpH5graCBX4Y7J6rMRm3zzWRMuqXM,5622
+awdb-0.0.13.dist-info/METADATA,sha256=5UiLG2WcbJ8ZCfrRodvYlF9FyMDfueJmVJn8rbaxJJM,3811
+awdb-0.0.13.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+awdb-0.0.13.dist-info/entry_points.txt,sha256=brpp52ooFxOS3zPIM5P6ImcwNGiuvkz5_LEQC44f5dQ,79
+awdb-0.0.13.dist-info/top_level.txt,sha256=Elau2BK1gEOLqIQiV0Ht7gJbBPGvsKbazTU9Irq5PC8,5
+awdb-0.0.13.dist-info/RECORD,,
