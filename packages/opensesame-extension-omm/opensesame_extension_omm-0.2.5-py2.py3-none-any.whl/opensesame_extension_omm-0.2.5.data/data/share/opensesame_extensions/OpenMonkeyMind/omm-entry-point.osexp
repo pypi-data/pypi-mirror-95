@@ -1,0 +1,84 @@
+---
+API: 2.1
+OpenSesame: 3.3.8
+Platform: posix
+---
+set width {omm_width}
+set uniform_coordinates yes
+set title "OMM Entry Point"
+set subject_parity even
+set subject_nr 0
+set start omm_loop
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set round_decimals 2
+set height {omm_height}
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set disable_garbage_collection yes
+set description "Entry point for connecting to an OMM server"
+set coordinates uniform
+set compensation 0
+set canvas_backend {canvas_backend}
+set background black
+{omm_yaml_vars}
+
+define OMMAnnounce announce
+	set omm_server "{omm_server}"
+	set omm_port "{omm_port}"
+	set omm_participant "[participant]"
+	set omm_local_logfile "{omm_local_logfile}"
+	set omm_fallback_experiment "{omm_fallback_experiment}"
+	set omm_api 1
+	set description "Announce-participant plugin for Open Monkey Mind"
+	__omm_yaml_data__
+{omm_yaml_data}
+	__end__
+
+define repeat_cycle be_infinite
+	set description "Optionally repeat a cycle from a loop"
+	set condition always
+
+define OMMDetectParticipant detect
+	set serial_port "[=var.get('omm_rfid_port', 'COM3')]"
+	set participant_variable participant
+	set detector "{omm_detector}"
+
+define loop omm_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 1
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 empty_column ""
+	run omm_sequence
+
+define sequence omm_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run wait always
+	run detect always
+	run blank always
+	run announce always
+	run be_infinite always
+
+define sketchpad wait
+	set duration 0
+	set description "Displays stimuli"
+	set background gray
+
+define sketchpad blank
+	set duration 0
+	set description "Displays stimuli"
