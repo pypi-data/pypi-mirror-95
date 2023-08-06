@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: codescream
+Version: 2.0.0
+Summary: Make your computer scream at you when you make a mistake.
+Home-page: https://github.com/irth/codescream
+Author: Wojciech ~irth Kwolek
+Author-email: me@irth.pl
+License: MIT
+Description: # CodeScream
+        
+        *Did you ever want your computer to scream at you when you make a mistake?*
+        
+        No?
+        
+        **Well now you can make it do that, anyway.**
+        
+        
+        ## Instalation
+        
+        ```
+        pip install codescream
+        ```
+        
+        ## Usage
+        
+        Add this line somewhere in your project, preferably in the entry point.
+        
+        ```python
+        from codescream import hook
+        ```
+        
+        Unmute your speakers, do something that throws an exception :)
+        
+        You can also use it to mark functions as deprecated!
+        
+        ```python
+        from codescream import deprecated
+        
+        @deprecated
+        def foo():
+            print("Do not use me!")
+        ```
+        
+        Now the computer will scream whenever someone uses the deprecated function.
+        
+        ## Reviews
+        
+        
+            ja pierdole ale się przestraszyłem XDDD
+            
+        ~ [@EdwardEisenhauer](https://github.com/EdwardEisenhauer)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
