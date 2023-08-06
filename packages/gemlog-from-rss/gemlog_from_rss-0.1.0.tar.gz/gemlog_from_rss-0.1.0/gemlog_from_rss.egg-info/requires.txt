@@ -1,0 +1,5 @@
+requests~=2.25.1
+lxml~=4.6.2
+
+[:python_version == "3.8"]
+beautifulsoup4~=4.9.3
