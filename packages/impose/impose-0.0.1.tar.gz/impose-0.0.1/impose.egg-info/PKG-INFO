@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: impose
+Version: 0.0.1
+Summary: Fit and superimpose structures from different imaging modalities
+Home-page: https://gitlab.gwdg.de/guck_optics/impose
+Author: Paul Müller
+Author-email: dev@craban.de
+License: None
+Description:
+        
+        Align microscopy images using custom-defined structural patterns and
+        superimpose the resulting pattern distributions with data from other
+        imaging modalities.
+
+Keywords: image analysis,biology,microscopy
+Platform: ALL
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6

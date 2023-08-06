@@ -1,0 +1,8 @@
+CHANGELOG
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+impose/__init__.py
+

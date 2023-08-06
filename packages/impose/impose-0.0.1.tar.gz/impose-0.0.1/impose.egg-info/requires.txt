@@ -1,0 +1,7 @@
+czifile
+h5py>=2.10.0
+imageio
+numpy>=1.17.0
+pyqt5>=5.15.0
+pyqtgraph==0.11.1
+scikit-image>=0.17.2
