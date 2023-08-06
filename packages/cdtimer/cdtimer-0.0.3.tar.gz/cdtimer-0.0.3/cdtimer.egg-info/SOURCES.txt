@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+cdtimer/__init__.py
+cdtimer/cdtimer.py
+cdtimer/construct_timetable.py
+cdtimer.egg-info/PKG-INFO
+cdtimer.egg-info/SOURCES.txt
+cdtimer.egg-info/dependency_links.txt
+cdtimer.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cdtimer
+Version: 0.0.3
+Summary: Timer tool with sequenced interval countdowns
+Home-page: https://github.com/danielvogler/cdtimer
+Author: Daniel Vogler
+Author-email: geopard.py@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
