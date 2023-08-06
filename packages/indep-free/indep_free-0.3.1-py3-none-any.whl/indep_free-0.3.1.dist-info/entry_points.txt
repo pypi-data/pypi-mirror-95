@@ -1,0 +1,3 @@
+[console_scripts]
+indep_free=indep_free.cli:main
+
