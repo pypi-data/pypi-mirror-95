@@ -1,0 +1,58 @@
+#!python
+
+import os
+import asyncio
+import argparse
+from i3ipc.aio import Connection
+
+socket = '{XDG_RUNTIME_DIR}/i3/swap_focus.sock'.format_map(os.environ)
+window_stack = []
+
+
+async def on_unix_connect(i3, reader, writer):
+    while True:
+        cmd = await reader.readline()
+        cmd = cmd.strip()
+        if not cmd:
+            break
+
+        if cmd == b'swap_focus' and window_stack:
+            window_id = window_stack.pop()
+            if stay_in_workspace:
+                current_workspace = (await i3.get_tree()).find_focused().workspace().id
+                window_workspace = (await i3.get_tree()).find_by_id(window_id).workspace().id
+                if current_workspace != window_workspace:
+                    continue
+            cmd = '[con_id=%s] focus' % window_id
+            await i3.command(cmd)
+
+
+def on_window(conn, event):
+    if "ignore_focus" in event.container.marks:
+        return
+    if event.change == 'focus':
+        if not window_stack or event.container.id != window_stack[0]:
+            window_stack.insert(0, event.container.id)
+            if len(window_stack) > 2:
+                del window_stack[2:]
+
+
+async def main():
+    if os.path.exists(socket):
+        os.unlink(socket)
+
+    i3 = await Connection(auto_reconnect=True).connect()
+    server = await asyncio.start_unix_server(lambda r, w: on_unix_connect(i3, r, w), socket)
+
+    await i3.get_workspaces()
+
+    i3.on('window::focus', on_window)
+    await i3.main()
+    await server.wait_closed()
+
+
+parser = argparse.ArgumentParser(description='i3 script to toggle between last windows.')
+parser.add_argument('--stay-in-workspace', action=argparse.BooleanOptionalAction, default=False, help="Do not switch focus if window is on a different workspace")
+stay_in_workspace = parser.parse_args().stay_in_workspace
+
+asyncio.run(main())
