@@ -1,0 +1,3 @@
+[console_scripts]
+linchackathon = linchackathon.cli:main
+
