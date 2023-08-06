@@ -1,0 +1,8 @@
+pyyaml
+sanic
+ujson!=2.*
+
+[with-router-features]
+janus
+ncclient
+paramiko
