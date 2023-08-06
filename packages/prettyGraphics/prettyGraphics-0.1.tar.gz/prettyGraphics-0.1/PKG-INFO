@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: prettyGraphics
+Version: 0.1
+Summary: All sorts of tables and graphics for console (for now just tables) 
+Home-page: https://github.com/Kyostenas/prettyGraphics
+Author: Benjamin Ramirez
+Author-email: chilerito12@gmail.com
+License: MIT
+Download-URL: https://github.com/Kyostenas/prettyGraphics/archive/v0.1-beta.1.tar.gz
+Description: UNKNOWN
+Keywords: console,graphics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
