@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+easycolors/__init__.py
+easycolors.egg-info/PKG-INFO
+easycolors.egg-info/SOURCES.txt
+easycolors.egg-info/dependency_links.txt
+easycolors.egg-info/top_level.txt
