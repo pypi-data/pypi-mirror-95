@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: datacube-wps
+Version: 0.4.5
+Summary: datacube-wps is an implementation of the Web Processing Service standard from the Open Geospatial Consortium.
+Home-page: http://www.ga.gov.au/dea
+Author: Digital Earth Australia
+Author-email: earth.observation@ga.gov.au
+Maintainer: Digital Earth Australia
+Maintainer-email: earth.observation@ga.gov.au
+License: MIT
+Download-URL: https://github.com/opendatacube/datacube-wps
+Description: UNKNOWN
+Keywords: ODC WPS OGC processing
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: GIS

@@ -1,0 +1,12 @@
+automat>=0.3.0
+flask
+scikit-image
+gunicorn
+rasterio>=1.0.9
+rasterio[s3]
+altair
+selenium
+python-dateutil
+sentry_sdk
+blinker
+pywps==4.2.4
