@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: openfl
+Version: 1.0
+Summary: Federated Learning for the Edge
+Home-page: UNKNOWN
+Author: Intel Corporation
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <3.9
+Requires-Dist: Click (>=7.0)
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: protobuf
+Requires-Dist: grpcio (==1.30.0)
+Requires-Dist: grpcio-tools (==1.30.0)
+Requires-Dist: rich (==9.1.0)
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: docker
+Requires-Dist: jupyter
+Requires-Dist: ipykernel
+Requires-Dist: flatten-json
+Requires-Dist: cryptography
+
+UNKNOWN
+
+
