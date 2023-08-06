@@ -1,0 +1,8 @@
+test_script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_script/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_script/src/test_script.3.py,sha256=HZ55ByVJcCUAVyslPTZYN8NKq18QZZCEZTiX5cacghY,23517
+test_pypi111-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_pypi111-0.0.1.dist-info/METADATA,sha256=Au13wraAQ5k4lrMCYmqIaBt_lGH4hniaAVkNz5Qr474,465
+test_pypi111-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+test_pypi111-0.0.1.dist-info/top_level.txt,sha256=13N9H8Xlw9YbtaNOG0t28q6bdF-WENCcGGRSzMuGxUY,12
+test_pypi111-0.0.1.dist-info/RECORD,,
