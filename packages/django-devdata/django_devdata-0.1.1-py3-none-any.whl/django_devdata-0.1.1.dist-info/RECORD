@@ -1,0 +1,15 @@
+devdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devdata/anonymisers.py,sha256=dUJW-n8GqhJiEYWFR6BV5ZAykrYw3jecJk8ssKFCaaM,1035
+devdata/engine.py,sha256=8fFSF5KjUnlPJIKytwIXNKo2bHfAdInegH5UjjFmfA4,3965
+devdata/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devdata/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devdata/management/commands/devdata_dump.py,sha256=v9qrZLLtak7A8-GDBYVsaTGQxdx5SszKqxJL9TFRbUU,1614
+devdata/management/commands/devdata_export.py,sha256=57Fxm2quGwSNCk0ktymo-xdpjDQDT71WIGpaunNU8c4,1124
+devdata/management/commands/devdata_sync.py,sha256=4dzhfw5R-daGNp4fGkAT0iwXkd1dIKkXfGr_QrKmd34,1251
+devdata/pii_anonymisation.py,sha256=5Iqo7jbNog5RX2DnG6o-9DCByxoaKczXEaV5gXYYw60,1337
+devdata/strategies.py,sha256=R1FvGRbvrgKihJAYjO76UoJ0ykbxRIjEPTWAF2TeGYk,10767
+devdata/utils.py,sha256=5ssyRStJLr1CKBXzl799GIIaXkzHgLcYjWMwknt-VFw,4077
+django_devdata-0.1.1.dist-info/LICENSE,sha256=55IvNecKbMYxvFjbB1ZyOA3gYmI4EroneKE9bKnVm6o,1067
+django_devdata-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+django_devdata-0.1.1.dist-info/METADATA,sha256=yOQhdn4s2rx14Rii_YcJcBVdQwYkAqhDToo91CILtG8,8433
+django_devdata-0.1.1.dist-info/RECORD,,
