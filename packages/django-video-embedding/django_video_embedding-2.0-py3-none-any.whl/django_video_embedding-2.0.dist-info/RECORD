@@ -1,0 +1,12 @@
+django_video_embedding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_video_embedding/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_video_embedding/apps.py,sha256=vnGN0AfACTQigrqKWbSoMghu_guscw_31F0bDU8xwPI,117
+django_video_embedding/fields.py,sha256=__fBWwOavQor58L0tU1Lbgisglfml_CDffrssw2K7lQ,12153
+django_video_embedding/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_video_embedding/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_video_embedding/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_video_embedding-2.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_video_embedding-2.0.dist-info/METADATA,sha256=5GqBzLpKrtS0zGU3rdOhjVyOmN2V8jhtFwayW_Ra1xs,716
+django_video_embedding-2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_video_embedding-2.0.dist-info/top_level.txt,sha256=SicztMrM9HBurmt34WXPKrJUrD2G3Gr7QNiPF97ImYU,23
+django_video_embedding-2.0.dist-info/RECORD,,

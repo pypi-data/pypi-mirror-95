@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-video-embedding
+Version: 2.0
+Summary: Support for video upload in Django models
+Home-page: https://github.com/vokai/django-video-embedding
+Author: 4Sigma
+Author-email: info@4sigma.it
+License: MIT
+Keywords: django video model field
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: Django (>=2)
+
+Support for video upload in Django models
+
+
