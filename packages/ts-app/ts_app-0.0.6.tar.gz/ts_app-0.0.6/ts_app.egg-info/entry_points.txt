@@ -1,0 +1,3 @@
+[console_scripts]
+ts_app = ts_app:run_app
+
