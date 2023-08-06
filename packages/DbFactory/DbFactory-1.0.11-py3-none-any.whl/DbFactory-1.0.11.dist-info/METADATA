@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: DbFactory
+Version: 1.0.11
+Summary: Easy Connection, A module for all db!
+Home-page: UNKNOWN
+Author: Caturbhuja
+Author-email: caturbhuja@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pymysql (>=0.10.0)
+Requires-Dist: elasticsearch (>=7.10.0)
+Requires-Dist: redis (>=3.5.3)
+Requires-Dist: redis-py-cluster (>=2.1.0)
+Requires-Dist: DBUtils (>=1.0.2)
+Requires-Dist: kafka-python (>=2.0.1)
+Requires-Dist: cacheout (>=0.11.2)
+
+UNKNOWN
+
+
