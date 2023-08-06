@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: boonsdk
+Version: 1.2.0
+Summary: Boon AI SDK
+Home-page: http://www.boonai.io
+Author: Boon AI Team
+Author-email: support@boonai.io
+License: Apache2
+Keywords: machine learning artificial intelligence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Requires-Dist: requests
+Requires-Dist: pyOpenSSL
+Requires-Dist: PyJWT (>=2.0)
+Requires-Dist: backoff
+Requires-Dist: pytest
+
+UNKNOWN
+
+
