@@ -1,0 +1,8 @@
+pytessel.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+pytessel-0.1.2.1.dist-info/top_level.txt,sha256=QDauMEeJ6MuBmtCTV4HZAr1XodXsUesXTlcImp5LE54,9
+pytessel-0.1.2.1.dist-info/RECORD,,
+pytessel-0.1.2.1.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+pytessel-0.1.2.1.dist-info/METADATA,sha256=M7GxP1fHaMafmQMzYnZTGFASETjZELlvrLBLMfHJ-pI,1488
+pytessel-0.1.2.1.dist-info/WHEEL,sha256=EWjPQEu7l45LfLQ-ahAwqqO68k0EZcARHq4zAx5nZvs,112
+pytessel/__init__.py,sha256=7ym0uZ1xaGvtwUnWh3wGESmpVFZttcK9i_JXWhiHBLI,31
+pytessel/pytessel.cpython-35m-x86_64-linux-gnu.so,sha256=n_mXFNcl2DuQ101xMj56vCtqVmSv5U_pJr99Jj2WJqU,2057040
