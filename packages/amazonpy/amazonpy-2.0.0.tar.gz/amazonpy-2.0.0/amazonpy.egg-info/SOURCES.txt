@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+amazonpy/__init__.py
+amazonpy/amazon.py
+amazonpy/proxies.py
+amazonpy/scrap.py
+amazonpy.egg-info/PKG-INFO
+amazonpy.egg-info/SOURCES.txt
+amazonpy.egg-info/dependency_links.txt
+amazonpy.egg-info/requires.txt
+amazonpy.egg-info/top_level.txt
