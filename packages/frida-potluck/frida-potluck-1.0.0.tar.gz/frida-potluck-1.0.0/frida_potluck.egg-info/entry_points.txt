@@ -1,0 +1,3 @@
+[console_scripts]
+potluck = potluck.__main__:main
+
