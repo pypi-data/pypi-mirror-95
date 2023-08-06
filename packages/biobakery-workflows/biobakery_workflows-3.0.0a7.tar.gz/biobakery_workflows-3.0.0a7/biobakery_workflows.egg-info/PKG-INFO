@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: biobakery-workflows
+Version: 3.0.0a7
+Summary: bioBakery workflows: A collection of meta'omic analysis workflows
+Home-page: http://huttenhower.sph.harvard.edu/biobakery_workflows
+Author: bioBakery workflows development team
+Author-email: biobakery-users@googlegroups.com
+License: MIT
+Description: bioBakery workflows is a collection of workflows and tasks for executing common microbial community analyses using standardized, validated tools and parameters. Quality control and statistical summary reports are automatically generated for most data types, which include 16S amplicons, metagenomes, and metatranscriptomes. Workflows are run directly from the command line and tasks can be imported to create your own custom workflows. The workflows and tasks are built with AnADAMA2 which allows for parallel task execution locally and in a grid compute environment.
+Keywords: microbial,microbiome,bioinformatics,microbiology,metagenomic,metatranscriptomic,anadama2,humann,metaphlan,strainphlan
+Platform: Linux
+Platform: MacOS
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
