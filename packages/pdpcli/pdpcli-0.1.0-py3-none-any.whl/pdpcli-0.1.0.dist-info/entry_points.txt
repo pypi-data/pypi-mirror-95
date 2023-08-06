@@ -1,0 +1,3 @@
+[console_scripts]
+pdp=pdpcli.__main__:run
+
