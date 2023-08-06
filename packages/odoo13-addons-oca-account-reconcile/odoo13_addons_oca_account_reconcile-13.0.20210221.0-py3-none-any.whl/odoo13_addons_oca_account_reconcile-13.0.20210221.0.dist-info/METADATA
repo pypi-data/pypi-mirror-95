@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-account-reconcile
+Version: 13.0.20210221.0
+Summary: Meta package for oca-account-reconcile Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo13-addon-account-mass-reconcile
+Requires-Dist: odoo13-addon-account-partner-reconcile
+Requires-Dist: odoo13-addon-account-reconcile-payment-order
+Requires-Dist: odoo13-addon-account-reconcile-restrict-partner-mismatch
+Requires-Dist: odoo13-addon-account-skip-bank-reconciliation
+Requires-Dist: odoo13-addon-bank-statement-journal-items
+
+UNKNOWN
+
+
