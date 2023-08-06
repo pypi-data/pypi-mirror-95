@@ -1,0 +1,3 @@
+[console_scripts]
+nmllite-ui = neuromllite.gui.NMLliteUI:main
+
