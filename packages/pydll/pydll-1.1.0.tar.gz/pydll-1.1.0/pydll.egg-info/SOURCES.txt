@@ -1,0 +1,8 @@
+README.md
+setup.py
+mypydll/__init__.py
+mypydll/func.py
+pydll.egg-info/PKG-INFO
+pydll.egg-info/SOURCES.txt
+pydll.egg-info/dependency_links.txt
+pydll.egg-info/top_level.txt

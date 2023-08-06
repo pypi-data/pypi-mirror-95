@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pydll
+Version: 1.1.0
+Summary: A expansion for me
+Home-page: https://pypi.org/manage/project/MyPymods/
+Author: GuangYao Sun
+Author-email: 3150237154@qq.com
+License: UNKNOWN
+Description: # PyDll for Windows
+        
+        这是一个自用的包，仅为个人爱好，有兴趣的也可以下载
+        [点击此处转到主页](https://pypi.org/manage/project/MyPymods/)
+        
+        ## 例子
+        
+        ```
+        import func
+        func.dir(".\\")
+        ```
+        ***该语句将返回一个包含文件数量，大小，单位，和完整的路径的列表***
+        
+        ## 函数及其用法
+        函数名|用途|返回值
+        ------|:---|:----|
+        ari|计算等差数列|**list**
+        fib|计算斐波那契数列|**list**
+        chase_distance|求追及问题路程|**int**
+        chase_time|求追及问题时间|**int**
+        meet_distance|求相遇问题路程|**int**
+        meet_time|求相遇问题时间|**int**
+        mkfod|创建文件或文件夹|**bool**
+        mkzip|压缩文件|**str**
+        unzip|解压文件|**str**
+        copy|复制和拷贝文件及文件夹|**bool**
+        dirs|遍历文件夹并打印所有文件|**list**
+        rename|批量重命名文件|**int**
+        get_module_dir|查询模块位置|**str**
+        deletefile|删除指定后缀名的文件|**bool**
+        musicfile|播放指定的音乐|**None**
+        
+        ## 常量
+        
+        `Now_Time` 当前的时间
+        具体实现：
+        `Now_Time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
+        `
+        
+        `Data` 当前用户的具体信息
+        具体实现：
+        ```
+        Data = {"System" : platform.platform(),
+                "UserName": getpass.getuser(),
+                "NowTime": Now_Time,
+                "File": sys.argv[0],
+                "Args": sys.argv[1:]}
+        ```
+        
+        `Filelist \ d_filelist` 存储文件路径
+        
+        ## 所有异常
+        + SameError
+        + InputError
+        + SystemVersionError
+        + NotFoundError
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
