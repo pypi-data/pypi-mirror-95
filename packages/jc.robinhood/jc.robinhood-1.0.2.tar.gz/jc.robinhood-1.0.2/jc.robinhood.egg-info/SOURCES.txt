@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+jc.robinhood.egg-info/PKG-INFO
+jc.robinhood.egg-info/SOURCES.txt
+jc.robinhood.egg-info/dependency_links.txt
+jc.robinhood.egg-info/requires.txt
+jc.robinhood.egg-info/top_level.txt
+robinhood/__init__.py
