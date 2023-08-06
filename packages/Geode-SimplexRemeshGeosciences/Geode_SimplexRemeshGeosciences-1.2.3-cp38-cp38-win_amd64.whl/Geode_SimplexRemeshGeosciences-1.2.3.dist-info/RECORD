@@ -1,0 +1,9 @@
+geode_simplexremeshgeosciences/Geode-SimplexRemeshGeosciences_core.dll,sha256=PKp0-0YT4iTEG4AYf5cF4F27d18Hwu-jY3DICn7spR4,14848
+geode_simplexremeshgeosciences/Geode-SimplexRemeshGeosciences_surface.dll,sha256=Q9X2fUAzoPCA2MS3GqzcWCDRR9h-MgH2CiWiTGwxv88,24064
+geode_simplexremeshgeosciences/__init__.py,sha256=akA8Uk_18EXKwTtKOo2y-nr5fCSA9FB2ibHeUi4f4G4,99
+geode_simplexremeshgeosciences/geode_simplexremeshgeosciences_py_surface.cp38-win_amd64.pyd,sha256=pPC_Qurvc9qYBdI43GZLQvmP8Rxi-nMWKB1kTXL7loo,107520
+geode_simplexremeshgeosciences/surface.py,sha256=DuOJ75ZtQ1Br2Xg4DlAeQyYi-vIU19GInY8oKoiS3yM,301
+Geode_SimplexRemeshGeosciences-1.2.3.dist-info/METADATA,sha256=NuEP-8wYGeYma7cGuFY2vcUu2yp0cWilgtVvnlub69o,3224
+Geode_SimplexRemeshGeosciences-1.2.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Geode_SimplexRemeshGeosciences-1.2.3.dist-info/top_level.txt,sha256=rCTWY_fQNmUCLliTI0A9GmbsPZAtPGtPtLHhVlp26iA,31
+Geode_SimplexRemeshGeosciences-1.2.3.dist-info/RECORD,,
