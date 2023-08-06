@@ -1,0 +1,8 @@
+opentelemetry/instrumentation/sklearn/__init__.py,sha256=d59t_WWEPSu9pHTqj9dXIa84nSNLgygwnZ3_qP5zr6M,28459
+opentelemetry/instrumentation/sklearn/version.py,sha256=aqi3IIuKHGw9fYOpR9KAFjqU1O4TRxvdDowOKQ7o8pY,610
+opentelemetry_instrumentation_sklearn-0.18b1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_instrumentation_sklearn-0.18b1.dist-info/METADATA,sha256=hWON-Ic0slxNc3W7A1aFDFeyvCCaUQ9NiJaAtFuZQEo,1801
+opentelemetry_instrumentation_sklearn-0.18b1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_sklearn-0.18b1.dist-info/entry_points.txt,sha256=wGsGMjzoPa9iF0fA1Ho7c-XaTCumQdDWU7ieEjshCIE,98
+opentelemetry_instrumentation_sklearn-0.18b1.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_sklearn-0.18b1.dist-info/RECORD,,
