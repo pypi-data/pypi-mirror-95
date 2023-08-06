@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: geodesic-api
+Version: 0.0.3
+Summary: Geodesic Python API
+Home-page: https://seerai.space
+Author: SeerAI
+Author-email: dwilson@seerai.space
+License: Apache-2.0
+Keywords: geodesic analysis seerai data science
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: shapely
+Requires-Dist: numpy
+Provides-Extra: geodesic-api_raster_
+Requires-Dist: GDAL (>=3.0.0) ; extra == 'geodesic-api_raster_'
+
+=======================
+Geodesic
+=======================
+This allows users to interact with SeerAI's data science platform.
+
+
