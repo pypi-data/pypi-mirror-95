@@ -1,0 +1,11 @@
+setup.py
+examplepkg004/__init__.py
+examplepkg004/add.py
+examplepkg004/subtract.py
+examplepkg004.egg-info/PKG-INFO
+examplepkg004.egg-info/SOURCES.txt
+examplepkg004.egg-info/dependency_links.txt
+examplepkg004.egg-info/top_level.txt
+examplepkg004/extras/__init__.py
+examplepkg004/extras/divide.py
+examplepkg004/extras/multiply.py
