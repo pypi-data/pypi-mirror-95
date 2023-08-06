@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: little-cheesemonger
+Version: 0.1.0rc1
+Summary: Modify an environment to build and bundle a Python package into a manylinux wheel.
+Home-page: UNKNOWN
+Author: Chris Antonellis
+Author-email: cantonellis@wayfair.com
+License: See LICENSE
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (~=7.1)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: typing-extensions (~=3.7) ; python_version < "3.8"
+
+# little-cheesemonger
+
+You must create a meaningful README.md that includes prerequisites, running tests, and versioning
+
+
