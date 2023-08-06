@@ -1,0 +1,3 @@
+[console_scripts]
+vmon = vmon.main:cli
+
