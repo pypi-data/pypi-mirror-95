@@ -1,0 +1,6 @@
+graphviz
+ipywidgets
+IPython
+ordered_set
+Pillow
+TatSu
