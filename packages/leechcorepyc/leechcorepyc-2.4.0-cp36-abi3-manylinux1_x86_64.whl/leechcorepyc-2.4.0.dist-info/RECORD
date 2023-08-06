@@ -1,0 +1,11 @@
+leechcorepyc/__init__.py,sha256=roM4Y8lFARh_U6JFuIpm8l1sxrr96orbE7kXJa0OvMk,5760
+leechcorepyc/leechcore.so,sha256=bBs3mKXEtVDT3pPNc1qcg6bAtgkOR4OiHv77DZjj_T0,118464
+leechcorepyc/leechcore_device_rawtcp.so,sha256=fKxXwqyJMr37EQ_qK8BkZ-ASGR5Sok83SzjWwcFflaw,21544
+leechcorepyc/leechcore_device_sp605tcp.so,sha256=ii8nZRGYFYe4kAx2WNJRiLEaq-JZQO-qrpjiKodXHJY,31000
+leechcorepyc/leechcore_ft601_driver_linux.so,sha256=7j_CCBAnv2PZhsfn5prDWL4hkbFP60OUqHwJovJ6Z8g,22592
+leechcorepyc/leechcorepyc.cpython-38-x86_64-linux-gnu.so,sha256=SgIsnubXufoWD5dlVuxVg2tKtluCdkRrY043q9dXLCw,116792
+leechcorepyc-2.4.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+leechcorepyc-2.4.0.dist-info/METADATA,sha256=Qq_TT0G_fs0vIv4wtl3LGCeCF2vQF4u-rpt-YetXMBk,556
+leechcorepyc-2.4.0.dist-info/WHEEL,sha256=iE50AyNpUpr1VnCku1LYtAP2aC0BYITbLsr7dHjY5Gc,108
+leechcorepyc-2.4.0.dist-info/top_level.txt,sha256=bOu_Wj6HonKhXtHPSx8nBYAiFhPTM83MiJWWGek_s9o,13
+leechcorepyc-2.4.0.dist-info/RECORD,,
