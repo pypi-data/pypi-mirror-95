@@ -1,0 +1,9 @@
+jkq/qmap/__init__.py,sha256=9tEfKlptIvtCJpUQ27HudIaPYW--PTqvXOy0YgIHL6c,301
+jkq/qmap/compile.py,sha256=EdjDrPYO6f3BePDH7ct5Ntn7vMEeqQvQf4ySNI-BhB4,2592
+jkq/qmap/pyqmap.cp37-win_amd64.pyd,sha256=mZ0VEWywhdboERlherGb4OThMdPmHXhwg9MWz0sI1rw,18846720
+jkq/qmap/pyqmap.pdb,sha256=tk2Y-TBTWNC8ks0XB-a_TPtRCvktJaP_MnUk4ogRD68,16052224
+jkq.qmap-1.2.1.dist-info/LICENSE,sha256=_X990wRWT35gQiY6phktZkkTh0aIc4oF8paZ2Rfxy8I,1177
+jkq.qmap-1.2.1.dist-info/METADATA,sha256=rHlewuUZnIJEST7RybqlNcubU-g_4jG7bsBPSBwWNdc,14565
+jkq.qmap-1.2.1.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+jkq.qmap-1.2.1.dist-info/top_level.txt,sha256=1qIT_f6IgM5xAG03yXNz8NSb2-8L8z05kk7eXKz7sb4,11
+jkq.qmap-1.2.1.dist-info/RECORD,,
