@@ -1,0 +1,8 @@
+README.md
+breakfast_puzzles.py
+setup.py
+Breakfast_Puzzles.egg-info/PKG-INFO
+Breakfast_Puzzles.egg-info/SOURCES.txt
+Breakfast_Puzzles.egg-info/dependency_links.txt
+Breakfast_Puzzles.egg-info/entry_points.txt
+Breakfast_Puzzles.egg-info/top_level.txt
