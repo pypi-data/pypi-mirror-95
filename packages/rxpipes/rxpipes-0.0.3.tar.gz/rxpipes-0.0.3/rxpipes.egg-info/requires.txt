@@ -1,0 +1,15 @@
+rx
+toolz
+
+[docs]
+mkdocs
+mkdocstrings
+mkdocs-material
+
+[test]
+pytest
+pytest-cov
+pytest-html
+pytest-metadata
+numpy
+opencv-python
