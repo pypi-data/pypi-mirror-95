@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ourlattice
+Version: 0.0.3
+Summary: Pandas functions for polytopes and facets
+Home-page: UNKNOWN
+Author: Rikard Olsson
+Author-email: rikard@ourstudio.se
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: numpy (>=1.19.5)
+
+UNKNOWN
+
+
