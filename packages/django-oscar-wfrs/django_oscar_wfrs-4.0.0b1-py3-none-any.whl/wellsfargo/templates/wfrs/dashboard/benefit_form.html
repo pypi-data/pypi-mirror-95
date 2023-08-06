@@ -1,0 +1,58 @@
+{% extends 'oscar/dashboard/layout.html' %}
+{% load i18n %}
+{% load currency_filters %}
+
+{% block title %}
+    {% if plan %}
+        {% trans "Edit plan group" %} |
+    {% else %}
+        {% trans "Create new plan group" %} |
+    {% endif %}
+    {% trans "Wells Fargo" %} |
+    {{ block.super }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="{% url 'wfrs-benefit-list' %}">{% trans "Wells Fargo Plan Groups" %}</a>
+            </li>
+            {% if benefit %}
+                <li class="breadcrumb-item active" aria-current="page">
+                    {% trans "Edit plan group" %}
+                </li>
+            {% else %}
+                <li class="breadcrumb-item active" aria-current="page">
+                    {% trans "New plan group" %}
+                </li>
+            {% endif %}
+        </ol>
+    </nav>
+{% endblock %}
+
+{% block headertext %}
+    {% if benefit %}
+        {% trans "Edit plan groups" %}
+    {% else %}
+        {% trans "New plan groups" %}
+    {% endif %}
+{% endblock %}
+
+{% block dashboard_content %}
+    <div class="card card-body">
+        <form action="." method="post" class="form-stacked">
+            {% csrf_token %}
+            {% include "oscar/dashboard/partials/form_fields.html" with form=form %}
+            {% block form_actions %}
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit" data-loading-text="{% trans 'Saving...' %}">{% trans "Save" %}</button> {% trans "or" %}
+                    <a href="{% url 'wfrs-benefit-list' %}">{% trans "cancel" %}</a>
+                </div>
+            {% endblock form_actions %}
+        </form>
+    </div>
+{% endblock %}
