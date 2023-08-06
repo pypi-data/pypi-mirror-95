@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: krx-hj3415
+Version: 0.1.2
+Summary: Get entire corp data from https://kind.krx.co.kr
+Home-page: http://localhost
+Author: hyungjin kim
+Author-email: hj3415@gmail.com
+License: UNKNOWN
+Description: # krx Package
+        This is a program gets corporation data from https://kind.krx.co.kr
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
