@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README
+setup.py
+badar-calc/__init__.py
+badar-calc/calculator.py
+badar_calc.egg-info/PKG-INFO
+badar_calc.egg-info/SOURCES.txt
+badar_calc.egg-info/dependency_links.txt
+badar_calc.egg-info/top_level.txt

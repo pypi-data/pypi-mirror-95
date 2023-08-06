@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: badar-calc
+Version: 0.0.2
+Summary: Very basic calculator
+Home-page: UNKNOWN
+Author: Badrudin Mohamed Ali
+Author-email: badrudin.dev@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3.5
