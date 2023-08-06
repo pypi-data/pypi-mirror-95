@@ -1,0 +1,9 @@
+dictdatabase/__init__.py,sha256=QQpqubfHnaQQ1FVZi6lhpWZC8-yrOKC3w7B_gELcLvQ,3355
+dictdatabase/config.py,sha256=0drYF7c7wCi5Gy0nnrXP7ZEtO8Kl-m9f6w12Utq1IPU,84
+dictdatabase/locking.py,sha256=sVQQWBLhwbUANFNKTPDfvWsFD0g6tucD4rNfXUp40jk,2817
+dictdatabase/objects.py,sha256=GFW-yQfRpHpxaNS1vy-7P9nvoypBrHf-XzBJxwJAVBE,4373
+dictdatabase/utils.py,sha256=cLPc_tozjPWRpzsMvR7_Olk_wq7LmNXW0dgSLmC6t0w,2960
+dictdatabase-0.4.0.dist-info/LICENSE,sha256=rIUTMGtXt2gnKznsGVPEFRxp1Z842XkWHOxxyR2jN-I,1061
+dictdatabase-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dictdatabase-0.4.0.dist-info/METADATA,sha256=Er2xvnHz2LH_TwkWxhtn5aGWREoNNqQByWQDJ9rKj3U,3586
+dictdatabase-0.4.0.dist-info/RECORD,,
