@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pipictureframe
+Version: 0.9.0
+Summary: A program to use a raspberry pi and a monitor as a digital picture frame.
+Home-page: UNKNOWN
+Author: Dr. Cornelius Mund
+Author-email: 
+License: GPLv3
+Description: # Pi Picture Frame
+        
+        A picture frame script primarily developed for Raspberry
+        Pi but can also run under Linux and Windows.
+        It uses [pi3d](https://pi3d.github.io/) to render the pictures.
+        The actual OpenGL code is from [pi3d_demos](https://github.com/pi3d/pi3d_demos).
+        
+        ## Usage
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
