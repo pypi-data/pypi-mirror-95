@@ -1,0 +1,14 @@
+README.md
+setup.py
+macops/__init__.py
+macops/change.py
+macops/generate.py
+macops/get.py
+macops/reset.py
+macops/test.py
+macops.egg-info/PKG-INFO
+macops.egg-info/SOURCES.txt
+macops.egg-info/dependency_links.txt
+macops.egg-info/entry_points.txt
+macops.egg-info/requires.txt
+macops.egg-info/top_level.txt
