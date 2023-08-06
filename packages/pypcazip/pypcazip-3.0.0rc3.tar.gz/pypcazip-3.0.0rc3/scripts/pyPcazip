@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+  
+from pypcazip._version import __version__
+
+import argparse
+import mdtraj as mdt
+from mdplus.pca import pcazipsave
+from pathlib import Path
+
+parser = argparse.ArgumentParser(description='PyPcazip: PCA based trajectory file compression.')
+parser.add_argument('-V', '--version', action='version', version=__version__)
+parser.add_argument('intraj', help='name of input trajectory file')
+parser.add_argument('outtraj', help='name of output compressed trajectory file')
+parser.add_argument('-p', '--prmtop', help='name of parameters/topology file')
+parser.add_argument('--explained_variance', type=float, help='PCA quality setting (0-1, default=0.75)', default=0.95)
+parser.add_argument('--residual_scale', type=float, help='compression  quality setting (default=200)', default=200)
+parser.add_argument('--eigenvector_scale', type=float, help='compression  quality setting (default=100)', default=100)
+parser.add_argument('-v', '--verbose', action='store_true', help='be verbose')
+
+args = parser.parse_args()
+if args.prmtop is None:
+    try:
+        t = mdt.load(args.intraj)
+    except:
+        print('Error: {} requires a corresponding prmtop file.'.format(args.intraj))
+        exit(1)
+
+else:
+    try:
+        t = mdt.load(args.intraj, top=args.prmtop)
+    except:
+        print('Error - could not read the given trajectory/prmtop files.')
+        exit(1)
+
+pcazipsave(t.xyz, args.outtraj, explained_variance=args.explained_variance,
+           residual_scale=args.residual_scale, eigenvector_scale=args.eigenvector_scale)
+
+if args.verbose:
+    s1 = Path(args.intraj).stat().st_size
+    s2 = Path(args.outtraj).stat().st_size
+    print('  Compression: {:5.4f}'.format(s2/s1))
