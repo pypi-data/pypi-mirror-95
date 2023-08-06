@@ -1,0 +1,12 @@
+flasktts/__init__.py,sha256=IAeJe64xKDNl23LwdJZUE25hjAb5eVT8VbyR8TslNr0,104
+flasktts/_utils.py,sha256=mnbfv4r3eA8DpeYPXl5w_o-jBCeOMrCEem_pyOUtJgo,1318
+flasktts/secret.py,sha256=GEcxLVGW6UOghGt6fVsVqUOpIfjzu2jNAWA6bAS9_iw,317
+flasktts/server.py,sha256=3DKEHw0qVqvgf4Jz73YNuqfo_8T8EbFN04WsbtgE7FA,2260
+flasktts/text_to_speech.py,sha256=S135B0xY_i1CLy1yuSu1LG61anPJSYKl29CiFP5SMuI,4216
+flasktts/_constants/__init__.py,sha256=gUKOuAfpVLyzFJMc3jDIPHa-4C1topNMJQWOKl4amHg,55
+flasktts/_constants/constants.py,sha256=NZ_xs6ZTotsZHFhdn5F0TJ6We-fP2gAvt70bd0H0uTc,492
+flasktts/_constants/keys.py,sha256=ALRTJ8K1xbueUktKW6rumMCKT-B_HllWFNh2fUbb3aw,419
+flasktts-0.0.4.dist-info/METADATA,sha256=r_Dx19Uf6IAhRFJniaTH22aPPSI2H3tHTbLTuipSfK4,891
+flasktts-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flasktts-0.0.4.dist-info/top_level.txt,sha256=Xuzch_yRADQzZ2g6_S0piRKyZ0ulMkifbviSQ4WTQKw,9
+flasktts-0.0.4.dist-info/RECORD,,
