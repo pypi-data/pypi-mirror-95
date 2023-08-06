@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: download-file
+Version: 0.1
+Summary: download_file
+Home-page: https://github.com/CNlong-Py/Pythonlibrarty.git
+Author: CNlong
+Author-email: T3464356490@outlook.com
+License: UNKNOWN
+Description: This is a library where you can download files
+        It will be updated irregularly in the future
+        usage method：
+        import download_ file as a
+        a. download (URL, path)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
