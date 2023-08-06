@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Speed_test_OOkla.egg-info/SOURCES.txt
+Speed_test_OOkla.egg-info/dependency_links.txt
+Speed_test_OOkla.egg-info/top_level.txt
+SpeedtestOOkla/__init__.py
+SpeedtestOOkla.egg-info/PKG-INFO
+SpeedtestOOkla.egg-info/SOURCES.txt
+SpeedtestOOkla.egg-info/dependency_links.txt
+SpeedtestOOkla.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: SpeedtestOOkla
+Version: 0.0.1
+Summary: Okla Speed test automation
+Home-page: UNKNOWN
+Author: Amrit Lal Gaur
+Author-email: amrit.gaur549@gmail.com
+License: MIT
+Description: This is fully automation script for network speed test.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/02/2021)
+        -------------------
+        - First Release
+        
+Keywords: speedtestautomation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
