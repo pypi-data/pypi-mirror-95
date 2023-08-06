@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Pakiet_Michala/Mine_Module_1.py
+Pakiet_Michala/Mine_Module_2.py
+Pakiet_Michala/__init__.py
+Pakiet_Michala.egg-info/PKG-INFO
+Pakiet_Michala.egg-info/SOURCES.txt
+Pakiet_Michala.egg-info/dependency_links.txt
+Pakiet_Michala.egg-info/requires.txt
+Pakiet_Michala.egg-info/top_level.txt

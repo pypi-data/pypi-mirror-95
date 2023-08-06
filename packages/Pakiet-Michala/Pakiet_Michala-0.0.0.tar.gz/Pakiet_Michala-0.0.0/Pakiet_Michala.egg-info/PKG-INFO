@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: Pakiet-Michala
+Version: 0.0.0
+Summary: Kilka przydatnych funkcji zwracających czas w różnych postaciach
+Home-page: https://pypi.python.org/pypi
+Author: Michal Mi
+Author-email: m.p.milinski@gmail.com
+License: MIT
+Description: Struktura folderĂłw
+        
+        pakiet_Mariusza
+        â”śâ”€â”€ LICENSE
+        â”śâ”€â”€ README.md
+        â”śâ”€â”€ example_pkg
+        â”‚	â”śâ”€â”€moj_modul1.py
+        â”‚	â”śâ”€â”€moj_modul2.py
+        â”‚   â””â”€â”€ __init__.py
+        â””â”€â”€ setup.py
+        
+        Procedura tworzenia pakietu
+        1. UtwĂłrz pliki o strukturze jak powyĹĽej
+        2. w pliku setup.py dodaj kod z Twoimi danymi
+        3. WypeĹ‚nij swoje moduĹ‚y kodem
+        4. Sprawdz czy pakiet dziaĹ‚a odwoĹ‚ujÄ…c siÄ™ do niego z innego pliku (poza pakietem)
+        5. zainstaluj twine     pip install twine
+        6. zbuduj instalatora   python setup.py sdist bdist_wheel
+        7. sprawdĹş builda       twine check dist/*
+        8. opublikuj pakiet     twine upload dist/*
+        9. podczas publikacji jako uĹĽytkownika podaj __token__
+        10. HasĹ‚o jest = wartoĹ›ci tokena
+        
+        lokalny test
+        pip install .
+        z poziomu folderu w ktĂłrym jest setup.py
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
