@@ -1,0 +1,8 @@
+pypinyin>=0.40.0
+jsonformatter>=0.3.0
+psutil
+pycryptodome
+bizerror
+pillow
+rsa
+PyYAML
