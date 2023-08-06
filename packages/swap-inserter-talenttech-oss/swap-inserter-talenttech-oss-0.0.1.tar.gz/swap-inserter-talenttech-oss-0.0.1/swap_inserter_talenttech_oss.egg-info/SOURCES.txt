@@ -1,0 +1,12 @@
+README.md
+setup.py
+inserter/__init__.py
+inserter/ch_swap_inserter.py
+inserter/swap_inserter.py
+inserter/vertica_swap_inserter.py
+swap_inserter_talenttech_oss.egg-info/PKG-INFO
+swap_inserter_talenttech_oss.egg-info/SOURCES.txt
+swap_inserter_talenttech_oss.egg-info/dependency_links.txt
+swap_inserter_talenttech_oss.egg-info/requires.txt
+swap_inserter_talenttech_oss.egg-info/top_level.txt
+test/test_inserter.py
