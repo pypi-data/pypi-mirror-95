@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pyrayt"
+version = "0.1.1"
+description = "a toolchain for developing and simulating optical packages"
+authors = ["Frazier, Ryan"]
+license = "MIT"
+packages = [
+    {include = "pyrayt"}]
+
+[tool.poetry.dependencies]
+python = "^3.7.5"
+numpy = "^1.20.0"
+scipy = "^1.6.0"
+pandas = "^1.2.2"
+
+[tool.poetry.dev-dependencies]
+coverage = "^5.4.0"
+tox = "^3.21.4"
+Sphinx = "^3.4.3"
+sphinx-rtd-theme = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
