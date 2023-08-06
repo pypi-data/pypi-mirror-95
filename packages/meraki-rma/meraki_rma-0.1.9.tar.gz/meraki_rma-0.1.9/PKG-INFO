@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: meraki-rma
+Version: 0.1.9
+Summary: Library to make Meraki RMAs easy and programmatic.
+Home-page: https://github.com/thomaschristory/meraki_rma
+Keywords: meraki,dashboard,cisco,python
+Author: Thomas Christory
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: meraki (>=1.4.3,<2.0.0)
+Requires-Dist: meraki-dashboard-connect (>=0.1.1,<0.2.0)
+Requires-Dist: meraki-env (>=0.1.1,<0.2.0)
+Requires-Dist: meraki-exception (>=0.1.0,<0.2.0)
+Requires-Dist: rich (>=9.10.0,<10.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Bug Tracker, https://github.com/thomaschristory/meraki_rma/issues
+Description-Content-Type: text/markdown
+
+# Meraki RMA Wrapper
+
+This repo contains an early prototype to simplify replacing devices on the Meraki Dashboard.
+
+
+## Insallation :
+pip install meraki-rma / poetry add meraki-rma
+
+
+## Usage :
+
+from meraki_rma import MerakiRma
+
+
+then see examples/switch-rma.py
+
