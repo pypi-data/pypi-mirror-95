@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: pyMicVoiceDetection
+Version: 2.0.0
+Summary: easy Voice Activitive Dectection from MIC for python
+Home-page: https://pypi.org/project/pyMicVoiceDetection
+Author: KuoYuan Li
+Author-email: funny4875@gmail.com
+License: UNKNOWN
+Description: # Author:KuoYuan Li
+        
+        [![N|Solid](https://images2.imgbox.com/8f/03/gv0QnOdH_o.png)](https://sites.google.com/ms2.ccsh.tn.edu.tw/pclearn0915)
+        本程式提供一個以能量為基準的 VAD(Voice Activitive Dectection)演算法
+        由 mic 動態擷取有聲段
+        背景能量門檻值可由 TH 值做設定
+        
+         
+Keywords: Voice Activitive Detection,VAD,MicVoiceDetection
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
