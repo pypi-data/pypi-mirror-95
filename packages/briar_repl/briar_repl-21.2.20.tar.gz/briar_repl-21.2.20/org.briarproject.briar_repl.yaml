@@ -1,0 +1,148 @@
+id: org.briarproject.briar_repl
+runtime: org.freedesktop.Platform
+sdk:     org.freedesktop.Sdk
+sdk-extensions: [ org.freedesktop.Sdk.Extension.openjdk ]
+runtime-version: '20.08'
+command: run_briar_repl.sh
+finish-args:
+- --share=ipc
+- --share=network
+- --filesystem=~/.config/dconf:ro
+- --filesystem=~/.briar:rw
+- --env=PATH=/app/bin:/usr/bin:/app/jre/bin
+cleanup:
+- /app/include
+- /app/bin/*.py
+- /include
+- /lib/pkgconfig
+- /man
+- /share/doc
+- /share/man
+- /share/pkgconfig
+modules:
+- name: python3-colorful
+  buildsystem: simple
+  build-commands:
+  - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+    colorful==0.5.4
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/b0/8e/e386e248266952d24d73ed734c2f5513f34d9557032618c8910e605dfaf6/colorful-0.5.4-py2.py3-none-any.whl
+    sha256: 8d264b52a39aae4c0ba3e2a46afbaec81b0559a99be0d2cfe2aba4cf94531348
+
+- name: python3-prompt_toolkit
+  buildsystem: simple
+  build-commands:
+  - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+    prompt_toolkit==3.0.14
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/4e/f4/805f4596bf15ae8e576623f579b40c12b0780a7bdd9a437f205f136d9ece/prompt_toolkit-3.0.14-py3-none-any.whl
+    sha256: c96b30925025a7635471dc083ffb6af0cc67482a00611bd81aeaeeeb7e5a5e12
+  - type: file
+    url: https://files.pythonhosted.org/packages/59/7c/e39aca596badaf1b78e8f547c807b04dae603a433d3e7a7e04d67f2ef3e5/wcwidth-0.2.5-py2.py3-none-any.whl
+    sha256: beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784
+
+- name: httpx
+  buildsystem: simple
+  build-commands:
+  - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+    httpx==0.16.1
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/2d/c6/59aa4188e7eddb9e89ec67a51598ca6bfc09f1b38c9b45f7ee45af7a4df4/httpx-0.16.1-py3-none-any.whl
+    sha256: 9cffb8ba31fac6536f2c8cde30df859013f59e4bcc5b8d43901cb3654a8e0a5b
+  - type: file
+    url: https://files.pythonhosted.org/packages/50/ce/544244e2145075896d38f7db3e822c24d1be9f7966ed3d83f158e388d195/httpcore-0.12.3-py3-none-any.whl
+    sha256: 93e822cd16c32016b414b789aeff4e855d0ccbfc51df563ee34d4dbadbb3bcdc
+  - type: file
+    url: https://files.pythonhosted.org/packages/5e/a0/5f06e1e1d463903cf0c0eebeb751791119ed7a4b3737fdc9a77f1cdfb51f/certifi-2020.12.5-py2.py3-none-any.whl
+    sha256: 719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830
+  - type: file
+    url: https://files.pythonhosted.org/packages/78/be/7b8b99fd74ff5684225f50dd0e865393d2265656ef3b4ba9eaaaffe622b8/rfc3986-1.4.0-py2.py3-none-any.whl
+    sha256: af9147e9aceda37c91a05f4deb128d4b4b49d6b199775fd2d2927768abdc8f50
+  - type: file
+    url: https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl
+    sha256: b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0
+  - type: file
+    url: https://files.pythonhosted.org/packages/60/0f/7a0eeea938eaf61074f29fed9717f2010e8d0e0905d36b38d3275a1e4622/h11-0.12.0-py3-none-any.whl
+    sha256: 36a3cb8c0a032f56e2da7084577878a035d3b61d104230d4bd49c0c6b555a9c6
+  - type: file
+    url: https://files.pythonhosted.org/packages/52/b0/7b2e028b63d092804b6794595871f936aafa5e9322dcaaad50ebf67445b3/sniffio-1.2.0-py3-none-any.whl
+    sha256: 471b71698eac1c2112a40ce2752bb2f4a4814c22a54a3eed3676bc0f5ca9f663
+
+- name: python3-websockets
+  buildsystem: simple
+  build-commands:
+  - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+    websockets==8.1
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/e9/2b/cf738670bb96eb25cb2caf5294e38a9dc3891a6bcd8e3a51770dbc517c65/websockets-8.1.tar.gz
+    sha256: 5c65d2da8c6bce0fca2528f69f44b2f977e06954c8512a952222cea50dad430f
+
+- name: psutil
+  buildsystem: simple
+  build-commands:
+  - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+    psutil==5.8.0
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/e1/b0/7276de53321c12981717490516b7e612364f2cb372ee8901bd4a66a000d7/psutil-5.8.0.tar.gz
+    sha256: 0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6
+
+- name: python3-briar_repl
+  buildsystem: simple
+  build-commands:
+  - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+    briar_repl==21.2.14
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/bd/5d/0577191b2a9eee2453f96aa83c674783318656d09a6c00ac7bf24908eeab/briar_repl-21.2.14-py3-none-any.whl
+    sha256: e7c70989d48a568fafeda2f36c291507f8cd6dbf448767e8ca9557b516c02ed7
+
+- name: run_briar_repl.sh
+  buildsystem: simple
+  build-commands:
+  - install -D run_briar_repl.sh /app/bin/run_briar_repl.sh
+  sources:
+  - type: file
+    path: run_briar_repl.sh
+
+- name: openjdk
+  buildsystem: simple
+  build-commands:
+  - /usr/lib/sdk/openjdk/install.sh
+
+- name: briar_headless_x86_64.jar
+  only-arches: [ x86_64 ]
+  buildsystem: simple
+  build-commands:
+  - mkdir -p /app/share/java
+  - install -Dm644 briar-headless-x86_64_1.2.14.jar /app/share/java/briar-headless.jar
+  sources:
+  - type: file
+    url: https://briarproject.org/jar/briar-headless-x86_64_1.2.14.jar
+    sha256: 398f114292aa77c81f0c69e54d25200de54590ef3f63c803d30d25980b43d0a1
+
+- name: briar_headless_aarch64.jar
+  only-arches: [ aarch64 ]
+  buildsystem: simple
+  build-commands:
+  - mkdir -p /app/share/java
+  - install -Dm644 briar-headless_aarch64_1.2.12_54893d271.jar /app/share/java/briar-headless.jar
+  sources:
+  - type: file
+    path: briar-headless_aarch64_1.2.12_54893d271.jar
+
+- name: briar_headless_armv7.jar
+  only-arches: [ armv7 ]
+  buildsystem: simple
+  build-commands:
+  - mkdir -p /app/share/java
+  - install -Dm644 briar-headless-armv7_1.2.14.jar /app/share/java/briar-headless.jar
+  sources:
+  - type: file
+    url: https://briarproject.org/jar/briar-headless-armv7_1.2.14.jar
+    sha256: 398f114292aa77c81f0c69e54d25200de54590ef3f63c803d30d25980b43d0a1
+
