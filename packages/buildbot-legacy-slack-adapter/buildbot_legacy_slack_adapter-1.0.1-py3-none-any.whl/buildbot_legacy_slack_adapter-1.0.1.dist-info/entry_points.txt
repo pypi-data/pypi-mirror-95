@@ -1,0 +1,3 @@
+[buildbot.reporters]
+SlackStatusPush = buildbot_legacy_slack_adapter.reporter:SlackStatusPush
+
