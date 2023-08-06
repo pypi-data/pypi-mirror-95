@@ -1,0 +1,5 @@
+bert_token_tagger/__init__.py,sha256=QPa3Dav7a40C0fatNjTXh-XGosWwoxBTFc-Axzj8YTs,1384
+bert_token_tagger/utils.py,sha256=kqbE3uOAEYv8jTZlych8ZOxuh6Sa40iBWS8uT-03cA4,4987
+bert_token_tagger-0.2.0.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+bert_token_tagger-0.2.0.dist-info/METADATA,sha256=GPGuu8MiH0ddBeDQNeqQKzSoNwaVjYXoaa6qoFcCjFM,819
+bert_token_tagger-0.2.0.dist-info/RECORD,,
