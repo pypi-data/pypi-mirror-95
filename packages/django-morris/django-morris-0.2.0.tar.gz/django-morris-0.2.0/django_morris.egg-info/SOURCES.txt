@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+django_morris.egg-info/PKG-INFO
+django_morris.egg-info/SOURCES.txt
+django_morris.egg-info/dependency_links.txt
+django_morris.egg-info/top_level.txt
+morris/__init__.py
+morris/fields.py
+morris/widgets.py
+morris/static/morris/js/hex_color.js
+morris/static/morris/js/hex_color.min.js
+morris/templates/morris/hex_color.html
