@@ -1,0 +1,319 @@
+# Declair :cake:
+[![pipeline status](https://gitlab.com/k-cybulski/declair/badges/master/pipeline.svg)](https://gitlab.com/k-cybulski/declair/-/commits/master)
+[![coverage report](https://gitlab.com/k-cybulski/declair/badges/master/coverage.svg)](https://gitlab.com/k-cybulski/declair/-/commits/master)
+
+_Note: This project is under heavy development. The configuration API may change at any moment._
+
+Declair is a framework for declaratively defining hyperparameter optimization experiments. It uses [Sacred](https://github.com/IDSIA/sacred) for storing experiment results and supports [hyperopt](https://github.com/hyperopt/hyperopt) for optimization.
+
+It came about from attempts to recreate DeepSolaris results in PyTorch instead of Keras. However, it grew to be a more extensive and general framework than originally planned.
+
+# Getting started
+## Installation
+Install required Python packages in your favourite virtual environment
+```
+pip install -r requirements.txt
+```
+
+## Running the tests
+Go into the root of the repository (i.e. where this README.md is) and run 
+```
+python -m pytest
+```
+
+## Running examples
+There is an example project with experiment configs in `examples`. 
+
+The default configuration for experiments assumes a MongoDB database on
+`localhost`, port `27017` with a user `mongo_user` and password
+`mongo_password`. This is the default configuration from a [Docker example for
+Sacred](https://sacred.readthedocs.io/en/stable/examples.html#docker-setup).
+There is an alternative configuration available without MongoDB, however its
+usefulness is limited as it only saves outputs to a directory without being
+attached to a dashboard.
+
+You can run the experiments with the above MongoDB configuration by
+```
+python -m examples.execute_sample <config_example_name>
+```
+or without the MongoDB configuration as
+```
+python -m examples.execute_sample <config_example_name> declair_env_without_mongodb.yaml
+```
+where `<config_example_name>` is a filename of one of the `.json`
+configurations from `examples/sample_configs`.
+
+# Usage
+At the core, this package allows to reproducibly define and execute model
+hyperparameter search as well as single runs of parametrized experiments, all
+while keeping the results of each execution safely stored using Sacred. The
+experiments can be arbitrary insofar as they can be narrowed down into a single
+Python function that, given some parameters, runs them.
+
+This package will gladly examine possible parameter combinations to an
+arbitrary level of parameter nestedness, where parameters can also be
+Python functions or classes in modules. In addition, by using Hyperopt, it is
+also possible to define continuous numeric parameters where necessary.
+
+There are two distinct modes of experiments:
+ - Runs, which are a single execution of the experiment
+ - Search, which define a parameter search space and generate multiple runs in
+   order to execute them
+
+Experiments are defined in `.json` files. These `.json` files can contain special object definitions, listed in [Special JSON objects](#special-json-objects) section.
+
+## Run definition
+Basic structure of runs:
+```json
+{
+    "mode": "run",
+    "execute_function": {"__type__": "some.module.function"},
+    "experiment_name": "name for reference in Sacred",
+    "params": {
+        "some_arg": "some value",
+        "some_function_arg": {"__type__": "some.module.another_function"},
+        [...]
+    }
+}
+```
+Note that all entries of form `{"__type__": "some.module.function"}` will be
+loaded into memory as types as if they were imported like `import
+some.module.function`. Also, it's possible to insert variables taken from the
+environment configuration, but more on that later.
+
+Upon execution, `some.module.function` will be executed as a captured function
+in a Sacred experiment with `params` as the configuration. In other words,
+`params` will be provided as a first argument dictionary, and the function
+should also accept `_run` in order to store results in Sacred. The function
+`some.module.function` is responsible for tracking results in Sacred correctly.
+There are some helper functions for doing so, but only for specific frameworks
+(i.e. PyTorch Ignite). Otherwise, see [Sacred
+docs](https://sacred.readthedocs.io/en/stable/apidoc.html#the-run-object) on
+how to use the Run object to store results. Methods `add_artifact` and
+`log_scalar` are specifically of interest, as they allow to store output files
+and to keep track of metrics over the course of the run.
+
+Furthermore, if you'd like to use Hyperopt for parameter search be sure to
+return in the function an output dictionary with an entry which is the value to
+optimize.
+
+For an example run, see `examples/sample_configs/run.json` with the associated
+execution function in `examples/sample_project/execute.py`
+
+## Search definition
+Basic structure of grid and hyperopt search experiments is similar to run
+experiments, with an additional trick: in the `params` entry, any list defines
+multiple disjoint possible configurations, with each item of the list defining
+another possible configuration.
+
+As a very simple example, if a dictionary like
+```python
+{'optimizer': [
+    {
+        'function': 'Adagrad',
+        'lr': [4e-05, 4e-06]
+    },
+    {
+        'function': 'RMSprop',
+        'lr': [1e-2, 1e-4],
+        'momentum': [0, 1e-2]
+    }
+]}
+```
+finds its way into the search definition, it will be _unrolled_ into such
+possible values:
+```python
+[{'optimizer': {'function': 'Adagrad', 'lr': 4e-05}},
+ {'optimizer': {'function': 'Adagrad', 'lr': 4e-06}},
+ {'optimizer': {'function': 'RMSprop', 'lr': 0.01, 'momentum': 0}},
+ {'optimizer': {'function': 'RMSprop', 'lr': 0.01, 'momentum': 0.01}},
+ {'optimizer': {'function': 'RMSprop', 'lr': 0.0001, 'momentum': 0}},
+ {'optimizer': {'function': 'RMSprop', 'lr': 0.0001, 'momentum': 0.01}}]
+```
+This works for any arbitrary level of nestedness of dictionaries and lists.
+However, note that lists nested directly inside lists are ambiguous. So, in
+case you wish to use an actual sequence for a parameter, you can do so by in
+place of `[...]` using `{"__tuple__": [...]}`. Entries of the sequence will
+also support unrolling. For example, a list of options
+```python
+['cat', {'__tuple__': [[0, 1],2,3]}]
+```
+is unrolled into
+```python
+['cat', (0, 2, 3), (1, 2, 3)]
+```
+Furthermore, Hyperopt search space definitions also support special entries of
+form `{"__hp__": "<hyperopt-param>", "args": (...)}` or `{"__hp__": "<hyperopt-param>", "kwargs": {...}}` where `<hyperopt-param>` is one of
+hyperopt parameter expressions as in
+[here](https://github.com/hyperopt/hyperopt/wiki/FMin#21-parameter-expressions)
+(but without `hp.`) with the corresponding arguments or keyword arguments. The
+data type (`float` or `int`) of the parameter will be inferred, however if you
+need to be sure you can add `"dtype": "int"` or `"dtype": "float"` to the
+entry.
+
+So, with all that in mind, the basic structure of a search experiment is:
+```json
+{
+    "mode": "search",
+    "type": <"grid" or "hyperopt">,
+    "execute_function": {"__type__": "some.module.function"},
+    "experiment_name": "name for reference in Sacred",
+    "search_params": {
+        ...
+    },
+    "params": {
+        "some_arg": ["some value", "some other value"],
+        "some_function_arg": {"__type__": "some.module.another_function"},
+        ...
+    },
+    "static_params": {
+        "some_fixed_list_parameter": [
+            "necessary entry",
+            "another necessary entry",
+            ...
+        ]
+    }
+}
+```
+Here the two new elements compared to a Run definition are `search_params`,
+which are rather self-explanatory, and `static_params`. `static_params` are
+inserted into `params`, but without expanding lists into disjoint
+possibilities. As such, all lists inside `static_params` are equivalent to the
+`{"__tuple__": [...]}` form of sequences in `params`, without any difference
+otherwise. It's just a little ergonomic helper feature.
+
+For grid search experiments, `search_params` are:
+```python
+"search_params": {
+    "runs_per_configuration": <number of times each configuration is executed>
+}
+```
+
+For a sample gridsearch, see `examples/sample_configs/search_grid.json`.
+
+For Hyperopt search experiments, `search_params` are:
+```python
+"search_params": {
+    "fmin_kwargs": {
+        <hyperopt.fmin keyword arguments>
+    },
+    "optimize": {
+        "type": <"max" or "min">,
+        "target": "target variable"
+    }
+}
+```
+`fmin_kwargs` defines keyword arguments to `hyperopt.fmin`
+
+`optimize` defines which variable we wish to optimize. `target` defines which
+value of `some.module.function` output dictonaries to optimize for. `type`
+defines whether it's a `max` or `min` optimization problem.
+
+For a sample Hyperopt search, see `examples/sample_configs/search_hyperopt.json`.
+
+## Environment configuration
+It is possible to insert more information into runs from the environment, such
+as data directory paths. Environment configuration is stored in YAML files.
+
+For an experiment definition `path/definition.json`, the environment
+configuration files are executed in this order (each lower file can overwrite
+settings of the files before it):
+ - `declair_env.yaml` in the root of the git repository of the file
+   `path/definition.json`, if it's in a git repository.
+ - `path/declair_env.yaml`
+ - `path/definition.json.declair_env.yaml`
+
+To insert an entry into the experiment definition, write 
+`{"__env__": [... key ...]}` where the key is a list of nested entries to
+follow.
+
+For example, if you have a YAML
+```yaml
+dataset:
+    path: "/storage/data/sample_dataset"
+```
+and wish to use `path` for an experiment, in the experiment definition write
+`{"__env__": ["dataset", "path"]}` in place where you wish to use it. Also, you
+can add an entry `default: <some value>` to this dictionary to define a default
+value in the event this information is not contained in the environment YAML.
+
+## Configuring where to store results
+Furthermore, the environment config YAML files are used to define where to
+store experiment results. [Sacred
+observers](https://sacred.readthedocs.io/en/stable/observers.html) are used to
+store results. As of now, only Mongo Observer and File Storage Observer are
+working.
+
+Observers are defined in the YAML as follows:
+```yaml
+observers:
+    file:
+        path: "out/test_run"
+    mongo:
+        url: "mongodb://mongo_user:mongo_password@localhost:27017"
+```
+Here `file` and `path` define the directory to store File Storage Observer
+outputs. `mongo` and `url` define the url to a database for the Mongo Observer.
+If either is not provided, that observer is not used. If an empty config is
+given, no observers are used and thus no results are stored.
+
+## Executing experiments
+To execute an experiment from a definition file, use
+```python
+from declair import execute_file
+execute_file(file_path)
+```
+
+If you'd like to do a dry-run, without using any Sacred observers _(or any
+other environment configuration)_, use
+```python
+from declair import execute_file, Environment
+env = Environment() # empty environment config
+execute_file(file_path, env)
+```
+
+## Special JSON objects
+### Type dictionary
+```json
+{"__type__": <type string>}
+```
+imported into memory as if `import <type string>` was used in code.
+
+### Call dictionary
+```json
+{
+    "__call__": <function or type string>,
+    "__with_args__": <args list> (optional),
+    "__with_kwargs__": <kwargs dict> (optional)
+}
+```
+called as if the function under `__call__` was called with `__with_args__` as positional arguments and `__with_kwargs__` as keyword arguments.
+
+### Environment dictionary
+```json
+{"__env__": <key list>}
+```
+taken from the environment, such that each consecutive entry in the key list is taken from a progressively deeper nested configuration.
+
+### Tuple dictionaries
+```json
+{"__tuple__": <sequence>}
+```
+are turned into a tuple during search, without being split up into disjoint possibilities.
+
+### Hyperopt parameter dictionaries
+```json
+{"__hp__": <hyperopt-param>, "args": [...]}
+```
+or
+```json
+{"__hp__": <hyperopt-param>, "kwargs": {...}}
+```
+where `<hyperopt-param>` is one of hyperopt parameter expressions as in
+[here](https://github.com/hyperopt/hyperopt/wiki/FMin#21-parameter-expressions)
+(but without `hp.`). It is used in the hyperopt search space definition as a
+parameter variable.
+
+
+# Credits
+This project has been heavily inspired by [cbds_common](https://gitlab.com/CBDS/cbds_common).
