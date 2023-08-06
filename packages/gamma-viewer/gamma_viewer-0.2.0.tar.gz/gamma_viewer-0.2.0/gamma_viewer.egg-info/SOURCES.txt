@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+gamma_viewer.json
+setup.cfg
+setup.py
+gamma_viewer/__init__.py
+gamma_viewer/gamma_viewer.py
+gamma_viewer.egg-info/PKG-INFO
+gamma_viewer.egg-info/SOURCES.txt
+gamma_viewer.egg-info/dependency_links.txt
+gamma_viewer.egg-info/not-zip-safe
+gamma_viewer.egg-info/requires.txt
+gamma_viewer.egg-info/top_level.txt
+gamma_viewer/static/extension.js
