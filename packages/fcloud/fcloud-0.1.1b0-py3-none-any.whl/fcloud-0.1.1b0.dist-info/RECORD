@@ -1,0 +1,9 @@
+fcloud/__init__.py,sha256=I00U831Ymv1GX4hWnk2VrnMz_OpPYJKIHF-qKVgA6X0,26
+fcloud/fauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcloud/fmap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcloud/friday/__init__.py,sha256=I00U831Ymv1GX4hWnk2VrnMz_OpPYJKIHF-qKVgA6X0,26
+fcloud/friday/friday.py,sha256=f6H4AGDU3Gv5HLW-Ao9rqkKlg4xajhZUfqtdjyC7MKk,59
+fcloud-0.1.1b0.dist-info/METADATA,sha256=8ssfJPPu1P019AR9SKnRsgAwhrMoJSsjUZXou_ty-2s,465
+fcloud-0.1.1b0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fcloud-0.1.1b0.dist-info/top_level.txt,sha256=Z209CxyHebS2qQzeDK7YDU3rqL8FOgFCH4iOX1kfLdw,7
+fcloud-0.1.1b0.dist-info/RECORD,,
