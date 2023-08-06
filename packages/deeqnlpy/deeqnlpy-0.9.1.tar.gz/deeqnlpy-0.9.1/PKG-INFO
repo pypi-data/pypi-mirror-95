@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: deeqnlpy
+Version: 0.9.1
+Summary: The deeq nlp python client library
+Home-page: https://baikal.ai/app2/#/morpheme
+License: BSD-3-Clause
+Keywords: NLP,Korean,Deep Learning,POS tagger
+Author: Gihyun YUN
+Author-email: gih2yun@baikal.ai
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: Korean
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: grpcio (==1.35.0)
+Requires-Dist: protobuf (==3.14.0)
+Project-URL: Repository, https://github.com/baikalai/deeqnlpy
