@@ -1,0 +1,9 @@
+proc_wrapper/__init__.py,sha256=zHR5RkmTFT1x2V4rbExuiegOv0wUxLaFUCQyy54BGek,131
+proc_wrapper/__main__.py,sha256=rUMOBoy76Tu7fUavMzItWv1_ZrynnUWBUWG81yqtgVg,748
+proc_wrapper/proc_wrapper.py,sha256=nkw35fv56zWL9uykL83YJFkk-Ug24OABRqJ-9Z1yZFs,92638
+proc_wrapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proc_wrapper/status_updater.py,sha256=5VPGRt76QGa3uL6P9T22PPJG3COUf3JU2mn5rwzs0Es,5195
+cloudreactor_procwrapper-2.0.0.dist-info/LICENSE,sha256=8tW7_HkRcBfDf_96zhZQ0BtZa7HX3BShDASqRV1LWa4,17341
+cloudreactor_procwrapper-2.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cloudreactor_procwrapper-2.0.0.dist-info/METADATA,sha256=LCnYHJWTbUW0J7T1do1j0-dhVQl_uFmUo5-g3O-BV2E,28358
+cloudreactor_procwrapper-2.0.0.dist-info/RECORD,,
