@@ -1,0 +1,15 @@
+pygit2
+PyYAML
+lxml
+pydantic
+protobuf
+requests
+
+[dev]
+black
+mypy
+wheel
+mypy-protobuf
+
+[distribute]
+twine
