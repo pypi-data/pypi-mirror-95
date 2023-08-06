@@ -1,0 +1,3 @@
+[console_scripts]
+extend-noip=extend_noip.__main__:main
+

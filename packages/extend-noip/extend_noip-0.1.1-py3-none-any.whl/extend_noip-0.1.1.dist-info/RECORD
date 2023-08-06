@@ -1,0 +1,14 @@
+extend_noip/__init__.py,sha256=feFIw02Dtx6fSUeplMxX6fy_GKvUSe8CNdA8gD-HFuM,36
+extend_noip/__main__.py,sha256=hEZXS-CZPMXNCn_TSljAxYqopA6HtPfwhKa1Xe-TS9k,3849
+extend_noip/config.py,sha256=1MSOxu0mC8_APyZixCYDuR1zLKfgjLTtKixNlbVcKNM,593
+extend_noip/fetch_lastupdate.py,sha256=JUmHkK_8TCBHkgtpTBzAYNd0oD2FexjVauDqI6v9pZE,1859
+extend_noip/fetch_myservices.py,sha256=UGCiH5kozmh5L-2n5_5SO4V5lbnBfyRnAN3iHII442Q,2812
+extend_noip/get_ppbrowser.py,sha256=0TeMjDvGBHZqYlXwGWrOl0Nzq3Z9E_7N_jWsZzwCJ08,3423
+extend_noip/login_noip.py,sha256=k9I_ofNiRn7NGRygTUTtrqblsdd15hyOLw62TD0UjZ0,4002
+extend_noip/save_tempfile.py,sha256=TfLBSKlwd0nJ3l-P1bnhqL20Oprzeh4Dmghhs9NXBTE,4204
+extend_noip/update_service.py,sha256=IBD_MN_nCsrepTPq-ztekUs_X94UhT9a8gfZC9gAJAg,2857
+extend_noip-0.1.1.dist-info/entry_points.txt,sha256=u3a9d3Hac5scY9k9HmVqzEbvhUXoC4jjqLCsYfml7aU,57
+extend_noip-0.1.1.dist-info/LICENSE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+extend_noip-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+extend_noip-0.1.1.dist-info/METADATA,sha256=mfsP5R6uFIWCc4q_KqtSEoqoV-YxFTBsq_zqbac54vc,4126
+extend_noip-0.1.1.dist-info/RECORD,,
