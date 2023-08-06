@@ -1,0 +1,6 @@
+clint
+colorama
+imageio
+imageio-ffmpeg
+pytube>=10.4.1
+wheel
