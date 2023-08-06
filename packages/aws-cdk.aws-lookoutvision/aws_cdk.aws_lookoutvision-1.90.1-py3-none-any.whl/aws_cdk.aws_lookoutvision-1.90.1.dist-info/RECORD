@@ -1,0 +1,8 @@
+aws_cdk/aws_lookoutvision/__init__.py,sha256=7aB3YjxMGd41I7DQAKAIZlGkkwi9a9ez5YUw7cd5JUQ,5481
+aws_cdk/aws_lookoutvision/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_lookoutvision/_jsii/__init__.py,sha256=qxzJW6sa2f0KHCaudHr5bmRVYKxyWlvrz4Rm2Fa7QWQ,372
+aws_cdk/aws_lookoutvision/_jsii/aws-lookoutvision@1.90.1.jsii.tgz,sha256=S2Rul9QWz7lkdvtH-cFARkVPjphDft0IGJs02WIZHHc,13990
+aws_cdk.aws_lookoutvision-1.90.1.dist-info/METADATA,sha256=ZMUw7JdFKCLhVCuejiG-tIfuSHS-PiICG0fLP8Q5sr0,1683
+aws_cdk.aws_lookoutvision-1.90.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_lookoutvision-1.90.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_lookoutvision-1.90.1.dist-info/RECORD,,
