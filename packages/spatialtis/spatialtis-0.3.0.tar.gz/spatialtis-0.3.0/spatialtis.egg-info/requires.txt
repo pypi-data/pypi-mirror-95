@@ -1,0 +1,26 @@
+anndata
+numpy
+pandas
+tqdm
+scipy
+shapely
+bokeh
+rich[jupyter]
+seaborn
+matplotlib
+pyecharts
+xgboost
+scikit-learn
+spatialentropy
+snapshot_phantomjs
+neighborhood_analysis
+
+[:python_version < "3.9"]
+ray
+
+[all]
+scikit-image
+python-igraph
+leidenalg
+alphashape
+tifffile
