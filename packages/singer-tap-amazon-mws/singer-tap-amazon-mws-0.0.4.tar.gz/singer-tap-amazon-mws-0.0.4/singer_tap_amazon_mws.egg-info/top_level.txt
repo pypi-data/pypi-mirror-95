@@ -1,0 +1,1 @@
+singer_tap_amazon_mws

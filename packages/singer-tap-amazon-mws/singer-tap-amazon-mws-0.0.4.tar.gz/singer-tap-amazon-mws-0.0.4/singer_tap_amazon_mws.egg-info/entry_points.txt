@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          singer-tap-amazon-mws=singer_tap_amazon_mws:main
+      
