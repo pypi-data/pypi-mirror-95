@@ -1,0 +1,6 @@
+ardupy-mpfshell
+colorama
+demjson
+pip>=20.1
+pyserial
+pyusb
