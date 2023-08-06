@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gpapidl/__init__.py
+gpapidl/config.py
+gpapidl/device.properties
+gpapidl/googleplay.py
+gpapidl/googleplay_pb2.py
+gpapidl/utils.py
+gpapidl.egg-info/PKG-INFO
+gpapidl.egg-info/SOURCES.txt
+gpapidl.egg-info/dependency_links.txt
+gpapidl.egg-info/requires.txt
+gpapidl.egg-info/top_level.txt
+test/test.py
