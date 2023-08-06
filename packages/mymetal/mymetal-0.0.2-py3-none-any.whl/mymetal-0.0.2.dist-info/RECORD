@@ -1,0 +1,12 @@
+mymetal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mymetal/classes.py,sha256=MXdRBIG6SDl95_G9VVUDy-G5s7J18XHvczXs1GBmmbw,6195
+mymetal/encode.py,sha256=wIApqJsptqLR80iZwk-5HT4rASkqZCZAFfb-6L-nm7c,11215
+mymetal/iof.py,sha256=5jbV2zJvXTzb0ZCKJzkpTgEawpVkOzArturVKiXxaKM,4064
+mymetal/jenks.py,sha256=tnc6AWzcNHkuKoRnGca_BfCW2ZiyRHikoLRzQ7ZqT3o,3281
+mymetal/load_dicts.py,sha256=xsh1GEsIOBXUI5Nn6kvsYNFmmn2Q18fj7NjtUxBaZEE,3560
+mymetal/mbp.py,sha256=Df9_hyVU_gjWQ86XErw7lvUmnWE3LYXrhyd2VFUb14g,3070
+mymetal/parser.py,sha256=2K96h08lDX1zx3ZlVSRAkpLe0JNB1h0SCFkjlB4lSOc,15367
+mymetal-0.0.2.dist-info/METADATA,sha256=Rhn318FEe4DCtgnTuphPeBD6nZD8BPCzQddplesnn5c,2452
+mymetal-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mymetal-0.0.2.dist-info/top_level.txt,sha256=buJXX2sMsFbHcMyyrE4POxN6YYgKHjvqUIUHgoIvs20,8
+mymetal-0.0.2.dist-info/RECORD,,
