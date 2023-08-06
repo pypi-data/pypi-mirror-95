@@ -1,0 +1,192 @@
+**A library to read Faster files with python**
+
+
+The faster acquisiton system comes with it's own C++ code for data unpacking and analysis: `fasterac`
+
+However, if you use a Windows system, work on different systems, ... writing, compiling and deploying an analysis code can be tedious.
+
+With Python, you can focus on writing the analysis code, without worrying about the dependencies, system paths, compilation, ...
+
+That's why this `faster` python module was developped.
+
+The project can be live tested on [Binder](https://mybinder.org/): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.in2p3.fr%2Fgregoire.henning%2Ffaster-example-notebook/bb2c4cd04cf46352e7de83f88c11d91832f4cd60?filepath=example_notebook.ipynb)
+
+
+## Getting Started
+
+The following instructions will get you a copy of the project up and running on your local machine.
+
+### Installing
+
+The module comes with no external dependency, and can easily be installed with the `distul=tils` tools of Python (pip  packaging will come soon).
+
+Get the [`faster-202003.tar.gz`](dist/faster-202003.tar.gz) file. Then `cd` to the directory where the file was download and execute the following commands: 
+
+```shell
+tar xvvzf faster-202003.tar.gz 
+cd faster-202003
+python3 setup.py install
+cd ..
+python3.7 -m faster test
+```
+
+This will unpack, build, install and test the `faster` module.
+
+## Running the tests
+
+The package comes with built-in test. To run the test, just run the following command in the directory containning the module.
+```bash
+$ python3 -m faster test
+```
+
+The output should be looking like
+
+```
+# Starting test ...
+# Module's path is '/the/path/to/faster/'
+# Elasped time: 0.601 seconds
+# Read 60211 of 60211 events from the test file
+#...done
+```
+
+You can test the library online with Binder: 
+
+
+## Dependencies
+
+The module is built with no dependencies apart from the python standard library.
+
+# Usage
+
+## Module level commands
+
+The module provide some direct commands that can be called using 
+
+```bash
+$ python3 -m faster command
+```
+
+Use `python3.7 -m faster -h` for a short inline documentation.
+
+### test
+
+As mentionned above, calling `python3 -m faster test` will perform a simple test: open a small file and iterate over it until the end. 
+
+### more
+
+Calling 
+
+```bash
+$ python3 -m faster more path/to/faster/file.fast
+```
+
+will display the content of the file by group of 10 events until you type 'q' at the prompt after each 10 event groups, or the end of the file, or you send a KeyboardInterrupt signal (i.e. Ctrl-C).
+
+### stats
+
+Calling 
+
+```bash
+$ python3 -m faster stats [--nmax=N] path/to/faster/file.fast
+```
+
+will read the files until the end or N events from the file and display statitics about the types and labels of events that were red. 
+The outuput format is python like with a tuple containing dictionnaries..
+
+## File Reader
+
+The `FileReader` class defines an iterator object that can be used to obtain the vents one by one.
+
+The simplest way to create a FileReader object is `FileReader('./path/to/file.fast')`.
+A second agrgument can be added to define the maximum number of events to read. By default, the reader will read 180000000 events, which is equivalent to 2GB of 12 bytes events and should cover all the data file cases.
+
+The best way to explore the file is to use a `for` loop:
+
+```python
+for fastervent in FileReader('./path/to/file.fast'):
+	# actions on `fasterevent` here
+```
+
+Where `fasterevent` will be an [`Event`](#event) object.
+
+### Using `with`
+
+`FileReader` supports the python context manager:
+
+```python
+with FileReader('./path/to/file.fast') as ffreader:
+	for evt in ffreader:
+		# event processing loop
+```
+
+### `next`
+
+Since `FileReader` objects are iterators, the user can pull the events manually one by one by using the builtin `next` command:
+
+```python
+next_event = next(ffreader)
+```
+
+## Event
+
+The `Event` class defines the event data.
+
+An `Event` object is normally instantiated by the FileReader. Its attributes are 
+
+ - `type_alias`: a number indicating the type alias
+ - `clock`: an array of integer containning the clock information (timestamp)
+ - `label`: an integer containing the event label
+ - `load_size`: the size in bytes of the raw data
+ - `raw data`: the raw (i.e. `byte`) data
+
+3 more attributes are accessibles and interpreted "just-in-time" for better perfomance:
+ - `type`: a string representing the even type, the correspondance with a type_alias is defined within the dataunpacker file
+ - `time`: the computed timestamp (without the tick interval multiplier)
+ - `data`: a `dict` containning the unpacked data (by the unpackers). 
+    
+
+### *Just in Time* attributes
+
+Some attributes of the Event object are intrepreted "*Just-in-Time*" as needed. This is intended to save time and ressources as not all events, labels or types will need to be fully inspected in data analaysis. Thanks to specific inner mechanics of `python` objects, the JIT attributes are computed once and are not re-interpreted when called multiple times for the same event.
+
+The JIT attributes are :
+ - `type`: a string description of the event type. For example, an event with `type_alias==10` will have `type=="group"`. 
+ - `time`: the computed timestamp. 
+ - `data`: a dictionnary containning the interpreted data. See [data unpackers](#data-unpackers) documentation for the different types.
+
+### Data unpackers
+
+The data unpackers are the submodules doing the data unpacking work. 
+
+To make the python faster package easy to extend, creating a new unpacker is simple. 
+
+To create a new unpacker, just create a file `type_XX.py` in the dataunpackers folder where X is the type_alias of the type of data the upacker will deal with.
+
+In this file, you have to define
+ - `alias`: the number corresponding to the type (i.e. XX)
+ - `type_`: a string (prefereably no space) describing the type
+ - a function `unpack(data)` that takes the rawdata as argument and returns a dictionnary with the interpreted data.
+ 
+If you write an unpacker for a type not yet supported by the package, you are invited to submit it to the project so that it gets integrated with the module.
+
+## Speed
+
+See [performances.md](performances.md) for a discussion about speed and memory.
+
+## Authors
+
+* **Greg Henning** - ghenning&#8203;*.at.*&#8203;iphc&#x2024;cnrs&#x2024;fr
+
+
+## License
+
+This project is licensed under the CeCILL FREE SOFTWARE LICENSE AGREEMENT. 
+
+See [LICENSE](LICENSE) for more.
+
+## Acknowledgments
+
+* Thanks to D. Etasse (LPC Caen / CNRS) for support while coding the unpackers.
+
+
+
