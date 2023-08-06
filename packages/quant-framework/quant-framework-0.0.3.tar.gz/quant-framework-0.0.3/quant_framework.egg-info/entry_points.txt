@@ -1,0 +1,3 @@
+[console_scripts]
+quant_framework = quant_framework.main:main
+
