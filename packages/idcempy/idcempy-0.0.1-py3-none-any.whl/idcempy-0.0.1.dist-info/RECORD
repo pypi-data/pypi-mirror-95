@@ -1,0 +1,11 @@
+idcempy/__init__.py,sha256=lDQWPoC9VQSOytGCiFFk6GAiawMkXRBh0h_lyMSEYrQ,152
+idcempy/gimnl.py,sha256=gkTVQ0ytFURzQepjqcdqQLWgJpX94b0tQWG1iZX_v6U,18566
+idcempy/zmiopc.py,sha256=yEPYi4d1wOCZLJubQt40iAvmQgIC-gOulmk4bTderX8,45859
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/gimnl_test.py,sha256=b0BNTz70w55VoeF7o7BChBmWGwoweRG27PAeW0XY1_g,672
+tests/zmiopc_test.py,sha256=ww2pHWAskYz9Qwzn5oH9_FSfA1jtGbpH9_1mKvxKrHE,1875
+idcempy-0.0.1.dist-info/LICENSE.txt,sha256=WJKBhnaeeFTVYM57KV0YXfFNuOA7td1zjwARBNk7-Qw,1074
+idcempy-0.0.1.dist-info/METADATA,sha256=S8hOgKfO54GVRWX4BypjToKHfRRihr-5Ma19nydh40A,21039
+idcempy-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+idcempy-0.0.1.dist-info/top_level.txt,sha256=k7b2ltbnP2L75GUkNd72CZAtXl5L7ENOHy_SNOBdcsg,14
+idcempy-0.0.1.dist-info/RECORD,,
