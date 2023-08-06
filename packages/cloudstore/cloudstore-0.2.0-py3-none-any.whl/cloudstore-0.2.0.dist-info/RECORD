@@ -1,0 +1,13 @@
+cloudstore/__init__.py,sha256=Nf8Ho_2e0QsZ9ZjjI_HicrNlmM2Kjb38RHXo628V0vQ,84
+cloudstore/abstract_store.py,sha256=PnpmtivmrAO8RlnlMBMccFxt9qvHtBCtjYXXzlTQLiY,377
+cloudstore/aws.py,sha256=ENgWe0rj4pmUdqMtucAAJ8n__vzC3eJdAjMRbiYL7tU,2423
+cloudstore/azre.py,sha256=m3FqB6I0K6AqnLrJ-2BXlG8TQ3LtDOfyEzMKDEN-bUc,1813
+cloudstore/cloud_store.py,sha256=61DdMuRgNvtidU5q1nVPN5pS88eimDo3GE62GKln8Rg,361
+cloudstore/gcp.py,sha256=-oWgYebK0qgygDqT2gDSpt2oY7Lfr7dTfLbOF1BMuLQ,3076
+cloudstore/logger.py,sha256=Kq_exNDjgUdaCIa-8LVyA06Yy70bl45IOI0K3Vw5PFE,114
+cloudstore/utils.py,sha256=gxmvzPVpbrEFANUUE-G7giXk21pmpbAemuX_AE4Eum4,1319
+cloudstore-0.2.0.dist-info/entry_points.txt,sha256=Y4zmG8xp6RNI3boWuO6RNvpv9NydkInpGjwSh5bQBKc,47
+cloudstore-0.2.0.dist-info/LICENSE,sha256=WDqsHsLERbdj1iknOwRoT14HsckHinNOznzpV-xrekA,1515
+cloudstore-0.2.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+cloudstore-0.2.0.dist-info/METADATA,sha256=gSpg_lhMfvRIbT-Ej9Q5lBWRP68LSYzOYLcvS_-Z44Y,475
+cloudstore-0.2.0.dist-info/RECORD,,
