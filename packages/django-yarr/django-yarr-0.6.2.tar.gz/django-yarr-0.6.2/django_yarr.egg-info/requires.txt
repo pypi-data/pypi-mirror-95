@@ -1,0 +1,4 @@
+Django>=2.2
+django-yaa-settings
+bleach>=1.2.1
+feedparser>=5.1.3

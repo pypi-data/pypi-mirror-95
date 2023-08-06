@@ -1,0 +1,63 @@
+Metadata-Version: 1.2
+Name: django-yarr
+Version: 0.6.2
+Summary: A lightweight customisable RSS reader for Django
+Home-page: http://radiac.net/projects/django-yarr/
+Author: Richard Terry
+Author-email: code@radiac.net
+License: BSD
+Project-URL: Documentation, http://radiac.net/projects/django-yarr/
+Project-URL: Source, https://github.com/radiac/django-yarr
+Project-URL: Tracker, https://github.com/radiac/django-yarr/issues
+Description: ====================================
+        Django Yarr - Yet Another RSS Reader
+        ====================================
+        
+        A lightweight customisable RSS reader for Django.
+        
+        * Project site: http://radiac.net/projects/django-yarr/
+        * Source code: https://github.com/radiac/django-yarr
+        
+        .. image:: https://travis-ci.org/radiac/django-yarr.svg?branch=main
+            :target: https://travis-ci.org/radiac/django-yarr
+        
+        .. image:: https://coveralls.io/repos/radiac/django-yarr/badge.svg?branch=main&service=github
+            :target: https://coveralls.io/github/radiac/django-yarr?branch=main
+        
+        
+        Features
+        ========
+        
+        * Easy to install - simple requirements, just drops into your site
+        * Import and export list of feeds using OPML
+        * View all, by feed, just unread or saved items
+        * List or expanded layout
+        * Mark items as read or saved
+        * Infinite scrolling, with keyboard support and automatic mark as read
+        * Support for multiple users
+        * Manage subscriptions through user views or admin site
+        * No social nonsense
+        
+        Supports Django 2.2 and later, on Python 3.5 and later.
+        
+        See `Installation <docs/installation.rst>`_ for installation instructions.
+        
+        See `Upgrading <docs/upgrading.rst>`_ for changelog and upgrade instructions
+        
+Keywords: django rss
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7

@@ -1,0 +1,5 @@
+include LICENSE
+recursive-include yarr/static *
+recursive-include yarr/templates *
+include tests *
+recursive-exclude tests *.pyc
