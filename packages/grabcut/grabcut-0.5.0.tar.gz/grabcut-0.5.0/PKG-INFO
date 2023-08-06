@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: grabcut
+Version: 0.5.0
+Summary: GrabCut implementation for C++ with Python wrappers.
+Home-page: https://github.com/luiscarlosgph/grabcut
+Author: Luis C. Garcia-Peraza Herrera
+Author-email: luiscarlos.gph@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

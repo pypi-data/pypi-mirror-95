@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+grabcut/__init__.py
+grabcut/grabcut.so
+grabcut.egg-info/PKG-INFO
+grabcut.egg-info/SOURCES.txt
+grabcut.egg-info/dependency_links.txt
+grabcut.egg-info/top_level.txt
