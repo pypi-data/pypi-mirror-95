@@ -1,0 +1,4 @@
+future>=0.17.1
+
+[:python_version < "3.7"]
+importlib_resources
