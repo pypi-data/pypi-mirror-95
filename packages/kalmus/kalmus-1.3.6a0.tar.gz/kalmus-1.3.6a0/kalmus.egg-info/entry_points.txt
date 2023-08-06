@@ -1,0 +1,3 @@
+[console_scripts]
+kalmus-gui = kalmus.command_line_gui:main
+
