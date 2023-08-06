@@ -1,0 +1,14 @@
+patrowlassets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+patrowlassets/cli.py,sha256=a00jvcijTdjx18uQCiGvcuKEPUTyHIhuuk5L6RkVxK4,4729
+patrowlassets/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+patrowlassets/providers/__init__.py,sha256=yDXKQLf23KLY1uMtMOdxfyL_6zMVcIwdDuIWpiTcePw,1428
+patrowlassets/providers/aws.py,sha256=3u24Jise4_LbCJSRtV_lbUS0kx5Y3lndWyk7vl0k3Nw,3294
+patrowlassets/providers/azure.py,sha256=4OXYmVnlpPXOEC-elK86oMmHDewjiBBVf6A_81GtyhY,923
+patrowlassets/providers/ovh.py,sha256=iU6Xhpn8Gnm9v4_YJtVMzqp71ZbfdtH92R_yoKaVjmQ,3090
+PatrowlAssets-0.0.3.dist-info/LICENSE,sha256=r3wGweqR9_FmMwXLuZZ1SpKP7XdbsaY_5aM-jmKNe3o,1064
+PatrowlAssets-0.0.3.dist-info/METADATA,sha256=ub0G6zunAD93MzoKL4UmKBWJLCdbg6-bIMe7-BF8zOg,904
+PatrowlAssets-0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+PatrowlAssets-0.0.3.dist-info/dependency_links.txt,sha256=svTbFJlzVtx3Ps1BlygaEFptP2PIi11WvC9a45bAbA8,281
+PatrowlAssets-0.0.3.dist-info/entry_points.txt,sha256=LLmCSvD2GeRbIKIxUYDs2r_s_ytsJ5-fKn6rToRGQEQ,65
+PatrowlAssets-0.0.3.dist-info/top_level.txt,sha256=dDl3Ei-gEBIePm4G8Pts9wWhTDpPwOWa0b6X1a4vIsk,14
+PatrowlAssets-0.0.3.dist-info/RECORD,,
