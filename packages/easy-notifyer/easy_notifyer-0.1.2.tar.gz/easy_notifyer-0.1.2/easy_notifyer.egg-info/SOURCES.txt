@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+easy_notifyer/__init__.py
+easy_notifyer/clients.py
+easy_notifyer/env.py
+easy_notifyer/exceptions.py
+easy_notifyer/handlers.py
+easy_notifyer/mailer.py
+easy_notifyer/report.py
+easy_notifyer/telegram.py
+easy_notifyer/utils.py
+easy_notifyer.egg-info/PKG-INFO
+easy_notifyer.egg-info/SOURCES.txt
+easy_notifyer.egg-info/dependency_links.txt
+easy_notifyer.egg-info/requires.txt
+easy_notifyer.egg-info/top_level.txt
