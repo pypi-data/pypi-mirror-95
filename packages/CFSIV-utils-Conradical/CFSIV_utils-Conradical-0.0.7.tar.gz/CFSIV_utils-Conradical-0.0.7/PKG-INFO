@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CFSIV_utils-Conradical
+Version: 0.0.7
+Summary: A collection of Time, Date, Filehandling and webscraping functions
+Home-page: https://github.com/conradstorz/utilities.git
+Author: Conrad Storz IV
+Author-email: conradstorz@gmail.com
+License: UNKNOWN
+Description: # Personal utilities for Conrad F Storz IV (CFSIV)
+        
+        useage:
+        
+        import cfsiv_utils.filehandling as fh
+        import cfsiv_utils.time_strings as ts
+        import cfsiv_utils.WebScraping as ws
+        
+        
+        This repository is uploaded to PyPi as "CFSIV-utils"
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
