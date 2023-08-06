@@ -1,0 +1,11 @@
+Nova/__init__.py,sha256=4CkMXLsZ2oOV488kvMHE3taEN1mpIOC9faVfXKQn2bo,2405
+Nova/Core/ServerBase.py,sha256=Z03XOC41xVti_C9tuRV8pDravpCDbWv1fOnb1Axl7M8,649
+Nova/Core/Stream.py,sha256=UBYEVQts1fcHfbd1_mVIYFP-GvntQKY0I_i1LOjzxAA,2248
+Nova/Server/Defines.py,sha256=y3PSkIsz-EMCZbeIeRlSKsW9wUr1ockCQMU1q9Rl0Wc,1151
+Nova/Server/Http.py,sha256=uKhfmdok7QieOdq719tVw7t5ZG75tYqjnHOS07UFkOo,9147
+Nova_EveFamilia-0.4.0.dist-info/DESCRIPTION.rst,sha256=UitYPW533dMktMHtXPGfKWRn-PLcVQryDdGI1htEXOw,938
+Nova_EveFamilia-0.4.0.dist-info/METADATA,sha256=6QjImp91GcPExTJu0XE3Krh2tque8kdjHe1moMzQuWc,1594
+Nova_EveFamilia-0.4.0.dist-info/RECORD,,
+Nova_EveFamilia-0.4.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+Nova_EveFamilia-0.4.0.dist-info/metadata.json,sha256=EWTAggQSQqd60pftr6USKjYUP-zJrD-NOSvOM_uDvCA,806
+Nova_EveFamilia-0.4.0.dist-info/top_level.txt,sha256=bDTiWwSbNO0gohNGdvDwpWE-hbgW5j2PPx5kuHzz8_A,5
