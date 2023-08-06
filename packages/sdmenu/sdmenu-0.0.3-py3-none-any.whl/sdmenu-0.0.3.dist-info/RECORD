@@ -1,0 +1,9 @@
+sdmenu/__init__.py,sha256=AGgmHDr0aQ5QtsiY_TOT2utucxTfwgWeAYCzRhXA2Bw,728
+sdmenu/classes.py,sha256=ab_Sh4Nq9-O01HbwbNMwqFCxGkfxjb1i4fTBAC_ldhM,28
+sdmenu/parser.py,sha256=RTOLySGPG8PMntOQNiZ3shRysr2ABvhpgeMGJ3R7CCk,3510
+sdmenu/webworker.py,sha256=y40afqPUriRgtLglzwmI6lJU6KFouy6JcDaA8dsaKvQ,3587
+sdmenu-0.0.3.dist-info/LICENSE,sha256=hjvPVxIWv-yZn36_cO0AIEfWnTa5_DddOXlD6AfEoB8,1089
+sdmenu-0.0.3.dist-info/METADATA,sha256=5bdOcdoo39__wStVaXUmyU9mdMCZSgaJx7BBSH4i2oA,1844
+sdmenu-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sdmenu-0.0.3.dist-info/top_level.txt,sha256=jlzVJeSlXT16dP2DJj7JE91nfDpPm_cOpchSVS1q9Fw,7
+sdmenu-0.0.3.dist-info/RECORD,,
