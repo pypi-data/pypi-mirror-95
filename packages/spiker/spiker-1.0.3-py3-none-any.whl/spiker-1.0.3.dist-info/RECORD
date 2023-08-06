@@ -1,0 +1,14 @@
+spiker-1.0.3.data/scripts/spiker.py,sha256=MHFp-kS0ENBP7lIJMvC2PBn1pQ_4lCtdzlu3EXy9UlI,29916
+spiker-1.0.3.data/scripts/split_bam.py,sha256=3x1tnyoNz7m8zUXL0N3f55oI9SMVIqMhFlzfErTLO9o,7944
+spikers/PE.py,sha256=1wZw0NfjLXU5aAvUlPwsQkiaJgH7wUzp-rlQ76m-NuY,1227
+spikers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spikers/cal_FRiP.py,sha256=GFeAlRpszSLQ-7-MDuUBb6jvpvM5stVidlmzmyF_fbg,666
+spikers/process_bam.py,sha256=4aBKqFO3rPfMzS8iS2tFbJ_HE1raGvnEqosxmALlZwg,3661
+spikers/run_bowtie2.py,sha256=Y_RHCCq1SuYpcyD9NuUm_riziGsIfSziNzhc7ZzEN70,4001
+spikers/run_macs2.py,sha256=u9k1Thrjnad91yzD56x8J98F3zyTbtD4PfWkV6cZRDE,12589
+spikers/write_bw.py,sha256=OG_qLBH-4UjCOiXcHH4nj2bMGjDyrvgFfhUxVw_alwY,1559
+spiker-1.0.3.dist-info/LICENSE.txt,sha256=w9-c7Kv8W7lUY2_LiLNADcjhJi4TtQ88RyIvo5uLiE4,1057
+spiker-1.0.3.dist-info/METADATA,sha256=s0Q1t8nzXyXQDQzY_ulDSpKsQFrkVtcfq1KDFbO0jnk,1075
+spiker-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+spiker-1.0.3.dist-info/top_level.txt,sha256=NLhXNpE5KZhrQI_Axdxc-vf5vUdmKmB_BHoDDmBuBL8,19
+spiker-1.0.3.dist-info/RECORD,,
