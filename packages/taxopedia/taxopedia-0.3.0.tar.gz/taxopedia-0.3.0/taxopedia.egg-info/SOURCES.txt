@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+helpers/__init__.py
+helpers/async_utils.py
+helpers/constants.py
+helpers/wiki_tree.py
+taxopedia.egg-info/PKG-INFO
+taxopedia.egg-info/SOURCES.txt
+taxopedia.egg-info/dependency_links.txt
+taxopedia.egg-info/requires.txt
+taxopedia.egg-info/top_level.txt
