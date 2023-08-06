@@ -1,0 +1,13 @@
+s3_tools/__init__.py,sha256=nDma06nGfRdrc9hAjSD9Zzd7kzUv6oRK0Q_IBklN6uo,600
+s3_tools/delete.py,sha256=rvBIpP2O4oEkAN3wW60CBR4XdRogXuoiFSI3KUsL-0s,2196
+s3_tools/download.py,sha256=vXlpHkZIdOMHrfQ2jBot-G8E7Xx4XZf_F0BUEHOqM5M,5034
+s3_tools/list.py,sha256=-xV9MZvqWHocjvjfEajE0M5NnaKBKXljscLCdcHc8q4,1936
+s3_tools/read.py,sha256=lzS_Nyd5Pgu6hJR1hW7BDDlvqdqhw-275bRC_xqXO9s,2065
+s3_tools/upload.py,sha256=z6V1cDPq39vTwBAeB4IepUYJhFiY2bV1gAFhGWhNwhg,4951
+s3_tools/utils.py,sha256=zfJIr2pxBhSspSuEOTUag8Y6rq540y3cHhy6Z3Ywv6I,1103
+s3_tools/write.py,sha256=MM3UO4Cnxwl74sf8pOf3f7Cm5MkU8aGzXSFuIzj3TNA,3015
+aws_s3_tools-0.0.2.dist-info/LICENSE,sha256=I_v2BQPqIwcL7COd9sbeVQWz-8lq2pskCWsu4UtxCeg,1071
+aws_s3_tools-0.0.2.dist-info/METADATA,sha256=o0LFtUJHEgTwE3-N69qTrOLHFXczMGi7Ut4QGR_jUm8,2190
+aws_s3_tools-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_s3_tools-0.0.2.dist-info/top_level.txt,sha256=jGxKwPrjqGKSzLlzE-MOORiSFytMRz6boWBxBGE9hWk,9
+aws_s3_tools-0.0.2.dist-info/RECORD,,

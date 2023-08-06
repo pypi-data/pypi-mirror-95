@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: aws-s3-tools
+Version: 0.0.2
+Summary: AWS S3 tools package.
+Home-page: https://github.com/FerrariDG/aws-s3-tools
+Author: Daniel Ferrari
+License: MIT
+Keywords: aws s3 tools package
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (>=1.16.51)
+Requires-Dist: ujson (>=4.0.1)
+
+# AWS S3 Tools
+
+![MIT License](https://img.shields.io/pypi/l/aws-s3-tools)
+![Package Version](https://img.shields.io/pypi/v/aws-s3-tools)
+![Python Version](https://img.shields.io/pypi/pyversions/aws-s3-tools)
+
+AWS S3 Tools is a Python package to make it easier to deal with S3 objects, where you can:
+
+- List S3 buckets' content
+- Check if S3 objects exist
+- Read from S3 objects to Python variables
+- Write from Python variables to S3 objects
+- Upload from local files to S3
+- Download from S3 to local files
+- Delete S3 objects
+
+The AWS authentication is done via boto3 package, [click here to know more about it](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html).
+
+---
+
+## Installation
+
+You can install AWS S3 Tools from PyPi with `pip` or your favorite package manager:
+
+    pip install aws-s3-tools
+
+Add the ``-U`` switch to update to the current version, if AWS S3 Tools is already installed.
+
+---
+
+## Usage
+
+[The full documentation can be found here](https://aws-s3-tools.readthedocs.io/en/latest/index.html).
+
+    ```python
+        from s3_tools import object_exists
+
+        if object_exists("my-bucket", "s3-prefix/object.data"):
+            # Do magic
+        else:
+            print("Object not found")
+    ```
+
+---
+
+## Next Steps
+
+- Improve error handling by creating Exceptions
+- Add functions to move S3 objects
+
+
