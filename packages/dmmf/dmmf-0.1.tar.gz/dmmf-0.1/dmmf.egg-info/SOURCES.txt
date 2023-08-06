@@ -1,0 +1,8 @@
+README.md
+setup.py
+dmmf/__init__.py
+dmmf.egg-info/PKG-INFO
+dmmf.egg-info/SOURCES.txt
+dmmf.egg-info/dependency_links.txt
+dmmf.egg-info/not-zip-safe
+dmmf.egg-info/top_level.txt
