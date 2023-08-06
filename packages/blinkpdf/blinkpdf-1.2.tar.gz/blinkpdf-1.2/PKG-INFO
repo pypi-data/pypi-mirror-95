@@ -1,0 +1,34 @@
+Metadata-Version: 1.2
+Name: blinkpdf
+Version: 1.2
+Summary: Blink-based webpage-to-pdf converter
+Home-page: https://gitlab.com/hydrargyrum/blinkpdf
+Author: Hg
+Author-email: dev@indigo.re
+Maintainer: Hg
+Maintainer-email: dev@indigo.re
+License: UNKNOWN
+Description: BlinkPDF is yet another webpage-to-pdf converter.
+        
+        It uses PyQt5 and QtWebEngine (with Blink engine) to do so.
+        
+        Pass an URL and an output filename, the page will be retrieved and converted
+        to PDF. Additionally, it can be given custom cookies and headers and also
+        some javascript code to execute (if needing to perform custom tweaks to
+        the page).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Classifier: Topic :: Printing
+Requires-Python: >=3.5
