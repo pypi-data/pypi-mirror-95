@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: sdmenu
+Version: 0.0.2
+Summary: A simple way to query UC San Diego's HDH dining halls
+Home-page: https://www.github.com/gideontong/SDHMenu
+Author: Gideon Tong
+Author-email: gideon@gideontong.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Text Processing :: Indexing
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<3,>=2.25.1)
+
+# sdmenu
+
+**sdmenu** is a simple way to query UC San Diego's HDH dining halls.
+
+![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
+
+## Installation
+
+```bash
+$ pip install sdmenu
+Successfully installed sdmenu-1.0.0
+```
+
+## Example
+
+```py
+>>> from sdmenu import menu
+>>> my_menu = menu()
+<menu {'64 Degrees', 'Cafe Ventanas', 'Canyon Vista', ...}>
+
+>>> my_menu.get('64 Degrees')
+[<menu_item 'Avocado Toast'>, <menu_item 'Bacon Bobcat Sandwich'>, ...]
+```
+
+
