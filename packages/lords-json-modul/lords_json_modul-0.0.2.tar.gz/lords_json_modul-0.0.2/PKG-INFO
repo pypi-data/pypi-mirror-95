@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: lords_json_modul
+Version: 0.0.2
+Summary: A very basic json addon.
+Home-page: UNKNOWN
+Author: Eike Kraus
+Author-email: LordofGamemode@gmail.com
+License: MIT
+Description: lords_json ist ein addon was json file arbeit noch mal einfacher machen sollte nutse get(filename) um einen file zu Ã¶ffnen oder nutse whrite(file, data) um ein datei zu schreiben.
+        
+        Change Log
+        ===========
+        
+        0.0.1 (18/02/2021)
+        -------------------
+        - First Release
+        
+        0.0.2 (18/02/2021)
+        -------------------
+        - Bugfix in Instalation
+Keywords: json
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

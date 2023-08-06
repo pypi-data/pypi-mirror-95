@@ -1,0 +1,1 @@
+lords_json ist ein addon was json file arbeit noch mal einfacher machen sollte nutse get(filename) um einen file zu öffnen oder nutse whrite(file, data) um ein datei zu schreiben.
