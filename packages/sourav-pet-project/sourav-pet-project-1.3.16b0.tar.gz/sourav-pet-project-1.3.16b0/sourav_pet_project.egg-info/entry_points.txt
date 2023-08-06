@@ -1,0 +1,3 @@
+[console_scripts]
+startpet = swagger_server.__main__:main
+
