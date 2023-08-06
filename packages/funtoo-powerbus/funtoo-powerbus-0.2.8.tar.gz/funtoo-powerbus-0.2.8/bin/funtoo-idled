@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+import logging
+import sys
+import time
+
+from subpop.hub import Hub
+
+hub = Hub()
+
+import dyne.org.funtoo.powerbus as powerbus
+
+logging.basicConfig(filename="/var/tmp/funtoo-idled.log", level=logging.DEBUG)
+
+if __name__ == "__main__":
+	try:
+		while True:
+			idle_client = powerbus.session.FuntooIdleClient()
+			hub.LOOP.run_until_complete(idle_client.start())
+			logging.warning("Reconnecting soon...")
+			time.sleep(2)
+	except BaseException as e:
+		logging.error("Exception encountered:", exc_info=e)
+		sys.exit(1)
