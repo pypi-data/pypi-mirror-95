@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: botocache
+Version: 0.0.4
+Summary: Caching for Boto and Boto3 SDK
+Home-page: UNKNOWN
+Author: rams3sh
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

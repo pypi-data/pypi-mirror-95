@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+botocache/botocache.py
+botocache.egg-info/PKG-INFO
+botocache.egg-info/SOURCES.txt
+botocache.egg-info/dependency_links.txt
+botocache.egg-info/requires.txt
+botocache.egg-info/top_level.txt
