@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Semi-ATE-STIL
+Version: 0.0.1
+Summary: Standard Tester Interface Library [IEEE1450] with python
+Home-page: https://github.com/Semi-ATE/STIL
+Author: Tom Hören
+Maintainer: Semi-ATE
+Maintainer-email: info@Semi-ATE.com
+License: GPLv2
+Description: # STIL
+        
+        Standard Tester Interface Library [IEEE1450]
+        
+        
+Keywords: Semiconductor ATE Automatic Test Equipment STIL IEEE1450
+Platform: Windows
+Platform: Linux
+Platform: Mac OS-X
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

@@ -1,0 +1,15 @@
+CODEOWNERS
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Semi_ATE/__init__.py
+Semi_ATE/STIL/__init__.py
+Semi_ATE/STIL/lsp/__init__.py
+Semi_ATE/STIL/parsers/__init__.py
+Semi_ATE_STIL.egg-info/PKG-INFO
+Semi_ATE_STIL.egg-info/SOURCES.txt
+Semi_ATE_STIL.egg-info/dependency_links.txt
+Semi_ATE_STIL.egg-info/top_level.txt
+requirements/run.txt
+requirements/test.txt
