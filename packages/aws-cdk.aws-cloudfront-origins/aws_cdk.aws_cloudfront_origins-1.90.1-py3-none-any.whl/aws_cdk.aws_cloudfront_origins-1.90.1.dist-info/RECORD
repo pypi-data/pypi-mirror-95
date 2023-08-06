@@ -1,0 +1,8 @@
+aws_cdk/aws_cloudfront_origins/__init__.py,sha256=8ZwsXDi7CNvgOWH_Tf71mgzUnGiWHG0cPURV0CWGVGk,38629
+aws_cdk/aws_cloudfront_origins/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_cloudfront_origins/_jsii/__init__.py,sha256=FV6Ez7GRvITyrCDUBUOydjaACXeuobg0AhLHNoMxD1E,547
+aws_cdk/aws_cloudfront_origins/_jsii/aws-cloudfront-origins@1.90.1.jsii.tgz,sha256=ADvevZ5snWggIb3YnccnqaDgIFAF8Ax_gI-Ynp8Ijso,21657
+aws_cdk.aws_cloudfront_origins-1.90.1.dist-info/METADATA,sha256=T8cWuJK_eOTvGC1IZN65ePBGyO3aAn9VffuXV2AnPao,5613
+aws_cdk.aws_cloudfront_origins-1.90.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_cloudfront_origins-1.90.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_cloudfront_origins-1.90.1.dist-info/RECORD,,
