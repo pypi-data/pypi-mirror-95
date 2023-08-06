@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+WpaTestPackage.egg-info/PKG-INFO
+WpaTestPackage.egg-info/SOURCES.txt
+WpaTestPackage.egg-info/dependency_links.txt
+WpaTestPackage.egg-info/requires.txt
+WpaTestPackage.egg-info/top_level.txt
+client/WebPageAnalyzerClient.py
+client/__init__.py
+driver/AnalyzerChromeDriver.py
+driver/__init__.py
+model/PageDetails.py
+model/__init__.py
