@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: recipeasy
+Version: 2021.2.1
+Summary: Python package for recipes
+Home-page: https://github.com/tahini-dev/recipeasy
+Author: tahini-dev
+Author-email: tahini.dev@gmail.com
+License: UNKNOWN
+Description: # recipeasy
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: plotly
+Provides-Extra: all

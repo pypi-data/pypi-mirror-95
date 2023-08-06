@@ -1,0 +1,7 @@
+README.md
+setup.py
+recipeasy.egg-info/PKG-INFO
+recipeasy.egg-info/SOURCES.txt
+recipeasy.egg-info/dependency_links.txt
+recipeasy.egg-info/requires.txt
+recipeasy.egg-info/top_level.txt

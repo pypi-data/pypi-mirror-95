@@ -1,0 +1,7 @@
+tahini
+
+[all]
+tahini[plotly]
+
+[plotly]
+tahini[plotly]
