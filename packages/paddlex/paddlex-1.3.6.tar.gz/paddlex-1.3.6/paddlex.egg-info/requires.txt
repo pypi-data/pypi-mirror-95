@@ -1,0 +1,14 @@
+pyyaml
+colorama
+tqdm
+paddleslim==1.1.1
+visualdl>=2.0.0
+shapely>=1.7.0
+opencv-python
+flask_cors
+sklearn
+psutil
+xlwt
+
+[:platform_system != "Windows"]
+pycocotools
