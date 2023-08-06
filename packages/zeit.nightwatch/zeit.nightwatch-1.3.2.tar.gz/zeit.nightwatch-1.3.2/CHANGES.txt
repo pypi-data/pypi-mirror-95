@@ -1,0 +1,43 @@
+zeit.nightwatch changes
+=======================
+
+
+1.3.2 (2021-02-18)
+------------------
+
+- Record skipped tests as passed to prometheus, not failed
+
+
+1.3.1 (2021-02-17)
+------------------
+
+- Handle same metric name (and testname only as label) correctly
+
+
+1.3.0 (2021-02-17)
+------------------
+
+- Allow to configure the test browsers via a config fixture
+
+
+1.2.0 (2021-02-17)
+------------------
+
+- Add convenience `nightwatch` fixture and toplevel API
+
+- Add first test & fix package setup
+
+
+1.1.0 (2021-02-12)
+------------------
+
+- Include prometheus functionality here, to fix pushgateway bug
+  and support sending the test name as a label.
+
+- Declare namespace package properly
+
+
+1.0.0 (2021-02-11)
+------------------
+
+- Initial release
