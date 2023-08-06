@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: briar_repl
+Version: 21.2.20
+Summary: briar cli-messenger for briar:headless
+Home-page: https://code.briarproject.org/fphemeral/briar_repl
+License: UNKNOWN
+Author: fphemeral
+Author-email: fphemeral@i2pmail.org
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: colorful>=0.5.4
+Requires-Dist: prompt-toolkit>=3.0.14
+Requires-Dist: httpx>=0.16.1
+Requires-Dist: websockets>=8.1.0
+Requires-Dist: psutil>=5.8.0
+
+# briar_repl
+
+async python repl cli chat client, to be used with briar-headless:
+
+https://code.briarproject.org/briar/briar/tree/master/briar-headless
+
+## usage:
+
+### currently it features:
+
+* contact listing
+* contact adding
+* contact removing
+* contact renaming
+* contacts pending list
+* contacts display online status
+* contacts display unread message count (currently per session only)
+* direct chat with contacts
+* briar link display
+* command help
+
+### two modes:
+
+* command mode (blue bottom bar)
+* chat mode    (green bottom bar)
+
+commands in chat mode are called by pre-pending `/` so a `/back` or `/exit_chat` brings you back to command mode
+
+commands are auto completed thanks to the amazing prompt_toolkit package:
+
+https://github.com/prompt-toolkit/python-prompt-toolkit
+
+## installation:
+
+### install via pip:
+
+needs python3.7 or higher:
+`python3 -m pip install briar_repl`
+
+briar-headless.jar (1.2.12 or higher) would need to be available in:
+
+`~/.briar/headless/briar-headless.jar`
+
+
+### install via flatpak
+
+needs flatpak and flatpak builder, briar-headless is bundled in the flatpak.
+
+##### build flatpak
+
+with supplied yaml instructions:
+`flatpak-builder --repo=build/flatpak/repo --install-deps-from=flathub --user --force-clean build/flatpak/build org.briarproject.briar_repl.yaml`
+
+##### build flatpak bundle
+
+creates a flatpak file here: `build/briar_repl.flatpak`
+`flatpak build-bundle build/flatpak/repo build/briar_repl.flatpak org.briarproject.briar_repl`
+
+##### install flatpak
+
+install flatpak on current machine
+`flatpak install --user build/briar_repl.flatpak`
+
+##### run the flatpak
+
+`flatpak run org.briarproject.briar_repl`
+
