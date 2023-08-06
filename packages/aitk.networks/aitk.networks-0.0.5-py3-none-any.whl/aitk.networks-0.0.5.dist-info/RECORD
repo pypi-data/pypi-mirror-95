@@ -1,0 +1,9 @@
+aitk/networks/__init__.py,sha256=-hk9H0DAOP8Lt62hxF1wj2wZUB2zwmpEOuhfWO1zzo8,411
+aitk/networks/_version.py,sha256=3niK3tnXEPdtkb-0L0HHketn9oiMj-vFunuCGJ0hru8,367
+aitk/networks/callbacks.py,sha256=wttBlf2dnLuB2v3Qw7DRZYoT9oh3PgW4VsbwH8Fla7E,3589
+aitk/networks/network.py,sha256=W5rPnnsFq2M9QnpxEJkulMG5lHAG9njmxbzjemhXxv4,86376
+aitk/networks/utils.py,sha256=ylmCCmOJo66TjL8W2_aZSOby_VmGA3sUTxSBnwDbCHE,12649
+aitk.networks-0.0.5.dist-info/METADATA,sha256=kk-BltJOr9cIwJyD22QJ4Y6i44h6624PnY4ofzdwQhs,1117
+aitk.networks-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aitk.networks-0.0.5.dist-info/top_level.txt,sha256=Nd1TXMWwE1VIGABpa4lX9EdmidaqlayqBFLVnVNuCvM,5
+aitk.networks-0.0.5.dist-info/RECORD,,
