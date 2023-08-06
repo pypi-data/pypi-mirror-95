@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+keyboard_switch/__init__.py
+keyboard_switch/kbswitch.py
+keyboard_switch.egg-info/PKG-INFO
+keyboard_switch.egg-info/SOURCES.txt
+keyboard_switch.egg-info/dependency_links.txt
+keyboard_switch.egg-info/entry_points.txt
+keyboard_switch.egg-info/top_level.txt
