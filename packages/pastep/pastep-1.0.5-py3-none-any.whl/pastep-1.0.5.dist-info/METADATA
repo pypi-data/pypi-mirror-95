@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pastep
+Version: 1.0.5
+Summary: Pastep API module
+Home-page: https://pastep.com
+Author: Pooria Ahmadi
+Author-email: pooriababak444@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Pastep Api
+## _Code Easily_
+
+Pastep is a code sharing website
+- Import the module
+- User one of functions
+- ? Magic ?
+
+## Features
+
+- Search
+- Trending
+- Paste info
+- Account info
+
+## Quick Tutorial
+> We made this module for our users to be more comfortable while using our API
+
+
+### Search:
+![alt text](https://i.postimg.cc/gJD5r1M6/search.png)
+### Trending:
+![alt text](https://i.postimg.cc/wMMWMMyS/trending.png)
+### Paste info:
+![alt text](https://i.postimg.cc/RZ5R5Xdr/paste-info.png)
+### User info:
+![alt text](https://i.postimg.cc/mgy6mvsp/user-info.png)
+
+## License
+MIT
+
+Contact me at Discord: https://discord.gg/mRnF6ypYyu
+**Free Software, Hell Yeah!**
+
+
+
