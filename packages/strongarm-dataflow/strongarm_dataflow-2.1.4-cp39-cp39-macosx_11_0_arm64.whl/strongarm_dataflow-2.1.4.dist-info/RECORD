@@ -1,0 +1,10 @@
+strongarm_dataflow/__init__.py,sha256=rWmXvtg5XoI0CeFjl8WtjLLtIkriIXg7a_nuB-Q3AX8,472
+strongarm_dataflow/dataflow.cpython-39-darwin.so,sha256=vS2rvFn6xgz--tt9v8muPUJYES_0GwHkDoLC0zpvU0s,112970
+strongarm_dataflow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strongarm_dataflow/register_contents.py,sha256=roEVoLHIsXdSm93Pq3xpIsj5Iwvnh0t0HHW2C_7b7gw,423
+strongarm_dataflow-2.1.4.data/data/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-2.1.4.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-2.1.4.dist-info/METADATA,sha256=2INSbA15uLrfoVdF76iCrhHL_cgQNWLiEkUG1rRqi4I,291
+strongarm_dataflow-2.1.4.dist-info/WHEEL,sha256=CqvrpOeJpM3YcgYqrtVyMp6efj4NqM4rkxkSLcu7BcI,108
+strongarm_dataflow-2.1.4.dist-info/top_level.txt,sha256=roOFCgTozP4Xfiy43w1iQjmkDfq0SV99MQ_wyJF7KxM,19
+strongarm_dataflow-2.1.4.dist-info/RECORD,,
