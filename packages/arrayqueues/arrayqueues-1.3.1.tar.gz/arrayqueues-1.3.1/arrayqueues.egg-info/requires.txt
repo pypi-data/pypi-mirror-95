@@ -1,0 +1,11 @@
+numpy
+
+[dev]
+pytest-cov
+pytest
+gitpython
+coverage
+pre-commit
+black
+flake8
+isort
