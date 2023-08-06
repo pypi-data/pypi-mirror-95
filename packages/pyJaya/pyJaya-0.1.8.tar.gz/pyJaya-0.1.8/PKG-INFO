@@ -1,0 +1,96 @@
+Metadata-Version: 1.2
+Name: pyJaya
+Version: 0.1.8
+Summary: Python implementation of Jaya Algorithm and its variants
+Home-page: https://github.com/eadomenech/pyJaya
+Author: Ernesto Avila-Domenech
+Author-email: eadomenech@gmail.com
+License: MIT license
+Description: ======
+        pyJaya
+        ======
+        
+        
+        .. image:: https://img.shields.io/pypi/v/pyJaya.svg
+                :target: https://pypi.python.org/pypi/pyJaya
+        
+        .. image:: https://img.shields.io/travis/eadomenech/pyJaya.svg
+                :target: https://travis-ci.com/eadomenech/pyJaya
+        
+        .. image:: https://readthedocs.org/projects/pyJaya/badge/?version=latest
+                :target: https://pyJaya.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Python implementation of Jaya Algorithm and its variants
+        
+        
+        * Free software: MIT license
+        * Documentation: https://pyJaya.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-12-24)
+        ------------------
+        
+        * First release on PyPI.
+        
+        0.1.1 (2020-12-24)
+        ------------------
+        
+        * Add contributor.
+        
+        0.1.5 (2020-12-24)
+        ------------------
+        
+        * Documentation improvements.
+        
+        0.1.6 (2020-12-27)
+        ------------------
+        
+        * Flake8 fix.
+        * Adding examples.
+        * Update usage.
+        
+        0.1.7 (2021-01-05)
+        ------------------
+        
+        * Fix clasic, adaptive and quasi.
+        
+        0.1.8 (2021-02-18)
+        ------------------
+        
+        * Tests with monkeypatch.
+        * Add spaced numbers over a specified interval
+        
+Keywords: pyJaya
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
