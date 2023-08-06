@@ -1,0 +1,10 @@
+client/__init__.py,sha256=bISUJ38RDQNxn8SJRoPUeAtIOGKYi26TbeQTmkW7vTI,129
+client/data_manager.py,sha256=giOEPkd6NVGmHuIhwnom7y2xz6hpMp9lwpk5WDi9v0g,1815
+client/menu.py,sha256=0TGqIsBDHhV0xNGOMKBiQPP_2iFNjri2HHuGGttD1uc,2720
+client/menu_enum.py,sha256=fYq4SHeMjQxGZhoqGX61ukSlxMuaKCMCfcwQ4DYaYIw,98
+client/panel.py,sha256=k1vGyKQUT1NJafWvHKW1Y6wNCWH_UauxV7yFynORGA8,938
+pyspotify_client-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pyspotify_client-0.0.1.dist-info/METADATA,sha256=sIycwkcCHURiWsQliGYGapqzUYKBibBLP8xXluyF9dM,4783
+pyspotify_client-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyspotify_client-0.0.1.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+pyspotify_client-0.0.1.dist-info/RECORD,,
