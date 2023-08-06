@@ -1,0 +1,8 @@
+README.md
+setup.py
+discombed/__init__.py
+discombed.egg-info/PKG-INFO
+discombed.egg-info/SOURCES.txt
+discombed.egg-info/dependency_links.txt
+discombed.egg-info/requires.txt
+discombed.egg-info/top_level.txt
