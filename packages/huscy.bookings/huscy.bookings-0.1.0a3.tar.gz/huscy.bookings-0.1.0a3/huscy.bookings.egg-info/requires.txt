@@ -1,0 +1,9 @@
+huscy.appointments
+huscy.projects
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog
