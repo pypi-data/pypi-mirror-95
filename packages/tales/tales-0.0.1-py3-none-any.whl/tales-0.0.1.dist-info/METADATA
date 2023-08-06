@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tales
+Version: 0.0.1
+Summary: A simple, and easy to use hypixel API wrapper.
+Home-page: https://github.com/elfq/tales
+Author: elf
+Author-email: elflanded@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Tales
+
+### What is Tales?
+
+Tales is a new, easy to use hypixel API wrapper designed with python.
+
+### Supported API Minigames
+
+- Blitz
+- Bedwars
+
+*more to come*
+
+
+
