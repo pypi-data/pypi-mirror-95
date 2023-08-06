@@ -1,0 +1,6 @@
+# Fitbenchmark Problem
+software = 'Mantid'
+name = 'basic'
+description = 'This dataset has no real world application. It is used to test the parsing.'
+input_file = 'mantid_basic.dat'
+function ='name=BackToBackExponential,I=0.0,A=1'
