@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+snir/__init__.py
+snir/first_click.wav
+snir/negativebeep.wav
+snir/second_click.wav
+snir/startup.wav
+snir/success.wav
+snir.egg-info/PKG-INFO
+snir.egg-info/SOURCES.txt
+snir.egg-info/dependency_links.txt
+snir.egg-info/requires.txt
+snir.egg-info/top_level.txt
