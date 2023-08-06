@@ -1,0 +1,9 @@
+README.md
+setup.py
+dinopdf/__init__.py
+dinopdf/pdf2image.py
+dinopdf/pdf2text.py
+dinopdf.egg-info/PKG-INFO
+dinopdf.egg-info/SOURCES.txt
+dinopdf.egg-info/dependency_links.txt
+dinopdf.egg-info/top_level.txt
