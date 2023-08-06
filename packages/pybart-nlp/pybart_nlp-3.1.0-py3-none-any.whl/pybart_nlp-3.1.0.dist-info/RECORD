@@ -1,0 +1,14 @@
+pybart/__init__.py,sha256=10IaOr37THHVpXx783L6M2rwIhJEDSeEU_abvJdgimc,34
+pybart/api.py,sha256=gXdlJm5GmfzdNbgmUvi-pDud-BgKgk81z2dZekRYMAg,4854
+pybart/conllu_wrapper.py,sha256=3V4u3Y3aDkyCTLev6crUGYAUAAJe_mZwigKnc_RZxGU,11627
+pybart/constraints.py,sha256=gIG9bW-iQBKCzeAdcdBMSZGrdBLMTL4YQtGgrKzhsb0,10695
+pybart/converter.py,sha256=jtgH4gX--zOByqoaHzI0Ew_5T7mcgo-LzaDoY4ytEeM,85544
+pybart/graph_token.py,sha256=rGgjDkq9F8dNy2XMlgW0jB6s9N16_7VTnaKzFAwB4tc,5582
+pybart/matcher.py,sha256=swKq83WTrONWb5Fkiz7EhTNjdulHWhW-8QDILGVLc5E,17771
+pybart/pybart_globals.py,sha256=_2LoN2pvZpe_XFOHfVm_TvqxxBXzgIsONboXLNVvQxI,69
+pybart/spacy_wrapper.py,sha256=YnwXEXR-zwbt3dHvSn3rdZY8et5xNOuD0aCyKEUFXCE,5089
+pybart_nlp-3.1.0.dist-info/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+pybart_nlp-3.1.0.dist-info/METADATA,sha256=TjVT00mrXU5rNquEmfq-jr51ekPTmsDiA84QRyFltws,7765
+pybart_nlp-3.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybart_nlp-3.1.0.dist-info/top_level.txt,sha256=8en4ihvoaL9lgRev6Bw3gIN49OB-JEq5GRmC6m45--8,7
+pybart_nlp-3.1.0.dist-info/RECORD,,
