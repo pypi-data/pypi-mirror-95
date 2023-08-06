@@ -1,0 +1,8 @@
+ConfigArgParse
+aiohttp
+aiohttp_jinja2
+cchardet
+asyncssh
+
+[:sys_platform == "linux"]
+uvloop

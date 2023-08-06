@@ -1,0 +1,3 @@
+[console_scripts]
+riego-cloud = riegocloud.app:main
+
