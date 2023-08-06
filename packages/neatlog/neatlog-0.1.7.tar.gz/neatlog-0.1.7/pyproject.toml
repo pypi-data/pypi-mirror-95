@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "neatlog"
+version = "0.1.7"
+license = "MIT"
+description = "A neat logging configurator"
+authors = ["Steffen Brinkmann <s-b@mailbox.org>"]
+readme = "README.rst"
+repository = "https://gitlab.com/szs/neatlog/"
+documentation = "https://neatlog.readthedocs.io/en/latest/"
+keywords = ["logging"]
+classifiers = ["Development Status :: 4 - Beta",
+            "Environment :: Console",
+            "Operating System :: POSIX",
+            "License :: OSI Approved :: MIT License",
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.6",
+            "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.9",
+            "Topic :: System :: Logging",
+            "Topic :: System :: Shells",
+            "Topic :: Terminals"]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+Sphinx = "^3.4.3"
+pytest-cov = "^2.11.1"
+pytest-flake8 = "^1.0.7"
+pytest-mypy = "^0.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
