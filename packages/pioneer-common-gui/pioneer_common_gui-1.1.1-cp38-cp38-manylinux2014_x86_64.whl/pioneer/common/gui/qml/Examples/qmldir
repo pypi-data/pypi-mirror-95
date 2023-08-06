@@ -1,0 +1,9 @@
+module Examples
+
+ExampleDataset   1.0 ExampleDataset.qml
+ExampleLabeledDataset   1.0 ExampleLabeledDataset.qml
+ExampleLive      1.0 ExampleLive.qml
+ExampleReplay    1.0 ExampleReplay.qml
+CalibLidarCamera 1.0 CalibLidarCamera.qml
+CameraIntrinsincs 1.0 CameraIntrinsincs.qml
+Crash            1.0 Crash.qml

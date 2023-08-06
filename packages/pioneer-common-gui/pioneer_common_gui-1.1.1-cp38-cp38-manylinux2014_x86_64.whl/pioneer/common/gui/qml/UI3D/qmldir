@@ -1,0 +1,21 @@
+module UI3D
+
+AmplitudesProgram  1.0 Effects/AmplitudesProgram.qml
+EmissiveProgram    1.0 Effects/EmissiveProgram.qml
+MaterialProgram    1.0 Effects/MaterialProgram.qml
+ColorMapProgram    1.0 Effects/ColorMapProgram.qml
+PointsColorProgram 1.0 Effects/PointsColorProgram.qml
+SegmentationLabelsProgram   1.0 Effects/SegmentationLabelsProgram.qml
+
+#Actors            1.0 Actors/Actors.qml PySide2 workaround
+Line              1.0 Actors/Line.qml
+Points            1.0 Actors/Points.qml
+Box               1.0 Actors/Box.qml
+Sensor            1.0 Actors/Sensor.qml
+XYZ               1.0 Actors/XYZ.qml
+LCAActor          1.0 Actors/LCAActor.qml
+GridXZ            1.0 Actors/GridXZ.qml
+
+
+SceneLab0         1.0 Scenes/SceneLab0.qml
+SceneLab1         1.0 Scenes/SceneLab1.qml

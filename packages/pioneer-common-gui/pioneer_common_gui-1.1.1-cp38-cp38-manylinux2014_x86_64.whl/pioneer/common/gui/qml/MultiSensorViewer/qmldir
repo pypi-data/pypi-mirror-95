@@ -1,0 +1,13 @@
+module MultiSensorViewer
+
+Echoes2dViewer          1.0 Echoes2dViewer.qml
+MultiSensorControls     1.0 MultiSensorControls.qml
+MultiSensorViewport     1.0 MultiSensorViewport.qml
+MultiSensor2DViewer     1.0 MultiSensor2DViewer.qml
+SensorItem              1.0 SensorItem.qml
+Model                   1.0 Model.qml
+MultiSensorViewer       1.0 MultiSensorViewer.qml
+LiveSensorConfigPanel   1.0 LiveSensorConfigPanel.qml
+IntensityImageViewer    1.0 IntensityImageViewer.qml
+SensorWindow            1.0 SensorWindow.qml
+CalibPanel              1.0 CalibPanel.qml
