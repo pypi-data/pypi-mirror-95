@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+edge_pydb/__init__.py
+edge_pydb/conversion.py
+edge_pydb/fitsextract.21feb.py
+edge_pydb/fitsextract.py
+edge_pydb/plotting.21feb.py
+edge_pydb/plotting.py
+edge_pydb/util.py
+edge_pydb.egg-info/PKG-INFO
+edge_pydb.egg-info/SOURCES.txt
+edge_pydb.egg-info/dependency_links.txt
+edge_pydb.egg-info/requires.txt
+edge_pydb.egg-info/top_level.txt
