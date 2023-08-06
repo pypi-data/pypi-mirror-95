@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tinyevent
+Version: 0.1.0
+Summary: A tiny event module
+Author: afmelin
+Author-email: afmelin@github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
