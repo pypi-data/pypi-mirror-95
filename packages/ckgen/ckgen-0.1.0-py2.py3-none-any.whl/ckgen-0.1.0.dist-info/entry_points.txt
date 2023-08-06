@@ -1,0 +1,6 @@
+[console_scripts]
+ckgen = ckgen.__main__:main
+
+[microapp.projects]
+ckgen = ckgen
+
