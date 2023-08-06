@@ -1,0 +1,6 @@
+      [paste.app_factory]
+      main = twitcher:main
+      [console_scripts]
+      twitcherctl=twitcher.scripts.twitcherctl:main
+      initialize_twitcher_db=twitcher.scripts.initialize_db:main
+      
