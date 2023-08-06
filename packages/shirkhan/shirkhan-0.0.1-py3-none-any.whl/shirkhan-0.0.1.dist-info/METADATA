@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: shirkhan
+Version: 0.0.1
+Summary: shirkhan tools
+Home-page: https://github.com/ishirkhan
+Author: shirkhan
+Author-email: uybabbage@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# shirkhan
+
+the python tool for shirkhan
+> currently using with project u-open-imla
+
+# Usage
+
+```shell
+pip install shirkhan
+```
+
+```python
+from shirkhan import decode, encode
+
+encode("xxxx")
+decode("yyy")
+
+```
+
