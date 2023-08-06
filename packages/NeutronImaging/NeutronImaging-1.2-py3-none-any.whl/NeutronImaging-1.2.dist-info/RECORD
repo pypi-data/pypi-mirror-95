@@ -1,0 +1,13 @@
+NeutronImaging-1.2.data/scripts/generate_config.py,sha256=JjjCKgcfnQfs7Pg7rEu8VuRUtYkc6SeaA_Go8CH4PTg,1059
+NeutronImaging-1.2.data/scripts/mcp_detector_correction.py,sha256=rXvt9CuIp4pepvO2BLiQfPoX2yGiCR0SovV-i4rTxDw,3088
+neutronimaging/__init__.py,sha256=PtVAw3EcOmFL3b7Cd7zjrwaAEoeOMe5084P9oxSEgAo,326
+neutronimaging/_version.py,sha256=VZNpdWrwXjD1WMt_9WKC1pMtLwmkyDhEbdNdjlMJP6U,495
+neutronimaging/detector_correction.py,sha256=f-K81FRLjRxclKyPC65u1tZ2G8McigatpIkxHmENmbo,5440
+neutronimaging/npmath.py,sha256=VyiQrdjyHg82v_gWLRrtQIVeLTnlrC1FRmtW3YE2GJY,974
+neutronimaging/preprocess.py,sha256=r-9QCEFBcyyU35re2mN4RPe6pQLFGF6VkWiOB5ML-2s,12061
+neutronimaging/util.py,sha256=Yive0D6PSGZrVzgR890WEdAtCOL8a2TRbCyF_lAy7bI,2202
+NeutronImaging-1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+NeutronImaging-1.2.dist-info/METADATA,sha256=6hbSew8YnYq8q_MvKJlDQvE5B7eZ8_gPUrYAjjWfuhY,4606
+NeutronImaging-1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+NeutronImaging-1.2.dist-info/top_level.txt,sha256=MrdJPaKwb9YkkBCa_B35PAHf9XCSciyUb7wmdraBshM,15
+NeutronImaging-1.2.dist-info/RECORD,,
