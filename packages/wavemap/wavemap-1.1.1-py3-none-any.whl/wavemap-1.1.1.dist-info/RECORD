@@ -1,0 +1,12 @@
+wavemap/__init__.py,sha256=uUnEsllCbfCGh6-hMR_TWz-CqPv8Yv-2vbXzSGmBl4o,3245
+wavemap/convert.py,sha256=fngWXCxnYp5uWyt_ES3E1BRvXTTJi-3B1eQruyM0fgI,2296
+wavemap/docs.py,sha256=In4sBXFRkgGq7YlEwyyDDDzP9QAIVhWCkHWl_q2_bsk,3913
+wavemap/memmap.py,sha256=IYPZOZIkXBuxKbOQiHWzBt4u05Le7tvdeUHjjHHpL40,11893
+wavemap/raw.py,sha256=82O3TNViSQVqXbUK7bBSaSKB_4wrizQ4oQBg5bwusUs,3560
+wavemap/read.py,sha256=o7DsWso3AZ285j6b22-R0DcS57qksaaAYDYzcGOz1J4,4604
+wavemap/write.py,sha256=-6IJsf6feiux0QlZl97Jat61JN5hB5Y-ghpwzVTbKLE,3356
+wavemap-1.1.1.dist-info/LICENSE,sha256=2H3TTsBJEVDu73RHBbYDXTPRFsypRLOplkjh_AwfOi8,1070
+wavemap-1.1.1.dist-info/METADATA,sha256=jz0qQ0LrMBHLxLr0qpX3EM4yRfYtRoKgPFSWW3UUpVc,13322
+wavemap-1.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+wavemap-1.1.1.dist-info/top_level.txt,sha256=c-q4GFil8vegM_d7zFxRbPqt-wCNCz-6RuVchjFPFL0,8
+wavemap-1.1.1.dist-info/RECORD,,
