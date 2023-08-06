@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: komiker
+Version: 1.0.7
+Summary: Tutorial komiker-py: https://m.youtube.com/watch?v=wmlFLnWmaa0
+Home-page: https://github.com/komiker-py
+Author: pemula
+Maintainer: pemula
+License: Dilindungi oleh Raja Iblis Merlin Lucifer.
+Download-URL: https://m.youtube.com/watch?v=wmlFLnWmaa0
+Keywords: komiker
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: Indonesian
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Android
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: fake-headers (==1.0.2)
+Requires-Dist: pycrypto (==2.6.1)
+Requires-Dist: rich (==9.10.0)
+Requires-Dist: backports.pbkdf2 (==0.1)
+
+# Komiker
+
+“apa ini aku tidak tau :><br>
+script asal-asalan gak jelas gak penting bodoamat!!!”<br>
+-pemula
+
+## Installation
+※ Install python di android pakai pydroid.<br>
+※ Buka pydroid => buka file "main.py" dari folder komiker-py.<br>
+※ Langsung jalankan saja untuk mengetes apakah sudah terbaca semua module-nya.<br>
+※ Jika module masih tidak terbaca, buka terminal.<br>
+※ Copy paste perintah di bawah di terminal.
+```
+python -m pip install komiker
+```
+※ Tunggu sampai selesai.
+
+## Usage
+※ Inisialisasi dengan mengimpor module komiker:
+```
+from komiker import komik
+```
+※ Cari URL manga di 'bacakomik.co', 'boosei.com', 'doujindesu.info', 'kazemanga.my.id', 'kiryuu.co', 'klikmanga.com', 'kombatch.com', 'komikav.com', 'komikcast.com', 'komikgratis.com', 'komikindo.co', 'komikmama.net', 'komikmanga.com', 'komikstation.com', 'komiktap.in', 'komiku.id', 'maid.my.id', 'mangacanblog.com', 'mangadropout.xyz', 'mangakid.site', 'mangakita.net', 'mangakyo.me', 'mangasusu.world', 'mangatoon.mobi', 'mangceh.com', 'manhwaid.co', 'mgkomik.my.id', 'ngomik.net', 'pojokmanga.com', 'sekaikomik.com', 'sektedoujin.site', 'sektekomik.com', 'westmanga.info' saja, website lain tidak bisa karena regex-nya hanya mencari di sumber teks dari web tsb, jika ingin yang lainnya silakan dimodif sendiri. Format link-nya harus dari page manga bukan page chapter!! Misalnya: 'https://bacakomik.co/manga/solo-leveling/' dan bukan dari page chapter (X)  'https://bacakomik.co/solo-leveling-chapter-136-bahasa-indonesia/' (X). Contoh lewat URL:
+```
+komik.download('https://bacakomik.co/manga/solo-leveling/').generate()
+```
+※ Jika malas sekali mencari URL manga seperti si penulis, gunakan parameter site="inisial website" ['bk', 'bs', 'dd', 'ka', 'kb', 'kc', 'kg', 'ki', 'kk', 'kl', 'km', 'kn', 'ks', 'kt', 'ky', 'kz', 'mb', 'mc', 'md', 'mg', 'mi', 'mk', 'mo', 'mp', 'ms', 'mt', 'mw', 'ng', 'pm', 'sd', 'si', 'sk', 'wm']. Fungsinya untuk mencari URL lewat daftar komik dari website tsb. Misalnya ingin buka daftar komik dari website "bacakomik.co":
+```
+komik.download(site='bk').generate()
+```
+Seperti dijelaskan di atas inisial website dari "bacakomik.co" adalah "bk".
+
+※ Pilih mode download, dalam bentuk folder berisi gambar (.jpg) pilih mode 1-3 dan dalam bentuk berkas (.rar/ .zip) pilih mode ke 4. 
+
+Mode 1: download semua chapter.<br>
+Mode 2: download satu chapter.<br>
+Mode 3: download chapter a sampai chapter b.<br>
+*a = chapter tujuan awal<br>
+*b = chapter tujuan akhir
+
+※ Jika ingin langsung download dengan mode RAR, tambahkan argument "True" pada parameter "rar". Contoh:
+```
+komik.download(site='kk', rar=True).generate()
+```
+```
+komik.download('https://kiryuu.co/manga/deor/', rar=True).generate()
+```
+
+## Warning
+Jangan memasukan angka atau apapun yang tidak semestinya, misalnya memasukan mode 5 atau 999 yang sudah jelas akan muncul error/ berhenti. Karena si penulis malas sekali untuk menghandle semua kemungkinan munculnya error. Tidak menerima perintah untuk memperbaiki bug atau sejenisnya, tapi bisa mengirim pesan untuk memberi tahu bug tersebut.
+
+## License
+Dilindungi oleh Raja Iblis Merlin Lucifer.<br>
+Ditulis dengan ❤ oleh Mantan Kamu 😘
+
