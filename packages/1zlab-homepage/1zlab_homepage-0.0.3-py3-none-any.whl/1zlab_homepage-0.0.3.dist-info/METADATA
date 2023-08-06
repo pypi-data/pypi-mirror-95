@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: 1zlab-homepage
+Version: 0.0.3
+Summary: 1zlab website homepage.
+Home-page: http://www.1zlab.com
+Author: 1zlab-team
+Author-email: singein@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: django
+Requires-Dist: django-markdown2
+Requires-Dist: markdown2
+Requires-Dist: itsdangerous
+Requires-Dist: pygments
+Requires-Dist: mysqlclient
+Requires-Dist: qiniu
+
+xxx
+
+
+
