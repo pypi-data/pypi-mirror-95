@@ -1,0 +1,4 @@
+[dffml.model]
+anomalydetection = dffml_model_scratch.anomalydetection:AnomalyModel
+scratchlgrsag = dffml_model_scratch.logisticregression:LogisticRegression
+
