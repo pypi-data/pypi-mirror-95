@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: solarlib
+Version: 0.1.0
+Summary: A library for calculating solar irradiance, sunrise, sunset, and more. 
+Home-page: https://github.com/pooyad359/solarlib
+Author: Pooya Darvehei
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/pooyad359/solarlib/archive/v0.1.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
