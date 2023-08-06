@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: wu-diff
+Version: 0.1.1
+Summary: Wu(O(NP)) algorithm
+Home-page: https://github.com/maiseaux/wu-diff-python
+License: MIT
+Author: maiseaux
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/maiseaux/wu-diff-python
+Description-Content-Type: text/markdown
+
+# wu-diff-python
+
+Compute difference between two lists using Wu's O(NP) algorithm.
+
+## Example
+
+```python
+>>> from wu_diff import WuDiff
+>>> print(WuDiff("strength", "string").str_diff())
+```
+```
+ str
+-e
++i
+ ng
+-t
+-h
+```
+
+
