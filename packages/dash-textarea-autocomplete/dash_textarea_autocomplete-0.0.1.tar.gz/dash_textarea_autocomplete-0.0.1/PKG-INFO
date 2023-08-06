@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash_textarea_autocomplete
+Version: 0.0.1
+Summary: Dash component wrapper for `react-textarea-autocomplete`
+Home-page: UNKNOWN
+Author: Etienne Tetreault-Pinard <info@etpinard.xyz>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash
