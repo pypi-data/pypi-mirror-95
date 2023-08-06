@@ -1,0 +1,17 @@
+ls_python/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+ls_python/convectionDemo.py,sha256=Kh5agr0Z3cItDN9ajAeHi-TSKtSBuviE-M1zgs_dU5M,2740
+ls_python/gridHandler.py,sha256=k4FyLK5bzW-dY2adj7wEmyoTRe0QxoPHU7qa90zgda4,9030
+ls_python/matplotlib3d_example.py,sha256=5z0EctblZtNJVL15p9vJKkQWKaIqO9_XWmj-5jpLeUM,655
+ls_python/normalVelocityDemo.py,sha256=x6VinqOVX1mG29IAyxryFRGUbXvLOxR8XkXwVnOqhh8,2440
+ls_python/odeCFL.py,sha256=5w0Csep7s0tdPZ_phgqa8iIlPXpUMu-6XGAASvVvy6I,2218
+ls_python/options.py,sha256=JGgyyqqK6MkituPAfKZ83zsm2ljyPrpY_tLAG9MM49I,202
+ls_python/pyvista3d_example.py,sha256=rLy3STlK_zfTA0UZd58AE52PQJWTReLcOOEukdYAqcY,559
+ls_python/pyvista3d_example_terrain.py,sha256=aM32YYwAwskBByuqMS6NpMfsA6KnN4CgrMzJOLBP9cY,3030
+ls_python/read_data.py,sha256=Tk9d2ITt3iM1x7aW6JT9j_Eb-DzhJNqcIKNZUDi9b-Y,318
+ls_python/spatialDerivative.py,sha256=B7b9CUL6OGBOoDjPE0hXIiJH5bn0K3l2IB7GfpO7zrY,12025
+ls_python/terms.py,sha256=7tdZMK4eCkYoVHOBmg099kBrDdeIJ72IX4NjuTEv6dM,4028
+ls_python-0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ls_python-0.1.dist-info/METADATA,sha256=QTzO0ThbyFa2wMmdRI-Zc64AlcYDnD-xV-kmEkzeaUo,434
+ls_python-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ls_python-0.1.dist-info/top_level.txt,sha256=bEH8Te47hcRQpWnVugFGZyJz-eYVj0qichO-4R5_fmU,10
+ls_python-0.1.dist-info/RECORD,,
