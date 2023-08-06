@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-markdownfield
+Version: 0.9.0
+Summary: A simple custom field for Django that can safely render Markdown and store it in the database.
+Home-page: https://github.com/dmptrluke/django-markdownfield
+Author: Luke Rogers
+Author-email: luke@dmptr.com
