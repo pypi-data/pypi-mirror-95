@@ -1,0 +1,3 @@
+[console_scripts]
+alis = alis.__main__:console_entry_point
+
