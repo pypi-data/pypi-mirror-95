@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jsonical3
+Version: 0.1.0
+Summary: Canonical JSON for Python 3
+Home-page: https://github.com/LanetheGreat/jsonical3
+Author: Paul Joseph Davis
+Author-email: paul.joseph.davis@gmail.com
+Maintainer: Lane Shaw
+Maintainer-email: lshaw.tech@gmail.com
+License: MIT
+Keywords: JSON canonical serialization
+Platform: any
+
+
+Canonical serializations for JSON.
+
+Similar to the basic API for the `json`/`simplejson` modules with
+a few restrictions on modifiying serialization.
+
+
