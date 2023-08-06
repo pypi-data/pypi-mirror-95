@@ -1,0 +1,13 @@
+.idea
+.sublime
+__pycache__
+__pycache__/*
+*.pyc
+dist
+dist/*
+build
+build/*
+build/*
+PrettyTextTestRunner.egg-info
+PrettyTextTestRunner.egg-info/*
+.pypirc

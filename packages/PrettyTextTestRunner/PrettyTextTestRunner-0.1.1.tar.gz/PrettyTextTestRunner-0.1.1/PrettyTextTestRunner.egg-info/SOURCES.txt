@@ -1,0 +1,14 @@
+.gitignore
+CHANGES.md
+LICENSE
+NOTICE.md
+README.md
+TODO.md
+requirements.txt
+setup.py
+PrettyTextTestRunner/__init__.py
+PrettyTextTestRunner/textTable.py
+PrettyTextTestRunner.egg-info/PKG-INFO
+PrettyTextTestRunner.egg-info/SOURCES.txt
+PrettyTextTestRunner.egg-info/dependency_links.txt
+PrettyTextTestRunner.egg-info/top_level.txt

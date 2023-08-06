@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PrettyTextTestRunner
+Version: 0.1.1
+Summary: Rich drop-in replacement for unittest.TextTestRunner
+Home-page: https://github.com/villagertech/PyPrettyTextTestRunner
+Author: Rob MacKinnon
+Author-email: rome@villagertech.com
+License: UNKNOWN
+Description: 
+        # PrettyTextTestRunner
+        A rich drop-in replacement for unittest.TextTestRunner which simply works out of the box. This
+        light weight implementation uses class extension and method overrides to get things working, with no
+        additional (outside of default Python) libraries required.  Get started and get things done with
+        ease. See the [Github project page|https://github.com/villagertech/PyPrettyTextTestRunner] for more information.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
