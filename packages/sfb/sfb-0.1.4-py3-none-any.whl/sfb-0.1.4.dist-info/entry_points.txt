@@ -1,0 +1,3 @@
+[console_scripts]
+sfb = sfb.cli.main:cli
+

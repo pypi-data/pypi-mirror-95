@@ -1,0 +1,17 @@
+sfb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfb/config.py,sha256=BmShT6c2S_AXf7FKp2qJjf98cYdNcl5lUTFettojLaM,1855
+sfb/configure.py,sha256=QmX9VidS7gbejXLSHJfvr8s6EENPifrt7F3gWJnj1js,1864
+sfb/entrypoint.py,sha256=2wtFo4hBozaSbEgndcEJCnWtb_sNjv9mFzoa8n_aelA,3915
+sfb/estimator.py,sha256=BI7pDJZt3K5vbCpqX8T9Cbj5PymMvnkxE4VlvhyB4mk,6606
+sfb/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfb/cli/main.py,sha256=pS7B2aFJ_jMhadh6yzpc4X-XknYRsyjfItQV-0hZjIA,325
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=5FIMgEYLw0ZqkE0k8N0ssn_KyJB1Ag80MH-h8NTZQws,1129
+tests/test_bq.py,sha256=pKL5OxloVWAaMKQUd1be3GXpSuiYu6ZultRbico1q_w,1113
+tests/test_estimator.py,sha256=pKL5OxloVWAaMKQUd1be3GXpSuiYu6ZultRbico1q_w,1113
+sfb-0.1.4.dist-info/LICENSE,sha256=_QqqpKtcM3eBPuNUX0wXrpvSjRpSN8b9Zb0DqDsZMLQ,1075
+sfb-0.1.4.dist-info/METADATA,sha256=3J_T_h2Wn4u-cAieJDcqj8rqd914NA30mrjxhnMvAb8,3738
+sfb-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sfb-0.1.4.dist-info/entry_points.txt,sha256=bQmXLBmlT90zvwU0AW-O4hoBZWtdgd_VfI4Q8u--Saw,42
+sfb-0.1.4.dist-info/top_level.txt,sha256=toSxcCgH0fRuZbf3h7WqHAxeFI_4AUFLDZVvUTY8hko,10
+sfb-0.1.4.dist-info/RECORD,,
