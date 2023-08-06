@@ -1,0 +1,9 @@
+tcm/__init__.py,sha256=jkD7x-W8yVhYQxkv8Di59DocHU_vCAhUTUNYCbrZeug,480
+tcm/decorator.py,sha256=7UjHEkeuDPawGDk0MfEQ5Nf_aGpV4VLKQ5FjDP0eaR4,2151
+tcm/metaclass.py,sha256=xtoOgE_y4G0cZTMXZcjLxLbgWMwilPqafgV5VxTAzd0,3763
+tcm-2.0.0.dist-info/LICENSE,sha256=SU6YcwLDII0pO1AFEeBnktYZ1EdXBBLHykT_dP8Q4a0,1094
+tcm-2.0.0.dist-info/METADATA,sha256=DKzqsRgxkkzSRE-rINbKPbnxoumNyn4W-D-zq9qs06Q,1515
+tcm-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tcm-2.0.0.dist-info/top_level.txt,sha256=xyNmNXfyMUO4dd21VGO2PjN-Mf-vp60sXAfGM6P8XuI,4
+tcm-2.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tcm-2.0.0.dist-info/RECORD,,
