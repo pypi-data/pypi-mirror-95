@@ -1,0 +1,14 @@
+cla_check/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cla_check/_cla.py,sha256=mG3r75lmMcZsIEHpdcl-9TM2w0hoDoG91Q07hSSEUkE,2438
+cla_check/_git.py,sha256=t83KkNXrYGA-t2ANzuPuntbImg_JPh25Bb4LuQPFegA,923
+cla_check/_lp.py,sha256=tnzjyRhMcyQ1JhcR1Hnrfzj9P7c-KKhHKnFuJxCjn2o,1227
+cla_check/_term.py,sha256=BCDmSWplN2RO1sWyfV62YB61DViUIRAXriBiczVCq-w,1721
+cla_check/_commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cla_check/_commands/_cla_check.py,sha256=YLiY0afXyVq5-E6kSZ0ijEjepXzmXfj9jCzDneaEz8I,915
+cla_check/_commands/_cla_check_git.py,sha256=Ky7BhthQu5jK8XuIPFHXLA-JRwdpBe01X80SZ_0QBzw,1742
+cla_check-0.3.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+cla_check-0.3.1.dist-info/METADATA,sha256=JoR9drHYGVP97RfLjS3cn06OKamr6XItrWqIsV3yKuI,201
+cla_check-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cla_check-0.3.1.dist-info/entry_points.txt,sha256=S2HmdbI8qF-fU3_RKmcKfzimH2C_Biaebjib0otedt8,123
+cla_check-0.3.1.dist-info/top_level.txt,sha256=fGrq8N9emViqVUD7pDvleXwj4plkQpKg48Mk2y5hV4s,10
+cla_check-0.3.1.dist-info/RECORD,,
