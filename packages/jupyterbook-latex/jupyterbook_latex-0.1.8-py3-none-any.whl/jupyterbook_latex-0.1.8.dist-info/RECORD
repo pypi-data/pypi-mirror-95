@@ -1,0 +1,10 @@
+jupyterbook_latex/__init__.py,sha256=3gN7iiWuds6ukFfn9Ml9jAx1nBX2bkVBzPRnfED6KNc,3139
+jupyterbook_latex/nodes.py,sha256=z_GrnZDjV-WWhTJT4DXJc9is1xMPuVObefaiForBLaw,1569
+jupyterbook_latex/transforms.py,sha256=_83mn1ePNTEtp5-3TQAMATtCREgiaHq5WCVBBi-g1i4,7060
+jupyterbook_latex/utils.py,sha256=jX7nkF6wQnAwJ_RxnJBGy5YmEwm2-3XqenWcqKciGRY,282
+jupyterbook_latex/theme/jupyterBook.cls,sha256=w6lPxIOTbjzt_UmJpg399zNRuIyPMFnPTMpOoyuMn4U,1222
+jupyterbook_latex-0.1.8.dist-info/LICENSE,sha256=aWHeuj6barS8jPykGz6P449WpH1QFrCo7vlElsOsob4,1529
+jupyterbook_latex-0.1.8.dist-info/METADATA,sha256=5hAVjCxdhvi2GJABw2huHUyfWoiGmyEac1S633Wv7BM,2288
+jupyterbook_latex-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jupyterbook_latex-0.1.8.dist-info/top_level.txt,sha256=KKA-qLncesInMHtrFAWpfHhCkU5eEtklHnW7u5LBF98,18
+jupyterbook_latex-0.1.8.dist-info/RECORD,,
