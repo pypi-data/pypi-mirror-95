@@ -1,0 +1,15 @@
+phantom_dev/action_handler/__init__.py,sha256=Uv_Uu99HV6AGQa4PrSnp9i0zCS7cLuTjO2rRX3s0XlI,10635
+phantom_dev/app/__init__.py,sha256=IZLXem5_W44_giFLKH5ow4_AJUyKBJTH5Mf8qoZcpE4,10584
+phantom_dev/app/default_logo.svg,sha256=N7na9ei5pxhNi94gjg_KXtmwrmH5GOP4J9NtbM00GIg,2125
+phantom_dev/client/__init__.py,sha256=5KKau8eKXD_BqjDMEV1kq8_qTiN6Flr0M59sS284mSA,6944
+phantom_dev/client/default_data/connector.py,sha256=hrMyu_t1VfNxVxG4fvqfRpzh4xRigjmHpLQ5_y-Ajrk,3615
+phantom_dev/client/default_data/metadata.yaml,sha256=h6ythvVZ78wvlwTfilWd_a3qrN9NgU30hnT-GkMceAc,923
+phantom_dev/dummy_phantom/action_result.py,sha256=blk7Td0GLEJQ0XvVjsBD6P-pNHKYPKUuZ7bPC5aTlEU,26
+phantom_dev/dummy_phantom/app.py,sha256=dKbVwGx6CjJbKxpWqKvSuOvs2FUmbqk5CpbP2MRD4Q4,44
+phantom_dev/dummy_phantom/base_connector.py,sha256=6OQIxazuPCrSbFFjUb2IIZiQh3oWgYGdXThTMENxbDw,26
+phantom_dev-0.1.2.dist-info/LICENSE,sha256=w78rgAAHofE01DqZ6nMQ3Pw9rDapUkl_QYB0opXGHRg,1067
+phantom_dev-0.1.2.dist-info/METADATA,sha256=Eyz30ale_PVttK9-XfvWOjyWKNNhJOYSP5f7oMVOszc,10651
+phantom_dev-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phantom_dev-0.1.2.dist-info/entry_points.txt,sha256=ok8VSw64m7J2q3RTjcAWwc4Oe96IOCsHa4aZ1kX_HbU,57
+phantom_dev-0.1.2.dist-info/top_level.txt,sha256=3B5X4v-6PpFPBnHTzfn6yNApE_fub-kgKu6j6wSWOhs,12
+phantom_dev-0.1.2.dist-info/RECORD,,

@@ -1,0 +1,37 @@
+actions:
+  dummy_action:
+    description: manual description
+    parameters:
+      required_number:
+        description: mandatory number
+      required_str:
+        description: mandatory string
+      required_bool:
+        description: mandatory bool
+      optional_number:
+        description: optional number
+      optional_str:
+        description: optional string
+      optional_bool:
+        description: optional bool
+    output:
+      action_result.summary.message:
+          data_type: string
+          contains:
+            - text
+      action_result.summary.results:
+        data_type: string
+        contains:
+          - json
+      action_result.data.*.name:
+        data_type: string
+        contains:
+          - text
+      action_result.data.*.type:
+        data_type: string
+        contains:
+          - text
+      action_result.data.*.value:
+        data_type: string
+        contains:
+          - json
