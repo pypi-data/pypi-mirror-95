@@ -1,0 +1,8 @@
+typer
+rich
+pandas
+xlsxwriter
+pydantic
+beautifulsoup4
+biopython
+openpyxl
