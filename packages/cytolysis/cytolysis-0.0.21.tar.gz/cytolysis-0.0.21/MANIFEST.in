@@ -1,0 +1,2 @@
+include example_data/*.txt
+include example_data/*.cym
