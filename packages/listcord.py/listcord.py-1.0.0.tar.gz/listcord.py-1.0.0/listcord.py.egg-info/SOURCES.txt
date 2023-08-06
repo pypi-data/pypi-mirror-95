@@ -1,0 +1,7 @@
+README.md
+setup.py
+listcord/__init__.py
+listcord.py.egg-info/PKG-INFO
+listcord.py.egg-info/SOURCES.txt
+listcord.py.egg-info/dependency_links.txt
+listcord.py.egg-info/top_level.txt
