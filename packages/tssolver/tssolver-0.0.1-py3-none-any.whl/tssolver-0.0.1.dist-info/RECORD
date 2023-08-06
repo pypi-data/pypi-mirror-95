@@ -1,0 +1,12 @@
+tssolver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tssolver/__main__.py,sha256=uAdvaUQITiectE54_y9Q7lzq0IJHZfqcNLGkHwBC6uA,850
+tssolver/board.py,sha256=JxTlm6NzBGJemGKRimXCyl5HSKYvhpHlq-njpPQDJhI,10911
+tssolver/example_grids.py,sha256=8eb6MKsd9nvXuh0SB7acpZV-TA7nMfMjoQRVYMofaQs,3265
+tssolver/interface.py,sha256=-sTcyqklkmK6m1AixZPn6hqd2Ma6uJBKnB1l4AJKNP8,24466
+tssolver/solver.py,sha256=TjWQDUow1vPKBSwUUtm9XJqzsb9INXCjyV1DkFsc5TM,12015
+tssolver-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tssolver-0.0.1.dist-info/METADATA,sha256=rVMfK2ev6uOUAwoPgO6I2oeufEduzL1JQNWSAX5CRqU,2040
+tssolver-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tssolver-0.0.1.dist-info/entry_points.txt,sha256=dCpGPfAsRWzVYq2wJyDCQDXU4adGlolbhvC-gM2wPIs,62
+tssolver-0.0.1.dist-info/top_level.txt,sha256=6bB76YI5y6_z1P5Eu8iD3qE1eyu1rvb7qZ5m3XWhk54,9
+tssolver-0.0.1.dist-info/RECORD,,
