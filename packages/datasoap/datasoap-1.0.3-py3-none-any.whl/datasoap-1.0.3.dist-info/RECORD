@@ -1,0 +1,8 @@
+LICENSE,sha256=4OC0ocLptlRBNcmLbAhfIcalwqz8G9XDSwuQQoIXks0,1052
+datasoap/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+datasoap/data_soap.py,sha256=lb9XONpv_x0dlFgAmXAsj2ufwNWzX4QJZPVjr6c2c2c,5743
+datasoap-1.0.3.dist-info/entry_points.txt,sha256=On5rD8MM1I7bfDjZ8eZwONy7mLnWNGBls6z-oYNkoK4,42
+datasoap-1.0.3.dist-info/LICENSE,sha256=4OC0ocLptlRBNcmLbAhfIcalwqz8G9XDSwuQQoIXks0,1052
+datasoap-1.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+datasoap-1.0.3.dist-info/METADATA,sha256=GUkArkElQGpi6E-IAQrkVBprz2SYbwRtjDsK1kKG_6w,1890
+datasoap-1.0.3.dist-info/RECORD,,
