@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: amz-tool
+Version: 2021.2.3
+Summary: AMZ Codebase Management Tool
+Home-page: https://bitbucket.org/amzracing/amz-tool
+Author: AMZ Dev Admin
+Author-email: dev@amzracing.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.6
+Requires-Dist: pyyaml (>=5.3.0)
+Requires-Dist: requests
+Requires-Dist: pylint (>=2.6.0)
+Requires-Dist: cpplint (>=1.5.4)
+Requires-Dist: pre-commit (>=2.9.3)
+Requires-Dist: yapf (>=0.30.0)
+Requires-Dist: argcomplete
+Requires-Dist: packaging
+
+UNKNOWN
+
+

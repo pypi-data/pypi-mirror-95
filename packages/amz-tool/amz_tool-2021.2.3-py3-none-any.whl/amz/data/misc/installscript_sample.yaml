@@ -1,0 +1,60 @@
+meta:
+    # NECESSARY
+    name: "ROS"
+    # one line shell command : must return true/false when executed in terminal.
+    # placeholder for always passing install check --> echo true
+    # NECESSARY
+    check: "if [ $(echo 'hello') = 'hello' ]; then echo true; else echo false; fi"
+    # temp folder for handling all operations
+    temp_dir: true
+    # dependencies
+    deps:
+        py2:
+            - requests
+            - yapf
+        py3:
+            - requests
+        apt:
+            - clang-format
+    # supports substitution args only for now - no conditionals
+    # default substitution is necessary
+    # can be passed on via amz install :
+    ## amz install installscript_sample.full.stable
+    ## amz install installscript_sample..stable
+    ## amz install installscript_sample
+    args:
+        pkg:
+            # default must be the first substitution
+            default: "min"
+            min: "min"
+            full: "full"
+        ver:
+            # default must be the first substitution
+            default: "1.9.4"
+            stable: "1.9.4"
+            latest: "2.2.5"
+# Only sh scripting supported
+# Assume you're stuck with only one terminal window, locked into a temp directory to operate from
+# cd commands won't work - so prefix cmds with `cd <dir> && `
+install:
+    # Using substitution arg suffixed with '.key' to access input key
+    Installing [(ver.key)] from apt:
+        # Using substitution arg here
+        - "sudo apt install -y somepackage-[(pkg)]-[(ver)]"
+    # Use !!! to signal break if this step fails
+    Doing something else !!!:
+        - 'echo "Hello"'
+        # Using outer quotes is the preferred way
+        # Different ways of handling commands
+        - 'These are "Double Quotes"'
+        - "These are 'Single Quotes'"
+        # Can skip using outer quotes if command contains quotes of both kinds
+        - echo 'Single Quotes' && echo "Double Quotes"
+        # If your case is more complex than this, handle via bash escapes while still skipping outer quotes
+        - echo 'Single Quotes' && echo "'Single' and \"Double\" inside Double Quotes"
+update:
+    Updating from apt:
+        - "sudo apt install -y somepackage"
+remove:
+    Removing somepackage from your machine:
+        - "sudo dpkg --remove somepackage"

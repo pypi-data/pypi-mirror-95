@@ -1,0 +1,9 @@
+[Unit]
+Description=AMZ Auto Updater Service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
