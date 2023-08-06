@@ -1,0 +1,8 @@
+imageio
+imageio-ffmpeg
+scikit-image
+opencv-python
+pims
+lycon
+librosa
+ffmpeg-python
