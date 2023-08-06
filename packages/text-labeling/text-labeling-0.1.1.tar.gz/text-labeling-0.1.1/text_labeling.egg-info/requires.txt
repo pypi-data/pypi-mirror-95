@@ -1,0 +1,9 @@
+python-dateutil
+numpy
+scipy
+scikit-learn
+notebook
+pandas
+nltk
+spacy
+modAL
