@@ -1,0 +1,6 @@
+psutil
+python-daemon
+pyyaml
+launcher-menus
+psprint
+argcomplete
