@@ -1,0 +1,9 @@
+jeeves/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+jeeves/cli.py,sha256=MkToFYRIX_JqUrnpw450w0IApLChsgK-ACB3zfJy5mk,2376
+jeeves/example.py,sha256=q6--yJbn-ycOWAYNSOlvGdGWVJ8wUX_8o68j49gp4pE,298
+jeeves/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mister_jeeves-0.0.1.dist-info/entry_points.txt,sha256=OgClPu9H1XNoQlD1bn0oVyPSotj-Mc9mVZz7YzEoft4,41
+mister_jeeves-0.0.1.dist-info/LICENSE,sha256=d3MTirKs2bYy4QzSx1XSutTJW3Kq0rpmvJn8cofc258,1101
+mister_jeeves-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+mister_jeeves-0.0.1.dist-info/METADATA,sha256=jd_K8nLbET-_Z79tPDp5NRWRJnr7zDarew3N8nsT9fA,2476
+mister_jeeves-0.0.1.dist-info/RECORD,,
