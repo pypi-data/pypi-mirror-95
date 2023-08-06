@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "pysisso"
+version = "0.3.1"
+description = "Python interface to the SISSO (Sure Independence Screening and Sparsifying Operator) method."
+authors = ["David Waroquiers <david.waroquiers@matgenix.com>"]
+license = "See LICENCE file."
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+pandas = "^1.0.5"
+monty = ">=3.0.4, <5"
+custodian = "^2020.4.27"
+scikit-learn = "^0.23.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+pytest-cov = "^2.10.1"
+coverage = {version = "^5.3", extras = ["toml"]}
+pytest-mock = "^3.3.1"
+pre-commit = "^2.9.3"
+isort = "^5.6.4"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+pylint = "^2.6.0"
+pydocstyle = "^5.1.1"
+mypy = "^0.790"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+
+[tool.pytest.ini_options]
+minversion = "6.1.2"
+addopts = "--strict-markers --cov=pysisso -cov-config=pyproject.toml --cov-report html --cov-report term"
+markers = [
+    "unit: Unit tests on small portions of the code that do not require execution of external code.",
+    "integration: Integration tests that require execution of external code.",
+]
+
+# Coverage options
+[tool.coverage.run]
+source = ["pysisso"]
+omit = [
+    "*/test_*",
+]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+]
+fail_under = 100
+
+[tool.coverage.html]
+directory = "htmlcov"
