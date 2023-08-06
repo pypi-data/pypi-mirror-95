@@ -1,0 +1,92 @@
+*** Settings ***
+Library           SeleniumLibrary
+
+*** Keywords ***
+Open Browser Url
+    [Arguments]    ${URL}    ${BrowserType}=chrome    options=add_argument('--headless')
+    Open Browser    ${URL}    ${BrowserType}
+    Maximize Browser Window
+
+Wait Until Contains Message
+    [Arguments]    ${Element_text}    ${timeout}=10
+    FOR    ${I}    IN RANGE    1    10
+        ${Socre}    Get Source
+        ${Status}    Run Keyword And Ignore Error    Should Contain    ${Socre}    ${Element_text}
+        Run Keyword If    "${Status}[0]"=="PASS"    Exit For Loop
+    END
+    Wait Until Page Contains    ${Element_text}    ${timeout}
+
+Click Element Message
+    [Arguments]    ${Element_text}    ${timeout}=10
+    Wait Until Contains Message    ${Element_text}    ${timeout}
+    Click Element    //*[contains(text(),"${Element_text}")]
+
+Input for Elements Text
+    [Arguments]    ${Element_text}    ${Index}    ${Message}
+    Wait Until Contains Message    ${Element_text}
+    ${List_Webelements}    Get Webelements    //*[contains(text(),"${Element_text}")]
+    Insert Into List    ${List_Webelements}    0    ${EMPTY}
+    Input Text    ${List_Webelements}[${Index}]    ${Message}
+
+Get Message Regular
+    [Arguments]    ${Element_text}    ${Pattern}    ${timeout}=10
+    Wait Until Contains Message    ${Element_text}    ${timeout}
+    ${List_Message}    Get WebElement    //*[contains(text(),"${Element_text}")]
+    ${GetText}    Get Text    ${List_Message}
+    ${Reg}    Get Regexp Matches    ${GetText}    ${Pattern}
+    [Return]    ${Reg}
+
+Click Image Index
+    [Arguments]    ${index}
+    ${List_Webelements}    Get Webelements    //img[@src]
+    Insert Into List    ${List_Webelements}    0    ${EMPTY}
+    Click Element    ${List_Webelements}[${index}]
+
+Press Enter
+    [Arguments]    ${attributes}    ${value}    ${Keys}
+    Press Keys    //*[contains(${attributes},"${value}")]    ${Keys}
+
+Input for Elements
+    [Arguments]    ${Index}    ${Message}
+    ${List_Webelements}    Get Webelements    //input[@type="text"]
+    Insert Into List    ${List_Webelements}    0    ${EMPTY}
+    Input Text    ${List_Webelements}[${Index}]    ${Message}
+
+Wait Until Contains Element
+    [Arguments]    ${attributes}    ${value}    ${timeout}=10
+    ${Locator}     Set Variable    //*[contains(${attributes}, "${value}")]
+    Wait Until Page Contains Element    ${Locator}    ${timeout}
+
+Get Message
+    [Arguments]    ${attributes}    ${value}    ${timeout}=10
+    Wait Until Contains Message    ${value}    ${timeout}
+    ${List_Message}    Get WebElement    //*[contains(${attributes},"${value}")]
+    ${GetText}    Get Text    ${List_Message}
+    [Return]    ${GetText}
+
+Click Elements
+    [Arguments]    ${attributes}    ${value}    ${timeout}=10
+    Wait Until Contains Element    ${attributes}    ${value}    ${timeout}
+    Click Element    //*[contains(${attributes},"${value}")]
+
+Page Down To Message
+    [Arguments]    ${Element_text}    ${Rounds}=20
+    FOR    ${index}    IN RANGE    ${Rounds}
+        ${Socre}    Get Source
+        ${Status}    Run Keyword And Ignore Error    Should Contain    ${Socre}    ${Element_text}
+        Run Keyword If    "${Status}[0]"=="PASS"    Exit For Loop    ELSE    Press Keys    None    PAGE_DOWN
+    END
+
+Page Up To Message
+    [Arguments]    ${Element_text}    ${Rounds}=20
+    FOR    ${index}    IN RANGE    ${Rounds}
+        ${Socre}    Get Source
+        ${Status}    Run Keyword And Ignore Error    Should Contain    ${Socre}    ${Element_text}
+        Run Keyword If    "${Status}[0]"=="PASS"    Exit For Loop    ELSE    Press Keys    None    PAGE_UP
+    END
+
+Page Up To HOME
+    Press Keys    None    HOME
+
+Page Down To END
+    Press Keys    None    END
