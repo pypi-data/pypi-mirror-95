@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cloudshell-checkpoint
+Version: 1.0.4
+Summary: Quali checkpoint specific package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Requires-Dist: setuptools (>=40.0)
+Requires-Dist: cloudshell-shell-flows (<2,>=1.0)
+Requires-Dist: cloudshell-cli (<5,>=4.0)
+Requires-Dist: cloudshell-snmp (<5,>=4.0)
+Requires-Dist: passlib (==1.7.4)
+
+UNKNOWN
+
+
