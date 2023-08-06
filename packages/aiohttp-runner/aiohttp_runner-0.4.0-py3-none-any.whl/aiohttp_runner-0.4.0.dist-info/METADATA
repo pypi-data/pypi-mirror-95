@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: aiohttp-runner
+Version: 0.4.0
+Summary: Wraps aiohttp or gunicorn server for aiohttp application.
+Author: xppt
+Author-email: 21246102+xppt@users.noreply.github.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: gunicorn
+Requires-Dist: aiohttp (>=3,<4)
+Requires-Dist: async-exit-stack (>=1,<2)
+Description-Content-Type: text/markdown
+
+Usage
+=====
+
+```python
+import aiohttp.web
+from async_generator import asynccontextmanager
+from aiohttp_runner import (
+    SimpleHttpRunner, GunicornHttpRunner, HttpWorkerContext, HttpRequest, HttpResponse,
+    create_http_app,
+)
+
+
+@asynccontextmanager
+async def app_factory(_context: HttpWorkerContext):
+    yield create_http_app(routes=[
+        ('GET', '/', http_handler),
+    ])
+
+
+async def http_handler(_req: HttpRequest) -> HttpResponse:
+    return aiohttp.web.Response(status=204)
+
+
+SimpleHttpRunner(bind='0.0.0.0:8080').run(app_factory)
+# OR
+GunicornHttpRunner(bind='0.0.0.0:8080', workers=3).run(app_factory)
+```
+

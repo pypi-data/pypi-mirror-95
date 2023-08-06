@@ -1,0 +1,10 @@
+aiohttp_runner/__init__.py,sha256=vT97b4F9ScotXUVZNvMWwqsoR28qoAbPykIRKQXCeLM,482
+aiohttp_runner/_gunicorn_app.py,sha256=JLLMQnJknM-dei6B5J_emgqghloBrQ_E28QYhqJc6Nk,483
+aiohttp_runner/_gunicorn_http_runner.py,sha256=vymlbyDgdPW7SBEWqMMGP5nXCO6r4tCfZawPU2Fo3AM,3549
+aiohttp_runner/_http_runner.py,sha256=fmQiqiCK8ZVla1abxllb6f-XdLXvwpDnk3EVI2y9zeo,929
+aiohttp_runner/_simple_http_runner.py,sha256=Jvqo6UxaJzDaexj8L3Wo3GsmirYOgM2nWdAGkHy7iqE,840
+aiohttp_runner/_utils.py,sha256=gYcdQ6ouUjlEDOHNUa9cyYUTjiu62syxZW35HPGeKz4,552
+aiohttp_runner/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohttp_runner-0.4.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aiohttp_runner-0.4.0.dist-info/METADATA,sha256=EGZtNBh3YPG6gWFdybuVKpO3aGKfGhuWuSWlx8pKuCI,1229
+aiohttp_runner-0.4.0.dist-info/RECORD,,
