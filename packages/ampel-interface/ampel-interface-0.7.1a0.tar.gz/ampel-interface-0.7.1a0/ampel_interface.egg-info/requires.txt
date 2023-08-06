@@ -1,0 +1,6 @@
+pydantic==1.4
+pymongo<4.0,>=3.10
+
+[testing]
+pytest<6.3,>=6.2.1
+pytest-cov
