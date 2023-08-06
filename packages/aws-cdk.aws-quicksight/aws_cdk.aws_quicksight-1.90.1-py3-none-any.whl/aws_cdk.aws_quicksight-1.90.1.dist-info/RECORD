@@ -1,0 +1,8 @@
+aws_cdk/aws_quicksight/__init__.py,sha256=yg9gsrgh9XjksnP8f_TWATZvxq50o6QSJUeMURQdaYc,241845
+aws_cdk/aws_quicksight/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_quicksight/_jsii/__init__.py,sha256=L_zrWQmz0mbitlGJPmbiKl8KrPgam6FhvbffVBJj3QQ,366
+aws_cdk/aws_quicksight/_jsii/aws-quicksight@1.90.1.jsii.tgz,sha256=gnpsAd5lZUnMa3XwaDXMio5zXZVjpvYTSSaMDoqEb0w,87463
+aws_cdk.aws_quicksight-1.90.1.dist-info/METADATA,sha256=kH48P78Rdnkv_sMQwCcpRFSlz4MAb6QrmypvfsRmlL8,1668
+aws_cdk.aws_quicksight-1.90.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_quicksight-1.90.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_quicksight-1.90.1.dist-info/RECORD,,
