@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: keyvalue_database
+Version: 0.0.7
+Summary: Key Value DataBase
+Home-page: https://github.com/AhmadZ1/Key-Value-DataBase
+Author: Ahmad Zaaroura
+Author-email: ahmad.zaaroura.123@gmail.com
+License: MIT
+Description: This module allows you to create and save simple key-value database to do some tasks.
+         You can check the source code in the github repo under project links.
+Keywords: DataBase
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
