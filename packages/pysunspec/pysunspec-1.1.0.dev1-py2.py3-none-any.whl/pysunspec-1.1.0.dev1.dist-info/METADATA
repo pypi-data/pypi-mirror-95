@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pysunspec
+Version: 1.1.0.dev1
+Summary: Python SunSpec Tools
+Home-page: UNKNOWN
+Author: ['Bob Fox']
+Author-email: bob.fox@loggerware.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyserial
+Requires-Dist: future
+
+UNKNOWN
+
+
