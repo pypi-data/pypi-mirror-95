@@ -1,0 +1,4 @@
+[console_scripts]
+unitorch-auto-infer = unitorch_cli.auto_infer:cli_main
+unitorch-auto-train = unitorch_cli.auto_train:cli_main
+
