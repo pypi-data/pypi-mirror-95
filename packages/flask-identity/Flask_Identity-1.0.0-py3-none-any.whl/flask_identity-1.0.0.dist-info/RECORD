@@ -1,0 +1,17 @@
+LICENSE.rst,sha256=IP-WRZQHjlW1KsZPGwa3aTgemBHmftzfTMiPAd5ds-E,1119
+flask_identity/__init__.py,sha256=ZgxmSIGxLG1WsKj-G6BCEaVfD8UEtoN_xnz_CFKqPYQ,909
+flask_identity/_hash_context.py,sha256=WFsI_8KNMhK3X8-dtQ5C7RnSh3-IDqA18Y68B5xsF8Q,2248
+flask_identity/_token_context.py,sha256=U8zmgqu4j87ee9xxSPH7LzrbMIoE4W6TNly_auT54CY,3350
+flask_identity/compats.py,sha256=rsxqmqu-IlYB5wtxQwheuQPribkmMgWHE-fy5xmwJXY,844
+flask_identity/config.py,sha256=9_4VOaNwI_4hGyoT_sDfsZ53kBaKfknqWNnBxq4uEI8,7622
+flask_identity/core.py,sha256=aO9rjxAFPJh-L6maWoJUaROnZAiR8SpigrPzdG3-xUM,15753
+flask_identity/datastore.py,sha256=_IOdbLWPdVu1xNyo_4eUIE_Bc6ZYm8zHvM3Dtp8agvA,11974
+flask_identity/decorators.py,sha256=aewR71di19vkE9XaO0_uZbyIz5YllXFD6DdSdwge_Gw,5732
+flask_identity/forms.py,sha256=djHVzsAgqBOrRsmI4Ah1fjxhuXGYzg5LbjuVyhr2YCQ,2985
+flask_identity/mixins.py,sha256=DpKUtuZgCtgCEmrcjOMCPBCdfnIkeouDU7xNbTn32sc,4490
+flask_identity/utils.py,sha256=xxP2Du3VZ4KW_7waVeILmQgDWifV2I6axfI8DI5RQQw,8968
+flask_identity/views.py,sha256=oLpNCXD2BpgwGWVJ9aCIXpkpS3u6W_Bp2fJp8aCcUo0,6333
+flask_identity-1.0.0.dist-info/LICENSE.rst,sha256=IP-WRZQHjlW1KsZPGwa3aTgemBHmftzfTMiPAd5ds-E,1119
+flask_identity-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+flask_identity-1.0.0.dist-info/METADATA,sha256=-wqhphloSp96QsTNaZ_9qyeL74Tky-x8ZAeabm2FWbs,4335
+flask_identity-1.0.0.dist-info/RECORD,,
