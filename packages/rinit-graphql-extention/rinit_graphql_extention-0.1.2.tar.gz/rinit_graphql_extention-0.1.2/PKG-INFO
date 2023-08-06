@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: rinit_graphql_extention
+Version: 0.1.2
+Summary: packet to make work with graphql more comfortabke
+Home-page: https://github.com/Zhukowych/
+Author: Max Zhuk
+Author-email: mzmzhuk@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/Zhukowych/rinit_graphql_extention/archive/v_012.tar.gz
+Description: UNKNOWN
+Keywords: rinit_graphql_extention
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
