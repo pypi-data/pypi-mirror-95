@@ -1,0 +1,10 @@
+setup.py
+bin/xyz
+staticXYZ/__init__.py
+staticXYZ/__main__.py
+staticXYZ.egg-info/PKG-INFO
+staticXYZ.egg-info/SOURCES.txt
+staticXYZ.egg-info/dependency_links.txt
+staticXYZ.egg-info/entry_points.txt
+staticXYZ.egg-info/requires.txt
+staticXYZ.egg-info/top_level.txt
