@@ -1,0 +1,2 @@
+tgcalls==0.0.1b1
+pyrogram>=1.1.13

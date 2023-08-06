@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: pytgcalls
+Version: 0.0.1b2
+Summary: Library connecting python binding for tgcalls and pyrogram
+Home-page: UNKNOWN
+Author: Il`ya Semyonov
+Author-email: ilya@marshal.dev
+License: LGPLv3
+Project-URL: Author, https://github.com/MarshalX
+Project-URL: Telegram Channel, https://t.me/tgcallslib
+Project-URL: Telegram Chat, https://t.me/tgcallschat
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+Requires-Python: ~=3.6
