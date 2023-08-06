@@ -1,0 +1,120 @@
+{% for domain, info in domains.items %}
+    <h4>{{ domain }}</h4>
+
+    <ul>
+        <li>
+            <strong>
+                <span class="djdt-color" style="background-color:red"></span>
+                Elapsed Time: {{ info.usage.elapsed_time }}
+            </strong>
+            <span class="djdt-color" style="background-color:red"></span>
+            Initial start time: {{ info.usage.initial_connection_start_time | date:"SHORT_DATETIME_FORMAT" }}
+            <span class="djdt-color" style="background-color:red"></span>
+            Open socket time: {{ info.usage.open_socket_start_time | date:"SHORT_DATETIME_FORMAT" }}
+            <span class="djdt-color" style="background-color:red"></span>
+            Close socket time: {{ info.usage.close_socket_start_time | date:"SHORT_DATETIME_FORMAT" | default:"STILL OPEN" }}
+        </li>
+        <li>
+            <span class="djdt-color" style="background-color:teal"></span>
+            Last Transmitted time: {{ info.usage.last_transmitted_time | date:"SHORT_DATETIME_FORMAT" }}
+            <span class="djdt-color" style="background-color:teal"></span>
+            Last Received time: {{ info.usage.last_received_time | date:"SHORT_DATETIME_FORMAT" }}
+            <strong>
+                <span class="djdt-color" style="background-color:orange"></span>
+                Traffic I/O: {{ info.usage.bytes_received | filesizeformat }} / {{ info.usage.bytes_transmitted | filesizeformat }}
+            </strong>
+            <span class="djdt-color" style="background-color:orange"></span>
+            Messages: {{ info.usage.messages_transmitted }} sent / {{ info.usage.messages_received }} received
+        </li>
+        <li>
+            <span class="djdt-color" style="background-color:forestgreen"></span>
+            Servers from pool: {{ info.usage.servers_from_pool }}
+            <span class="djdt-color" style="background-color:forestgreen"></span>
+            Sockets open: {{ info.usage.open_sockets }}
+            <span class="djdt-color" style="background-color:forestgreen"></span>
+            Sockets closed: {{ info.usage.closed_sockets }}
+            <span class="djdt-color" style="background-color:forestgreen"></span>
+            Sockets wrapped: {{ info.usage.wrapped_sockets }}
+            <span class="djdt-color" style="background-color:indigo"></span>
+            Referrals
+            <span class="djdt-color" style="background-color:indigo"></span>
+            Received: {{ info.usage.referrals_received }}
+            <span class="djdt-color" style="background-color:indigo"></span>
+            Followed: {{ info.usage.referrals_followed }}
+            <span class="djdt-color" style="background-color:indigo"></span>
+            Connections: {{ info.usage.referrals_connections }}
+            <span class="djdt-color" style="background-color:gray"></span>
+            Restartable failures: {{ info.usage.restartable_failures }}
+            <span class="djdt-color" style="background-color:gray"></span>
+            Restartable successes: {{ info.usage.restartable_successes }}
+        </li>
+        <li>
+            <strong>
+                <span class="djdt-color" style="background-color:blue"></span>
+                Operations: {{ info.usage.operations }}
+            </strong>
+            <span class="djdt-color" style="background-color:blue"></span>
+            Search: {{ info.usage.search_operations }}
+            <span class="djdt-color" style="background-color:blue"></span>
+            Compare: {{ info.usage.compare_operations }}
+            <span class="djdt-color" style="background-color:red"></span>
+            Add: {{ info.usage.add_operations }}
+            <span class="djdt-color" style="background-color:red"></span>
+            Delete: {{ info.usage.delete_operations }}
+            <span class="djdt-color" style="background-color:red"></span>
+            Modify: {{ info.usage.modify_operations }}
+            <span class="djdt-color" style="background-color:red"></span>
+            Modify DN (Move): {{ info.usage.modify_dn_operations }}
+            <span class="djdt-color" style="background-color:blue"></span>
+            Extended: {{ info.usage.extended_operations }}
+            <span class="djdt-color" style="background-color:blue"></span>
+            Bind: {{ info.usage.bind_operations }}
+            <span class="djdt-color" style="background-color:blue"></span>
+            Unbind: {{ info.usage.unbind_operations }}
+            <span class="djdt-color" style="background-color:blue"></span>
+            Abandon: {{ info.usage.abandon_operations }}
+        </li>
+    </ul>
+
+    {% if info.operations %}
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th colspan="2">Type</th>
+                <th>Operation</th>
+                <th>Elapsed</th>
+                <th>Result</th>
+                <th>Entries</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for operation in info.operations|slice:"::-1" %}
+                <tr class="{% if not operation.result.result %}djDebugRowWarning{% endif %}" id="ldapOperation_{{ forloop.counter }}">
+                    <td><span class="djdt-color" style="background-color:{% if operation.result.result %}red{% else %}green{% endif %}"></span></td>
+                    <td class="djdt-toggle">
+                        <button type="button" class="djToggleSwitch" data-toggle-name="ldapOperation" data-toggle-id="{{ forloop.counter }}">+</button>
+                    </td>
+                    <td title="{{ operation.type_label }}">{{ operation.type_icon }}</td>
+                    <td>{{ operation.title }}</td>
+                    <td>{{ operation.time_elapsed }}</td>
+                    <td title="{{ operation.result.description | title }}">{{ operation.status_icon }}</td>
+                    <td>{{ operation.entry_count }}</td>
+                </tr>
+                <tr class="djUnselected djToggleDetails_{{ forloop.counter }}" id="ldapOperationDetails_{{ forloop.counter }}">
+                    <td colspan="2"></td>
+                    <td colspan="4">
+                        <div class="djSQLDetailsDiv">
+                            {% include operation.details_template with operation=operation %}
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No LDAP operations was recorded on this domain during this request.</p>
+    {% endif %}
+{% empty %}
+    <p>No LDAP connection has yet been bound.</p>
+{% endfor %}
