@@ -1,0 +1,8 @@
+setup.py
+VoiceType.egg-info/PKG-INFO
+VoiceType.egg-info/SOURCES.txt
+VoiceType.egg-info/dependency_links.txt
+VoiceType.egg-info/requires.txt
+VoiceType.egg-info/top_level.txt
+libname/VoiceType.py
+libname/__init__.py
