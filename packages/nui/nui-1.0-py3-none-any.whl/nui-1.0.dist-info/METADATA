@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nui
+Version: 1.0
+Summary: Small gui/cui framework
+Home-page: https://github.com/TheNovi/Nui
+Author: TheNovi
+Author-email: jakub.novi.novacek@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Nui
+Ncui: Basic Console user interface for python<br>
+Ngui: Basic wrapper around tkinter
+
+## Currently under heavy development (Lots things is going to be changed)
+
+
