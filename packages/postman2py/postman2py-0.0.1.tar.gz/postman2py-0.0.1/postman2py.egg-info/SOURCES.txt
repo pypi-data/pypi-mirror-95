@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+postman2py/__init__.py
+postman2py/core.py
+postman2py/extractors.py
+postman2py.egg-info/PKG-INFO
+postman2py.egg-info/SOURCES.txt
+postman2py.egg-info/dependency_links.txt
+postman2py.egg-info/requires.txt
+postman2py.egg-info/top_level.txt
