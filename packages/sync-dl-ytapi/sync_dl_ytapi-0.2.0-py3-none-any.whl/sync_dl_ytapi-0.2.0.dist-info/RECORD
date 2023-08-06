@@ -1,0 +1,10 @@
+sync_dl_ytapi/__init__.py,sha256=GApjcaK5Hynd2N7vMCQp6bUfL-NK3fhGH_1u2ee-MMM,73
+sync_dl_ytapi/commands.py,sha256=tPXjI2NEjruhjyuWhLq0VZIdORKADoLwH5KG7jRR8F4,1087
+sync_dl_ytapi/credentials.py,sha256=MMzA68kH9FQkD1TqnTigcNkvw4dn1Pn0MMU3INN2_44,2968
+sync_dl_ytapi/helpers.py,sha256=gWaBnqfg4uFJ4sFetEPWdktYivnsTDhenfo0nVakVK4,6461
+sync_dl_ytapi/ytapiWrappers.py,sha256=smXWNvs8A7Cu0jY_LpggeZi8af0Y2zq_XwKvx7nS7DE,3441
+sync_dl_ytapi-0.2.0.dist-info/LICENCE,sha256=8va7PxKEglvuCq2Pnetv39LJ65l21CIS9Oh4vDyZVCY,1072
+sync_dl_ytapi-0.2.0.dist-info/METADATA,sha256=R7fxDvhm2IcjwZHXMXzwZ390s6aFcYz9ggGp6KTXDYg,2559
+sync_dl_ytapi-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sync_dl_ytapi-0.2.0.dist-info/top_level.txt,sha256=R7_ogJWbgrOrWwpMIUAI7LLPCqnEgoLrWmp7wFoMYcY,14
+sync_dl_ytapi-0.2.0.dist-info/RECORD,,
