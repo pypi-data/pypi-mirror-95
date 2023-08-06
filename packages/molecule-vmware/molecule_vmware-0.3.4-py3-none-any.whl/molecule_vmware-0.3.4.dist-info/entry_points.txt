@@ -1,0 +1,3 @@
+[molecule.driver]
+vmware = molecule_vmware.driver:VMware
+
