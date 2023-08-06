@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+django_video_embedding/__init__.py
+django_video_embedding/admin.py
+django_video_embedding/apps.py
+django_video_embedding/fields.py
+django_video_embedding/models.py
+django_video_embedding/tests.py
+django_video_embedding/views.py
+django_video_embedding.egg-info/PKG-INFO
+django_video_embedding.egg-info/SOURCES.txt
+django_video_embedding.egg-info/dependency_links.txt
+django_video_embedding.egg-info/requires.txt
+django_video_embedding.egg-info/top_level.txt
