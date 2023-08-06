@@ -1,0 +1,3 @@
+pandas
+inquirer
+bs4
