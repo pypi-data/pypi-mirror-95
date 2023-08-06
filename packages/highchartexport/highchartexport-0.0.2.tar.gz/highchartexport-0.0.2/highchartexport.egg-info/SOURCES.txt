@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+example/bubblechart.py
+example/example.py
+example/highchartconfig.json
+highchartexport/__init__.py
+highchartexport/__main__.py
+highchartexport.egg-info/PKG-INFO
+highchartexport.egg-info/SOURCES.txt
+highchartexport.egg-info/dependency_links.txt
+highchartexport.egg-info/entry_points.txt
+highchartexport.egg-info/not-zip-safe
+highchartexport.egg-info/requires.txt
+highchartexport.egg-info/top_level.txt
