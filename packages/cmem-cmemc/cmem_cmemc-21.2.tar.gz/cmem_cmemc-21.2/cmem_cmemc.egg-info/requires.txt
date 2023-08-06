@@ -1,0 +1,15 @@
+certifi
+click
+click_help_colors
+click-didyoumean
+configparser
+Jinja2
+natsort
+Pygments
+requests
+tabulate
+timeago
+treelib
+urllib3
+six
+cmem-cmempy
