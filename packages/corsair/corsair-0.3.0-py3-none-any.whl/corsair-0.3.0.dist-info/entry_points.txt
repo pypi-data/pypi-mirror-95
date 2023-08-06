@@ -1,0 +1,3 @@
+[console_scripts]
+corsair = corsair.__main__:main
+
