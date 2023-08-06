@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: gg-scrape
+Version: 0.1.6
+Summary: A little Python CLI app that provides a summary of League champion build information. 
+Home-page: https://github.com/teauxfu/gg-scrape
+Author: Alex W
+Author-email: alex@southsun.tech
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anytree (>=2.8.0,<3.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/teauxfu/gg-scrape
+Description-Content-Type: text/markdown
+
+# gg-scrape
+A little Python CLI app that provides a League of Legends champion build by scraping the web.
+
+The goal was to not have to open a browser tab (or be advertised to) to quickly check a build before a match.
+The HTML is requested and parsed sequentially, so it's somewhat slow (but still faster than opening a browser).
+
+## Installation
+```
+python -m pip install gg-scrape
+```
+
+## Usage
+```
+ggs [OPTIONS] CHAMPION [ROLE]
+```
+
+
+
+## Screenshots
+![help text](img/help.PNG)
+![screenshot of the app in use](img/demo.PNG)
+![unavailable build handling](img/default_build.PNG)
+![verbose output](img/verbose_output.PNG)
+
+## Requirements
+Depends on the anytree, beautifulsoup4, typer, and requests Python libraries.
+
+## Contributions
+Thanks to [@Mycsina](https://github.com/Mycsina) for feedback and helping to improve and expand this package's functionality!
+
+Pull requests are welcome! 
+
