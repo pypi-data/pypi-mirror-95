@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: id_generator
+Version: 0.2
+Summary: An unique ID generator that writes to excel file (.xlsx)
+Home-page: https://github.com/fishball926
+Author: Chew Jian Xun
+Author-email: chewjianxun@gmail.com
+License: MIT
+Download-URL: https://github.com/fishball926/id_generator/archive/v_0.2.tar.gz
+Description: UNKNOWN
+Keywords: Excel,ID,Write
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
