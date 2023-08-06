@@ -1,0 +1,8 @@
+geode_parameterization/__init__.py,sha256=g7lyQ43lAjhuwjbo7dh5MQN-NMtWnTo-pm1E9nCibPo,94
+geode_parameterization/geode_parameterization_py_surface.cpython-36m-x86_64-linux-gnu.so,sha256=Q7lWN5XL9QYbJdOV_hAFOxEtV3lDHvtclAyhhh_HFbw,89272
+geode_parameterization/libGeode-Parameterization_surface.so,sha256=7Uw8tJtFM3B6b7710BS-aTvnox-HLlsU8dYEhwhBMJ8,82632
+geode_parameterization/surface.py,sha256=moZixRW9SfH0d1q5tTs4LnFlprrfAUjRlt0ZTcroxdA,159
+Geode_Parameterization-1.5.3.dist-info/METADATA,sha256=mXkvZn3cOcAAvG1wTcB3yR-b55yZMQjyOJZ80VJRmH8,2316
+Geode_Parameterization-1.5.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+Geode_Parameterization-1.5.3.dist-info/top_level.txt,sha256=QA1nLQxvP0tjgneyQANx5tIuKU569p2G0NPcEp7I8Ms,23
+Geode_Parameterization-1.5.3.dist-info/RECORD,,
