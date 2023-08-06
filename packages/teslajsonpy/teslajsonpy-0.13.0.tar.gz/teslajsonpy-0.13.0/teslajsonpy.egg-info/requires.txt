@@ -1,0 +1,5 @@
+aiohttp
+authcaptureproxy<1.0.0,>=0.4.1
+backoff
+beautifulsoup4
+wrapt
