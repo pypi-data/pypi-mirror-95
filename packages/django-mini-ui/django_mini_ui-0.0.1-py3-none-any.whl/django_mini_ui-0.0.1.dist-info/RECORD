@@ -1,0 +1,13 @@
+mini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mini/admin.py,sha256=7bitX_l_z6qkE4GFhP0QIotB3TWO3oa7AgUT5yZSijU,34
+mini/apps.py,sha256=EoNjIGrzePd74i3xmoHdXN4L-aAKMuG_zaZLZHP3rAw,88
+mini/models.py,sha256=mreu1XXCIbPgpi2zEfLTmZ3wpjGQifIfqDdhKzKSc2c,28
+mini/tests.py,sha256=alnobbFYvn4nLttCP2-E26DmRKK-XY_cqswv9kzV2dU,34
+mini/urls.py,sha256=4Yc6JiA_tIxU6QU14NIpUL0nIs6g2dojSRKdW4AnF-U,333
+mini/views.py,sha256=5bw6BWz_eSkHDsE_K6VLcQDKZfqUDqTW2aR9vVK0fzs,3497
+mini/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mini_ui-0.0.1.dist-info/LICENSE,sha256=6r7yymLKAviXlIo1EzfcxJHZjIHd-a5gf6nbRU7twoQ,1706
+django_mini_ui-0.0.1.dist-info/METADATA,sha256=WyEjbuxjx2_48jk6kNeBQ1BlkygOt9NrX5p5sv_1wg0,851
+django_mini_ui-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_mini_ui-0.0.1.dist-info/top_level.txt,sha256=1alQ507uh_SKEH9UySTJ5AFo7X9oKBhaPLguTD50srM,5
+django_mini_ui-0.0.1.dist-info/RECORD,,
