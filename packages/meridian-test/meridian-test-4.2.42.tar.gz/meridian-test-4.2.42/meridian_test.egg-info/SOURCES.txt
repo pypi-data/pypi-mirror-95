@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+meridian-test/__init__.py
+meridian-test/test.py
+meridian_test.egg-info/PKG-INFO
+meridian_test.egg-info/SOURCES.txt
+meridian_test.egg-info/dependency_links.txt
+meridian_test.egg-info/top_level.txt
