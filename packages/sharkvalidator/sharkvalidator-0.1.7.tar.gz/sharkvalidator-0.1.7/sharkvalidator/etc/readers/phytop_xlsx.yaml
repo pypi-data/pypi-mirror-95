@@ -1,0 +1,16 @@
+description: Reader for xlsx files according to the national datahost template 'Format Phytoplankton.xlsx'
+name: phytop_xlsx
+data_type: phytoplankton
+reader: !!python/name:sharkvalidator.readers.phytop.PhytoplanktonExcelReader ''
+elements:
+    # element_specifier: can be a file_name, excel sheet_name or perhaps something else?
+    # key_values below are considered standard archive structure
+    delivery_note:
+        element_specifier: "Förklaring"
+        dtype: !!python/str
+        keep_default_na: false
+    data:
+        element_specifier: Kolumner
+        header: 2
+        dtype: !!python/str
+        keep_default_na: false
