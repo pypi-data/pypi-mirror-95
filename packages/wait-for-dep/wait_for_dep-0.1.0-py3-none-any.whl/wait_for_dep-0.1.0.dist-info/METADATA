@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: wait-for-dep
+Version: 0.1.0
+Summary: Waits for dependencies before running the app
+Home-page: http://github.com/wlatanowicz/wait-for-dep
+Author: Wiktor Latanowicz
+Author-email: wait-for-dep@wiktor.latanowicz.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.21.0)
+Provides-Extra: kafka
+Requires-Dist: kafka-python ; extra == 'kafka'
+Provides-Extra: memcached
+Requires-Dist: python3-memcached ; extra == 'memcached'
+Provides-Extra: mysql
+Requires-Dist: mysql-connector-python ; extra == 'mysql'
+Provides-Extra: postgres
+Requires-Dist: psycopg2-binary ; extra == 'postgres'
+Provides-Extra: rabbitmq
+Requires-Dist: pika ; extra == 'rabbitmq'
+Provides-Extra: redis
+Requires-Dist: redis ; extra == 'redis'
+Provides-Extra: websockets
+Requires-Dist: websocket-server ; extra == 'websockets'
+
+# wait-for-dep
+
+Waits for a dependency before continuing. It's ment to be used in startup scripts like Docker's entrypoint.
+
+## Installing
+
+```
+pip install wait-for-dep
+```
+
+## Usage
+
+```
+wait-for-dep dependency-url-1 dependency-url-2 ... dependency-url-n
+```
+
+ie:
+
+```
+wait-for-dep https://my-server/healthz/ psql://user@db-host/db-name
+```
+
+
