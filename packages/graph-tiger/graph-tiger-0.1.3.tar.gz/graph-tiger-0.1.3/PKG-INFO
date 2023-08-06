@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: graph-tiger
+Version: 0.1.3
+Summary: A general purpose library for graph vulnerability and robustness analysis.
+Home-page: https://github.com/safreita1/TIGER
+Author: Scott Freitas
+Author-email: safreita1@gmail.com
+License: MIT
+Download-URL: https://github.com/safreita1/TIGER/archive/0.1.3.tar.gz
+Description: UNKNOWN
+Keywords: data-science,machine-learning,networkx,graph,data-mining,attack,simulation,vulnerability,networks,epidemics,defense,graph-mining,diffusion,robustness,graph-attack,adversarial-attacks,network-attack,cascading-failures,netshield
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
