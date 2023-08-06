@@ -1,0 +1,6 @@
+README.md
+goonsquad.egg-info/PKG-INFO
+goonsquad.egg-info/SOURCES.txt
+goonsquad.egg-info/dependency_links.txt
+goonsquad.egg-info/top_level.txt
+goonsquad.egg-info/zip-safe
