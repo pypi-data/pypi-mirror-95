@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/timesheet_gitlab
+timesheet_gitlab/__init__.py
+timesheet_gitlab/timesheet_gitlab.py
+timesheet_gitlab.egg-info/PKG-INFO
+timesheet_gitlab.egg-info/SOURCES.txt
+timesheet_gitlab.egg-info/dependency_links.txt
+timesheet_gitlab.egg-info/not-zip-safe
+timesheet_gitlab.egg-info/requires.txt
+timesheet_gitlab.egg-info/top_level.txt
