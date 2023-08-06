@@ -1,0 +1,8 @@
+=== 1.0.1 ===
+- Added some error handling and updated required psu_base version
+
+=== 0.7.0 ===
+- Nishna's UI changes
+
+=== 0.6.2 ===
+- Initial Release
