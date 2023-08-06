@@ -1,0 +1,8 @@
+marshmallow==3.5.1
+emannotationschemas>=3.0.0
+sqlalchemy
+psycopg2-binary
+geoalchemy2
+pytz
+alembic
+shapely
