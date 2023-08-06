@@ -1,0 +1,4 @@
+import pytopplot.__main__
+
+if __name__ == "__main__":
+    pytopplot.__main__.main()
