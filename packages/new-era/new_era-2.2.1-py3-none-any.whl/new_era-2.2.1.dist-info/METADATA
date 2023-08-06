@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: new-era
+Version: 2.2.1
+Summary: Package to control New Era pumps
+Home-page: https://gitlab.com/heingroup/new_era
+Author: Veronica Lai // Hein Group
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+
+# new_era
+
+Library to control New Era pumps
+
+Supported and tested products:
+- [NE-9000 peristaltic pump](http://www.syringepump.com/download/NE-9000%20Peristaltic%20Pump%20User%20Manual.pdf)
+
+### Example usage
+
+For control of a individual pumps use the `peristaltic_pump` module. Check in the examples folder for an [example](examples/example_peristaltic_pump.py).
+
+For control of a pump network where pumps are daisy-chained to each other, use the `peristaltic_pump_network` module. Check in the examples folder for an [example](examples/example_pump_network.py).
+
+
