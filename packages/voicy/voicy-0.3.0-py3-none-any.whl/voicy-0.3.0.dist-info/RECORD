@@ -1,0 +1,11 @@
+voicy/__init__.py,sha256=3W__pHKVoIHeJrm0kUH_RXlUEJC3VZjkdPYVgLDHGrM,54
+voicy/core.py,sha256=ErG1vJE680lmWt3hsoYEvIsziCBsNb--PqqiZ_AOOmQ,7387
+voicy/exceptions.py,sha256=pmUZv28b6JObINPkotn3SMG1rw9FlXyzg5gfRVoBwD4,587
+voicy/types.py,sha256=95l3CZU28ycER5yeZwkea6purLUeuzbMMPY9MnRK_IU,402
+voicy/http/__init__.py,sha256=1TMyU_RPBTwkntyBd6Tk_f0W7NUmcfoP5gYRC8oVA14,26
+voicy/http/core.py,sha256=wF5If16ETXpeshuZTro3xlnggDZ-jmcsVQLZgvElMAg,360
+voicy-0.3.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+voicy-0.3.0.dist-info/METADATA,sha256=-5mcGOhND3DiIgWr3coZowHQLYkwnZN0AZk1oeOiM_A,5090
+voicy-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+voicy-0.3.0.dist-info/top_level.txt,sha256=d6CIzlI4qNjfLTtsJ-r5IZZ7i8kzgnArnUUTLZRy5Q8,6
+voicy-0.3.0.dist-info/RECORD,,
