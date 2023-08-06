@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ppsi
+Version: 21.2.18
+Summary: Psi Python Sway Interface
+Home-page: https://github.com/pradyparanjpe/ppsi.git
+Author: Pradyumna Paranjape
+Author-email: pradyparanjpe@rediffmail.com
+License: GPLv3
+Platform: linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+Requires-Dist: python-daemon
+Requires-Dist: pyyaml
+Requires-Dist: launcher-menus
+Requires-Dist: psprint
+Requires-Dist: argcomplete
+
+**[GitHub Repository](https://github.com/pradyparanjpe/ppsi.git):**
+
+Visit github repository for details, clone it using:
+
+git clone https://github.com/pradyparanjpe/ppsi.git
+
+
+**pip**
+
+pip install --user ppsi
+
+PPSI - Psi Python Sway Interface
+
+
+

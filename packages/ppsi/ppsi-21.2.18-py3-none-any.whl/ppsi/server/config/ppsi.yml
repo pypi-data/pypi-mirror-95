@@ -1,0 +1,29 @@
+key-primary: $mod+Shift+Return
+workspaces:
+- index:
+  - 1
+  - 2
+  name: 🌐
+  primary: firefox
+  bind:
+  - key: $mod+Shift+g
+    exec: google-chrome
+  assignments:
+    ^firefox: wayland
+    ^Google-chrome: xorg
+
+- index:
+  - 3
+  name: </>
+  primary: null
+  bind: []
+  assignments: []
+
+remote:
+  hosts:
+  - localhost
+  - www.example.com
+  - 192.168.1.1
+  users:
+  - root
+  - guest
