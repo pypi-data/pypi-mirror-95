@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+test/test_convert.py
+test/test_docs.py
+test/test_expected.py
+test/test_read.py
+test/test_vs_ffmpeg.py
+test/test_write.py
+wavemap.egg-info/PKG-INFO
+wavemap.egg-info/SOURCES.txt
+wavemap.egg-info/dependency_links.txt
+wavemap.egg-info/requires.txt
+wavemap.egg-info/top_level.txt
