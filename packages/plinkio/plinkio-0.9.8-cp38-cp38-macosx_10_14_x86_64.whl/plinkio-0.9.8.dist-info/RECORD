@@ -1,0 +1,10 @@
+plinkio/__init__.py,sha256=f5tjWfPTdFyPqRxKLN1qDYchppU0NIkyp7osC0Xk-7E,24
+plinkio/cplinkio.cpython-38-darwin.so,sha256=N_YyEcmRMrHpPoBproGbUhwo_P_J4K2Zje32Bh2DBRM,70696
+plinkio/plinkfile.py,sha256=y9P3zjpnFSxO-pETYjJck2rmEZ5DLI8x3h6QH6lkf_k,6946
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/write_test.py,sha256=NiffVNmi1Xx4hJ52m7Yw7v0tn381d_Ie_anKJxBRQXI,854
+plinkio-0.9.8.dist-info/COPYING,sha256=0_gMmJHnV-siTDujVueW5bPxowBY6g2z2ZuOVWf2Vio,2257
+plinkio-0.9.8.dist-info/METADATA,sha256=X67Kg9QRFyHo43oJqPRy2GPDrXJ7o-8_vsXItBIeEt8,1142
+plinkio-0.9.8.dist-info/WHEEL,sha256=V3dP579bkkoFyEn0eRX4OUiUM3w2HVock1BmzwB7n_c,110
+plinkio-0.9.8.dist-info/top_level.txt,sha256=9UEwnyOINvOWIgF0Lpu3u3nBqtTFddh-0fVl7ZSQO9s,14
+plinkio-0.9.8.dist-info/RECORD,,
