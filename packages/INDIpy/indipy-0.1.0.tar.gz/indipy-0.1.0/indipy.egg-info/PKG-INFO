@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: indipy
+Version: 0.1.0
+Summary: Python implementation of INDI server and client
+Home-page: http://github.com/wlatanowicz/indipy
+Author: Wiktor Latanowicz
+Author-email: indipy@wiktor.latanowicz.com
+License: MIT
+Description: # INDIpy
+        
+        INDIpy is an open source Python implementation of the INDI (Instrument Neutral Distributed Interface) protocol. It can be used to:
+        * implement custom device drivers which will be run as subprocess controlled by `indiserver` along with drivers included in [INDI Library](http://indilib.org)
+        * implement custom INDI server
+        * implement client software
+        
+        ## Examples
+        
+        You can find docker-based examples [here](../../tree/master/docker-examples/).
+        
+        ## Resources
+        
+        INDI Protocol white paper: http://www.clearskyinstitute.com/INDI/INDI.pdf
+        
+        INDI Project: http://indilib.org
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: websockets
