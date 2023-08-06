@@ -1,0 +1,12 @@
+atomap
+colorcet
+glob2
+hyperspy
+numpy
+matplotlib
+matplotlib-scalebar
+pandas
+periodictable
+scikit-image>=0.16.2
+scipy
+tifffile
