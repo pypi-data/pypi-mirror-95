@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: melmac
+Version: 0.1.5
+Summary: A package specialized in neural multilabel and multiclass text classification.
+Home-page: UNKNOWN
+Author: Janos Borst
+Author-email: borst@informatik.uni-leipzig.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: transformers
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
+Requires-Dist: pytorch-ignite
+Requires-Dist: tqdm
+Requires-Dist: networkx
+Requires-Dist: bs4
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: rdflib
+Requires-Dist: h5py
+Requires-Dist: datasketch
+Requires-Dist: torch (>=1.5.1)
+
+UNKNOWN
+
+
