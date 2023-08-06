@@ -1,0 +1,3 @@
+[console_scripts]
+awx-junit = awx_junit.awx_junit:main
+
