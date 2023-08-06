@@ -1,0 +1,17 @@
+<graph>
+    <nodes>
+        <node name="selenium"/>
+        <node name="phrase"/>
+        <node name="waiting"/>
+    </nodes>
+    <edges>
+        <edge from="selenium" to="phrase"/>
+        <edge from="phrase" to="waiting"/>
+    </edges>
+    <actions>
+        <action xpath="" type="OPENURL" nodename="selenium" value="https://www.selenium.dev/"/>
+        <action xpath="//*[@id='gsc-i-id1']" type="TEXTABLE-ENTER" nodename="phrase" value="computer vision"/>
+        <action xpath="" type="WAIT" nodename="waiting" value="5"/>
+    </actions>
+</graph>
+        
