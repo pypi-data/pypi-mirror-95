@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: seamm-cookiecutter
+Version: 2021.2.15
+Summary: Cookiecutter for SEAMM plug-ins, substeps and forcefields
+Home-page: https://github.com/molssi-seamm/cookiecutter-seamm-plugin
+Author: Paul Saxe
+Author-email: psaxe@molssi.org
+License: BSD
+Description: UNKNOWN
+Keywords: cookiecutter,template,package,SEAMM,MolSSI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development

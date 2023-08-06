@@ -1,0 +1,3 @@
+[console_scripts]
+seamm-cookiecutter = seamm_cookiecutter.seamm_cookiecutter:run
+
