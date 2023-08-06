@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: meeko
+Version: 0.1.dev1
+Summary: Python package for preparing small molecule for docking
+Home-page: https://github.com/ccsb-scripps/meeko
+Author: Stefano Forli
+Author-email: forli@scripps.edu
+License: Apache-2.0
+Keywords: molecular modeling,drug design,docking,autodock
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5.*
+Requires-Dist: numpy (>=1.18)
+
+UNKNOWN
+
+
