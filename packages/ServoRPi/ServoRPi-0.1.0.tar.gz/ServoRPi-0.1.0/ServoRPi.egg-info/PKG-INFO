@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ServoRPi
+Version: 0.1.0
+Summary: For Control Servo Easily By A Raspberry Pi
+Home-page: https://github.com/Aiversity/My-Libraries/tree/main/ServoRPi
+Author: AI Versity
+Author-email: hello.aiversity@gmail.com
+License: Apache License 2.0
+Description: This is my raspberry pi servo lib
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

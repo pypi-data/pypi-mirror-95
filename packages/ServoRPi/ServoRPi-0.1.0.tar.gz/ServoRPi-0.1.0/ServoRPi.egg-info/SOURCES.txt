@@ -1,0 +1,7 @@
+README.md
+setup.py
+ServoRPi.egg-info/PKG-INFO
+ServoRPi.egg-info/SOURCES.txt
+ServoRPi.egg-info/dependency_links.txt
+ServoRPi.egg-info/requires.txt
+ServoRPi.egg-info/top_level.txt
