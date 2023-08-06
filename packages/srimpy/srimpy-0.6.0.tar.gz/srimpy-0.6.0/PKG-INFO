@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: srimpy
+Version: 0.6.0
+Summary: Wrapper scripts for Srim analysis and multi-processing
+Home-page: https://gitlab.com/yobmod/srimpy
+Author: Dominic Laventine
+Author-email: yobmod+srimpy@gmail.com
+License: MIT
+Download-URL: https://github.com/Yobmod/srimpy/archive/main.zip
+Description: # srimpy
+        
+        Requires:
+        
+        Python >= 3.6
+        numpy >= 1.12
+        matplotlib
+        pyyaml
+        
+Keywords: srim analysis ionization parallel processing plotting
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
