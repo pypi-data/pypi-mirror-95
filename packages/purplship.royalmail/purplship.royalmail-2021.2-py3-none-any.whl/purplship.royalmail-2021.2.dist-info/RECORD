@@ -1,0 +1,12 @@
+purplship/mappers/royalmail/__init__.py,sha256=YjQvh0_p5n8zWp1SUO12a38bg6oq5N0QPK_QJGDqwo4,559
+purplship/mappers/royalmail/mapper.py,sha256=LelTJBtIwgkwgMiw3eiU60eGiXIUxfmVk-HOnoJho2k,4319
+purplship/mappers/royalmail/proxy.py,sha256=JrJd7nX_-o-fBTPFG5LvoeKDLoD6BSvxvq3zFhuPMcM,1039
+purplship/mappers/royalmail/settings.py,sha256=qrJBR4580avLrEKPruhYxqcakz51e1XGisYcuCiFaTM,400
+purplship/providers/royalmail/__init__.py,sha256=gsYkrNmd_x-ly8yGDUqoAs9kHeZsdtnIA3gdvlKf3Ag,799
+purplship/providers/royalmail/error.py,sha256=Ehm9sGnqzQg6FhLUOIsJG6IucMIwfL5doiShZCOHc-g,734
+purplship/providers/royalmail/tracking.py,sha256=4S9clbCbwdCXcb2rsffyVa7essqdcv8PNvMlVUKJEjk,1520
+purplship/providers/royalmail/units.py,sha256=Rc_3Pqrupmosjb6qKLu3k6_RDyVQhiCf4ynzWgdu-DE,1339
+purplship/providers/royalmail/utils.py,sha256=b4Yy2c1tt_FHzySn2hJ6-OqNxXHhKki2DGESBP_HKkE,471
+purplship.royalmail-2021.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+purplship.royalmail-2021.2.dist-info/METADATA,sha256=0A7NCSRsLDhUkYXAP9i1lPs-IG-LstsF0u1bTfhu0rk,1438
+purplship.royalmail-2021.2.dist-info/RECORD,,
