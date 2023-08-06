@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+digitalocean_inventory/__init__.py
+digitalocean_inventory/__main__.py
+digitalocean_inventory/exceptions.py
+digitalocean_inventory/formatter.py
+digitalocean_inventory/inventory.py
+digitalocean_inventory/manager.py
+digitalocean_inventory.egg-info/PKG-INFO
+digitalocean_inventory.egg-info/SOURCES.txt
+digitalocean_inventory.egg-info/dependency_links.txt
+digitalocean_inventory.egg-info/entry_points.txt
+digitalocean_inventory.egg-info/requires.txt
+digitalocean_inventory.egg-info/top_level.txt
