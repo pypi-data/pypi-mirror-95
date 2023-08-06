@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: podpuller
+Version: 1.0.1
+Summary: ("A simple command line podcast feed syncer"),
+Home-page: https://github.com/guyhoffman/podpuller
+Author: "Guy Hoffman",
+Author-email: "code@guyhoffman.com",
+License: "MIT",
+Keywords: "podcasts rss feeds cli"
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: SQLObject
+Requires-Dist: tqdm
+Requires-Dist: bullet
+Requires-Dist: termcolor
+Requires-Dist: feedparser
+
+UNKNOWN
+
+
