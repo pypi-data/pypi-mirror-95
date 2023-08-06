@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tox.ini
+OverloadingFixed/__init__.py
+OverloadingFixed.egg-info/PKG-INFO
+OverloadingFixed.egg-info/SOURCES.txt
+OverloadingFixed.egg-info/dependency_links.txt
+OverloadingFixed.egg-info/top_level.txt
+OverloadingFixed/_main/__init__.py
+OverloadingFixed/_main/main.py
+OverloadingFixed/_main/_funcs/__init__.py
+OverloadingFixed/_main/_funcs/typing_funcs/__init__.py
+OverloadingFixed/_main/_funcs/typing_funcs/main.py
