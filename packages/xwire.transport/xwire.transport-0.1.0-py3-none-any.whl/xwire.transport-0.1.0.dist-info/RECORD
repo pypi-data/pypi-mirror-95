@@ -1,0 +1,14 @@
+xwire/transport/__init__.py,sha256=NE0bvAKvMhoEiiJS0WUtC5N4Bw__SVgWautNKj6KWN8,24
+xwire/transport/_private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xwire/transport/_private/csv/__init__.py,sha256=m0fjSzfGnpe4_6TK9Rp4Dwh67kAOnMN3ekg1dsht2DY,74
+xwire/transport/_private/csv/_deserialize.py,sha256=sOrKg-I8O9GdGdsbY4qQUb2x3Bemi7c9BiM_5X9BdV8,799
+xwire/transport/_private/csv/_serialize.py,sha256=8s87KmSW3Kj-UBDOdnFceEM9XaLFXRYgHdaUL7XxIeE,1126
+xwire/transport/_private/decorators/__init__.py,sha256=Sdkd1rYRmCV4A95d5pQGPfJW3Neeoc12v05WVZLISEQ,41
+xwire/transport/_private/decorators/_serializable.py,sha256=F8Hm49orWA7_6dFAPYKOE-bf15ruXOESIv3a5oosnsg,855
+xwire/transport/_private/exceptions/__init__.py,sha256=hmd9yKchP0dNBRbhYeK6ZEX6z_lmf48_ujZoEdGjcEo,71
+xwire/transport/_private/exceptions/_exceptions.py,sha256=z7fc8yMcrHkgk6C0z41qnW09scioPVNcXM7i8NNN8Fs,102
+xwire/transport/public/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xwire/transport/public/io.py,sha256=01lhPWs0pl5CzUdO-L4fGvAF18qVss70t6AQe_8l-e4,127
+xwire.transport-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+xwire.transport-0.1.0.dist-info/METADATA,sha256=KL3wf8gwHgYBD4H35x2W3N3npiyRzrbuGH9BsW6oZE8,353
+xwire.transport-0.1.0.dist-info/RECORD,,
