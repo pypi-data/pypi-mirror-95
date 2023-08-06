@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: modbus_server
+Version: 0.1.9
+Summary: Easy-to-use ModbusTCP Server in pure Python 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Christoph Kattmann
+Author-email: christoph.kattmann@bss-hs.de
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# SimpleModbusServer
+A Modbus server implementation in pure Python.
+## Installation
+```shell
+pip install modbus_server
+```
+
+## Usage
+```python
+import modbus_server
+s = modbus_server.Server(port=5020)
+s.start()
+s.set_coil(1,True)
+```
+
+## Todo:
+- Client tests with pyModbusTCP
+- Test 32bit values
+- Test performance
+
+## Testing:
+For testing, install a symlink to the package in the python environment using flit:
+```shell
+flit install . -s
+```
+

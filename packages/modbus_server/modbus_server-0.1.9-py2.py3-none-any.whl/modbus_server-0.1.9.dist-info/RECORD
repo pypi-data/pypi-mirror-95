@@ -1,0 +1,7 @@
+modbus_server/__init__.py,sha256=GTZIAofqdp4aWblJC00ILL-37I2AzlG-SV6ewu8iWTE,171
+modbus_server/modbus_datastore.py,sha256=5WNGaaoJPQZX_Y-hKOOqawtKeRkr0uWTLjvfL3DVlNY,5367
+modbus_server/modbus_server.py,sha256=VCZUxAFkVOJ95IjNzvelc2UhFeIv4NyESVktfaWEa0o,10373
+modbus_server-0.1.9.dist-info/LICENSE,sha256=F_evj5o6qLHdHLKkxCjRA96E3McyMgNnSgCeo7xMBYk,1085
+modbus_server-0.1.9.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+modbus_server-0.1.9.dist-info/METADATA,sha256=DF12e3g4Z9gs8coqk0Q62pdGestiItMtnoRYC7GLuQE,752
+modbus_server-0.1.9.dist-info/RECORD,,
