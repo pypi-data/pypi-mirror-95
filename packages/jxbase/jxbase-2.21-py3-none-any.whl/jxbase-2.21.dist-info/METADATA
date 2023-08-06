@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: jxbase
+Version: 2.21
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: xjxfly
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: configobj (>=5.0.6)
+Requires-Dist: numpy (>=1.10.4)
+Requires-Dist: pandas (>=0.18.0)
+Requires-Dist: pytesseract (>=0.1.7)
+
+UNKNOWN
+
+
