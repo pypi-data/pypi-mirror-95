@@ -1,0 +1,6 @@
+setup.py
+jds7dg28d/__init__.py
+jds7dg28d.egg-info/PKG-INFO
+jds7dg28d.egg-info/SOURCES.txt
+jds7dg28d.egg-info/dependency_links.txt
+jds7dg28d.egg-info/top_level.txt
