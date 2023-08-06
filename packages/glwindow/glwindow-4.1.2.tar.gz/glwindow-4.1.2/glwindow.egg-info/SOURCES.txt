@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+glwindow.egg-info/PKG-INFO
+glwindow.egg-info/SOURCES.txt
+glwindow.egg-info/dependency_links.txt
+glwindow.egg-info/top_level.txt
+src/glwindow.cpp
+src/glwindow_linux.cpp
