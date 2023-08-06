@@ -1,0 +1,1541 @@
+#ifndef simd_hpp
+#define simd_hpp
+
+#include <cstdint>
+#include <cstddef>
+#include <cmath>
+#include <algorithm>
+#include <cassert>
+#include <array>
+
+#include "compatibility.hpp"
+
+
+#ifndef DISABLE_SIMD
+
+
+// #if defined(?)
+//     #define SUPPORT_FMA
+// #endif
+
+#if defined(__AVX512BW__) && !defined(SUPPORT_AVX512BW)
+    #define SUPPORT_AVX512BW
+#endif
+
+#if defined(__AVX512CD__) && !defined(SUPPORT_AVX512CD)
+    #define SUPPORT_AVX512CD
+#endif
+
+#if defined(__AVX512DQ__) && !defined(SUPPORT_AVX512DQ)
+    #define SUPPORT_AVX512DQ
+#endif
+
+#if defined(__AVX512ER__) && !defined(SUPPORT_AVX512ER)
+    #define SUPPORT_AVX512ER
+#endif
+
+#if defined(__AVX512F__) && !defined(SUPPORT_AVX512F)
+    #define SUPPORT_AVX512F
+#endif
+
+#if defined(__AVX512PF__) && !defined(SUPPORT_AVX512PF)
+    #define SUPPORT_AVX512PF
+#endif
+
+#if defined(__AVX512VL__) && !defined(SUPPORT_AVX512VL)
+    #define SUPPORT_AVX512VL
+#endif
+
+#if (defined(__AVX512F__) || defined(__AVX2__)) && !defined(SUPPORT_AVX2)
+    #define SUPPORT_AVX2
+#endif
+
+#if (defined(SUPPORT_AVX2) || defined(__AVX__)) && !defined(SUPPORT_AVX)
+    #define SUPPORT_AVX
+#endif
+
+#if (defined(SUPPORT_AVX) || defined(__SSE4_2__)) && !defined(SUPPORT_SSE4_2)
+    #define SUPPORT_SSE4_2
+#endif
+
+#if (defined(SUPPORT_SSE4_2) || defined(__SSE4_1__)) && !defined(SUPPORT_SSE4_1)
+    #define SUPPORT_SSE4_1
+#endif
+
+#if (defined(SUPPORT_SSE4_1) || defined(__SSSE3__)) && !defined(SUPPORT_SSSE3)
+    #define SUPPORT_SSSE3
+#endif
+
+#if (defined(SUPPORT_SSSE3) || defined(__SSE3__)) && !defined(SUPPORT_SSE3)
+    #define SUPPORT_SSE3
+#endif
+
+#if (defined(SUPPORT_SSE3) || defined(__SSE2__) || defined(_M_AMD64) || (defined(_M_IX86_FP) && _M_IX86_FP >= 2)) && !defined(SUPPORT_SSE2)
+    #define SUPPORT_SSE2
+#endif
+
+#if (defined(SUPPORT_SSE2) || defined(__SSE__) || (defined(_M_IX86_FP) && _M_IX86_FP >= 1)) && !defined(SUPPORT_SSE)
+    #define SUPPORT_SSE
+#endif
+
+
+#if defined(SUPPORT_AVX512BW) || \
+    defined(SUPPORT_AVX512CD) || \
+    defined(SUPPORT_AVX512DQ) || \
+    defined(SUPPORT_AVX512ER) || \
+    defined(SUPPORT_AVX512F) || \
+    defined(SUPPORT_AVX512PF) || \
+    defined(SUPPORT_AVX512VL) || \
+    defined(SUPPORT_AVX)
+    #include <immintrin.h>
+#endif
+
+#ifdef SUPPORT_SSE4_2
+    #include <nmmintrin.h>
+#endif
+
+#ifdef SUPPORT_SSE4_1
+    #include <smmintrin.h>
+#endif
+
+#ifdef SUPPORT_SSSE3
+    #include <tmmintrin.h>
+#endif
+
+#ifdef SUPPORT_SSE3
+    #include <pmmintrin.h>
+#endif
+
+#ifdef SUPPORT_SSE2
+    #include <emmintrin.h>
+#endif
+
+#ifdef SUPPORT_SSE
+    #include <xmmintrin.h>
+#endif
+
+#endif
+
+
+#define S_INIT_CODE(P) type() = default; \
+    FORCE_INLINE type(P _data) { data = _data; } \
+    FORCE_INLINE type &operator=(type b) { data = b.data; return *this; }
+
+namespace simd {
+    namespace detail {
+        template<size_t... sizes> constexpr auto make_array() {
+            return std::array<size_t,sizeof...(sizes)>{sizes...};
+        }
+
+        template<typename T> struct _single {};
+
+        template<typename T> struct ones {};
+    }
+
+    /* the zeros at the end are just so "largest_fit" (defined below) doesn't
+       need to check if its argument is zero */
+    template<typename T> struct v_sizes {
+        static constexpr auto value = detail::make_array<1,0>();
+    };
+
+
+
+#ifdef SUPPORT_AVX512F
+    namespace detail {
+        template<> struct ones<__m512i> {
+            static FORCE_INLINE __m512i go() {
+            #if defined(_MSC_VER)
+                auto tmp = _mm512_setzero_si512();
+            #else
+                auto tmp = _mm512_undefined_epi32();
+            #endif
+                return _mm512_ternarylogic_epi32(tmp,tmp,tmp,0xff);
+            }
+        };
+        template<> struct ones<__m512> {
+            static FORCE_INLINE __m512 go() {
+                return _mm512_castsi512_ps(ones<__m512i>::go());
+            }
+        };
+        template<> struct ones<__m512d> {
+            static FORCE_INLINE __m512d go() {
+                return _mm512_castsi512_pd(ones<__m512i>::go());
+            }
+        };
+    }
+#endif
+
+#ifdef SUPPORT_AVX2
+    namespace detail {
+        template<> struct ones<__m256i> {
+            static FORCE_INLINE __m256i go() {
+            #if defined(_MSC_VER)
+                auto tmp = _mm256_setzero_si256();
+            #else
+                auto tmp = _mm256_undefined_si256();
+            #endif
+                return _mm256_cmpeq_epi32(tmp,tmp);
+            }
+        };
+    }
+#endif
+
+#ifdef SUPPORT_AVX
+    namespace detail {
+        template<> struct ones<__m256> {
+            static FORCE_INLINE __m256 go() {
+        #ifdef SUPPORT_AVX2
+                return _mm256_castsi256_ps(ones<__m256i>::go());
+        #else
+            #if defined(_MSC_VER)
+                auto tmp = _mm256_setzero_ps();
+            #else
+                auto tmp = _mm256_undefined_ps();
+            #endif
+                return _mm256_cmp_ps(tmp,tmp,_CMP_TRUE_UQ);
+        #endif
+            }
+        };
+        template<> struct ones<__m256d> {
+            static FORCE_INLINE __m256d go() {
+        #ifdef SUPPORT_AVX2
+                return _mm256_castsi256_pd(ones<__m256i>::go());
+        #else
+            #if defined(_MSC_VER)
+                auto tmp = _mm256_setzero_pd();
+            #else
+                auto tmp = _mm256_undefined_pd();
+            #endif
+                return _mm256_cmp_pd(tmp,tmp,_CMP_TRUE_UQ);
+        #endif
+            }
+        };
+    }
+#endif
+
+#ifdef SUPPORT_SSE2
+    namespace detail {
+        template<> struct ones<__m128i> {
+            static FORCE_INLINE __m128i go() {
+            #if defined(_MSC_VER)
+                auto tmp = _mm_setzero_si128();
+            #else
+                auto tmp = _mm_undefined_si128();
+            #endif
+                return _mm_cmpeq_epi32(tmp,tmp);
+            }
+        };
+        template<> struct ones<__m128> {
+            static FORCE_INLINE __m128 go() {
+                return _mm_castsi128_ps(ones<__m128i>::go());
+            }
+        };
+        template<> struct ones<__m128d> {
+            static FORCE_INLINE __m128d go() {
+                return _mm_castsi128_pd(ones<__m128i>::go());
+            }
+        };
+
+        template<> struct _single<double> {
+            struct type {
+                S_INIT_CODE(__m128d)
+        #ifdef SUPPORT_AVX512F
+                explicit FORCE_INLINE type(__m512d b) {
+                    data = _mm512_castpd512_pd128(b);
+                }
+        #endif
+        #ifdef SUPPORT_AVX
+                explicit FORCE_INLINE type(__m256d b) {
+                    data = _mm256_castpd256_pd128(b);
+                }
+        #endif
+
+                FORCE_INLINE operator double() const {
+                    return _mm_cvtsd_f64(data);
+                }
+
+                __m128d data;
+            };
+        };
+        template<> struct _single<int64_t> {
+            struct type {
+                S_INIT_CODE(__m128i)
+        #ifdef SUPPORT_AVX512F
+                explicit FORCE_INLINE type(__m512i b) {
+                    data = _mm512_castsi512_si128(b);
+                }
+        #endif
+        #ifdef SUPPORT_AVX2
+                explicit FORCE_INLINE type(__m256i b) {
+                    data = _mm256_castsi256_si128(b);
+                }
+        #endif
+
+                FORCE_INLINE operator int64_t() const {
+        #if defined(__x86_64__) || defined(_M_X64)
+                    return _mm_cvtsi128_si64(data);
+        #else
+                    union {
+                        __m128i p;
+                        int64_t s;
+                    } tmp;
+                    tmp.p = data;
+                    return tmp.s;
+        #endif
+                }
+
+                __m128i data;
+            };
+        };
+        template<> struct _single<int32_t> {
+            struct type {
+                S_INIT_CODE(__m128i)
+        #ifdef SUPPORT_AVX512F
+                explicit FORCE_INLINE type(__m512i b) {
+                    data = _mm512_castsi512_si128(b);
+                }
+        #endif
+        #ifdef SUPPORT_AVX2
+                explicit FORCE_INLINE type(__m256i b) {
+                    data = _mm256_castsi256_si128(b);
+                }
+        #endif
+
+                FORCE_INLINE operator int32_t() const {
+                    return _mm_cvtsi128_si32(data);
+                }
+
+                __m128i data;
+            };
+        };
+        template<> struct _single<int16_t> {
+            struct type {
+                S_INIT_CODE(__m128i)
+        #ifdef SUPPORT_AVX512BW
+                explicit FORCE_INLINE type(__m512i b) {
+                    data = _mm512_castsi512_si128(b);
+                }
+        #endif
+        #ifdef SUPPORT_AVX2
+                explicit FORCE_INLINE type(__m256i b) {
+                    data = _mm256_castsi256_si128(b);
+                }
+        #endif
+
+                FORCE_INLINE operator int16_t() const {
+                    return static_cast<int16_t>(_mm_cvtsi128_si32(data) >> 16);
+                }
+
+                __m128i data;
+            };
+        };
+        template<> struct _single<int8_t> {
+            struct type {
+                S_INIT_CODE(__m128i)
+        #ifdef SUPPORT_AVX512BW
+                explicit FORCE_INLINE type(__m512i b) {
+                    data = _mm512_castsi512_si128(b);
+                }
+        #endif
+        #ifdef SUPPORT_AVX2
+                explicit FORCE_INLINE type(__m256i b) {
+                    data = _mm256_castsi256_si128(b);
+                }
+        #endif
+
+                FORCE_INLINE operator int8_t() const {
+                    return static_cast<int8_t>(_mm_cvtsi128_si32(data) >> 24);
+                }
+
+                __m128i data;
+            };
+        };
+    }
+#endif
+
+#ifdef SUPPORT_SSE
+    namespace detail {
+    #ifndef SUPPORT_SSE2
+        template<> struct ones<__m128> {
+            static FORCE_INLINE __m128 go() {
+                auto tmp = _mm_setzero_ps();
+                return _mm_cmpeq_ps(tmp,tmp);
+            }
+        };
+    #endif
+
+        template<> struct _single<float> {
+            struct type {
+                S_INIT_CODE(__m128)
+    #ifdef SUPPORT_AVX512F
+                explicit FORCE_INLINE type(__m512 b) {
+                    data = _mm512_castps512_ps128(b);
+                }
+    #endif
+    #ifdef SUPPORT_AVX
+                explicit FORCE_INLINE type(__m256 b) {
+                    data = _mm256_castps256_ps128(b);
+                }
+    #endif
+
+                FORCE_INLINE operator float() const {
+                    return _mm_cvtss_f32(data);
+                }
+
+                __m128 data;
+            };
+        };
+    }
+#endif
+
+    FORCE_INLINE bool l_andn(bool a,bool b) { return !a && b; }
+    FORCE_INLINE bool l_xor(bool a,bool b) { return a != b; }
+    FORCE_INLINE bool l_xnor(bool a,bool b) { return a == b; }
+
+    template<typename T> inline T abs(T x) { return static_cast<T>(std::abs(x)); }
+    using std::sqrt;
+    template<typename T> inline T rsqrt(T a) { return 1 / std::sqrt(a); }
+    template<typename T> inline T max(T a,T b) { return a > b ? a : b; }
+    template<typename T> inline T min(T a,T b) { return a < b ? a : b; }
+
+    template<typename T> FORCE_INLINE bool cmp_ngt(T a,T b) {
+        return !(a.data > b.data);
+    }
+    template<typename T> FORCE_INLINE bool cmp_nge(T a,T b) {
+        return !(a.data >= b.data);
+    }
+    template<typename T> FORCE_INLINE bool cmp_nlt(T a,T b) {
+        return !(a.data < b.data);
+    }
+    template<typename T> FORCE_INLINE bool cmp_nle(T a,T b) {
+        return !(a.data <= b.data);
+    }
+    template<typename T> FORCE_INLINE T mask_blend(bool m,T a,T b) {
+        return m ? a : b;
+    }
+    template<typename T> FORCE_INLINE T &mask_set(T &a,bool m,T b) {
+        if(m) a = b;
+        return a;
+    }
+
+    namespace detail {
+        template<typename T> struct _zeros {
+            FORCE_INLINE static T go() { return T(0); }
+        };
+    }
+    template<typename T> FORCE_INLINE T zeros() { return detail::_zeros<T>::go(); }
+
+    template<typename T> FORCE_INLINE T zfilter(bool m,T x) {
+        return m ? x : zeros<T>();
+    }
+
+    struct s_mask {
+        using raw_m_type = bool;
+        static constexpr size_t bit_granularity = 1;
+
+        raw_m_type data;
+
+        s_mask() = default;
+        explicit s_mask(raw_m_type val) : data{val} {}
+
+        FORCE_INLINE unsigned int to_bits() const {
+            return data ? 1 : 0;
+        }
+
+        FORCE_INLINE bool any() const { return data; }
+        FORCE_INLINE bool all() const { return data; }
+
+        static FORCE_INLINE s_mask zeros() { return s_mask{false}; }
+    };
+
+    template<typename T> struct scalar {
+        using mask = s_mask;
+        using item_t = T;
+
+        static constexpr size_t size = 1;
+        static constexpr bool has_vec_reduce_add = false;
+
+        T data;
+
+        scalar() = default;
+        explicit scalar(T val) : data{val} {}
+
+        static FORCE_INLINE scalar zeros() { return scalar{simd::zeros<T>()}; }
+        static FORCE_INLINE scalar repeat(T x) { return scalar{x}; }
+
+        static FORCE_INLINE scalar load(const T *vals) { return scalar{*vals}; }
+        static FORCE_INLINE scalar loadu(const T *vals) { return scalar{*vals}; }
+
+        FORCE_INLINE void store(T *dest) const { *dest = data; }
+        FORCE_INLINE void storeu(T *dest) const { *dest = data; }
+
+        T &operator[](size_t i) {
+            assert(i==0);
+            return data;
+        }
+
+        T operator[](size_t i) const {
+            assert(i==0);
+            return data;
+        }
+
+        item_t* array() { return &data; }
+        const item_t* array() const { return &data; }
+    };
+
+    FORCE_INLINE s_mask operator&&(s_mask a,s_mask b) {
+        return s_mask{a.data && b.data};
+    }
+
+    FORCE_INLINE s_mask operator||(s_mask a,s_mask b) {
+        return s_mask{a.data || b.data};
+    }
+
+    FORCE_INLINE s_mask operator!(s_mask a) {
+        return s_mask{!a.data};
+    }
+
+    FORCE_INLINE s_mask l_andn(s_mask a,s_mask b) {
+        return s_mask{l_andn(a.data,b.data)};
+    }
+
+    FORCE_INLINE s_mask l_xor(s_mask a,s_mask b) {
+        return s_mask{l_xor(a.data,b.data)};
+    }
+
+    FORCE_INLINE s_mask l_xnor(s_mask a,s_mask b) {
+        return s_mask{l_xnor(a.data,b.data)};
+    }
+
+    template<typename T,typename U> FORCE_INLINE auto operator*(scalar<T> a,scalar<U> b) {
+        return scalar<decltype(a.data*b.data)>(a.data * b.data);
+    }
+    template<typename T,typename U> FORCE_INLINE scalar<T> &operator*=(scalar<T> &a,scalar<U> b) {
+        a.data *= b.data;
+        return a;
+    }
+    template<typename T,typename U> FORCE_INLINE std::enable_if_t<std::is_same_v<T,U>,scalar<T>> operator*(scalar<T> a,U b) {
+        return scalar<T>(a.data * b);
+    }
+    template<typename T,typename U> FORCE_INLINE std::enable_if_t<std::is_same_v<T,U>,scalar<T>> operator*(U a,scalar<T> b) {
+        return scalar<T>(a * b.data);
+    }
+    template<typename T,typename U> FORCE_INLINE std::enable_if_t<std::is_same_v<T,U>,scalar<T>&> operator*=(scalar<T> &a,U b) {
+        return a.data *= b;
+        return a;
+    }
+
+    template<typename T,typename U> FORCE_INLINE auto operator/(scalar<T> a,scalar<U> b) {
+        return scalar<decltype(a.data*b.data)>(a.data / b.data);
+    }
+    template<typename T,typename U> FORCE_INLINE scalar<T> &operator/=(scalar<T> &a,scalar<U> b) {
+        a.data /= b.data;
+        return a;
+    }
+    template<typename T,typename U> FORCE_INLINE std::enable_if_t<std::is_same_v<T,U>,scalar<T>> operator/(scalar<T> a,U b) {
+        return scalar<T>(a.data / b);
+    }
+    template<typename T,typename U> FORCE_INLINE std::enable_if_t<std::is_same_v<T,U>,scalar<T>> operator/(U a,scalar<T> b) {
+        return scalar<T>(a / b.data);
+    }
+    template<typename T,typename U> FORCE_INLINE std::enable_if_t<std::is_same_v<T,U>,scalar<T>&> operator/=(scalar<T> &a,U b) {
+        return a.data /= b;
+        return a;
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> operator-(scalar<T> a) {
+        return scalar<T>(-a.data);
+    }
+
+    #define OPERATOR_SCALAR(OP) \
+    template<typename T> FORCE_INLINE scalar<T> operator OP(scalar<T> a,scalar<T> b) { \
+        return scalar<T>(a.data OP b.data); \
+    } \
+    template<typename T> FORCE_INLINE scalar<T>& operator OP##=(scalar<T> &a,scalar<T> b) { \
+        a.data OP##= b.data; \
+        return a;\
+    }
+    OPERATOR_SCALAR(+)
+    OPERATOR_SCALAR(-)
+    OPERATOR_SCALAR(*)
+    OPERATOR_SCALAR(/)
+    OPERATOR_SCALAR(&)
+    OPERATOR_SCALAR(|)
+    OPERATOR_SCALAR(^)
+    #undef OPERATOR_SCALAR
+
+    #define OPERATOR_CMP(OP) \
+    template<typename T> FORCE_INLINE s_mask operator OP(scalar<T> a,scalar<T> b) { \
+        return s_mask{a.data OP b.data}; \
+    }
+    OPERATOR_CMP(==)
+    OPERATOR_CMP(!=)
+    OPERATOR_CMP(<)
+    OPERATOR_CMP(>)
+    OPERATOR_CMP(<=)
+    OPERATOR_CMP(>=)
+    #undef OPERATOR_CMP
+
+    template<typename T,typename F> FORCE_INLINE T reduce(F f,scalar<T> x) { return x.data; }
+
+    template<typename T> FORCE_INLINE T reduce_add(scalar<T> a) { return a.data; }
+
+    template<typename T> FORCE_INLINE scalar<T> abs(scalar<T> a) {
+        return scalar<T>{abs(a.data)};
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> sqrt(scalar<T> a) {
+        return scalar<T>{sqrt(a.data)};
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> rsqrt(scalar<T> a) {
+        return scalar<T>{rsqrt(a.data)};
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> approx_rsqrt(scalar<T> a) {
+        return rsqrt(a);
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> max(scalar<T> a,scalar<T> b) {
+        return scalar<T>{max(a.data,b.data)};
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> min(scalar<T> a,scalar<T> b) {
+        return scalar<T>{min(a.data,b.data)};
+    }
+
+    template<typename T> FORCE_INLINE T reduce_max(scalar<T> a) { return a.data; }
+
+    template<typename T> FORCE_INLINE T reduce_min(scalar<T> a) { return a.data; }
+
+    template<typename T> FORCE_INLINE s_mask cmp_nlt(scalar<T> a,scalar<T> b) {
+        return s_mask{cmp_nlt(a.data,b.data)};
+    }
+
+    template<typename T> FORCE_INLINE s_mask cmp_nle(scalar<T> a,scalar<T> b) {
+        return s_mask{cmp_nle(a.data,b.data)};
+    }
+
+    template<typename T> FORCE_INLINE s_mask cmp_ngt(scalar<T> a,scalar<T> b) {
+        return cmp_nlt(b,a);
+    }
+
+    template<typename T> FORCE_INLINE s_mask cmp_nge(scalar<T> a,scalar<T> b) {
+        return cmp_nle(b,a);
+    }
+
+    template<typename T> FORCE_INLINE bool testz(scalar<T> a,scalar<T> b) {
+        return ((a & b) == scalar<T>::zeros()).all();
+    }
+
+    template<typename T> FORCE_INLINE bool testz(scalar<T> a) {
+        return (a == scalar<T>::zeros()).all();
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> mask_blend(s_mask m,scalar<T> a,scalar<T> b) {
+        return scalar<T>{mask_blend(m.data,a.data,b.data)};
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> &mask_set(scalar<T> &a,s_mask m,scalar<T> b) {
+        mask_set(a.data,m.data,b.data);
+        return a;
+    }
+
+    template<typename T> FORCE_INLINE scalar<T> zfilter(s_mask m,scalar<T> x) {
+        return scalar<T>{zfilter(m.data,x.data)};
+    }
+
+    template<typename T> FORCE_INLINE T clamp(T x,T minval,T maxval) {
+        return max(min(x,maxval),minval);
+    }
+
+    template<typename T> FORCE_INLINE T clamp(T x,typename T::item_t minval,typename T::item_t maxval) {
+        return clamp(x,T::repeat(minval),T::repeat(maxval));
+    }
+
+    namespace detail {
+        template<typename T> struct _zeros<scalar<T>> {
+            static FORCE_INLINE scalar<T> go() { return scalar<T>{zeros<T>()}; }
+        };
+        template<typename T> struct _is_v_type : std::false_type {};
+        template<typename T> struct _is_v_type<scalar<T>> : std::true_type {};
+        template<typename T,size_t Size> struct _v_type {
+            static constexpr bool defined = false;
+        };
+
+        template<typename T> struct _v_type<T,1> {
+            static constexpr bool defined = true;
+            using type = scalar<T>;
+        };
+    }
+
+    template<typename T,size_t Size=v_sizes<T>::value[0]> using v_type = typename detail::_v_type<T,Size>::type;
+    template<typename T,size_t Size=v_sizes<T>::value[0]> using v_mask = typename v_type<T,Size>::mask;
+    template<typename T> constexpr bool is_v_type = detail::_is_v_type<T>::value;
+    template<typename T> using single = typename detail::_single<T>::type;
+    template<typename T,size_t Size=v_sizes<T>::value[0]> constexpr bool has_v_type = detail::_v_type<T,Size>::defined;
+
+    template<typename F,typename T1,typename... Tn>
+    v_type<std::decay_t<std::invoke_result_t<F,typename T1::item_t,typename Tn::item_t...>>,T1::size> apply(F f,const T1 &a,const Tn&... b) {
+        static_assert(((T1::size == Tn::size) && ...),"all inputs must have the same size");
+        v_type<std::decay_t<std::invoke_result_t<F,typename T1::item_t,typename Tn::item_t...>>,T1::size> r;
+        for(size_t i=0; i<T1::size; ++i) r[i] = f(a[i],b[i]...);
+        return r;
+    }
+
+//$ for type,size in V_CONFIGS
+//$ if min_support(type,size)
+//$     v_mask = "v_mask" + suffix(type,size)
+//$     v_type = "v_type" + suffix(type,size)
+    struct $v_mask {
+//$ if have_avx512_mask(type,size)
+        using raw_m_type = ${mask_type(type,size)};
+//$ else
+        using raw_m_type = ${raw_type(type,size)};
+//$ endif
+//$ if float_type(type) or type.size == 8
+        static constexpr size_t bit_granularity = 1;
+        using mask_bit_t = ${"uint64_t" if size > 32 else "uint32_t"};
+//$ else
+//$     if have_avx512_mask(type,size)
+        static constexpr size_t bit_granularity = 1;
+        using mask_bit_t = ${"uint64_t" if size > 32 else "uint32_t"};
+//$     else
+        static constexpr size_t bit_granularity = ${type.size // 8};
+        using mask_bit_t = ${"uint64_t" if (size * type.size // 8) > 32 else "uint32_t"};
+//$     endif
+//$ endif
+
+        raw_m_type data;
+
+        $v_mask() = default;
+        explicit FORCE_INLINE $v_mask(raw_m_type val) : data{val} {}
+
+        static FORCE_INLINE $v_mask zeros() {
+//$ if have_avx512_mask(type,size)
+            return $v_mask(0);
+//$ else
+            return $v_mask{${setzero(raw_type(type,size))}()};
+//$ endif
+        }
+
+        FORCE_INLINE mask_bit_t to_bits() const {
+//$ if have_avx512_mask(type,size)
+            return static_cast<mask_bit_t>(data);
+//$ else
+            return ${movemask(type,size) if float_type(type) else movemask(types["int8_t"],type.size*size//8)}(data);
+//$ endif
+        }
+
+        FORCE_INLINE bool any() const {
+//$ if have_avx512_mask(type,size)
+            return ${ktestz(mask_type(type,size))}(data,data) == 0;
+//$ elif supported(testz,raw_type(type,size))
+            return ${testz(raw_type(type,size))}(data,data) == 0;
+//$ else
+            return to_bits() != 0;
+//$ endif
+        }
+        FORCE_INLINE bool all() const {
+//$ if have_avx512_mask(type,size)
+//$     if size >= 8
+            return ${kortestc(mask_type(type,size))}(data,data);
+//$     else
+            return to_bits() == ${hex((1 << size) - 1)};
+//$     endif
+//$ elif supported(testc,raw_type(type,size))
+            return ${testc(raw_type(type,size))}(data,detail::ones<raw_m_type>::go()) == 1;
+//$ elif float_type(type)
+            return to_bits() == ${hex((1 << size) - 1)};
+//$ else
+            return to_bits() == ${hex((1 << (size * type.size // 8)) - 1)};
+//$ endif
+        }
+    };
+
+    struct $v_type {
+        using raw_v_type = ${raw_type(type,size)};
+        using item_t = $type;
+        using mask = $v_mask;
+        static constexpr size_t size = $size;
+
+        union {
+            raw_v_type p;
+            item_t s[size];
+        } data;
+
+        $v_type() = default;
+        explicit FORCE_INLINE $v_type(raw_v_type val) { data.p = val; }
+        FORCE_INLINE $v_type(const $v_type &b) { data.p = b.data.p; }
+        FORCE_INLINE $v_type &operator=(const $v_type &b) { data.p = b.data.p; return *this; }
+
+        static FORCE_INLINE $v_type zeros() { return $v_type{${setzero(raw_type(type,size))}()}; }
+        static FORCE_INLINE $v_type repeat(item_t x) { return $v_type{${set1(type,size)}(x)}; }
+
+        static FORCE_INLINE $v_type load(const item_t *vals) {
+            return $v_type{${load(raw_type(type,size))}(reinterpret_cast<${intr_param(load,0,raw_type(type,size))}>(vals))};
+        }
+        static FORCE_INLINE $v_type loadu(const item_t *vals) {
+            return $v_type{${loadu(raw_type(type,size))}(reinterpret_cast<${intr_param(loadu,0,raw_type(type,size))}>(vals))};
+        }
+
+        FORCE_INLINE void store(item_t *dest) const {
+            ${store(raw_type(type,size))}(reinterpret_cast<${intr_param(store,0,raw_type(type,size))}>(dest),data.p);
+        }
+        FORCE_INLINE void storeu(item_t *dest) const {
+            ${storeu(raw_type(type,size))}(reinterpret_cast<${intr_param(storeu,0,raw_type(type,size))}>(dest),data.p);
+        }
+
+        item_t &operator[](size_t i) {
+            return data.s[i];
+        }
+
+        item_t operator[](size_t i) const {
+            return data.s[i];
+        }
+
+        item_t* array() { return data.s; }
+        const item_t* array() const { return data.s; }
+
+//$ if supported(reduce_add,type,size)
+        static constexpr bool has_vec_reduce_add = true;
+//$ elif supported(hadd,type,size)
+        static constexpr bool has_vec_reduce_add = true;
+//$ else
+        static constexpr bool has_vec_reduce_add = false;
+//$ endif
+    };
+
+    namespace detail {
+        template<> struct _v_type<$type,$size> {
+            static constexpr bool defined = true;
+            using type = $v_type;
+        };
+        template<> struct _is_v_type<$v_type> : std::true_type {};
+
+        template<> struct _zeros<$v_type> {
+            static FORCE_INLINE $v_type go() { return $v_type::zeros(); }
+        };
+
+        template<> struct _zeros<$v_mask> {
+            static FORCE_INLINE $v_mask go() { return $v_mask::zeros(); }
+        };
+    }
+
+    FORCE_INLINE $v_mask operator&&($v_mask a,$v_mask b) {
+//$ if have_avx512_mask(type,size)
+//$     if supported(kand,mask_type(type,size))
+        return $v_mask{${kand(mask_type(type,size))}(a.data,b.data)};
+//$     else
+        return $v_mask(a.data & b.data);
+//$     endif
+//$ else
+        return $v_mask{${and_(raw_type(type,size))}(a.data,b.data)};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator||($v_mask a,$v_mask b) {
+//$ if have_avx512_mask(type,size)
+//$     if supported(kor,mask_type(type,size))
+        return $v_mask{${kor(mask_type(type,size))}(a.data,b.data)};
+//$     else
+        return $v_mask(a.data | b.data);
+//$     endif
+//$ else
+        return $v_mask{${or_(raw_type(type,size))}(a.data,b.data)};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator!($v_mask a) {
+//$ if have_avx512_mask(type,size)
+//$     if supported(knot,mask_type(type,size))
+        return $v_mask{${knot(mask_type(type,size))}(a.data)};
+//$     else
+        return $v_mask(~a.data);
+//$     endif
+//$ else
+        return $v_mask{${xor_(raw_type(type,size))}(a.data,detail::ones<${raw_type(type,size)}>::go())};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask l_andn($v_mask a,$v_mask b) {
+//$ if have_avx512_mask(type,size)
+//$     if supported(kandn,mask_type(type,size))
+        return $v_mask{${kandn(mask_type(type,size))}(a.data,b.data)};
+//$     else
+        return $v_mask(~a.data & b.data);
+//$     endif
+//$ else
+        return $v_mask{${andnot(raw_type(type,size))}(a.data,b.data)};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask l_xor($v_mask a,$v_mask b) {
+//$ if have_avx512_mask(type,size)
+//$     if supported(kxor,mask_type(type,size))
+        return $v_mask{${kxor(mask_type(type,size))}(a.data,b.data)};
+//$     else
+        return $v_mask(a.data ^ b.data);
+//$     endif
+//$ else
+        return $v_mask{${xor_(raw_type(type,size))}(a.data,b.data)};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask l_xnor($v_mask a,$v_mask b) {
+//$ if have_avx512_mask(type,size)
+//$     if supported(kxnor,mask_type(type,size))
+        return $v_mask{${kxnor(mask_type(type,size))}(a.data,b.data)};
+//$     else
+        return $v_mask(~(a.data ^ b.data));
+//$     endif
+//$ else
+        return !$v_mask{${xor_(raw_type(type,size))}(a.data,b.data)};
+//$ endif
+    }
+
+
+    FORCE_INLINE $v_type operator+($v_type a,$v_type b) {
+        return $v_type{${add(type,size)}(a.data.p,b.data.p)};
+    }
+    FORCE_INLINE $v_type& operator+=($v_type &a,$v_type b) {
+        a.data.p = ${add(type,size)}(a.data.p,b.data.p);
+        return a;
+    }
+
+    FORCE_INLINE $v_type operator-($v_type a,$v_type b) {
+        return $v_type{${sub(type,size)}(a.data.p,b.data.p)};
+    }
+    FORCE_INLINE $v_type& operator-=($v_type &a,$v_type b) {
+        a.data.p = ${sub(type,size)}(a.data.p,b.data.p);
+        return a;
+    }
+
+//$ if float_type(type)
+    FORCE_INLINE $v_type operator*($v_type a,$v_type b) {
+        return $v_type{${mul(type,size)}(a.data.p,b.data.p)};
+    }
+    FORCE_INLINE $v_type& operator*=($v_type &a,$v_type b) {
+        a.data.p = ${mul(type,size)}(a.data.p,b.data.p);
+        return a;
+    }
+    FORCE_INLINE $v_type operator*($v_type a,$type b) {
+        return a * $v_type::repeat(b);
+    }
+    FORCE_INLINE $v_type operator*($type a,$v_type b) {
+        return $v_type::repeat(a) * b;
+    }
+    FORCE_INLINE $v_type& operator*=($v_type &a,$type b) {
+        return a *= $v_type::repeat(b);
+    }
+
+    FORCE_INLINE $v_type operator/($v_type a,$v_type b) {
+        return $v_type{${div(type,size)}(a.data.p,b.data.p)};
+    }
+    FORCE_INLINE $v_type& operator/=($v_type &a,$v_type b) {
+        a.data.p = ${div(type,size)}(a.data.p,b.data.p);
+        return a;
+    }
+    FORCE_INLINE $v_type operator/($v_type a,$type b) {
+        return a / $v_type::repeat(b);
+    }
+    FORCE_INLINE $v_type operator/($type a,$v_type b) {
+        return $v_type::repeat(a) / b;
+    }
+    FORCE_INLINE $v_type& operator/=($v_type &a,$type b) {
+        return a /= $v_type::repeat(b);
+    }
+//$ else
+    FORCE_INLINE $v_type operator&($v_type a,$v_type b) {
+//$     if supported(and_,type,size)
+        return $v_type{${and_(type,size)}(a.data.p,b.data.p)};
+//$     else
+        return $v_type{${and_(raw_type(type,size))}(a.data.p,b.data.p)};
+//$     endif
+    }
+    FORCE_INLINE $v_type& operator&=($v_type &a,$v_type b) {
+//$     if supported(and_,type,size)
+        a.data.p = ${and_(type,size)}(a.data.p,b.data.p);
+//$     else
+        a.data.p = ${and_(raw_type(type,size))}(a.data.p,b.data.p);
+//$     endif
+        return a;
+    }
+
+    FORCE_INLINE $v_type operator|($v_type a,$v_type b) {
+//$     if supported(or_,type,size)
+        return $v_type{${or_(type,size)}(a.data.p,b.data.p)};
+//$     else
+        return $v_type{${or_(raw_type(type,size))}(a.data.p,b.data.p)};
+//$     endif
+    }
+    FORCE_INLINE $v_type& operator|=($v_type &a,$v_type b) {
+//$     if supported(or_,type,size)
+        a.data.p = ${or_(type,size)}(a.data.p,b.data.p);
+//$     else
+        a.data.p = ${or_(raw_type(type,size))}(a.data.p,b.data.p);
+//$     endif
+        return a;
+    }
+
+    FORCE_INLINE $v_type operator^($v_type a,$v_type b) {
+//$     if supported(xor_,type,size)
+        return $v_type{${xor_(type,size)}(a.data.p,b.data.p)};
+//$     else
+        return $v_type{${xor_(raw_type(type,size))}(a.data.p,b.data.p)};
+//$     endif
+    }
+    FORCE_INLINE $v_type& operator^=($v_type &a,$v_type b) {
+//$     if supported(xor_,type,size)
+        a.data.p = ${xor_(type,size)}(a.data.p,b.data.p);
+//$     else
+        a.data.p = ${xor_(raw_type(type,size))}(a.data.p,b.data.p);
+//$     endif
+        return a;
+    }
+//$ endif
+
+    FORCE_INLINE $v_type operator-($v_type a) {
+        return $v_type{${sub(type,size)}(${setzero(raw_type(type,size))}(),a.data.p)};
+    }
+
+    template<typename F> $type reduce(F f,$v_type x) {
+        $type r = x[0];
+        for(size_t i=1; i<$size; ++i) r = f(r,x[i]);
+        return r;
+    }
+
+    FORCE_INLINE $v_mask operator==($v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_EQ")})};
+//$ elif supported(cmp,type,size)
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_EQ")})};
+//$ elif supported(cmpeq,type,size)
+        return $v_mask{${cmpeq(type,size)}(a.data.p,b.data.p)};
+//$ else
+//$     assert not float_type(type)
+        return $v_mask{apply([]($type a1,$type b1) -> $type { return a1 == b1 ? -1 : 0; },a,b).data.p};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator>($v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_GT")})};
+//$ elif supported(cmp,type,size)
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_GT")})};
+//$ elif supported(cmpgt,type,size)
+        return $v_mask{${cmpgt(type,size)}(a.data.p,b.data.p)};
+//$ else
+//$     assert not float_type(type)
+        return $v_mask{apply([]($type a1,$type b1) -> $type { return a1 > b1 ? -1 : 0; },a,b).data.p};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator<($v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_LT")})};
+//$ elif supported(cmp,type,size)
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_LT")})};
+//$ else
+        return b > a;
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator!=($v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_NEQ")})};
+//$ elif supported(cmp,type,size)
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_NEQ")})};
+//$ elif supported(cmpneq,type,size)
+        return $v_mask{${cmpneq(type,size)}(a.data.p,b.data.p)};
+//$ elif supported(cmpeq,type,size)
+//$     assert not float_type(type)
+        return !$v_mask{${cmpeq(type,size)}(a.data.p,b.data.p)};
+//$ else
+//$     assert not float_type(type)
+        return $v_mask{apply([]($type a1,$type b1) -> $type { return a1 != b1 ? -1 : 0; },a,b).data.p};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator<=($v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_LE")})};
+//$ elif supported(cmp,type,size)
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_LE")})};
+//$ elif supported(cmple,type,size)
+        return $v_mask{${cmple(type,size)}(a.data.p,b.data.p)};
+//$ elif supported(cmpgt,type,size)
+//$     assert not float_type(type)
+        return !$v_mask{${cmpgt(type,size)}(a.data.p,b.data.p)};
+//$ else
+//$     assert not float_type(type)
+        return $v_mask{apply([]($type a1,$type b1) -> $type { return a1 <= b1 ? -1 : 0; },a,b).data.p};
+//$ endif
+    }
+
+    FORCE_INLINE $v_mask operator>=($v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_GE")})};
+//$ elif supported(cmp,type,size)
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_GE")})};
+//$ elif supported(cmpge,type,size)
+        return $v_mask{${cmpge(type,size)}(a.data.p,b.data.p)};
+//$ elif supported(cmpgt,type,size)
+//$     assert not float_type(type)
+        return $v_mask{${or_(raw_type(type,size))}(
+            ${cmpgt(type,size)}(a.data.p,b.data.p),
+            ${cmpeq(type,size)}(a.data.p,b.data.p))};
+//$ else
+//$     assert not float_type(type)
+        return $v_mask{apply([]($type a1,$type b1) -> $type { return a1 >= b1 ? -1 : 0; },a,b).data.p};
+//$ endif
+    }
+
+    inline auto reduce_add($v_type a) {
+//$ if supported(reduce_add,type,size)
+        return ${reduce_add(type,size)}(a.data.p);
+//$ elif supported(hadd,type,size)
+        auto tmp = ${hadd(type,size)}(a.data.p,a.data.p);
+//$     for d = size; d > 2; d//=2
+        tmp = ${hadd(type,size)}(tmp,tmp);
+//$     endfor
+        return single<$type>{tmp};
+//$ else
+        return reduce(std::plus<$type>(),a);
+//$ endif
+    }
+
+    FORCE_INLINE $v_type abs($v_type a) {
+//$ if supported(abs,type,size)
+        return $v_type{${abs(type,size)}(a.data.p)};
+//$ else
+        return apply(static_cast<$type (*)($type)>(&abs),a);
+//$ endif
+    }
+
+    FORCE_INLINE $v_type max($v_type a,$v_type b) {
+//$ if supported(max,type,size)
+        return $v_type{${max(type,size)}(a.data.p,b.data.p)};
+//$ else
+        return apply(static_cast<$type (*)($type,$type)>(&max<$type>),a,b);
+//$ endif
+    }
+
+    FORCE_INLINE $v_type min($v_type a,$v_type b) {
+//$ if supported(min,type,size)
+        return $v_type{${min(type,size)}(a.data.p,b.data.p)};
+//$ else
+        return apply(static_cast<$type (*)($type,$type)>(&min<$type>),a,b);
+//$ endif
+    }
+
+    inline $type reduce_max($v_type a) {
+//$ if supported(reduce_max,type,size)
+        return ${reduce_max(type,size)}(a.data.p);
+//$ else
+        return reduce(static_cast<$type (*)($type,$type)>(&max<$type>),a);
+//$ endif
+    }
+
+    inline $type reduce_min($v_type a) {
+//$ if supported(reduce_min,type,size)
+        return ${reduce_min(type,size)}(a.data.p);
+//$ else
+        return reduce(static_cast<$type (*)($type,$type)>(&min<$type>),a);
+//$ endif
+    }
+
+//$ if float_type(type)
+    FORCE_INLINE $v_type sqrt($v_type a) {
+        return $v_type{${sqrt(type,size)}(a.data.p)};
+    }
+
+    FORCE_INLINE $v_type rsqrt($v_type a) {
+//$     if supported(rsqrt28,type,size)
+        return $v_type{${rsqrt28(type,size)}(a.data.p)};
+//$     else
+        return static_cast<$type>(1) / $v_type{${sqrt(type,size)}(a.data.p)};
+//$     endif
+    }
+
+    FORCE_INLINE $v_type approx_rsqrt($v_type a) {
+//$     if supported(rsqrt28,type,size)
+        return $v_type{${rsqrt14(type,size)}(a.data.p)};
+//$     elif supported(rsqrt,type,size)
+        return $v_type{${rsqrt(type,size)}(a.data.p)};
+//$     else
+        return rsqrt(a);
+//$     endif
+    }
+
+    FORCE_INLINE $v_mask cmp_nlt($v_type a,$v_type b) {
+//$     if have_avx512_mask(type,size)
+//$         if supported(cmpnlt_mask,type,size)
+        return $v_mask{${cmpnlt_mask(type,size)}(a.data.p,b.data.p)};
+//$         else
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_NLT")})};
+//$         endif
+//$     elif supported(cmpnlt,type,size)
+        return $v_mask{${cmpnlt(type,size)}(a.data.p,b.data.p)};
+//$     else
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_NLT")})};
+//$     endif
+    }
+
+    FORCE_INLINE $v_mask cmp_nle($v_type a,$v_type b) {
+//$     if have_avx512_mask(type,size)
+//$         if supported(cmpnle_mask,type,size)
+        return $v_mask{${cmpnle_mask(type,size)}(a.data.p,b.data.p)};
+//$         else
+        return $v_mask{${cmp_mask(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_NLE")})};
+//$         endif
+//$     elif supported(cmpnlt,type,size)
+        return $v_mask{${cmpnle(type,size)}(a.data.p,b.data.p)};
+//$     else
+        return $v_mask{${cmp(type,size)}(a.data.p,b.data.p,${cmp_const(type,"CMP_NLE")})};
+//$     endif
+    }
+//$ else
+    FORCE_INLINE $v_mask cmp_nlt($v_type a,$v_type b) {
+        return a >= b;
+    }
+
+    FORCE_INLINE $v_mask cmp_nle($v_type a,$v_type b) {
+        return a > b;
+    }
+//$ endif
+
+    FORCE_INLINE $v_mask cmp_ngt($v_type a,$v_type b) {
+        return cmp_nlt(b,a);
+    }
+
+    FORCE_INLINE $v_mask cmp_nge($v_type a,$v_type b) {
+        return cmp_nle(b,a);
+    }
+
+/*    FORCE_INLINE bool testz($v_type a,$v_type b) {
+        return ((a & b) == $v_type::zeros()).all();
+    }
+
+    FORCE_INLINE bool testz($v_type a) {
+        return (a == $v_type::zeros()).all();
+    }*/
+
+    FORCE_INLINE $v_type mask_blend($v_mask m,$v_type a,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        return $v_type{${mask_blend(type,size)}(m.data,a.data.p,b.data.p)};
+//$ elif supported(blendv,type,size)
+        return $v_type{${blendv(type,size)}(b.data.p,a.data.p,m.data)};
+//$ else
+        return $v_type{${or_(raw_type(type,size))}(
+            ${and_(raw_type(type,size))}(m.data,a.data.p),
+            ${andnot(raw_type(type,size))}(m.data,b.data.p))};
+//$ endif
+    }
+
+    FORCE_INLINE $v_type &mask_set($v_type &a,$v_mask m,$v_type b) {
+//$ if have_avx512_mask(type,size)
+        a.data.p = ${mask_mov(type,size)}(a.data.p,m.data,b.data.p);
+//$ else
+        a = mask_blend(m,b,a);
+//$ endif
+        return a;
+    }
+
+    FORCE_INLINE $v_type zfilter($v_mask m,$v_type x) {
+//$ if have_avx512_mask(type,size)
+        return $v_type{${maskz_mov(type,size)}(m.data,x.data.p)};
+//$ else
+        return $v_type{${and_(raw_type(type,size))}(m.data,x.data.p)};
+//$ endif
+    }
+//$ endif
+//$ endfor
+
+    template<typename T,typename U> FORCE_INLINE T convert(U x);
+
+    namespace detail {
+        template<typename T,typename U> struct _convert {
+            FORCE_INLINE static T go(U x) {
+                if constexpr(std::is_same_v<T,U>) {
+                    return x;
+                } else if constexpr(is_v_type<T> && is_v_type<U> && T::size == U::size) {
+                    T r;
+                    for(size_t i=0; i<T::size; ++i) r[i] = static_cast<typename T::item_t>(x[i]);
+                    return r;
+                } else {
+                    static_assert(
+                        std::is_arithmetic_v<T> && std::is_arithmetic_v<U>,
+                        "no conversion defined for these types");
+                    return static_cast<T>(x);
+                }
+            }
+        };
+    }
+
+    template<typename T,typename U> FORCE_INLINE T convert(U x) { return detail::_convert<T,U>::go(x); }
+
+//$ AGGREGATE_START()
+//$ for type1,size1 in V_CONFIGS
+//$     if min_support(type1,size1)
+//$         v_type1 = "v_type" + suffix(type1,size1)
+//$         for type2,size2 in V_CONFIGS
+//$             if min_support(type2,size2)
+//$                 v_type2 = "v_type" + suffix(type2,size2)
+//$                 if req_and(type1 is not type2,size1 == size2,cvt_supported(type1,size1,type2,size2))
+    template<> FORCE_INLINE $v_type2 convert<$v_type2,$v_type1>($v_type1 x) {
+        return $v_type2{${cvt(type1,size1,type2,size2)}(x.data.p)};
+    }
+//$                 endif
+//$             endif
+//$         endfor
+//$     endif
+//$ endfor
+//$ AGGREGATE_END()
+
+    namespace detail {
+        /* Contains a type definition for an array of a SIMD type of width "Width",
+        and array length of "N" divided by the number of elements in the SIMD type.
+        If such a SIMD type is not available or the array length would be zero
+        (rounded down), the type defined is an empty struct. */
+        template<size_t N,size_t Width,typename T,typename=void> struct vtype_if_available {
+            struct type {};
+        };
+
+        template<size_t N,size_t Width,typename T>
+        struct vtype_if_available<N,Width,T,std::void_t<simd::v_type<T,Width/sizeof(T)>[N*sizeof(T)/Width]>> {
+            typedef v_type<T,Width/sizeof(T)> type[N*sizeof(T)/Width];
+        };
+    }
+
+    template<typename T,size_t Size> union packed_union_array;
+    template<typename T,typename U,size_t ChunkSize> struct packed_union_array_chunk;
+    template<size_t ItemSize,typename T,size_t Size> v_type<T,ItemSize> &at(packed_union_array<T,Size> &x,size_t i);
+    template<size_t ItemSize,typename T,size_t Size> const v_type<T,ItemSize> &at(const packed_union_array<T,Size> &x,size_t i);
+
+    template<typename T,size_t Size> union packed_union_array {
+        T raw[Size];
+        scalar<T> s[Size];
+        typename detail::vtype_if_available<Size,16,T>::type v16;
+        typename detail::vtype_if_available<Size,32,T>::type v32;
+        typename detail::vtype_if_available<Size,64,T>::type v64;
+
+        T &operator[](size_t i) { return raw[i]; }
+        const T &operator[](size_t i) const { return raw[i]; }
+
+        packed_union_array() = default;
+        packed_union_array(const packed_union_array &b) {
+            (*this) = b;
+        }
+        template<typename U> packed_union_array(const packed_union_array_chunk<T,U,Size> &b) {
+            *this = b;
+        }
+
+        packed_union_array &operator=(const packed_union_array &b) {
+            for(size_t i=0; i<Size; ++i) raw[i] = b.raw[i];
+            return *this;
+        }
+
+        template<typename U> packed_union_array &operator=(const packed_union_array_chunk<T,U,Size> &b);
+    };
+
+    template<typename T,typename U,size_t ChunkSize> struct packed_union_array_chunk {
+        U &base;
+        size_t i;
+
+        packed_union_array_chunk(U &base,size_t i) : base{base}, i{i} {}
+        packed_union_array_chunk(const packed_union_array_chunk&) = delete;
+
+        auto &operator[](size_t j) const { return base.raw[i+j]; }
+
+        template<typename V> packed_union_array_chunk &operator=(const packed_union_array_chunk<T,V,ChunkSize> &b) {
+            for(size_t j=0; j<ChunkSize; ++j) (*this)[j] = b[j];
+            return *this;
+        }
+        packed_union_array_chunk &operator=(const packed_union_array<T,ChunkSize> &b) {
+            for(size_t j=0; j<ChunkSize; ++j) (*this)[j] = b[j];
+            return *this;
+        }
+    };
+
+    template<typename T,size_t Size> template<typename U>
+    packed_union_array<T,Size> &packed_union_array<T,Size>::operator=(const packed_union_array_chunk<T,U,Size> &b) {
+        for(size_t i=0; i<Size; ++i) raw[i] = b[i];
+        return *this;
+    }
+
+    namespace detail {
+        template<typename T,size_t Size,size_t ItemSize,typename U> FORCE_INLINE auto &_at(U &x,size_t i) {
+            static_assert(ItemSize <= Size,"trying to get vector type larger than entire array");
+
+            assert(i % ItemSize == 0);
+            if constexpr(ItemSize * sizeof(T) == 64) return x.v64[i/ItemSize];
+            else if constexpr(ItemSize * sizeof(T) == 32) return x.v32[i/ItemSize];
+            else if constexpr(ItemSize * sizeof(T) == 16) return x.v16[i/ItemSize];
+            else {
+                static_assert(ItemSize == 1,"a type with this size is not defined here");
+                return x.s[i];
+            }
+        }
+    }
+
+    template<size_t ItemSize,typename T,size_t Size>
+    FORCE_INLINE v_type<T,ItemSize> &at(packed_union_array<T,Size> &x,size_t i) {
+        return detail::_at<T,Size,ItemSize>(x,i);
+    }
+    template<size_t ItemSize,typename T,size_t Size>
+    FORCE_INLINE const v_type<T,ItemSize> &at(const packed_union_array<T,Size> &x,size_t i) {
+        return detail::_at<T,Size,ItemSize>(x,i);
+    }
+    template<size_t ItemSize,typename T,typename U,size_t ChunkSize>
+    FORCE_INLINE auto &at(const packed_union_array_chunk<T,U,ChunkSize> &x,size_t i) {
+        static_assert(ItemSize <= ChunkSize);
+        return detail::_at<T,ChunkSize,ItemSize>(x.base,i+x.i);
+    }
+    template<size_t ChunkSize,typename T,size_t Size>
+    FORCE_INLINE packed_union_array_chunk<T,packed_union_array<T,Size>,ChunkSize>
+    chunk_at(packed_union_array<T,Size> &x,size_t i) {
+        static_assert(ChunkSize <= Size);
+        return {x,i};
+    }
+    template<size_t ChunkSize,typename T,size_t Size>
+    FORCE_INLINE packed_union_array_chunk<T,const packed_union_array<T,Size>,ChunkSize>
+    chunk_at(const packed_union_array<T,Size> &x,size_t i) {
+        return {x,i};
+    }
+
+    namespace detail {
+        template<typename T,typename U,size_t Size> struct _convert<packed_union_array<T,Size>,packed_union_array<U,Size>> {
+            FORCE_INLINE static packed_union_array<T,Size> go(const packed_union_array<U,Size> &x) {
+                /* TODO: check the assembly output for different compilers to
+                see if using intrinsics here would be benificial */
+                packed_union_array<T,Size> r;
+                for(size_t i=0; i<Size; ++i) r[i] = static_cast<T>(x[i]);
+                return r;
+            }
+        };
+
+        template<typename T,typename U,typename V,size_t Size> struct _convert<packed_union_array<T,Size>,packed_union_array_chunk<U,V,Size>> {
+            FORCE_INLINE static packed_union_array<T,Size> go(const packed_union_array_chunk<U,V,Size> &x) {
+                /* TODO: check the assembly output for different compilers to
+                see if using intrinsics here would be benificial */
+                packed_union_array<T,Size> r;
+                for(size_t i=0; i<Size; ++i) r[i] = static_cast<T>(x[i]);
+                return r;
+            }
+        };
+    }
+
+    template<> struct v_sizes<double> {
+        static constexpr auto value = detail::make_array<
+#ifdef SUPPORT_AVX512F
+            8,
+#endif
+#ifdef SUPPORT_AVX
+            4,
+#endif
+#ifdef SUPPORT_SSE2
+            2,
+#endif
+            1,0>();
+    };
+
+    template<> struct v_sizes<float> {
+        static constexpr auto value = detail::make_array<
+#ifdef SUPPORT_AVX512F
+            16,
+#endif
+#ifdef SUPPORT_AVX
+            8,
+#endif
+#ifdef SUPPORT_SSE
+            4,
+#endif
+            1,0>();
+    };
+
+    template<> struct v_sizes<int64_t> {
+        static constexpr auto value = detail::make_array<
+#ifdef SUPPORT_AVX512F
+            8,
+#endif
+#ifdef SUPPORT_AVX2
+            4,
+#endif
+#ifdef SUPPORT_SSE4_2
+/* 64-bit integer SIMD instructions are actually available at SSE2, but
+_mm_cmpgt_epi64 is not available until SSE4.2, and emulating it would probably
+be slow enough to outweigh the benifit of using v_type<int64_t,2> */
+            2,
+#endif
+            1,0>();
+    };
+
+    template<> struct v_sizes<int32_t> {
+        static constexpr auto value = detail::make_array<
+#ifdef SUPPORT_AVX512F
+            16,
+#endif
+#ifdef SUPPORT_AVX2
+            8,
+#endif
+#ifdef SUPPORT_SSE2
+            4,
+#endif
+            1,0>();
+    };
+
+    template<> struct v_sizes<int16_t> {
+        static constexpr auto value = detail::make_array<
+#ifdef SUPPORT_AVX512BW
+            32,
+#endif
+#ifdef SUPPORT_AVX2
+            16,
+#endif
+#ifdef SUPPORT_SSE2
+            8,
+#endif
+            1,0>();
+    };
+
+    template<> struct v_sizes<int8_t> {
+        static constexpr auto value = detail::make_array<
+#ifdef SUPPORT_AVX512BW
+            64,
+#endif
+#ifdef SUPPORT_AVX2
+            32,
+#endif
+#ifdef SUPPORT_SSE2
+            16,
+#endif
+            1,0>();
+    };
+
+    namespace detail {
+        // hide the second argument
+
+        template<typename T> constexpr size_t largest_fit(size_t size,size_t i) {
+            return size >= v_sizes<T>::value[i] ? v_sizes<T>::value[i] : largest_fit<T>(size,i+1);
+        }
+
+        template<typename T> constexpr size_t padded_size(size_t size,size_t i) {
+            typedef v_sizes<T> s;
+
+            return size >= s::value[i] ?
+                (size / s::value[i] * s::value[i])
+                    + (size % s::value[i] == 0 ? 0 : (size % s::value[i] == s::value[i+1] ? s::value[i+1] : s::value[i])) :
+                padded_size<T>(size,i+1);
+        }
+    }
+    template<typename T> constexpr size_t largest_fit(size_t size) {
+        return detail::largest_fit<T>(size,0);
+    }
+
+    template<typename T> constexpr size_t padded_size(size_t size) {
+        return size > 1 ? detail::padded_size<T>(size,0) : size;
+    }
+}
+
+#endif
