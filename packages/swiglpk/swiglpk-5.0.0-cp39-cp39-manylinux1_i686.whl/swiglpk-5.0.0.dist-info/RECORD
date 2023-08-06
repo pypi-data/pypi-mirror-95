@@ -1,0 +1,9 @@
+swiglpk.libs/libgmp-2c7a5705.so.3.3.3,sha256=gQDWkHlVRcsS50uOa_Wu4bTCMuRa4nctD9fwmx2uOd8,222616
+swiglpk.libs/libglpk-8efec837.so.40.3.1,sha256=fMhZclYjeisD7Pv8HTdsAiX572MalbIgbL-SjVI8VKI,1077648
+swiglpk/swiglpk.py,sha256=g2nZnSoXfzdx8cUBHEHb1jWXiI--ON54s1ijKieEL8U,66423
+swiglpk/_swiglpk.cpython-39-i386-linux-gnu.so,sha256=y_gkbr4kLTyM1_6-0o6pdSqpw6kLIvFV7HRUneKVjnM,324988
+swiglpk/__init__.py,sha256=LFptBGmxPxxLcPSfi3jPU845D0qWnsHDX4Hp_KeE8KE,23
+swiglpk-5.0.0.dist-info/METADATA,sha256=8OHBrpK-lVOcOLbYounWFgnLi6GXzAq5KpRKQCTRqag,5701
+swiglpk-5.0.0.dist-info/RECORD,,
+swiglpk-5.0.0.dist-info/WHEEL,sha256=E9diJhdqYoW-Z_k18V_gCo0nZPNV0ncLHCsPAqWn_Do,106
+swiglpk-5.0.0.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
