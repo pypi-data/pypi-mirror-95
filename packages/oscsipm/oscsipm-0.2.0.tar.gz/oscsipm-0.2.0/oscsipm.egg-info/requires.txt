@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+lecroyparser
+joblib
+dataclasses
+compress_pickle

@@ -1,0 +1,15 @@
+README.md
+setup.py
+oscsipm/__init__.py
+oscsipm/_dcore.py
+oscsipm/_dmatrix.py
+oscsipm/_numpy_core.py
+oscsipm/crosstalk.py
+oscsipm/histogram.py
+oscsipm/oscillogram.py
+oscsipm/tekwfm.py
+oscsipm.egg-info/PKG-INFO
+oscsipm.egg-info/SOURCES.txt
+oscsipm.egg-info/dependency_links.txt
+oscsipm.egg-info/requires.txt
+oscsipm.egg-info/top_level.txt
