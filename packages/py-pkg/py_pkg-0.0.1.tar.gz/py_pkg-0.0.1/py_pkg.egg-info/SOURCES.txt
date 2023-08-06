@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+py_pkg/__init__.py
+py_pkg/hello.py
+py_pkg.egg-info/PKG-INFO
+py_pkg.egg-info/SOURCES.txt
+py_pkg.egg-info/dependency_links.txt
+py_pkg.egg-info/top_level.txt
