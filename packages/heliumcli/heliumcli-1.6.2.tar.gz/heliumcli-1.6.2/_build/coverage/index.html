@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Helium CLI Coverage Report</title>
+    <link rel="icon" sizes="32x32" href="favicon_32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Helium CLI Coverage Report:
+            <span class="pc_cov">90.89%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>560</td>
+                <td>51</td>
+                <td>22</td>
+                <td class="right" data-ratio="509 560">90.89%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli___init___py.html">heliumcli/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100.00%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions___init___py.html">heliumcli/actions/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="0 0">100.00%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_buildrelease_py.html">heliumcli/actions/buildrelease.py</a></td>
+                <td>86</td>
+                <td>13</td>
+                <td>0</td>
+                <td class="right" data-ratio="73 86">84.88%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_deploybuild_py.html">heliumcli/actions/deploybuild.py</a></td>
+                <td>61</td>
+                <td>10</td>
+                <td>0</td>
+                <td class="right" data-ratio="51 61">83.61%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_init_py.html">heliumcli/actions/init.py</a></td>
+                <td>71</td>
+                <td>4</td>
+                <td>0</td>
+                <td class="right" data-ratio="67 71">94.37%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_listbuilds_py.html">heliumcli/actions/listbuilds.py</a></td>
+                <td>32</td>
+                <td>12</td>
+                <td>0</td>
+                <td class="right" data-ratio="20 32">62.50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_prepcode_py.html">heliumcli/actions/prepcode.py</a></td>
+                <td>101</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="95 101">94.06%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_setbuild_py.html">heliumcli/actions/setbuild.py</a></td>
+                <td>36</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="35 36">97.22%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_startservers_py.html">heliumcli/actions/startservers.py</a></td>
+                <td>27</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="26 27">96.30%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_update_py.html">heliumcli/actions/update.py</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="13 13">100.00%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_actions_updateprojects_py.html">heliumcli/actions/updateprojects.py</a></td>
+                <td>39</td>
+                <td>1</td>
+                <td>0</td>
+                <td class="right" data-ratio="38 39">97.44%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_main_py.html">heliumcli/main.py</a></td>
+                <td>27</td>
+                <td>0</td>
+                <td>8</td>
+                <td class="right" data-ratio="27 27">100.00%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_settings_py.html">heliumcli/settings.py</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="right" data-ratio="8 8">100.00%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="heliumcli_utils_py.html">heliumcli/utils.py</a></td>
+                <td>59</td>
+                <td>3</td>
+                <td>14</td>
+                <td class="right" data-ratio="56 59">94.92%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.4</a>,
+            created at 2021-02-16 00:28 +0000
+        </p>
+    </div>
+</div>
+</body>
+</html>
