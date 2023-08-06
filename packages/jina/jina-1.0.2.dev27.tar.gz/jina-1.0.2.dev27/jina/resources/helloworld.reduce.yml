@@ -1,0 +1,21 @@
+!BaseExecutor
+with: {}
+metas:
+  name: top50
+requests:
+  on:
+    SearchRequest:
+      with:
+        traversal_paths: ['m']
+      drivers:
+        - !ReduceAllDriver {}
+        - !SortQL
+          with:
+            reverse: true
+            field: 'score__value'
+        - !SliceQL
+          with:
+            start: 0
+            end: 20
+    ControlRequest:
+      - !ControlReqDriver {}
