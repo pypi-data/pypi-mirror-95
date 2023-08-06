@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "xawsprofile"
+version = "0.1.1"
+description = ""
+authors = ["Daniel Clayton <dclayton@godaddy.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.1"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+dephell = "^0.8.3"
+
+[tool.poetry.scripts]
+awsprofile = "xawsprofile.cli:main"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
