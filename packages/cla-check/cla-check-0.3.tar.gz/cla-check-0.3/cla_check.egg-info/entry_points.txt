@@ -1,0 +1,4 @@
+[console_scripts]
+cla-check = cla_check._commands._cla_check:main
+cla-check-git = cla_check._commands._cla_check_git:main
+
