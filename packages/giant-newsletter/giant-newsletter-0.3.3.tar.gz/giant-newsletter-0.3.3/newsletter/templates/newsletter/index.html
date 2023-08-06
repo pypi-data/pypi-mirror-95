@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load cms_tags static %}
+
+{% block body %}
+    <div>
+        {% if thanks %}
+            Thank you. You have now subscribed to our newsletter.
+        {% else %}
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Submit</button>
+            </form>
+        {% endif %}
+    </div>
+{% endblock body %}
