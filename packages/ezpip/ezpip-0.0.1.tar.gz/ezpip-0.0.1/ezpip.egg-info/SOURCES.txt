@@ -1,0 +1,10 @@
+README.md
+setup.py
+ezpip/__init__.py
+ezpip/test.py
+ezpip.egg-info/PKG-INFO
+ezpip.egg-info/SOURCES.txt
+ezpip.egg-info/dependency_links.txt
+ezpip.egg-info/requires.txt
+ezpip.egg-info/top_level.txt
+ezpip/parts/dummy_python_file.py
