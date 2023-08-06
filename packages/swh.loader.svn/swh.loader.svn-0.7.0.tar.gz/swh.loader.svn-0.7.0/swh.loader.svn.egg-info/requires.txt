@@ -1,0 +1,14 @@
+click
+python-dateutil
+subvertpy>=0.9.4
+iso8601
+swh.storage>=0.11.3
+swh.model>=0.4.0
+swh.scheduler>=0.0.39
+swh.loader.core>=0.18
+
+[testing]
+pytest
+pytest-mock
+pytest-postgresql
+swh.core[http]>=0.0.61
