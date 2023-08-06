@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+pyecwid/__init__.py
+pyecwid/ecwidapi.py
+pyecwid/ecwidutils.py
+pyecwid.egg-info/PKG-INFO
+pyecwid.egg-info/SOURCES.txt
+pyecwid.egg-info/dependency_links.txt
+pyecwid.egg-info/requires.txt
+pyecwid.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pyecwid.py
