@@ -1,0 +1,11 @@
+PyYAML
+azure-functions
+chardet
+python-dateutil
+jmespath
+pybacklog
+pytz
+ruamel.appconfig
+ruamel.std.argparse
+zope.interface
+typed-ast
