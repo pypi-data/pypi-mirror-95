@@ -1,0 +1,10 @@
+sso_ui_auth_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sso_ui_auth_client/cas.py,sha256=IvCbQop04ScDQzcc5g_ORrOqawczN1BXF3qeee6tHiU,1315
+sso_ui_auth_client/faculty_info.py,sha256=Qg2fDLWeyYBcRnFGnPoheLcXdN8bXkjtJhR__PvTMSg,58478
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/server.py,sha256=j5c_tUue7wsZze3WkJeXU80dMyX0wxqZVDAAdiAYsRQ,701
+SSO_UI_auth_client_cas-1.0.0.dist-info/LICENSE,sha256=KUF1hNfg8kUizxC-oZBFFHAdWsCuSCvHJFIFcaro848,1071
+SSO_UI_auth_client_cas-1.0.0.dist-info/METADATA,sha256=dVpdNOA_nL-Vl-1jewvqdMiYIwnxbyqC3RSoelCh_0M,555
+SSO_UI_auth_client_cas-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+SSO_UI_auth_client_cas-1.0.0.dist-info/top_level.txt,sha256=Hx6zsL9-8Okf9QhqvqTvmNxvBWVSw-Y_XeqRj63-zZE,25
+SSO_UI_auth_client_cas-1.0.0.dist-info/RECORD,,
