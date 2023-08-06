@@ -1,0 +1,8 @@
+setup.py
+to_tty.py
+to_tty.egg-info/PKG-INFO
+to_tty.egg-info/SOURCES.txt
+to_tty.egg-info/dependency_links.txt
+to_tty.egg-info/entry_points.txt
+to_tty.egg-info/requires.txt
+to_tty.egg-info/top_level.txt
