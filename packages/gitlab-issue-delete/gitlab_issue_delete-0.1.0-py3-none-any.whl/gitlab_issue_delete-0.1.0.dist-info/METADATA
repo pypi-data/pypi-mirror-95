@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: gitlab-issue-delete
+Version: 0.1.0
+Summary: Delete GitLab issue in bulk
+Home-page: https://github.com/sachinchavan9/gitlab-operation
+Author: Sachin Chavan
+Author-email: sachinewx@gmail.com
+License: UNKNOWN
+Keywords: Git GitLab issue
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: astroid (==2.4.2)
+Requires-Dist: autopep8 (==1.5.5)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: isort (==5.7.0)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: prettytable (==2.0.0)
+Requires-Dist: pycodestyle (==2.6.0)
+Requires-Dist: pylint (==2.6.2)
+Requires-Dist: python-gitlab (==2.5.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: wrapt (==1.12.1)
+
+# GitLab Delete Issue
+
+delete all issue from gitlab project.
+
+$ gilab-issue-delete
+
+and follow the instruction
+
+you need `gitlab` and `accesstoken` 
+
+default config file found at
+
+```
+$HOME/.config/gitlab/config
+```
+
