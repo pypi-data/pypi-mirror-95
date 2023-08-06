@@ -1,0 +1,9 @@
+exception_handler/__init__.py,sha256=NvpFMwLycbSUzQ2g09C2B6Rxe8XCL2PpuxTGXLCBaDI,145
+exception_handler/code_erros.py,sha256=lgj6ltM8RLKVZKOt0-v600b-rsR3NhKcILuaptAiS0A,133
+exception_handler/config.py,sha256=rIBhS1RCZU2gmC8Plc7FFKoPHcHKilxdoDk50w9m5Og,384
+exception_handler/factory_logging.py,sha256=xhGq3aKUgcXJ3NOYuucGqm7wpYFF97UG_bii8kIFVoc,1494
+exception_handler-1.0.0.dist-info/LICENSE.rst,sha256=bzQCfzPzrgo6DK2HGxa1pqQb5j6rE5zuhg8z9TimZOY,1065
+exception_handler-1.0.0.dist-info/METADATA,sha256=-qzTIMxks4KTmfHhv0dyUHRtnyTbIaWAepLRJczMXjA,904
+exception_handler-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+exception_handler-1.0.0.dist-info/top_level.txt,sha256=wDPiu_f2uptpAls6rlPnpa3feSyB7aKwfFgtvRdRKsc,18
+exception_handler-1.0.0.dist-info/RECORD,,
