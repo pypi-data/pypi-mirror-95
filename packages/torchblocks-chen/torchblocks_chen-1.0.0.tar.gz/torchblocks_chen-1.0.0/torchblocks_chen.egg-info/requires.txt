@@ -1,0 +1,6 @@
+scikit-learn
+tokenizers>=0.7.0
+torch>=1.6.0
+transformers>=4.1.1
+sentencepiece
+sacremoses
