@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=Wt35ZdFtL6wbP9Ipn3_faqi3AGMQx7vUqPo2rml22wY,436
+tests/test_github_util.py,sha256=_zXlF_gIno_4HV41VKPpeR7mBa4thum8YRMI_yCTGUI,598
+tests/test_json.py,sha256=Ta-WvfDQg_V7PI5iixiIgS8G5bEHqt_tW34rRV7v-Rw,526
+tjauto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tjauto/cli_util.py,sha256=YgaWOKmYu7btC03ktAhZnsrzLkY9-gBMB0spO79jreQ,107
+tjauto/collection_util.py,sha256=vRybhvTx2oCZQImiSRWPv5x4KN0_wXIE4GQ7xIwJK6k,174
+tjauto/file_util.py,sha256=SJt2PUQzmN7VlvbRaNNf6e6Ahs5br0T0AGwkj5jym74,962
+tjauto/git_util.py,sha256=guXaXZoVU5OJWou4-0MkM3IyVZoQutkRQ-6-nzGy7Pc,107
+tjauto/github_util.py,sha256=dOY2WbW5XIZQJKoisMpB5qPvsTt_vWFDqViIienbDr8,146
+tjauto/json_util.py,sha256=GfWtUOVNC60eD3vDVLbUbi09gG5d_wagIxdgpzak-Nw,304
+tjauto/yaml_util.py,sha256=cKQJWPjk-oEF4QnBqRCXynTfV7nIh_bhC4C6gpJixYI,455
+tjauto-0.0.1.dist-info/LICENSE,sha256=XILVGOX3RTvcq5TbvOfW6tqBG14t60Z0SHxXQPo3zXY,1060
+tjauto-0.0.1.dist-info/METADATA,sha256=3ZJ7azXcmw26PM-oLRx08zDKSblocu-sDrg_3CRkUJA,522
+tjauto-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tjauto-0.0.1.dist-info/top_level.txt,sha256=AFiOotxAHQ7Irou8dZ617atM4on_GFrHxmJ3ToH0O8c,13
+tjauto-0.0.1.dist-info/RECORD,,
