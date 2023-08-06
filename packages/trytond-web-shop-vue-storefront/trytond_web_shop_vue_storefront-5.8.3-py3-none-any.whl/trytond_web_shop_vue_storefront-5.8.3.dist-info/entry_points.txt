@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    web_shop_vue_storefront = trytond.modules.web_shop_vue_storefront
+    
