@@ -1,0 +1,14 @@
+flask_oidc_verifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_oidc_verifier/caches.py,sha256=is6PPL9g3zMDHSV61VHH5gxAyp_kxjvox7-_t1A_OMc,1180
+flask_oidc_verifier/decorators.py,sha256=o_tzyZN3gxV7Aa4VXdlixyBiMf85dlZd_RJs9b06ReQ,6337
+flask_oidc_verifier/jwt_parser.py,sha256=KNTgc8i3pjoxdLF4TTrR5Is_rAjNeFLJBo2TB8_TvlA,666
+flask_oidc_verifier/verification.py,sha256=FeRt0dT2HTm4O2VBA_Sc_CeoeUiDkqTcC13mT7-AjaY,305
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=M9ZepC99iJrJbpRGmcqHbmL9K4gQrsBEBwQzLCWr6t0,591
+tests/mocks.py,sha256=SPN3mYInqMc2yeBIl_ez9E4-vbOf6lYCDYgwpzg6AI0,379
+tests/test_decorators.py,sha256=HpaUoSqof5kRXGeZkf2IKfbHsem_PRSUadZxRtzO6Hw,7325
+flask_oidc_verifier-0.0.8.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+flask_oidc_verifier-0.0.8.dist-info/METADATA,sha256=nufOqgUR_bmR0COA0IotAxtyhyl_wnspEZN7cNiHtl4,1814
+flask_oidc_verifier-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flask_oidc_verifier-0.0.8.dist-info/top_level.txt,sha256=7usRTa-ng52A2sXYjGq8W3M98flIAjb73PuEAmqEM_s,26
+flask_oidc_verifier-0.0.8.dist-info/RECORD,,
