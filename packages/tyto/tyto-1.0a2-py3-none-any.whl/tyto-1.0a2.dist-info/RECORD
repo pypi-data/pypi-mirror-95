@@ -1,0 +1,11 @@
+tyto/__init__.py,sha256=b4-objB5nZ3oLKsdwWxSYExHFEF9u0rJlk5tDxYKJFw,21
+tyto/owlet.py,sha256=RFZ4MW9dYL7f_jPscPH8egCpOfb3YyplcasO_YryHF0,9500
+tyto/ontologies/SBO_OWL.owl,sha256=C8wfEgdNIX02Hh8haNpShi3p6X3KF5T7u_UFcAy5rMI,485370
+tyto/ontologies/example.owl,sha256=2lLnrQ23CKNr7L7ahJ6m5pFDeCyodc2iioygMAPMXR4,5115300
+tyto/ontologies/om-2.0.rdf,sha256=QB3WTfypBRSiEfglXoX0Q1grRHEUy60wKSMXyhDeht4,1979436
+tyto/ontologies/so.owl,sha256=2lLnrQ23CKNr7L7ahJ6m5pFDeCyodc2iioygMAPMXR4,5115300
+tyto-1.0a2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tyto-1.0a2.dist-info/METADATA,sha256=nHhhRtsTBfYw_4tJfQZ552-7z6mv8lJeqDQ1fYvxtCU,572
+tyto-1.0a2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tyto-1.0a2.dist-info/top_level.txt,sha256=JPyF7GfxG13CX4AVsdCjXvh677BAQnxgZxJuy4JIg0Q,5
+tyto-1.0a2.dist-info/RECORD,,
