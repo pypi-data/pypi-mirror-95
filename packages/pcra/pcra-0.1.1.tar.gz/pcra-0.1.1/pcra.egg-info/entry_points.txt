@@ -1,0 +1,3 @@
+[console_scripts]
+py-create-react-app = pcra.__main__:main
+
