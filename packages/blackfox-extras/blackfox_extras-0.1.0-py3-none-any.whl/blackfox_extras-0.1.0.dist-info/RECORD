@@ -1,0 +1,15 @@
+blackfox_extras/__init__.py,sha256=q_5kbUIaf6k9zcSNUyIqmMVjCkN3oE4APmdVuzQ1g1c,456
+blackfox_extras/chart_log_writer.py,sha256=Mtot7JvuC1UZxL1uJNcjbZpZ09GaIz11r1ZAKRNLdek,214
+blackfox_extras/data_extras.py,sha256=8eNlxpjvCmUJUkCOxcfBFfVoZc90yAp_Q9ctlspx1ng,2344
+blackfox_extras/encodeDataSet.py,sha256=I1uO0l8l8Ucph47VX0jPfIIe-hd2TjP8DBhJNqbIqNA,1671
+blackfox_extras/encodeVariable.py,sha256=fjHbQevLN5lZJ-41eMCWO2WWTPRyMTne-hGZ4V1QcHk,3412
+blackfox_extras/input_extras.py,sha256=52-Oc99PlxQbrn6ILV31ABIvIWc8J10Bi00tMxOwWus,660
+blackfox_extras/rnn_extras.py,sha256=_qY_422B_2QYGfkNCc2Vfc1G0hv6wPYo_2Ck0Xv3SQc,1571
+blackfox_extras/scaler_extras.py,sha256=uD0bQDUXPfhnKSmzWGb0xxkeFFuSSGzQS1qZvrzNR-E,2678
+blackfox_extras/series_extras.py,sha256=UpI2sychWUpiCtWQcyirvs7ANxsR9dEalj60oi2EEmY,5241
+blackfox_extras/test.py,sha256=1XFxTQSKFI8OskZC7hdNkCk01esslJ_uUKk4eyE31DM,5827
+blackfox_extras/test_evaluator.py,sha256=mvW71L6bZcNei7XisSSLf3j_dbsM5NKL9glvKNv9VOM,3535
+blackfox_extras-0.1.0.dist-info/METADATA,sha256=MhhRvrG6HvF_TNvvxsDEuAZzBf9dGPwxoshnbb22HFo,440
+blackfox_extras-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+blackfox_extras-0.1.0.dist-info/top_level.txt,sha256=X-1co9F99V7VDIm4PP20hG964UQozbXNs2C7Oy6C_34,16
+blackfox_extras-0.1.0.dist-info/RECORD,,
