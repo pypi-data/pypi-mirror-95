@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gkhtm
+Version: 0.0.8
+Summary: HTM library interface for Python
+Home-page: https://github.com/genghisken/gkhtm
+Author: genghisken
+Author-email: ken.w.smith@gmail.com
+License: MIT
+Description: # gkhtm
+        Hierarchical Triangular Mesh library for Python
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
