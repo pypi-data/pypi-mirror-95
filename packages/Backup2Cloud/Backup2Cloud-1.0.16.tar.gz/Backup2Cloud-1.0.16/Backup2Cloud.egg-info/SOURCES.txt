@@ -1,0 +1,14 @@
+README.md
+setup.py
+Backup2Cloud/Backup2Cloud.ini
+Backup2Cloud/__init__.py
+Backup2Cloud/__main__.py
+Backup2Cloud.egg-info/PKG-INFO
+Backup2Cloud.egg-info/SOURCES.txt
+Backup2Cloud.egg-info/dependency_links.txt
+Backup2Cloud.egg-info/requires.txt
+Backup2Cloud.egg-info/top_level.txt
+Backup2Cloud/providers/__init__.py
+Backup2Cloud/providers/folder.py
+Backup2Cloud/providers/gdrive.py
+Backup2Cloud/providers/providersinterface.py
