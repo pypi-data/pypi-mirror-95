@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pupg/__init__.py
+src/pupg/_cli.py
+src/pupg.egg-info/PKG-INFO
+src/pupg.egg-info/SOURCES.txt
+src/pupg.egg-info/dependency_links.txt
+src/pupg.egg-info/entry_points.txt
+src/pupg.egg-info/requires.txt
+src/pupg.egg-info/top_level.txt
