@@ -1,0 +1,8 @@
+pelican/plugins/linkclass/__init__.py,sha256=3cr3Bb1eFvrEMBRvTIySAutsSyTApROfsv6bRDKXmok,33
+pelican/plugins/linkclass/linkclass.py,sha256=Agmt76slTLpM-tOb_B1meFx3CDlUGi6eo6cFtICSYh8,1811
+pelican/plugins/linkclass/mdx_linkclass.py,sha256=3VQNKpzFtYOrOq8rsE_xVM-G365ZMjH4SdkAvI8Zed4,3982
+pelican/plugins/linkclass/test_linkclass.py,sha256=dhibPFWFjHWqqdMwYHHER8xUVpgcpqYC6XkZDCyr9n4,6611
+pelican_linkclass-2.0.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pelican_linkclass-2.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pelican_linkclass-2.0.0.dist-info/METADATA,sha256=JojQuwDRUIDWUdgRORCFtW6RUgTzm2PuhcmHWrIvzEM,5279
+pelican_linkclass-2.0.0.dist-info/RECORD,,
