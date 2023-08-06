@@ -1,0 +1,12 @@
+#!python
+
+import logging
+
+from pymdmix_core.parser import MDMIX_PARSER
+from pymdmix_core.core import MDMix
+
+
+args, unknonw_args = MDMIX_PARSER.parse_known_args()
+logging.basicConfig(level=args.verbosity, filename=args.log, filemode='w')
+mdmix = MDMix(config=args.config)
+mdmix.run()
