@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: modbus_server
+Version: 0.1.9
+Summary: Easy-to-use ModbusTCP Server in pure Python 
+Home-page: None
+Author: Christoph Kattmann
+Author-email: christoph.kattmann@bss-hs.de

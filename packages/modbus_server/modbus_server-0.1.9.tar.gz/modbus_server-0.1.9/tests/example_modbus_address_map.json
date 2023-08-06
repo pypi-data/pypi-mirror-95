@@ -1,0 +1,29 @@
+{
+    "coils": {
+        "0": {
+            "key": "example_coil_0",
+            "initial_value": false
+        }
+    },
+    "discrete_inputs": {
+        "0": {
+            "key": "example_discrete_input_0",
+            "initial_value": false
+        }
+    },
+    "input_registers": {
+        "0": {
+            "key": "example_input_register_0",
+            "initial_value": 0,
+            "encoding": "h"
+        }
+    },
+    "holding_registers": {
+        "0": {
+            "key": "example_holding_register_0",
+            "initial_value": 0,
+            "encoding": "h"
+        }
+    }
+}
+
