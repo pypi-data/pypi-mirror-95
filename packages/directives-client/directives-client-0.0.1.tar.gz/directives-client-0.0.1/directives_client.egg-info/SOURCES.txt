@@ -1,0 +1,7 @@
+README.md
+setup.py
+directives-client/__init__.py
+directives_client.egg-info/PKG-INFO
+directives_client.egg-info/SOURCES.txt
+directives_client.egg-info/dependency_links.txt
+directives_client.egg-info/top_level.txt
