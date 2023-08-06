@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "py_apple_signin"
+version = "0.3.1"
+description = "Apple Sign In Python Server Side impl"
+authors = ["dev <dev@qiyutech.tech>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/QiYuTechDev/py_apple_signin"
+repository = "https://github.com/QiYuTechDev/py_apple_signin"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+# we do love strong type
+dataclasses-json = ">=0.5,<0.6"
+
+# for sync support
+requests = ">=2.24,<3"
+
+# for async support
+aiohttp = ">=3.7,<4"
+
+# JSON Web token support
+pyjwt = ">=2.0,<3"
+
+# JWT dep on this
+cryptography = ">=3.0,<4.0"
+
+[tool.poetry.dev-dependencies]
+black = ">=20.8b1"
+pylama = "*"
+
+[build-system]
+requires = ["poetry>=1"]
+build-backend = "poetry.masonry.api"

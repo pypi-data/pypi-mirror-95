@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: py-apple-signin
+Version: 0.3.1
+Summary: Apple Sign In Python Server Side impl
+Home-page: https://github.com/QiYuTechDev/py_apple_signin
+License: MIT
+Author: dev
+Author-email: dev@qiyutech.tech
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7,<4)
+Requires-Dist: cryptography (>=3.0,<4.0)
+Requires-Dist: dataclasses-json (>=0.5,<0.6)
+Requires-Dist: pyjwt (>=2.0,<3)
+Requires-Dist: requests (>=2.24,<3)
+Project-URL: Repository, https://github.com/QiYuTechDev/py_apple_signin
+Description-Content-Type: text/markdown
+
+# Apple SignIn SDK for Python
+
+Apple SignIn Server Side in Python (with sync & async API)
+
+![PyPI - Version](https://img.shields.io/pypi/v/py-apple-signin)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-apple-signin)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/py_apple_signin)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/py-apple-signin)
+![GitHub repo size](https://img.shields.io/github/repo-size/qiyutechdev/py_apple_signin)
+![Lines of code](https://img.shields.io/tokei/lines/github/qiyutechdev/py_apple_signin)
+
+## WARING(警告)
+
+This project is sunset, use [QiYuAPI](https://github.com/QiYuTechDev/qiyu-api) please.
+
+这个项目已经不在维护, 请使用 [QiYuAPI](https://github.com/QiYuTechDev/qiyu-api).
+
