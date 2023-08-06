@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: rgb-control
+Version: 0.0.1
+Summary: The script allows you to set the RGB backlight color on A4Tech Bloody keyboards.
+Home-page: https://github.com/apo5tol/bloody_keyboard_rgb_control
+Author: Alexandr Kuzhel
+Author-email: alexkuzhel.biz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyusb (==1.1.0)
+
+# RGB control for A4Tech Bloody keyboard for Linux
+
+> This script allows you to set the RGB backlight color on A4Tech Bloody keyboards.
+
+### How to use:
+
+- On the keyboard press `Fn` + `1`.
+- Make sure you are a sudo user.
+- Run the script.
+
+### Optional arguments:
+``` bash
+-c    - color in hex format. Example: 00ff00 #green
+-id_v - vendor id in hex format, default: 0x09DA  
+-id_p - product id in hex format, default: 0xFA10  
+```
+
+
+

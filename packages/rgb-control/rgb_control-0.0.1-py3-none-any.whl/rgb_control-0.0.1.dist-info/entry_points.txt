@@ -1,0 +1,3 @@
+[console_scripts]
+rgb-control = rgb_control.main:main
+
