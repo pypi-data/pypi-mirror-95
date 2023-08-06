@@ -1,0 +1,3 @@
+[console_scripts]
+jawiki-cleaner=src.jawiki_cleaner.cli:main
+
