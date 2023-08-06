@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+audiolipsum/__init__.py
+audiolipsum/cli.py
+audiolipsum/exceptions.py
+audiolipsum/helpers.py
+audiolipsum/models.py
+opawg_audiolipsum.egg-info/PKG-INFO
+opawg_audiolipsum.egg-info/SOURCES.txt
+opawg_audiolipsum.egg-info/dependency_links.txt
+opawg_audiolipsum.egg-info/entry_points.txt
+opawg_audiolipsum.egg-info/requires.txt
+opawg_audiolipsum.egg-info/top_level.txt

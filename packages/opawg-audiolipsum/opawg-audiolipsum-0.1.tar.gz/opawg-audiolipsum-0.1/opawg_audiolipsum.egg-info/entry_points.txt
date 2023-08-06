@@ -1,0 +1,2 @@
+[console_scripts]
+audiolipsum=audiolipsum.cli:main

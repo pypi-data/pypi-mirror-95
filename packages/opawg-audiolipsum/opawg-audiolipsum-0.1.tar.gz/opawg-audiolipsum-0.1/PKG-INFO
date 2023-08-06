@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: opawg-audiolipsum
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/opawg/audiolipsum
+Author: Open Podcast Analytics Working Group
+License: MIT
+Description: # Audio Lipsum
+        
+        Generates MP3 files with random tones and ID3 tags containing lorem ipsum.
+        
+        ## Requirements
+        
+        - Linux or macOS with [LAME MP3 encoder](https://sourceforge.net/projects/lame/files/lame/)
+        
+        ## Installation
+        
+        ```sh
+        pip install opawg-audiolipsum
+        ```
+        
+        ## Running tests
+        
+        Does the code actually work?
+        
+        ```sh
+        pytest --cov tests
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
