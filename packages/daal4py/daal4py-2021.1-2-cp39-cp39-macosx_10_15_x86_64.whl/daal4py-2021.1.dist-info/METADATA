@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: daal4py
+Version: 2021.1
+Summary: A convenient Python API to Intel(R) oneAPI Data Analytics Library
+Home-page: https://github.com/IntelPython/daal4py
+Author: Intel
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/IntelPython/daal4py/issues
+Project-URL: Documentation, https://intelpython.github.io/daal4py/
+Project-URL: Source Code, https://github.com/IntelPython/daal4py
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System
+Classifier: Topic :: Software Development
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: daal
+
+UNKNOWN
+
+
