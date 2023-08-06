@@ -1,0 +1,3 @@
+[console_scripts]
+pp_submit = nxp_pp:main
+
