@@ -1,0 +1,8 @@
+ec2_spot_price/__init__.py,sha256=27HUHNiAVJ2EqiHTf7hDaUFdnD7kA0kS_8AsauUfv4c,147
+ec2_spot_price/ec2_spot_price.py,sha256=w-7ZMrrwOIX3gF5uNHBG8yab0vkDlOyZSEOrSdoy2rY,4698
+ec2_spot_price/ec2_spot_price.py~,sha256=qM2OcDi72QzA45heNlLS-Prf_PhpilRWEbPJmyWL9Ds,4718
+ec2_spot_price-0.1.13.dist-info/entry_points.txt,sha256=akEW0rwDDu8CXO6LxevCYHksLCAkvESBCKIK-rHwk7g,54
+ec2_spot_price-0.1.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ec2_spot_price-0.1.13.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ec2_spot_price-0.1.13.dist-info/METADATA,sha256=9WRxYKMYWN0E29fUtNczfwsu4iVLuZL_w5Zq0jMPvf0,2710
+ec2_spot_price-0.1.13.dist-info/RECORD,,
