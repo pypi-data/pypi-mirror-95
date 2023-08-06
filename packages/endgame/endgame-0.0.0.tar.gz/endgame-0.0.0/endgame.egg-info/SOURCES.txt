@@ -1,0 +1,7 @@
+README.md
+setup.py
+endgame.egg-info/PKG-INFO
+endgame.egg-info/SOURCES.txt
+endgame.egg-info/dependency_links.txt
+endgame.egg-info/top_level.txt
+endgame.egg-info/zip-safe
