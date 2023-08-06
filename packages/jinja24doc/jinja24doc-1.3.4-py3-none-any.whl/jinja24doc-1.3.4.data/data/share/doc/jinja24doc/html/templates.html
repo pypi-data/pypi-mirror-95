@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jinja24Doc homepage documentation">
+    <meta name="keywords" content="jinja2 python generator documentation doc py html manual reference api">
+    <meta name="author" content="Ondřej Tůma McBig">
+
+    <title>Jinja24Doc for Python</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="web.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="page">
+
+      <div class="header">
+        <img class="right" src="small-logo.png" alt="logo">
+        <h1>Jinja24Doc for Python</h1>
+        <small>Lightweight documentation generator with jinja2 templates.</small>
+        <div class="pannel">
+          <menu class="main">
+            <span class="item ">
+                <a href="index.html" title="" >About</a></span>
+            <span class="item ">
+                <a href="tools.html" title="" >Tools</a></span>
+            <span class="item selected">
+                <a href="templates.html" title="" >Templates</a></span>
+            <span class="item ">
+                <a href="api.html" title="" >Api Reference</a></span>
+            <span class="item ">
+                <a href="licence.html" title="">Licence</a></span>
+            <span class="item">
+                <a href="https://github.com/PoorHttp/Jinja24Doc">GitHub</a></span>
+            <span class="item">
+                <a href="https://github.com/PoorHttp/Jinja24Doc/issues">Issues</a></span>
+            <span class="item"
+                ><a href="https://pypi.python.org/pypi/Jinja24Doc">PyPI</a></span>
+          </menu>
+        </div>      </div>
+
+      <menu class="sidebar">
+<h2><a href="#">Basic usage</a></h2>
+<h3><a href="#">Public templates</a></h3>
+<h2><a href="#">Data structure</a></h2>
+<h2><a href="#">Writing documentation</a></h2>
+<h2><a href="#context">Module context</a></h2>
+<h3><a href="#log">def log</a></h3>
+      </menu><!-- sidebar --!>
+
+      <div class="content">
+        <div><p>The main power of Jinja2doc environment is Jinja2 templates which is use for
+formating documentation output. First, Jinja2doc was be create for python modules
+documentation.</p>
+
+
+<a name="basic-usage"></a><h2>Basic usage<span class="links"><a href="#basic-usage">link</a> | <a href="#">top</a></span></h2>
+<p>There are few function, which is available in jinja2 templates. First two
+load_module, load_rst and load_wiki returns documentation list. Function
+load_wiki is deprecated alias for load_wiki.</p>
+
+<pre class="code jinja">
+<i>{%</i> <b>set</b> api = load_module(<i>&apos;module&apos;</i>) <i>%}</i>
+<i>{%</i> <b>set</b> rst_sections = load_rst(<i>&apos;file.rst&apos;</i>) <i>%}</i>
+<i>{%</i> <b>set</b> wiki_sections = load_wiki(<i>&apos;file.wiki&apos;</i>) <i>%}</i>
+</pre>
+<p>Other functions works with string, they format it. Function rst generate html
+string formated with base rst syntax, wiki for wiki formated text. It know
+headers, bold text, parameter padding, code block or paragraphs defined with
+double newline. Both of these functions could create PEP and RFC links to api
+definition. If you want to create api links, you must fill api regex variable
+by keywords function first.</p>
+
+<pre class="code jinja">
+<i>{%</i> <b>do</b> keywords(api, <i>&apos;api_page.html&apos;</i>) <i>%}</i>
+<i>{{</i> wiki(api[<u>0</u>][<u>3</u>]) <i>}}</i>   <i>{# put to document formated first documentation #}</i>
+                        <i>{# from api (it wold be module documentation #}</i>
+</pre>
+<p>Keywords function returns empty string, so you can call it from {{ }} block.
+Next, keywords rewrite internal variables api regex and api link, so in this
+moment, there cant do api linking for more than one page. If you have more
+than one module on one page, you can join api variable from both of them.</p>
+
+<pre class="code jinja">
+<i>{%</i> <b>set</b> api = load_module(<i>&apos;first_module&apos;</i>) <i>%}</i>
+<i>{%</i> <b>set</b> api = api + load_module(<i>&apos;second_module&apos;</i>) <i>%}</i>
+<i>{%</i> <b>do</b> keywords(api, <i>&apos;api_page.html&apos;</i>) <i>%}</i>
+<i>{{</i> wiki(api[<u>0</u>][<u>3</u>]) <i>}}</i>
+</pre>
+
+<a name="public-templates"></a><h3>Public templates<span class="links"><a href="#public-templates">link</a> | <a href="#">top</a></span></h3>
+<p>There are some public templates, which you can find in
+<code>share/jinja24doc/templates</code> directory.</p>
+
+<dl>
+<dt><code>module.html</code></dt>
+<dd><p>This template is use by rst24doc and wiki24doc command tools
+to generate documentation from python module by one command.</p></dd>
+<dt><code>text.html</code></dt>
+<dd><p>Like module.html, but for generate documentation from text
+source file.</p></dd>
+<dt><code>_simple.html</code></dt>
+<dd><p>Simple html web page. Style is included.</p></dd>
+<dt><code>_simple_with_submodules.html</code></dt>
+<dd><p>Simple html web page. Style is included. All submodules are included
+recursive. This could be demo, how you can generate manual from your code
+recursively.</p></dd>
+<dt><code>_reference.html</code></dt>
+<dd><p>This template generates html pages looks like Jinja24Doc manual. There are
+some different styles:<code>red.css, blue.css, green.css, gray.css</code> and
+<code>inverse.css</code> which you can use with this template. You must only copy to
+output directory as style.css ;) <code>_reference.html</code> template is used in
+<code>module.html</code></p></dd>
+<dt><code>_text.html</code></dt>
+<dd><p>This template looks like <code>_reference.html</code>, but it is prepare to generate
+html page from text. This template needs <b>sections</b> instead of api variable,
+which looks contain data generate from text file. See to <a href="#Context.load_rst" title="(self, rstfile, link='link', top='top', system_message=False)">Context.load_rst</a> or
+<a href="#Context.load_wiki" title="(self, textfile, link='link', top='top')">Context.load_wiki</a> functions.</p><p>Like reference.html template, this use styles too, so You must only copy to
+output directory as style.css too.</p></dd>
+</dl>
+
+<a name="data-structure"></a><h2>Data structure<span class="links"><a href="#data-structure">link</a> | <a href="#">top</a></span></h2>
+<p>The documentation list which returns functions load_module, load_rst and
+load_wiki looks like that:</p>
+
+<pre class="code python">
+((<kbd>type</kbd>, name, args, documentation),)    <i># all values are strings</i>
+</pre>
+<p>Of course, some items don&apos;t have all values, so on their place is None or
+another value, typical for their type. Modules could have author, date and version,
+if it available. Submodules, do not have documentation. Dependences are modules,
+which is not import, but there is import some routines from that. And variables
+jave value instead of arguments. If you want to doing documentation for it, that is
+comment on one line before. Next list is typical for load_module
+function.</p>
+
+<pre class="code python">
+((<i>&apos;module&apos;</i>, <i>&apos;name&apos;</i>, (<i>&apos;author&apos;</i>, <i>&apos;date&apos;</i>, <i>&apos;version&apos;</i>), <i>&apos;documentation&apos;</i>),
+ (<i>&apos;submodule&apos;</i>, <i>&apos;name&apos;</i>, <b>None</b>, <i>&apos;&apos;</i>),
+ (<i>&apos;dependence&apos;</i>, <i>&apos;name&apos;</i>, <b>None</b>, <i>&apos;&apos;</i>),
+ (<i>&apos;class&apos;</i>, <i>&apos;ClassName&apos;</i>, <b>None</b>, <i>&apos;documentation&apos;</i>),
+ (<i>&apos;property&apos;</i>, <i>&apos;ClassName.name&apos;</i>, (READ, WRITE, DELETE), <i>&apos;documentation&apos;</i>)),
+ (<i>&apos;descriptor&apos;</i>, <i>&apos;ClassName.name&apos;</i>, args, <i>&apos;documentation&apos;</i>)),
+ (<i>&apos;method&apos;</i>, <i>&apos;ClassName.name&apos;</i>, args, <i>&apos;documentation&apos;</i>)),
+ (<i>&apos;staticmethod&apos;</i>, <i>&apos;ClassName.name&apos;</i>, args, <i>&apos;documentation&apos;</i>)),
+ (<i>&apos;function&apos;</i>, <i>&apos;name&apos;</i>, args, <i>&apos;documentation&apos;</i>),
+ (<i>&apos;variable&apos;</i>, <i>&apos;name&apos;</i>, value, <i>&apos;documentation&apos;</i>))
+</pre>
+<p>For load_rst and load_wiki function is this typical list:</p>
+
+<pre class="code python">
+((<i>&apos;h1&apos;</i>, <i>&apos;title&apos;</i>, <b>None</b>, <i>&apos;&apos;</i>),     <i># = title =</i>
+ (<i>&apos;h2&apos;</i>, <i>&apos;title&apos;</i>, <b>None</b>, <i>&apos;&apos;</i>),     <i># == title ==</i>
+ (<i>&apos;h3&apos;</i>, <i>&apos;title&apos;</i>, <b>None</b>, <i>&apos;&apos;</i>),     <i># === title ===</i>
+ (<i>&apos;h4&apos;</i>, <i>&apos;title&apos;</i>, <b>None</b>, <i>&apos;&apos;</i>),     <i># ==== title ====</i>
+ (<i>&apos;text&apos;</i>, <i>&apos;&apos;</i>, <b>None</b>, <i>&apos;text to end or next header&apos;</i>))
+</pre>
+
+<a name="writing-documentation"></a><h2>Writing documentation<span class="links"><a href="#writing-documentation">link</a> | <a href="#">top</a></span></h2>
+<p>The best way, is write documentation in <a href="http://www.python.org/dev/peps/pep-0257/">PEP 257</a>. Documentation which is gets
+from pytnon elements is read with inspect.getdoc function. This function reads
+element.__doc__ variable, so this variable is fill by creating comment in
+element definition.</p>
+
+<p>Problem could be variables. Jinja24Doc (and python documentation system) cant
+set documentation for variable. But some documentation system, and jinja2doc
+too have some special mechanisms how to get variable documentation. Jinja24Doc
+looks for previous line of first variable definition. So you can create
+one-line documentation make by comments.</p>
+
+<pre class="code python">
+<i># this is comment ehmm documentation for this nice new instance</i>
+foo = Foo()
+
+<i># this is not documentation for foo, because this is second definition of</i>
+<i># it</i>
+foo = Goo()
+</pre>
+</div>
+
+        <h2 class="module"><a name="context"></a>
+          <i>module</i> context
+          <span class="links">
+            <a href="#context">link</a> |
+            <a href="#">top</a></span>
+</h2>
+<div class="module">
+Library use context object
+</div>
+        <div class="submodules">
+          <small>Module dependences:</small>
+          <span class="dependence">jinja2.environment</span>
+,
+          <span class="dependence">jinja2.loaders</span>
+,
+          <span class="dependence">jinja24doc.apidoc</span>
+,
+          <span class="dependence">jinja24doc.rst</span>
+,
+          <span class="dependence">jinja24doc.wiki</span>
+,
+          <span class="submodule">path</span>
+,
+          <span class="dependence">posix</span>
+        </div><!-- /submodules -->
+        <h3 class="class"><a name="Context"></a>
+          <i>class</i> Context
+          <span class="links">
+            <a href="#Context">link</a> |
+            <a href="#">top</a></span>
+</h3>
+<div class="class">
+Class based on ApiDoc.
+</div>
+        <h4 class="method"><a name="Context.generate"></a>
+          <i>def</i> generate(self, template, **kwargs)
+          <span class="links">
+            <a href="#Context.generate">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Generate html output from template.
+</div>
+        <h4 class="method"><a name="Context.keywords"></a>
+          <i>def</i> keywords(self, api, api_url=&#39;&#39;, types=(&#39;module&#39;, &#39;class&#39;, &#39;method&#39;, &#39;staticmethod&#39;, &#39;descriptor&#39;, &#39;property&#39;, &#39;variable&#39;, &#39;function&#39;, &#39;h1&#39;, &#39;h2&#39;, &#39;h3&#39;))
+          <span class="links">
+            <a href="#Context.keywords">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Fill internal api_url variable from names of modules, classes,
+functions, methods, variables or h1, h2 and h3 sections. With this,
+wiki can create links to this functions  or classes.
+<pre class="jinja">
+    <b>{%</b> <b>set</b> api = load_module(<i>'module'</i>) <b>%}</b>
+
+    {# create api rexex <b>for</b> <b>from</b> module where api will be on
+       module_api.html #}
+    <b>{%</b> do keywords(api, <i>'module_api.html'</i>) <b>%}</b>
+
+    <i>{# create api rexex from module where api will be on same page #}</i>
+    <b>{%</b> do keywords(api) <b>%}</b>
+
+    <i>{# another way how to call keywords function without do keyword #}</i>
+    <b>{{</b> keywords(api) <b>}}</b>    <i>{# keywords function return empty string #}</i></pre>
+Nice to have: there could be nice, if will be arguments in title, so
+mouseover event show some little detail of functions, methods or
+variables.
+</div>
+        <h4 class="method"><a name="Context.linked_api"></a>
+          <i>def</i> linked_api(self, doc)
+          <span class="links">
+            <a href="#Context.linked_api">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Append link to api to html.<br><br>
+
+Function is called by <a href="#Context.wiki" title="(self, doc, link='link', top='top', name='__doc__', section_level=2, system_message=False)">Context.wiki</a> or <a href="#Context.rst" title="(self, doc, link='link', top='top', title='__doc__', section_level=2, system_message=False)">Context.rst</a>.
+</div>
+        <h4 class="method"><a name="Context.load_module"></a>
+          <i>def</i> load_module(self, module)
+          <span class="links">
+            <a href="#Context.load_module">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Get documentation of function, variables and classes from module.<br><br>
+
+Example:
+<pre class="jinja">
+    <b>{%</b> <b>set</b> api = load_module(<i>'module'</i>) <b>%}</b>
+    <b>{%</b> <b>for</b> type, name, args, doc = api[<u>0</u>] <b>%}</b>
+        ...</pre>
+</div>
+        <h4 class="method"><a name="Context.load_rst"></a>
+          <i>def</i> load_rst(self, rstfile, link=&#39;link&#39;, top=&#39;top&#39;, system_message=False)
+          <span class="links">
+            <a href="#Context.load_rst">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Load reStructuredText file and create docs list of headers and text.<br><br>
+
+Parameters:<br>
+<code class="param">rstfile </code>- string, reStructured source file name (readme.rst)<br>
+<code class="param">link </code>- link label for headers. If is empty, link href will be<br>
+<code class="param">    </code>hidden.<br>
+<code class="param">top </code>- top label for headers. If is empty, top href will be hidden.
+<pre class="jinja">
+    <b>{%</b> <b>set</b> sections = load_rst(<i>'readme.rst'</i>, <i>''</i>, <i>''</i>) <b>%}</b>
+    <b>{%</b> type, filename, _none_, text = sections[-<u>1</u>] <b>%}</b></pre>
+</div>
+        <h4 class="method"><a name="Context.load_source"></a>
+          <i>def</i> load_source(self, srcfile, code=&#39;python&#39;)
+          <span class="links">
+            <a href="#Context.load_source">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Load source and format them as code
+<pre class="jinja">
+    <b>{{</b> load_source(<i>'example.py'</i>) <b>}}</b>
+    <b>{{</b> load_source(<i>'example.ini'</i>, <i>'ini'</i>) <b>}}</b></pre>
+</div>
+        <h4 class="method"><a name="Context.load_text"></a>
+          <i>def</i> load_text(self, textfile)
+          <span class="links">
+            <a href="#Context.load_text">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Deprecated alias for Wiki.load_wiki.
+</div>
+        <h4 class="method"><a name="Context.load_wiki"></a>
+          <i>def</i> load_wiki(self, textfile, link=&#39;link&#39;, top=&#39;top&#39;)
+          <span class="links">
+            <a href="#Context.load_wiki">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Load file and create docs list of headers and texts.<br>
+<code class="param">textfile </code>- string, text file name (manual.txt)<br>
+<code class="param">link </code>- link label for headers. If is empty, link href will be<br>
+<code class="param">    </code>hidden.<br>
+<code class="param">top </code>- top label for headers. If is empty, top href will be hidden.
+<pre class="jinja">
+    <b>{%</b> <b>set</b> sections = load_wiki(<i>'file.txt'</i>, <i>''</i>, <i>''</i>) <b>%}</b>
+    <b>{%</b> type, filename, _none_, text = sections[-<u>1</u>] <b>%}</b></pre>
+</div>
+        <h4 class="method"><a name="Context.prepare_environment"></a>
+          <i>def</i> prepare_environment(self)
+          <span class="links">
+            <a href="#Context.prepare_environment">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Prepare jinja2 environment.<br><br>
+
+This method is called internal by <a href="#Context.generate" title="(self, template, **kwargs)">Context.generate</a> method, and append
+Conetxt methods to jinja2 template globals. So <a href="#Context.load_module" title="(self, module)">Context.load_module</a>,
+<a href="#Context.keywords" title="(self, api, api_url='', types=('module', 'class', 'method', 'staticmethod', 'descriptor', 'property', 'variable', 'function', 'h1', 'h2', 'h3'))">Context.keywords</a>, local_name, property_info, wiki, <a href="#Context.load_wiki" title="(self, textfile, link='link', top='top')">Context.load_wiki</a>,
+<a href="#Context.load_text" title="(self, textfile)">Context.load_text</a>, <a href="#Context.load_source" title="(self, srcfile, code='python')">Context.load_source</a>, <a href="#Context.rst" title="(self, doc, link='link', top='top', title='__doc__', section_level=2, system_message=False)">Context.rst</a>, <a href="#Context.load_rst" title="(self, rstfile, link='link', top='top', system_message=False)">Context.load_rst</a>
+and <a href="#log" title="(message)">log</a> methods and functions are enabled to call in templates.
+</div>
+        <h4 class="method"><a name="Context.rst"></a>
+          <i>def</i> rst(self, doc, link=&#39;link&#39;, top=&#39;top&#39;, title=&#39;__doc__&#39;, section_level=2, system_message=False)
+          <span class="links">
+            <a href="#Context.rst">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Call reStructuredText docutil parser for doc and return it with html
+representation of reStructuredText formating. For more details see
+<a href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a>.
+</div>
+        <h4 class="method"><a name="Context.wiki"></a>
+          <i>def</i> wiki(self, doc, link=&#39;link&#39;, top=&#39;top&#39;, name=&#39;__doc__&#39;, section_level=2, system_message=False)
+          <span class="links">
+            <a href="#Context.wiki">link</a> |
+            <a href="#">top</a></span>
+</h4>
+<div class="method">
+Call some regular expressions on doc, and return it with html
+interpretation of wiki formating. If you want to create links to
+know api for your module, just call keywords function after gets
+full api documentation list.
+<pre class="jinja">
+    <b>{{</b> wiki(string) <b>}}</b>
+    <b>{{</b> wiki(<i>'=header1 ='</i>) <b>}}</b>            <i>{# &lt;h1&gt;header 1&lt;/h1&gt; #}</i>
+    <b>{{</b> wiki(<i>'=header2 ='</i>) <b>}}</b>            <i>{# &lt;h2&gt;header 2&lt;/h2&gt; #}</i>
+    <b>{{</b> wiki(<i>'=header3 ='</i>) <b>}}</b>            <i>{# &lt;h3&gt;header 3&lt;/h3&gt; #}</i>
+    <b>{{</b> wiki(<i>'=header4 ='</i>) <b>}}</b>            <i>{# &lt;h4&gt;header 4&lt;/h4&gt; #}</i>
+    <b>{{</b> wiki(<i>'*bold text*'</i>) <b>}}</b>           <i>{# &lt;b&gt;bold text&lt;/b&gt; #}</i>
+    <b>{{</b> wiki(<i>'/italic text/'</i>) <b>}}</b>         <i>{# &lt;i&gt;iatlic text&lt;/i&gt; #}</i>
+    <b>{{</b> wiki(<i>'{code text}'</i>) <b>}}</b>           <i>{# &lt;code&gt;code text&lt;/code&gt; #}</i>
+    <b>{{</b> wiki(<i>'<a href="http://a/b">http://a/b</a>'</i>) <b>}}</b></pre>
+Formated pre code type could be python (<i>default if not set</i>),
+jinja, ini or text. Text type stops highlighting. Code type
+must be on first line with hashbang prefix like in example:
+<pre class="text">
+    #!python
+    # simple python example
+    from poorwsgi import *
+
+    @app.route('/')                         # uri /
+    def root(req):
+        return 'Hello world %s' % 1234      # return text</pre>
+Looks that:
+<pre class="python">
+    <i># simple python example</i>
+    <b>from</b> poorwsgi <b>import</b> *
+<var>
+    @app.route</var>(<i>'/'</i>)                         <i># uri /</i>
+    <b>def</b> <em>root</em>(req):
+        <b>return</b> <i>'Hello world %s'</i> % <u>1234</u>      <i># return text</i></pre>
+Parameters padding:
+<pre class="text">
+    This is some text, which could be little bit long. Never mind
+    if text is on next line.
+        parameter - some text for parameter
+        parameter - some text for parameter</pre>
+Looks that:<br><br>
+
+This is some text, which could be little bit long. Never mind if
+text is on next line.<br>
+<code class="param">parameter </code>- some text for parameter<br>
+<code class="param">parameter </code>- some text for parameter
+</div>
+        <h3 class="function"><a name="log"></a>
+          <i>def</i> log(message)
+          <span class="links">
+            <a href="#log">link</a> |
+            <a href="#">top</a></span>
+</h3>
+<div class="function">
+Write message to stderr.
+<pre class="jinja">
+    <b>{%</b> do <a href="#log" title="(message)">log</a>(<i>'some debug message'</i>) <b>%}</b></pre>
+</div>
+      </div><!-- content --!>
+      <div class="footer">
+        <div class="line"></div>
+        <div class="credit">
+            Create by Ondřej Tůma (<a href="http://ipv6.mcbig.cz">McBig</a>).
+            &copy; 2013. Generate by
+            <a href="http://poorhttp.zeropage.cz/jinja24doc.html">Jinja24doc</a>.
+        </div>
+      </div><!-- footer --!>
+    </div><!-- page --!>
+  </body>
+</html>

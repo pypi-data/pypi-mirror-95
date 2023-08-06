@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jinja24Doc homepage documentation">
+    <meta name="keywords" content="jinja2 python generator documentation doc py html manual reference api">
+    <meta name="author" content="Ondřej Tůma McBig">
+
+    <title>Jinja24Doc for Python</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="web.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="page">
+
+      <div class="header">
+        <img class="right" src="small-logo.png" alt="logo">
+        <h1>Jinja24Doc for Python</h1>
+        <small>Lightweight documentation generator with jinja2 templates.</small>
+        <div class="pannel">
+          <menu class="main">
+            <span class="item ">
+                <a href="index.html" title="" >About</a></span>
+            <span class="item selected">
+                <a href="tools.html" title="" >Tools</a></span>
+            <span class="item ">
+                <a href="templates.html" title="" >Templates</a></span>
+            <span class="item ">
+                <a href="api.html" title="" >Api Reference</a></span>
+            <span class="item ">
+                <a href="licence.html" title="">Licence</a></span>
+            <span class="item">
+                <a href="https://github.com/PoorHttp/Jinja24Doc">GitHub</a></span>
+            <span class="item">
+                <a href="https://github.com/PoorHttp/Jinja24Doc/issues">Issues</a></span>
+            <span class="item"
+                ><a href="https://pypi.python.org/pypi/Jinja24Doc">PyPI</a></span>
+          </menu>
+        </div>      </div>
+
+
+
+      <menu class="sidebar">
+<h2><a href="#jinja24doc">jinja24doc</a></h2>
+<h2><a href="#rst24doc">rst24doc</a></h2>
+<h2><a href="#wiki24doc">wiki24doc</a></h2>
+      </menu>
+
+    <div class="content">
+      <div><p>There are some command tools for use. You can call this tools directly for
+generate your documentation page from source code or source template.</p>
+
+
+<a name="jinja24doc"></a><h2>jinja24doc<span class="links"><a href="#jinja24doc">link</a> | <a href="#">top</a></span></h2>
+<p>jinja24doc is command for processing templates. You can read how templates
+looks and what functions are you can call at extra
+<a href="jinja24doc_templates.html">template page</a>. In short, you can use create one
+simple template <code>template.html</code> like this:</p>
+
+<pre class="code jinja">
+<i>{%</i> <b>set</b> title = <i>&apos;Your Python Module&apos;</i> <i>%}</i>
+<i>{%</i> <b>set</b> api = load_module(<i>&apos;your_python_module&apos;</i>) <i>%}</i>
+<i>{%</i> <b>include</b> <i>&apos;_reference.html&apos;</i> <i>%}</i>
+</pre>
+<p>and next, call the jinja24doc tool with parameter of your template filename:</p>
+
+<pre>
+~$ jinja24doc template.html &gt; page.html
+</pre>
+<p>If you want to import modules from your package, which are not installed on
+system, or which are not in actual directory, you must set PYTHONPATH
+environment variable. Next example extend module search path to ./falias,
+./morias and ./poorwsgi directories:</p>
+
+<pre>
+~$ PYTHONPATH=falias:morias:poorwsgi jinja24doc template.html &gt; page.html
+</pre>
+<p>Tool automatically find templates in local path, and system templates path
+(<code>/usr/local/share/jinja24doc/templates</code>), or you can use path as second
+parameters.</p>
+
+<p>At this moment, jinja24doc can set files encoding, stylesheet, included
+stylesheet, top and link using. For more details use jinja24doc see help output
+(<code>--help</code> option).</p>
+
+
+<a name="rst24doc"></a><h2>rst24doc<span class="links"><a href="#rst24doc">link</a> | <a href="#">top</a></span></h2>
+<p>rst24doc command tool is tool like rst2html, but use jinja24doc. So it could
+generate documentation page direct from python module (file) or from
+reStructured text. Internally, rst24doc use <code>module.html</code> and <code>text.html</code>
+template. Using is simple as could be, type only:</p>
+
+<pre class="code sh">
+~$ rst24doc document.rst &gt; document.html    <i># for documentation page from text
+</i>~$ rst24doc module.py &gt; module.html         <i># for documentation page from module</i>
+</pre>
+<p>Tool options are the same as jinja24doc. So you can configure some runtime
+variables like top, link, encoding etc.</p>
+
+
+<a name="wiki24doc"></a><h2>wiki24doc<span class="links"><a href="#wiki24doc">link</a> | <a href="#">top</a></span></h2>
+<p>wiki24doc command tool is tool like rst24doc, but use wiki formating documentation
+source. Wiki formating using in Jinja24doc is like AsciiDoc and may be it could be
+replace in future. Tool use same internal templates like rst24doc and the same
+option interface. See little example:</p>
+
+<pre class="code sh">
+~$ wiki24doc document.wiki &gt; document.html  <i># for documentation page from text
+</i>~$ wiki24doc module.py &gt; module.html        <i># for documentation page from module</i>
+</pre>
+</div>
+    </div>      <div class="footer">
+        <div class="line"></div>
+        <div class="credit">
+            Create by Ondřej Tůma (<a href="http://ipv6.mcbig.cz">McBig</a>).
+            &copy; 2013. Generate by
+            <a href="http://poorhttp.zeropage.cz/jinja24doc.html">Jinja24doc</a>.
+        </div>
+      </div><!-- footer --!>
+    </div><!-- page --!>
+  </body>
+</html>

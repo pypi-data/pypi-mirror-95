@@ -1,0 +1,5 @@
+[console_scripts]
+jinja24doc = jinja24doc.tools:jinja24doc
+rst24doc = jinja24doc.tools:rst24doc
+wiki24doc = jinja24doc.tools:wiki24doc
+

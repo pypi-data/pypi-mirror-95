@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jinja24Doc homepage documentation">
+    <meta name="keywords" content="jinja2 python generator documentation doc py html manual reference api">
+    <meta name="author" content="Ondřej Tůma McBig">
+
+    <title>Jinja24Doc for Python</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="web.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="page">
+
+      <div class="header">
+        <img class="right" src="small-logo.png" alt="logo">
+        <h1>Jinja24Doc for Python</h1>
+        <small>Lightweight documentation generator with jinja2 templates.</small>
+        <div class="pannel">
+          <menu class="main">
+            <span class="item selected">
+                <a href="index.html" title="" >About</a></span>
+            <span class="item ">
+                <a href="tools.html" title="" >Tools</a></span>
+            <span class="item ">
+                <a href="templates.html" title="" >Templates</a></span>
+            <span class="item ">
+                <a href="api.html" title="" >Api Reference</a></span>
+            <span class="item ">
+                <a href="licence.html" title="">Licence</a></span>
+            <span class="item">
+                <a href="https://github.com/PoorHttp/Jinja24Doc">GitHub</a></span>
+            <span class="item">
+                <a href="https://github.com/PoorHttp/Jinja24Doc/issues">Issues</a></span>
+            <span class="item"
+                ><a href="https://pypi.python.org/pypi/Jinja24Doc">PyPI</a></span>
+          </menu>
+        </div>      </div>
+
+
+
+      <menu class="sidebar">
+<h2><a href="#what-is-jinja24doc">What is Jinja24Doc</a></h2>
+<h2><a href="#documentation-in-few-seconds">Documentation in few seconds</a></h2>
+<h2><a href="#jinja24doc-as-library">Jinja24doc as library</a></h2>
+<h3><a href="#getting-jinja24doc">Getting Jinja24doc</a></h3>
+<h3><a href="#install-from-pypi">Install from PyPI</a></h3>
+<h3><a href="#develop-version-from-git">Develop version from git</a></h3>
+      </menu>
+
+    <div class="content">
+      <div>
+<a name="what-is-jinja24doc"></a><h2>What is Jinja24Doc<span class="links"><a href="#what-is-jinja24doc">link</a> | <a href="#">top</a></span></h2>
+<p>Jinja24Doc is lightweight documentation generator for python modules with
+jinja2 templates. It is part of <b>Poor Http</b> group tools (WSGI connector,
+WSGI/HTTP Server and mod_python connector). It could load modules and gets
+documentation for its items. No configuration is needed, only jinja2
+templates. Your or from jinja2doc package.</p>
+
+<p>It is more <b>powerful pydoc</b>, with style what you want. You can format
+your documentation string with some simple chars by wiki formating, which
+is similar to <em>AsciiDoc</em>. Or you can use standard reStructuredText format. Both
+of these markups parsers support <b>highlighting</b> and creating automatic links
+to <b>PEP</b>.</p>
+
+
+<a name="documentation-in-few-seconds"></a><h2>Documentation in few seconds<span class="links"><a href="#documentation-in-few-seconds">link</a> | <a href="#">top</a></span></h2>
+<p>There are three tools for your usage:
+<a href="http://poorhttp.zeropage.cz/jinja24doc_tools.html#rst24doc">rst24doc</a>,
+<a href="http://poorhttp.zeropage.cz/jinja24doc_tools.html#wiki24doc">wiki24doc</a> and
+<a href="http://poorhttp.zeropage.cz/jinja24doc_tools.html#jinja24doc">jinja24doc</a>.
+You can generate simple page like this with tools rst24doc and wiki24doc in
+one command:</p>
+
+<pre class="code bash">
+<i># if your module use reStructuredText formating in documentation strings
+</i>~$ rst24doc -O your_module.html --embed-stylesheet your_module.py
+<i># or if your module use wiki formating in documentation strings
+</i>~$ rst24doc -O your_module.html --embed-stylesheet your_module.py
+</pre>
+<p>Or you can create your own template, which import predefined templates from
+Jinja24doc. Your <code>template.html</code> could see like this:</p>
+
+<pre class="code jinja">
+<i>{%</i> <b>set</b> title = <i>&apos;Your Module&apos;</i> <i>%}</i>
+<i>{%</i> <b>set</b> api = load_module(<i>&apos;your_module&apos;</i>) <i>%}</i>
+<i>{%</i> <b>include</b> <i>&apos;_reference.html&apos;</i> <i>%}</i>
+</pre>
+<p>Than call the jinja24doc tool with right parameters from path where your
+python module is available:</p>
+
+<pre class="code bash">
+~$ jinja24doc --embed-stylesheet template.html &gt; your_module.html
+</pre>
+
+<a name="jinja24doc-as-library"></a><h2>Jinja24doc as library<span class="links"><a href="#jinja24doc-as-library">link</a> | <a href="#">top</a></span></h2>
+<p>There are three submodules which you could interest to:</p>
+
+<ul type="circle">
+<li><p><a href="http://poorhttp.zeropage.cz/jinja24doc_api.html#apidoc">apidoc</a> which
+contains base ApiDoc class to read python modules and create list of module
+items by method load_module.</p></li>
+<li><p><a href="http://poorhttp.zeropage.cz/jinja24doc_api.html#rst">rst</a> which contains
+Rst class based on ApiDoc to parse reStructuredText __doc__ or document.</p></li>
+<li><p><a href="http://poorhttp.zeropage.cz/jinja24doc_api.html#wiki">wiki</a> which contains
+Wiki class based on ApiDoc to parse wiki formated __doc__ or document.</p></li>
+<li><p><a href="http://poorhttp.zeropage.cz/jinja24doc_api.html#context">context</a> which
+contains Context class based on Rst and Wiki to couple all functionality
+to working with jinja2 templates.</p></li>
+<li><p><a href="http://poorhttp.zeropage.cz/jinja24doc_api.html#frontend">frontend</a> which
+contains some functions to easier create command tool like rst24doc, wiki24doc
+and jinja24doc.</p></li>
+</ul>
+
+
+<a name="getting-jinja24doc"></a><h3>Getting Jinja24doc<span class="links"><a href="#getting-jinja24doc">link</a> | <a href="#">top</a></span></h3>
+<p>Jinja24Doc needs Jinja2, docutils and distutils-tinyhtmlwriter package for
+build and or for install. So you must install it first.</p>
+
+
+<a name="install-from-pypi"></a><h3>Install from PyPI<span class="links"><a href="#install-from-pypi">link</a> | <a href="#">top</a></span></h3>
+<pre class="code sh">
+~$ pip install jinja24doc
+</pre>
+
+<a name="develop-version-from-git"></a><h3>Develop version from git<span class="links"><a href="#develop-version-from-git">link</a> | <a href="#">top</a></span></h3>
+<pre class="code sh">
+~$ git clone https://github.com/PoorHttp/Jinja24Doc.git
+~$ <kbd>cd</kbd> Jinja24Doc
+~$ python setup.py install
+</pre>
+</div>
+    </div>      <div class="footer">
+        <div class="line"></div>
+        <div class="credit">
+            Create by Ondřej Tůma (<a href="http://ipv6.mcbig.cz">McBig</a>).
+            &copy; 2013. Generate by
+            <a href="http://poorhttp.zeropage.cz/jinja24doc.html">Jinja24doc</a>.
+        </div>
+      </div><!-- footer --!>
+    </div><!-- page --!>
+  </body>
+</html>
