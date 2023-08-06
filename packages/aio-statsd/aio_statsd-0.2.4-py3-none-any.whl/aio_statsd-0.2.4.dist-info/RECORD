@@ -1,0 +1,10 @@
+aio_statsd/__init__.py,sha256=hZqq7tHg7eqOUwWmtnyRKnw3WH6rDopdwaupAtOt2RM,476
+aio_statsd/client.py,sha256=0njG5ytGW0qHwvLlXldHk3g8A9w4FTbt_eOVFTx2j4A,16149
+aio_statsd/connection.py,sha256=pzeVOqNBA28k8bCH_oC4h-HzZsS6dyN0mqIMNt6lffU,2435
+aio_statsd/protocol.py,sha256=2AfDL2TuoGulmPC6VfmJSjXX89Zr0cdrtv1fp_WJqCw,5651
+aio_statsd/transport_layer_protocol.py,sha256=dc5-XT-BjZwiedojDBh-GP8LFl4We4Im3x3TEvwPU1I,5277
+aio_statsd/utlis.py,sha256=HF5TEu0OVL7jZ1eXjmIyI2IWg3aFLeAYdHV8him1JP8,223
+aio_statsd-0.2.4.dist-info/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+aio_statsd-0.2.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aio_statsd-0.2.4.dist-info/METADATA,sha256=QAyplZkt-rzTrNzJThzNKT2fn1iEZqdJXzEsuDXQHw4,5749
+aio_statsd-0.2.4.dist-info/RECORD,,
