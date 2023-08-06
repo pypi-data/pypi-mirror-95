@@ -1,0 +1,15 @@
+NXTfusion/DataMatrix.py,sha256=6VvROeV47Smb423vipRl_nbLCdmCdgaLpKDHMgqp0x8,14955
+NXTfusion/Logger.py,sha256=GG7_KNOXAwEQQCkverLt9s1jQiCvcg7rT5ZU1onGO5k,4148
+NXTfusion/NXCollateUtils.py,sha256=YLPH-R4ljOv-7FsrwUb3fAkCvUPRC90r0eqQQauFffc,2158
+NXTfusion/NXDatasetUtils.py,sha256=K40asNH_jk-iIPj7zQNMt-nkrBGFu7RWqDJv3aLacUU,8510
+NXTfusion/NXFeaturesConstruction.py,sha256=rdBwB1S7treswFvNs2WOuAGauOXQxFs3tMUIcWlHloo,9614
+NXTfusion/NXLosses.py,sha256=l3mi2hqAL6MzwLqyjs69ZcZWunH5sgzXzjDy5uqEl4g,3729
+NXTfusion/NXMetaLoaderUtils.py,sha256=fkbBDkWj8qabb87l98lSfk-hphviQMuFeQtOnuGz4EE,749
+NXTfusion/NXTfusion.py,sha256=_LuFKfrfC-xHcNwYdlEZzOWffMtKd_pqgrkzJzAE3eQ,11390
+NXTfusion/NXmodels.py,sha256=nif8oIujE1ZpLo0tpDKsCGeXpXfNjEXfCo25ROJu2yQ,970
+NXTfusion/NXmultiRelSide.py,sha256=YM5QE9rFQOEQjYJ8xt83CsNk63U7u1h9joTjjKkz9DY,16872
+NXTfusion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NXTfusion-0.0.5.dist-info/METADATA,sha256=mtREnF-tl1aNySt3CgCbCxbJvZhPjlxcR2_nXX7sfu0,4452
+NXTfusion-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+NXTfusion-0.0.5.dist-info/top_level.txt,sha256=d_CG2R_gHIzVsm_2F4XO9pGpR-PsSY10p3ruW5PeU2I,10
+NXTfusion-0.0.5.dist-info/RECORD,,

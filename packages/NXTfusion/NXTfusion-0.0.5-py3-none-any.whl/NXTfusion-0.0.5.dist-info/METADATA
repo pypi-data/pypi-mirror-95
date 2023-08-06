@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: NXTfusion
+Version: 0.0.5
+Summary: Non linear data fusion over Entity Relation graphs
+Home-page: https://bitbucket.org/eddiewrc/nxtfusion/src/master/
+Author: Daniele Raimondi
+Author-email: daniele.raimondi@kuleuven.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: multipledispatch
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+# WHAT IS NXTfusion #
+
+NXTfusion is a Neural Network based data fusion method that extends the classical Matrix Factorization paradigm by allowing non-linear inference over arbitrariy connected Entity-Relation Graphs (ER graphs). 
+
+### What is this an Entity-Relation graph? ###
+
+An ER graph is an abstract data structure, similar to a relational database, that allows to model classes of objects (Entities) and relations between them (Relations). Examples from the scientific world include the Protein and Drugs entities and one of the possible relations between them could indicate the Protein-Drug interaction betwen them (https://arxiv.org/abs/1512.00315). Other examples can be gene prioritization tools, that try to discover associations between the entities Genes and Diseases. 
+
+*In general, we each relation corresponds to a possibly sparsely observed matrix and the entities are the objects represented as rows and columns on that matrix.*
+
+In the classical Matrix Factorization paradigm, usually only a single matrix Y = UV is factorized into two latent matrices U and V, meaning that a single interaction (Y) between two entities (of which U and V are the latent representation) is considered. An extension to this is the Tensor Factorization (e.g. https://arxiv.org/abs/1512.00315), where multiple matrices/relations between two entities are factorized at the same time.
+
+Real world data is nevertheless richer than this, and a problem might be characterized by many relations between many pairs of objects, thus forming a complex graph of entities (the nodes) connected by relations (the edges). One of the pioneers of multi-relation data fusion used matrix tri-factorization and proposed this library https://github.com/mims-harvard/scikit-fusion.
+
+Here we further extend the field of data fusion by building a Neural Network-based data fusion framework for non-linear inference over completely arbitrary ER graphs.
+
+### What is this repository for? ###
+
+The code here contains a pytorch-based python3 library taht should allow anyone to use our Entity-Relation data fusion framework on your data science problem of choice. An example of its application, on protein-protein interaction is available here:https://bitbucket.org/eddiewrc/nxtppi/src/master/, and it has been published here: https://doi.org/10.1093/bioinformatics/btab092 . 
+
+### How do I set it up? ###
+
+You can find the full documentation at https://nxtfusion.readthedocs.io/en/latest/index.html .
+
+You can install NXTfusion either from this repo or from our pypi package. In either ways, we recommend to follow these steps:
+
+First, set up a dedicated conda environment, to avoid problems with existing softwares.
+
+* Download and install miniconda from `https://docs.conda.io/en/latest/miniconda.html`
+* Create a new conda environment by typing: `conda create -n nxtfusion -python=3.6`
+* Enter the environment by typing: `conda activate nxtfusion`
+
+If you want to install NXTfusion from this repo, you need to install the dependencies first.
+
+* Install pytorch >= 1.0 with the command: `conda install pytorch -c pytorch` or refer to pytorch website https://pytorch.org
+* Install the remaining requirements with the command: `conda install scipy numpy multipledispatch`
+
+You can remove this environment at any time by typing: conda remove -n nxtfusion --all
+
+If you want to install it via Pypi, just add `pip` to your conda environment:
+`conda install pip`
+
+and then just type:
+
+`pip install nxtfusion`
+
+and all the required dependencies will be installed automatically.
+Congrats, you're ready to rock!
+
+
+### User Guide ###
+
+For the full documentation, go to https://nxtfusion.readthedocs.io/en/latest/index.html .
+
+### Who do I talk to? ###
+
+Please report bugs at the following mail address:
+daniele DoT raimondi aT kuleuven DoT be
+
+
+
