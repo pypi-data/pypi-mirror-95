@@ -1,0 +1,4 @@
+include miat/icons/*.png
+include README.md
+include LICENSEinclude versioneer.py
+include miat/_version.py
