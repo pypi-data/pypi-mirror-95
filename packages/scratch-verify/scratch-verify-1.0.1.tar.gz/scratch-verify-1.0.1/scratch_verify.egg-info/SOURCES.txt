@@ -1,0 +1,7 @@
+setup.py
+scratch_verify/__init__.py
+scratch_verify.egg-info/PKG-INFO
+scratch_verify.egg-info/SOURCES.txt
+scratch_verify.egg-info/dependency_links.txt
+scratch_verify.egg-info/requires.txt
+scratch_verify.egg-info/top_level.txt
