@@ -1,0 +1,3 @@
+[console_scripts]
+protocol-scraper = protocolScraper.protocolScraper:cli
+
