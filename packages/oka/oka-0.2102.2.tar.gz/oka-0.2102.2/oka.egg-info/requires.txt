@@ -1,0 +1,9 @@
+requests
+python-dotenv
+tatu
+
+[dev]
+check-manifest
+
+[test]
+coverage
