@@ -1,0 +1,3 @@
+[console_scripts]
+audict = audict:main
+
