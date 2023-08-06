@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Multi-function-clock
+Version: 0.0.1
+Summary: Universal clock
+Home-page: https://github.com/pypa/sampleproject
+Author: CNlong
+Author-email: T3464356490@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This is a universal clock
+You can count down
+Get the current time
+Get world time
+===================================
+usage method
+import Multi_function_clock as f
+f.timenow         <current time>
+f.worldhour(time zone))     <World time>
+f.timeF(second)  <count down>
+
+
+
