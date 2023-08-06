@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+aws_cdk_test_synth/__init__.py
+aws_cdk_test_synth/test_synth.py
+aws_cdk_test_synth.egg-info/PKG-INFO
+aws_cdk_test_synth.egg-info/SOURCES.txt
+aws_cdk_test_synth.egg-info/dependency_links.txt
+aws_cdk_test_synth.egg-info/top_level.txt
+tests/__init__.py
+tests/s3_stack.py
+tests/test_s3_stack.py
+tests/test_synth.py
