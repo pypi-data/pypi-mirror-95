@@ -1,0 +1,3 @@
+[console_scripts]
+ultraplex_frog = ultraplex.__main__:main
+
