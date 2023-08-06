@@ -1,0 +1,11 @@
+acm_dl_searcher/__init__.py,sha256=E7XhEVnwhoH8iY8Ks7yh5MXMZxeRwmGSG1n4VRbCvBc,300
+acm_dl_searcher/__main__.py,sha256=YwBEspXENsLkhF-Nih_bp1RDcGW2ZmBwsa0cyNZ2yRM,8335
+acm_dl_searcher/_utils.py,sha256=qeoq7HnfqoRkw83YtS1MD0W9_nt_1Av8dGHT-dBnfe8,992
+acm_dl_searcher/cli.py,sha256=RMfBMfBul4VO6swheVNDBXfq3JHtvNehGiGJNWV7rZw,3742
+acm_dl_searcher/search_operations.py,sha256=z9B9_2iD8kM8kBlYfA8BCDv-IBANcc7tzFxENtZCe_s,1895
+acm_dl_searcher/templates/search_result.html,sha256=K_w10NXDzp3iWUS1OpJTMjOy_6UxqhgDqqTVYPCR4aY,1945
+acm_dl_searcher-0.1.0a3.dist-info/entry_points.txt,sha256=ORGXKUpU7lZPqz5LKmKjnCckmu8QwQcXWlNrbGYi9dM,59
+acm_dl_searcher-0.1.0a3.dist-info/LICENSE,sha256=pFtsOOqfhiYcB0HVQ1AAE9KCf9YPsMUkzma2tn35JX4,1071
+acm_dl_searcher-0.1.0a3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+acm_dl_searcher-0.1.0a3.dist-info/METADATA,sha256=O7j8sPrrGM08mEBlbP67PbwjlHAkqxT5CYsDnWiG4NI,3489
+acm_dl_searcher-0.1.0a3.dist-info/RECORD,,
