@@ -1,0 +1,6 @@
+include *.py
+include *.txt
+include LICENSE
+recursive-include clib/include/humon *.h
+recursive-include tests *.hu
+recursive-include tests *.py

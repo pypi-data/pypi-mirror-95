@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: humon
+Version: 0.0.3
+Summary: A Python wrapper over humon's C API, for reading Humon token streams.
+Home-page: https://github.com/spacemeat/humon-py
+Author: Trevor Schrock
+Author-email: spacemeat@gmail.com
+License: UNKNOWN
+Description: # humon-py
+        
+        This is a Python3 package for reading [Humon|https://github.com/spacemeat/humon] token streams.
+        
+        # Installing humon-py
+        
+        To install and use in python:
+        
+        ```bash
+        $ pip install humon
+        ```
+        
+        ## Usage
+        
+        ```python
+        from humon import humon
+        t = humon.Trove.fromString('{foo:bar}')
+        print (t.root['foo'])
+        ```
+        
+        # Developing humon-py
+        
+        To install humon-py and the tools needed to develop and run tests, run the following:
+        
+        ```bash
+        $ pip install -e .[dev]
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
