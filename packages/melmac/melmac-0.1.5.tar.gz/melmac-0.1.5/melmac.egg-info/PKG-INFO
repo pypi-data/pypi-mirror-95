@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: melmac
+Version: 0.1.5
+Summary: A package specialized in neural multilabel and multiclass text classification.
+Home-page: UNKNOWN
+Author: Janos Borst
+Author-email: borst@informatik.uni-leipzig.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7

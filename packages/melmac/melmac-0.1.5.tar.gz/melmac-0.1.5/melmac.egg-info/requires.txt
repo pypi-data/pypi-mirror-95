@@ -1,0 +1,13 @@
+transformers
+nltk
+scikit-learn
+pytorch-ignite
+tqdm
+networkx
+bs4
+pytest
+pytest-cov
+rdflib
+h5py
+datasketch
+torch>=1.5.1
