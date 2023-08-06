@@ -1,0 +1,5 @@
+webob
+cherrypy
+whitenoise
+parse
+jinja2
