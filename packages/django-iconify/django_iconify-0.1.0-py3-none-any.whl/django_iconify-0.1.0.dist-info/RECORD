@@ -1,0 +1,12 @@
+LICENSE,sha256=ibhnAeX_ee7ucHWL5ozcYLb8OPtO3zZYaM3Z06eXhhA,11348
+dj_iconify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_iconify/apps.py,sha256=G85j4hTbGAFnpEwgGQ2DfvRXKoIFe7m32puhtoyRxII,116
+dj_iconify/conf.py,sha256=r0GAhWxmBmfQR7QzcBz6YV2MAuvvL_wTk_n8eth941o,153
+dj_iconify/types.py,sha256=ogGlnAAT8KCXkfHICEfjBK5-4ht_aP7kiCHqtw8PjqY,14256
+dj_iconify/urls.py,sha256=14oiAXv4EnbqBN2KrYJqzhPTUNdBO17dy6XTvGhrg0A,618
+dj_iconify/util.py,sha256=exBZvlaTlWHC0tMVK_9CtolwDrIPhNPwCgdu5G_geV4,508
+dj_iconify/views.py,sha256=425NDA-6KFkyO99d_h9BaH7JgmA_defFDJ1DrAv_eKA,6420
+django_iconify-0.1.0.dist-info/LICENSE,sha256=ibhnAeX_ee7ucHWL5ozcYLb8OPtO3zZYaM3Z06eXhhA,11348
+django_iconify-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_iconify-0.1.0.dist-info/METADATA,sha256=xDlTQjwfI5pZps3FsNVcRvAqisYIHjYAN7gHJFtwsEQ,5243
+django_iconify-0.1.0.dist-info/RECORD,,
