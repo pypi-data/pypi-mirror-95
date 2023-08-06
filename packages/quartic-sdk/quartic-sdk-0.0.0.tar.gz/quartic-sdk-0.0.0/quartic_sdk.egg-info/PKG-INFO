@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: quartic-sdk
+Version: 0.0.0
+Summary: QuarticSDK is the SDK package which exposes the APIs to the user
+Home-page: https://github.com/Quarticai/QuarticSDK/
+Author: Quartic.ai engineering team
+Author-email: tech@quartic.ai
+License: MIT
+Description: # QuarticSDK
+        
+Keywords: Quartic,QuarticSDK
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
