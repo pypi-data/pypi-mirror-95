@@ -1,0 +1,129 @@
+31a32
+> #include "ttranslate.h"
+64,75d64
+< static int gtkwavetcl_nop(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST objv[])
+< {
+< (void)clientData;
+< (void)interp;
+< (void)objc;
+< (void)objv;
+< 
+< /* nothing, this is simply to call gtk's main loop */
+< gtkwave_main_iteration();
+< return(TCL_OK);
+< }
+< 
+109a99,116
+> static int gtkwavetcl_nop(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST objv[])
+> {
+>   (void)clientData;
+>   (void)interp;
+>   (void)objc;
+>   (void)objv;
+> 
+>   /* vcd_parse_partial(); */
+>   kick_partial_vcd();
+>   /* nothing, this is simply to call gtk's main loop */
+>   gtkwave_main_iteration();
+> 
+>   TimeType value = GLOBALS->max_time;
+>   return(gtkwavetcl_printTimeType(clientData, interp, objc, objv, value));
+>   /* return(TCL_OK); */
+> }
+> 
+> 
+212a220,245
+> 
+> extern GtkWidget *top_table;
+> extern GtkWidget *menubar;
+> 
+> static int gtkwavetcl_toggleStripGUI(ClientData clientData, Tcl_Interp *interp, int objc, Tcl_Obj *CONST objv[])
+> {
+> 
+>   if (GLOBALS->signalwindow) {
+>     gtk_frame_set_label(GTK_FRAME(gtk_bin_get_child(GTK_BIN(GLOBALS->signalwindow))), NULL);
+>   }
+> 
+>   if (GLOBALS->wavewindow) {
+>     gtk_frame_set_label(GTK_FRAME(GLOBALS->wavewindow), NULL);
+>   }
+> 
+>   if (gtk_widget_get_visible(GTK_WIDGET(top_table))) {
+>       gtk_widget_hide(GTK_WIDGET(top_table));
+>       gtk_widget_hide(GTK_WIDGET(menubar));
+>   } else {
+>     gtk_widget_show(GTK_WIDGET(top_table));
+>     gtk_widget_show(GTK_WIDGET(menubar));
+>   }
+> 
+>   return(TCL_OK);
+> }
+> 
+1534a1568,1629
+> static gint pygears_keypress_handler(GtkWidget *widget, GdkEventKey *event, gpointer data)
+> {
+>   printf("$$KeyPress:%d,%d\n", event->state, event->keyval);
+>   return FALSE;
+> }
+> 
+> gint install_pygears_keypress_handler(void)
+> {
+>   gint rc =
+>     g_signal_connect(XXX_GTK_OBJECT(GLOBALS->mainwindow),
+>                      "key_press_event",G_CALLBACK(pygears_keypress_handler), NULL);
+> 
+>   return(rc);
+> }
+> 
+> static gint pygears_keyrelease_handler(GtkWidget *widget, GdkEventKey *event, gpointer data)
+> {
+>   printf("$$KeyRelease:%d,%d\n", event->state, event->keyval);
+>   return FALSE;
+> }
+> 
+> gint install_pygears_keyrelease_handler(void)
+> {
+>   gint rc =
+>     g_signal_connect(XXX_GTK_OBJECT(GLOBALS->mainwindow),
+>                      "key_release_event",G_CALLBACK(pygears_keyrelease_handler), NULL);
+> 
+>   return(rc);
+> }
+> 
+> #include <gdk/gdkx.h>
+> static int gtkwavetcl_getGtkWindowID(ClientData clientData, Tcl_Interp *interp,
+>                                     int objc, Tcl_Obj *CONST objv[]) {
+> 
+>   install_pygears_keypress_handler();
+>   install_pygears_keyrelease_handler();
+>   Window root = GDK_WINDOW_XID(GTK_WIDGET(GLOBALS->mainwindow)->window);
+>   char win_id[16];
+>   sprintf(win_id, "%lu", root);
+>   return(gtkwavetcl_printString(clientData, interp, objc, objv, win_id));
+> }
+> 
+> static int gtkwavetcl_signalValueAt(ClientData clientData, Tcl_Interp *interp,
+>                                     int objc, Tcl_Obj *CONST objv[]) {
+>   char *sig_name = NULL ;
+>   char val[2];
+>   TimeType time;
+> 
+>   sig_name = get_Tcl_string(objv[1]);
+>   if (objc == 2) {
+>     time = MAX_HISTENT_TIME - 1;
+>   } else {
+>     time = atoi_64(get_Tcl_string(objv[2]));
+>   }
+>   signal_value_at(sig_name, val, time);
+> 
+>   if (!val[0])
+>       return (gtkwavetcl_printString(clientData, interp, objc, objv, "e"));
+> 
+>   return(gtkwavetcl_printString(clientData, interp, objc, objv, val));
+> }
+> 
+2180a2276
+> 	{"toggleStripGUI",		gtkwavetcl_toggleStripGUI},
+2181a2278,2279
+> 	{"signalValueAt",                    gtkwavetcl_signalValueAt},
+> 	{"getGtkWindowID",                    gtkwavetcl_getGtkWindowID},

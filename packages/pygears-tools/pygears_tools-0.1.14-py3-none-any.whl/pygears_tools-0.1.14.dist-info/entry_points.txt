@@ -1,0 +1,3 @@
+[console_scripts]
+pygears-tools-install = pygears_tools.install:main
+

@@ -1,0 +1,300 @@
+62c62
+< #define WAVE_PARTIAL_VCD_RING_BUFFER_SIZE (1024*1024)
+---
+> #define WAVE_PARTIAL_VCD_RING_BUFFER_SIZE (16*1024*1024)
+1011d1010
+< 
+2590a2590,2788
+> vptr make_new_vect_node(vptr curr, TimeType time, const char* val) {
+>   curr->next = calloc_2(1, sizeof(struct VectorEnt) + strlen(val) + 1);
+>   strcpy((char *)curr->next->v, val);
+>   curr->next->time = time;
+>   /* printf("#%lu %s\n", time, val); */
+> 
+>   return curr->next;
+> }
+> 
+> unsigned ceil_log2(unsigned x) {
+>   int targetlevel = 1;
+>   while (x >>= 1) ++targetlevel;
+> 
+>   return targetlevel;
+> }
+> 
+> const char *status_vals[4] = {
+>                               "",
+>                               "?DarkRed?V",
+>                               "?DarkBlue?R",
+>                               "?DarkGreen?H"
+> };
+> 
+> int floor_to_step(int x, int step) {
+>   return (x / step) * step;
+> }
+> 
+> #define TR_REALLOCATED 		(UINT64_C(1)<<40)
+> 
+> void append_to_trace_vector(Trptr t) {
+>   if (GLOBALS->max_time == 0) {
+>     return;
+>   }
+>   /* printf("========================= %s ==========================\n", t->n.vec->bits->nodes[1]->nname); */
+>   hptr cur_ready = t->n.vec->bits->nodes[1]->curr;
+>   hptr cur_valid = t->n.vec->bits->nodes[0]->curr;
+> 
+>   vptr cur_vect = t->n.vec->vectors[t->n.vec->numregions - 3];
+>   int end_guard_len = 2;
+>   /* if ((t->n.vec->numregions == 5) && (GLOBALS->max_time > 0)) { */
+>   /*   cur_vect->time = -1; */
+>   /*   cur_vect = t->n.vec->vectors[1]; */
+>   /*   /\* end_guard_len++; *\/ */
+>   /* } */
+> 
+>   TimeType cur_time = cur_vect->time;
+> 
+>   if ((t->n.vec->numregions == 5) && (GLOBALS->max_time > 0)) {
+>     cur_time = -1;
+>   }
+>   int cur_val;
+>   char* status_str = (char*)cur_vect->v;
+>   int status_len = strlen(status_str);
+> 
+> 
+>   if (status_len) {
+>     if ((status_str[status_len - 1]) == 'V') {
+>       cur_val = 1;
+>     } else if ((status_str[status_len - 1]) == 'R') {
+>       cur_val = 2;
+>     } else if ((status_str[status_len - 1]) == 'H') {
+>       cur_val = 3;
+>     }
+>   } else {
+>     cur_val = 0;
+>   }
+> 
+>   /* If time has not lapsed, return immediatelly */
+>   if (cur_time == GLOBALS->max_time - 10) {
+>     /* printf("Time has not lapsed\n"); */
+>     return;
+>   }
+> 
+>   /* printf("cur_val=%d, max_time=%ld, cur_time=%ld, cur_ready=%d @%ld, cur_valid=%d @%ld\n", cur_val, GLOBALS->max_time-10, cur_time, cur_ready->v.h_val, cur_ready->time,  cur_valid->v.h_val, cur_valid->time); */
+> 
+>   /* If no new data and no need to fill handshakes, return immediatelly */
+>   if ((cur_ready->time <= cur_time) &&
+>       (cur_valid->time <= cur_time) &&
+>       (cur_val != 3)) {
+>     /* printf("No new data\n"); */
+>     return;
+>   }
+> 
+>   cur_ready = t->n.vec->bits->nodes[1]->head.next->next;
+>   cur_valid = t->n.vec->bits->nodes[0]->head.next->next;
+>   while(cur_ready->time < cur_time) {
+>     cur_ready = cur_ready->next;
+>   }
+>   while(cur_valid->time < cur_time) {
+>     cur_valid = cur_valid->next;
+>   }
+> 
+>   TimeType next_time = (cur_ready->time < cur_valid->time) ? cur_ready->time : cur_valid->time;
+>   vptr last_vect = cur_vect;
+>   vptr end_guard_vect = t->n.vec->vectors[t->n.vec->numregions - 2];
+>   int i = 0;
+>   int prev_val = 0;
+> 
+>   /* printf("cur_val=%d, max_time=%ld, cur_time=%ld, cur_vect_time=%ld, cur_ready_time=%ld, cur_valid_time=%ld\n", cur_val, GLOBALS->max_time-10, cur_time, cur_vect->time, cur_ready->time, cur_valid->time); */
+>   do {
+>     /* loops += 1; */
+>     /* if (loops > 200) { */
+>     /*   break; */
+>     /* } */
+> 
+>     if (next_time >= (MAX_HISTENT_TIME - 1)) {
+>       next_time = GLOBALS->max_time - 10;
+>     }
+> 
+>     prev_val = cur_val;
+>     if (cur_ready->time <= next_time) {
+>       if (cur_ready->v.h_val == AN_1) {
+>         cur_val |= 0x2;
+>       } else {
+>         cur_val &= 0x1;
+>       }
+>       cur_ready = cur_ready->next;
+>     }
+> 
+>     if (cur_valid->time <= next_time) {
+>       if (cur_valid->v.h_val == AN_1) {
+>         cur_val |= 0x1;
+>       } else {
+>         cur_val &= 0x2;
+>       }
+>       cur_valid = cur_valid->next;
+>     }
+> 
+>     /* printf("cur_val=%d, prev_val=%d, cur_time=%ld, next_time=%ld, cur_ready_time=%ld, cur_valid_time=%ld\n", cur_val, prev_val, cur_time, next_time, cur_ready->time, cur_valid->time); */
+>     if (next_time > cur_time) {
+> 
+>       if (prev_val == 3) {
+>         for (cur_time = floor_to_step(cur_time, 10) + 10; cur_time < next_time; cur_time += 10) {
+>           cur_vect = make_new_vect_node(cur_vect, cur_time, status_vals[3]);
+>           i++;
+>         }
+>       }
+> 
+>       if ((prev_val != cur_val) || (prev_val == 3)) {
+>         cur_time = next_time;
+>         cur_vect = make_new_vect_node(cur_vect, cur_time, status_vals[cur_val]);
+>         i++;
+>       }
+>     }
+> 
+>     next_time = (cur_ready->time < cur_valid->time) ? cur_ready->time : cur_valid->time;
+> 
+>     /* printf("cur_val=%d, prev_val=%d, cur_time=%lu, next_time=%lu, cur_ready_time=%lu, cur_valid_time=%lu\n", cur_val, prev_val, cur_time, next_time, cur_ready->time, cur_valid->time); */
+> 
+>   } while ((next_time < GLOBALS->max_time) && (cur_time < (GLOBALS->max_time - 10)));
+> 
+>   /* printf("------------------------------------------------------------------\n"); */
+> 
+>   if (cur_val == 3) {
+>     /* printf("Filling %lu -> %lu\n", cur_time, GLOBALS->max_time-10); */
+>     for (cur_time = floor_to_step(cur_time, 10) + 10; cur_time < GLOBALS->max_time; cur_time += 10) {
+>       cur_vect = make_new_vect_node(cur_vect, cur_time, status_vals[3]);
+>       i++;
+>     }
+>   }
+> 
+>   cur_vect->next = end_guard_vect;
+> 
+>   int regions = t->n.vec->numregions + i;
+>   bvptr bv;
+>   /* if ((t->n.vec->numregions <= 5) || (ceil_log2(t->n.vec->numregions) < ceil_log2(regions))) { */
+>   if ((!(t->flags & TR_REALLOCATED)) || (ceil_log2(t->n.vec->numregions) < ceil_log2(regions))) {
+>     /* printf("Realocatting (%d => %d) > %d\n", t->n.vec->numregions, regions, 1 << ceil_log2(regions)); */
+>     bv = calloc_2(1, sizeof(struct BitVector) + (sizeof(vptr) * (1 << (ceil_log2(regions)+1))));
+>     memcpy(bv, t->n.vec, sizeof(struct BitVector) + (sizeof(vptr) * (t->n.vec->numregions)));
+>     t->flags |= TR_REALLOCATED;
+>   } else {
+>     /* printf("Reusing (%d => %d)\n", t->n.vec->numregions, regions); */
+>     bv = t->n.vec;
+>   }
+> 
+>   vptr vt = last_vect->next;
+> 
+>   /* printf("Adding to chain: "); */
+>   for(i=t->n.vec->numregions-end_guard_len;i<regions;i++)
+>     {
+>       /* printf("%d, ", i); */
+>       bv->vectors[i] = vt;
+>       vt = vt->next;
+>     }
+>   /* printf("\n"); */
+> 
+>   bv->numregions = regions;
+>   if (t->n.vec != bv) {
+>     free_2(t->n.vec);
+>     t->n.vec = bv;
+>   }
+> }
+> 
+> void vcd_parse_partial(void)
+> {
+>   vcd_parse();
+> }
+> 
+2605a2804,2806
+>   int pass = 0;
+> 
+>   int old_maxtime_marker_conflict;
+2608d2808
+< 		int old_maxtime_marker_conflict = (GLOBALS->tims.marker > GLOBALS->max_time);
+2609a2810
+>       old_maxtime_marker_conflict = (GLOBALS->tims.marker > GLOBALS->max_time);
+2632c2833,2892
+< 		vcd_partial_mark_and_sweep(1);
+---
+> 
+>  /* Trptr t = GLOBALS->traces.first; */
+>  /* while(t) */
+>  /*   { */
+>  /*     if(t->t_filter) { */
+> 
+>  /*       /\* printf("================================================"); *\/ */
+> 
+>  /*       append_to_trace_vector(t); */
+> 
+>  /*       /\* printf("------------------------------------------------"); *\/ */
+> 
+>  /*       /\* for(int i=0;i<t->n.vec->numregions;i++) *\/ */
+>  /*       /\*   { *\/ */
+>  /*       /\*     printf("%lu: %s, %d\n", t->n.vec->vectors[i]->time, t->n.vec->vectors[i]->v, t->n.vec->vectors[i]->v[0]); *\/ */
+>  /*       /\*   } *\/ */
+>  /*     } */
+>  /*     if(t->t_match) */
+>  /*       { */
+>  /*         Trptr curr_trace = t; */
+>  /*         t = t->t_next; */
+>  /*         while(t && (t->t_match != curr_trace)) */
+>  /*           { */
+>  /*             t = t->t_next; */
+>  /*           } */
+>  /*       } */
+>  /*     t=GiveNextTrace(t); */
+>  /*   } */
+> 
+>     ++pass;
+>  /* if (++pass == 10) { */
+>  /*    /\*   /\\* MaxSignalLength(); *\\/ *\/ */
+>  /*    /\*   /\\* signalarea_configure_event(GLOBALS->signalarea, NULL); *\\/ *\/ */
+>  /*    /\*   /\\* wavearea_configure_event(GLOBALS->wavearea, NULL); *\\/ *\/ */
+> 
+>  /*      break; */
+>  /*    } */
+> 		}
+> 
+>   /* printf("Pass = %d\n", pass); */
+>   Trptr t = GLOBALS->traces.first;
+>   while(t)
+>     {
+>       if(t->t_filter) {
+>         append_to_trace_vector(t);
+>       }
+>       if(t->t_match)
+>         {
+>           Trptr curr_trace = t;
+>           t = t->t_next;
+>           while(t && (t->t_match != curr_trace))
+>             {
+>               t = t->t_next;
+>             }
+>         }
+>       t=GiveNextTrace(t);
+>     }
+> 
+>     old_maxtime_marker_conflict = (GLOBALS->tims.marker > GLOBALS->max_time);
+>     vcd_partial_mark_and_sweep(1);
+2668c2928
+< 		}
+---
+> 
+2672d2931
+< gtkwave_main_iteration();
+2698a2958
+> 
+2710,2711c2970,2973
+< /* vector */
+< t = GLOBALS->traces.first; while(t) { if(t->vector) regen_trace_mark(t, mandclear); t = t->t_next; }
+---
+> 
+> /* /\* vector *\/ */
+> t = GLOBALS->traces.first; while(t) { if(t->vector && (!t->t_filter)) regen_trace_mark(t, mandclear); t = t->t_next; }
+> 
+2714c2976,2977
+< t = GLOBALS->traces.first; while(t) { if(t->vector) regen_trace_sweep(t); t = t->t_next; }
+---
+>  t = GLOBALS->traces.first; while(t) { if(t->vector && (!t->t_filter)) regen_trace_sweep(t); t = t->t_next; }
+> 
+2715a2979
+> 
