@@ -1,0 +1,16 @@
+mcddns/__init__.py,sha256=QXlq4cRBKi0b-N_vYldttUpYnhinRJctbSoV1ZDLstM,5765
+mcddns/exceptions.py,sha256=3nc_rFhFeq0piG9ZdSPlxdcT3o1AF9jJg0EwCDA5sPE,135
+mcddns/meta.py,sha256=HXOwGxQEA72B_GTi6B5a18wgnJEyLs5kZVcIYLa-3dU,226
+mcddns/options.py,sha256=sVjihdBINultDd6u4GbBzM3LmHGnPknjLZtkOsMUNto,4145
+mcddns/provider.py,sha256=5pPl2E1ps74xGFytMxfR7_vmNA8TinJkRt088MyLxbY,4002
+mcddns/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcddns/providers/mcddns_aws.py,sha256=pgKqe6IiWthq8kw_avyv7VAmltr4SX6tYqnXngJ3RJ8,2695
+mcddns/providers/mcddns_dyn.py,sha256=GVWGyIJ5Qf2KH4T9AFgqFdDJx2FjlNs83t6wfwJ41nw,400
+mcddns/providers/mcddns_google.py,sha256=LIGzvfTdVE8GSTSHFoL6tUE4aVo3LGNjIrajdfb1jVY,236
+mcddns/providers/mcddns_ipify.py,sha256=7eUCErkUbTrmTp5nH-s6p9kYZVDx9YDzlaDC5JzVFQI,494
+mcddns-1.1.2.data/scripts/mcddns,sha256=gNDyujRTfQPLnx6tmtAEOApE0wAFGx2mpT8nwrzfJhU,711
+mcddns-1.1.2.dist-info/LICENSE,sha256=BMmVFFyRBdGrMcCAHelVMUz1ju0sexbNXs5Jzqmv7ZM,1072
+mcddns-1.1.2.dist-info/METADATA,sha256=bKk451knjynTL3W5zExTCi1Pw0LrpbUiM2hTe92knj4,4498
+mcddns-1.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mcddns-1.1.2.dist-info/top_level.txt,sha256=sktRB-ZR4fa9KZ3xvJyoVfN-pLjyOwbRujmkGy0EL3Y,7
+mcddns-1.1.2.dist-info/RECORD,,
