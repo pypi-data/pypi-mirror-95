@@ -1,0 +1,4 @@
+django==2.0.1
+djangorestframework==3.11.2
+django-rest-swagger==2.2.0
+pika==1.2.0
