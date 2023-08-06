@@ -1,0 +1,13 @@
+plone.api
+requests
+setuptools
+souper
+valer.api==1.2.3rc9
+valer.jsonapi==1.2.3rc8
+
+[test]
+Products.PloneTestCase
+Products.SecureMailHost
+plone.app.testing
+robotsuite
+unittest2
