@@ -1,0 +1,11 @@
+README.md
+setup.py
+sdmenu/__init__.py
+sdmenu/parser.py
+sdmenu/webworker.py
+sdmenu.egg-info/PKG-INFO
+sdmenu.egg-info/SOURCES.txt
+sdmenu.egg-info/dependency_links.txt
+sdmenu.egg-info/not-zip-safe
+sdmenu.egg-info/requires.txt
+sdmenu.egg-info/top_level.txt

@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: sdmenu
+Version: 1.0.0
+Summary: A simple way to query UC San Diego's HDH dining halls
+Home-page: https://sdmenu.online
+Author: Gideon Tong
+Author-email: gideon@gideontong.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/gideontong/sdmenu/
+Project-URL: Tracker, https://github.com/gideontong/sdmenu/issues
+Description: # sdmenu
+        
+        **sdmenu** is a simple way to query UC San Diego's HDH dining halls.
+        
+        ![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
+        
+        ## Installation
+        
+        ```bash
+        $ pip install sdmenu
+        Successfully installed sdmenu-1.0.0
+        ```
+        
+        ## Example
+        
+        This example is based off the menu for [64 Degrees](https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/64), which you can find [here](https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/64).
+        
+        ```py
+        >>> from sdmenu import menu
+        >>> my_menu = menu()
+        <menu {'64 Degrees', 'Cafe Ventanas', 'Canyon Vista', ...}>
+        
+        >>> items = my_menu.get('64 Degrees')
+        [<menu_item 'Avocado Toast'>, <menu_item 'Bacon Bobcat Sandwich'>, ...]
+        
+        >>> items[0].price
+        3.5
+        
+        >>> my_menu.has('64 Degrees', 'Hibachi Chicken')
+        True
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Text Processing :: Indexing
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
