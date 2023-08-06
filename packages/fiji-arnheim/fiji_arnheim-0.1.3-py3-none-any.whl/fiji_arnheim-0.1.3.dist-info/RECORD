@@ -1,0 +1,13 @@
+fiji_arnheim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fiji_arnheim/helper.py,sha256=RJudDq8kQ1Yux48i8HugW-OaWiwahI9Urb_qiUWtlRg,344
+fiji_arnheim/macros/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fiji_arnheim/macros/base.py,sha256=mt6APsKXPwy-DqegqYNe2OhUAPoIcHVg2Xrq8HECotM,941
+fiji_arnheim/macros/filter.py,sha256=TPh012tXwp5Qze1iAeOljQVQMda5zZyLmCtAwTEPuxg,276
+fiji_arnheim/macros/image_acting.py,sha256=HLeYjC8gvfYblNLeKF8xmz1vlA1D_SIX51PaBXoimGY,820
+fiji_arnheim/registries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fiji_arnheim/registries/helper.py,sha256=da87IY2H5L21R2KevpiK_K3VTh9ET0D0nQSS6kbX9Hk,851
+fiji_arnheim/run.py,sha256=v5of7pLnA7mqNuXE5bWbM3_vIw3M3HET_RcSq-gwBT8,1715
+fiji_arnheim-0.1.3.dist-info/entry_points.txt,sha256=Eh7KWKVXTCaM8vawDQfJRUYTlUFPy2euTuLuVy133J0,54
+fiji_arnheim-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fiji_arnheim-0.1.3.dist-info/METADATA,sha256=egTS0HCNM60NVyO52PTxz63pz8oXLnprueO8CBz6wH0,3671
+fiji_arnheim-0.1.3.dist-info/RECORD,,
