@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dora-cli"
+version = "0.0.2"
+description = ""
+authors = ["didone <didone@live.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+clint = "^0.5.1"
+docopt = "^0.6.2"
+tabulate = "^0.8.7"
+huaweicloud-sdk-python = "^1.0.28"
+esdk-obs-python = "^3.20.11"
+docker = "^4.4.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
