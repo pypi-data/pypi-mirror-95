@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+atlas_metadata_extractor.egg-info/PKG-INFO
+atlas_metadata_extractor.egg-info/SOURCES.txt
+atlas_metadata_extractor.egg-info/dependency_links.txt
+atlas_metadata_extractor.egg-info/requires.txt
+atlas_metadata_extractor.egg-info/top_level.txt
+metadata_extractor/__init__.py
