@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: zcscommonlib
+Version: 0.3.0
+Summary: A Common Library For Use In Computer Science Projects
+Home-page: https://github.com/Zandercraft/ZCSCommonLibrary
+Author: Zandercraft
+Author-email: UNKNOWN
+License: MPL 2.0
+Download-URL: https://github.com/Zandercraft/ZCSCommonLibrary/archive/0.2.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
