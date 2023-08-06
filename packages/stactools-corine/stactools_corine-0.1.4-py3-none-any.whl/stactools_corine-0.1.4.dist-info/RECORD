@@ -1,0 +1,10 @@
+stactools/corine/__init__.py,sha256=Q4bDTqgCzBTaZZkSSlUOq6EpJcwOXYw9JEHwVZJNB18,328
+stactools/corine/cog.py,sha256=uXFXn_6IY1-QOSms7eTfC-bR5kuKvb3YFzAMBfmMpNE,2056
+stactools/corine/commands.py,sha256=Og5bkMHP3BrZMjKNaudeSoo0WiIvX6U5hNaRkCIo7qw,1520
+stactools/corine/constants.py,sha256=wC9kYg2WhNcFu--Crm6KM1crb5BVNqXP7_rQpm2DEHA,417
+stactools/corine/stac.py,sha256=5O9hHLlDbXkM1BmRE34JUnmA0e6XI0uTpMcn5rjobGA,2784
+stactools/corine/version.py,sha256=njGyzfqNQSxuevBDAhI5rKPK18JS1V66LkKuWzvMg9M,44
+stactools_corine-0.1.4.dist-info/METADATA,sha256=R94Z02v_EqX93FjSGsOoE_WjqNL8ydk38o5oGlltutw,664
+stactools_corine-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stactools_corine-0.1.4.dist-info/top_level.txt,sha256=0eoUA-AbTfjFtxXr3W-vQdRyNmpGnA0wlTL3ppTPCG8,10
+stactools_corine-0.1.4.dist-info/RECORD,,
