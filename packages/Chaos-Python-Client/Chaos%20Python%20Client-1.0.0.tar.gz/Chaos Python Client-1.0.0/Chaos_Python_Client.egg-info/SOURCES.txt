@@ -1,0 +1,8 @@
+README.md
+setup.py
+Chaos_Python_Client.egg-info/PKG-INFO
+Chaos_Python_Client.egg-info/SOURCES.txt
+Chaos_Python_Client.egg-info/dependency_links.txt
+Chaos_Python_Client.egg-info/top_level.txt
+chaos_python/__init__.py
+chaos_python/client.py
