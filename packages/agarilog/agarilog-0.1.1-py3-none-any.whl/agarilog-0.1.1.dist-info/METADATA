@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: agarilog
+Version: 0.1.1
+Summary: simple logger for message services.
+Home-page: https://github.com/sakuv2/agarilog
+License: MIT
+Author: agari
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp[speedups] (>=3.7.3,<4.0.0)
+Requires-Dist: pydantic[dotenv] (>=1.7.3,<2.0.0)
+Project-URL: Repository, https://github.com/sakuv2/agarilog
