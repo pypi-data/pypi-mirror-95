@@ -1,0 +1,10 @@
+fugle_realtime/__init__.py,sha256=G6Dbxq2ws-1ZAXwDD8q0KWueYtso_Y6Uyvtj8sRWsPI,22
+fugle_realtime/intraday.py,sha256=OIVT-JOj6wE1Djgw8NOHuYqCwPokufUNcXQReQjvcXg,3676
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fugle_realtime_py.py,sha256=mNvX794DT2yeZqfir3VTlESxcgjvtaPHmDHiWORl4uk,95
+tests/test_intraday.py,sha256=Ejyiiz9UEnx1D7CZrW1eS25j_hfXEi5N33U_qxiciKo,2335
+fugle_realtime-0.2.8a0.dist-info/LICENSE,sha256=seu0c5_vt9lEF1JoJhrjCMtmOSGg6Lb3mZosfdpXaOw,1087
+fugle_realtime-0.2.8a0.dist-info/METADATA,sha256=nX42kJ8dJxNQRHGD_E8FiXqUZrKXEESsG7IVXEHE-4U,3915
+fugle_realtime-0.2.8a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fugle_realtime-0.2.8a0.dist-info/top_level.txt,sha256=iOlCvkzVGRidxAvjQpzzCpaSjoctd3w_Y4i_8YjVlX4,21
+fugle_realtime-0.2.8a0.dist-info/RECORD,,
