@@ -1,0 +1,17 @@
+serverhttp/__init__.py,sha256=ySAtoxor6fC0l6lGI7x-i9vaQP0sYd8sTnfXHwfWkns,332
+serverhttp/app.py,sha256=YdSt5h_IngBIr8w3XbWIFOo1ATMr_VYq6E2wZpuXHk8,435
+serverhttp/example.py,sha256=qw7ivWEpIM7yuvuY39aYVyu2xmfVtmkHAo37gRZy5dE,358
+serverhttp/http_support/__init__.py,sha256=10_w7o2juYBrGMh32_KbveULW9jk2tejpyUAD-uC6PE,4
+serverhttp/http_support/environ.py,sha256=Oeg-WPq41gHrxQ2ElCeQWD7B8G2FF9LD94gambSCYak,476
+serverhttp/http_support/formats.py,sha256=LsbZBvBI5JwNUiY2G1V8eMgWN880pdDaIttirYYDY3Y,808
+serverhttp/http_support/parse_time.py,sha256=g1qRPlzTlacU6AeIQalx8uS56U59C3p54Y1zIkBntIE,81
+serverhttp/http_support/request_parsing.py,sha256=NAq0X1HGwzNu-Cg3wsHHN0lTyqE4A5jyC5BO6sCegJE,349
+serverhttp/http_support/responses.py,sha256=-ToMi1A0UZ_eU53oOO79ebak4UwjNjqWO_ax3O1O_Rg,1485
+serverhttp/srv/__init__.py,sha256=2YqiQkTgH_lp5yXNkaUsqPHe1bny7oyskSGzBGOG1xQ,56
+serverhttp/srv/asyncsrv.py,sha256=SppjCFGiB5EvcHw_HGBFRj_fk_7hEBxSIP4HN2CqfB8,6014
+serverhttp/srv/version.py,sha256=ZoBlYeDOu-ac8ZvKtEh7-ufWqHi5mBwtq4DUPJfpz2c,37
+serverhttp-1.7.1.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+serverhttp-1.7.1.dist-info/METADATA,sha256=CIsuYBFi_svudpOrdvofchnGGhUyFwuoz3mvwTvQzPY,574
+serverhttp-1.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+serverhttp-1.7.1.dist-info/top_level.txt,sha256=MEZEDr5JtI7o5DiRsSDyiGsRZl-za0CxMw2ZE4uflzk,11
+serverhttp-1.7.1.dist-info/RECORD,,
