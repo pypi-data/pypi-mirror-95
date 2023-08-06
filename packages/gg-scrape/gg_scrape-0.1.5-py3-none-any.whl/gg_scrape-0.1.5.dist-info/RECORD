@@ -1,0 +1,10 @@
+gg_scrape/__init__.py,sha256=H1mR80ZdrBpghZx7t2XDxYEYVyICn_3XTPetP716o3s,23
+gg_scrape/__main__.py,sha256=f66luFmQtWZiAcvKnUMiqXL7_1pjJMGCU5_0AAWTwQU,209
+gg_scrape/argsparse.py,sha256=O0TB2idk9gMu-i2OGY08xTXm3s4o8RMnkQyK7H0lxGk,1327
+gg_scrape/champion_gg_scraper.py,sha256=Evqkq7JcD6-Ix2EJHtqA_ad-4IT8u30m3dl_SQvAf3k,2980
+gg_scrape/mobalytics_scraper.py,sha256=aOQP5nBFjZvk6ptg-XEPuidtch2cuIDNzCeDy6VAln4,5060
+gg_scrape/print_tree.py,sha256=Td1PT_JNIVzxTV-MIltC8WoZvuihYm-zTJYatk85Zpo,142
+gg_scrape-0.1.5.dist-info/entry_points.txt,sha256=YucS-q6cjkU0Gem4_KQ-enTz9ano_Zw9KYhLhIYkRHE,47
+gg_scrape-0.1.5.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+gg_scrape-0.1.5.dist-info/METADATA,sha256=rIVe7ZE3P26DI1jcwxMm3CcMc-SY4NptVyBT4CNwS88,1530
+gg_scrape-0.1.5.dist-info/RECORD,,
