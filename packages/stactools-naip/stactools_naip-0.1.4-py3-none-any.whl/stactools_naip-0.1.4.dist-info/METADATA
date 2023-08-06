@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stactools-naip
+Version: 0.1.4
+Summary: Subpackage for working with NAIP  data in stactools, a command line tool and Python library for working with STAC.
+Home-page: https://github.com/stac-utils/stactools.git
+Author: stac-utils
+Author-email: stac@radiant.earth
+License: Apache Software License 2.0
+Keywords: stactools,psytac,naip,imagery,raster,catalog,STAC
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: utm-zone (==1.0.2)
+Requires-Dist: stactools-core (==0.1.4)
+
+# stactools_naip
+
+A subpackage of stactools for working with NAIP data.
+
