@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: simple-extract
+Version: 0.1.0
+Summary: A small command line utility to help extract compressed archives
+Home-page: https://github.com/berrym/simple-extract.git
+Author: Michael Berry
+Author-email: trismegustis@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+
