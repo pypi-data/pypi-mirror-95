@@ -1,0 +1,3 @@
+[napari.plugin]
+split-dataset = napari_split_dataset
+
