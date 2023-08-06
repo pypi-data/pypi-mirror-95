@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: packratt
+Version: 0.1.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Simon Perkins
+Author-email: simon.perkins@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.*,>=3.6.0
+Provides-Extra: dev
+Provides-Extra: testing
