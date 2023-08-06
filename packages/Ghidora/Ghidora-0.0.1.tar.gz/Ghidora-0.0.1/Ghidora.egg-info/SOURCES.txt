@@ -1,0 +1,8 @@
+README.md
+setup.py
+Ghidora/Ghidora.py
+Ghidora/__init__.py
+Ghidora.egg-info/PKG-INFO
+Ghidora.egg-info/SOURCES.txt
+Ghidora.egg-info/dependency_links.txt
+Ghidora.egg-info/top_level.txt
