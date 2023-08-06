@@ -1,0 +1,11 @@
+COPYING
+Pipfile
+README.md
+matrix-floppy.py
+setup.py
+.github/FUNDING.yml
+matrix_floppy.egg-info/PKG-INFO
+matrix_floppy.egg-info/SOURCES.txt
+matrix_floppy.egg-info/dependency_links.txt
+matrix_floppy.egg-info/requires.txt
+matrix_floppy.egg-info/top_level.txt
