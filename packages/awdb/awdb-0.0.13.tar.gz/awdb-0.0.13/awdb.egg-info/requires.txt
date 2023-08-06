@@ -1,0 +1,4 @@
+asyncio
+aioconsole
+aiohttp>=3.4
+multidict>=4.1.0
