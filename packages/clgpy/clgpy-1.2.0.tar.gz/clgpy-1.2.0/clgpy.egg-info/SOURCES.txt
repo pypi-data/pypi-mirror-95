@@ -1,0 +1,9 @@
+README.md
+setup.py
+clgpy/__init__.py
+clgpy/_main_.py
+clgpy.egg-info/PKG-INFO
+clgpy.egg-info/SOURCES.txt
+clgpy.egg-info/dependency_links.txt
+clgpy.egg-info/requires.txt
+clgpy.egg-info/top_level.txt
