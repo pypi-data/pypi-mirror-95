@@ -1,0 +1,2 @@
+emoji_extractor>=1.0.19
+notion>=0.0.27
