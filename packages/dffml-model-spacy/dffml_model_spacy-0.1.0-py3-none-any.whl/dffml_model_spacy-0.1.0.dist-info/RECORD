@@ -1,0 +1,11 @@
+dffml_model_spacy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_model_spacy/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ner_integration.py,sha256=lhO827Z3AlHohOwDZzzeGAOWhcsw4RR2vrIZp4G7NpU,8432
+tests/test_ner_model.py,sha256=9Xxs-Lt4r2KNs9A7TxgnwTOXGMcLfXb09ssnx26SPQM,2947
+dffml_model_spacy-0.1.0.dist-info/LICENSE,sha256=6ZGvOwfnQ7XczBf35XQlToX-tQegAIFr19cXu0RobJk,1062
+dffml_model_spacy-0.1.0.dist-info/METADATA,sha256=NVKT5LURXDPm4cvwAX-6YJcItnWnLn5Afjfx7RabFDs,2003
+dffml_model_spacy-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_spacy-0.1.0.dist-info/entry_points.txt,sha256=NohF19zpww1yFDdQrYdh30QjPbtTlbwhjg-Avvf-SdA,72
+dffml_model_spacy-0.1.0.dist-info/top_level.txt,sha256=3syYd_xnvn-dKqmNKbnE6nkBb9cne_UblPV4_DbLoAw,24
+dffml_model_spacy-0.1.0.dist-info/RECORD,,

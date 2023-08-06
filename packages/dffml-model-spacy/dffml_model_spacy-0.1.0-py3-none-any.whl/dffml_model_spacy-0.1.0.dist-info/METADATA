@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: dffml-model-spacy
+Version: 0.1.0
+Summary: DFFML model dffml-model-spacy
+Home-page: https://github.com/intel/dffml/blob/master/model/spacy/README.md
+Author: 0dust
+Author-email: himanshutripathi366@gmail.com
+Maintainer: 0dust
+Maintainer-email: himanshutripathi366@gmail.com
+License: MIT
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: spacy (==3.0.3) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: spacy (==3.0.3) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: spacy (==3.0.3) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: spacy (==3.0.3) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: spacy (==3.0.3) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.8"
+
+# DFFML spacy Models
+
+## About
+
+dffml_model_spacy models.
+
+## Usage
+
+## License
+
+model_name Models are distributed under the terms of the
+[MIT License](LICENSE).
+
+
