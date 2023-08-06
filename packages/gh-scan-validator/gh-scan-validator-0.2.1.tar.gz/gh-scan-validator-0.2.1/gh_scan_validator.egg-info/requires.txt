@@ -1,0 +1,9 @@
+laspy
+numpy
+pandas
+geopandas
+matplotlib
+coloredlogs
+numba
+scipy
+Pillow
