@@ -1,0 +1,7 @@
+uuid
+gpsoauth
+grpcio==1.31.0
+grpcio-tools
+simplejson
+requests
+zeroconf
