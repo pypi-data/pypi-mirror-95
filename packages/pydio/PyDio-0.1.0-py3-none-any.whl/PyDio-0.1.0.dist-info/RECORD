@@ -1,0 +1,16 @@
+pydio/__init__.py,sha256=QFTOYi-e0GqfF810u3XD7gEx4f7YOESdNl5USiQQKCs,707
+pydio/_compat.py,sha256=xbwq5kDfrzzPVhbCH56enmYHcj1xCilexptHFvCo9cU,815
+pydio/_factories.py,sha256=31oJL2rm2pA2uGA8zcdJ5aA6Mt4egS3y-iPTyP8b5QY,2763
+pydio/_unbound_factories.py,sha256=wibGNJrcOI11mXZX5_mRdFEyGvVbJfZGY_kvI8YTMR4,2538
+pydio/_version.py,sha256=xwUxqNB1me5mfO6PXPXd-gWwNTAl_-Idf0ktsITBEpU,142
+pydio/api.py,sha256=fX-hC7ny1of_KUN2i86co6NfxMWRqkHnnZt7y4wpEjs,838
+pydio/base.py,sha256=geMDWW4KOPWlesqMWEsTI_ccbY9zAC6O7uHNbrUaYq0,6244
+pydio/exc.py,sha256=0AWEKma9z3wmPVKBdfSlCFxNwdqPNZMVJgLTUA_oXGY,1758
+pydio/injector.py,sha256=TujHxogRICV9apNQni7EHiYZLvxCxHc8YptGqp9_EpQ,6441
+pydio/keys.py,sha256=vPVNya_CK2cMti83CXd3CGLabEsmZxs0kp6lAdOq7OM,1656
+pydio/provider.py,sha256=4FD8Lh2LqhUgNmZiGlmjlNcI-HYn34VQdpBExbDM9Nw,4935
+PyDio-0.1.0.dist-info/LICENSE.txt,sha256=6onkTEZEfiMY4kp9a8On4NZ67Ffx080ZLL3FEsfq_BY,1087
+PyDio-0.1.0.dist-info/METADATA,sha256=2zY5WJa8edE4I1Zl5bDvfWyvTiNOceTVVt6Zy68kiik,4059
+PyDio-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyDio-0.1.0.dist-info/top_level.txt,sha256=7SfyomwDxV_sWGOAreGAt30lEfMMpvlCF9Wy5-oDM3w,6
+PyDio-0.1.0.dist-info/RECORD,,
