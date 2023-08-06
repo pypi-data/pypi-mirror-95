@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+commonmark_extensions/__init__.py
+commonmark_extensions/make_reference_output.py
+commonmark_extensions/plaintext.py
+commonmark_extensions/tables.py
+commonmark_extensions/tests.py
+commonmarkextensions.egg-info/PKG-INFO
+commonmarkextensions.egg-info/SOURCES.txt
+commonmarkextensions.egg-info/dependency_links.txt
+commonmarkextensions.egg-info/entry_points.txt
+commonmarkextensions.egg-info/requires.txt
+commonmarkextensions.egg-info/top_level.txt
