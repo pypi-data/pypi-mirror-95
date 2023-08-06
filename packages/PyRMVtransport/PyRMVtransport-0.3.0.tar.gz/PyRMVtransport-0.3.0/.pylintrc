@@ -1,0 +1,39 @@
+[MASTER]
+# A comma-separated list of package or module names from where C extensions may
+# be loaded. Extensions are loading into the active Python interpreter and may
+# run arbitrary code
+extension-pkg-whitelist=lxml
+
+[MESSAGES CONTROL]
+# Reasons disabled:
+# locally-disabled - it spams too much
+# duplicate-code - unavoidable
+# cyclic-import - doesn't test if both import on load
+# abstract-class-little-used - prevents from setting right foundation
+# unused-argument - generic callbacks and setup methods create a lot of warnings
+# global-statement - used for the on-demand requirement installation
+# redefined-variable-type - this is Python, we're duck typing!
+# too-many-* - are not enforced for the sake of readability
+# too-few-* - same as too-many-*
+# abstract-method - with intro of async there are always methods missing
+# inconsistent-return-statements - doesn't handle raise
+# not-an-iterable - https://github.com/PyCQA/pylint/issues/2311
+# unnecessary-pass - readability for functions which only contain pass
+disable=
+  too-many-instance-attributes,
+  unnecessary-pass,
+  C0330,
+
+[REPORTS]
+reports=no
+
+[TYPECHECK]
+# For attrs
+ignored-classes=_CountingAttr
+generated-members=botocore.errorfactory
+
+[FORMAT]
+expected-line-ending-format=LF
+
+[EXCEPTIONS]
+overgeneral-exceptions=Exception
