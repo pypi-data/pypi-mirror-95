@@ -1,0 +1,12 @@
+dash_textarea_autocomplete/DashTextareaAutocomplete.py,sha256=ki_vmZdDwZ67ZdgWp3d3XpenTKNcFK-y76wlLne_fBg,3407
+dash_textarea_autocomplete/__init__.py,sha256=DYc5XJvc8iFZTbqmf4lQbeHJpULsb2XuW-9uxVql6mY,1524
+dash_textarea_autocomplete/_imports_.py,sha256=pXztUjD8InPjqDHvE9Jf5nlBoYeaXTP2mroPHBgCk4g,108
+dash_textarea_autocomplete/dash_textarea_autocomplete.min.js,sha256=76DLAfQaxYj38FoL9dO_6Q5odQFyp6SM_qZnbncxzIU,35160
+dash_textarea_autocomplete/dash_textarea_autocomplete.min.js.map,sha256=seR3-8MM25hr3iHSce6_Y_loGg11InY2owHaV8E2z7w,127481
+dash_textarea_autocomplete/metadata.json,sha256=LQIbOZLK2eRfQuCPMcdlv7btO1Gcf8IvAF8dbkr8m_k,3794
+dash_textarea_autocomplete/package-info.json,sha256=j5W_rzdpOkIDaeTDENsvFshYKDpxEyj3C-2-_Tew850,1930
+dash_textarea_autocomplete-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dash_textarea_autocomplete-0.0.1.dist-info/METADATA,sha256=LcDL796kTHRli-mWXPdXyLNjdy68yz90MBzlQuqv6HI,302
+dash_textarea_autocomplete-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dash_textarea_autocomplete-0.0.1.dist-info/top_level.txt,sha256=NTaQZJqACZ3EKe_N8riG2MAddkjV1Pc34KhqTwnYCgs,27
+dash_textarea_autocomplete-0.0.1.dist-info/RECORD,,
