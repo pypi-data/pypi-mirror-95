@@ -1,0 +1,15 @@
+doc_gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doc_gen/generate_doc.py,sha256=ZdDdbj3OFj_QVR-JZUvreP7LZYN-mYU9Ufakqh_xMRI,7534
+jchord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jchord/chords.py,sha256=LYvSg1UUeCvOsLc81iQ3A-i0b3ZJh3Ph0j9tWxM5H0c,19793
+jchord/core.py,sha256=edKhNh_hK2vlgXpwQnBu-qaLwS6iEDmL63Jebd6rBq8,10015
+jchord/example.py,sha256=b2GPxNCPFbP9crGIWsr1Kvc4x53UUKZ7Yh-gP-3MMkU,200
+jchord/knowledge.py,sha256=sQdD_x3j4EDkUkLlAv3-JFOOcj3cp48RqPgfGo-p0pg,3117
+jchord/midi.py,sha256=ozbQH-LqYDde3McwbjJ76eKSYCQHCoVkxX0BuNYsj3g,8005
+jchord/midi_effects.py,sha256=fK8zC6ThbQBWZlUV4zCKZlq22ix2XLUfjR0LFXK4V0k,5051
+jchord/progressions.py,sha256=00FDceY4BcCNitopnWerC93CVsmr0GxRGR0sovVWJYA,11415
+jchord-2.0.0.dist-info/LICENSE.md,sha256=-3vgrMrXvmO_ZAgdWsVC72ro3_Ga2tQQB2sNBa_J-C4,1077
+jchord-2.0.0.dist-info/METADATA,sha256=51gsGLr01CA_ASzqBFk7FktyxDJ1FzZFyYYym1WBaxU,21724
+jchord-2.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+jchord-2.0.0.dist-info/top_level.txt,sha256=oSSt5o3RufgkwgOeiNDiOyt6i_Q-McQ2x9N-OBdQGZY,15
+jchord-2.0.0.dist-info/RECORD,,
