@@ -1,0 +1,25 @@
+# Declair :cake:
+[![pipeline status](https://gitlab.com/k-cybulski/declair/badges/master/pipeline.svg)](https://gitlab.com/k-cybulski/declair/-/commits/master)
+[![coverage report](https://gitlab.com/k-cybulski/declair/badges/master/coverage.svg)](https://gitlab.com/k-cybulski/declair/-/commits/master)
+
+Declair is a framework for declaratively defining hyperparameter optimization experiments. It uses [Sacred](https://github.com/IDSIA/sacred) for storing experiment results and supports [hyperopt](https://github.com/hyperopt/hyperopt) for optimization.
+
+It came about from attempts to recreate DeepSolaris results in PyTorch instead of Keras. However, it grew to be a more extensive and general framework than originally planned.
+
+# Usage
+For detailed instructions on how to use Declair, see the [documentation](https://k-cybulski.gitlab.io/declair/).
+
+## Installation
+Install required Python packages in your favourite virtual environment
+```
+pip install -r requirements.txt
+```
+
+## Running the tests
+Go into the root of the repository (i.e. where this README.md is) and run 
+```
+python -m pytest
+```
+
+# Credits
+This project has been heavily inspired by [cbds_common](https://gitlab.com/CBDS/cbds_common).
