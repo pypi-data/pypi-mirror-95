@@ -1,0 +1,4 @@
+cloudscraper>=1.2.56
+kcu>=0.0.61
+requests>=2.25.1
+tldextract>=3.1.0
