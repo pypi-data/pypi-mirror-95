@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyDoge/__init__.py
+PyDoge/config.py
+PyDoge/utils.py
+PyDoge.egg-info/PKG-INFO
+PyDoge.egg-info/SOURCES.txt
+PyDoge.egg-info/dependency_links.txt
+PyDoge.egg-info/top_level.txt
