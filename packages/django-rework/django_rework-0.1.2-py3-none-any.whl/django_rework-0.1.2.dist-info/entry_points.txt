@@ -1,0 +1,4 @@
+[console_scripts]
+django-rework = rework.core.management:execute_from_command_line
+rek = rework.core.management:execute_from_command_line
+

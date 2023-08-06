@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-rework
+Version: 0.1.2
+Summary: Rapid develop framework base on Django
+Home-page: https://github.com/rework-union/django-rework
+Author: rework union
+Author-email: josh.yu_8@live.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Django (<3.0,>=2.2)
+Requires-Dist: django-cors-headers (==3.1.0)
+Requires-Dist: django-filter (<3.0,>=2.0)
+Requires-Dist: django-mysql (==3.2.0)
+Requires-Dist: djangorestframework (<4.0,>=3.10.1)
+Requires-Dist: fabric (~=2.5)
+Requires-Dist: Markdown (~=3.1)
+Requires-Dist: mysqlclient (==1.4.6)
+Requires-Dist: Pillow (<=8.1.0,>=6.2.2)
+Requires-Dist: drf-nested-routers (~=0.91)
+Requires-Dist: drf-yasg (~=1.17)
+Requires-Dist: wechatpy (~=1.8)
+
+UNKNOWN
+
+
