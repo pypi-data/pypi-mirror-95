@@ -1,0 +1,6 @@
+opentelemetry-api==1.0.0rc1
+opentelemetry-instrumentation==0.18b0
+
+[test]
+opentelemetry-test
+httpretty~=1.0
