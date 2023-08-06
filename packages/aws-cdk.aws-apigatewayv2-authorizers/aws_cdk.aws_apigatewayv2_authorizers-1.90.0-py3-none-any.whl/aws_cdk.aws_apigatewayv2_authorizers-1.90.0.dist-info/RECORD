@@ -1,0 +1,8 @@
+aws_cdk/aws_apigatewayv2_authorizers/__init__.py,sha256=plyUx3kkj1i6HzkormjBNVEuRMcMmj_X3t7tN3p7R_0,16972
+aws_cdk/aws_apigatewayv2_authorizers/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_apigatewayv2_authorizers/_jsii/__init__.py,sha256=AlyZkyMPb0Cvj7qJnZAiOP1CkaLOkzAQD45VflgfbeU,489
+aws_cdk/aws_apigatewayv2_authorizers/_jsii/aws-apigatewayv2-authorizers@1.90.0.jsii.tgz,sha256=ZzfKsd6I54d4D_quRuEa7k-0WJogdcdA3AN_Nt5dZ9U,15250
+aws_cdk.aws_apigatewayv2_authorizers-1.90.0.dist-info/METADATA,sha256=3BmQ3DmoQLF2qU2xc6M9vXHsD7ciVbCyhQE0el5_pSA,5008
+aws_cdk.aws_apigatewayv2_authorizers-1.90.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_apigatewayv2_authorizers-1.90.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_apigatewayv2_authorizers-1.90.0.dist-info/RECORD,,
