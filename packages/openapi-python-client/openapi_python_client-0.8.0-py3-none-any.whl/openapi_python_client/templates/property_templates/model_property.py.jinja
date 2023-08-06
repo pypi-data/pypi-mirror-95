@@ -1,0 +1,27 @@
+{% macro construct_function(property, source) %}
+{{ property.reference.class_name }}.from_dict({{ source }})
+{% endmacro %}
+
+{% from "property_templates/property_macros.py.jinja" import construct_template %}
+
+{% macro construct(property, source, initial_value=None) %}
+{{ construct_template(construct_function, property, source, initial_value=initial_value) }}
+{% endmacro %}
+
+{% macro transform(property, source, destination, declare_type=True) %}
+{% if property.required %}
+{% if property.nullable %}
+{{ destination }} = {{ source }}.to_dict() if {{ source }} else None
+{% else %}
+{{ destination }} = {{ source }}.to_dict()
+{% endif %}
+{% else %}
+{{ destination }}{% if declare_type %}: Union[{% if property.nullable %}None, {% endif %}Unset, Dict[str, Any]]{% endif %} = UNSET
+if not isinstance({{ source }}, Unset):
+{% if property.nullable %}
+    {{ destination }} = {{ source }}.to_dict() if {{ source }} else None
+{% else %}
+    {{ destination }} = {{ source }}.to_dict()
+{% endif %}
+{% endif %}
+{% endmacro %}

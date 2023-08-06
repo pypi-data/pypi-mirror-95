@@ -1,0 +1,23 @@
+{% macro construct_function(property, source) %}
+isoparse({{ source }}).date()
+{% endmacro %}
+
+{% from "property_templates/property_macros.py.jinja" import construct_template %}
+
+{% macro construct(property, source, initial_value=None) %}
+{{ construct_template(construct_function, property, source, initial_value=initial_value) }}
+{% endmacro %}
+
+{% macro transform(property, source, destination, declare_type=True) %}
+{% if property.required %}
+{{ destination }} = {{ source }}.isoformat() {% if property.nullable %}if {{ source }} else None {%endif%}
+{% else %}
+{{ destination }}{% if declare_type %}: Union[Unset, str]{% endif %} = UNSET
+if not isinstance({{ source }}, Unset):
+{% if property.nullable %}
+    {{ destination }} = {{ source }}.isoformat() if {{ source }} else None
+{% else %}
+    {{ destination }} = {{ source }}.isoformat()
+{% endif %}
+{% endif %}
+{% endmacro %}
