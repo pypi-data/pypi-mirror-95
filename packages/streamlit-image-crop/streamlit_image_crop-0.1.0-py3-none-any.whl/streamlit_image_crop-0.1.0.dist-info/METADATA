@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: streamlit-image-crop
+Version: 0.1.0
+Summary: A Streamlit component based on React Image Crop.
+Home-page: https://github.com/mitsuse/streamlit-image-crop
+License: ISC
+Keywords: streamlit
+Author: Tomoya Kose
+Author-email: tomoya@mitsuse.jp
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: streamlit (>=0.76.0,<0.77.0)
+Project-URL: Repository, https://github.com/mitsuse/streamlit-image-crop
+Description-Content-Type: text/markdown
+
+# Streamlit Image Crop
+
+A [Streamlit](https://www.streamlit.io/) component based on [React Image Crop](https://github.com/DominicTobias/react-image-crop).
+
+![Screenshot](https://raw.githubusercontent.com/mitsuse/streamlit-image-crop/master/screenshot.png)
+
+## Installation
+
+```
+pip install streamlit-image-crop
+```
+
+## Example
+
+Please see [example.py](example.py).
+
+## License
+
+Streamlit Image Crop is licensed under the ISC license.
+Please read [LICENSE](LICENSE) for the detail.
+
