@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: SB2-SMIT04653
+Version: 0.0.1
+Summary: Sum Of All Possible Numbers
+Home-page: https://github.com/Pushkar-Singh-14/
+Author: Muhammad Ahmed
+Author-email: mahmed@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Sum Of All Possible Numbers
+
+Python Code:
+'''
+def add(*c):
+   d=sum(c)
+   return d
+'''
+
