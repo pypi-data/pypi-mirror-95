@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "datasoap"
+version = "1.0.2"
+description = "Supplementary library for pandas that processes dataframes derived from CSV files."
+authors = [
+  "Grace Choi <choi.g.330@gmail.com>",
+  "Alex Angelico <alex.angelico@gmail.com>",
+  "Mason Fryberger <mason.fryberger@gmail.com>",
+  "Jae Young Choi <jaeychoi1@gmail.com>",
+]
+
+license = "MIT"
+readme = "README.md"
+
+homepage = "https://github.com/Snake-Fingers/datasoap"
+repository = "https://github.com/Snake-Fingers/datasoap"
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+include = [
+  "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+coverage = "^5.4"
+pytest-watch = "^4.2.0"
+
+black = {version = "^20.8b1", allow-prereleases = true}
+pylint = "^2.6.2"
+
+[tool.poetry.scripts]
+datasoap = "datasoap:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
