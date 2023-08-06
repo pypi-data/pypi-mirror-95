@@ -1,0 +1,124 @@
+{
+"": """\
+       [b]modo ayuda[/b]
+
+* la primer puntea a un elemento
+   marcado de la pantalla muestra
+   el mensaje de ayuda asociada.
+
+* la segunda puntea va a ejecutar
+   la funcionalidad detras del
+   elemento de la pantalla.
+
+puntea al signo de interrogación
+([b]?[/b]) para salir de ese
+modo de ayuda.""",
+#==================================
+"help_app_state#font_size": """\
+ajustar el tamaño del fuente
+
+tamaño actual: {round(state_value)}Px""",
+#----------------------------------
+"help_app_state#pending_requests_frequency": """\
+frequencia para actualizar el
+progreso de los pedidos
+pendientes y animaciones
+
+frequencia actual: {round(state_value, 1)}Hz""",
+#----------------------------------
+"help_app_state#sound_volume": """\
+volumen de sonidos
+
+para silenciar todos
+los sonidos puntea a
+la izquierda.
+
+volumen actual: {round(state_value * 100)}%""",
+#----------------------------------
+"help_app_state#vibration_volume": """\
+intensidad vibración
+
+para silenciar todos
+los vibraciones puntea
+a la izquierda.
+
+vibración actual: {round(state_value * 100)}%""",
+#==================================
+"help_flow#change_lang_code": """\
+puntea para cambiar el idioma
+a [b]'{main_app.get_txt_(self.lang_code)}'[/b].""",
+#----------------------------------
+"help_flow#change_light_theme": """\
+puntea para cambiar el color del
+fondo a [b]claro[/b] o a [b]oscuro[/b].""",
+#----------------------------------
+"help_flow#open_color_editor":
+    {'': """\
+puntea para el editor
+de color ser mostrado.
+
+aquí puedes cambiar el
+color que indica si un
+registro sea
+[b]{dict(selected_item_ink='marcado',
+      unselected_item_ink='desmarcado',
+      flow_id_ink='seleccionado',
+      flow_path_ink='movible',
+      ).get(self.color_name)}[/b].""",
+    'after': """\
+toque de nuevo en el botón
+de color para cerrar el editor
+de color.
+
+en el editor de color
+puntea dos veces en rápida
+sucesión al círculo de color
+o usar los deslizadores para
+cambiar el color.""", },
+#----------------------------------
+"help_flow#open_user_preferences":
+    {'': """\
+este pomo del engranaje sirve para
+abrir la configuración del usuario.""",
+    'after': """\
+las opciones que se muestran ahora
+se utilizan para configurar el
+por ejemplo, para los colores
+y el tamaño de la letra.
+
+pulse en las opciones individuales
+para obtener más asistencia.""", },
+#==================================
+"add": "añadir",
+"ado": "Documentos de la app",
+"app": "Data de la app",
+"clipboard": "portapapeles",
+"Copy": "copiar",
+"Cut": "cortar",
+"cwd": "Carpeta Áctual",
+"dark": "oscuro",
+"de": "deutsch",
+"delete": "borrar",
+"doc": "Documentos",
+"documents": "Documentos",
+"downloads": "Descargas",
+"en": "english",
+"error": "error",
+"es": "español",
+"flow_id_ink": "{'color del ' if app.landscape else ''}registro seleccionado",
+"flow_path_ink": "{'color de los botónes de ' if app.landscape else ''}navigación de listas",
+"Forget": "olvida",
+"home": "Carpeta Raíz del usuario",
+"light": "claro",
+"... loading ...": "... cargando ...",
+"Memorize": "memoriza",
+"music": "Música",
+"Paste": "inserta",
+"pictures": "Imágenes",
+"remove": "quitar",
+"save": "guardar",
+"Select All": "marcar todo",
+"selected_item_ink": "{'color de los ' if app.landscape else ''}registros marcados",
+"unselected_item_ink": "{'color de los ' if app.landscape else ''}registros desmarcados",
+"usr": "Datos del usuario",
+}

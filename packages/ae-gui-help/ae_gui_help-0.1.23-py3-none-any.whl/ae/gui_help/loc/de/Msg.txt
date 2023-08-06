@@ -1,0 +1,128 @@
+{
+"": """\
+    [b]interaktiver hilfemodus[/b]
+
+alle bildschirm-elemente sind
+deaktiviert.
+
+* der erste tipper auf ein
+   bildschirm-element zeigt
+   den zugehörigen hilfetext
+   und reaktiviert es.
+
+* beim zweiten tip wird die
+   jeweilige funktion ganz
+   normal ausgeführt.
+
+tippe auf das fragezeichen symbol
+([b]?[/b]) links oben um den
+hilfemodus wieder zu verlassen.""",
+#==================================
+"help_app_state#font_size": """\
+schriftgröße ändern
+
+aktuell: {round(state_value)}Px""",
+#----------------------------------
+"help_app_state#pending_requests_frequency": """\
+aktualisierungsfrequenz der
+fortschrittsanzeige und grafik
+
+aktuell: {round(state_value, 1)}Hz""",
+#----------------------------------
+"help_app_state#sound_volume": """\
+lautstärke ändern.
+
+tippe ganz links um
+alle akustischen
+signale zu unterdrücken.
+
+aktuelle lautstärke: {round(state_value * 100)}%""",
+#----------------------------------
+"help_app_state#vibration_volume": """\
+intensität vibrationen
+
+tippe ganz links um
+alle vibrationen zu
+unterdrücken.
+
+aktuelle vibration: {round(state_value * 100)}%""",
+#==================================
+"help_flow#change_lang_code": """\
+tippe um die sprache der app
+auf [b]'{main_app.get_txt_(self.lang_code)}'[/b] umzuschalten.""",
+#----------------------------------
+"help_flow#change_light_theme": """\
+tippe um die farbe
+des hintergrunds
+zwischen
+[b]'hell'[/b] oder
+[b]'dunkel'[/b]
+umzuschalten.""",
+#----------------------------------
+"help_flow#open_color_editor":
+    {'': """\
+tippe um den farben-editor
+anzuzeigen.
+
+hier kann die farbe der geändert
+werden, die anzeigt ob ein eintrag
+[b]{dict(selected_item_ink='ausgewählt',
+      unselected_item_ink='abgewählt',
+      flow_id_ink='fokussiert',
+      flow_path_ink='verschiebbar',
+      ).get(self.color_name)}[/b] ist.""",
+    'after': """\
+tippe nochmals auf den farbauswahl-
+knopf um den farben-editor wieder
+zu schließen.
+
+tippe zweimal schnell nacheinander
+auf den farbkreis oder benutze die
+schieberegler um die farbe zu ändern.""", },
+#----------------------------------
+"help_flow#open_user_preferences":
+    {'': """\
+dieser zahnrad-knopf dient zum
+öffnen der benutzer-einstellungen.""",
+    'after': """\
+die nun angezeigten optionen
+dienen zur konfiguration der
+app, zum beispiel um farben
+und schriftgröße anzupassen.
+
+tippe auf die einzelnen optionen
+um weitere hilfe zu erhalten.""", },
+#==================================
+"add": "hinzufügen",
+"ado": "App Dokumente",
+"app": "App Data",
+"clipboard": "zwischenablage",
+"Copy": "kopieren",
+"Cut": "auschneiden",
+"cwd": "Arbeitsverzeichnis",
+"dark": "dunkel",
+"de": "deutsch",
+"delete": "löschen",
+"doc": "Dokumente",
+"documents": "Dokumente",
+"downloads": "Downloads",
+"en": "english",
+"error": "fehler",
+"es": "español",
+"flow_id_ink": "{'farbe des fokussierten' if app.landscape else 'fokussierter'} eintrag",
+"flow_path_ink": "{'farbe der ' if app.landscape else ''}listen-navigation",
+"Forget": "vergiss",
+"home": "Benutzerverzeichnis",
+"light": "hell",
+"... loading ...": "... laden ...",
+"Memorize": "merken",
+"music": "Musik",
+"Paste": "einfügen",
+"pictures": "Bilder",
+"remove": "eintferne",
+"save": "speichern",
+"Select All": "auswählen",
+"selected_item_ink": "{'farbe der ausgewählten' if app.landscape else 'ausgewählte'} einträge",
+"unselected_item_ink": "{'farbe der abgewählten' if app.landscape else 'abgewählte'} einträge",
+"usr": "Benutzer Data",
+}
