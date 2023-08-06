@@ -1,0 +1,5 @@
+[console_scripts]
+download_orbits = gpssnrpy.download_orbits:main
+download_rinex = gpssnrpy.download_rinex:main
+gpssnr = gpssnrpy.gpssnr_cl:main
+

@@ -1,0 +1,14 @@
+gpssnrpy/__init__.py,sha256=cdrKDCUwnLJcCsiefTpChEQiSp0O8LjJQggJ361l4NM,217
+gpssnrpy/download_orbits.py,sha256=M3CH7tbYnkctyRvF9PPKNoo7nd6ho5lhh2zo0LwbmYE,2217
+gpssnrpy/download_rinex.py,sha256=bXwGOp1qv_NArEEzi7twNC2YasdPysg-4166aBxJURk,4984
+gpssnrpy/gps.py,sha256=ndy_MbZ-1gRWQPUpRhYdNX2p3CjtCRLrhhDz1jK_xXk,173608
+gpssnrpy/gpssnr.cpython-37m-darwin.so,sha256=b_SFCjUyd8mXJKYk_4DQ_nM04FOs5lzRPWKhhqqQa44,135828
+gpssnrpy/gpssnr_cl.py,sha256=ltwREEbGZQk_eaN3iKquu3IkASks6pehGw0BovUP984,2198
+gpssnrpy/test.py,sha256=SQUN4LkhoHPLsHgGzs8kmtHhVnj5vnUcVAzrDwX2eCo,1841
+gpssnrpy/utils.py,sha256=Z5CwYQ5GlD0uSq9hjAGQCcUTbjbvKkcxzN0P2KJJ_UM,361
+gpssnrpy-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gpssnrpy-0.0.3.dist-info/METADATA,sha256=gF8Ot6J2iB_-jITdMdiAzBYpe-eGw7rxr4-xp3HVttw,3394
+gpssnrpy-0.0.3.dist-info/WHEEL,sha256=zjhvVxjD6g7O3ejxlonIResSLzKh91a-Z9sfR3zAQ80,111
+gpssnrpy-0.0.3.dist-info/entry_points.txt,sha256=6wnU38R5ONQyDgvUxSFJOz_FUc1kgh-93uz3gTaVXfE,146
+gpssnrpy-0.0.3.dist-info/top_level.txt,sha256=swV8X9OX_ZXEVaZ3LMquFKNb8kNgf_dAC5B3jeT2_sI,9
+gpssnrpy-0.0.3.dist-info/RECORD,,
