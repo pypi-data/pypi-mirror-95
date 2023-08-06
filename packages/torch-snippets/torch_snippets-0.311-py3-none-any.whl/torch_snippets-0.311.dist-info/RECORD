@@ -1,0 +1,9 @@
+torch_snippets/__init__.py,sha256=AIOIQ-rJ3C4V2Q0g1NUmDiuOjoWOy2TCwz9-onGWvDs,167
+torch_snippets/loader.py,sha256=JpRwqbnPs15t2MhevbcM-1vkqTgDlqnCie8oTN5BZd4,24149
+torch_snippets/misc.py,sha256=Ie20Hkd0qmuQlbT_k1K6AUhAfwpA7GPUdDylVGLGHHQ,894
+torch_snippets/torch_loader.py,sha256=C9XtKhgnaSfif_ETLjmdw5vA3CzjnQK_YASQl0vImfg,9426
+torch_snippets-0.311.dist-info/LICENSE.txt,sha256=QSCzSt0IOxClwLuxXo8eEt9zeE0Z2MZK70K2HjWSkAU,1061
+torch_snippets-0.311.dist-info/METADATA,sha256=Bxva8Jm3D5aG4-tfJjIxF4Uoo--Ek1E4oLRSsDqHDJE,984
+torch_snippets-0.311.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torch_snippets-0.311.dist-info/top_level.txt,sha256=kuiecjws7IHCfUn9ZhCiSH1yJlb82nx82eqJdjyPu-k,15
+torch_snippets-0.311.dist-info/RECORD,,
