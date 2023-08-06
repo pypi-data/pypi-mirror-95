@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: eldf
+Version: 2021.2
+Summary: A Python implementation of ELDF data format
+Home-page: https://eldf.org
+Author: Alexander Tretyak
+Author-email: alextretyak@users.noreply.github.com
+License: MIT
+Download-URL: https://sourceforge.net/p/eldf/code/ci/default/tarball
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+Usage:
+
+`eldf.to_eldf(object, indent = 4)`
+
+Returns string in ELDF corresponding to a given object.
+
+`eldf.parse(str)`
+
+Converts string in ELDF into object.
+
+---
+
+Использование:
+
+`eldf.to_eldf(object, indent = 4)`
+
+Возвращает строку в формате ELDF соответствующую переданному объекту.
+
+`eldf.parse(str)`
+
+Конвертирует строку в формате ELDF в объект.
+
+
