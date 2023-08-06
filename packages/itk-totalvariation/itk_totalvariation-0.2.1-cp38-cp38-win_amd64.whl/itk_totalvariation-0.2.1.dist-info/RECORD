@@ -1,0 +1,10 @@
+itk/TotalVariationPython.py,sha256=BUS0x6iXWDBJvRLwq0mlHKf9aWVnOeMagYTcgqDlZ08,2509
+itk/_TotalVariationPython.pyd,sha256=At2LHxEwutuOlS4etWGOGIAeyhSt1yLMtpg4ChvvBZE,832000
+itk/itkProxTVImageFilterPython.py,sha256=Wt5k-UHKomUKRaTr99ghzx3n8g5WDtHPMe4NmkLq0XU,22672
+itk/Configuration/TotalVariationConfig.py,sha256=tS5262n0czpM2UC4fcVgp4xlASaq6djqz-eou3O9yPM,921
+itk/Configuration/TotalVariation_snake_case.py,sha256=I52LIT3LtM35BX6rzvSiVqdD85f7h2cJSKSo8LJAcBU,51
+itk_totalvariation-0.2.1.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_totalvariation-0.2.1.dist-info/METADATA,sha256=EhwaUNMQez7JmDnx4yOnyMCIH2Y_gJ9dpzo4NgE9Hdo,1566
+itk_totalvariation-0.2.1.dist-info/WHEEL,sha256=NY3UGhex5YPbdHhL1VJVLwxoIwKgweDPDrq4a9lMdeE,93
+itk_totalvariation-0.2.1.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_totalvariation-0.2.1.dist-info/RECORD,,
