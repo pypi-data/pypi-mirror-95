@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pywikigraph/__init__.py
+pywikigraph/wikigraph.py
+pywikigraph.egg-info/PKG-INFO
+pywikigraph.egg-info/SOURCES.txt
+pywikigraph.egg-info/dependency_links.txt
+pywikigraph.egg-info/requires.txt
+pywikigraph.egg-info/top_level.txt
