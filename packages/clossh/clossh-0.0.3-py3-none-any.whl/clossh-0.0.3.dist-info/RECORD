@@ -1,0 +1,14 @@
+clossh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clossh/control/__init__.py,sha256=R_Cv2uDDl0MUzgFHsmuXNDcJSSZpIFCTj5PkCKEfPH0,84
+clossh/control/controller.py,sha256=W4H3rpF_O_38lHXXA4-AKmyJjsASHZGX9aDjgufJ4JY,6311
+clossh/control/ssh.py,sha256=4QVPPLjdL3OT_3b-FHUJrhpCa7-070_EAozQUvT_mBw,3580
+control/__init__.py,sha256=R_Cv2uDDl0MUzgFHsmuXNDcJSSZpIFCTj5PkCKEfPH0,84
+control/controller.py,sha256=W4H3rpF_O_38lHXXA4-AKmyJjsASHZGX9aDjgufJ4JY,6311
+control/ssh.py,sha256=4QVPPLjdL3OT_3b-FHUJrhpCa7-070_EAozQUvT_mBw,3580
+tools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tools/auth_cluster.py,sha256=BmnLv5AqJpTItSHoEO-W8c4QOKzGAZm0wOUPFKKI5P8,57
+clossh-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+clossh-0.0.3.dist-info/METADATA,sha256=rgVWNrkqtpOPtcy3fzNqVvOrnPZeE8lnRUvvWttjQK4,537
+clossh-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clossh-0.0.3.dist-info/top_level.txt,sha256=xQB-FkBaeZzIhNBwxADCjeiIvdPCk6K_s4jNmSGblG8,7
+clossh-0.0.3.dist-info/RECORD,,
