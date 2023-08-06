@@ -1,0 +1,15 @@
+carehare/__init__.py,sha256=PdxWQ5LGvA4PfGdP4w__ISCmLlSNl0HiTpJ39mybWGM,500
+carehare/_channel.py,sha256=JxpI7UQHGK_JmT7AGhdpzvrU_mkhtBs72Ml2wOwGe2E,1831
+carehare/_channel_id_store.py,sha256=Hb-jbUMiVuy3hqxvx38ENzhBVpavc580kUb85n7vukw,672
+carehare/_connection.py,sha256=RrVWNEvW3yFH8FNVDZI_TFe9EE9qVnY9M6VW9fYjkbw,5680
+carehare/_consume_channel.py,sha256=4b7UFlkn_io2QD3szCYKWWdXRVm0mO49ycinIrA3s5U,8028
+carehare/_exceptions.py,sha256=qGlnWCTXDCPUSkEgNG-jFb0oguFoLExcRitSRa0zj00,1366
+carehare/_exchange_channel.py,sha256=Hh-8JP-5kCPYMyRcL_RDHvD1RmR_B7qOiPOw2NvVRwA,3210
+carehare/_frame_writer.py,sha256=Y96cpqfG_VvFPa7JcOna6LWSjpGXONN8vc5tIgV4s_U,1848
+carehare/_heartbeat.py,sha256=09UQujztgVuGe55Cqxa4evEUJd3felZqUxEiimUnbbU,2613
+carehare/_protocol.py,sha256=IYmxSxDcebrDxD53_m4kk-gS_Fe9ROEb4lmveKqvHJ8,18254
+carehare/_rpc_channel.py,sha256=QVM4uYSmi1oiKxczmY60bjLmAT-zRYowWid7ZX7jS1g,1566
+carehare-0.0.1.dist-info/LICENSE,sha256=D6jGx76Dep5XQYTPXjm8niuuaopzUDNzAIMzh0Gz1Sc,1052
+carehare-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+carehare-0.0.1.dist-info/METADATA,sha256=5J3Fsm9a9z7G6lECLeeIOHoF0eHfcbaorbH20fWSgtM,8997
+carehare-0.0.1.dist-info/RECORD,,
