@@ -1,0 +1,5 @@
+opencv-python
+patool
+pandas
+Pillow
+tensorflow==2.3.0
