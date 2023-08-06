@@ -1,0 +1,9 @@
+README.md
+s3-restore
+setup.cfg
+setup.py
+s3_restore.egg-info/PKG-INFO
+s3_restore.egg-info/SOURCES.txt
+s3_restore.egg-info/dependency_links.txt
+s3_restore.egg-info/requires.txt
+s3_restore.egg-info/top_level.txt
