@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+trrex/__init__.py
+trrex/_version.py
+trrex/trrex.py
+trrex.egg-info/PKG-INFO
+trrex.egg-info/SOURCES.txt
+trrex.egg-info/dependency_links.txt
+trrex.egg-info/top_level.txt
+trrex/tests/__init__.py
+trrex/tests/test_advanced_usage.py
+trrex/tests/test_basic_functions.py
+trrex/tests/test_pandas_integration.py
