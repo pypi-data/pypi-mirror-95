@@ -1,0 +1,5 @@
+Flask
+click>=6.0
+
+[gui]
+pywebview>=3.3.5
