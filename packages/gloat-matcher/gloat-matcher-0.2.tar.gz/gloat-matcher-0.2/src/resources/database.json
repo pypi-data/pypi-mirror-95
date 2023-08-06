@@ -1,0 +1,49 @@
+{
+    "candidates": [
+        {
+            "name" : "Ran",
+            "title": "Software Engineer",
+            "skills": ["Java", "Python", "C#", "Jenkins", "API Testing", "Microservices", "Backend", "Good Looking", "Algorithms", "Docker", "Machine Learning"]
+        },
+        {
+            "name" : "Haim",
+            "title": "Software Engineer",
+            "skills": ["Python", "Microservices", "Backend", "Deep Learning", "Docker"]
+        },
+        {
+            "name":"Joseph",
+            "title":"Support Engineer",
+            "skills":[]
+        },
+        {
+            "name":"Shir",
+            "title":"Talent Acquisition Specialist",
+            "skills": ["Human Resources", "Recruiting"]
+        }, 
+        {
+            "name":"Dor",
+            "title":"Automation Engineer",
+            "skills":["Selenium", "TestNG", "Java"]
+        },
+        {
+            "name":"Meidan",
+            "title":"BI Developer",
+            "skills":["Big Data", "Hadoop"]
+        },
+        {
+            "name":"David",
+            "title":"Automation Engineer",
+            "skills":["Selenium", "Specflow", "C#", "BDD", "xUnit"]
+        },
+        {
+            "name":"Guy",
+            "title":"Automation Engineer",
+            "skills":["Selenium", "Specflow", "C#", "BDD", "xUnit", "Nunit", "MsTest"]
+        },
+        {
+            "name":"Ron",
+            "title":"BI Developer",
+            "skills":["Big Data", "Hadoop", "Kafka", "Python"]
+        }
+    ]
+}
