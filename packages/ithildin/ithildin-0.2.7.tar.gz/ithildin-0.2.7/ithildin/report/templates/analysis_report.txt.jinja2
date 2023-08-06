@@ -1,0 +1,32 @@
+{% if report %}
+{{ '#' * 33 }} BEGIN REPORT {{ '#' * 33 }}
+
+Start Unix Time: {{ report.start_time }}
+End Unix Time: {{ report.end_time }}
+Execution Time: {{ (report.end_time - report.start_time) | round(2) }} seconds
+{% if report.contract_address %}
+Contract Address: {{ report.contract_address }}
+{% endif %}
+{% if report.contract_code %}
+
+{{ '-' * 32 }} Contract Code {{ '-' * 33 }}
+{{ report.contract_code | wordwrap }}
+{{ '-' * 80 }}
+{% endif %}
+
+{% for report_item in report.reports if report_item.results | length > 0 %}
+{% set pad_left = (((80 - (report_item.title | length)) / 2) | round(0, 'floor') - 1) | int %}
+{% set pad_right = (((80 - (report_item.title | length)) / 2) | round(0, 'ceil') - 1) | int %}
+{{ '~' * pad_left }} {{ report_item.title }} {{ '~' * pad_right }}
+{{ report_item.description | wordwrap }}
+{{ '~' * 80 }}
+{% for result in report_item.results %}
+{{ loop.index }}. {{ result.function_name }}
+{% for attribute_name, attribute_value in result.attributes.items() %}
+- {{ attribute_name }}: {{ attribute_value }}
+{% endfor %}
+
+{% endfor %}
+{% endfor %}
+{{ '#' * 34 }} END REPORT {{ '#' * 34 }}
+{% endif %}
