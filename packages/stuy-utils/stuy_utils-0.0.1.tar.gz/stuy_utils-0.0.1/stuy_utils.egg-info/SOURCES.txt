@@ -1,0 +1,13 @@
+README.md
+setup.py
+stuy_utils/__init__.py
+stuy_utils/errors.py
+stuy_utils/schedule.py
+stuy_utils.egg-info/PKG-INFO
+stuy_utils.egg-info/SOURCES.txt
+stuy_utils.egg-info/dependency_links.txt
+stuy_utils.egg-info/top_level.txt
+stuy_utils/data/bell_schedule.csv
+stuy_utils/data/term_days.csv
+stuy_utils/tests/__init__.py
+stuy_utils/tests/schedule_test.py
