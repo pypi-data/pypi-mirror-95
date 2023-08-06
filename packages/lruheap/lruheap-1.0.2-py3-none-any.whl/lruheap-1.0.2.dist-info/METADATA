@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: lruheap
+Version: 1.0.2
+Summary: Python decorators for store in-data memory using LRU cache
+Home-page: https://github.com/sodrooome/lru-cache
+Author: Ryan Febriansyah
+Author-email: 15523163@students.uii.ac.id
+License: MIT
+Keywords: cache lru
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# LRU Cache
+
+ ![PyPI - Status](https://img.shields.io/pypi/status/lruheap) [![Downloads](https://pepy.tech/badge/lruheap)](https://pepy.tech/project/lruheap) [![Build Status](https://travis-ci.org/sodrooome/lru-cache.svg?branch=master)](https://travis-ci.org/sodrooome/lru-cache) [![codecov](https://codecov.io/gh/sodrooome/lru-cache/branch/master/graph/badge.svg)](https://codecov.io/gh/sodrooome/lru-cache)
+
+Package for tracking store in-data memory using replacement cache algorithm / LRU cache. The Priority of storing or removing the data based on Min-Max heap algorithm or basic priority queue instead using OrderedDict module that provided by Python.
+
+## Usage
+
+LRUCache only works in Python version 3.5 and above, you can install it with :
+
+```sh
+pip3 install lruheap
+```
+
+## Documentation
+
+You can read the fully detailed explanation about LRUCache in [here](https://lru-cache.readthedocs.io/en/latest/)
+
+## Contribution
+
+Since this package is still being under developed, any contributions are much welcomed and you can read on contribution page.
+
+## License
+
+This package is licensed under the MIT License.
+
+
