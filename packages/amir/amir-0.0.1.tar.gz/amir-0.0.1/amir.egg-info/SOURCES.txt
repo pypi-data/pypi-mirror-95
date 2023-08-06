@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+amir.egg-info/PKG-INFO
+amir.egg-info/SOURCES.txt
+amir.egg-info/dependency_links.txt
+amir.egg-info/top_level.txt
+tests/__init__.py
+tests/utils_test.py
