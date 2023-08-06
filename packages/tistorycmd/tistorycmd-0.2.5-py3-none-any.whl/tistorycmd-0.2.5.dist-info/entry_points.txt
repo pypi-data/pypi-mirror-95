@@ -1,0 +1,3 @@
+[console_scripts]
+tistorycmd = tistorycmd.main:main
+
