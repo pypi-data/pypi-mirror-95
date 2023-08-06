@@ -1,0 +1,15 @@
+mkl_fft/__init__.py,sha256=nE-2owDr1NniJw7DTPZ14y1jE_sr-N4OXii-VOxHrAY,1936
+mkl_fft/_float_utils.py,sha256=6VXHb9-4sYEZpeTTP5gGcl0Vp1frQ0sruxg1b1iPQrU,3380
+mkl_fft/_numpy_fft.py,sha256=-rnx6UnPqZvR4q7Gh6pRQfHjzdTcL4R-dtjo8OggVsc,46675
+mkl_fft/_pydfti.cp37-win_amd64.pyd,sha256=KYoNUxzHUBT25_-ANjIRgEiy4kUyqYQzhz3QnLt6C_g,560640
+mkl_fft/_scipy_fft.py,sha256=ppnC4RGnvMqrOpmDty-kw1vz0SU977O-fjM2EQMR9_k,3164
+mkl_fft/_scipy_fft_backend.py,sha256=MJkv8QuXoXcTCBsQ2HaMn6qVXlNbVDs9ip3K7s3fCeo,10743
+mkl_fft/_version.py,sha256=EC4J1WCRNbur19qU-_rvaR6FXNDwZwpfyqCichJKmVQ,23
+mkl_fft/setup.py,sha256=lsWaAfTzjOodG5MckTG8oMsWoVGkk_otqyz7ucrRLPA,3865
+mkl_fft/tests/test_fft1d.py,sha256=XohuuXTheD0zuPm7SftDXxMpAQVegdtuXBTI1neviRA,13781
+mkl_fft/tests/test_fftnd.py,sha256=k_cYHNqv9npuAY_wxRs1OUASkCKpn1gfYREz5J9amUU,5981
+mkl_fft-1.2.0.dist-info/LICENSE.txt,sha256=_wf2ZlqM4MmQCml9cc5CoEeFfv96AyIpqNvDiJ0vYxM,1529
+mkl_fft-1.2.0.dist-info/METADATA,sha256=GbdnUnENKtuMng1M60lbvxOJERXo4eYzpWRFAj8EVF0,3707
+mkl_fft-1.2.0.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+mkl_fft-1.2.0.dist-info/top_level.txt,sha256=hjyj9JphiBfpP4bLbMitG4fkZxpFtY3Iyj_nDe03wds,8
+mkl_fft-1.2.0.dist-info/RECORD,,
