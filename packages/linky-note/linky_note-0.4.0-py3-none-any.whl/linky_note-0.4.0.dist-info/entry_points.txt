@@ -1,0 +1,3 @@
+[console_scripts]
+linky-note=linky_note.entrypoints.append_linked_references:app
+
