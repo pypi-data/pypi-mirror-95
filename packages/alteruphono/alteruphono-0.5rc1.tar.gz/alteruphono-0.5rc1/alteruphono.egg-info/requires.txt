@@ -1,0 +1,2 @@
+arpeggio
+maniphono>=0.3rc0
