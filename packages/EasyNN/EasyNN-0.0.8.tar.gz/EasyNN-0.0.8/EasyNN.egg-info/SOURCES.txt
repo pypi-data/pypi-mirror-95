@@ -1,0 +1,13 @@
+README.md
+setup.py
+EasyNN/DeepNeuralNetwork.py
+EasyNN/EasyNN.py
+EasyNN/NeuralNetwork.py
+EasyNN/Point.py
+EasyNN/__init__.py
+EasyNN/run.py
+EasyNN.egg-info/PKG-INFO
+EasyNN.egg-info/SOURCES.txt
+EasyNN.egg-info/dependency_links.txt
+EasyNN.egg-info/requires.txt
+EasyNN.egg-info/top_level.txt
