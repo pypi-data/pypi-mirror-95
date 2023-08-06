@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+artwork/__init__.py
+artwork/__main__.py
+artwork/version.py
+artwork.egg-info/PKG-INFO
+artwork.egg-info/SOURCES.txt
+artwork.egg-info/dependency_links.txt
+artwork.egg-info/entry_points.txt
+artwork.egg-info/not-zip-safe
+artwork.egg-info/requires.txt
+artwork.egg-info/top_level.txt
+tests/__init__.py
