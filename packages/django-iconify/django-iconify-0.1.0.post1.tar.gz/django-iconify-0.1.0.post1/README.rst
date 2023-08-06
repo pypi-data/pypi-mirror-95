@@ -1,0 +1,119 @@
+Iconify API implementation and tools for Django projects
+========================================================
+
+This re-usable app hepls integrating `Iconify`_ into Django projects.
+Iconify is a unified icons framework, providing access to 40,000+ icons
+from different icon sets.
+
+Iconify replaces classical icon fonts, claiming that such fonts would
+get too large for some icon sets out there. Instead, it provides an API
+to add icons in SVG format from its collections.
+
+`django-iconify`_ eases integration into Django. Iconify, to be performant,
+uses a server-side API to request icons from (in batches, with transformations
+applied, etc.). Upstream provides a CDN-served central API as well as
+self-hosted options written in PHP or Node.js, all of which are undesirable
+for Django projects. `django-iconify`_ implements the Iconify API as a
+re-usable Django app.
+
+Installation
+------------
+
+To add `django-iconify`_ to a project, first add it as dependency to your
+project, e.g. using `poetry`_::
+
+  $ poetry add django-iconify
+
+Then, add it to your `INSTALLED_APPS` setting to make its views available
+later::
+
+  INSTALLED_APPS = [
+      ...
+      "dj_iconify.apps.DjIconifyConfig",
+      ...
+  ]
+
+You need to make the `JSON collection`_ available by some means. You can
+download it manually, or use your favourite asset management library. For
+instance, you could use `django-yarnpkg`_ to depend on the `@iconify/json`
+Yarn package::
+
+  YARN_INSTALLED_APPS = [
+    "@iconify/json",
+  ]
+  NODE_MODULES_ROOT = os.path.join(BASE_DIR, "node_modules")
+
+No matter which way, finally, you have to configure the path to the
+collections in your settings::
+  
+  ICONIFY_JSON_ROOT = os.path.join(NODE_MODULES_ROOT, "@iconify", "json")
+
+If you do not use `django-yarnpkg`_, construct the path manually, ot use
+whatever mechanism your asset manager provides.
+
+Finally, include the URLs in your `urlpatterns`::
+
+  from django.urls import include, path
+
+  urlpatterns = [
+      path("icons/", include("dj_iconify.urls")),
+  ]
+
+Usage
+-----
+
+Iconify SVG Framework
+~~~~~~~~~~~~~~~~~~~~~
+
+To use the `Iconify SVG Framework`_, get its JavaScript from somewhere
+(e.g. using `django-yarnpkg`_ again, or directly from the CDN, from your
+ow nstatic files, or wherever).
+
+`django-iconify`_ provides a view that returns a small JavaScript snippet
+that configures the `Iconify SVG Framework`_ to use its API endpoints. In
+the following example, we first load this configuration snippet, then
+include the `Iconify SVG Framework`_ from the CDN (do not do this in
+production, where data protection matters)::
+
+  <script type="text/javascript" src="{% url 'config.js' %}"></script>
+  <script type="text/javascript" src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+Loading SVG directly ("How to use Iconify in CSS")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`django-iconify`_ also implements the direct SVG API. For now, you have to use
+Django's regular URL reverse resolver to construct an SVG URL, or craft it
+by hand::
+
+  <img src="{% url 'iconify_svg' 'mdi' 'account' %}?rotate=90deg %}" />
+
+Documentation on what query parameters are supported can be found in the
+documentation on `How to use Iconify in CSS`_.
+
+In the future, a template tag will be available to simplify this.
+
+Including SVG in template directly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Not implemented yet*
+
+In the future, a template tag will be available to render SVG icons directly
+into the template, which can be helpful in situations where retrieving external
+resources in undesirable, like HTML e-mails.
+
+Example
+-------
+
+The source distribution as well as the `Git repository` contain a full example
+application that serves the API under `/icons/` and a test page under `/test.html`.
+
+It is reduced to a minimal working example for the reader's convenience.
+
+.. _Iconify: https://iconify.design/
+.. _django-iconify: https://edugit.org/AlekSIS/libs/django-iconify
+.. _poetry: https://python-poetry.org/
+.. _JSON collection: https://github.com/iconify/collections-json
+.. _django-yarnpkg: https://edugit.org/AlekSIS/libs/django-yarnpkg
+.. _Iconify SVG Framework: https://docs.iconify.design/implementations/svg-framework/
+.. _How to use Iconify in CSS: https://docs.iconify.design/implementations/css.html
+.. _Git repository: https://edugit.org/AlekSIS/libs/django-iconify
