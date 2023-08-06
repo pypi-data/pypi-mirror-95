@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+slacki/__init__.py
+slacki/examples.py
+slacki/slacki.py
+slacki.egg-info/PKG-INFO
+slacki.egg-info/SOURCES.txt
+slacki.egg-info/dependency_links.txt
+slacki.egg-info/requires.txt
+slacki.egg-info/top_level.txt
+slacki/data/__init__.py
+slacki/utils/__init__.py
+slacki/utils/check_connection.py
