@@ -1,0 +1,16 @@
+codac/__init__.py,sha256=zQM2BudoXTbvlDmHuRC9JtXK14_mg0HHYIUpUPsJ4jA,360
+codac/tube.pyd,sha256=Z-ALI9gjcL6s9ZQdcaB0HxPZMIkNh4584yfjNsZsPJ4,5049856
+codac/version.py,sha256=LWbFOE542ks2EN-xYHYjN-LfbA9sOCpXgbJXg_b2oBM,19
+codac/tests/__init__.py,sha256=Cs6wNdWK0xLXuUR1hJrnOshdcR9ccjqQs4c6tvjmJng,73
+codac/tests/test_arithmetic.py,sha256=h65OZzY6E8YH-HGun7QQ2gUpuguMN9HVVL4mGkEikc8,31537
+codac/tests/test_cn.py,sha256=4xhmH82bu_Wcm3zoKqy5PvhV8crk1EftPhypL0RBUt8,13903
+codac/tests/test_ctc_constell.py,sha256=PG3fsntjfAA_PGDcYd1m3b0LtEsjtOXiOGfXL_UHi38,3477
+codac/tests/test_ctcdelay.py,sha256=PyE7cnbQjb9-zhBGLDQyQoiCmCZapSSiSClIQ5coiSA,1766
+codac/tests/test_ctceval.py,sha256=STLPXEEzwDQnEPXDeEdadLGp80vXpKa-lf0f7mG3xOQ,45065
+codac/tests/test_definition.py,sha256=89oC2hFWJsozfsP98MDCH19mQihZjh8t8gtF-iCwLuI,12138
+codac/tests/test_function.py,sha256=vDT3ykqvXi46GIjhQIjbQiZdIfVWptbCFwRsH2vaKh0,899
+codac/tests/test_multi_arithmetic.py,sha256=z6zY3igF7nrIdnU0T7MvJmNyXt5FKuA3FMVuadAKSzg,3759
+codac-0.1.1.dist-info/METADATA,sha256=UsRPMsOU91bex2JVNhxTIAwF8FuhYI9zBw_V0acDPM8,648
+codac-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+codac-0.1.1.dist-info/top_level.txt,sha256=8FIXP4a7FrNu8RyqD7RFUsU7CTUmdd2T6j6EU-DTNYs,6
+codac-0.1.1.dist-info/RECORD,,
