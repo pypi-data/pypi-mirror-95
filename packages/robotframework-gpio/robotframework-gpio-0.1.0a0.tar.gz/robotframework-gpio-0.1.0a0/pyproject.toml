@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "robotframework-gpio"
+version = "0.1.0-alpha"
+description = "Robot Framework Library for GPIO Interface on Raspberry Pi's"
+authors = ["Yusuf Can Bayrak <yusufcanbayrak@gmail.com>"]
+license = "Apache-2.0"
+readme = 'README.md'
+packages = [
+    { include = "src/GPIOLibrary" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+robotframework = "^3.2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-coverage = "^0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

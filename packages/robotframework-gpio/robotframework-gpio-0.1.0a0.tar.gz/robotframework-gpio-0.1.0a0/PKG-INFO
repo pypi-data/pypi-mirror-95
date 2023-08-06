@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: robotframework-gpio
+Version: 0.1.0a0
+Summary: Robot Framework Library for GPIO Interface on Raspberry Pi's
+License: Apache-2.0
+Author: Yusuf Can Bayrak
+Author-email: yusufcanbayrak@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: robotframework (>=3.2.2,<4.0.0)
+Description-Content-Type: text/markdown
+
+# GPIOLibrary
+
+Robot Framework library for interfacing GPIO pins on Raspberry Pi's.
+
+## Installation
+
