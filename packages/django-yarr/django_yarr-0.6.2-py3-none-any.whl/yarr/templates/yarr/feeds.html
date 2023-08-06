@@ -1,0 +1,69 @@
+{% extends "yarr/base_manage.html" %}
+{% load static %}
+
+{% block yarr_content %}
+<div id="feeds">
+
+<h2>Add feed</h2>
+{% include "yarr/include/form_feed_add.html" %}
+
+
+<h2>Manage feeds</h2>
+
+<table class="feed_manage">
+
+    <colgroup>
+        <col class="name">
+        <col class="unread">
+        <col class="feed_status">
+        <col class="next_check">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>Feed</th>
+            <th>Unread</th>
+            <th>Status</th>
+            <th>Next check</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    {% for feed in feeds %}
+        <tr
+            data-yarr-pk="{{ feed.pk }}"
+            data-yarr-error="{{ feed.error }}"
+            data-yarr-last-checked="{{ feed.last_checked|default:"Not checked yet" }}"
+            data-yarr-is-active="{{ feed.is_active|lower }}"
+        >
+            <td><a href="{% url "yarr:feed_edit" feed_pk=feed.pk %}">{{ feed }}</a></td>
+
+            <td>{{ feed.count_unread }}/{{ feed.count_total }}</td>
+
+            {% if feed.is_active %}
+                {% if feed.error %}
+                    <td class="status--problem">Problem</td>
+                {% else %}
+                    <td class="status--active">Active</td>
+                {% endif %}
+            {% else %}
+                <td class="status--inactive">Inactive</td>
+            {% endif %}
+
+            {% if feed.is_active %}
+                <td>{{ feed.next_check|default:"As soon as possible" }}</td>
+            {% else %}
+                <td>Never</td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<h2>Export feeds</h2>
+
+<p><a href="{% url "yarr:feeds_export" %}" rel="nofollow">Export feeds as OPML</a>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "yarr/base_manage.html" %}
+
+{% block yarr_content %}
+
+<div id="yarr_feed_edit">
+    {{ block.super }}
+
+    {% include "yarr/include/form_feed_edit.html" %}
+</div>
+
+{% endblock %}
