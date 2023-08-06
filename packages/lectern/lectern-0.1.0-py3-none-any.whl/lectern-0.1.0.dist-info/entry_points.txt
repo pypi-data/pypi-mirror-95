@@ -1,0 +1,3 @@
+[console_scripts]
+lectern=lectern.cli:main
+
