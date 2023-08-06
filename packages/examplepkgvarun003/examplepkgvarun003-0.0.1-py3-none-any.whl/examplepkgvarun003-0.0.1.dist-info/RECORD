@@ -1,0 +1,10 @@
+examplepkg/__init__.py,sha256=RW6Dpug8z8F_QKuZqB6ih45XkOtw7PU08DR_mAWToQc,50
+examplepkg/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examplepkg/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examplepkg/extras/__init__.py,sha256=ae2dA6qND6c35l1Iu-AN6ZgAtnw47exlMDoQueOjYw4,56
+examplepkg/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examplepkg/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examplepkgvarun003-0.0.1.dist-info/METADATA,sha256=iUH257HGwlUwFLK-tTpGfaLMygls82PgTkaJTzNSQA4,584
+examplepkgvarun003-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+examplepkgvarun003-0.0.1.dist-info/top_level.txt,sha256=wgfV0E7CdnDwEvZ_kzVf3LzGCAPo5RXYd1sSRrUBHw4,11
+examplepkgvarun003-0.0.1.dist-info/RECORD,,
