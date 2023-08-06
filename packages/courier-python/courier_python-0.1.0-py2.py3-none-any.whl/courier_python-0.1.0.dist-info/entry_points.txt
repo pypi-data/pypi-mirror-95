@@ -1,0 +1,3 @@
+[console_scripts]
+courier_python = courier_python.cli:main
+
