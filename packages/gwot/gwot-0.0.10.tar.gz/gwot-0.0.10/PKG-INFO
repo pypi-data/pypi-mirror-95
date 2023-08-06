@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gwot
+Version: 0.0.10
+Summary: gWOT
+Home-page: https://github.com/zsteve/gwot
+Author: Stephen Zhang
+Author-email: syz@math.ubc.ca
+License: UNKNOWN
+Description: # gWOT
+        Global Waddington-OT
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
