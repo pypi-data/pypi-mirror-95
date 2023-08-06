@@ -1,0 +1,3 @@
+[console_scripts]
+fedvision-deploy = fedvision_deploy_toolkit.cli:app
+
