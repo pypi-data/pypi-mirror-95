@@ -1,0 +1,16 @@
+core_helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_helpers/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_helpers/api/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_helpers/api/serializers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_helpers/api/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_helpers/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_helpers/db/fields/__init__.py,sha256=-b5zK0u2EFY9lvrSJfVbgiUgJEVqPMNccXNoY3PvHeA,105
+core_helpers/db/fields/core.py,sha256=s5WU6BkgLMOh_cZ-QnZp4x2eg5YHrg1jaJk4LBmX_6g,2463
+core_helpers/db/managers/__init__.py,sha256=cyhSrGPPoLS0KQXs_15vLon_4AH67FOeZPZku0P3Yak,95
+core_helpers/db/managers/core.py,sha256=XQsqNNt-DErSobBSSY_WmVpbPRvSVZVNpeT_UUQAibQ,2065
+core_helpers/db/models/__init__.py,sha256=VZNCSZI-wSeWxkO1wwsI72kujsCa7H94b_GoA-Nm4rw,470
+core_helpers/db/models/core.py,sha256=wR1VlmX0We5Ze2G-YbYH3YKoBz1DsJRbeF8DhnjUUCM,3897
+django_core_helpers-0.1.1.dist-info/LICENSE,sha256=yaxkktu4-mcJGTTrrZnvZ8AbK9i0Ib1PoUdGFFRcjhg,1108
+django_core_helpers-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_core_helpers-0.1.1.dist-info/METADATA,sha256=yG9OXtvAi3677kFjG1NIkmJpuTKEPoqzNiFeX4yT6KE,2950
+django_core_helpers-0.1.1.dist-info/RECORD,,
