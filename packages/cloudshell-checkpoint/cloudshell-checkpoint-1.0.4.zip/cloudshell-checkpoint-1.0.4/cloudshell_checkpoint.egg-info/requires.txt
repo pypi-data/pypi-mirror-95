@@ -1,0 +1,5 @@
+setuptools>=40.0
+cloudshell-shell-flows<2,>=1.0
+cloudshell-cli<5,>=4.0
+cloudshell-snmp<5,>=4.0
+passlib==1.7.4

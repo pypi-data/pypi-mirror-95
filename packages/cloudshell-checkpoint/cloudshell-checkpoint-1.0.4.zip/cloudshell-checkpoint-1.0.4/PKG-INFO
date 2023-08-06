@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cloudshell-checkpoint
+Version: 1.0.4
+Summary: Quali checkpoint specific package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
