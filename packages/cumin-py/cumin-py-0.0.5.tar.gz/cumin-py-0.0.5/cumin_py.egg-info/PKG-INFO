@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: cumin-py
+Version: 0.0.5
+Summary: Python Binding for cumin
+Home-page: https://github.com/cympfh/cumin-py
+Author: cympfh
+Author-email: cympfh@gmail.com
+License: UNKNOWN
+Description: cumin-py
+        ========
+        
+        Python Binding for `cumin <https://github.com/cympfh/cumin>`__.
+        
+        setup
+        -----
+        
+        from PyPI
+        ~~~~~~~~~
+        
+        .. code:: bash
+        
+            pip install cumin-py
+        
+        from Github
+        ~~~~~~~~~~~
+        
+        .. code:: bash
+        
+            clone this, then
+            pip install .
+        
+        Usage
+        -----
+        
+        .. code:: python
+        
+            import cumin
+        
+            cumin.loads("""
+            struct S { x: Int, y: Int = 0 }
+            let a = S(1);
+            [a, a]
+            """)
+            # => [{'x': 1, 'y': 0}, {'x': 1, 'y': 0}]
+        
+            cumin.load("conf.cumin")  # read ./conf.cumin
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License

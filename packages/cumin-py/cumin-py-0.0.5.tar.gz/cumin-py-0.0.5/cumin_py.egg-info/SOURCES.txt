@@ -1,0 +1,10 @@
+README.md
+README.rst
+pyproject.toml
+setup.py
+cumin/__init__.py
+cumin_py.egg-info/PKG-INFO
+cumin_py.egg-info/SOURCES.txt
+cumin_py.egg-info/dependency_links.txt
+cumin_py.egg-info/not-zip-safe
+cumin_py.egg-info/top_level.txt
