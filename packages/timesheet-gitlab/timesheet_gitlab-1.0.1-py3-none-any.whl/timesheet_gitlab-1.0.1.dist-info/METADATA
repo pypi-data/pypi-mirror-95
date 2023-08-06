@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: timesheet-gitlab
+Version: 1.0.1
+Summary: produce timesheets using activity data from GitLab API calls
+Home-page: https://gitlab.com/oliversmart/timesheet_gitlab
+Author: Oliver Smart
+Author-email: oliver.s.smart@gmail.com
+License: Apache License 2.0.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: python-gitlab
+Requires-Dist: grip
+
+UNKNOWN
+
+
