@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: PatrowlAssets
+Version: 0.0.1
+Summary: Python API and CLI for extracting assets from Cloud and virtualized systems
+Home-page: https://github.com/Patrowl/PatrowlAssets
+Author: Nicolas Mattiocco
+Author-email: nicolas@patrowl.io
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
