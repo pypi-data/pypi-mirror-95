@@ -1,0 +1,9 @@
+bits/__init__.py,sha256=EtOD91ivU_kXxRA8lopap-Ihis3DvCkFVpiaQIdypM4,89
+bits/gaia/__init__.py,sha256=JhFz9UvR7Ucfe8bSHOvTXkl3D_GR5xavLMa0x99WOYo,5121
+bits/gaia/atlassian.py,sha256=XEMvzefnvaaW0mUUiG4jQLdeCpBSn2yHB8QW1Hn33yE,2393
+bits/gaia/auth.py,sha256=SmCP5jM2d7_bn0ufjCT5wbNrdFIzS0tGZttzF0vc8RQ,7687
+bits/gaia/slack.py,sha256=DpgLWU1xqsU1F7_dAASWKbvqrAnwJ7ansSToujpdCSg,3935
+bits_gaia-0.2.5.dist-info/METADATA,sha256=0GU4vF7LSOmOZsgFCujXBoAq856jRcO-ChqDZZ1MvRQ,319
+bits_gaia-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bits_gaia-0.2.5.dist-info/top_level.txt,sha256=r0CPtEdvhPhtNI1RzFMKlSds-wmUFadHdR_o8lZNEOg,5
+bits_gaia-0.2.5.dist-info/RECORD,,
