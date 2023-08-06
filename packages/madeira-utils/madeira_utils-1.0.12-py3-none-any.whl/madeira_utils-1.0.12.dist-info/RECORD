@@ -1,0 +1,15 @@
+madeira_utils/__init__.py,sha256=ZG-qYTZd9tnM6yhKhsqAqdfD7BQJk-XbcBhQJEmdeeM,23
+madeira_utils/api_common.py,sha256=ea8CGax9C_dZrMd_5qFf4ifOoMN4LHc_75uNaG-PgSk,3323
+madeira_utils/api_dev.py,sha256=g0I87fDuzy6Tw2kNtpxCFSxNQ5M8SR8bCmGEPRxsJ7w,5978
+madeira_utils/aws_lambda_responses.py,sha256=tet7lUR0QXj151GiHta_mnxrj5phs8Kd_J0ydesGvE4,544
+madeira_utils/dns.py,sha256=n2uOPcuvk7qT0FJqUO1-pvczZQU4JnL-OM7E8xANhgs,1532
+madeira_utils/godaddy_dns.py,sha256=HluKAW3wcI9gE5Hx2kCMjOBokk5RdVHl03ymwe82dEk,3955
+madeira_utils/hashing.py,sha256=GlNXvWZfA0rL-QFz0r2eMmiWXusIJEqpd3tX9wGPHMU,592
+madeira_utils/loggers.py,sha256=Z29I2IszG4xWgkkztrKZXbgmDhhemHbDawV669X1kPU,1015
+madeira_utils/measurement.py,sha256=lMP1UZUQwqrvwwxbbVu1D2_l67jeQW4T82c_IVmTtIo,119
+madeira_utils/time.py,sha256=3tHyAaiPeZ5WHyM9F2ceryF5Xqu0vqgTQ2BCbAxVAxs,383
+madeira_utils/utils.py,sha256=4FGw9uu6lXhwUi9DfDjuQYSkifE0w8Vj_Eu8fOD60dI,4008
+madeira_utils-1.0.12.dist-info/METADATA,sha256=FkPUWUTDgz-iyIheS8S0vJrB4MzQ-RGMC5waxk7RZSY,979
+madeira_utils-1.0.12.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+madeira_utils-1.0.12.dist-info/top_level.txt,sha256=0qWQSAoz3JTkLmCZ5iWrvX9UaRl1bMSsyFqf_FwF7L4,14
+madeira_utils-1.0.12.dist-info/RECORD,,
