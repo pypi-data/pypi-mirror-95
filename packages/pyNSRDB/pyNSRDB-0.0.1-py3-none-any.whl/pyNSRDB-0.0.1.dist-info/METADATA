@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyNSRDB
+Version: 0.0.1
+Summary: Python frontend to NREL NRSDB API.
+Home-page: https://github.com/bwilliams2/pyNSRDB
+Author: Bryce Williams
+Author-email: bwilliams2@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pyNRSDB
+Python interface for the National Solar Radiation Database (NSRDB) made available by NREL.
+
+Look for expansion of features in the future.
+
+NSRDB Site: https://nsrdb.nrel.gov/
+NSRDB API Documentation: https://nsrdb.nrel.gov/data-sets/api-instructions.html
+
+References:
+[1] M. Sengupta, Y. Xie, A. Lopez, A. Habte, G. Maclaurin, and J. Shelby, “The National Solar Radiation Data Base (NSRDB),” Renewable and Sustainable Energy Reviews, vol. 89, pp. 51–60, Jun. 2018, doi: 10.1016/j.rser.2018.03.003.
+
+
