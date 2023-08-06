@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: frilouz
+Version: 0.0.1
+Summary: Python AST parser adapter with partial error recovery
+Home-page: https://github.com/serge-sans-paille/frilouz/
+Author: serge-sans-paille
+Author-email: serge.guelton@telecom-bretagne.eu
+License: BSD 3-Clause
+Description: 
+        An adaptor for AST parser like `ast.parse` and `gast.parse` which is capable of
+        recovering from syntax error and provide a list of syntax errors met
+        during parsing.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
