@@ -1,0 +1,6 @@
+attrs>=17.4.0
+click
+click-default-group
+networkx
+pluggy
+pony>=0.7.13
