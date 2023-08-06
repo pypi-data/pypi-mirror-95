@@ -1,0 +1,1 @@
+You can find all docs at https://docs.economycord.xyz
