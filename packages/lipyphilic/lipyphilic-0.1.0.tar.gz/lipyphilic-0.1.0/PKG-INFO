@@ -1,0 +1,53 @@
+Metadata-Version: 1.2
+Name: lipyphilic
+Version: 0.1.0
+Summary: Analyse MD simulations of lipids with python
+Home-page: https://github.com/p-j-smith/lipyphilic
+Author: Paul Smith
+Author-email: paul.smith@kcl.ac.uk
+License: LGPL-2.1-or-later
+Project-URL: Documentation, https://lipyphilic.readthedocs.io/
+Project-URL: Changelog, https://lipyphilic.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/p-j-smith/lipyphilic/issues
+Description: ==========
+        Overview
+        ==========
+        
+        **Analyse MD simulations of lipids with python**
+        
+        
+        
+        Free software: GNU General Public License v2 or later (GPLv2+)
+        
+        lipyphilic CHANGELOG
+        ====================
+        
+        0.1.0 (2021-02-17)
+        ------------------
+        
+        * Add functionality to find flip-flop events in bilayers
+        * Add functionality to calculate area per lipid
+        * Add functionality to find assign lipids to leaflets in a bilayer
+        
+        
+        0.0.0 (2021-02-08)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: lipids,molecular dynamics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6,<3.10
