@@ -1,0 +1,6 @@
+README.md
+setup.py
+track_analyzer.egg-info/PKG-INFO
+track_analyzer.egg-info/SOURCES.txt
+track_analyzer.egg-info/dependency_links.txt
+track_analyzer.egg-info/top_level.txt
