@@ -1,0 +1,11 @@
+http_logging/__init__.py,sha256=4ZyXX5xu2zVJjkf-lOEWobIzcBo58uk00HwgGmP1iRI,213
+http_logging/constants.py,sha256=FT-VjeIm7rhJtMB_RfoAmyzvzeQYxeFJOfuFNn8BKwE,1068
+http_logging/formatter.py,sha256=Doc2wq0lf4ZYW2_vJCLSoVR2bM8fXY8necvx5ZTOXhU,3010
+http_logging/handler.py,sha256=91vAUAVcts00PwBNxv_lRVUj1nLa5GOQCcvLXgjPxSM,1694
+http_logging/secondary_classes.py,sha256=xH0eXe-bsyEj-WUtWJvpRRSC_9wsTiBRjFTR1NUe-xw,1932
+http_logging/transport.py,sha256=NXe3WMBgD4W3-KCP50_aeMToXflD4-5pBkfJjQK9fqk,3444
+http_logging-1.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+http_logging-1.0.5.dist-info/METADATA,sha256=G33dFDolj75rpIRQc3F0KodgF-9Tl5xS11N388d01pc,7092
+http_logging-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+http_logging-1.0.5.dist-info/top_level.txt,sha256=uQvuTQmUpx5p0Cr5JRDTZHvGxokAKWI-UduUHH4BKGU,13
+http_logging-1.0.5.dist-info/RECORD,,

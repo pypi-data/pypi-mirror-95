@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: http-logging
+Version: 1.0.5
+Summary: Non-blocking HTTP handler for Python `logging` with local SQLite buffer/cache.
+Home-page: https://github.com/hacktlib/py-async-http-logging/wiki
+Author: Hackt.app
+Author-email: opensource@hackt.app
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/hacktlib/py-async-http-logging/issues
+Project-URL: Say Thanks!, http://lib.hackt.app
+Project-URL: Source, https://github.com/hacktlib/py-async-http-logging/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: python-logstash-async (>=2.2.0)
+Requires-Dist: requests (>=2.25.1)
+Provides-Extra: dev
+Requires-Dist: pexpect (>=4.8.0) ; extra == 'dev'
+Requires-Dist: autopep8 (>=1.5.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.1) ; extra == 'dev'
+Requires-Dist: coverage (>=5.3) ; extra == 'dev'
+Requires-Dist: coverage-badge (>=1.0.1) ; extra == 'dev'
+Requires-Dist: wheel (>=0.36.2) ; extra == 'dev'
+Provides-Extra: pub
+Requires-Dist: pexpect (>=4.8.0) ; extra == 'pub'
+Requires-Dist: autopep8 (>=1.5.4) ; extra == 'pub'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'pub'
+Requires-Dist: pytest (>=6.2.1) ; extra == 'pub'
+Requires-Dist: coverage (>=5.3) ; extra == 'pub'
+Requires-Dist: coverage-badge (>=1.0.1) ; extra == 'pub'
+Requires-Dist: wheel (>=0.36.2) ; extra == 'pub'
+Requires-Dist: twine (>=3.2.0) ; extra == 'pub'
+
+# Asynchronous HTTP Logging
+
+Non-blocking HTTP handler for Python `logging` with local SQLite buffer/cache.
+
+![Test Coverage](https://raw.githubusercontent.com/hacktlib/py-async-http-logging/main/coverage.svg)
+![Maintained](https://img.shields.io/maintenance/yes/2021)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/hacktlib/py-async-http-logging)](https://codeclimate.com/github/hacktlib/py-async-http-logging)
+[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/hacktlib/py-async-http-logging)](https://codeclimate.com/github/hacktlib/py-async-http-logging)
+[![Issues](https://img.shields.io/codeclimate/issues/hacktlib/py-async-http-logging)](https://codeclimate.com/github/hacktlib/py-async-http-logging/issues?category=complexity&engine_name%5B%5D=structure&engine_name%5B%5D=duplication)
+[![CodeFactor](https://www.codefactor.io/repository/github/hacktlib/py-async-http-logging/badge)](https://www.codefactor.io/repository/github/hacktlib/py-async-http-logging)
+
+[![Requirements Status](https://requires.io/github/hacktlib/py-async-http-logging/requirements.svg?branch=main)](https://requires.io/github/hacktlib/py-async-http-logging/requirements/?branch=main)
+[![PyPI](https://img.shields.io/pypi/v/http_logging)](https://pypi.org/project/http_logging/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+[![Code Style](https://img.shields.io/badge/code%20style-PEP8-lightgrey)](https://github.com/hhatto/autopep8/)
+[![Code Formatter](https://img.shields.io/badge/formatter-autopep8-lightgrey)](https://github.com/hhatto/autopep8/)
+[![Test Framework](https://img.shields.io/badge/testing-pytest-lightgrey)](https://github.com/pytest-dev/pytest/)
+
+
+## Documentation
+
+Please refer to the [project Wiki](https://github.com/hacktlib/py-async-http-logging/wiki).
+
+
+## Installation
+
+> [Virtual environment](https://docs.python.org/3/tutorial/venv.html) is highly recommended.
+
+```shell
+pip install http_logging
+```
+
+
+## Basic usage
+
+```python
+import logging
+
+from http_logging import HttpHost
+from http_logging.handler import AsyncHttpHandler
+
+log_handler = AsyncHttpHandler(http_host=HttpHost(name='your-domain.com'))
+
+logger = logging.getLogger()
+logger.addHandler(log_handler)
+
+# Works with simple log messages like:
+logger.info('Some useful information...')
+
+# Can also handle extra fields:
+logger.warning('You\'ve been warned!', extra={'foo': 'bar'})
+
+# And, of course, captures exception with full stack-trace
+try:
+    1/0
+except Exception as exc:
+    logger.error('Ooops!', exc_info=exc)
+```
+
+These log messages are cached in a local SQLite database and periodically delivered (asynchronously, in a separate thread) to your host in a POST request with a body similar to this one:
+
+```json
+[
+    {
+        "type": "async-http-logging",
+        "created": 1610393068.365492,
+        "relative_created": 1505.5122375488281,
+        "message": "Some useful information...",
+        "level": {
+            "number": 20,
+            "name": "INFO"
+        },
+        "stack_trace": null,
+        "sourcecode": {
+            "pathname": "/path/to/your/python/script.py",
+            "function": "function_name",
+            "line": 123
+        },
+        "process": {
+            "id": 1234,
+            "name": "MainProcess"
+        },
+        "thread": {
+            "id": 1234567890,
+            "name": "MainThread"
+        }
+    },
+    {
+        "type": "async-http-logging",
+        "created": 1610393068.3663092,
+        "relative_created": 1506.3292980194092,
+        "message": "You've been warned!",
+        "level": {
+            "number": 30,
+            "name": "WARNING"
+        },
+        "stack_trace": null,
+        "sourcecode": {
+            "pathname": "/path/to/your/python/script.py",
+            "function": "function_name",
+            "line": 456
+        },
+        "process": {
+            "id": 1234,
+            "name": "MainProcess"
+        },
+        "thread": {
+            "id": 1234567890,
+            "name": "MainThread"
+        }
+    },
+    {
+        "type": "async-http-logging",
+        "created": 1610393068.3663092,
+        "relative_created": 1506.3292980194092,
+        "message": "Ooops!",
+        "level": {
+            "number": 40,
+            "name": "ERROR"
+        },
+        "stack_trace": "Traceback (most recent call last):\n  File \"/path/to/your/python/script.py\", line 17, in function_name\n    1/0\nZeroDivisionError: division by zero\n",
+        "sourcecode": {
+            "pathname": "/path/to/your/python/script.py",
+            "function": "function_name",
+            "line": 17
+        },
+        "process": {
+            "id": 1234,
+            "name": "MainProcess"
+        },
+        "thread": {
+            "id": 1234567890,
+            "name": "MainThread"
+        }
+    }
+]
+```
+
+In your backend, you can funnel these logs to wherever suits you best: database, ElasticSearch index, third-party monitoring service, etc.
+
+Learn more about these and other features in the [project Wiki](https://github.com/hacktlib/py-async-http-logging/wiki).
+
+
