@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: opale
+Version: 0.1.0
+Summary: Dark theme based on Alabaster
+Home-page: UNKNOWN
+Author: Alessandro Candido
+Author-email: candido.ale@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AleCandido/opale/main/docs/_static/logo.png" alt="logo" width="300px">
+</p>
+
+# OpAle
+
+My Sphinx dark theme based on [Alabaster](https://alabaster.readthedocs.io/en/latest/).
+
+
