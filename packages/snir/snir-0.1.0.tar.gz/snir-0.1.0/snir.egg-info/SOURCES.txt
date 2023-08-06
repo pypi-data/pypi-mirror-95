@@ -1,0 +1,8 @@
+MANIFEST.in
+first_click.wav
+setup.py
+snir/__init__.py
+snir.egg-info/PKG-INFO
+snir.egg-info/SOURCES.txt
+snir.egg-info/dependency_links.txt
+snir.egg-info/top_level.txt
