@@ -1,0 +1,14 @@
+datasette_graphql/__init__.py,sha256=p6ZMVU02f4x5nkUMR26mjxVAZj30Pqk8ON65F-68vcM,6983
+datasette_graphql/utils.py,sha256=VAupjngPngPH5dFQh4dI5K2vedf-rTcjvXE6jlLeQYY,24360
+datasette_graphql/static/LICENSES.md,sha256=PZFTzel05B6GfL_tzSSO-XvrAauHTwV4_o3CxAdDS-g,464
+datasette_graphql/static/fetch.min.js,sha256=qNs2Hy425P615NdbSimSID5VkVdiQlDNMsxcMP_kLRg,7339
+datasette_graphql/static/graphiql.css,sha256=n2oBgZodPc-UapvvJVw3h1vSyEiqA-Sp3AYzD8dqEIE,40221
+datasette_graphql/static/graphiql.min.js,sha256=kQDzpyqSwNpOt6vMmEn3dsR4wUbfWyf0XnxdxmyHzbc,1020772
+datasette_graphql/static/react-dom.production.min.js,sha256=9hrJxD4IQsWHdNpzLkJKYGiY_SEZFJJSUqyeZPNKd8g,94498
+datasette_graphql/static/react.production.min.js,sha256=wouRkivKKXA3y6AuyFwcDcF50alCNV8LbghfYCH6Z98,6617
+datasette_graphql/templates/graphiql.html,sha256=q8mdWwpXCacTZic7eM_FQis_lQiBveRtSZAQRFUiKCY,3178
+datasette_graphql-1.4.dist-info/METADATA,sha256=wRHkELIQkNyeGUxbSfeWSukiYPzTXisbta5mFy60ReY,16770
+datasette_graphql-1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_graphql-1.4.dist-info/entry_points.txt,sha256=yInu_in9yPlaJLt8nX-uvtZB0N1Ucn0IJkmpmH018oQ,41
+datasette_graphql-1.4.dist-info/top_level.txt,sha256=DWVSOb1HtfJf2UW340dYC8WrUGZTbwpIqvfOahnsTz4,18
+datasette_graphql-1.4.dist-info/RECORD,,
