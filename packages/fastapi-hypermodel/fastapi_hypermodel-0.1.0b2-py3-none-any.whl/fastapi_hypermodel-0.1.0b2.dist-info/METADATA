@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastapi-hypermodel
+Version: 0.1.0b2
+Summary: FastAPI-HyperModel is a FastAPI + Pydantic extension for simplifying hypermedia-driven API development. This module adds a new Pydantic model base-class, supporting dynamic `href` generation based on object data.
+Home-page: https://github.com/jtc42/fastapi-hypermodel
+Author: Joel Collins
+Author-email: joel.collins@renalregistry.nhs.uk
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Project-URL: Repository, https://github.com/jtc42/fastapi-hypermodel
