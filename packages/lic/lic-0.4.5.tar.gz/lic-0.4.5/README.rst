@@ -1,0 +1,146 @@
+.. image:: https://img.shields.io/pypi/v/lic?style=flat-square
+   :target: https://pypi.org/project/lic/
+   :alt: PyPI
+
+.. image:: https://img.shields.io/pypi/l/lic?style=flat-square
+   :target: https://gitlab.com/szs/lic/-/raw/master/LICENSE
+   :alt: PyPI - License
+
+.. image:: https://img.shields.io/pypi/pyversions/lic?style=flat-square
+   :target: https://python.org
+   :alt: PyPI - Python Version
+
+.. image:: https://img.shields.io/gitlab/pipeline/szs/lic?style=flat-square
+   :target: https://gitlab.com/szs/lic/-/pipelines
+   :alt: Gitlab pipeline status
+
+.. image:: https://gitlab.com/szs/lic/badges/master/coverage.svg?style=flat-square
+   :target: https://gitlab.com/szs/lic/-/pipelines
+   :alt: Coverage
+
+.. image:: https://readthedocs.org/projects/lic/badge/?version=latest
+   :target: https://lic.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+⎣⫯ℂ: Line Integral Convolution for numpy Arrays
+===============================================
+
+This package provides line integral convolution (lic) algorithms to Python.
+
+.. figure:: https://gitlab.com/szs/lic/-/raw/master/docs/build/html/_images/KH3.png
+   :alt: lic image of the Kelvin-Helmholtz instability
+
+   lic image of the Kelvin-Helmholtz instability
+
+There are functions which can be imported and are highly configurable for the power user.
+Moreover, there is a command line tool to generate lic images without having to code a single line.
+
+Installation
+============
+
+The installation is straight forward. You can install the package via ``pip``, ``pipenv``, ``poetry``
+and alike or by downloading the source from the gitlab repository.
+
+From pypi.org (recommended)
+---------------------------
+
+Install by typing
+
+.. code-block:: shell
+
+                pip install lic
+
+or
+
+.. code-block:: shell
+
+                pip install --user lic
+
+if you do not have root access.
+
+Please check the documentations for `pipenv <https://pipenv.pypa.io/en/latest/>`_, and
+`poetry <https://python-poetry.org/docs/>`_ for information on how to install packages with these tools.
+
+From gitlab.com
+---------------
+
+To get the latest features or contribute to the development, you can clone the whole project using
+`git <https://git-scm.com/>`_:
+
+.. code-block:: shell
+
+                git clone https://gitlab.com/szs/lic.git
+
+Now you can, for instance, copy ``lic.py`` over to your project and import it directly or use it as a
+command line tool.
+
+Usage
+=====
+
+You can import lic in your program and use the functions directly or use the command line tool.
+
+Importing the module
+--------------------
+
+Once the package is installed where Python can find it, you can use the function ``lic`` directly.
+
+.. code-block:: Python3
+
+                import lic
+                import matplotlib.pyplot as plt
+
+                # ... get x and y arrays from somewhere ...
+
+                lic_result = lic.lic(x, y, length=30)
+
+                plt.imshow(lic_result, origin='lower', cmap='gray')
+                plt.show()
+
+Find out more about the options by reading the source documentation:
+
+.. code-block:: shell
+
+                pydoc lic.lic
+
+You can also control the seed, i.e., the underlying texture for the lic:
+
+.. code-block:: shell
+
+                pydoc lic.gen_seed
+
+You can run the example from the root folder to see the result:
+
+.. code-block:: shell
+
+                PYTHONPATH="." python3 examples/ex1.py
+
+Command Line Tool
+-----------------
+
+You will need npy data files (saved using numpy.save) to use lic from the command line:
+
+.. code-block:: shell
+
+                lic data_x.npy data_y.npy -v -l 30 -c
+
+See ``lic --help`` for a full list of options.
+
+How to Contribute
+=================
+
+If you find a bug, want to propose a feature or need help getting this package to work with your data
+on your system, please don't hesitate to file an `issue <https://gitlab.com/szs/lic/-/issues>`_ or write
+an email. Merge requests are also much appreciated!
+
+Project links
+=============
+
+* `Repository <https://gitlab.com/szs/lic>`_
+* `Documentation <https://lic.readthedocs.io/en/latest/>`_
+* `pypi page <https://pypi.org/project/lic/>`_
+
+External links
+==============
+
+* http://www.zhanpingliu.org/Research/FlowVis/LIC/LIC.htm
+* https://www3.nd.edu/~cwang11/2dflowvis.html
