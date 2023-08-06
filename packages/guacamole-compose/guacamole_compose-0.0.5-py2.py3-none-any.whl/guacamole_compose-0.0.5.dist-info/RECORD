@@ -1,0 +1,8 @@
+guacamole_compose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guacamole_compose/cli.py,sha256=d8hpbkjFkQE2IK68Y0CkIq1xtmy5UGKQFKT3v6XIXA0,14019
+guacamole_compose-0.0.5.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+guacamole_compose-0.0.5.dist-info/METADATA,sha256=IYh_c_LFMZ8kBUKKQkepMeGi1js7u7h_O32wgozsIUk,2512
+guacamole_compose-0.0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+guacamole_compose-0.0.5.dist-info/entry_points.txt,sha256=9APCdrL8MxdVNH87hKu3UCIDpYjNLikjnzmtudsb4Eg,66
+guacamole_compose-0.0.5.dist-info/top_level.txt,sha256=Vp78gtRO-sLGp5K8hGHD3_7Tkdw5STIC2loJTKprErk,18
+guacamole_compose-0.0.5.dist-info/RECORD,,
