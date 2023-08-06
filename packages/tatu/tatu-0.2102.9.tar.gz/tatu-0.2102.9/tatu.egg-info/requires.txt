@@ -1,0 +1,6 @@
+numpy
+sklearn
+liac-arff
+pymysql
+aiuna
+requests
