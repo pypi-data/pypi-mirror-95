@@ -1,0 +1,4 @@
+docopt
+openpyxl
+jinja2
+pandas
