@@ -1,0 +1,11 @@
+purplship/mappers/yanwen/__init__.py,sha256=7UiMus_elP743NsABGgA1Bn4dX_NNe1dNkghPUS0xfs,543
+purplship/mappers/yanwen/mapper.py,sha256=mW6jNqIHlf8NZ4vaY0519--xFLigF0zYb9zUpcegGgo,4313
+purplship/mappers/yanwen/proxy.py,sha256=QeSko4VF_h_Zte02RCH8t5tA5YbVozMuku4KaCXF7jg,804
+purplship/mappers/yanwen/settings.py,sha256=kLMiunI7geIEI0qGGL166kf1kVcwQpRfDHQAZlslAOo,390
+purplship/providers/yanwen/__init__.py,sha256=8Cx5hRWyAQ-RHc2VlfC24w_XKVL5JkpRqkJ6NnndURc,781
+purplship/providers/yanwen/tracking.py,sha256=owck9bmEN-76Ji_KRTFLq_h0U9P8HN-C4_5DXx3oPKI,1925
+purplship/providers/yanwen/units.py,sha256=R1ezT3cMUg7zbQrzIF3NqZFjKBBwQKd1aI-2Zf1J278,1335
+purplship/providers/yanwen/utils.py,sha256=OOxEpY-hZP0gApdZrIro397hAWaOJOBSAZXS3GWLPRA,349
+purplship.yanwen-2021.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+purplship.yanwen-2021.2.dist-info/METADATA,sha256=qK5qGSSPSdRWsonrbK-XUSjoVzAhLckPZJAfbeBcbmo,1412
+purplship.yanwen-2021.2.dist-info/RECORD,,
