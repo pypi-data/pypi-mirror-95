@@ -1,0 +1,11 @@
+django_wools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_wools/db.py,sha256=XhunVyJZplPx1C2x07JgeFwY7Qc4mrNZC7YkMnxTifI,1411
+django_wools/forms.py,sha256=wNTa4_HIMM-mHmHVLa987y3DeHmuMA1Z5deqpWcB3gs,1371
+django_wools/middlewares.py,sha256=odz4MLicgio4p1696axjGDKjXYM2XZW_brky0t2J3-c,1700
+django_wools/settings.py,sha256=APyzMeafTYuDVzJ0om41vYYym105W7wXFZyAGZ4GvaU,402
+django_wools/storage.py,sha256=npj1NmF0tvDRVB6CKLK8pRnTLP_NlBKmlBNZh8WJRjY,2907
+django_wools/templates/wools/images/fixed_size.html,sha256=B5HoOrl-rCM2JocGpwxr0-BpMlLKudNXgvSqOTnprAM,389
+django_wools/templatetags/wools_for_wt_images.py,sha256=dagaHtITaQFV1mAxKVgZwIkWJW2FfaUms1u2fC_8RYg,5162
+django_wools-0.2.0a3.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+django_wools-0.2.0a3.dist-info/METADATA,sha256=QZrZ_HB-SMt0dZikDKYvGuXpfYjSuqDy_wZQD9CZ1bs,5197
+django_wools-0.2.0a3.dist-info/RECORD,,
