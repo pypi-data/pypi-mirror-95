@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+word2num_de/__init__.py
+word2num_de/w2n.py
+word2num_de.egg-info/PKG-INFO
+word2num_de.egg-info/SOURCES.txt
+word2num_de.egg-info/dependency_links.txt
+word2num_de.egg-info/top_level.txt

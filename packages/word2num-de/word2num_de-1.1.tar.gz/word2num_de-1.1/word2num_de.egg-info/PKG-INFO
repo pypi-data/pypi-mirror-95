@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: word2num-de
+Version: 1.1
+Summary: Transforms written numbers in German to numbers.
+Home-page: https://github.com/kaorusss/word2num-de
+Author: Kaoru Schwarzenegger
+License: MIT
+Download-URL: https://github.com/kaorusss/word2num-de/archive/v1.1.tar.gz
+Description: # word2num-de
+        EN
+        - Transforms written numbers in German to numbers.
+        - Works for numbers 0-999999
+        
+        DE
+        - Ãœbersetzt ausgeschriebene Zahlen in (auf Deutsch) in Zahlen
+        - UnterstÃ¼tzt Zahlen zwischen 0 und 999999.
+        
+        Implementation based on the following project: https://github.com/IBM/wort-to-number
+        
+        ## Installation
+        
+        Package can be installed using pip.
+        
+        ```bash
+        pip install word2num-de
+        ```
+        
+        ## Usage example
+        
+        Import the main function word_to_number.
+        
+        ```
+        from word2num_de import word_to_number
+        ```
+        
+        Given a written-out number, the function returns the number as an integer.
+        
+        ```
+        print(word_to_number("sechshunderteinundzwanzig"))
+        621
+        ```
+        
+        Larger numbers are also supported.
+        
+        ```
+        print(word_to_number("zweiunddreiÃŸigtausendfÃ¼nfhundertachtundvierzig"))
+        32548
+        ```
+        
+        None is returned in case the word is not a number.
+        
+        ```
+        print(word_to_number("bÃ¤ckerei"))
+        None
+        ```
+        
+        The function should also be robust to words including numbers in them (e.g.; Viereck, Servieren, Tausendsassa, etc.).
+        
+        ```
+        print(word_to_number("tausendsassa"))
+        None
+        ```
+        
+        
+Keywords: numbers,convert,words,german
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
