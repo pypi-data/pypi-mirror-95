@@ -1,0 +1,11 @@
+http_router/__init__.py,sha256=npiqMIeqIMuca0VCEwuIJxjhcg9n7wXsvPAuAFRVrAM,208
+http_router/_types.py,sha256=hU0ysF1UsN4qMXHtZnKsVrD8FzJy8CqT8SM3KnXKH2Q,167
+http_router/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+http_router/router.py,sha256=9x0xulG_DKQGcrJPm1Edn4VXeA3aySuqLcWl8DcgyDY,3952
+http_router/routes.py,sha256=gb6IJgQRqb-Ql3tK0paBXe79W9HcwFY8hKHlMuSlX7M,3547
+http_router/utils.py,sha256=rnJCigbuPlhcDXtXbMo1W31Qp-mwjn5Nv21cinpNbLU,1708
+http_router-2.0.0.dist-info/LICENSE,sha256=ytogAgYcPT6gWj8aRc-cZwhSq9Y3wOzG-4KteKCyQOw,1070
+http_router-2.0.0.dist-info/METADATA,sha256=wCyNpQlqcDK2yMdr8DNHQlwL3dkJdM4IB-SmCncVSBQ,4701
+http_router-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+http_router-2.0.0.dist-info/top_level.txt,sha256=FK1UR_29o5LJPe3sHoAys9figjRUKmtHzrwC3Uh2_f4,12
+http_router-2.0.0.dist-info/RECORD,,
