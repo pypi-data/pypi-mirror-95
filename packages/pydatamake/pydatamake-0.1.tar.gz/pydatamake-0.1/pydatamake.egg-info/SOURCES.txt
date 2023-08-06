@@ -1,0 +1,8 @@
+setup.py
+pydatamake/__init__.py
+pydatamake/dictdataset.py
+pydatamake.egg-info/PKG-INFO
+pydatamake.egg-info/SOURCES.txt
+pydatamake.egg-info/dependency_links.txt
+pydatamake.egg-info/not-zip-safe
+pydatamake.egg-info/top_level.txt
