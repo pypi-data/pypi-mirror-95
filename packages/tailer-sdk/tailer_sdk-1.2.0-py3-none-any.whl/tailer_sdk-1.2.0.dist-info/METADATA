@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tailer-sdk
+Version: 1.2.0
+Summary: Tailer SDK Python Package
+Home-page: https://www.fashiondata.io/
+Author: Fashiondata Team
+Author-email: contact@fashiondata.io
+License: GPLv3
+Keywords: pip,fashiondata
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: firebase (>=3.0.1)
+Requires-Dist: pycryptodome (>=1.6.0)
+Requires-Dist: python-jwt
+Requires-Dist: gcloud
+Requires-Dist: sseclient
+Requires-Dist: networkx
+Requires-Dist: requests-toolbelt
+Requires-Dist: google.auth
+Requires-Dist: semver (>=2.10.2)
+Requires-Dist: Jinja2 (>=2.11.2)
+Requires-Dist: google-cloud-bigquery (>=1.25.0)
+Requires-Dist: google-cloud-firestore (>=1.8.1)
+Requires-Dist: pkg-info (>=0.1.2)
+Requires-Dist: chardet (>=3.0.4)
+
+# Tailer SDK
+
+## Changelog
+
+### Release 1.2.0 : 2021-02-22
+
+* First release : moved code from Jarvis SDK
+
+
