@@ -1,0 +1,11 @@
+README.md
+setup.py
+myalbum_dl/__init__.py
+myalbum_dl/constants.py
+myalbum_dl/myalbum_dl.py
+myalbum_dl.egg-info/PKG-INFO
+myalbum_dl.egg-info/SOURCES.txt
+myalbum_dl.egg-info/dependency_links.txt
+myalbum_dl.egg-info/entry_points.txt
+myalbum_dl.egg-info/requires.txt
+myalbum_dl.egg-info/top_level.txt

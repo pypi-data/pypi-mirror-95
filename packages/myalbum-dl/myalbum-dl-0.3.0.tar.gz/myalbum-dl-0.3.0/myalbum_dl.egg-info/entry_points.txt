@@ -1,0 +1,3 @@
+[console_scripts]
+myalbum-dl = myalbum_dl.myalbum_dl:main
+
