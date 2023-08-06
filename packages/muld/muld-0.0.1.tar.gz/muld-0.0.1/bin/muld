@@ -1,0 +1,174 @@
+#!/usr/bin/env python3
+"""
+  muld (Mirror from Upstream to Local to Downstream)
+
+  For a list of repos do:
+
+  * clone/fetch from upstream to local
+    - prune; remove what does not exist on upstream
+  * push tags from local to "downstream"
+    - no forcing, and only pushing tags
+
+  Basically, this is a soft/manual way of forwarding changes from an "upstream"
+  to a "downstream" repository, dumping it locally to do manual intervention
+  such as fixing up non fast-forwardable changes, or to also push select
+  branches as well.
+
+  It intentionally uses a "standalone" mirror-directory, one in which no
+  additions are made locally, they are just fetched from upstream and pushed
+  downstream, to avoid messing up any local development repository.
+"""
+import subprocess
+import argparse
+import pathlib
+import sys
+import os
+import yaml
+
+VERSION_MAJOR = 0
+VERSION_MINOR = 0
+VERSION_PATCH = 4
+
+
+def expand_path(path):
+    """Expands variables from the given path and turns it into absolute path"""
+
+    return pathlib.Path(
+        os.path.abspath(os.path.expanduser(os.path.expandvars(path)))
+    ).resolve()
+
+
+def args_to_conf():
+    """Parse command-line options"""
+
+    prsr = argparse.ArgumentParser(
+        description='git; Mirrror Upstream to Local to Downstream',
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+    prsr.add_argument(
+        "--yaml",
+        help="Path to yaml-file describing what to do...",
+        required=True
+    )
+    prsr.add_argument(
+        "--mirrors",
+        help="Path to directory containing repository mirrors",
+        default=os.getcwd(),
+        required=True
+    )
+    args = prsr.parse_args()
+    args.yaml = expand_path(args.yaml)
+    args.mirrors = expand_path(args.mirrors)
+
+    conf = {}
+    with open(args.yaml, 'r') as yml_file:
+        conf.update(yaml.safe_load(yml_file))
+
+    conf["mirrors"] = args.mirrors
+
+    return conf
+
+
+def execute(cmd, cwd=None, pipe=False):
+    """Execute the given cmd"""
+
+    print("# %s%c %s" % (cwd, '%', " ".join(cmd)), flush=True)
+
+    proc = subprocess.Popen(
+        cmd,
+        cwd=cwd,
+        stdout=subprocess.PIPE if pipe else None,
+        stderr=subprocess.PIPE if pipe else None,
+    )
+    out, err = proc.communicate()
+    rcode = proc.returncode
+
+    print("# rcode: %d\n" % (rcode), flush=True)
+    if rcode:
+        print("\n## ---=={[ EPIC FAIL -- see above -- EPIC FAIL ]}==--- ##\n")
+
+    return (out, err, rcode)
+
+
+def repo_name(repo):
+    """Returns name of repo"""
+
+    if "name" not in repo or repo["name"] is None:
+        repo["name"] = os.path.basename(repo["upstream"])
+        if repo["name"].endswith(".git"):
+            repo["name"] = repo["name"][:-4]
+
+    return repo["name"]
+
+
+def repo_downstream(repo):
+    """Returns downstream URI or None"""
+
+    if "downstream" in repo:
+        return repo.get("downstream", None)
+
+    return None
+
+
+def repo_path(conf, repo):
+    """Returns local path on filesystem to repository inside mirrors"""
+
+    return os.path.join(conf["mirrors"], repo_name(repo))
+
+
+def main(conf):
+    """Main entry point"""
+
+    if conf is None:
+        return 1
+
+    os.makedirs(conf["mirrors"], exist_ok=True)
+
+    for repo in conf["repos"]:
+        if "upstream" not in repo:
+            print("# invalid repo: %r", repo)
+            continue
+
+        print("## repos: %s" % repo_name(repo), flush=True)
+
+        if os.path.exists(repo_path(conf, repo)):
+            execute(
+                ["git", "fetch", "-p", "origin"],
+                cwd=repo_path(conf, repo)
+            )
+        else:
+            execute(
+                [
+                    "git", "clone", repo["upstream"], repo_name(repo),
+                    repo_path(conf, repo)
+                ],
+                cwd=conf["mirrors"]
+            )
+
+        if repo_downstream(repo) is None:
+            continue
+
+        out, _, _ = execute(
+            ["git", "remote", "-v"],
+            cwd=repo_path(conf, repo), pipe=True
+        )
+        if "downstream" not in out.decode("utf-8"):
+            execute(
+                ["git", "remote", "add", "downstream", repo["downstream"]],
+                cwd=repo_path(conf, repo)
+            )
+
+        execute(  # clone the repository
+            ["git", "push", repo["downstream"], "--tags", ":"],
+            cwd=repo_path(conf, repo)
+        )
+
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main(args_to_conf()))
+    except KeyboardInterrupt:
+        print("Somebody hit Ctrl+C, bailing...")
+        sys.exit(1)
