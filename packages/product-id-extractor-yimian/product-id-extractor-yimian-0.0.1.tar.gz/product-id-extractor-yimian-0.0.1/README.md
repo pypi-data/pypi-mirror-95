@@ -1,0 +1,1 @@
+A extractor to extract product id from an provided url of specific platforms.
