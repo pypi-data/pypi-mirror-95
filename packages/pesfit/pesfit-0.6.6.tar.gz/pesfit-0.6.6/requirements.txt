@@ -1,0 +1,11 @@
+# Dev/Deployment
+lmfit
+h5py
+pandas
+hdfio
+dask
+cloudpickle
+
+# build
+sphinx
+coverage

@@ -1,0 +1,8 @@
+lmfit
+h5py
+pandas
+hdfio
+dask
+cloudpickle
+sphinx
+coverage
