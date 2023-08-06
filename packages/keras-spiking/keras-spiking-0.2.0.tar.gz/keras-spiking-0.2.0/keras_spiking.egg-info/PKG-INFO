@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: keras-spiking
+Version: 0.2.0
+Summary: Spiking neuron integration for Keras
+Home-page: https://www.nengo.ai/keras-spiking
+Author: Applied Brain Research
+Author-email: info@appliedbrainresearch.com
+License: Free for non-commercial use
+Description: .. image:: https://img.shields.io/pypi/v/keras-spiking.svg
+          :target: https://pypi.org/project/keras-spiking
+          :alt: Latest PyPI version
+        
+        .. image:: https://img.shields.io/pypi/pyversions/keras-spiking.svg
+          :target: https://pypi.org/project/keras-spiking
+          :alt: Python versions
+        
+        .. image:: https://img.shields.io/codecov/c/github/nengo/keras-spiking/master.svg
+          :target: https://codecov.io/gh/nengo/keras-spiking
+          :alt: Test coverage
+        
+        ************
+        KerasSpiking
+        ************
+        
+        KerasSpiking provides tools for training and running spiking neural networks
+        directly within the Keras framework. The main feature is
+        ``keras_spiking.SpikingActivation``, which can be used to transform
+        any activation function into a spiking equivalent. For example, we can translate a
+        non-spiking model, such as
+        
+        .. code-block:: python
+        
+            inp = tf.keras.Input((5,))
+            dense = tf.keras.layers.Dense(10)(inp)
+            act = tf.keras.layers.Activation("relu")(dense)
+            model = tf.keras.Model(inp, act)
+        
+        into the spiking equivalent:
+        
+        .. code-block:: python
+        
+            # add time dimension to inputs
+            inp = tf.keras.Input((None, 5))
+            dense = tf.keras.layers.Dense(10)(inp)
+            # replace Activation with SpikingActivation
+            act = keras_spiking.SpikingActivation("relu")(dense)
+            model = tf.keras.Model(inp, act)
+        
+        Models with SpikingActivation layers can be optimized and evaluated in the same way as
+        any other Keras model. They will automatically take advantage of KerasSpiking's
+        "spiking aware training": using the spiking activations on the forward pass and the
+        non-spiking (differentiable) activation function on the backwards pass.
+        
+        KerasSpiking also includes various tools to assist in the training of spiking models,
+        such as additional `regularizers
+        <https://www.nengo.ai/keras-spiking/reference.html#module-keras_spiking.regularizers>`_
+        and `filtering layers
+        <https://www.nengo.ai/keras-spiking/reference.html#module-keras_spiking.layers>`_.
+        
+        If you are interested in building and optimizing spiking neuron models, you may also
+        be interested in `NengoDL <https://www.nengo.ai/nengo-dl>`_. See
+        `this page <https://www.nengo.ai/keras-spiking/nengo-dl-comparison.html>`_ for a
+        comparison of the different use cases supported by these two packages.
+        
+        **Documentation**
+        
+        Check out the `documentation <https://www.nengo.ai/keras-spiking/>`_ for
+        
+        - `Installation instructions
+          <https://www.nengo.ai/keras-spiking/installation.html>`_
+        - `More detailed example introducing the features of KerasSpiking
+          <https://www.nengo.ai/keras-spiking/examples/spiking-fashion-mnist.html>`_
+        - `API reference <https://www.nengo.ai/keras-spiking/reference.html>`_
+        
+        Release history
+        ===============
+        
+        .. Changelog entries should follow this format:
+        
+           version (release date)
+           ----------------------
+        
+           **section**
+        
+           - One-line description of change (link to GitHub issue/PR)
+        
+        .. Changes should be organized in one of several sections:
+        
+           - Added
+           - Changed
+           - Fixed
+           - Deprecated
+           - Removed
+        
+        0.2.0 (February 18, 2021)
+        -------------------------
+        
+        *Compatible with TensorFlow 2.1.0 - 2.4.0*
+        
+        **Added**
+        
+        - Added the ``keras_spiking.Alpha`` filter, which provides second-order lowpass
+          filtering for better noise removal for spiking layers. (`#4`_)
+        - Added ``keras_spiking.callbacks.DtScheduler``, which can be used to update layer
+          ``dt`` parameters during training. (`#5`_)
+        - Added ``keras_spiking.default.dt``, which can be used to set the default ``dt``
+          for all layers that don't directly specify ``dt``. (`#5`_)
+        - Added ``keras_spiking.regularizers.RangedRegularizer``, which can be used to apply
+          some other regularizer (e.g. ``tf.keras.regularizers.L2``) with respect to some
+          non-zero target point, or a range of acceptable values. This functionality has also
+          been added to ``keras_spiking.regularizers.L1L2/L1/L2`` (so they can now be applied
+          with respect to a single reference point or a range). (`#6`_)
+        - Added ``keras_spiking.regularizers.Percentile`` which computes a percentile across a
+          number of examples, and regularize that statistic. (`#6`_)
+        - Added ``keras_spiking.ModelEnergy`` to estimate energy usage for Keras Models. (`#7`_)
+        
+        **Changed**
+        
+        - ``keras_spiking.SpikingActivation`` and ``keras_spiking.Lowpass`` now return sequences
+          by default. This means that these layers will now have outputs that have the same
+          number of timesteps as their inputs. This makes it easier to process create
+          multi-layer spiking networks, where time is preserved throughout the network.
+          The spiking fashion-MNIST example has been updated accordingly. (`#3`_)
+        - Layers now support multi-dimensional inputs (e.g., output of ``Conv2D`` layers).
+          (`#5`_)
+        
+        **Fixed**
+        
+        - KerasSpiking layers' ``reset_state`` now resets to the value of ``get_initial_state``
+          (as documented in the docstring), rather than all zeros. (`#12`_)
+        - Fixed a bug with ``keras_spiking.Alpha`` on TensorFlow 2.1, where a symbolic tensor
+          in the initial state shape could not be converted to a Numpy array. (`#16`_)
+        
+        .. _#3: https://github.com/nengo/keras-spiking/pull/3
+        .. _#4: https://github.com/nengo/keras-spiking/pull/4
+        .. _#5: https://github.com/nengo/keras-spiking/pull/5
+        .. _#6: https://github.com/nengo/keras-spiking/pull/6
+        .. _#7: https://github.com/nengo/keras-spiking/pull/7
+        .. _#12: https://github.com/nengo/keras-spiking/pull/12
+        .. _#16: https://github.com/nengo/keras-spiking/pull/16
+        
+        0.1.0 (August 14, 2020)
+        -----------------------
+        
+        *Compatible with TensorFlow 2.1.0 - 2.3.0*
+        
+        Initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Provides-Extra: all
+Provides-Extra: docs
+Provides-Extra: optional
+Provides-Extra: tests
