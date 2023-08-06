@@ -1,0 +1,15 @@
+jeeves/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+jeeves/cli.py,sha256=TIKLKicV-_bx3UDb7oP3Dgv1OQpd3xSgA_wcI6p9jYE,1373
+jeeves/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jeeves/commands/find_packages.py,sha256=45vH3Yb7Prwg9dH6zxqd9Up3vcRpkbByKIZL0lOZfUk,273
+jeeves/commands/flakehell.py,sha256=BAgkTOcri5SYDxh9OL-5CtlwMoBS5BwlMvcZmPhTV9Y,435
+jeeves/commands/format.py,sha256=q8jomhhzXv2cALPp9eH9lzJzwNTM-SQEayKZZmv5c3U,311
+jeeves/commands/isort.py,sha256=_3vU34kY-UxGIooEBFVCYuRAw4oNTwzA_TUGHXAPXgw,492
+jeeves/commands/lint.py,sha256=Np2ytobtLvaUcQLtxz0KBkDD_efpWm2TuO7CavTD8C0,320
+jeeves/commands/subprocess.py,sha256=13QcW_2Bojh0QjkYNSA_5mVBRuFr_saBzNADTl8ktFw,248
+jeeves/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mister_jeeves-0.0.2.dist-info/entry_points.txt,sha256=OgClPu9H1XNoQlD1bn0oVyPSotj-Mc9mVZz7YzEoft4,41
+mister_jeeves-0.0.2.dist-info/LICENSE,sha256=d3MTirKs2bYy4QzSx1XSutTJW3Kq0rpmvJn8cofc258,1101
+mister_jeeves-0.0.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+mister_jeeves-0.0.2.dist-info/METADATA,sha256=0b1LWkkBWHnCgP3TLEiuMBZx4W55ySSbWUhS50CIHZ4,2535
+mister_jeeves-0.0.2.dist-info/RECORD,,
