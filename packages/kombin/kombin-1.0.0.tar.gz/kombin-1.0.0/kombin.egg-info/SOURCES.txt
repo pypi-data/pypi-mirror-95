@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+kombin/Table.py
+kombin/__init__.py
+kombin.egg-info/PKG-INFO
+kombin.egg-info/SOURCES.txt
+kombin.egg-info/dependency_links.txt
+kombin.egg-info/top_level.txt
