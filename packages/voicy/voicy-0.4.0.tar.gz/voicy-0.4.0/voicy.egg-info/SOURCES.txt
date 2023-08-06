@@ -1,0 +1,15 @@
+README.md
+setup.py
+voicy/__init__.py
+voicy/exceptions.py
+voicy/types.py
+voicy.egg-info/PKG-INFO
+voicy.egg-info/SOURCES.txt
+voicy.egg-info/dependency_links.txt
+voicy.egg-info/requires.txt
+voicy.egg-info/top_level.txt
+voicy/clients/__init__.py
+voicy/clients/google.py
+voicy/clients/yandex.py
+voicy/http/__init__.py
+voicy/http/core.py
