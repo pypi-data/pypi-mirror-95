@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: oceanbolt.sdk
+Version: 0.0.3
+Summary: A Python wrapper around the Oceanbolt client API
+Home-page: https://github.com/oceanbolt/oceanbolt-python-sdk
+Author: Oceanbolt
+Author-email: support@oceanbolt.com
+License: MIT
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: google-api-core[grpc] (<2.0.0dev,>=1.22.2)
+Requires-Dist: libcst (>=0.2.5)
+Requires-Dist: proto-plus (>=1.4.0)
+Requires-Dist: pandas (>=1.1.4)
+Requires-Dist: numpy (>=1.19.0)
+Provides-Extra: doc
+Requires-Dist: Sphinx (==3.2.1) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (==0.5.0) ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints (==1.6.0) ; extra == 'doc'
+Provides-Extra: publish
+Requires-Dist: twine (==3.2.0) ; extra == 'publish'
+Provides-Extra: test
+Requires-Dist: black (==18.9b0) ; extra == 'test'
+Requires-Dist: mypy-extensions (==0.4.3) ; extra == 'test'
+Requires-Dist: mypy (==0.782) ; extra == 'test'
+Requires-Dist: pre-commit (==2.6.0) ; extra == 'test'
+Requires-Dist: pytest (==5.0.0) ; extra == 'test'
+Requires-Dist: python-dateutil (==2.8.1) ; extra == 'test'
+Requires-Dist: pytest-rerunfailures (==9.1.1) ; extra == 'test'
+
+# Oceanbolt Python SDK
+The Oceanbolt Python SDK provides access to Oceanbolt data.
+
+It can be easily integrated existing tools such as jupyter notebooks, scripts, and applications.
+
+Data is returned in the form of pandas.DataFrame, which allows for easy manipulation and further data processing. 
+
+It is available to all Oceanbolt API clients (API authentication token required in order to get access)
+
+## Setup
+
+The SDK supports the following python versions: 3.6, 3.7, 3.8, and 3.9
+
+In order to install, run the following:
+
+    pip install oceanbolt.sdk
+
+In order to upgrade an existing installation, run the following:
+
+    pip install oceanbolt.sdk --update
+
+## Docs
+Documentation : https://python-sdk.oceanbolt.com
+
+## Quick Example
+
+````python
+from oceanbolt.sdk.client import APIClient
+from oceanbolt.sdk.data.port_calls import PortCalls
+from datetime import date, timedelta
+
+# Create the base API client using your token. Tokens can be created in the Oceanbolt App (app.oceanbolt.com)
+base_client = APIClient("<your API access token>")
+
+# Connect to one of the Oceanbolt's data endpoints using the base client object, ie: PortCalls
+port_calls_client = PortCalls(base_client)
+
+# Get a list of Port Hedland exports over the last week
+hedland_portcalls = port_calls_client.get(
+    start_date=date.today() - timedelta(days=7),
+    segment=["capesize"],
+    unlocode=["AUPHE"],
+)
+
+````
+
+
+

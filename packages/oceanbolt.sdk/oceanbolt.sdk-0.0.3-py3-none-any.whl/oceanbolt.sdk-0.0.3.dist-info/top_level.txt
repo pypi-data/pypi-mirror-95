@@ -1,0 +1,7 @@
+dist
+doc
+docs
+oceanbolt
+scripts
+templates
+tests
