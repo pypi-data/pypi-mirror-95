@@ -1,0 +1,14 @@
+dframcy/__init__.py,sha256=5lMXLLwZhh5LeinXzqazSkI41b5umWK_y9GNK_y-YmU,188
+dframcy/cli.py,sha256=Ojq9jrE7rd80mUFW7wMSq3OacorrDwigb7212G0-MQU,2946
+dframcy/dframcy.py,sha256=SqlndODovq-G_vNa_s-rTd0PsRGgOpcdyRKZ5_z29WM,5941
+dframcy/matcher.py,sha256=uvAh7HQjr-xXz2EtCcPU_NqLYIe1u25bhBrH4eL-laA,10780
+dframcy/utils.py,sha256=FA62V7j2yJrNcmTFQoq30Bui50dB2oCekx5rSw_rzWA,3175
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dframcy.py,sha256=VDa_E9KzenMF5_yO_PId8tORpyttOI9EbopGTAZrLqI,5330
+tests/test_matcher.py,sha256=ngNrfiZ3qqtvxu7F5_ha0z0ur5agTLPGgtuE1o_7y5k,5141
+dframcy-0.1.6.dist-info/LICENSE,sha256=DI2bmdJFYvXRiEXZm9ig61dw7mu3LcioSfZQSbKzjeA,1056
+dframcy-0.1.6.dist-info/METADATA,sha256=4Glu7FejXDFQy90S-SpZ3O6JYhl-N0VtJJFBQWi6L-o,5486
+dframcy-0.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dframcy-0.1.6.dist-info/entry_points.txt,sha256=zwx_LAEvQ0wogtApweR1fYvpAKC25ltGz0b0Pd-SNK4,46
+dframcy-0.1.6.dist-info/top_level.txt,sha256=mERYwsR35AF36s4tD5oZFnyYCNQFu7dHRWYCrvGYSDY,14
+dframcy-0.1.6.dist-info/RECORD,,
