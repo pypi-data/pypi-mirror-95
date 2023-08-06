@@ -1,0 +1,3 @@
+[console_scripts]
+emailCrawlerPY = crawler.__main__:main
+

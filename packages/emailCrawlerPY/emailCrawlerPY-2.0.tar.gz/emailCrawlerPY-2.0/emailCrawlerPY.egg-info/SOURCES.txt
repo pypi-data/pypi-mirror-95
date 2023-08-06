@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+crawler/__init__.py
+crawler/__main__.py
+emailCrawlerPY.egg-info/PKG-INFO
+emailCrawlerPY.egg-info/SOURCES.txt
+emailCrawlerPY.egg-info/dependency_links.txt
+emailCrawlerPY.egg-info/entry_points.txt
+emailCrawlerPY.egg-info/requires.txt
+emailCrawlerPY.egg-info/top_level.txt
