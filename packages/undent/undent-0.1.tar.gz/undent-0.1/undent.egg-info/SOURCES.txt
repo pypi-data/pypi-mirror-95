@@ -1,0 +1,10 @@
+README.md
+setup.py
+undent/__init__.py
+undent/__version__.py
+undent/api.py
+undent/foo.py
+undent.egg-info/PKG-INFO
+undent.egg-info/SOURCES.txt
+undent.egg-info/dependency_links.txt
+undent.egg-info/top_level.txt
