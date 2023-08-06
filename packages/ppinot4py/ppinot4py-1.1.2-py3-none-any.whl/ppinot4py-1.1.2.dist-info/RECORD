@@ -1,0 +1,16 @@
+ppinot4py/__init__.py,sha256=3DZ0PdL75SkmBhOWNx9TBj9pd7jcFtcYIpaOUltCUD4,117
+ppinot4py/computers/__init__.py,sha256=eQyij7M3eYy-3Ep9cDbNv7C2Sl1uE8CbU0XxAMbnc8M,162
+ppinot4py/computers/conditions_computer.py,sha256=eIA0muIadO_bmcyToa7T-jffbt_IelxwNnk7LYODDaI,2892
+ppinot4py/computers/metrics_computer.py,sha256=A45l6hLwZNsmGuSc9BbjzK52a-S7mrjBp4Rt8cxc2lY,13186
+ppinot4py/computers/tests/__init__.py,sha256=n8vma6PqKonlx5vY3SeSCvIMtVFXhAFLJCckmeCY7Rg,54
+ppinot4py/computers/tests/test_conditions_computer.py,sha256=cu40W_1k8kbIIgcIj8y63mErvTGMWqjt6h9nLX5jrgQ,2652
+ppinot4py/computers/tests/test_metrics_computer.py,sha256=5gmlxyb9a_TXP74XJHHoHERdmhLCkMZrUTtzeirqOHc,17256
+ppinot4py/model/__init__.py,sha256=Rbz1E0ng8d34bbzIA0xRPa_tbxYADiO21nuAJv7Bc7A,545
+ppinot4py/model/conditions.py,sha256=qSmHWWWbYlODq0Moy9Ra1-O49Sf2uQn-vOxiwtQ3w7o,1388
+ppinot4py/model/measures.py,sha256=KVJJDfkfGfupgOFY0EI1jTZ_gDfQWWfkv9VO2t9P7VA,4105
+ppinot4py/model/states.py,sha256=Sae4lFeRQmYIVaqcLWVp-hWwj2bAPN_JeABTXOC6tBY,595
+ppinot4py-1.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ppinot4py-1.1.2.dist-info/METADATA,sha256=ABtEv9d6cFwU-dczWdvOQtYdcxUusIAVLp-b8miPpZY,16651
+ppinot4py-1.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ppinot4py-1.1.2.dist-info/top_level.txt,sha256=q2fZ_cUVloki5AFZtl6goRcSCnMu_n2qrPb1Rkar4a4,10
+ppinot4py-1.1.2.dist-info/RECORD,,
