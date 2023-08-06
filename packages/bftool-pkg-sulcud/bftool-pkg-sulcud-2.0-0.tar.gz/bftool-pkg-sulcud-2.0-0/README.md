@@ -1,0 +1,146 @@
+# bftool
+[![Pypi](https://img.shields.io/badge/Pypi-Yes-blue.svg)](https://pypi.org/project/bftool-pkg-sulcud/)
+[![PyPI version](https://badge.fury.io/py/bftool-pkg-sulcud.svg)](https://pypi.org/project/bftool-pkg-sulcud/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoriwe/bftool/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/pypi/dd/bftool-pkg-sulcud?color=green)](https://pypi.org/project/bftool-pkg-sulcud/)
+
+![Logo](https://raw.githubusercontent.com/shoriwe/bftool/master/logo/logo_size_invert.jpg)
+
+## Index
+
+- [Index](#index)
+- [Description](#description)
+- [Quick example](#quick-example)
+    - [As a module](#as-a-module)
+    - [As a script](#as-a-script)
+- [Installation](#installation)
+
+## Description
+`bftool` is a python module and script, with a custom worker pool for the distribution of function execution into processes and threads based on a initial input, so you only need to focus on the functionality and not in the distribution of its execution.
+
+## Concepts
+### Time consuming functions
+In the context of `bftool` the weight of a function is based on the time spent from when it was called to its finish.
+
+Based on that we can conclude that this operations are most of the time heavy, since usually require more time to finish:
+ 
+- File I/O.
+- Networking I/O.
+- N Cycles (FOR, WHILE, ...).
+- Force waits (like `sleep`).
+
+And this operations are usually light
+
+- Math.
+- Variable assign to a known value.
+- Some hash calculations.
+
+## Quick example
+
+### As a module
+
+`bftool` auto detects if the function requires or not parallelism and based on that spawn the workers.
+
+```python
+import hashlib
+import string
+
+import bftool
+
+secret = "zz"
+target = hashlib.sha3_512(secret.encode()).hexdigest()
+
+
+def calc_hashes(salt: str, raw_password: str) -> tuple[str, str, str, str]:
+    salt_password = (salt + raw_password).encode()
+    return salt, raw_password, hashlib.blake2b(salt_password).hexdigest(), hashlib.sha3_512(
+        salt_password).hexdigest()
+
+
+def cracked(hashes: tuple[str, str, str, str]) -> bool:
+    return target in hashes[2:]
+
+
+def success(result: tuple[str, str, str, str]):
+    print(f"[+] \"{result}\n", end="")
+
+
+def main():
+    arguments = bftool.Arguments(
+        calc_hashes,
+        bruteforce_rules={
+            "raw_password": {
+                "minlength": 1,
+                "maxlength": 1,
+                "elements": string.ascii_letters,
+                "string-join": True
+            },
+            "salt": {
+                "minlength": 1,
+                "maxlength": 1,
+                "elements": string.ascii_letters,
+                "string-join": True
+            }
+        }
+    )
+    pool = bftool.Pool(
+        calc_hashes,
+        arguments,
+        cracked,
+        success,
+        max_processes=3,
+        max_threads=3
+    )
+    print("Fuzzing time:", pool.run())
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### As a script
+
+```shell script
+python -m bftool --help
+```
+
+```
+usage: bftool [-h] [-mt MAX_THREADS] [-mp MAX_PROCESSES] [-w WORDLIST] [-b BRUTEFORCE] [-sf SUCCESS_FUNCTION] [-cf CHECK_FUNCTION] [-sp SCRIPT_PATH] expression
+
+positional arguments:
+  expression            expression that will result in a callable
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -mt MAX_THREADS, --max-threads MAX_THREADS
+                        Maximum number of threads per process
+  -mp MAX_PROCESSES, --max-processes MAX_PROCESSES
+                        Maximum number of process to have active at the same time
+  -w WORDLIST, --wordlist WORDLIST
+                        File wordlist to use based on "{'argument_1': FILE_PATH, ...}"
+  -b BRUTEFORCE, --bruteforce BRUTEFORCE
+                        Generate a virtual wordlist based on rules "{'argument_1': {'elements': [element_1, ...], 'minlength': INT, 'maxlength': INT, 'string-join': BOOL}, ...}"
+  -sf SUCCESS_FUNCTION, --success-function SUCCESS_FUNCTION
+                        Function to pass the success result to (default is custom 'print')
+  -cf CHECK_FUNCTION, --check-function CHECK_FUNCTION
+                        Function useful to check the output (default is 'lambda output: output')
+  -sp SCRIPT_PATH, --script_path SCRIPT_PATH
+                        Python script to import
+```
+
+## Installation
+
+### Using `pip`
+
+```shell script
+pip install bftool-pkg-sulcud
+```
+
+### Manual
+
+```shell script
+git clone https://github.com/shoriwe/bftool
+cd bftool
+python setup.py install
+```
+
