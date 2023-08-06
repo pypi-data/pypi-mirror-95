@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tcm
+Version: 2.0.0
+Summary: Metaclass based runtime generator of the test methods
+Home-page: https://github.com/elliptical/tcm
+Author: Andrei Boulgakov
+Author-email: andrei.boulgakov@outlook.com
+License: MIT
+Download-URL: https://github.com/elliptical/tcm/archive/2.0.0.tar.gz
+Description: # tcm (Test Case Meta)
+        This is primarily an excercise in Python metaprogramming which also lets me see GitHub, CI tools, and PyPI in action.
+        
+        Things to develop:
+        
+        - a class method decorator to hold a table of arguments
+        - a metaclass to automatically generate multiple test methods out of each decorated sample method
+        
+        Tools to use:
+        
+        - `tox` to test the code with different Python versions
+        - `pylint` and `flake8` to keep individual commits clean
+        - `coverall` to ensure 100% code coverage
+        
+Keywords: unittest,metaclass
+Platform: All
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
