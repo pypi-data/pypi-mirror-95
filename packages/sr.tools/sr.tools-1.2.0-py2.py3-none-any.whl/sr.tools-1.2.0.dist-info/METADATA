@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: sr.tools
+Version: 1.2.0
+Summary: Student Robotics Tools
+Home-page: https://github.com/srobo/tools
+Author: Student Robotics
+Author-email: info@studentrobotics.org
+License: UNKNOWN
+Project-URL: Code, https://github.com/srobo/tools
+Project-URL: Documentation, https://srtools.readthedocs.io/en/latest/
+Project-URL: Issue tracker, https://github.com/srobo/tools/issues
+Keywords: sr student robotics tools utilities utils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML (<4,>=3.11)
+Requires-Dist: sympy (<1,>=0.7)
+Requires-Dist: pyparsing (<3,>=2.0)
+Requires-Dist: BeautifulSoup4 (<5,>=4.3)
+Requires-Dist: numpy (<2,>=1.9)
+Requires-Dist: requests (<3,>=2.9)
+Requires-Dist: six (<2,>=1.9)
+Requires-Dist: tabulate (<1,>=0.7)
+Requires-Dist: xlwt-future (<1,>=0.8)
+Provides-Extra: cam-serial_usb-key-serial_sd-serial_mcv4b-part-code
+Requires-Dist: pyudev ; extra == 'cam-serial_usb-key-serial_sd-serial_mcv4b-part-code'
+Provides-Extra: price-graph
+Requires-Dist: matplotlib ; extra == 'price-graph'
+Provides-Extra: save_passwords
+Requires-Dist: keyring ; extra == 'save_passwords'
+
+Student Robotics Tools
+======================
+
+A useful set of tools for performing Student Robotics related tasks.
+
+Installation
+------------
+
+.. code:: shell
+
+    $ pip install sr.tools
+
+Running
+-------
+
+.. code:: shell
+
+    $ sr --help
+
+
