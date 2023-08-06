@@ -1,0 +1,15 @@
+umovme/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+umovme/__main__.py,sha256=MDS17u4x5Tny_CoQ9vegnxYVO4CLLws1CbScWI2IIzE,381
+umovme/api.py,sha256=mEhTMfwke7rrqa7xJi4lTLiJDK6rK2LY2r1V8eD6CBA,1499
+umovme/cli.py,sha256=8cxiV8yqtgvzwDAyl5ES_k2PAhHFK6PKLseBFpono0s,807
+umovme/client.py,sha256=iKyLzML49DdpOIxIddCU65U0KkxtQ9qzWDHN91y7ho0,1403
+umovme/resources/__init__.py,sha256=w9xuK80y2XPPu2sLQkFZRwPJRSd396F_TnXjdzoBwPc,751
+umovme/resources/base.py,sha256=l-8nPE7LFUVn_XnpSZ3ACdh19JJOii6xy6zzU0guMIA,5790
+umovme/resources/exceptions.py,sha256=79N_k6eNGKoxd1AMAw-wERv9ZzPO2RfLuOaDpBkCUig,146
+umovme-0.0.1.dist-info/AUTHORS.rst,sha256=3Rzt5qOLiOx0qQxKiKlHiFW4YQRMLXo-VWlI7GKQrNM,60
+umovme-0.0.1.dist-info/LICENSE,sha256=8DDLz58-MyRtd2igcc0j5O-lEYSmXYP87Dy9HwPuiNQ,1105
+umovme-0.0.1.dist-info/METADATA,sha256=i6GVI0RRa-asNvoYoAYeb48iQZeDTQmQEB6Xde4l-9c,2049
+umovme-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+umovme-0.0.1.dist-info/entry_points.txt,sha256=rCdxvK0_yKYEFKN9uAVE9j3ok-IpHLkVhIeqg-BSXfo,44
+umovme-0.0.1.dist-info/top_level.txt,sha256=6f9aG9_W4cGhCPS21ieT0KOq9HREy_RLNuC06Tk41Ec,7
+umovme-0.0.1.dist-info/RECORD,,
