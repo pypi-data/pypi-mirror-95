@@ -1,0 +1,3 @@
+[console_scripts]
+trackfs = trackfs.__init__:main
+
