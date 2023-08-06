@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dj-iconify-server"
+version = "0.1.0"
+description = ""
+authors = ["Dominik George <dominik.george@teckids.org>"]
+license = "MIT"
+packages = [
+    { include = "dj_iconify_server" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django-yarnpkg = "^6.0"
+django-iconify = {path = "../.."}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
