@@ -1,0 +1,12 @@
+dcc2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcc2/dccFn.py,sha256=CN0gbk14kDsZwradaeLOpBUnduY43WaTLIqbG1-K7Sc,7594
+dcc2/parseOmaById.py,sha256=3Ypx7eb4EgOw-fm_zfNzwiUR7qB4zt_2j5YnU35s5xI,8128
+dcc2/parseOmaBySpec.py,sha256=B7UXfp7SgUZWLTYqvSoi9LxDjrFXDWGO3b21M1m-6j0,9898
+dcc2/parseOrthoxml.py,sha256=wBmJysW-zUrXheyKGe3sJZzFMNAvkp2XJtd6AoW09qc,9454
+dcc2/prepareDcc.py,sha256=l3S3XDRx64craALyzb2R1_XKmcOra20u7H25rotwbOU,9585
+dcc2-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dcc2-0.1.0.dist-info/METADATA,sha256=KTfQNR4jWRQf31jlMm4_ZiIkabTv2aNygY9rxci82VQ,4310
+dcc2-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dcc2-0.1.0.dist-info/entry_points.txt,sha256=0LD1e_zCNE0b5a-dS9Oi20uwhVZf4p6FEgtyfpiVS5A,186
+dcc2-0.1.0.dist-info/top_level.txt,sha256=FHZf8PjTdkuG5IraWNRtowjXYIJX9byrbchkNWjSI-w,5
+dcc2-0.1.0.dist-info/RECORD,,
