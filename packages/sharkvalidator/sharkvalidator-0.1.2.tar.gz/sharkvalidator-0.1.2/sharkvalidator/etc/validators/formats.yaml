@@ -1,0 +1,334 @@
+description: Check data formats (eg. "SDATE" = "%Y-%m-%d" , -2.5 <= "TEMP_CTD"<= 30).
+name: formats
+validator: !!python/name:sharkvalidator.validators.formats.FormatValidator ''
+format_validators:
+    code:
+        validator: !!python/name:sharkvalidator.validators.formats.CodeValidator ''
+        path_to_codelist: "etc/codelist_SMHI.xlsx"
+    datetime:
+        validator: !!python/name:sharkvalidator.validators.formats.DateTimeValidator ''
+    free_text:
+        validator: !!python/name:sharkvalidator.validators.formats.FreeTextValidator ''
+    position:
+        validator: !!python/name:sharkvalidator.validators.formats.PositionValidator ''
+    range:
+        validator: !!python/name:sharkvalidator.validators.formats.RangeValidator ''
+
+parameters:
+    MYEAR:
+        format_validator: date
+        fmt: '%Y'
+    PROJ:
+        format_validator: code
+    ORDERER:
+        format_validator: code
+    SDATE:
+        format_validator: datetime
+        fmt: '%Y-%m-%d'
+    STIME:
+        format_validator: datetime
+        fmt: '%H:%M'
+    EDATE:
+        format_validator: datetime
+        fmt: '%Y-%m-%d'
+    ETIME:
+        format_validator: datetime
+        fmt: '%H:%M'
+    SHIPC:
+        format_validator: time
+    CRUISE_NO:
+        format_validator: range
+        lower_range: 1
+        upper_range: 99
+    SERNO:
+        format_validator: range
+        lower_range: 1
+        upper_range: 9999
+    STATN:
+        format_validator: free_text
+    LATIT:
+        format_validator: position
+        lower_range: 5350
+        upper_range: 6600
+    LONGI:
+        format_validator: position
+        lower_range: 300
+        upper_range: 3300
+    POSYS:
+        format_validator: code
+    WADEP:
+        format_validator: range
+        lower_range: 0.5
+        upper_range: 999
+    NODEPTH:
+        format_validator: range
+        lower_range: 1
+        upper_range: 30
+    ADD_SMP:
+        format_validator: code
+    COMNT_VISIT:
+        format_validator: free_text
+    WINDIR:
+        format_validator: code
+    WINSP:
+        format_validator: range
+        lower_range: 0
+        upper_range: 30
+    AIRTEMP:
+        format_validator: range
+        lower_range: -40
+        upper_range: 35
+    AIRPRES:
+        format_validator: range
+        lower_range: 930
+        upper_range: 1070
+    WEATH:
+        format_validator: code
+    CLOUD:
+        format_validator: code
+    WAVES:
+        format_validator: code
+    ICEOB:
+        format_validator: code
+    SECCHI:
+        format_validator: range
+        lower_range: 0
+        upper_range: 30
+    Q_SECCHI:
+        format_validator: code
+    SMPNO:
+        format_validator: free_text
+    DEPH:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1000
+    PRES_CTD:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1000
+    Q_PRES_CTD:
+        format_validator: code
+    TEMP_BTL:
+        format_validator: range
+        lower_range: -2.5
+        upper_range: 30
+    Q_TEMP_BTL:
+        format_validator: code
+    TEMP_CTD:
+        format_validator: range
+        lower_range: -2.5
+        upper_range: 30
+    Q_TEMP_CTD:
+        format_validator: code
+    SALT_BTL:
+        format_validator: range
+        lower_range: 0
+        upper_range: 37
+    Q_SALT_BTL:
+        format_validator: code
+    SALT_CTD:
+        format_validator: range
+        lower_range: 0
+        upper_range: 37
+    Q_SALT_CTD:
+        format_validator: code
+    CNDC_25:
+        format_validator: range
+        lower_range: 0
+        upper_range: 6000
+    Q_CNDC_25:
+        format_validator: code
+    CNDC_CTD:
+        format_validator: range
+        lower_range: 0
+        upper_range: 6000
+    Q_CNDC_CTD:
+        format_validator: code
+    DOXY_BTL:
+        format_validator: range
+        lower_range: 0
+        upper_range: 14.5
+    Q_DOXY_BTL:
+        format_validator: code
+    DOXY_CTD:
+        format_validator: range
+        lower_range: 0
+        upper_range: 14.5
+    Q_DOXY_CTD:
+        format_validator: code
+    H2S:
+        format_validator: range
+        lower_range: 0
+        upper_range: 2000
+    Q_H2S:
+        format_validator: code
+    PH:
+        format_validator: range
+        lower_range: 0
+        upper_range: 10
+    Q_PH:
+        format_validator: code
+    PH_LAB:
+        format_validator: range
+        lower_range: 0
+        upper_range: 10
+    Q_PH_LAB:
+        format_validator: code
+    PH_LAB_TEMP:
+        format_validator: range
+        lower_range: 15
+        upper_range: 30
+    Q_PH_LAB_TEMP:
+        format_validator: code
+    ALKY:
+        format_validator: range
+        lower_range: 0
+        upper_range: 5
+    Q_ALKY:
+        format_validator: code
+    PHOS:
+        format_validator: range
+        lower_range: 0
+        upper_range: 50
+    Q_PHOS:
+        format_validator: code
+    PTOT:
+        format_validator: range
+        lower_range: 0
+        upper_range: 50
+    Q_PTOT:
+        format_validator: code
+    NTRI:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_NTRI:
+        format_validator: code
+    NTRA:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1000
+    Q_NTRA:
+        format_validator: code
+    NTRZ:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1000
+    Q_NTRZ:
+        format_validator: code
+    AMON:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_AMON:
+        format_validator: code
+    NTOT:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1500
+    Q_NTOT:
+        format_validator: code
+    SIO3-SI:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1000
+    Q_SIO3-SI:
+        format_validator: code
+    HUMUS:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_HUMUS:
+        format_validator: code
+    CPHL:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_CPHL:
+        format_validator: code
+    DOC:
+        format_validator: range
+        lower_range: 0
+        upper_range: 200
+    Q_DOC:
+        format_validator: code
+    POC:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_POC:
+        format_validator: code
+    TOC:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_TOC:
+        format_validator: code
+    PON:
+        format_validator: range
+        lower_range: 0
+        upper_range: 100
+    Q_PON:
+        format_validator: code
+    CURDIR:
+        format_validator: code
+    Q_CURDIR:
+        format_validator: code
+    CURVEL:
+        format_validator: range
+        lower_range: 0
+        upper_range: 300
+    Q_CURVEL:
+        format_validator: code
+    AL:
+        format_validator: range
+        lower_range: 0
+        upper_range: 1500
+    Q_AL:
+        format_validator: code
+    CDOM:
+        format_validator: range
+        lower_range: 0
+        upper_range: 10
+    Q_CDOM:
+        format_validator: code
+    COMNT_SAMP:
+        format_validator: free_text
+    PARAM:
+        format_validator: code
+    VALIDFR:
+        format_validator: datetime
+        fmt: '%Y-%m-%d'
+    VALIDTO:
+        format_validator: datetime
+        fmt: '%Y-%m-%d'
+    SMTYP:
+        format_validator: code
+    REFSK_SMP:
+        format_validator: code
+    COMNT_SMPM:
+        format_validator: free_text
+    SLABO:
+        format_validator: code
+    ACKR_SMP:
+        format_validator: code
+    METOA:
+        format_validator: code
+    REFSK_ANA:
+        format_validator: code
+    MET_COMNT:
+        format_validator: free_text
+    UNCERT:
+        format_validator: free_text
+    METCU:
+        format_validator: free_text
+    LMQNT:
+        format_validator: free_text
+    DETLI:
+        format_validator: free_text
+    RANA:
+        format_validator: free_text
+    ALABO:
+        format_validator: code
+    ACKR_ANA:
+        format_validator: code
