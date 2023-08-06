@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: dffml-operations-binsec
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/intel/dffml/blob/master/operations/binsec/README.md
+Author: Himanshu Tripathi
+Author-email: himanshutripathi366@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: aiohttp (==3.7.3) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: rpmfile (==1.0.8) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: pyelftools (==0.27) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: aiohttp (==3.7.3) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: rpmfile (==1.0.8) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: pyelftools (==0.27) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: aiohttp (==3.7.3) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: rpmfile (==1.0.8) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: pyelftools (==0.27) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: aiohttp (==3.7.3) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: rpmfile (==1.0.8) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: pyelftools (==0.27) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: aiohttp (==3.7.3) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: rpmfile (==1.0.8) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: pyelftools (==0.27) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.8"
+
+# DFFML dffml-operations-binsec Operations
+
+dffml-operations-binsec description.
+
+# TODO
+## Usage
+
+Example usage
+
+
+## License
+
+DFFML dffml-operations-binsec is distributed under the [MIT License](LICENSE).
+
+
