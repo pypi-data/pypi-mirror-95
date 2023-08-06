@@ -1,0 +1,4 @@
+[console_scripts]
+cloudml = cloud_ml_sdk.command.command:main
+cloudml_admin = cloud_ml_sdk.command.command_admin:main
+
