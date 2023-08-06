@@ -1,0 +1,10 @@
+aramex_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aramex_lib/array_of_string.py,sha256=HspzhRCwHw8SEf8ufkGhju3K4GfA_PDxQJydMcPm7NQ,166217
+aramex_lib/datatypes.py,sha256=0bx22sNFrOLQ7zwd1F1KWRuMuWQkRSAgYDVsrtZ_KhI,58546
+aramex_lib/location.py,sha256=JaqQPjYn94ue2kVjTxpacunRuozx4O1jc80F18mD8is,276936
+aramex_lib/rates.py,sha256=3PAJgJmUi0R_Kzu_GScJM2JGh8NiCuPjeZzwEUCDyM4,271099
+aramex_lib/shipping.py,sha256=eZsVzm3jQxqAlsyJvANEY-1mOKnF9jjugIq-m6mvyg0,587583
+aramex_lib/tracking.py,sha256=vTv-o3Q3_3_5YVI_dRuXQRazpNd9j5HQ9lLjUIKngH4,200871
+carrier.aramex-2021.2b0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+carrier.aramex-2021.2b0.dist-info/METADATA,sha256=bIau0n5Tb3wnWx2A3wTcOLt7Dqcykdzxr26eTbUO2Zs,1249
+carrier.aramex-2021.2b0.dist-info/RECORD,,
