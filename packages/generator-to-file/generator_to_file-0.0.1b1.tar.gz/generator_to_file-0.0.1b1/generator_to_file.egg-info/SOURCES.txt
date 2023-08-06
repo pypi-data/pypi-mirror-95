@@ -1,0 +1,7 @@
+README.md
+setup.py
+generator_to_file/__init__.py
+generator_to_file.egg-info/PKG-INFO
+generator_to_file.egg-info/SOURCES.txt
+generator_to_file.egg-info/dependency_links.txt
+generator_to_file.egg-info/top_level.txt

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: generator_to_file
+Version: 0.0.1b1
+Summary: Business research tools
+Home-page: https://github.com/paris0120/generator_to_file
+Author: Paris Liu
+Author-email: paris0120@gmail.com
+License: UNKNOWN
+Description: # generator_to_file
+        Save generator output to files.
+        
+        #Instll:
+        
+        pip install generator_to_file
+        
+        #examples:
+        import generator_to_file as g2f
+        ??g2f.test()
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
