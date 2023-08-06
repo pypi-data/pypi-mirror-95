@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+DMAS.egg-info/PKG-INFO
+DMAS.egg-info/SOURCES.txt
+DMAS.egg-info/dependency_links.txt
+DMAS.egg-info/top_level.txt
+dmas.egg-info/PKG-INFO
+dmas.egg-info/SOURCES.txt
+dmas.egg-info/dependency_links.txt
+dmas.egg-info/top_level.txt

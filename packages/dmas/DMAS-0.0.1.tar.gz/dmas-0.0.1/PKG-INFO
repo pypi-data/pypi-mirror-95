@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: dmas
+Version: 0.0.1
+Summary: two number are taking enter from user and the applying the DMAS rule
+Home-page: UNKNOWN
+Author: Raza Rizwan
+Author-email: rrizwan1998@gmail.com
+License: MIT
+Description: DMAS RULE.
+        Division, Multiplication, Addition and Subtraction (DMAS) is the elementary rule for the order of operation
+        of the Binary operations. What is the scientific and technical reason behind this mathematical myth though
+        Multiplication before Division also gives the same result mostly? DMAS, a nice tool but has less convincing/appealing
+        to admit its order of operation.
+        I am just Simply that the two number are taking enter from user and the applying the DMAS rule
+        
+        Change Log
+        ====================
+        
+        
+        0.0.1 (18/2/2021)
+        --------------------
+        
+        First Release
+        
+Keywords: dmas
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
