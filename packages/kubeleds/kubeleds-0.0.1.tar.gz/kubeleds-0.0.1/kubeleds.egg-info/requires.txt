@@ -1,0 +1,8 @@
+RPI.GPIO
+adafruit-blinka
+adafruit-ws2801
+click
+kubernetes
+requests
+rich<=7.1.0
+simple-term-menu

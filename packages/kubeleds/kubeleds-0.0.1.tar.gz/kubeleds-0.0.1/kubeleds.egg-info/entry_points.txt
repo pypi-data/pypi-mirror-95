@@ -1,0 +1,3 @@
+[console_scripts]
+kubeledscli = kubeleds.app:cli
+
