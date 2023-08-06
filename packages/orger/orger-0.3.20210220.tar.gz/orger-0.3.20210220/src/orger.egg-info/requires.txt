@@ -1,0 +1,10 @@
+appdirs
+atomicwrites
+
+[linting]
+pytest
+mypy
+lxml
+
+[testing]
+pytest
