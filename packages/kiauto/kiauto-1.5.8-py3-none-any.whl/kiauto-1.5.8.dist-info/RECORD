@@ -1,0 +1,12 @@
+kiauto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiauto/file_util.py,sha256=PxmNYKVrFIRQbxIsrzU7G6ibYR78nbegfCwExmsBGKE,10057
+kiauto/log.py,sha256=W3T0H8rDF5WD8yUKWqEpByr4gioYMCZzn8f1sGn9Fss,2404
+kiauto/misc.py,sha256=PWYLo0-VhVw6oSdaeJDBMFPmCOWw_2wWuJalVoFIl-U,9921
+kiauto/ui_automation.py,sha256=A29DChGAG_DE21rSuigG25j0jBj7zs0AuILlxKeB0cc,12701
+kiauto-1.5.8.data/scripts/eeschema_do,sha256=DUsx8XlwiXPpfqV4KMq2xBdhaDlMuGuRtOi-GDBDAIY,26248
+kiauto-1.5.8.data/scripts/pcbnew_do,sha256=8jnbrqtg7ZmRUEA0ICJBC8KV_M559lSreDP-fmocVmY,29136
+kiauto-1.5.8.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+kiauto-1.5.8.dist-info/METADATA,sha256=H7K2bAer_6ekedvSICfc7x2wft04evK-8C3oxcXBgEE,13669
+kiauto-1.5.8.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+kiauto-1.5.8.dist-info/top_level.txt,sha256=txHagn2kbZqT8uFXa7rIWheTvHfg5KvFh-aj873hc6Q,7
+kiauto-1.5.8.dist-info/RECORD,,
