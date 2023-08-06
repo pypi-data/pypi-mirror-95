@@ -1,0 +1,5 @@
+openpyxl==3.0.0
+ply==3.11
+numpy==1.17.2
+python-dateutil
+idp_solver
