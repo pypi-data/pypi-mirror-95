@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: selfbot
+Version: 0.1
+Summary: epic discord exploit api wrapper
+Home-page: https://github.com/rqzu/selfbot.py
+Author: YOUR NAME
+Author-email: your.email@domain.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: discord.py,selfbot,discord-selfbot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
