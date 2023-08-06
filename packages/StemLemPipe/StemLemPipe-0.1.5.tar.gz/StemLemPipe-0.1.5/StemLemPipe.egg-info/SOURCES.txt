@@ -1,0 +1,17 @@
+README.md
+setup.py
+StemLemPipe/__init__.py
+StemLemPipe/metrics.py
+StemLemPipe/pipeline.py
+StemLemPipe/regular_expressions.py
+StemLemPipe/simplifiers.py
+StemLemPipe/stemlem_operators.py
+StemLemPipe/stopwords.py
+StemLemPipe/tokenizers.py
+StemLemPipe/transformers.py
+StemLemPipe/useful_functions.py
+StemLemPipe.egg-info/PKG-INFO
+StemLemPipe.egg-info/SOURCES.txt
+StemLemPipe.egg-info/dependency_links.txt
+StemLemPipe.egg-info/requires.txt
+StemLemPipe.egg-info/top_level.txt
