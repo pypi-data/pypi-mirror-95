@@ -1,0 +1,9 @@
+README.md
+setup.py
+bogons/__init__.py
+bogons/bogons.py
+bogons.egg-info/PKG-INFO
+bogons.egg-info/SOURCES.txt
+bogons.egg-info/dependency_links.txt
+bogons.egg-info/requires.txt
+bogons.egg-info/top_level.txt
