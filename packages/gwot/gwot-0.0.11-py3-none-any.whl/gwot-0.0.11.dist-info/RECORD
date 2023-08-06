@@ -1,0 +1,14 @@
+gwot/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gwot/altsolver.py,sha256=-J9cufcxYJVD7Kgs2S-CiPU8XroB5mLwv74Ub1MNTsw,2087
+gwot/anndata_utils.py,sha256=Z1cf62oPZCLg7SsEmoHefbe0qf3qyrsiDTXN8PV7HsI,1879
+gwot/bridgesampling.py,sha256=zzOwsIPD701K5f_-7l5d9XZN08NtCPCpG9yrjDb5LIk,2565
+gwot/lambertw.py,sha256=7yl05ZNVjkiyl4IsEGfwF_nAzYTH_RvAMZehgiUlTJc,2793
+gwot/models.py,sha256=NRL-kSevDv4UqDbkOG3P2qNSZ705qU-il73MsrpkIjg,34130
+gwot/sim.py,sha256=ARmSokMbkcBHRXeSdsc2VY7xzH-lBikqYknQfZW3mjc,3204
+gwot/ts.py,sha256=aQM97M1drb3gaBxYlBMrHEG2qoPVu89BW441zTg-8Ag,272
+gwot/util.py,sha256=SiYmFENs1D0RopNFLuX-WPWNU6FUBCUR5hJ_NW9m58w,6090
+gwot-0.0.11.dist-info/LICENSE,sha256=P5sm-fIBFaNUGYB95lc2fJF_QvLuYEaB0xWGUeMurdU,1070
+gwot-0.0.11.dist-info/METADATA,sha256=jH3jzKspF37M7tlYK62VDIpqso_5S5nVxfjJhi2xW6g,2316
+gwot-0.0.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gwot-0.0.11.dist-info/top_level.txt,sha256=dDfJykTTduVBelN3JQeIjml58lpm9BBqSbTovbnOApA,5
+gwot-0.0.11.dist-info/RECORD,,
