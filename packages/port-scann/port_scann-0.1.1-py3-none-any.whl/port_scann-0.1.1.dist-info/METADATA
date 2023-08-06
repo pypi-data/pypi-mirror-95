@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: port-scann
+Version: 0.1.1
+Summary: Port Scanner
+Home-page: UNKNOWN
+Author: CyberCommands
+License: UNKNOWN
+Keywords: python,port,scan,port scanner,port scan,TCP scan
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: argparse
+
+
+# Port Scanner
+[![Python3.x](https://img.shields.io/badge/python-3.x-FADA5E.svg?logo=python)](https://www.python.org/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-red.svg)](https://www.python.org/dev/peps/pep-0008/)
+
+A simple port scanner written in Python3
+
+
+
