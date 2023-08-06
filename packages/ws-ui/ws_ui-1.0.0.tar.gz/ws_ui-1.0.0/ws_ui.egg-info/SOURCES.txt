@@ -1,0 +1,10 @@
+README.rst
+setup.py
+scripts/ws-ui
+ws_ui/__init__.py
+ws_ui/__main__.py
+ws_ui.egg-info/PKG-INFO
+ws_ui.egg-info/SOURCES.txt
+ws_ui.egg-info/dependency_links.txt
+ws_ui.egg-info/requires.txt
+ws_ui.egg-info/top_level.txt
