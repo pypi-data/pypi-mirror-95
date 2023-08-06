@@ -1,0 +1,6 @@
+sf_express_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sf_express_lib/request.py,sha256=JqqLNxgIcaPGQSjw_d5_3qaVB-AtFaBpGiZiXaJ6Se4,364
+sf_express_lib/tracking.py,sha256=_Y5vZMpzndIxv2EoHnKyyck5OdC7miTdJGAttFE1Ofc,957
+carrier.sf_express-2021.2a0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+carrier.sf_express-2021.2a0.dist-info/METADATA,sha256=V3QSNBDzYbSLXZMJR6k2yhl1RiQZZX0ODrkA6SyadFY,1277
+carrier.sf_express-2021.2a0.dist-info/RECORD,,
