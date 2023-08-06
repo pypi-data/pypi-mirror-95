@@ -1,0 +1,11 @@
+audiolipsum/__init__.py,sha256=vqIMcBIhC0dq0L1fk1jCW1MfMn2yWB5_He9Hhs8hRDI,3109
+audiolipsum/cli.py,sha256=LtMs3PALZ_3ECObUTcHhbIo2b3RHgqQX0uIH4dTBFmg,2397
+audiolipsum/exceptions.py,sha256=bzgEHLJaFkIoLwBJMpHaSr3Q1FEK1MXHAOXs0fIkT7U,233
+audiolipsum/helpers.py,sha256=BxLRkanI2wc2s-5UkRnVPTIXru11Z4XfQhdeVHiQ024,3382
+audiolipsum/models.py,sha256=iDd9WOwH10Dul1OuRX-EaLFBipI9i4AKNwRyvuoBmTY,2894
+opawg_audiolipsum-0.1.dist-info/LICENSE,sha256=Ayi1OGzTUyuRF6Y7CNwbWm0KYRpE1e-bcy-OWsG2nXY,1093
+opawg_audiolipsum-0.1.dist-info/METADATA,sha256=mnUzcSXFGr3sCkZoo2GM_zowpsPJmJVRgwzrCHWX5Uc,689
+opawg_audiolipsum-0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+opawg_audiolipsum-0.1.dist-info/entry_points.txt,sha256=79mp2V0Msr4vRLOHYS2NgMS0gmp6zfzXGmNg1UykKGc,50
+opawg_audiolipsum-0.1.dist-info/top_level.txt,sha256=n7DAAKUy8L1dUjxSGmOtDlwEqjQPhxG7U4Il3ge1QvU,12
+opawg_audiolipsum-0.1.dist-info/RECORD,,
