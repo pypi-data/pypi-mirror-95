@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pythematics
+Version: 4.0.0
+Summary: Python Math library for Matrix and Polynomial manipulation extending to the complex plane
+Home-page: https://github.com/Greece4ever/pythematics
+Author: Leonidios
+Author-email: programertv633@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+
+## Pythematics
+
+
+> Pythematics is a zero-dependency math library for Python that aims to extend some Mathematical fields that are seemingly abandoned by other libraries while offering a fully Pythonic experience.
+
+The main **field** that this library aims to enhance to Python is **Polynomials** in a way that allows for super-complicated and high degree **polynomial** equations to be solved giving all **Real** and **Complex Solutions** as well as combining it with fields such as Linear Algebra and allowing for Matrix-Polynomial Manipulation methods like finding Eigenvalues and Eigenvectors.
+
+**Pythematics** can also be used as an ordinary math module since it contains various sub-packages for computations in Trigonometry, Number Theory and other fields such as Random Number Generation or Calculus
+
+The thing that makes this library unique is the ability to Interact will Polynomials at the following format:
+```py
+import pythematics.polynomials as pl
+
+x = pl.x
+pol: pl.Polynomial = x**4 + 3*x**2 + 2*x
+print("Solve x^4 + 3x^2+ 2x = 0 : ", pol == 0)
+print("Inequality: ", pol > 0)
+```
+which outputs
+```py
+Solve x^4 + 3x^2+ 2x = 0 :  [(-0.5960716379833215+1.2508571630922372e-33j), (0.29803581899166076+1.8073394944520218j), (0.2980358189916609-1.8073394944520218j), 0j]
+Inequality:  {(-inf, -0.5960716379833215): True, (-0.5960716379833215, 0.0): False, (0.0, inf): True}
+```
+And the results can be verified by subsituting
+```py
+roots = pol.roots(5000) # Same as pol == 0
+for root in roots:
+    print(pol(root)) # Substituting
+
+# The output: Very small numbers close to 0
+    # (1.1102230246251565e-16+1.0171730768082222e-32j)
+    # 0j
+    # (-1.7763568394002505e-15-8.881784197001252e-16j)
+    # (3.552713678800501e-15+8.881784197001252e-16j)
+```
+
+This can be generalised not to just polynomials
+```py
+a, b = symbol('a', 'b')
+for i in range(5):
+    print(f"{i}: ", (a + b)**i)
+```
+- Output
+```py
+0:  1 # Unicode can be disabled by setting `Polynomial.use_unicode=False` and/or `Multinomial.use_unicode=False`
+1:  Multivariable Polynomial : b + a
+2:  Multivariable Polynomial : b² + a² + 2ab 
+3:  Multivariable Polynomial : b³ + a³ + 3a²b + 3ab²
+4:  Multivariable Polynomial : b⁴ + a⁴ + 4a³b + 6a²b² + 4ab³
+```
+**Linear Algebra** is another huge part of this module. Here is an example of solving a **3x3** system of **Linear** of equations.
+
+```py
+import pythematics.linear as lin
+A = lin.Matrix([
+    [1,2,3],  # R1:  x +  2y +  3z
+    [4,7,8],  # R2: 4x +  7y +  8z
+    [5,10,11] # R3: 5x + 10y + 11z
+])
+
+unknowns = ('x','y','z') # Our Varaibles
+Output = Vector([10, 15, 25]) # Our Target Output (R1=10, R2=15, R3=25)
+
+print(A.solve(Output, unknowns)) # Using Cramer's rule of the determinants
+print(A.solve(Output, unknowns, useRef=True)) # Using Row Reduction
+```
+And as expected the results are identical dispite a small floating point error
+```py
+{'x': -8.75, 'y': 0.0, 'z': 6.25}
+{'x': -8.749999999999993, 'y': -6.217248937900877e-15, 'z': 6.250000000000002}
+```
+
+

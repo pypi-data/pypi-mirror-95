@@ -1,0 +1,15 @@
+pythematics/__init__.py,sha256=c4lEdM-Dj87bIFPcl69qdOIsT4LgSrXT2QoM3ZCEStU,653
+pythematics/basic.py,sha256=RK7YrddJBmH_NSwPsvj0Wu_1KMyN0uBVLiDp1aiCxB0,2819
+pythematics/constants.py,sha256=JqTmCPzqBHNiy8nmjU4V4XZLjVWw0QVFxZevYJO1_7Y,1914
+pythematics/functions.py,sha256=GgITvhn2Pj2JBxTJiZjuVKEl8CNSUMcWRBuB41wVG30,8441
+pythematics/linear.py,sha256=_WAV-Ykp99Z93UO7qMaDGJjqXSZ-C-eh91_DQchB49Q,44598
+pythematics/num_theory.py,sha256=d4wG3bXEiGC-OJeLzW28tc7NPteIdGox6pz_yJB5yIA,6851
+pythematics/polynomials.py,sha256=hDRwNwdyWfCV_IgyaB_PoQnMAuq5jz0vRd0y1lc8als,30502
+pythematics/powers.py,sha256=o6heJkne0N57zjw0FoyL2ZEAdkhErs906nlKqR9Ivlg,5035
+pythematics/random.py,sha256=xtcOyOfb7V8WrRtR2z2ocUcc8rQ6u_SLYMJBV5xSeks,2502
+pythematics/setup.py,sha256=Kdc3j8p-_eX4yZzcsRMvmi0iuxRsQxaU2yJxktMfDsw,753
+pythematics/trigonometric.py,sha256=YjxRr_Co1aGEvd7IYNtXdiePB8AlN-mNw95uL6Ywc5E,13427
+pythematics-4.0.0.dist-info/METADATA,sha256=q7-_c0tsp3f0n07sCwUD1qV7302yf7seM_g-DQtmY20,3506
+pythematics-4.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pythematics-4.0.0.dist-info/top_level.txt,sha256=0sUgpWvUFUYbuvxYN3ehCwNB2gcKkvDBFITYSuo89j0,12
+pythematics-4.0.0.dist-info/RECORD,,
