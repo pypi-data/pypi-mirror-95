@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: recipeasy
+Version: 2021.2.1
+Summary: Python package for recipes
+Home-page: https://github.com/tahini-dev/recipeasy
+Author: tahini-dev
+Author-email: tahini.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tahini
+Provides-Extra: all
+Requires-Dist: tahini[plotly] ; extra == 'all'
+Provides-Extra: plotly
+Requires-Dist: tahini[plotly] ; extra == 'plotly'
+
+# recipeasy
+
+
