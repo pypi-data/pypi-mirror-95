@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+decorators/__init__.py
+decorators/decors.py
+decorrators.egg-info/PKG-INFO
+decorrators.egg-info/SOURCES.txt
+decorrators.egg-info/dependency_links.txt
+decorrators.egg-info/not-zip-safe
+decorrators.egg-info/top_level.txt
