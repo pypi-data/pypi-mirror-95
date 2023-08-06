@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: easycli
+Version: 1.7.3
+Summary: Easily define your Command line and sub-commands using argparse.
+Home-page: http://github.com/pylover/easycli
+Author: Vahid Mardani
+Author-email: vahid.mardani@gmail.com
+License: MIT
+Description: # easycli
+        
+        [![PyPI](http://img.shields.io/pypi/v/easycli.svg)](https://pypi.python.org/pypi/easycli)
+        [![Build](https://github.com/pylover/easycli/workflows/Build/badge.svg?branch=master)](https://github.com/pylover/easycli/actions)
+        [![Coverage Status](https://coveralls.io/repos/github/pylover/easycli/badge.svg?branch=master)](https://coveralls.io/github/pylover/easycli?branch=master)
+        [![Python](https://img.shields.io/badge/Python-%3E%3D3.6-blue)](https://python.org)
+        [![Documentation](https://img.shields.io/badge/Documentation-ready!-blue)](https://pylover.github.io/easycli/)
+        
+        
+        [Documentation](https://pylover.github.io/easycli/)
+        
+        
+        Command line interface for python application on top of the argparse 
+        including sub-parsers.
+        
+        ## Installation
+        
+        ```bash
+        pip install easycli
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
