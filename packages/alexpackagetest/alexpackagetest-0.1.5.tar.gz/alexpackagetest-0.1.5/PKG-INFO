@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: alexpackagetest
+Version: 0.1.5
+Summary: Package for testing PyPI Poetry implementation.
+Home-page: https://github.com/Alex-Angelico/alextestpackage
+License: MIT
+Keywords: alextest
+Author: Alex Angelico
+Author-email: alex.angelico@live.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas
+Project-URL: Repository, https://github.com/Alex-Angelico/alextestpackage
+Description-Content-Type: text/markdown
+
+# About
+
+## Description
+
+This is a test package built by Alex. It has a couple of functions.
+
+## License
+
+MIT
+
+## Installation
+
+```
+poetry add alexpackagetest
+```
+
+## GitHub Repository
+
+https://github.com/Alex-Angelico/alextestpackage
+
