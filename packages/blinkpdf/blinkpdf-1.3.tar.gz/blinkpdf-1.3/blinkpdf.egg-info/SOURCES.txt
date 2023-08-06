@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+blinkpdf/__init__.py
+blinkpdf/__main__.py
+blinkpdf.egg-info/PKG-INFO
+blinkpdf.egg-info/SOURCES.txt
+blinkpdf.egg-info/dependency_links.txt
+blinkpdf.egg-info/entry_points.txt
+blinkpdf.egg-info/requires.txt
+blinkpdf.egg-info/top_level.txt
