@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+bin/setup_service.sh
+riegocloud/__init__.py
+riegocloud/app.py
+riegocloud.egg-info/PKG-INFO
+riegocloud.egg-info/SOURCES.txt
+riegocloud.egg-info/dependency_links.txt
+riegocloud.egg-info/entry_points.txt
+riegocloud.egg-info/not-zip-safe
+riegocloud.egg-info/requires.txt
+riegocloud.egg-info/top_level.txt
+riegocloud/web/__init__.py
+riegocloud/web/views/__init__.py
+riegocloud/web/views/home.py
