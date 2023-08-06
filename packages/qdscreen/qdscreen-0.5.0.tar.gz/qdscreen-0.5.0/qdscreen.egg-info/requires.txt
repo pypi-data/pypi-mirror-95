@@ -1,0 +1,5 @@
+pandas
+pyitlib
+
+[:python_version < "3.2"]
+pathlib2
