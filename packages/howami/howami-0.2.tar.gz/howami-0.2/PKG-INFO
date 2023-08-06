@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: howami
+Version: 0.2
+Summary: You always ask your system "whoami", ask it "howami" for a change!
+Home-page: UNKNOWN
+Author: Ghosty
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: whoami,howami
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
