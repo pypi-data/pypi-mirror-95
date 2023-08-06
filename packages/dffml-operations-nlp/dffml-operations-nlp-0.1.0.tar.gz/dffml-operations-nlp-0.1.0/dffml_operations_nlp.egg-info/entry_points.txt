@@ -1,0 +1,13 @@
+[dffml.operation]
+collect_output = dffml_operations_nlp.operations:CollectOutput
+count_vectorizer = dffml_operations_nlp.operations:count_vectorizer
+extract_array_from_matrix = dffml_operations_nlp.operations:extract_array_from_matrix
+get_embedding = dffml_operations_nlp.operations:get_embedding
+get_noun_chunks = dffml_operations_nlp.operations:get_noun_chunks
+get_sentences = dffml_operations_nlp.operations:get_sentences
+get_similarity = dffml_operations_nlp.operations:get_similarity
+lemmatizer = dffml_operations_nlp.operations:lemmatizer
+pos_tagger = dffml_operations_nlp.operations:pos_tagger
+remove_stopwords = dffml_operations_nlp.operations:remove_stopwords
+tfidf_vectorizer = dffml_operations_nlp.operations:tfidf_vectorizer
+
