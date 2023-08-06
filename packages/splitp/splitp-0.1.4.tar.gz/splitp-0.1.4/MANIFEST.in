@@ -1,0 +1,2 @@
+recursive-include splitp/polynomials *.txt
+include VERSION
