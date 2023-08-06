@@ -1,0 +1,14 @@
+django_tequila/__init__.py,sha256=QVQkLqHJlxoHWE7S7bCvK62gxkrxeF-d0HBDiqGP7zk,126
+django_tequila/admin.py,sha256=Xrg0cbE_pbU3aYifHuwMiit7ibhsGFwV9DjzxTe_xz4,2546
+django_tequila/middleware.py,sha256=hriPGtIy3Dsyi_orrKAHWlOfckHRin1oHbiVxeeIMP4,4614
+django_tequila/urls.py,sha256=DrLBNsyHjnruSgqp1s0cjt55G21iXXk0Ot_AgnAZ5bI,386
+django_tequila/django_backend/__init__.py,sha256=NapoYBJObA8E7zx7_MW2Ro-CZjyfbPZIRc9afk-dlvc,10684
+django_tequila/tequila_auth_views/__init__.py,sha256=cjgRniTumVwHROna4nS4nc6XP9Awl-BMiLqc1XdcMko,3173
+django_tequila/tequila_client/__init__.py,sha256=s-KNKX8KxTVlirdi8seevDrfElcC3pSHQBULBWgxTEU,232
+django_tequila/tequila_client/client.py,sha256=jPFmYIVdHh5Xlc57ZAjflJo8JqTMUyGeSmeGalitT-Y,4718
+django_tequila/tequila_client/config.py,sha256=E0LhgP4WRJ0htVAFcsFV4SistXnHwNMZEm6runpD7R4,2743
+django_tequila-3.3.0.dist-info/AUTHORS,sha256=IwFn6VhsB625x-YzC6cwRKUYWhZ5OsczXuqrYD4LBt8,197
+django_tequila-3.3.0.dist-info/METADATA,sha256=K3U0I7d-XV4mb1M9ruKA_74y8cIc1QkUmUlxFBqCmyo,6446
+django_tequila-3.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_tequila-3.3.0.dist-info/top_level.txt,sha256=JSD2usXghxTfDhYKkLQEzVFpdYbRBo9nbmiab5fTpl0,15
+django_tequila-3.3.0.dist-info/RECORD,,
