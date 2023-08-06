@@ -1,0 +1,10 @@
+README.rst
+setup.py
+Mathics_omnibus.egg-info/PKG-INFO
+Mathics_omnibus.egg-info/SOURCES.txt
+Mathics_omnibus.egg-info/dependency_links.txt
+Mathics_omnibus.egg-info/requires.txt
+Mathics_omnibus.egg-info/top_level.txt
+script/dmathics
+script/dmathicsscript
+script/dmathicsserver
