@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: whooper
+Version: 0.0.1
+Summary: Convenience wrappers for connecting to AWS S3 and Redshift
+Home-page: https://github.com/nickbuker/whooper
+Author: Nick Buker
+Author-email: nickbuker@gmail.com

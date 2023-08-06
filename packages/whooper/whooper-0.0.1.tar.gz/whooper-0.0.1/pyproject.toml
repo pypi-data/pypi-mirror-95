@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "whooper"
+author = "Nick Buker"
+author-email = "nickbuker@gmail.com"
+home-page = "https://github.com/nickbuker/whooper"
+requires = [
+    "boto3 >=1.17.11",
+    "pg8000 >=1.17.0",
+]
+requires-python = ">=3.6,<4"
+description-file = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
