@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+cli.py
+model.py
+predict.py
+requirements.txt
+setup.cfg
+setup.py
+spinectl.egg-info/PKG-INFO
+spinectl.egg-info/SOURCES.txt
+spinectl.egg-info/dependency_links.txt
+spinectl.egg-info/entry_points.txt
+spinectl.egg-info/requires.txt
+spinectl.egg-info/top_level.txt
+utils/__init__.py
+utils/authenticators.py
+utils/constants.py
