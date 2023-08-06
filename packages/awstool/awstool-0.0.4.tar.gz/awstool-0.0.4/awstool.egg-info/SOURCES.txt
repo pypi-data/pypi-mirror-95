@@ -1,0 +1,14 @@
+README.md
+setup.py
+awstool/__init__.py
+awstool/account.py
+awstool/cli.py
+awstool/config.py
+awstool/configure.py
+awstool/credential.py
+awstool.egg-info/PKG-INFO
+awstool.egg-info/SOURCES.txt
+awstool.egg-info/dependency_links.txt
+awstool.egg-info/entry_points.txt
+awstool.egg-info/requires.txt
+awstool.egg-info/top_level.txt
