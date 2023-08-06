@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hmsysteme
+Version: 0.7
+Summary: Connection to HM01
+Home-page: https://github.com/simbabali/hmsysteme
+Author: stan
+Author-email: stan3@gmx.net
+License: MIT
+Download-URL: https://github.com/simbabali/hmsysteme/archive/v0.2.tar.gz
+Platform: UNKNOWN
+Requires-Dist: pygame
+
+UNKNOWN
+
+
