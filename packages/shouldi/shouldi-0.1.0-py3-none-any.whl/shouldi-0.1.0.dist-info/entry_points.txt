@@ -1,0 +1,14 @@
+[console_scripts]
+shouldi = shouldi.cli:ShouldI.main
+
+[dffml.operation]
+cleanup_pypi_package = shouldi.python.pypi:cleanup_pypi_package
+pypi_package_contents = shouldi.python.pypi:pypi_package_contents
+pypi_package_json = shouldi.python.pypi:pypi_package_json
+run_bandit = shouldi.python.bandit:run_bandit
+safety_check = shouldi.python.safety:safety_check
+
+[shouldi.project.bom.db]
+pypi = shouldi.project.bom.db.pypi:PyPiDB
+yaml = shouldi.project.bom.db.yaml:YAMLDB
+
