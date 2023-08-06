@@ -1,0 +1,10 @@
+optlang<1.4.6
+numpy
+python-libsbml
+inspyred
+jmetalpy
+reframed
+cobra
+cobamp
+networkx
+matplotlib<3.3
