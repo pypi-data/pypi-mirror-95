@@ -1,0 +1,10 @@
+geocli/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+geocli/__main__.py,sha256=eBRs720FFFuFTY-7ZPXXvI_KjB6FuebQGCS6-JAuZUI,1437
+geocli/geocli_driver.py,sha256=wTL7EcIhkMDp5NsmFmasEXe2S_9mj8ZsFBuzUd4aCS4,3276
+geocli-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+geocli-1.0.0.dist-info/METADATA,sha256=eYhQh_-be6I2mA6mD5jvKHwBn8vSVMC7kK3thCCF-KI,1701
+geocli-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+geocli-1.0.0.dist-info/dependency_links.txt,sha256=uP1WlOdPVR2erR41A5KlnJ115srtXoFikF6e1zpD72w,92
+geocli-1.0.0.dist-info/entry_points.txt,sha256=CEcylpG2X7fl4A9PAAVsTVuAYbmQT6ARUHeZeEin3V0,67
+geocli-1.0.0.dist-info/top_level.txt,sha256=zRpKpc0bnmgicwHFiNrcCTj-urdWyuGC7SBoOl65GNs,7
+geocli-1.0.0.dist-info/RECORD,,
