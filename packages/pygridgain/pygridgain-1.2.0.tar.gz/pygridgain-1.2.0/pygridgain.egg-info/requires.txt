@@ -1,0 +1,9 @@
+attrs==18.1.0
+tzlocal==2.1
+
+[:python_version < "3.5"]
+typing==3.6.6
+
+[docs]
+Sphinx==1.7.5
+sphinxcontrib-fulltoc==1.2.0
