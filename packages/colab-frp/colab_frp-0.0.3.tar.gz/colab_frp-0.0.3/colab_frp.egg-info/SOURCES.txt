@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+colab-frp/__init__.py
+colab-frp/frp_client.py
+colab_frp.egg-info/PKG-INFO
+colab_frp.egg-info/SOURCES.txt
+colab_frp.egg-info/dependency_links.txt
+colab_frp.egg-info/top_level.txt
