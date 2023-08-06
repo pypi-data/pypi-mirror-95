@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+comnamepy/__init__.py
+comnamepy/__main__.py
+comnamepy/get_comname.py
+comnamepy.egg-info/PKG-INFO
+comnamepy.egg-info/SOURCES.txt
+comnamepy.egg-info/dependency_links.txt
+comnamepy.egg-info/entry_points.txt
+comnamepy.egg-info/not-zip-safe
+comnamepy.egg-info/requires.txt
+comnamepy.egg-info/top_level.txt
