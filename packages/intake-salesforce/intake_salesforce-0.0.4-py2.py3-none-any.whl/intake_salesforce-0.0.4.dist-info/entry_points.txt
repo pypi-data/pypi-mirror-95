@@ -1,0 +1,4 @@
+[intake.drivers]
+salesforce_catalog = intake_salesforce.core:SalesforceCatalog
+salesforce_table = intake_salesforce.core:SalesforceTableSource
+
