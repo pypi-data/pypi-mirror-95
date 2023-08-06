@@ -1,0 +1,9 @@
+django>=1.11
+
+[deploy]
+bump2version==1.0.1
+readme_renderer[md]
+twine==3.3.0
+
+[development]
+pip-tools==5.5.0
