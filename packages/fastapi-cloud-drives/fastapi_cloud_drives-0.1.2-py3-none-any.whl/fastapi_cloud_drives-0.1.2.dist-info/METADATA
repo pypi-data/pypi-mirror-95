@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: fastapi-cloud-drives
+Version: 0.1.2
+Summary: Module for FastAPI to work with cloud drives
+Home-page: https://github.com/MadeByMads/fastapi-cloud-drives
+License: MIT
+Author: Hasan Aliyev
+Author-email: hasan.aliyev.555@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: google-api-python-client (>=1.12.8,<2.0.0)
+Requires-Dist: google-auth-oauthlib (>=0.4.2,<0.5.0)
+Requires-Dist: oauth2client (>=4.1.3,<5.0.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: uvicorn (>=0.13.3,<0.14.0)
+Description-Content-Type: text/markdown
+
+<h3 align="center">FastAPI Cloud Drives</h3>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/MadeByMads/fastapi-cloud-drives/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/MadeByMads/fastapi-cloud-drives/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+
+## 🧐 About <a name = "about"></a>
+
+The FastAPI Cloud Drives module supports Google Drive, OneDrive, Dropbox cloud storage providers. You can easily search, upload, download files from this cloud providers. 
+
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+### Installing
+
+```bash
+pip install fastapi-cloud-drives
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+
+See also the list of [contributors](https://github.com/MadeByMads/fastapi-cloud-drives/graphs/contributors) who participated in this project.
+
+
+## Contributing
+We are open to  new ideas, additions. If you have any we would be happy to recieve and diccuss.
