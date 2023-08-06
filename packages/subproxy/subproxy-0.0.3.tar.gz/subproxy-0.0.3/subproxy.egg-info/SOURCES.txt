@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+subproxy/__init__.py
+subproxy/subproxy.py
+subproxy.egg-info/PKG-INFO
+subproxy.egg-info/SOURCES.txt
+subproxy.egg-info/dependency_links.txt
+subproxy.egg-info/not-zip-safe
+subproxy.egg-info/top_level.txt
