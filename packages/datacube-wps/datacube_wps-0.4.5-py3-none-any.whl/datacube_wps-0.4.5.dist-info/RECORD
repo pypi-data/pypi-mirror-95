@@ -1,0 +1,15 @@
+datacube_wps/__init__.py,sha256=B3v1HXeV6kF7ailUF5-rZh0T5I5IYYV7zscl9tT8QZM,3147
+datacube_wps/startup_utils.py,sha256=xy53Z0XMomU6e-8lKqZvT_Qes16cNUsq1X4yN1o5Q-E,1603
+datacube_wps/processes/__init__.py,sha256=ZjvUg_p9sZEocAVbzA8U8qVrzPIVskMYPQYh1IHmAZU,15332
+datacube_wps/processes/fcdrill.py,sha256=c14dIIP8S_B_Kl2tt12BB0KlvJw2E1iP49N_DzB463I,4602
+datacube_wps/processes/mangrovedrill.py,sha256=Q4c2cCdwb7zZ_PaGfZaJH7tauJDyeu1tjoAbcReCAbQ,2459
+datacube_wps/processes/wofsdrill.py,sha256=Kkw0uLRT3nRnuxYTXIVghuxD7mv7FbxMotbqKSlNRwU,3712
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=TXaKwmdbTc9BiD1AtQEYvTncSZlE84om_n2iKPqxsi0,2350
+tests/test_request_parsing.py,sha256=EvnWdYNg4BsVhp5dQI1ERwt_OjpUKaYLuQhDjWjOdM4,909
+tests/test_s3.py,sha256=N4njQavkp-eXpP94hpnYtpCgpbARssv-KJO2YpD6tJU,1212
+datacube_wps-0.4.5.dist-info/LICENSE,sha256=55jtO18is90BMKx4uD3qc9RQwCgOtz3FfF0ZSTY8AhU,552
+datacube_wps-0.4.5.dist-info/METADATA,sha256=8gX_SXBhxmLFQr8KulriFA_XaY2UiMMUJZUo15tu3uI,1194
+datacube_wps-0.4.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datacube_wps-0.4.5.dist-info/top_level.txt,sha256=B4vohWt1JCWsVbZ5QiQravq5JNWJkwWNTY1BLgD2izs,19
+datacube_wps-0.4.5.dist-info/RECORD,,
