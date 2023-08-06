@@ -1,0 +1,24 @@
+networkx
+
+[:python_version < "3.7"]
+dataclasses
+
+[examples]
+datasets
+flair
+jupyterlab
+numpy
+pyyaml
+requests
+sklearn
+tokenizers>=0.10.1
+torchtext>=0.8.1
+torch
+tqdm
+
+[mongo-store]
+mongoengine
+
+[rich-logging]
+rich
+tblib
