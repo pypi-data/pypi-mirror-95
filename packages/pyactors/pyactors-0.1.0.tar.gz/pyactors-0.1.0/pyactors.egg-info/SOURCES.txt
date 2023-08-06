@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyactors/__main__.py
+pyactors.egg-info/PKG-INFO
+pyactors.egg-info/SOURCES.txt
+pyactors.egg-info/dependency_links.txt
+pyactors.egg-info/not-zip-safe
+pyactors.egg-info/requires.txt
+pyactors.egg-info/top_level.txt
