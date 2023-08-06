@@ -1,0 +1,15 @@
+mypy_boto3_greengrassv2/__init__.py,sha256=UGD1cA70ynWYwKsJc2FLFpCud_7fjDtcfSkebtXEUt0,1870
+mypy_boto3_greengrassv2/__init__.pyi,sha256=m0P8ObHlznl9DCcOMq9uZfENARCm5csHvQRycWSBMFg,1869
+mypy_boto3_greengrassv2/__main__.py,sha256=kw4-sO2De-7CSBVuFmHppKeH62xDUaVZR4UhFGHJFkc,402
+mypy_boto3_greengrassv2/client.py,sha256=Gnnf5951EpCU_8VxigjtB1gu4_SxUJ4BcyFcAAATd3w,12526
+mypy_boto3_greengrassv2/client.pyi,sha256=2VF1N7Nts6FyKqQX-MMrsyKYV8Tr-aG0RGeSIUZnCuo,12493
+mypy_boto3_greengrassv2/paginator.py,sha256=jBV3IoVQfXmum5XXB02h61zW6RCdlYBJO0UwOu7WrqA,5962
+mypy_boto3_greengrassv2/paginator.pyi,sha256=57zpq-htspNF_8abJQFL4j9N1M6DB81UPvjHNC368yQ,5955
+mypy_boto3_greengrassv2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_greengrassv2/type_defs.py,sha256=ZfPvEXPM7wFjzacpHCdeygkFY3bXVhLl9VIKAz-mddo,15683
+mypy_boto3_greengrassv2/type_defs.pyi,sha256=q5ogAUSO4CWBbGXR7SlJPUBPUO0RJxHE2Iq2feK2Ryc,15670
+mypy_boto3_greengrassv2/version.py,sha256=Q1Mc391zGynoFdLZqspvh2cVlVzhQxRgqPbve_x1I3Y,56
+mypy_boto3_greengrassv2-1.17.8.0.dist-info/METADATA,sha256=rR_TyWtk1WpO5P04eYMjD3d9zIy53S9KlXRsEqZarbU,9196
+mypy_boto3_greengrassv2-1.17.8.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_greengrassv2-1.17.8.0.dist-info/top_level.txt,sha256=cYzruPm9qa4vBZQ9INCrLSGP4DOd1b9ttTmFBdh4oTc,24
+mypy_boto3_greengrassv2-1.17.8.0.dist-info/RECORD,,
