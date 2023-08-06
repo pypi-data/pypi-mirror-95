@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: moodle-kit
+Version: 0.1.1
+Summary: A simple Python package with some functionalities to interact with moodle-based LMS.
+Home-page: https://github.com/ahmadfebrianto/moodle-kit
+Author: Ahmad Febrianto
+Author-email: achmadfebryanto@gmail.com
+License: GNU
+Download-URL: https://github.com/ahmadfebrianto/moodle-kit/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: moodle
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
