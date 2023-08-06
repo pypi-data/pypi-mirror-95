@@ -1,0 +1,17 @@
+codac-0.1.1.dist-info/METADATA,sha256=UsRPMsOU91bex2JVNhxTIAwF8FuhYI9zBw_V0acDPM8,648
+codac-0.1.1.dist-info/top_level.txt,sha256=8FIXP4a7FrNu8RyqD7RFUsU7CTUmdd2T6j6EU-DTNYs,6
+codac-0.1.1.dist-info/WHEEL,sha256=RmTb9MYUhAosx0nVy8dqjP6nfYlP1nPfT9ZFheBJGYM,112
+codac-0.1.1.dist-info/RECORD,,
+codac/version.py,sha256=LWbFOE542ks2EN-xYHYjN-LfbA9sOCpXgbJXg_b2oBM,19
+codac/tube.cpython-36m-x86_64-linux-gnu.so,sha256=Yrwjb8kztePUPMFJw1aywtjJAmdQRIgO-ix5CwvJxww,145195224
+codac/__init__.py,sha256=-UWpPJZ3ZvbhlBGNVzoge95I-vAKdPwW3e3N4k5_CX4,344
+codac/empty.cpython-36m-x86_64-linux-gnu.so,sha256=epobAWNF8rR7q3aSb4VpGE-x5wOdbiCeQeJItRcBPTM,7856
+codac/tests/test_definition.py,sha256=PqYGaMTM0JTDtdx5nP_D_DpZGQdOrhl9dCaYfLbqfnY,11834
+codac/tests/test_function.py,sha256=pmQ5ZD7w4_6LI-0P4-JokP2MeMF3D6wJAZymsT8LU1U,873
+codac/tests/test_cn.py,sha256=Vt31pboZEtZPcQ3YrVfcHars7Yt9uJ157B0n52Jor2w,13418
+codac/tests/test_ctcdelay.py,sha256=2eSXKmVGv2YDsHk2_4-OBAQMMZDYSWoFDYRSzxCpXxc,1708
+codac/tests/test_ctc_constell.py,sha256=rYGZzvPZzhW3VwZNXbTvGtZMWrSqoQX90f4gz6fs3Ec,3372
+codac/tests/test_multi_arithmetic.py,sha256=_fZ_jfWcCH79EHLfwfPi4Yj40VHeJmBck1EQkmpKaF0,3661
+codac/tests/test_ctceval.py,sha256=4PLsyHODo8JPQuk3b4QeaA0vaYJPe56IuWRam2UrtXI,43976
+codac/tests/test_arithmetic.py,sha256=12nso09t4-ibxOcLke-nzw74BYg4_Q40qts_YDuTV8Q,30747
+codac/tests/__init__.py,sha256=HWtKKEDojVvJ5JXQUklOKwA1YymufmMj1cEOxaSIwak,72
