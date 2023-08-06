@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: logtailtool
+Version: 1.0.2
+Summary: LogTailTool tail a log file in python
+Home-page: https://github.com/minyong-jeong/logtailtool
+Author: minyong-jeong
+Author-email: jmy3155@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# LogTailTool
+
+LogTailTool tail a log file in python.
+
+## Usage (python code)
+
+```python
+from logtailtool import LogTailTool
+
+lines = LogTailTool("name.log")
+for line in lines:
+    print(line)
+```
+
+## Usage (command line)
+
+```text
+usage: logtailtool.py [-h] -f FILENAME [-p PATTERN] [-b] [-i INTERVAL]
+
+LogTailTool
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FILENAME, --file FILENAME
+                        Log file path (required)
+  -p PATTERN, --pattern PATTERN
+                        Pattern to extract (default: None)
+  -b, --read-from-begin
+                        Read from the begin of the file (default: false)
+  -i INTERVAL, --interval INTERVAL
+                        Interval time (default: 1)
+```
+
+
