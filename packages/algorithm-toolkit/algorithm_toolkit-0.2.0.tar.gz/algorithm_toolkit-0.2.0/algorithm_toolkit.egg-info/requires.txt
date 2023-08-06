@@ -1,0 +1,12 @@
+configparser
+distro
+flask>=1.0
+flask-cors
+flask_wtf
+inflect
+numpy
+psutil
+python-dotenv
+requests
+tabulate
+psutil

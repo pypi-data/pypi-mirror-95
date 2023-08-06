@@ -1,0 +1,3 @@
+[console_scripts]
+alg = cli.cli:cli
+
