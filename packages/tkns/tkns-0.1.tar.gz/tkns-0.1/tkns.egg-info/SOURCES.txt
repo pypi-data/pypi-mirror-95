@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+tkns/__init__.py
+tkns.egg-info/PKG-INFO
+tkns.egg-info/SOURCES.txt
+tkns.egg-info/dependency_links.txt
+tkns.egg-info/top_level.txt
