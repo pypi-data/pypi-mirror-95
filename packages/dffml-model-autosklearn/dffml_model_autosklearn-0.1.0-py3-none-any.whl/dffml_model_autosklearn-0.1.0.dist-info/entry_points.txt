@@ -1,0 +1,4 @@
+[dffml.model]
+autoclassifier = dffml_model_autosklearn.autoclassifier:AutoSklearnClassifierModel
+autoregressor = dffml_model_autosklearn.autoregressor:AutoSklearnRegressorModel
+

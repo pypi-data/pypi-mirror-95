@@ -1,0 +1,14 @@
+dffml_model_autosklearn/__init__.py,sha256=2a_0qw-dUf5WGMpNH7flvY_t4g9v2DxEAPzMguUR--0,1023
+dffml_model_autosklearn/autoclassifier.py,sha256=SnsHz7THaKXcgIubTR4Dtozs2vhgZp-XzchIfxqs-LQ,1287
+dffml_model_autosklearn/autoregressor.py,sha256=fDxUYT6FMCjICZK-bUgBZn7_uZIg1uSdD7oUCClbt8E,4703
+dffml_model_autosklearn/config.py,sha256=vm96TI0Sxx7X5KvFD66eDYoi2cNAjCk8NrvU2nZ9cPk,3895
+dffml_model_autosklearn/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autoclassifier_integration.py,sha256=3x03XwyreVk3iJY7nhgWJBKXeErFl8RKp1J24npfOek,3881
+tests/test_models.py,sha256=X27sBlPEEApNDlrYxXBoQSCLGQES0dy_LtD7DYxvLfs,368
+dffml_model_autosklearn-0.1.0.dist-info/LICENSE,sha256=BFva-3Y1lFfmwD-jesM2n5r1TX9paMjysImA2ZN39Eg,1062
+dffml_model_autosklearn-0.1.0.dist-info/METADATA,sha256=LV3sDh_oa28EwMkiTZUBsv6aIlBpA01rFaXDWt48b2E,1763
+dffml_model_autosklearn-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_autosklearn-0.1.0.dist-info/entry_points.txt,sha256=r3lzjSYwj6m8b7wkfk06j2uRxAY5_qEUnkBXaGHmf-Y,178
+dffml_model_autosklearn-0.1.0.dist-info/top_level.txt,sha256=hObgEGPlhZ6xKZVK4liIgVQ80O9hfeBbPaoa3uoEhLM,30
+dffml_model_autosklearn-0.1.0.dist-info/RECORD,,
