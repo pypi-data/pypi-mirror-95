@@ -1,0 +1,3 @@
+[console_scripts]
+lib_travis = lib_travis.lib_travis_cli:cli_main
+
