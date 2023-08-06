@@ -1,0 +1,12 @@
+Products.ZopeTree-3.2.0-py3.8-nspkg.pth,sha256=nq2GLEDBKV9G0i4LEhkEEQT0gMqQlG1ToxVfs90lBMs,549
+Products/ZopeTree/IZopeTree.py,sha256=8a0-Z567TIu0E-OQJTPK9dAAC8w5Kjqy6gQHWfPFucY,2849
+Products/ZopeTree/TreeObjectWrapper.py,sha256=muc5vmIlMMKTJHRJ2WsOQ1BDegroqe_KNkEFLiThD-U,1219
+Products/ZopeTree/ZopeTree.py,sha256=fJ72y5OyANKctkYIStIUgvslv3Pjb74j4ApHyNInH5Q,5611
+Products/ZopeTree/__init__.py,sha256=Njx2VABoWtewYGS_MZ86cE5MpXqcZYlsPvxvOnmqp-I,508
+Products/ZopeTree/tests/test_ZopeTree.py,sha256=H6SoCOqjvK_hdbmIoVxkW5Mdc-IUEIk8P7LbP490fXw,5764
+Products.ZopeTree-3.2.0.dist-info/LICENSE.txt,sha256=n-x-38eembIQ1DQTrB8wllTIxMYi7o9Roko-tpP5Kk4,25754
+Products.ZopeTree-3.2.0.dist-info/METADATA,sha256=CC9VNdeVt8tdy_8mnRRMD4kkwpPEAaiekEFYPuRFqTY,4449
+Products.ZopeTree-3.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Products.ZopeTree-3.2.0.dist-info/namespace_packages.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
+Products.ZopeTree-3.2.0.dist-info/top_level.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
+Products.ZopeTree-3.2.0.dist-info/RECORD,,
