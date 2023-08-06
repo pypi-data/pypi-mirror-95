@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-06-14 09:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/workspace/browser.py:119
+msgid "Add Person to Roster"
+msgstr "Lisää käyttäjä työtilaan"
+
+#: collective/workspace/pas.py:333
+msgid "Can edit roster"
+msgstr "Voi hallita työtilaa"
+
+#: collective/workspace/browser.py:141
+msgid "Changes saved"
+msgstr "Muutokset talletettu"
+
+#: collective/workspace/membership.py:37
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: collective/workspace/membership.py:31
+msgid "Position"
+msgstr "Tehtävä"
+
+#: collective/workspace/browser.py:166
+msgid "Remove"
+msgstr "Poista"
+
+#: collective/workspace/profiles/default/actions.xml
+msgid "Roster"
+msgstr "Työtila"
+
+#: collective/workspace/browser.py:44
+msgid "Roster: ${title}"
+msgstr "Työtila: ${title}"
+
+#: collective/workspace/browser.py:135
+msgid "Save"
+msgstr "Tallenna"
+
+#: collective/workspace/membership.py:26
+msgid "User"
+msgstr "Käyttäjä"
+
+#: collective/workspace/browser.py:149
+msgid "User added"
+msgstr "Käyttäjä lisätty"
+
+#: collective/workspace/browser.py:172
+msgid "User removed"
+msgstr "Käyttäjä poistettu"

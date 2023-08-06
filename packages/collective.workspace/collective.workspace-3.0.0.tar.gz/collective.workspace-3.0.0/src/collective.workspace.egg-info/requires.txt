@@ -1,0 +1,11 @@
+setuptools
+plone.api
+plone.app.dexterity
+six
+
+[develop]
+zest.releaser
+
+[test]
+plone.app.robotframework[debug,reload]
+plone.app.testing
