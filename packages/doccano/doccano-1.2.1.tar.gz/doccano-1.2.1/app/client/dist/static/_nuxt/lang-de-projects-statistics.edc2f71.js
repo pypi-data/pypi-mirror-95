@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{305:function(t,e,n){"use strict";n.r(e),e.default={statistics:"Statistiken",progress:["Abgeschlossen","Unvollständig"],labelStats:"Labelstatistiken",userStats:"Nutzerstatistiken"}}}]);
