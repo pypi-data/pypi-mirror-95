@@ -1,0 +1,3 @@
+[console_scripts]
+BacGenomePipeline = BacGenomePipeline.BacGenomePipeline:main
+

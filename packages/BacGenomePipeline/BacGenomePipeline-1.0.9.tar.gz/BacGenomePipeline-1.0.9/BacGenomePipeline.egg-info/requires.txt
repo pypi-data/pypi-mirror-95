@@ -1,0 +1,5 @@
+medaka==1.2.1
+NanoStat==1.5.0
+staramr==0.7.2
+numpy==1.19.5
+scipy==1.4.1
