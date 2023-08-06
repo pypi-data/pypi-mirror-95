@@ -1,0 +1,11 @@
+dsnap/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dsnap/__main__.py,sha256=5NIJlBrnMv-5hHCOzQUu_gRlfecR5DHeIAgeGk3tEbA,302
+dsnap/files/Vagrantfile,sha256=bBe1sUZ2SUSbMnZMIO1I39vETO7oKlshc3I4gkOxaXA,1276
+dsnap/main.py,sha256=m5fkomLNgoYk5KaumLHHkgIZH6GDbX9HdJwdbKQTr0A,5686
+dsnap/prompt.py,sha256=riycNVU9ZdZEf4FIgCUDJ5kPQdD_5A9IbqyijeToT84,5947
+dsnap/snapshot.py,sha256=Dyro32F8wreox70p0amIqyBzIyHRA14E19frIbdEAxw,6643
+dsnap/utils.py,sha256=XWHG3Wwg0yvx2c0H-AVg7R8jyT3mrsl2tiy-R_aLfYA,2636
+dsnap-0.1.9.dist-info/entry_points.txt,sha256=eDzN4RO9gv7fB0GF913__0ryDNKcBBaQIMIeoddYGuY,40
+dsnap-0.1.9.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+dsnap-0.1.9.dist-info/METADATA,sha256=kpgleX3w8Ycz0Z4rQoE5O6vyrTKxAPY2MLHo0Wuvm9Y,5547
+dsnap-0.1.9.dist-info/RECORD,,
