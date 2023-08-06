@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: types-filelock
+Version: 0.1.3
+Summary: Typing stubs for filelock
+Home-page: https://github.com/python/typeshed
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+## Typing stubs for filelock
+
+This is an auto-generated PEP 561 type stub package for `filelock` package.
+It can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code
+that uses `filelock`. The source for this package can be found at
+https://github.com/python/typeshed/tree/master/stubs/filelock. All fixes for
+types and metadata should be contributed there.
+
+See https://github.com/python/typeshed/blob/master/README.md for more details.
+This package was generated from typeshed commit `e717150b23377992b9aeb91d560203d27d74c11a`.
+
+
