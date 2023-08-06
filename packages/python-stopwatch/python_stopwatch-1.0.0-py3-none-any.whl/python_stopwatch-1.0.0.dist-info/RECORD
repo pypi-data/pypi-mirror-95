@@ -1,0 +1,8 @@
+stopwatch/__init__.py,sha256=QxrWsJ22kG9ZdHXwA3-htcVAB1Apgclo1Za2ZnmyoWM,62
+stopwatch/profiler.py,sha256=gShvFfRW-VGI9x3BzuMZKmp_MAUJK5VDSWjZoNMVjpw,955
+stopwatch/statistics.py,sha256=9VPVR88EDM8bu2w6GU-u8YpjqcigAeNdUruoaHFJViU,840
+stopwatch/stopwatch.py,sha256=mACdzUndhwmhbToDZej6X6Ijj7lCgZng1ovksztsc9Q,2445
+python_stopwatch-1.0.0.dist-info/METADATA,sha256=dcyzuZjLeF5GlZs8jygbvFWeKb9L5AOJURKE4hIQCL4,2399
+python_stopwatch-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_stopwatch-1.0.0.dist-info/top_level.txt,sha256=ei2Rs_s6EQEKrRuFNo4brvoNd8lwsXc8jZtMrRMtJDw,10
+python_stopwatch-1.0.0.dist-info/RECORD,,
