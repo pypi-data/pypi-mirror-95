@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: rqlmongo
+Version: 0.1.0
+Summary: Resource Query Language for PyMongo
+Home-page: https://github.com/pjwerneck/rqlmongo
+License: MIT
+Keywords: pymongo,mongodb,rql,querying,httpapi
+Author: Pedro Werneck
+Author-email: pjwerneck@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pymongo (>=3.11.3,<4.0.0)
+Requires-Dist: pyrql (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/pjwerneck/rqlmongo
+Description-Content-Type: text/markdown
+
+# RQLMongo
+
+[![Build Status](https://travis-ci.org/pjwerneck/rqlmongo.svg?branch=develop)](https://travis-ci.org/pjwerneck/rqlmongo)
+
+Resource Query Language extension for PyMongo
+
+## Overview
+
+Resource Query Language (RQL) is a query language designed for use in
+URIs, with object-style data structures.
+
+rqlmongo is an RQL extension for PyMongo. It translates an RQL query
+to a MongoDB aggregation pipeline that can be used to expose MongoDB
+collections as an HTTP API endpoint and perform complex queries using
+only querystring parameters.
+
