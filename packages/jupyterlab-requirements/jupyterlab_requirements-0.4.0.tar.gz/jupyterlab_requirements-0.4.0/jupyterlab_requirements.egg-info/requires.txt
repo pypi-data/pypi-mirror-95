@@ -1,0 +1,8 @@
+ipykernel
+ipython
+jupyter-require>=0.4.0
+jupyterlab
+thamos
+invectio
+thoth-python
+thoth-common
