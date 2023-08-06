@@ -1,0 +1,6 @@
+aiohttp
+dbus-next
+colorama
+subpop>=0.4.1
+pymongo
+pyyaml
