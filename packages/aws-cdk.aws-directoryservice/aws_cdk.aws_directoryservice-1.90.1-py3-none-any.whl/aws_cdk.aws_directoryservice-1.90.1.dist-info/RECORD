@@ -1,0 +1,8 @@
+aws_cdk/aws_directoryservice/__init__.py,sha256=b4AlO9x0LEEJ3HTRgslFLqkbhFimO4NRwuAqB0GAs7s,36128
+aws_cdk/aws_directoryservice/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_directoryservice/_jsii/__init__.py,sha256=a744uCXtI9y_mnBb8jnKfQXA5dzsgxCRAFxcHVQ_-mQ,402
+aws_cdk/aws_directoryservice/_jsii/aws-directoryservice@1.90.1.jsii.tgz,sha256=pNXUv3KO1GWYlOfrDtutqVOaLwpA0E15JrDmTgR09Rg,24157
+aws_cdk.aws_directoryservice-1.90.1.dist-info/METADATA,sha256=rMAbOQJmvRrjpfTVk9aPcdCaxEta86-GZOQBLszKVKo,1592
+aws_cdk.aws_directoryservice-1.90.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_directoryservice-1.90.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_directoryservice-1.90.1.dist-info/RECORD,,
