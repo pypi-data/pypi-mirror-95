@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: inquirer2-windows
+Version: 1.0.0
+Summary: A Python module for collection of common interactive command line user interfaces, based on Inquirer.js
+Home-page: https://github.com/allemand-instable/PyInquirer2/
+Author: allemand_instable
+Author-email: dev.allemandinstable@gmail.com
+License: MIT
+Download-URL: https://github.com/CITGuru/PyInquirer/archive/1.0.3.tar.gz
+Keywords: click,prompt-toolkit,cli,command-line,commandline,command-line-interface,python-inquiry,inquirer,inquirer2,PyInquirer2
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.6.1
+Requires-Dist: prompt-toolkit (<3.1.0,>=3.0)
+Requires-Dist: Pygments (>=2.2.0)
+
+UNKNOWN
+
+
