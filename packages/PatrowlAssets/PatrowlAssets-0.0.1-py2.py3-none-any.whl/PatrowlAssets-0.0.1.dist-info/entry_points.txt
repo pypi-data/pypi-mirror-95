@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        hears=patrowlassets.cli:main
+    
