@@ -1,0 +1,3 @@
+[console_scripts]
+m12 = m12.__main__:main
+
