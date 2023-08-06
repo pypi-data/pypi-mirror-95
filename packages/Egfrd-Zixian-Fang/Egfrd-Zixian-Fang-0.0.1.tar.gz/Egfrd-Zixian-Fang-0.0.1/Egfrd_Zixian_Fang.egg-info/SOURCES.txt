@@ -1,0 +1,6 @@
+README.md
+setup.py
+Egfrd_Zixian_Fang.egg-info/PKG-INFO
+Egfrd_Zixian_Fang.egg-info/SOURCES.txt
+Egfrd_Zixian_Fang.egg-info/dependency_links.txt
+Egfrd_Zixian_Fang.egg-info/top_level.txt
