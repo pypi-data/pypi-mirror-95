@@ -1,0 +1,9 @@
+findmaxima/__init__.py,sha256=lzB7GVgdPBtKeFv171r-qO-C8JxjRcIkQjMTFDKVmZw,20
+findmaxima/cy_findmaxima.cp38-win_amd64.pyd,sha256=hc2kMJR7Sf_Zh7A8fL4tIob279bszOnTls_cpw76Ep4,174080
+findmaxima/cy_findmaxima.pyx,sha256=pqSyRMvRsIGrfeo3oOGq-I6W1qxmLE8Qfgkh99l37vg,6094
+findmaxima/findmaxima.py,sha256=QEJUob3cweJw-7sZ58qK0VV7xy0js7sMiF6dwvKivIY,413
+pyfindmaxima-0.1.0.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pyfindmaxima-0.1.0.3.dist-info/METADATA,sha256=_9u89NnA3ljl-YKk9WscLch-4dbvCYG2BCmpn5bK82c,199
+pyfindmaxima-0.1.0.3.dist-info/WHEEL,sha256=HLtxc_HoM-kGM7FPJVPSnTt0Nv2G3fZEAjT3ICdG8uY,100
+pyfindmaxima-0.1.0.3.dist-info/top_level.txt,sha256=6TLlBv897OtwNZ5TkNZyjNmRCXqkmez_2CqPRjfSuUg,11
+pyfindmaxima-0.1.0.3.dist-info/RECORD,,
