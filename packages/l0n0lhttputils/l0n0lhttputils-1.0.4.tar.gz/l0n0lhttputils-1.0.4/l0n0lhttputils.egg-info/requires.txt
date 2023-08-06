@@ -1,0 +1,8 @@
+pymysql
+aiohttp[speedups]
+requests
+cos-python-sdk-v5
+tencentcloud-sdk-python
+pycryptodome
+pyyaml
+xlrd
