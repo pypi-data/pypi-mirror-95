@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vps-network
+Version: 0.1.0
+Summary: VPS Network Speed Test
+Home-page: https://www.qiyutech.tech/
+Author: dev
+Author-email: dev@qiyutech.tech
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7,<8)
+Requires-Dist: icmplib (>=2.0,<3)
+Requires-Dist: pydantic (>=1.7,<2.0)
+Requires-Dist: requests (>=2.25,<3)
+Requires-Dist: rich (>=9.11,<10)
+Requires-Dist: speedtest-cli (>=2.1,<3)

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "vps_network"
+version = "0.1.0"
+description = "VPS Network Speed Test"
+homepage = "https://www.qiyutech.tech/"
+authors = ["dev <dev@qiyutech.tech>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+pydantic = ">=1.7,<2.0"
+
+# for http request
+requests = ">=2.25,<3"
+
+# for TUI
+rich = ">=9.11,<10"
+
+speedtest-cli = ">=2.1,<3"
+icmplib = ">=2.0,<3"
+click = ">=7,<8"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pytest = "*"
+pylama = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
