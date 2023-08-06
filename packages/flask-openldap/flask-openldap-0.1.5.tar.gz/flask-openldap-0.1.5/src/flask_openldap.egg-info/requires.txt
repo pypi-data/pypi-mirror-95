@@ -1,0 +1,4 @@
+cdumay-error>=0.1.14
+Flask-SimpleLDAP==1.4.0
+pyldap==3.0.0
+text-unidecode==1.3
