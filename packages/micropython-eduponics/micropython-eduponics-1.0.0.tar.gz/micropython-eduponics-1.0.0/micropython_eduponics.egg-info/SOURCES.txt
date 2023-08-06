@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+Eduponics/__init__.py
+Eduponics/ads1x15.py
+Eduponics/at24c02.py
+Eduponics/bh1750.py
+Eduponics/bme280.py
+Eduponics/ds1307.py
+Eduponics/mcp23017.py
+micropython_eduponics.egg-info/PKG-INFO
+micropython_eduponics.egg-info/SOURCES.txt
+micropython_eduponics.egg-info/dependency_links.txt
+micropython_eduponics.egg-info/top_level.txt
