@@ -1,0 +1,12 @@
+awstool/__init__.py,sha256=6y-PEGT2Ui64rz4QY4Wg9VsVWJcnjMtLHI3OcbJ1mzE,194
+awstool/account.py,sha256=OdeGVQHFTv_uvfQ1fCKD3xgh9a0GPPp77v8v0VY1g60,2253
+awstool/cli.py,sha256=Cencwn8kDB2PigMF8eReYApbtlPd205o-8d6QWRvlXE,931
+awstool/config.py,sha256=LGHd4get64ZbPHczgworoNoy7MYYiPf2Ok0YNcdEVgc,433
+awstool/configure.py,sha256=uOtJCIlWOwlcFMwPTF_Ge1_zzkurOqbWsvFBjkZlhbE,813
+awstool/credential.py,sha256=29QrpiJ9Nj1ybiIaPLiOjgPJ0GQavl8p55w7Ls31eQU,5617
+awstool-0.0.4.dist-info/LICENSE,sha256=NDljsnNYzCiX7U24ZIOGIWSjQTuA2eYnqno9n50mshk,1061
+awstool-0.0.4.dist-info/METADATA,sha256=ez1KFYVk89TsszIPhzzBffwnaTWHSSdVWV02PNZD1wg,3202
+awstool-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+awstool-0.0.4.dist-info/entry_points.txt,sha256=hcpeK6MmC-MJXDxm9stsyrfSWqgP7gtPICSKwuI7I3Q,46
+awstool-0.0.4.dist-info/top_level.txt,sha256=t160lHeDGHWEKHE3TfAiQXIBPYzPBb98rDHXTaaSgT0,8
+awstool-0.0.4.dist-info/RECORD,,
