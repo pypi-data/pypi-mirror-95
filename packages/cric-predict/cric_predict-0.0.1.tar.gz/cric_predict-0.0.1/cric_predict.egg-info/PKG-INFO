@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cric-predict
+Version: 0.0.1
+Summary: simple test cricket player score prediction via your cricket knowledge
+Home-page: UNKNOWN
+Author: YusiferZendric (Aditya Singh)
+Author-email: <mail@yusiferzendric.com>
+License: UNKNOWN
+Description: A deep use of random module is done in that to make it accurate, if you know much about test cricket players than you will be able to predict their possible runs in the future matches
+Keywords: python,cricket,test-cricket,score prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
