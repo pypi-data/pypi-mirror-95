@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+./assignhooks/__init__.py
+./assignhooks/instrument.py
+./assignhooks/patch.py
+./assignhooks/transformer.py
+assignhooks.egg-info/PKG-INFO
+assignhooks.egg-info/SOURCES.txt
+assignhooks.egg-info/dependency_links.txt
+assignhooks.egg-info/top_level.txt
+examples/README
+examples/test.py
+examples/testmod.py
+examples/testmod2.py

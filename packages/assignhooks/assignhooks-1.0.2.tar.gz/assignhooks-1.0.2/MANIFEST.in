@@ -1,0 +1,3 @@
+include README.rst examples/*
+prune .git
+exclude *.sh
