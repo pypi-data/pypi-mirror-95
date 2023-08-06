@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tinderbox
+Version: 0.0.6
+Summary: Sharable PySpark tranformation sequence
+Home-page: https://gitlab.com/the203/tinderbox
+Author: Adam Haskell
+Author-email: adam@the203.info
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark
+
+
+
+TinderBox is a Library for PySpark that allows for the creation of a sequence of events to be created. That sequence of events can be shared / modified then when ready fed a dataframe and the sequence is executed. 
+
+TinderBox provides an architecture to define transformation steps (DataFrameOperations) and provides a few transformations as well
+
+
