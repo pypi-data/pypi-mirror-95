@@ -1,0 +1,32 @@
+
+[tool.poetry]
+name = "mypo"
+version = "0.0.5"
+description = ""
+authors = [
+    "sonesuke <iamsonesuke@gmail.com>"
+]
+
+license = "MIT"
+readme = "README.md"
+
+repository = "https://github.com/sonesuke/mypo"
+homepage = "https://github.com/sonesuke/mypo"
+
+[tool.poetry.dependencies]
+python = "^3.9.1"
+pandas = "^1.2.2"
+yfinance = "^0.1.55"
+numpy = "^1.20.1"
+scikit-learn = "^0.24.1"
+scipy = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-flake8 = "^1.0.4"
+ipython = "^7.13.0"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
