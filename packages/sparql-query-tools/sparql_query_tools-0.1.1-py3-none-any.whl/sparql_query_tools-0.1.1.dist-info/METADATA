@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sparql-query-tools
+Version: 0.1.1
+Summary: tools to run SPARQL queries and get metrics.
+Home-page: https://github.com/dice-group/sparql-query-tools
+Author: Alexander Bigerl
+Author-email: info@dice-research.org
+License: AGPL v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rdflib (>=5.0.0)
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: pycurl (>=7.43.0.6)
+
+# SPARQL Query Tools
+
+Currently, SPARQL query tools include exactly one tool: `sparql_result_analysis`
+
+More will be integrated later so that the plural in the name will make sense. 😉
+
+## Tools
+
+- `sparql_result_analysis`: queries a triple store and provides info and metrics on the results
+
