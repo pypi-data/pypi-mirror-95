@@ -1,0 +1,9 @@
+README.md
+setup.py
+polyglots/__init__.py
+polyglots/__main__.py
+polyglots.egg-info/PKG-INFO
+polyglots.egg-info/SOURCES.txt
+polyglots.egg-info/dependency_links.txt
+polyglots.egg-info/entry_points.txt
+polyglots.egg-info/top_level.txt
