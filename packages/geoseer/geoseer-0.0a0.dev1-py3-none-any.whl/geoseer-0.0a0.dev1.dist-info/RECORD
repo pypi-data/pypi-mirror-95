@@ -1,0 +1,10 @@
+geoseer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoseer/crs_transform.py,sha256=sJ4wi51F3D70BIoCLqtvHTZfjzgKKUaMae2x0ZojcEQ,545
+geoseer/nav_data.py,sha256=dyUu8wDVBmmApFKUv6FA38Nr67_Of5SS-e9gW8VToiw,6084
+geoseer/poly2fpq.py,sha256=97Jn47u91jry0IzYDGi8paqkiUrGkN2zi-WSRf3OuK8,4966
+geoseer/poly_frac_interp_processing.py,sha256=OUBxw_t4rbjAq48KOmOiOkvZyBZDQbptuoZeZaKR7oI,6283
+geoseer-0.0a0.dev1.dist-info/LICENSE,sha256=MGgpWJJFEAKamYta_F4Q5om4Yz8oNw1MC-XZA6EvzBY,11545
+geoseer-0.0a0.dev1.dist-info/METADATA,sha256=RHFdAPs9GIbzrq2ryogOtucQ7nvEW_zb06c4M3TE7mw,13014
+geoseer-0.0a0.dev1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+geoseer-0.0a0.dev1.dist-info/top_level.txt,sha256=3U9rV0ffFl_1IJ-UE4CtkrfWgEkBei5ehgGRVO2mGFQ,8
+geoseer-0.0a0.dev1.dist-info/RECORD,,
