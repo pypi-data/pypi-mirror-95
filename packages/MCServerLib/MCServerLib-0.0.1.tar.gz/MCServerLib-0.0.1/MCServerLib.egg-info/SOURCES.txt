@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+MCServerLib/Setup.py
+MCServerLib/__init__.py
+MCServerLib.egg-info/PKG-INFO
+MCServerLib.egg-info/SOURCES.txt
+MCServerLib.egg-info/dependency_links.txt
+MCServerLib.egg-info/not-zip-safe
+MCServerLib.egg-info/requires.txt
+MCServerLib.egg-info/top_level.txt
