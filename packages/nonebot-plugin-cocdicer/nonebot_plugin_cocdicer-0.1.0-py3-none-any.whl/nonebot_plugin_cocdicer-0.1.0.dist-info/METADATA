@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-cocdicer
+Version: 0.1.0
+Summary: A COC dice plugin for Nonebot2
+License: GPLv3
+Author: abrahumlink
+Author-email: 307887491@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: nonebot2 (>=2.0.0-alpha.10,<3.0.0)

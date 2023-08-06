@@ -1,0 +1,10 @@
+nonebot_plugin_cocdicer/README.md,sha256=HdKMp8U5mkAHFx8sOltaVS8B72B0WzfFVRIIfDKiXB8,2485
+nonebot_plugin_cocdicer/__init__.py,sha256=FuIPXV0zIfplc7_hJ25hD8QwDH1o1df8CLaBesSOh9I,1448
+nonebot_plugin_cocdicer/create.py,sha256=1dgOLHeMH4IKpOZyvJj6Q01qtcL4RL7uP8q9d1DH59M,4984
+nonebot_plugin_cocdicer/data_source.py,sha256=fWAZLBhMxoxFUHtqQ34Cidf-t1H9zwdhIvayBi-z2io,7913
+nonebot_plugin_cocdicer/madness.py,sha256=Ajv949L1keZN4PZVvN_bsbQimo0MDkQGCXBZQCJkFWs,972
+nonebot_plugin_cocdicer/messages.py,sha256=ILhRoZ4sch-ABHBwg_-lljNcFEU5IMs4zCQ219PgAwI,19741
+nonebot_plugin_cocdicer-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nonebot_plugin_cocdicer-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+nonebot_plugin_cocdicer-0.1.0.dist-info/METADATA,sha256=Y3Kq2omc6KlDchr2W9teSHUwgVURnDo76nwclaXyIA0,448
+nonebot_plugin_cocdicer-0.1.0.dist-info/RECORD,,
