@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: aiohttp-compress
+Version: 0.2.0
+Summary: This module is the simplest way to enable compression support for aiohttp server applications globally.
+Home-page: UNKNOWN
+Author: Dmitry Orlov <me@mosquito.su>
+Author-email: me@mosquito.su
+License: Apache Software License
+Project-URL: Source, https://github.com/mosquito/aiohttp-gzip
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >3.6.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (<4)
+Provides-Extra: develop
+Requires-Dist: coverage (!=4.3) ; extra == 'develop'
+Requires-Dist: coveralls ; extra == 'develop'
+Requires-Dist: pylava ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pytest-aiohttp ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: tox (>=2.4) ; extra == 'develop'
+
+aiohttp-compress
+================
+
+[![PyPI - License](https://img.shields.io/pypi/l/aiohttp-compress)](https://pypi.org/project/aiohttp-compress) [![Wheel](https://img.shields.io/pypi/wheel/aiohttp-compress)](https://pypi.org/project/aiohttp-compress) [![PyPI](https://img.shields.io/pypi/v/aiohttp-compress)](https://pypi.org/project/aiohttp-compress) [![PyPI](https://img.shields.io/pypi/pyversions/aiohttp-compress)](https://pypi.org/project/aiohttp-compress) [![Coverage Status](https://coveralls.io/repos/github/mosquito/aiohttp-compress/badge.svg?branch=master)](https://coveralls.io/github/mosquito/aiohttp-compress?branch=master) ![tox](https://github.com/mosquito/aiohttp-compress/workflows/tox/badge.svg?branch=master)
+
+This module is the simplest way to enable compression support for `aiohttp` server applications globally.
+
+Installation
+------------
+
+```bash
+pip install aiohttp-compress
+```
+
+Example
+-------
+
+```python
+from aiohttp import web
+from aiohttp_compress import compress_middleware
+
+
+async def handle(request):
+    name = request.match_info.get(
+        'name', "Anonymous"
+    )
+    text = "Hello, " + name
+    return web.Response(text=text)
+
+
+app = web.Application()
+app.middlewares.append(compress_middleware)
+app.add_routes([
+    web.get('/', handle),
+    web.get('/{name}', handle)
+])
+
+
+if __name__ == '__main__':
+    web.run_app(app)
+```
+
+
