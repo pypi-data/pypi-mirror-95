@@ -1,0 +1,6 @@
+setuptools
+colorama
+
+[tests]
+pytest
+pytest-cov
