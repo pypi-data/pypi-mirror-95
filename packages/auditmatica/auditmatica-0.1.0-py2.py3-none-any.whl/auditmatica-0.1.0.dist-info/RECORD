@@ -1,0 +1,17 @@
+auditmatica/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auditmatica/access_log.py,sha256=1kZfy7KU-JUAVLgtlkBQdMTdFLLlheQC3agt-3dIRR8,12328
+auditmatica/cef.py,sha256=UAtpzo24CqaNLagdWUJkzxoxRnu0Zw1Se4FsAd2wiRI,5224
+auditmatica/events.py,sha256=CT6io-Qu9HpOkzkA8cF36qhdA9vMy5utp83Pa0eegWY,21020
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/cli.py,sha256=F8cJHEI-SGbnb0YKvrJQewJeBGn2uH4guv2PZg5lF7Q,9710
+cli/syslog.py,sha256=c5HdaEfSSSbTKV32Z509dXeJGH-EL-lQfelHON6N_DM,599
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_access_log_parser.py,sha256=esefycLWJIPyeb9ud3nzqS_RXp3AXGD2p3UYcsaX5q4,48228
+tests/test_cef.py,sha256=i7s5tmYIoDNEx8xY4mO54PU6QFYraV_ZtS7rI7G-jKs,6344
+tests/test_cli.py,sha256=YcG_uprITzSNzjd8nXxh4uj6DD7-1LDw8G_XpmADGtg,3925
+auditmatica-0.1.0.dist-info/LICENSE,sha256=UKscV7rM8D8WrrIjOY_IwQpcu7d1LQrGWRo0LxInFmA,34544
+auditmatica-0.1.0.dist-info/METADATA,sha256=n45EUywUuKwabWVDUSzH9iqPA9KiXMgGf0Fg446kBgI,8371
+auditmatica-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+auditmatica-0.1.0.dist-info/entry_points.txt,sha256=lVuLyupzOZ4Wc-Kn_xMPIclzHNzMQNIu0CbxhVbgy-Q,71
+auditmatica-0.1.0.dist-info/top_level.txt,sha256=HcjycjP0LZFoinwRB-Bb0R5wkKZmpe8JU-huisgJHwY,22
+auditmatica-0.1.0.dist-info/RECORD,,
