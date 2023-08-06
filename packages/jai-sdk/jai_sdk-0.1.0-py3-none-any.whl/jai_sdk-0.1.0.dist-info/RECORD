@@ -1,0 +1,12 @@
+jai/__init__.py,sha256=o292zvciXbYLepdDsUasWDBprUrQo4AY5iTjIxAo5_E,87
+jai/applications.py,sha256=uldtfF05xp6Uxt5aMo7Rf3nFojlpi02whANTHjROmZw,9023
+jai/jai.py,sha256=1mt0vfTucsbZn1v8D4T5T8vuL_QwQkxQwT_i6uatdqc,17280
+jai/auxiliar_funcs/__init__.py,sha256=r6AyMMBZj3D87sVw3JZGVTgLm9yVATJ4t9l2HH25Ras,79
+jai/auxiliar_funcs/auxiliar.py,sha256=vgrhWlH5jCNmpVhxsaqhQlIcUbWtWutijY9gfVYPGD4,1542
+jai/auxiliar_funcs/classes.py,sha256=PyfLyqlY4iRaiEtc-GPlamRhiSZEF-GUrNhvPG0epL8,524
+jai/auxiliar_funcs/utils_funcs.py,sha256=bwqbwLlER6wW8DOlUxW-MofNWeQOFM5gEbhj3F5BljA,6920
+jai_sdk-0.1.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+jai_sdk-0.1.0.dist-info/METADATA,sha256=0_C_vF4Ljo4XIYhrzvkBwdxny0aFfD2R7YzQu_Q4994,4112
+jai_sdk-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jai_sdk-0.1.0.dist-info/top_level.txt,sha256=QrdjwUeE2P4caxL9mkpdlyfQ5GbPX-xzfsb9KPLPPUo,4
+jai_sdk-0.1.0.dist-info/RECORD,,
