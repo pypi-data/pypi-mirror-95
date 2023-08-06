@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: adminbypasser
+Version: 1.0.8
+Summary: Adminpanel bypasser
+Home-page: https://github.com/0xbin/adminbypasser
+Author: xbin
+Author-email: xbin2021@gmail.com
+License: MIT
+Description: # Adminbypasser
+        
+        
+        Adminbypasser is a dork based admin panel finder and bypasser using SQL injection.
+        
+        
+        ```sh
+        $ pip install adminbypasser
+        ```
+        
+        ### Usage:
+        
+        
+        ```sh
+        $ adminbypasser --help
+        usage: adminbypasser --snip <PAGE> --max <MAX_URL> --out <OUT_FILE> [OPTIONS]
+        
+        --help, -h      : show help
+        --snip, -s      : URL snippet part eg: admin.php
+        --country, -c   : country code for target sites
+        --max, -m       : maximum URLs
+        --out, -o       : write bypassable URL to a file
+        --user-agent, -u : user-agent for requests
+        ```
+        
+        
+        Finding bypassable admin panels:
+        
+        ```sh
+        $ adminbypasser -s admin.php -c lk -m 20 -o admin_lk.txt
+        ```
+        
+        > Disclaimer: causing damage to unauthenticated sites is illegal, please use this tool on your own risk.
+        
+Keywords: adminpanel,bypasser,bypass
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+Provides-Extra: dev
