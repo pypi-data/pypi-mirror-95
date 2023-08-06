@@ -1,0 +1,9 @@
+README.md
+setup.py
+discord.py_embed_wrapper.egg-info/PKG-INFO
+discord.py_embed_wrapper.egg-info/SOURCES.txt
+discord.py_embed_wrapper.egg-info/dependency_links.txt
+discord.py_embed_wrapper.egg-info/top_level.txt
+embed_wrapper/__init__.py
+embed_wrapper/helpers.py
+embed_wrapper/wrapper.py
