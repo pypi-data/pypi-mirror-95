@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+README.md
+coverage_results.txt
+setup.cfg
+setup.py
+src/pypos3dv/Drawable.py
+src/pypos3dv/Window.py
+src/pypos3dv/__init__.py
+src/pypos3dv/__main__.py
+src/pypos3dv.egg-info/PKG-INFO
+src/pypos3dv.egg-info/SOURCES.txt
+src/pypos3dv.egg-info/dependency_links.txt
+src/pypos3dv.egg-info/entry_points.txt
+src/pypos3dv.egg-info/requires.txt
+src/pypos3dv.egg-info/top_level.txt

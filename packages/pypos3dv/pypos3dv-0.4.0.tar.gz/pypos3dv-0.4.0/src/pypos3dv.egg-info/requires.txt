@@ -1,0 +1,4 @@
+PyOpenGL>=3.1
+PyGLM>=1.99
+glfw>=2.0.0
+pypos3d>=0.4
