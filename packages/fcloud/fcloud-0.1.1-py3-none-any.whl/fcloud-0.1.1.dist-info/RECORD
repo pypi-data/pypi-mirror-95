@@ -1,0 +1,14 @@
+fcloud/__init__.py,sha256=I00U831Ymv1GX4hWnk2VrnMz_OpPYJKIHF-qKVgA6X0,26
+fcloud/test.py,sha256=AykL4-HpocL9eAeoF6NdlbVjdOOnMHI3mfBebhOf8mI,110
+fcloud/fauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcloud/fmap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcloud/friday/__init__.py,sha256=I00U831Ymv1GX4hWnk2VrnMz_OpPYJKIHF-qKVgA6X0,26
+fcloud/friday/datastructures.py,sha256=F1dRE5GaFCBHOTZlp7c_JUSWglUBvuNcr7khLirgZpk,46
+fcloud/friday/dictionary.py,sha256=0Si2oIJjRZx0gGtrf8ChAE3VF8zapR0WnxCaIDwlZ5A,675
+fcloud/friday/friday.py,sha256=DC5ABuXDgdNV86cgfQzK6bnDrjkYnj3EPU2e-wSmtDg,1416
+fcloud/friday/parsers.py,sha256=6qU3623mzd2szPw2LGLBpV9dHrAxbWxladFUSOdsIOc,1313
+fcloud/friday/utils.py,sha256=1qyf3-KNKQ21Eh15lzVyADaOoeW4wqTg0_DXILikgJo,722
+fcloud-0.1.1.dist-info/METADATA,sha256=2xKQ6PTm79wQ8l0XIQndFxd1DHjXCSoUOd4RSGVxE8w,463
+fcloud-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fcloud-0.1.1.dist-info/top_level.txt,sha256=Z209CxyHebS2qQzeDK7YDU3rqL8FOgFCH4iOX1kfLdw,7
+fcloud-0.1.1.dist-info/RECORD,,
