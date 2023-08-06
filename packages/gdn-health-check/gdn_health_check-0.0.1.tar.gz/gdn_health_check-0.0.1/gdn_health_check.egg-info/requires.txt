@@ -1,0 +1,2 @@
+pysolr
+django>=1.11

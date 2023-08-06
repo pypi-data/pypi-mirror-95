@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: gdn_health_check
+Version: 0.0.1
+Summary: Django Health Check custom module for GDN supported services
+Home-page: UNKNOWN
+Author: Haidar Naufal Sunni
+Author-email: haidar.naufal@gramedia.digital
+License: MIT license
+Description: UNKNOWN
+Keywords: gdn_health_check
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
