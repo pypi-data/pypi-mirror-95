@@ -1,0 +1,12 @@
+dffml_model_vowpalWabbit/__init__.py,sha256=T3FzSRKbpoCw5aVvY4Kbhk48rlMc9z1GltznbFdCEHg,239
+dffml_model_vowpalWabbit/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+dffml_model_vowpalWabbit/vw_base.py,sha256=HbFyqmoNne2s6s07aRJasxdfejlEmihRVS5tnxXEqF0,15831
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_vw.py,sha256=bz1XWqxtkobrS05-v_k8skreGNDZhF7Z7VEG7b3bVhs,3630
+tests/test_vw_integration.py,sha256=TTwG3dmNp3Q-p3gRWy44fDI3efW3IO5MJu421mSFI_o,3414
+dffml_model_vowpalWabbit-0.1.0.dist-info/LICENSE,sha256=6ZGvOwfnQ7XczBf35XQlToX-tQegAIFr19cXu0RobJk,1062
+dffml_model_vowpalWabbit-0.1.0.dist-info/METADATA,sha256=t8xpOSRLMdcxZxqiS7BEdcQEzN46zStCMLYBAwRU3cc,3142
+dffml_model_vowpalWabbit-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_vowpalWabbit-0.1.0.dist-info/entry_points.txt,sha256=nwN3G0grnd5HO7_D9_DNMlHE58B_Q1Gp1oqOCP4r2ZU,66
+dffml_model_vowpalWabbit-0.1.0.dist-info/top_level.txt,sha256=9eY_o7jMi_PxPPJufSDp3i49xiEUKsaG9jujNHG1cUI,31
+dffml_model_vowpalWabbit-0.1.0.dist-info/RECORD,,
