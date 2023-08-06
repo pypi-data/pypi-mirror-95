@@ -1,0 +1,10 @@
+pyprimal/VERSION,sha256=96-QLu-4nzoiFteYB4KUu5J-ccZLrXBVH4Dv-r03WHU,6
+pyprimal/__init__.py,sha256=kkO-_dwSUwOHcYapHyBZnmqCfX4qofIJFVZxU6MkbTQ,371
+pyprimal/core.py,sha256=CJIviYJtEnA1yY1CGqGhz9YN3UEjOZ2mrwc5XLjk6D0,4233
+pyprimal/libpath.py,sha256=57njEcRlMgW5KN5HfDN34afH3HfM23au_MBnTkRxTWo,1070
+pyprimal/model.py,sha256=472JLkfw8zpIuC92R0F1fDbtE6TmDkRd-R0zfhjqevo,4601
+pyprimal/lib/libpsm.dylib,sha256=YHtHZKtJLkcsiJGnImcyPDBdo59hS7N_UeyD_2rcvls,2179848
+pyprimal-0.0.0.dist-info/METADATA,sha256=Plgy9OfjsGo6Tbqci4w7qXKZgmGxgDUkVlCV325-J48,2436
+pyprimal-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyprimal-0.0.0.dist-info/top_level.txt,sha256=GOnhfxCzAYmzyeMpsmlBMO_lmH5ar0j2iuF_Z4a3hsc,9
+pyprimal-0.0.0.dist-info/RECORD,,
