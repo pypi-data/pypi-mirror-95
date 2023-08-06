@@ -1,0 +1,4 @@
+dask
+numpy
+toolz
+xarray>=0.13
