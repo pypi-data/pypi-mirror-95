@@ -1,0 +1,11 @@
+stactools/core/__init__.py,sha256=IbsZ8ZsFAiDd0Jxuas_UKZBWv81w02mdgdyM6q65-vI,305
+stactools/core/copy.py,sha256=Lq1nBf7V2umtvMjEvD1vjoZac-YXpcUeJva2jN9Lhwk,7227
+stactools/core/io.py,sha256=crQlr-xYf2-PPKsFJzH7WjaCd2TI9Qfzc4dYmh9-hjw,410
+stactools/core/layout.py,sha256=qP4vYCviQqawe7gE0ecKyo6fM1tOqccAqXUeeUWd0Y4,2375
+stactools/core/merge.py,sha256=yTP2cJwB5eSZsomWJdwCO0MuyHc67S3mx0wDqCIcpRM,5085
+stactools/core/projection.py,sha256=7fsbOFaCv_QkEpYKV-mAyUVpovfd2qfe7b2AvaHB_MM,2091
+stactools/core/version.py,sha256=njGyzfqNQSxuevBDAhI5rKPK18JS1V66LkKuWzvMg9M,44
+stactools_core-0.1.4.dist-info/METADATA,sha256=ErlciyfgLUQTBZBGlBAvzurtGHKQ5mWJ5Xr6GzSKN1E,686
+stactools_core-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stactools_core-0.1.4.dist-info/top_level.txt,sha256=0eoUA-AbTfjFtxXr3W-vQdRyNmpGnA0wlTL3ppTPCG8,10
+stactools_core-0.1.4.dist-info/RECORD,,

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stactools-core
+Version: 0.1.4
+Summary: Core subpackage of stactools, a command line tool and Python library for working with STAC.
+Home-page: https://github.com/stac-utils/stactools.git
+Author: stac-utils
+Author-email: stac@radiant.earth
+License: Apache Software License 2.0
+Keywords: stactools,psytac,imagery,raster,catalog,STAC
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pystac[validation] (==0.5.4)
+Requires-Dist: aiohttp (==3.7.3)
+Requires-Dist: fsspec (==0.8.4)
+Requires-Dist: requests (==2.25.0)
+Requires-Dist: Shapely (==1.7.1)
+Requires-Dist: pyproj (==3.0.0.post1)
+Requires-Dist: rasterio (==1.1.8)
+
+## stactools core
+
+
