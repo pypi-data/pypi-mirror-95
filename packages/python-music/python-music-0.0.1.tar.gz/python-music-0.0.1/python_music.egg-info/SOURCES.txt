@@ -1,0 +1,7 @@
+README.md
+setup.py
+python-music/__init__.py
+python_music.egg-info/PKG-INFO
+python_music.egg-info/SOURCES.txt
+python_music.egg-info/dependency_links.txt
+python_music.egg-info/top_level.txt
