@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: urbangrammar-graphics
+Version: 1.1.0
+Summary: Visual style for Urban Grammar AI research project
+Home-page: https://github.com/urbangrammarai/graphics
+Author: Martin Fleischmann
+Author-email: martin@martinfleischmann.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
