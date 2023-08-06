@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pydocxtpl/__init__.py
+pydocxtpl/ext.py
+pydocxtpl/node.py
+pydocxtpl/table.py
+pydocxtpl/text.py
+pydocxtpl/utils.py
+pydocxtpl/writer.py
+pydocxtpl.egg-info/PKG-INFO
+pydocxtpl.egg-info/SOURCES.txt
+pydocxtpl.egg-info/dependency_links.txt
+pydocxtpl.egg-info/requires.txt
+pydocxtpl.egg-info/top_level.txt
