@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: iris_cm_api
+Version: 0.1.2
+Summary: Эмулятор сигналов Iris CM Callback API
+Home-page: https://github.com/lordralinc/iris_cm_api_emulator
+Author: lordralinc
+License: MIT
+Description: # Эмулятор сигналов Iris CM Callback API
+        
+        ![PyPI](https://img.shields.io/pypi/v/iris-cm-api)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/iris-cm-api)
+        ![GitHub](https://img.shields.io/github/license/lordralinc/iris_cm_api_emulator)
+        
+        # Установка 
+        ```shell
+        pip install -U https://github.com/timoniq/vkbottle/archive/master.zip
+        pip install iris_cm_api
+        ```
+        
+        # Настройка
+        Создайте файл `config.ini` (скопируйте его из файла [config.ini.example](https://github.com/lordralinc/iris_cm_api_emulator/blob/master/config.ini.example)), укажите токен группы в поле `token`
+        
+        # Запуск
+        В папке с вашим `config.ini`
+        ```shell
+        python3 -m iris_cm_api
+        ```
+        
+        # Обновление 
+        ```shell
+        pip install -U https://github.com/timoniq/vkbottle/archive/master.zip
+        pip install -U iris_cm_api
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
