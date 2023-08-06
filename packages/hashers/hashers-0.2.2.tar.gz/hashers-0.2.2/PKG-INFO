@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hashers
+Version: 0.2.2
+Summary: Password hashing library in Python using Rust backend 
+Keywords: uuid hash password
+Author: unrahul <rahulunair@gmail.com>
+Author-Email: unrahul <rahulunair@gmail.com>
+License: BSD-3-Clause
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+## Hashers
+
+A password encoding/hasing library for Python using [Djangohashers](https://github.com/racum/rust-djangohashers) Rust crate.
+
+## Installation
+
+```bash
+pip3 install hashers
+```
+
+### Available APIs
+
+
+```python
+def hashpw(password: str, algorithm: str)  -> str
+def hashpw_with_salt(password: str, salt: str, algorithm: str)  -> str
+def chk_password(password: str, hashpw: str) -> bool
+```
+
+### Examples
+
+```python
+>> from hashers import hashpw, hashpw_with_salt, chk_password
+>> encoded_pass_1 = hashpw("password123", "blake2")
+>> encoded_pass_2 = hashpw_with_salt("password123", "sdpql", "blake2")
+>> chk_password(encoded_pass_1, "password123")
+```
+
+### Available algorithms:
+
+- Argon2
+- BCrypt
+- PBKDF2 (Default)
+- PBKDF2SHA1
+- BCryptSHA256
+
