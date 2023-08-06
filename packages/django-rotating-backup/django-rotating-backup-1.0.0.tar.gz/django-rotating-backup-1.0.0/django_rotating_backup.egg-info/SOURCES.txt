@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_rotating_backup/__init__.py
+django_rotating_backup/backup.py
+django_rotating_backup/exceptions.py
+django_rotating_backup.egg-info/PKG-INFO
+django_rotating_backup.egg-info/SOURCES.txt
+django_rotating_backup.egg-info/dependency_links.txt
+django_rotating_backup.egg-info/top_level.txt
+django_rotating_backup/management/__init__.py
+django_rotating_backup/management/commands/__init__.py
+django_rotating_backup/management/commands/create_backup.py
