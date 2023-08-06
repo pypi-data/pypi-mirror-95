@@ -1,0 +1,15 @@
+README.md
+setup.py
+osu_sr_calculator/BeatmapParser.py
+osu_sr_calculator/DifficultyHitObjectCreator.py
+osu_sr_calculator/OsuService.py
+osu_sr_calculator/PathApproximator.py
+osu_sr_calculator/Precision.py
+osu_sr_calculator/SliderPath.py
+osu_sr_calculator/StarRatingCalculator.py
+osu_sr_calculator/__init__.py
+osu_sr_calculator/main.py
+osu_sr_calculator.egg-info/PKG-INFO
+osu_sr_calculator.egg-info/SOURCES.txt
+osu_sr_calculator.egg-info/dependency_links.txt
+osu_sr_calculator.egg-info/top_level.txt
