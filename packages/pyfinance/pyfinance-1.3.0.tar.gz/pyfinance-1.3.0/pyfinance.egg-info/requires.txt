@@ -1,0 +1,12 @@
+beautifulsoup4
+matplotlib
+numpy
+pandas_datareader
+pandas>=0.20
+requests
+scipy
+seaborn
+scikit-learn
+statsmodels
+xlrd
+xmltodict
