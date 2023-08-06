@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: WhiteStripe
+Version: 0.0.1
+Summary: A wrapper for the WhiteStripe normalization R package
+Home-page: https://github.com/PennSIVE/WhiteStripe.py
+Author: Tim Robert-Fitzgerald
+Author-email: timrf@upenn.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rpy2
+
+A wrapper for [WhiteStripe](https://github.com/muschellij2/WhiteStripe). For example,
+
+```py
+import WhiteStripe as ws
+t1 = ws.read("T1w.nii.gz")
+ind = ws.whitestripe(t1, "T1")['whitestripe.ind']
+res = ws.whitestripe_norm(t1, ind)
+ws.write(res, "T1w_ws.nii.gz")
+```
+
