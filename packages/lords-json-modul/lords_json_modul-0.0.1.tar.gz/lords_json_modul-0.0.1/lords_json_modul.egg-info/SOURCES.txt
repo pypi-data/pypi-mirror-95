@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+lords_json_modul.egg-info/PKG-INFO
+lords_json_modul.egg-info/SOURCES.txt
+lords_json_modul.egg-info/dependency_links.txt
+lords_json_modul.egg-info/requires.txt
+lords_json_modul.egg-info/top_level.txt
