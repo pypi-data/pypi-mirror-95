@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: exoctk
+Version: 1.1.0
+Summary: Observation reduction and planning tools for exoplanet science
+Home-page: https://github.com/ExoCTK/exoctk
+Author: The ExoCTK Group
+Author-email: exoctk@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: asteval
+Requires-Dist: astropy
+Requires-Dist: astroquery
+Requires-Dist: bandit
+Requires-Dist: bibtexparser
+Requires-Dist: bokeh
+Requires-Dist: boto3
+Requires-Dist: corner
+Requires-Dist: cython
+Requires-Dist: docopt
+Requires-Dist: docutils (==0.14)
+Requires-Dist: flake8
+Requires-Dist: flask
+Requires-Dist: flask-wtf
+Requires-Dist: gunicorn
+Requires-Dist: h5py
+Requires-Dist: ipython
+Requires-Dist: lmfit
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: numpydoc
+Requires-Dist: pandas
+Requires-Dist: paramiko
+Requires-Dist: platon
+Requires-Dist: pysiaf
+Requires-Dist: pysynphot
+Requires-Dist: pytest
+Requires-Dist: pyyaml (==5.1.0)
+Requires-Dist: scipy
+Requires-Dist: scp
+Requires-Dist: sphinx
+Requires-Dist: sphinx-astropy
+Requires-Dist: sqlalchemy
+Requires-Dist: svo-filters
+Requires-Dist: wtforms
+Requires-Dist: werkzeug (==0.16.1)
+
+UNKNOWN
+
+
