@@ -1,0 +1,16 @@
+pyvuejs/__init__.py,sha256=LJY0fwaeXiAOwexQYEH_oOdP8lbjztIUof0hQkyXU5c,223
+pyvuejs/_vue.py,sha256=psxurxkRpKG6ngzJYZ9SBPxCfN-ZNyhY6ftXdh9Kx54,7461
+pyvuejs/_assets/__init__.py,sha256=OkqrPWm7jaBrUoLyYXGK4ICd-Pf60rFxHZngZybRofw,77
+pyvuejs/_assets/axios.min.js,sha256=JLmknTdUZeZZ267LP9qB-_DT7tvxOOKctSKeUC2KT6E,14355
+pyvuejs/_assets/axios.min.map,sha256=l0_w_kLjFf2PpMWTnBqfwz85mwJyvmcfYzV5iKj10TM,117473
+pyvuejs/_assets/favicon.ico,sha256=23SrC3gzjB93j4OYxF9BA8ma6g6EWjEYp3ULTur9NEU,4286
+pyvuejs/_assets/pyvuejs.css,sha256=S8MRydBOhYIDXo-6ZyzAg_kTt7kdRANblGvVq41XZXI,154
+pyvuejs/_assets/pyvuejs.router.js,sha256=G286ctGCO71L4o_qmat4s_wuWl9eEq9ox8Um-Ekb8FY,690
+pyvuejs/_assets/vue.min.js,sha256=KSlsysqp7TXtFo_FHjb1T9b425x3hrvzjMWaJyKbpcI,93670
+pyvuejs-2.0.5.post2.dist-info/LICENSE,sha256=xatrc8MKJTrYB9DiOE3S_ZmsOzcFkRoRrmTj-Lk4lck,1064
+pyvuejs-2.0.5.post2.dist-info/LICENSE.vbuild,sha256=5-hp7edZXjEJVri098oylY4WQUC2M90inl9D2xWyiJc,3688
+pyvuejs-2.0.5.post2.dist-info/METADATA,sha256=rujXK0xhL_ey2Q2tl3dJi7MFqM6yJzsLgMO4_gQfL2U,3983
+pyvuejs-2.0.5.post2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyvuejs-2.0.5.post2.dist-info/entry_points.txt,sha256=uhKjVa8u4optLMMav_rDqBRf11bg-5lLSDUIAOLdlNo,46
+pyvuejs-2.0.5.post2.dist-info/top_level.txt,sha256=_M83lAmcUCThi9K3AoU_DTvk7I-0lfZbgPLNpNQsCUA,24
+pyvuejs-2.0.5.post2.dist-info/RECORD,,
