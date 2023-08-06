@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+kim_query/__init__.py
+kim_query/_version.py
+kim_query/kim_query.py
+kim_query.egg-info/PKG-INFO
+kim_query.egg-info/SOURCES.txt
+kim_query.egg-info/dependency_links.txt
+kim_query.egg-info/requires.txt
+kim_query.egg-info/top_level.txt
