@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "unfolded.data-sdk"
+version = "0.1.0"
+description = "Module for working with Unfolded Studio's Data SDK"
+authors = ["Kyle Barron <kyle@unfolded.ai>"]
+license = "Proprietary"
+readme = "README.md"
+packages = [
+    { include = "unfolded/data_sdk" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.0"
+click = "^7.0.0"
+pydantic = "^1.7.0"
+requests = "^2.25.0"
+
+[tool.poetry.scripts]
+uf-data-sdk = "unfolded.data_sdk.cli:main"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
