@@ -1,0 +1,6 @@
+.DS_Store
+/.idea
+*.pyc
+/pyispace.egg-info/
+/dist/
+/pyispace/test.py
