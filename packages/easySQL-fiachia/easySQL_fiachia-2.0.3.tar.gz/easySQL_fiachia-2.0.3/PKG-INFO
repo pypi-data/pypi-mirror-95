@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: easySQL_fiachia
+Version: 2.0.3
+Summary: Easy SQL Used pymysql
+Home-page: UNKNOWN
+Author: fiachia
+Author-email: 208473302@qq.com
+Maintainer: fiachia
+Maintainer-email: 208473302@qq.com
+License: BSD License
+Description: :Name: easySQL
+        :Author: fiachia
+        :Function: use easy function to execute pyMySQL module
+        :Defect: only easy SQL can be used
+        
+        * database connect:
+        * a) db=easySQL(databaseName, user, passwd, host) or easySQL(database)
+        * table creat:
+        * a) table = tableSQL(tableName, engine, charset)
+        * b) table.addAttribute(aName, aType, aLong, default, isNotNull, isPrimaryKey, isAuto, isUnique, isUnsigned)
+        * c) sql = table.creatLanguage()
+        * d) db.commit(sql)
+        * data find:
+        * a) data = db.find(tableName, key1=value1, key2=value2...)
+        * data add:
+        * a) db.add(tableName, key1=value1, key2=value2...) or db.add(tableName, data)
+        * data delete:
+        * a) db.delete(tableName, key1=value1, key2=value2...) or db.add(tableName, data)
+        * data update:
+        * a) db.update(data, key1=value3, key2=value4...)
+        * other:
+        * a) db.commit(sql) or db.getData(sql)
+        * data add dataList:
+        * n) add all data in dataList. if input data is not list, it will be list in this function. this function need all input list type have the same length.
+        * a) db.addList(tableName, key1=list1, key2=list2...)
+        * data add(data add data rather than data add to table)
+        * a) data.add(data1)
+        * creat table by DIC(json.loads()):
+        * a) db.creat(tableName, childDeep=0, \**kwargs)
+Platform: all
