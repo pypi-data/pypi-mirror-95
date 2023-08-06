@@ -1,0 +1,6 @@
+README.md
+setup.py
+wog.egg-info/PKG-INFO
+wog.egg-info/SOURCES.txt
+wog.egg-info/dependency_links.txt
+wog.egg-info/top_level.txt
