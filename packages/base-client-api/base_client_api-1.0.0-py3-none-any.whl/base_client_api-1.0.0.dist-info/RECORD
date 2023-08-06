@@ -1,0 +1,10 @@
+base_client_api/__init__.py,sha256=ii_Dj_aUd32SH2i5oDDjr8oorfmh2vDl-6149DFHCoY,957
+base_client_api/base_client.py,sha256=LV5zDWRCNQz5usBZpocRpLraZKCmpErTxlEVJAfLXCI,19126
+base_client_api/models/__init__.py,sha256=vM8Aek-pa4Q8j427gAqidrN9xktJ7_IDSEdPKpXOcps,911
+base_client_api/models/record.py,sha256=AdhF2S_vT06znkFjCAs_cVLgRZbulI6s-MBYLjIg79c,2540
+base_client_api/models/results.py,sha256=0qTumsqmnSKleYAiRISZpDomeeE7Owq9psgxcSX6ZtY,1775
+base_client_api/utils.py,sha256=Eka82ryaA-pRahoM-f2YBi0Mm5hTeqveUCfBt1ggbQM,4244
+base_client_api-1.0.0.dist-info/LICENSE.md,sha256=U8uzIGOCX-inN9Wj2c1CysI8N-YWDQmWjGFBXcst1e0,29583
+base_client_api-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+base_client_api-1.0.0.dist-info/METADATA,sha256=FFD6DEkvotUzrjFYmOB7m_sCaJBU7oLRhg8TB6QVNpc,575
+base_client_api-1.0.0.dist-info/RECORD,,
