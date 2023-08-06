@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+vDirect/API_requests.py
+vDirect/__init__.py
+vDirect/main.py
+vDirect.egg-info/PKG-INFO
+vDirect.egg-info/SOURCES.txt
+vDirect.egg-info/dependency_links.txt
+vDirect.egg-info/entry_points.txt
+vDirect.egg-info/requires.txt
+vDirect.egg-info/top_level.txt
