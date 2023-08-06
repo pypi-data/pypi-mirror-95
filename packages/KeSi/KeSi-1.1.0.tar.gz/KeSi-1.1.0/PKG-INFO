@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: KeSi
+Version: 1.1.0
+Summary: 台語文NLP家私
+Home-page: https://ithuan.tw/
+Author: Tshuà Bûn-lī
+Author-email: ithuan@ithuan.tw
+License: UNKNOWN
+Download-URL: https://github.com/i3thuan5/KeSi
+Description: Kā台文轉做電腦通利用ê格式。臺灣言語工具翻新。
+Keywords: Parser,Alignment,Taigi,Hanji,Lomaji
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
