@@ -1,0 +1,6 @@
+
+[slack]
+slackclient==2.9.3
+
+[statsd]
+statsd==3.3.0
