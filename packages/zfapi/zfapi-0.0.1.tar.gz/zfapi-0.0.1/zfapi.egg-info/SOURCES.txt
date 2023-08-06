@@ -1,0 +1,12 @@
+README.md
+setup.py
+zfapi/__init__.py
+zfapi/config.py
+zfapi.egg-info/PKG-INFO
+zfapi.egg-info/SOURCES.txt
+zfapi.egg-info/dependency_links.txt
+zfapi.egg-info/requires.txt
+zfapi.egg-info/top_level.txt
+zfapi/api/__init__.py
+zfapi/api/get_info.py
+zfapi/api/login.py
