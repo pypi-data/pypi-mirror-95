@@ -1,0 +1,10 @@
+dgo/__init__.py,sha256=tc7v6BA2_2Y5IOayxTi0Ty4Jv9Hf7aEgJHLA5_cMlAc,114
+dgo/cli.py,sha256=RtfdKZbQGj8lO1Cpybw8okETcrM3rBh5xAPEFvkuw0s,1566
+dgo/dgo.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+dgo-0.4.1.dist-info/AUTHORS.rst,sha256=n7A8Z77xghKV0rpoKgLOItJr4X0OqHpDeDz9tas5cZw,149
+dgo-0.4.1.dist-info/LICENSE,sha256=Kl9MoOOF4zqlV4a84KnLNweYd9BZV-avixaLoJZUuP4,1067
+dgo-0.4.1.dist-info/METADATA,sha256=ezEIRoiHmjQjSzn1mkFtj0Zrfn5X2xieqoFhuLdMp9Q,1795
+dgo-0.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+dgo-0.4.1.dist-info/entry_points.txt,sha256=3eaKDaXMFhy7NAmxHo6jpYcC5ObqnLNKIZNd0FYxO0I,38
+dgo-0.4.1.dist-info/top_level.txt,sha256=lNHUxLfKrRhVzcB1voIGToQvQgXjUIYtrXp-HDRrJbg,4
+dgo-0.4.1.dist-info/RECORD,,
