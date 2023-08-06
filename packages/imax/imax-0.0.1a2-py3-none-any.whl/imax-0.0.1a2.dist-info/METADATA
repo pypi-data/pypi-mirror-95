@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: imax
+Version: 0.0.1a2
+Summary: Image augmentation library for Jax
+Home-page: https://github.com/4rtemi5/imax
+Author: Raphael Pisoni
+Author-email: raphael.pisoni@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jax
+Requires-Dist: jaxlib
+
+# imax
+
+![tests](https://github.com/4rtemi5/imax/workflows/tests/badge.svg)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/imax.svg)](https://pypi.python.org/pypi/imax/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/112GaTnKDi-54eUIoXCREOZ_GuPAKNish?usp=sharing)
+
+Fast and jittable Image augmentation library for Jax.
+
+![sample_images](https://raw.githubusercontent.com/4rtemi5/imax/master/images/samples.png)
+
+
