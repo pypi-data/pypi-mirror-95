@@ -1,0 +1,8 @@
+README.md
+setup.py
+IFConnectOld/InfiniteFlightConnectOld.py
+IFConnectOld/__init__.py
+IFConnectOld.egg-info/PKG-INFO
+IFConnectOld.egg-info/SOURCES.txt
+IFConnectOld.egg-info/dependency_links.txt
+IFConnectOld.egg-info/top_level.txt
