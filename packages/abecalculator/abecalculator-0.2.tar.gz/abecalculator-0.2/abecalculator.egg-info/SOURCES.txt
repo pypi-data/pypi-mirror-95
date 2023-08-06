@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+abecalculator/__init__.py
+abecalculator.egg-info/PKG-INFO
+abecalculator.egg-info/SOURCES.txt
+abecalculator.egg-info/dependency_links.txt
+abecalculator.egg-info/top_level.txt
