@@ -1,0 +1,5 @@
+alpaca_trade_api
+alpha_vantage
+yfinance
+pandas
+redis
