@@ -1,0 +1,9 @@
+boto3
+colorama
+pyYaml
+
+[test]
+moto==1.3.14
+pyfakefs
+pytest
+pytest-cov
