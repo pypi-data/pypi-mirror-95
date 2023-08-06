@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: epicnumbers
+Version: 1.0.0
+Summary: A tool to convert numbers into various other formats and different sized integers
+Home-page: https://github.com/narhen/epicnumbers
+License: MIT
+Keywords: number,integer,conversion,cli
+Author: Henrik Nårstad
+Author-email: henriknaa@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata (>=3.4.0,<4.0.0); python_version < "3.8"
+Requires-Dist: tabulate (>=0.8.8,<0.9.0)
+Project-URL: Repository, https://github.com/narhen/epicnumbers
+Description-Content-Type: text/markdown
+
+# epicnumbers
+
+A small tool I often used to convert a number into various other formats
+
+# Usage
+
+```bash
+$ pip install epicnumbers
+```
+
+```bash
+$ epicnumbers <number>
+```
+
+# Examples
+
+Convert -100 into signed, unsigned, hex, printable and binary in different sized integers
+```
+$ en -100
+type      signed              unsigned  hex                  printable                         binary
+------  --------  --------------------  -------------------  --------------------------------  -----------------------------------------------------------------------
+8 bit       -100                   156  0x9c                 \x9c                              10011100
+16 bit      -100                 65436  0xff9c               \x9c\xff                          11111111 10011100
+32 bit      -100            4294967196  0xffffff9c           \x9c\xff\xff\xff                  11111111 11111111 11111111 10011100
+64 bit      -100  18446744073709551516  0xffffffffffffff9cL  \x9c\xff\xff\xff\xff\xff\xff\xff  11111111 11111111 11111111 11111111 11111111 11111111 11111111 10011100
+```
+
+Convert 0x100 into signed, unsigned, hex, printable and binary in different sized integers
+```
+$ en 100h
+type      signed    unsigned  hex    printable                         binary
+------  --------  ----------  -----  --------------------------------  ----------
+16 bit       256         256  0x100  \x00\x01                          1 00000000
+32 bit       256         256  0x100  \x00\x01\x00\x00                  1 00000000
+64 bit       256         256  0x100  \x00\x01\x00\x00\x00\x00\x00\x00  1 00000000
+```
+
+Convert 100b (binary) into signed, unsigned, hex, printable and binary in different sized integers
+```
+$ en 100b
+type      signed    unsigned  hex    printable                           binary
+------  --------  ----------  -----  --------------------------------  --------
+8 bit          4           4  0x4    \x04                                   100
+16 bit         4           4  0x4    \x04\x00                               100
+32 bit         4           4  0x4    \x04\x00\x00\x00                       100
+64 bit         4           4  0x4    \x04\x00\x00\x00\x00\x00\x00\x00       100
+```
+
+# Development
+
+1. install [poetry](https://python-poetry.org/)
+2. `$ poetry install`
+3. `$ poetry shell`
+
+## Run tests
+
+```bash
+$ poetry run pytest
+```
+
+## Run tool
+
+```bash
+$ poetry run en 100h
+```
+

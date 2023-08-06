@@ -1,0 +1,4 @@
+[console_scripts]
+en=epicnumbers.main:main
+epicnumbers=epicnumbers.main:main
+
