@@ -1,0 +1,6 @@
+README.md
+setup.py
+antibody_transformer.egg-info/PKG-INFO
+antibody_transformer.egg-info/SOURCES.txt
+antibody_transformer.egg-info/dependency_links.txt
+antibody_transformer.egg-info/top_level.txt
