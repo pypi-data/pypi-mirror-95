@@ -1,0 +1,16 @@
+rezume/__init__.py,sha256=5gbQcwXgH42Z3G7GYJFW9U7DAXE_MM5gBaF7FkOnyWo,5690
+rezume/assets/rezume-template.yml,sha256=HnQzROU_5nBff3qJZi_pusYDjXN1sQrOlLTkJxhCXvc,1549
+rezume/base.py,sha256=HvUlKkotD5rHrslw4tpERoe2kN8RP3S5T3mGtZaJNG0,96
+rezume/cli/__init__.py,sha256=r0gVtiO7m9augwESzNdxNRyrBWf0qPCoQOvl6KRilxM,325
+rezume/cli/commands/__init__.py,sha256=5GQzySFPIlTaARNk3iQ3cbHQPCOsz2j7dofyG3W6twk,626
+rezume/cli/commands/init.py,sha256=SmktuELx0eS6-z1WW8VjDyinA9hBsh0wPnwHJFiWJJ4,2513
+rezume/cli/commands/serve/__init__.py,sha256=yvlHzlEq5b02RuW8TCoHq3Oms6-1aKpIrxvfAAoUALY,3355
+rezume/cli/commands/serve/itty3.py,sha256=uOh3GyojcKf4ugOANekFm3CgD5R8t9B_N9HRbsIkXo8,43615
+rezume/cli/commands/test.py,sha256=xVL6ARyVacHHrz7tkKRmhOT-I2ZbyHnJpEqDWqziQOA,872
+rezume/models.py,sha256=VLkmSuH1Hp_ZgoPBqi3zUO9hui4ENyKNgyL7d-_gLVY,3565
+rezume/sections.py,sha256=Vv5YDGGqh0-rrXe_gTSwTlKp6MBLfY84IA6RdeyS-r4,5813
+rezume-0.4.2.dist-info/entry_points.txt,sha256=rYuDz6ucuC1o2IKkmHDf_NdTWIqL4LsU0cFQyCd5RvE,42
+rezume-0.4.2.dist-info/LICENSE,sha256=3tP-ABpamRNxwCS0ZG838Q6_Lr5Dlg0pwgWcAC97ixY,1329
+rezume-0.4.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+rezume-0.4.2.dist-info/METADATA,sha256=kA4H2zlqQyLi7kRNz7XJSGgkqQtAEumq5omCfIaoBXs,4058
+rezume-0.4.2.dist-info/RECORD,,
