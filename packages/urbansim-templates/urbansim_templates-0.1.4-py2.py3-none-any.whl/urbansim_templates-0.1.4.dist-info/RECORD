@@ -1,0 +1,15 @@
+urbansim_templates/__init__.py,sha256=26EOtAu1A-A5sPyCnldwmzW8eg15WVQusNT0XGieTPo,32
+urbansim_templates/modelmanager.py,sha256=x7QWKYkIzbNsxgZUhigghvm_tACkcLcCV2ESTXhOG3E,8219
+urbansim_templates/utils.py,sha256=87x5mlozodWM0FfmOYeKVmFS6bm-0vWvE0Vny8abvh8,10478
+urbansim_templates/models/__init__.py,sha256=S6JODnrJQMznkaN_VuaBNEBdAoXRM8Tv8KOLcvsrPJ0,324
+urbansim_templates/models/binary_logit.py,sha256=Co4wl_soWcfcGX1pGP0rVbXdnLuVCcztojYWplyqt8M,9756
+urbansim_templates/models/large_multinomial_logit.py,sha256=IUGjGg1gGIJWWHo8qCK4V5ISsR_e8KUWxU2MQVRZfeE,25721
+urbansim_templates/models/regression.py,sha256=LWRKBsL8Xploy7HCkPWEpx4Q6PcYvOBLxRG1SEjLpKs,8572
+urbansim_templates/models/segmented_large_multinomial_logit.py,sha256=OZnyf-Jn62s-_A8kMVBCGWAV4VX30KlLGVINJzWdGu8,8367
+urbansim_templates/models/shared.py,sha256=NnFydF_P87dGlDZHCNz6EFCQjK6d8jWyHWSFV88WQa4,7883
+urbansim_templates/models/small_multinomial_logit.py,sha256=Yu_9zsRm1tDNKchXjqlQfpY99bKxveOUuV6yTuj-I7Y,15924
+urbansim_templates-0.1.4.dist-info/LICENSE.txt,sha256=h_mJ9z9x3ZOYEJYOlnVfjU4Lq1fZkKj2EVX4jK61uFc,1513
+urbansim_templates-0.1.4.dist-info/METADATA,sha256=SKxywEvOksENshXC2_nDBlSFCAUNEJAvNEA6xJRTsqU,887
+urbansim_templates-0.1.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+urbansim_templates-0.1.4.dist-info/top_level.txt,sha256=RFf9sBkt5I7n3HDpoVyCfcWtshtArsxbpMrTV7GkccY,19
+urbansim_templates-0.1.4.dist-info/RECORD,,
