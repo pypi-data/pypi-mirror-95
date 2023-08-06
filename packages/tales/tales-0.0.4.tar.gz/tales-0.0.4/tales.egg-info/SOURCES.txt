@@ -1,0 +1,11 @@
+README.md
+setup.py
+tales/__init__.py
+tales/auth.py
+tales/errors.py
+tales/player.py
+tales/watchdog.py
+tales.egg-info/PKG-INFO
+tales.egg-info/SOURCES.txt
+tales.egg-info/dependency_links.txt
+tales.egg-info/top_level.txt
