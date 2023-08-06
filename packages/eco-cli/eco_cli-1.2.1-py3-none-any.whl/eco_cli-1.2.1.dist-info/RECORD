@@ -1,0 +1,11 @@
+eco/__init__.py,sha256=NxQsSZMxOwn2rlEpafcTfDZbzYQKgqIt2g7j8nZtmUk,23
+eco/__main__.py,sha256=dTvdfmvgPjioMH4EXAQux6oYKqU8nlDCzK6DmfBK77Q,7311
+eco/eco_scrapper.py,sha256=38BwIfN_ea1_MSUyO3NuUdl_XAZTl41UFw7PqdzKAIo,468
+eco/eco_utils.py,sha256=hgQXAz7DoQtqiPlvKABchxRmgMxwJJNGTnbMiDXCdZU,2872
+eco/tables/appdata.json,sha256=4h4egDTSgVVK_yBPlW8cZuM8XiVn7eAaVqD_OkxQ1FA,97
+eco_cli-1.2.1.dist-info/LICENSE,sha256=1aflSjj61DzkkgOLudgVFNCKQqqH5R6jl88fFnsKumY,1061
+eco_cli-1.2.1.dist-info/METADATA,sha256=t-lM9coe8NVZTvgjCImkvtUrjCzspHE80wMULh2S7pY,555
+eco_cli-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eco_cli-1.2.1.dist-info/entry_points.txt,sha256=fFe_RQFEHkcsmm1x6OlszM4h0Gf86mse7ONUOhVFi80,43
+eco_cli-1.2.1.dist-info/top_level.txt,sha256=6WrL0efWHKrkrrDbEJxO2-97kplDDY-mzDeWzDcsnHo,4
+eco_cli-1.2.1.dist-info/RECORD,,
