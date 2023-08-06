@@ -1,0 +1,10 @@
+dictionizr/__init__.py,sha256=fGn24zUKkpY8vSA_VDJyTYhJWDJmP-rmFCDPNy35GbU,48
+dictionizr/conftest.py,sha256=NhKdj7NC8McP2aVSGFlOciaIVT9C0Pk3X7N-2XE1CgE,12
+dictionizr/dictionizr.py,sha256=8QmTiOXtQSNCeGhxUkoMUglpvVzaLnLzKvQh9v5cyyc,975
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/dictionizr_test.py,sha256=GN-O5cMvd48xIUL3ZZb8oQAww7bPSm2UMB2LE5_AQNo,1618
+dictionizr-0.0.2.dist-info/LICENSE,sha256=m2JseWc2JxnzyU2GY-n4Ix6VbOjawsnK6dv9Jyx-_NY,1089
+dictionizr-0.0.2.dist-info/METADATA,sha256=JY-JDk8LdUVetHfb-6lrR6PpjKH__h_YjP6NC6t-tug,615
+dictionizr-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dictionizr-0.0.2.dist-info/top_level.txt,sha256=r_dPXqPuojJeFkChomVivelTXVPEi9Fz6fAGHq0VUw0,17
+dictionizr-0.0.2.dist-info/RECORD,,
