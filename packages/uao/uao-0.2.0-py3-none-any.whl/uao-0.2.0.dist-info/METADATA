@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: uao
+Version: 0.2.0
+Summary: Big5-UAO encoder/decoder in pure Python
+Home-page: https://github.com/eight04/pyUAO
+Author: eight
+Author-email: eight04@gmail.com
+License: MIT
+Keywords: encoding,uao,big5
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Text Processing
+
+pyUAO
+=====
+
+.. image:: https://github.com/eight04/pyUAO/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/eight04/pyUAO/actions/workflows/test.yml
+
+Big5-UAO table in pure Python.
+
+純 Python 的 UAO (Unicode-At-On) encoder/decoder。
+
+Installation
+------------
+
+::
+
+  pip install uao
+
+Usage
+-----
+
+.. code:: python
+
+  from uao import register_uao
+  register_uao() # register big5-uao as a builtin codecs
+  print("无法被Big5編碼の字串♥".encode("big5-uao").decode("big5-uao"))
+
+Or use the standalone ``Big5UAOCodec`` class:
+
+.. code:: python
+
+  from uao import Big5UAOCodec
+  uao = Big5UAOCodec()
+  print(uao.decode(uao.encode("无法被Big5編碼の字串♥")))
+
+Changelog
+---------
+
+* 0.2.0 (Feb 22, 2021)
+
+  - Add: support python 3.7~3.9.
+
+* 0.1.1 (Jun 11, 2018)
+
+  - Fix: remove a print statement.
+
+* 0.1.0 (Jun 11, 2018)
+
+  - First release.
+
+
