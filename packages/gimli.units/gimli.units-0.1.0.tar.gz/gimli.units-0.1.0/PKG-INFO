@@ -1,0 +1,67 @@
+Metadata-Version: 1.2
+Name: gimli.units
+Version: 0.1.0
+Summary: An object-oriented Python interface to udunits
+Home-page: http://csdms.colorado.edu
+Author: Eric Hutton
+Author-email: huttone@colorado.edu
+License: UNKNOWN
+Description: # gimli
+        An object-oriented Python interface to udunits
+        
+        
+        Credits
+        =======
+        
+        Development Lead
+        ----------------
+        
+        * Eric Hutton (@mcflugen)
+        
+        Contributors
+        ------------
+        
+        None yet. Why not be the first?
+        
+        
+        
+        Changelog for gimli
+        ===================
+        
+        0.2.0b1 (unreleased)
+        --------------------
+        
+        - Nothing changed yet.
+        
+        
+        0.2.0b0 (2021-02-20)
+        --------------------
+        
+        - Added gimli command-line interface (#6)
+        
+        - Better handling of multi-dimensional and non-contiguous arrays (#5)
+        
+        - Fixed a issue that caused a segmentation fault when using dimensionless units (#4)
+        
+        0.1.1 (2021-02-17)
+        ------------------
+        
+        - Created the gimli package (#1)
+        
+        - Set continuous integration using GitHub actions (#2)
+        
+        - Deploy to TestPyPI on a version tag (#3)
+        
+Keywords: units,unit conversion,earth science,model coupling
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
