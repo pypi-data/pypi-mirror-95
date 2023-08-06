@@ -1,0 +1,12 @@
+ambibulb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ambibulb/__main__.py,sha256=3FZN-sa4tOoLFo6w0ssTgLrviDCH_WlSgZ4anAj8-Zk,3388
+ambibulb/ambibulb_config.py,sha256=LLba7Ke3mQALuFLLccENGkL_ALgPeuwQBnAXNavumzc,6375
+ambibulb/color_detect.py,sha256=TIlOZavGdQ1UwS9QJIO3kOt_G1kOZoy9BgnOtWqnCCw,1652
+ambibulb/ir_light_bulb.py,sha256=SrN5GiO1KAv6FhAzg0PVsNWxdzcJ4ehya5aMfSryiD0,11062
+ambibulb/snapshot_bcm.abi3.so,sha256=aps7DYOjQc9l48lq6pDPsCTK2LtQ8uW35TUb_q91KSQ,36596
+ambibulb-0.0.5.dist-info/LICENSE,sha256=KNG8EAOiNblQBsdnHHW65uRVLdyb2Jna-zJ6lkdUQlg,1093
+ambibulb-0.0.5.dist-info/METADATA,sha256=kvCtu_FkrOhF9uczjOhTBxra5Trybl781oBot9XZE1o,3219
+ambibulb-0.0.5.dist-info/WHEEL,sha256=f2k0IG-J1RRnMWgsgPSydMpH6vHM-yPwRiVl74_NOfE,104
+ambibulb-0.0.5.dist-info/entry_points.txt,sha256=hyTGBhUAF9rjVwHnNpfeg03-4HlfTuNznfUSy_wlZfY,101
+ambibulb-0.0.5.dist-info/top_level.txt,sha256=RNyEM-Q-Lm9eMnwq0be3esoqFZRQfz17wIweo3vC184,9
+ambibulb-0.0.5.dist-info/RECORD,,
