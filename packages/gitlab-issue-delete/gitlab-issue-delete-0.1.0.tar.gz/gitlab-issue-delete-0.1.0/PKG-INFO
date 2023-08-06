@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: gitlab-issue-delete
+Version: 0.1.0
+Summary: Delete GitLab issue in bulk
+Home-page: https://github.com/sachinchavan9/gitlab-operation
+Author: Sachin Chavan
+Author-email: sachinewx@gmail.com
+License: UNKNOWN
+Description: # GitLab Delete Issue
+        
+        delete all issue from gitlab project.
+        
+        $ gilab-issue-delete
+        
+        and follow the instruction
+        
+        you need `gitlab` and `accesstoken` 
+        
+        default config file found at
+        
+        ```
+        $HOME/.config/gitlab/config
+        ```
+Keywords: Git GitLab issue
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

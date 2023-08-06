@@ -1,0 +1,13 @@
+README.md
+setup.py
+gitlab_issue_delete.egg-info/PKG-INFO
+gitlab_issue_delete.egg-info/SOURCES.txt
+gitlab_issue_delete.egg-info/dependency_links.txt
+gitlab_issue_delete.egg-info/entry_points.txt
+gitlab_issue_delete.egg-info/not-zip-safe
+gitlab_issue_delete.egg-info/requires.txt
+gitlab_issue_delete.egg-info/top_level.txt
+gitlab_operations/__init__.py
+gitlab_operations/deleteissue.py
+gitlab_operations/gitinstance.py
+gitlab_operations/userconfig.py
