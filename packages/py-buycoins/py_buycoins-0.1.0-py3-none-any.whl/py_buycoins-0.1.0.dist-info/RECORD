@@ -1,0 +1,16 @@
+py_buycoins/APIClient.py,sha256=FSAj1cBb0l7O18UdNiHfVIeMCuniRyAg5yqpPtum7Zo,4463
+py_buycoins/__init__.py,sha256=V7Gpu_LrdxuOsrlECQgHmilk7g9FbeEe-V4nmZeUYQE,37
+py_buycoins/exc.py,sha256=aJNkKjsAMIqItQkuokQinv_sNWfh5GnCqHg1y7M5FSY,259
+py_buycoins/naira_token_account.py,sha256=yXiT8NnEyYRGaMEPOc5V41rkwvl4q_IhVJKVJl--VY8,939
+py_buycoins/orders.py,sha256=_Z4yvEbO-GNi0zAWqlHlxzWB8M9LS_PUioZl4I9hLC8,2154
+py_buycoins/p2p.py,sha256=0NQjNs7uTGm3JGna-NZ5iavk5pqd4JQ514YYPRqUmDk,3049
+py_buycoins/receive.py,sha256=CfObVUvkTTKgaYOwA3LhdUoNGP4k_c_4Vi1cIbduGM4,373
+py_buycoins/sending.py,sha256=FoITC6ZqQ7ga7eOZufBE53JjkTZoU-nWF3hY8kMF-Ck,1770
+py_buycoins/gcore/__init__.py,sha256=owwDI0c_U9Rld3pMKDS3lOgmEccieX1EzV_3680xnPg,59
+py_buycoins/gcore/mutations.py,sha256=fWbRnVCEaq3-KH0m_jvgEjx4OLG8K5kVpHwNO-oNGio,6922
+py_buycoins/gcore/queries.py,sha256=hXuvmkp0bx_s4QrQMbiZVn3vqYkVwzMkoBndtoCOGgk,4503
+py_buycoins-0.1.0.dist-info/LICENSE.txt,sha256=bCxU1vObsOWYQNITYvOlmhR_2ZnGe7xg3OZDtmBikf4,1089
+py_buycoins-0.1.0.dist-info/METADATA,sha256=bNwraAcHoByAnpO_s6iiM2suTsDCSib6IvLfMMjXBDg,5519
+py_buycoins-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+py_buycoins-0.1.0.dist-info/top_level.txt,sha256=VzCZOtX04EcKXN1azoG_l1OSFMlKaF0ZvpljVy5Il_w,12
+py_buycoins-0.1.0.dist-info/RECORD,,
