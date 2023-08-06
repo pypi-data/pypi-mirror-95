@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+jsonical3.py
+setup.py
+jsonical3.egg-info/PKG-INFO
+jsonical3.egg-info/SOURCES.txt
+jsonical3.egg-info/dependency_links.txt
+jsonical3.egg-info/top_level.txt
+jsonical3.egg-info/zip-safe
