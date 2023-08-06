@@ -1,0 +1,11 @@
+simple_csv_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_csv_reader/__main__.py,sha256=sNobB6sdLQgQqCcZdggdMijQLCffpohBltkSQ-7CH5U,3273
+simple_csv_reader/csv_reader.py,sha256=pSQahhpCasG4y8IIhMT13MDWWLJ-DOuGV0nsREVCkeU,2645
+simple_csv_reader/getch.py,sha256=vzZC1cxhjFsxmpdjh48xiqqs-TgI8oR6BqnUpMrwIsY,864
+simple_csv_reader/helpers.py,sha256=DZituKCvbC_h8_K3aFeBgK03jN-2WMFafDoQmGZLTq0,1502
+simple_csv_reader-0.0.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+simple_csv_reader-0.0.8.dist-info/METADATA,sha256=2hkC37gMFg96VpSzfc3Vnaqnav-Rx1f4UADyLBVmoPk,454
+simple_csv_reader-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_csv_reader-0.0.8.dist-info/entry_points.txt,sha256=GxBTXddPy_MlS4SYOtfOcTTCd2WmxBQPBZJuoJWd6u4,71
+simple_csv_reader-0.0.8.dist-info/top_level.txt,sha256=DHNFL9aIJltUb67Dv079hhw9U-x_AwVPjBVN7W4fDCk,18
+simple_csv_reader-0.0.8.dist-info/RECORD,,
