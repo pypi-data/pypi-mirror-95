@@ -1,0 +1,9 @@
+kraken_db/kraken_bigquery.py,sha256=hu2CVM0SnLtJayHVuzhrIau6Ny3PmTkwv2ovNcNrvgo,1533
+kraken_db/kraken_db.py,sha256=5Z31n_e6T4cfV3jeDm_JV71AURBeP2sV7De7_Y-E_Ng,9849
+kraken_db/kraken_storage.py,sha256=NWr0E9c_zzuAbDgyLvVm9ceXHDo87u2REfVUpLpjz04,3015
+kraken_db/kraken_task.py,sha256=Krx3APVem4Ja7gxUHx4ei7CAuVq-lVYI8qJ1fFbR3ak,3573
+kraken_db-0.0.3.dist-info/LICENSE.txt,sha256=ukEi8E0PKq1dQGTXHUflg3rppLymwAhr7il9x-0nPgg,1062
+kraken_db-0.0.3.dist-info/METADATA,sha256=x4JDkiAA729-0XujbTX1iwksT_5BtM46ISsQTZRS880,453
+kraken_db-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kraken_db-0.0.3.dist-info/top_level.txt,sha256=6pbsVuRwoC2-4KGGCdNMHfP9BZfVHfyL2Ro7TdMdCBA,10
+kraken_db-0.0.3.dist-info/RECORD,,
