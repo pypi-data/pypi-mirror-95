@@ -1,0 +1,2 @@
+pydantic_azure_secrets
+tests

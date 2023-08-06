@@ -1,0 +1,9 @@
+pydantic_azure_secrets/__init__.py,sha256=J7rRU6vqhnQohRCwN0SCCObV6Dzc1YjdNo9hhLu7kY8,121
+pydantic_azure_secrets/azure_vault_settings.py,sha256=3K1GULXweHB61FFbNKzwbCR4Nxcj1ZrRHvdcKXHMUxs,4191
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_azure_vault_settings.py,sha256=0F3NJ2dpbDDKorhKPk_QT5_f5215o8i3t2gQMQahkYE,14079
+pydantic_azure_secrets-0.1.0.dist-info/LICENSE,sha256=KZTSliCmAhDuAYIdDWI108snyoUOvOVDLvZzNbB1S88,1065
+pydantic_azure_secrets-0.1.0.dist-info/METADATA,sha256=wMny8lB2zVKnoJJc72BmnT4J1hPoMTjcaj3XvbLIzvs,3186
+pydantic_azure_secrets-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pydantic_azure_secrets-0.1.0.dist-info/top_level.txt,sha256=nT0nfRinSs1DbzeFvvLfLa5aPUlDgAlT6yJQUImidPo,29
+pydantic_azure_secrets-0.1.0.dist-info/RECORD,,
