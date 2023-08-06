@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: intake-salesforce
+Version: 0.0.1
+Summary: Intake driver to load Salesforce data
+Home-page: https://github.com/sophiamyang/intake-salesforce
+Author: Sophia Yang
+Author-email: UNKNOWN
+License: BSD
+Keywords: intake-salesforce
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: simple-salesforce
+Requires-Dist: intake
+Requires-Dist: pandas
+
+UNKNOWN
+
+

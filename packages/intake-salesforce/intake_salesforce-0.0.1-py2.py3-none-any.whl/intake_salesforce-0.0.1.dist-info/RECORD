@@ -1,0 +1,11 @@
+intake_salesforce/__init__.py,sha256=PiUSiFLCm0YX5rbHS4xOLGdqdPDC8j3etV3nmEaelzI,92
+intake_salesforce/_version.py,sha256=BddjF-MqDYxzfsMJaimmEDkKTo04d2pcfJF5Xtj8oWE,497
+intake_salesforce/core.py,sha256=O_9tGtSRGvVX4lV-g8RldimW5p-5JKgcJjBGo6OJ6-Y,6003
+intake_salesforce/versioneer.py,sha256=dYmTUQJtADX7jooK0TVZIkyu_IVRRTQq4-fbTUfTdc4,70144
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intake_salesforce-0.0.1.dist-info/LICENSE,sha256=dm6UQyu4ERR26Ltr5qH8TwvX1CJ_26bvBLUuRL4eZn4,1505
+intake_salesforce-0.0.1.dist-info/METADATA,sha256=a5XigwfxnOBcTIqCXhRKlgGGVAjkX-QzsMBF74va7QM,507
+intake_salesforce-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+intake_salesforce-0.0.1.dist-info/entry_points.txt,sha256=5fs8Vd0SHjT7diIWp8Grz2f9D4bD10HhU_2ySIcphoA,144
+intake_salesforce-0.0.1.dist-info/top_level.txt,sha256=hISERKK61fCkU2f6McYo7AvenvLlX8o9f8752Qv9PVw,24
+intake_salesforce-0.0.1.dist-info/RECORD,,
