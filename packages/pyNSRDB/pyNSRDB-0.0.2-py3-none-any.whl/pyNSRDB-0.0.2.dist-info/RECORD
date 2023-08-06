@@ -1,0 +1,10 @@
+pyNSRDB/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyNSRDB/credentials.py,sha256=S0jPV9vLakJkFbwiOMGrcZZ-QaBJYIw0g9Q5sZRMjS0,2025
+pyNSRDB/data.py,sha256=lIikavE0sSuHfERuHpe9Gqfxjy9eawHcYi-GNUv-jVw,660
+pyNSRDB/requests.py,sha256=cLJj9kxmtE0yk9ApssDiHuQcpGwi9ZWkrozax7SM5cc,10327
+pyNSRDB/response.py,sha256=4jQ7La61IOfsxDAvd8vY_TvIR3hN9Hbq2EocP0zcwBY,2028
+pyNSRDB-0.0.2.dist-info/LICENSE,sha256=AnnFnpRZSsxKqeZT8yWYDb7bU_97lHj1nvRsoApaGKY,1097
+pyNSRDB-0.0.2.dist-info/METADATA,sha256=UuVDBaSgPxKZh-6xPdiOBdTA5xQg084WMfR_H4wk5v4,4077
+pyNSRDB-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyNSRDB-0.0.2.dist-info/top_level.txt,sha256=NV4OHB8XCMEgDnha1f4eVQURoSAwHoO-yQp6ZffTJIE,8
+pyNSRDB-0.0.2.dist-info/RECORD,,
