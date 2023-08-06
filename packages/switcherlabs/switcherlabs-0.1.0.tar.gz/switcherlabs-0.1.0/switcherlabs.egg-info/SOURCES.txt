@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+switcherlabs/__init__.py
+switcherlabs/http_client.py
+switcherlabs/version.py
+switcherlabs.egg-info/PKG-INFO
+switcherlabs.egg-info/SOURCES.txt
+switcherlabs.egg-info/dependency_links.txt
+switcherlabs.egg-info/not-zip-safe
+switcherlabs.egg-info/requires.txt
+switcherlabs.egg-info/top_level.txt
