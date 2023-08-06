@@ -1,0 +1,3 @@
+[console_scripts]
+servalcat = servalcat.command_line:main
+
