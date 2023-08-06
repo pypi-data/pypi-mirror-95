@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+zodb_cm.egg-info/PKG-INFO
+zodb_cm.egg-info/SOURCES.txt
+zodb_cm.egg-info/dependency_links.txt
+zodb_cm.egg-info/not-zip-safe
+zodb_cm.egg-info/requires.txt
+zodb_cm.egg-info/top_level.txt
