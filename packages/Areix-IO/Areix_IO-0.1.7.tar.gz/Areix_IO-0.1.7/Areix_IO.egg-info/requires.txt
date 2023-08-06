@@ -1,0 +1,7 @@
+requests
+numpy
+pandas
+matplotlib
+bokeh
+pyjwt
+scipy
