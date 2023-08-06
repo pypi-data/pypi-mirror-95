@@ -1,0 +1,11 @@
+arc/__init__.py,sha256=ljqViCm15WcU1XWnVyJQvnW4taa7ULQqenA17nVkCpI,105
+arc/app.py,sha256=YJDj2b9ZYKyyvtfKTADMTT0CUP2oqWIV9wE2riV-06g,4562
+arc/defaults.py,sha256=hJGX8cUKBkbZmi85OMu4oR1ZR1wp8s_L0G7f9fjHtO4,654
+arc/errors.py,sha256=RieXUYowuaLxaCW1iG5v8xBe8LqKxlXUsZG2WVM-NM0,163
+arc/middleware.py,sha256=FHK_NTfTF79nVDRrDu9qjajG-WgRjEEBlcqBArV_gwA,705
+arc/setup.py,sha256=CEfwvmp8xz1-EgBG-0Ua5YI-VQ5sUElnAWsotMlXeU4,833
+arcframework-1.1.7.dist-info/LICENSE.txt,sha256=a01zIpjqtHHtLTBJKs4MQumYJsTsqRGE4kfYKDgRvH8,1097
+arcframework-1.1.7.dist-info/METADATA,sha256=FOZv71Uuqm1Wf_rHIKLFD4_-bSmW2AzZwzcQKBe2slM,2259
+arcframework-1.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+arcframework-1.1.7.dist-info/top_level.txt,sha256=kTs_REfGfSlIT6Hq_kxH-MtDlOO6LPwFwkOoNdDCnJ4,4
+arcframework-1.1.7.dist-info/RECORD,,
