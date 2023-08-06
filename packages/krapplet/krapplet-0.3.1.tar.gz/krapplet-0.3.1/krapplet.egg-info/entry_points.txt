@@ -1,0 +1,3 @@
+[console_scripts]
+krapplet = krapplet.krapplet:main
+
