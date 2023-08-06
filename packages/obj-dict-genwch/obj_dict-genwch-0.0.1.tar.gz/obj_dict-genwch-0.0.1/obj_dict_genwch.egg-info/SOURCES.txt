@@ -1,0 +1,8 @@
+README.md
+setup.py
+obj_dict/__init__.py
+obj_dict/app.py
+obj_dict_genwch.egg-info/PKG-INFO
+obj_dict_genwch.egg-info/SOURCES.txt
+obj_dict_genwch.egg-info/dependency_links.txt
+obj_dict_genwch.egg-info/top_level.txt
