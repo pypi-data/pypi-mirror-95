@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ZmUser
+Version: 1.0.0
+Summary: 北京蓝气球用户、角色、权限封装
+Home-page: https://gitee.com/medincmedinc/zm_user
+Author: Zm
+Author-email: 1782980833@qq.com
+License: MIT Licence
+Description: http://markdoc.handsomemark.com/project-3/doc-24/
+Keywords: ZmUser,zm
+Platform: any

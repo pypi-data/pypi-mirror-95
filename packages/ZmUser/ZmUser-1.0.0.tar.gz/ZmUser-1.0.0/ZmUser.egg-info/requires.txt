@@ -1,0 +1,3 @@
+flask
+sqlalchemy_utils
+psycopg2
