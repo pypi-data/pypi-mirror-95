@@ -1,0 +1,10 @@
+README.md
+setup.py
+manifoldy/L2NormCurvature.py
+manifoldy/__init__.py
+manifoldy/generators.py
+manifoldy.egg-info/PKG-INFO
+manifoldy.egg-info/SOURCES.txt
+manifoldy.egg-info/dependency_links.txt
+manifoldy.egg-info/requires.txt
+manifoldy.egg-info/top_level.txt
