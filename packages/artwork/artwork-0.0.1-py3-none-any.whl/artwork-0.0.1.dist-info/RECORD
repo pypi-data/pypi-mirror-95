@@ -1,0 +1,10 @@
+artwork/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artwork/__main__.py,sha256=5QLuz9_SWsRBEoXn2oiPNlaKfD4wCMNaGiUz40lrb80,61
+artwork/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artwork-0.0.1.dist-info/LICENSE,sha256=qa7R_AbaR83ZfoUV_42NLm1y03WIzvfz5kcIrGwX-UY,1075
+artwork-0.0.1.dist-info/METADATA,sha256=oB_Dc8htjAztcjnHNDSt5M0xhiSQL26Nguxhhzq2suo,568
+artwork-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+artwork-0.0.1.dist-info/entry_points.txt,sha256=k2q1UTxV1KP50SV7ey1XVXYpUBZlr8IV3vENGALU3JI,51
+artwork-0.0.1.dist-info/top_level.txt,sha256=FtiL3a9OxMNxy2B9n72YlNx6YZPAvz-eVwol9BXI2zo,14
+artwork-0.0.1.dist-info/RECORD,,

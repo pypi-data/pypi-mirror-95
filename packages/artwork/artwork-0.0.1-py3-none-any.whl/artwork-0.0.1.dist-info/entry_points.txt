@@ -1,0 +1,3 @@
+[console_scripts]
+artwork = artwork.__main__:main
+
