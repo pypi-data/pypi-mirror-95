@@ -1,0 +1,5 @@
+dbus-next
+colorama
+subpop>=0.4.1
+pyyaml
+pyzmq
