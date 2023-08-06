@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: weighted_statistics
+Version: 0.0.1
+Summary: This simple Python package calculates descriptive statistics from values with frequency table.
+Home-page: https://github.com/leopoldsw/weighted_statistics
+Author: Leopold W.
+Author-email: lsw@lsw.co
+License: UNKNOWN
+Download-URL: https://github.com/leopoldsw/weighted_statistics/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+weighted_statistics/__init__.py
+weighted_statistics/calculations.py
+weighted_statistics.egg-info/PKG-INFO
+weighted_statistics.egg-info/SOURCES.txt
+weighted_statistics.egg-info/dependency_links.txt
+weighted_statistics.egg-info/requires.txt
+weighted_statistics.egg-info/top_level.txt
