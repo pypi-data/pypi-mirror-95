@@ -1,0 +1,8 @@
+README.md
+setup.py
+emlens.egg-info/PKG-INFO
+emlens.egg-info/SOURCES.txt
+emlens.egg-info/dependency_links.txt
+emlens.egg-info/not-zip-safe
+emlens.egg-info/requires.txt
+emlens.egg-info/top_level.txt

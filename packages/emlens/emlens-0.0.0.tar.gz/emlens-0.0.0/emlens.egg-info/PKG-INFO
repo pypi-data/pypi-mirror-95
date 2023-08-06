@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: emlens
+Version: 0.0.0
+Summary: A lightweight toolbox for understanding embedding space
+Home-page: https://github.com/skojaku/emlens
+Author: Sadamori Kojaku
+License: MIT
+Description: # emlens
+        A lightweight toolbox for analyzing embedding space
+        
+        ## Doc
+        
+        https://emlens.readthedocs.io/en/latest/
+        
+        ## Install
+        
+        ```
+        pip install emlens
+        ```
+        
+        ## Maintenance
+        
+        Code Linting:
+        ```bash
+        conda install -y -c conda-forge pre-commit
+        pre-commit install
+        ```
+        
+        Docsctring: sphinx format
+        
+        Test:
+        ```bash
+        python -m unittest tests/simple_test.py
+        ```
+        
+Keywords: word embedding,graph embedding
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
