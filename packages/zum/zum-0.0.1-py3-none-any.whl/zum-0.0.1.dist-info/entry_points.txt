@@ -1,0 +1,3 @@
+[console_scripts]
+zum=zum.cli:dispatcher
+

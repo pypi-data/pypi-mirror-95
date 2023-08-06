@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: zum
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/daleal/zum
+License: MIT
+Author: Daniel Leal
+Author-email: dlleal@uc.cl
+Maintainer: Daniel Leal
+Maintainer-email: dlleal@uc.cl
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: httpx (>=0.16.1,<0.17.0)
+Requires-Dist: tomlkit (>=0.7.0,<0.8.0)
+Project-URL: Issue Tracker, https://github.com/daleal/zum/issues
+Project-URL: Repository, https://github.com/daleal/zum
+Description-Content-Type: text/markdown
+
+# Zum
+
