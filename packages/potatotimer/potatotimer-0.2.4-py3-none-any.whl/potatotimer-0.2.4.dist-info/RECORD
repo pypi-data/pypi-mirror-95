@@ -1,0 +1,16 @@
+package_potato/Config.py,sha256=PuujDzsMk1SphL2H0ihp2Hknf537rRrAiWhTUaW2x6c,4472
+package_potato/Screen.py,sha256=L-sFGlA-VIk0b4H9bFeWJin22gV_rgBGpe5edoYg6ZY,6236
+package_potato/TimerEngine.py,sha256=MyDb3h-8RQyJ4j5zXkgZZxv9DuGStTXEBGDE6ojAD38,5164
+package_potato/UserInterface.py,sha256=qr9Re7XxIwO3WRlsTunWa2j5fge_z-sHM2AfNe47BSg,9391
+package_potato/__init__.py,sha256=8-e_P4NmS2bES4um7vZcF_356WdeR-Xq7zSTXqkKdVc,131
+potatotimer/Config.py,sha256=K5WNjH9TArRkOD1IHYXdvciCHaoXq0mdh2Bhj-8zqt0,4819
+potatotimer/Screen.py,sha256=L-sFGlA-VIk0b4H9bFeWJin22gV_rgBGpe5edoYg6ZY,6236
+potatotimer/TimerEngine.py,sha256=MyDb3h-8RQyJ4j5zXkgZZxv9DuGStTXEBGDE6ojAD38,5164
+potatotimer/UserInterface.py,sha256=r2HeMxiJqUPw27c2NloMiE9TnNpIeEnhJyhMIYdOWM8,9399
+potatotimer/__init__.py,sha256=8-e_P4NmS2bES4um7vZcF_356WdeR-Xq7zSTXqkKdVc,131
+potatotimer-0.2.4.data/scripts/potatotimer,sha256=20eIcv7SOaRALIzQzenCNFVBogjD8XHwBUu_3lebhng,769
+potatotimer-0.2.4.dist-info/LICENSE,sha256=jCoNVipwZc9ZLULXrTH67giyVGHSyuR3EjZjz6GH7cw,1069
+potatotimer-0.2.4.dist-info/METADATA,sha256=997eya22Ohl9FzM8VcfVOwi6PERoEWKGWzDn9eHyknI,3518
+potatotimer-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+potatotimer-0.2.4.dist-info/top_level.txt,sha256=Dsv0SH6ACNqhPudkTnrKPW_L3oV2moobKJEi8MngRH4,12
+potatotimer-0.2.4.dist-info/RECORD,,
