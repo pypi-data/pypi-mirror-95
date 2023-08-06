@@ -1,0 +1,7 @@
+README.md
+setup.py
+FrozenPy.egg-info/PKG-INFO
+FrozenPy.egg-info/SOURCES.txt
+FrozenPy.egg-info/dependency_links.txt
+FrozenPy.egg-info/requires.txt
+FrozenPy.egg-info/top_level.txt
