@@ -1,0 +1,13 @@
+fellow/__init__.py,sha256=tXbnenDkBLUATamqFRFWxrbEF9US5dpVUo1HoSGWATY,185
+fellow/discover.py,sha256=8rtbTyWJKB2X3FdWuuj-kWDC7IB4EhTJBjpKaXQlF1Y,493
+fellow/exceptions.py,sha256=lUF9IBfy5s8Bkxz0giNh361MgKMskC9nOmnpG4F9KcI,139
+fellow/kettle.py,sha256=Cu2_Dev5cWPKTUuVNMtoDCLF5nIKcvbIigVanvBkLsM,6004
+fellow_py/__init__.py,sha256=tXbnenDkBLUATamqFRFWxrbEF9US5dpVUo1HoSGWATY,185
+fellow_py/discover.py,sha256=OIVQQXPqnQQoZACOqe6Mo7NGyIPdfEJ97SfM4BB5md0,499
+fellow_py/exceptions.py,sha256=lUF9IBfy5s8Bkxz0giNh361MgKMskC9nOmnpG4F9KcI,139
+fellow_py/kettle.py,sha256=K_kmpvA0kUgNN-UIjoU3oq50JJMbV05tzM7GcRa-N6o,7445
+fellow_py-0.2.1.dist-info/LICENSE,sha256=2TDS4KYXOeKkVMlKk5qSubn-HqfjLTIvvavA1U5r7hY,1071
+fellow_py-0.2.1.dist-info/METADATA,sha256=nNNeaCWLYUyOLy_7sn-mrvxwI9nyPCEk-evFc-n0Ohc,3152
+fellow_py-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fellow_py-0.2.1.dist-info/top_level.txt,sha256=B9F6TufEO8mJtnFxEgQBqV5WtNqZxdWle3L3Q7SVjsc,10
+fellow_py-0.2.1.dist-info/RECORD,,
