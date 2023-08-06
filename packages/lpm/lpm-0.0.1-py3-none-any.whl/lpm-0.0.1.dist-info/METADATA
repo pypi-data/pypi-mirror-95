@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: lpm
+Version: 0.0.1
+Summary: Command line application for practicing coding speed.
+Home-page: https://gitlab.cas.mcmaster.ca/modyj/3xa3.git
+Author: Jay Mody, Jessica Lim, Maanav Dalal
+Author-email: jaykmody@gmail.com, jessicalim813@gmail.com, maanavdalal@gmail.com
+License: https://www.gnu.org/licenses/agpl-3.0.html
+Keywords: lpm,typing,typist,code,keyboard
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: setuptools
+
+# Project Name
+
+Team Name: Lines Per Minute (lpm)
+
+Team Members: Jay Mody, Jessica Lim, Maanav Dalal
+
+This project is a reimplementation of [github.com/cslarsen/wpm](https://github.com/cslarsen/wpm).
+
+## Dev Setup
+
+Install dev dependencies:
+```
+pip install -r requirements-dev.txt
+```
+
+Code formatting:
+```
+black setup.py lpm/*.py
+```
+
+Code linting:
+```
+pylint setup.py lpm/*.py
+```
+
+Install editable package:
+```
+pip install -e .
+```
+
+The folders and files for this project are as follows:
+
+Doc - Documentation for the project
+Code - Implementation
+
+
