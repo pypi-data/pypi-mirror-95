@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: utube-search
+Version: 0.1.0
+Summary: An async API and a cli tool to search youtube.
+Author: unrahul
+Author-email: rahulunair@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiodns (>=2.0.0,<3.0.0)
+Requires-Dist: aiofiles (>=0.6.0,<0.7.0)
+Requires-Dist: aiohttp (>=3.7.3,<4.0.0)
+Requires-Dist: cchardet (>=2.1.7,<3.0.0)
+Requires-Dist: python-rapidjson (>=1.0,<2.0)
+Requires-Dist: rich (>=9.11.0,<10.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Requires-Dist: uvloop (>=0.15.0,<0.16.0)
