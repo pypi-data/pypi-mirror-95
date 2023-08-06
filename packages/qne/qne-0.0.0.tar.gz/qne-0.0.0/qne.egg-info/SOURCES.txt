@@ -1,0 +1,7 @@
+README.md
+setup.py
+qne/__init__.py
+qne.egg-info/PKG-INFO
+qne.egg-info/SOURCES.txt
+qne.egg-info/dependency_links.txt
+qne.egg-info/top_level.txt
