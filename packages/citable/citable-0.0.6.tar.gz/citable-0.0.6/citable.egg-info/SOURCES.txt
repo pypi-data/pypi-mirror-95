@@ -1,0 +1,8 @@
+README.md
+setup.py
+citable/__init__.py
+citable.egg-info/PKG-INFO
+citable.egg-info/SOURCES.txt
+citable.egg-info/dependency_links.txt
+citable.egg-info/requires.txt
+citable.egg-info/top_level.txt
