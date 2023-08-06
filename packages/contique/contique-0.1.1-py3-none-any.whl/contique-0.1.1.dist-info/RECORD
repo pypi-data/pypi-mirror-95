@@ -1,0 +1,14 @@
+contique/__about__.py,sha256=5xvN_gb61nKeq5TER5dSfcArTP3DVasZGN_MQq5dNpA,23
+contique/__init__.py,sha256=uzf8RxfuwuRktNCMLEltuBBBwnaSy8LERSkr6g9ZylI,146
+contique/_solver.py,sha256=w_Y-uZC4X4C1zhkhmhA7drMgsPrNyH29rK7GeYqTnTo,8461
+contique/helpers.py,sha256=dqEkjK6GnngQqCtrvrvD_t9SIUw0OQRCvzz7_IQwWg8,417
+contique/jacobian.py,sha256=F-J6r-B3J-oroWQMfFPmL58V1bO9ufwaFwTrSIgmi1s,2572
+contique/newtonrhapson.py,sha256=5_eS69Y1g_x4Wwoc6AM88p1YlBTpYshAmmJTUlCa4vM,2176
+contique/newtonxt.py,sha256=P7sEBu94NRC-Sx55WSZ_YIWjAd3mFpwtkD1wVvWpqYc,1523
+contique/printinfo.py,sha256=Gz3Ax0BY6GgwAagrg_MR_Rr10Iiv-92pqIiiurYU0VQ,665
+contique/solve.py,sha256=1NJVl3_6KDjZ-BDufkPFtNGxWYf4Tkc4kFWtg-tCDmA,2236
+contique-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+contique-0.1.1.dist-info/METADATA,sha256=AKazcSHwzHU7KWBLFaGeFC5JR_Q08VE8mt8kOTrtoBE,3711
+contique-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+contique-0.1.1.dist-info/top_level.txt,sha256=kZEN1llPyJz3Kysym82RQ1ueN0fASPl8QziZ7ThKHCU,9
+contique-0.1.1.dist-info/RECORD,,
