@@ -1,0 +1,14 @@
+imgann/__init__.py,sha256=XfYBJMlQMHqAZQQXjxxw7aYW3nsdXMPjjfuWS-mgm7w,186
+imgann/convert.py,sha256=iJA0JbGQdxB3E240Q_TK0ZJ5lYJwpYtVpUcUey_T-Dw,5955
+imgann/sample.py,sha256=HPGz7WfN6pcOAhxvqP1R2eGGnCR289WQkG89cDBYWWo,5088
+imgann/operators/__init__.py,sha256=hA4Sy3kErDddxMoHSZ5MZ5FYn1aBOMXTghVaJ8pkCCE,274
+imgann/operators/coco.py,sha256=vROtixrbjXru-hbMMTZUVVaIXk2LpnlwvuvkAtwhnOs,8107
+imgann/operators/csv.py,sha256=TbNvSOeEa3pTk82U6eT46Rr_HgbGRozVRirx6JLHeQc,6157
+imgann/operators/imgdata.py,sha256=DPQVy0OgRse0WdCOiIaYDmGeIgkfvzQSzLeyjbhiHes,6296
+imgann/operators/operator.py,sha256=XL3D8-Do36LIXi86b3vnUySyf0pMYHBy9b_XUWQxYts,6520
+imgann/operators/pascalvoc.py,sha256=WuloF3nsSVD1-v34pY_pOzW0VoKpDlw_gOy-dyNBgn8,8594
+imgann-0.7.2.dist-info/LICENSE,sha256=t-onCTCeb5KRZoFS2Socvu4uH8FQgmQsey76vp_PdCI,1063
+imgann-0.7.2.dist-info/METADATA,sha256=MdSl7PUNKrWBrybR20XL7cQRdZMnoa-WCbWLpXiBNzA,4566
+imgann-0.7.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+imgann-0.7.2.dist-info/top_level.txt,sha256=_O4ICl_Uud_zF-mIT8enlyQwg3pwBzhQZR60jxqbOmQ,24
+imgann-0.7.2.dist-info/RECORD,,
