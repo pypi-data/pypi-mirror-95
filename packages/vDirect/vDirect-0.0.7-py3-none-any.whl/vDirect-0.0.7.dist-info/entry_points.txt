@@ -1,0 +1,3 @@
+[console_scripts]
+vdirect = vDirect.main:main
+
