@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simutils/__init__.py
+simutils.egg-info/PKG-INFO
+simutils.egg-info/SOURCES.txt
+simutils.egg-info/dependency_links.txt
+simutils.egg-info/not-zip-safe
+simutils.egg-info/top_level.txt
