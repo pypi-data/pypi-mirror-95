@@ -1,0 +1,10 @@
+README.md
+setup.py
+hash_artifacts/__init__.py
+hash_artifacts/hash_artifacts.py
+hash_artifacts.egg-info/PKG-INFO
+hash_artifacts.egg-info/SOURCES.txt
+hash_artifacts.egg-info/dependency_links.txt
+hash_artifacts.egg-info/entry_points.txt
+hash_artifacts.egg-info/requires.txt
+hash_artifacts.egg-info/top_level.txt

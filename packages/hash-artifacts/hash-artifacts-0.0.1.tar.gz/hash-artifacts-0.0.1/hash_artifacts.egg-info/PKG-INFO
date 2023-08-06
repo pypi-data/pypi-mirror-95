@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: hash-artifacts
+Version: 0.0.1
+Summary: Compute a combined hash for the given artifact paths (that can include glob patterns)
+Home-page: https://gitlab.com/gherasmann/maak-menu/scripts/hash-artifacts
+Author: Gherasmann
+Author-email: developer@gherasmann.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
