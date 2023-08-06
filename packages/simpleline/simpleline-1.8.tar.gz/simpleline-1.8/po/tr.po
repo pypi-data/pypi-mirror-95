@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Oğuz Ersen <oguzersen@protonmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-15 14:39+0200\n"
+"PO-Revision-Date: 2020-06-16 17:40+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/python-"
+"simpleline/master/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.4\n"
+
+#: ../simpleline/render/adv_widgets.py:42
+msgid "Error"
+msgstr "Hata"
+
+#: ../simpleline/render/adv_widgets.py:51
+#, python-format
+msgid "Press %s to exit"
+msgstr "Çıkmak için %s tuşuna basın"
+
+#: ../simpleline/render/adv_widgets.py:70
+msgid "Password"
+msgstr "Parola"
+
+#: ../simpleline/render/adv_widgets.py:71
+msgid "Enter your passphrase"
+msgstr "Parolanızı girin"
+
+#: ../simpleline/render/adv_widgets.py:84
+msgid "Passphrase: "
+msgstr "Parola: "
+
+#: ../simpleline/render/adv_widgets.py:121
+msgid "Question"
+msgstr "Soru"
+
+#: ../simpleline/render/adv_widgets.py:131
+#, python-format
+msgid "Please respond '%(yes)s' or '%(no)s'"
+msgstr "Lütfen '%(yes)s' veya '%(no)s' olarak cevap verin"
+
+#: ../simpleline/render/adv_widgets.py:167
+msgid "Help"
+msgstr "Yardım"
+
+#: ../simpleline/render/adv_widgets.py:173
+msgid "The help is not available."
+msgstr "Yardım kullanılamıyor."
+
+#: ../simpleline/render/adv_widgets.py:186
+#, python-format
+msgid "Press %s to return"
+msgstr "Geri dönmek için %s tuşuna basın"
+
+#. Default message of the prompt
+#: ../simpleline/render/prompt.py:32
+msgid "Please make a selection from the above"
+msgstr "Lütfen yukarıdakilerden bir seçim yapın"
+
+#. String to use in a prompt when we want users to press the key ENTER.
+#: ../simpleline/render/prompt.py:35
+msgid "ENTER"
+msgstr "ENTER"
+
+#: ../simpleline/render/prompt.py:39
+msgid "to quit"
+msgstr "çıkmak için"
+
+#: ../simpleline/render/prompt.py:43
+msgid "to continue"
+msgstr "devam etmek için"
+
+#: ../simpleline/render/prompt.py:47
+msgid "to refresh"
+msgstr "yenilemek için"
+
+#: ../simpleline/render/prompt.py:51
+msgid "to help"
+msgstr "yardım için"

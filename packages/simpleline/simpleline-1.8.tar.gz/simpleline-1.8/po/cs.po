@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jiri Konecny <jkonecny@redhat.com>, 2016. #zanata
+# Jiri Konecny <jkonecny@redhat.com>, 2017. #zanata
+# Jiří Konečný <jkonecny@redhat.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-15 14:39+0200\n"
+"PO-Revision-Date: 2020-06-15 13:10+0000\n"
+"Last-Translator: Jiří Konečný <jkonecny@redhat.com>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/python-"
+"simpleline/master/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.0.4\n"
+
+#: ../simpleline/render/adv_widgets.py:42
+msgid "Error"
+msgstr "Chyba"
+
+#: ../simpleline/render/adv_widgets.py:51
+#, python-format
+msgid "Press %s to exit"
+msgstr "Pro ukončení stiskněte klávesu %s"
+
+#: ../simpleline/render/adv_widgets.py:70
+msgid "Password"
+msgstr "Heslo"
+
+#: ../simpleline/render/adv_widgets.py:71
+msgid "Enter your passphrase"
+msgstr "Zadejte heslo"
+
+#: ../simpleline/render/adv_widgets.py:84
+msgid "Passphrase: "
+msgstr "Heslo: "
+
+#: ../simpleline/render/adv_widgets.py:121
+msgid "Question"
+msgstr "Otázka"
+
+#: ../simpleline/render/adv_widgets.py:131
+#, python-format
+msgid "Please respond '%(yes)s' or '%(no)s'"
+msgstr "Prosím odpovězte '%(yes)s' nebo '%(no)s'"
+
+#: ../simpleline/render/adv_widgets.py:167
+msgid "Help"
+msgstr "Nápověda"
+
+#: ../simpleline/render/adv_widgets.py:173
+msgid "The help is not available."
+msgstr "Nápověda není k dispozici."
+
+#: ../simpleline/render/adv_widgets.py:186
+#, python-format
+msgid "Press %s to return"
+msgstr "Pro návrat stiskněte klávesu %s"
+
+#. Default message of the prompt
+#: ../simpleline/render/prompt.py:32
+msgid "Please make a selection from the above"
+msgstr "Vyberte prosím z výše uvedených možností"
+
+#. String to use in a prompt when we want users to press the key ENTER.
+#: ../simpleline/render/prompt.py:35
+msgid "ENTER"
+msgstr "ENTER"
+
+#: ../simpleline/render/prompt.py:39
+msgid "to quit"
+msgstr "pro ukončení"
+
+#: ../simpleline/render/prompt.py:43
+msgid "to continue"
+msgstr "pro pokračování"
+
+#: ../simpleline/render/prompt.py:47
+msgid "to refresh"
+msgstr "pro obnovení"
+
+#: ../simpleline/render/prompt.py:51
+msgid "to help"
+msgstr "pro nápovědu"

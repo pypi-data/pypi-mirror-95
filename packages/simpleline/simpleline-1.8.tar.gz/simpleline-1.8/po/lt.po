@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Jiri Konecny <jkonecny@redhat.com>, 2016. #zanata
+# Carlos Munoz <camunoz@redhat.com>, 2019. #zanata
+# Jiri Konecny <jkonecny@redhat.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-15 14:39+0200\n"
+"PO-Revision-Date: 2019-09-20 05:07+0000\n"
+"Last-Translator: Carlos Munoz <camunoz@redhat.com>\n"
+"Language-Team: Lithuanian\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../simpleline/render/adv_widgets.py:42
+msgid "Error"
+msgstr "Error"
+
+#: ../simpleline/render/adv_widgets.py:51
+#, python-format
+msgid "Press %s to exit"
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:70
+msgid "Password"
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:71
+msgid "Enter your passphrase"
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:84
+msgid "Passphrase: "
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:121
+msgid "Question"
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:131
+#, python-format
+msgid "Please respond '%(yes)s' or '%(no)s'"
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:167
+msgid "Help"
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:173
+msgid "The help is not available."
+msgstr ""
+
+#: ../simpleline/render/adv_widgets.py:186
+#, python-format
+msgid "Press %s to return"
+msgstr ""
+
+#. Default message of the prompt
+#: ../simpleline/render/prompt.py:32
+msgid "Please make a selection from the above"
+msgstr ""
+
+#. String to use in a prompt when we want users to press the key ENTER.
+#: ../simpleline/render/prompt.py:35
+msgid "ENTER"
+msgstr ""
+
+#: ../simpleline/render/prompt.py:39
+msgid "to quit"
+msgstr ""
+
+#: ../simpleline/render/prompt.py:43
+msgid "to continue"
+msgstr ""
+
+#: ../simpleline/render/prompt.py:47
+msgid "to refresh"
+msgstr ""
+
+#: ../simpleline/render/prompt.py:51
+msgid "to help"
+msgstr ""

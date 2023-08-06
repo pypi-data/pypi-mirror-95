@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Jiri Konecny <jkonecny@redhat.com>, 2016. #zanata
+# Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-15 14:39+0200\n"
+"PO-Revision-Date: 2017-09-12 11:33+0000\n"
+"Last-Translator: Máximo Castañeda Riloba <mcrcctm@gmail.com>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../simpleline/render/adv_widgets.py:42
+msgid "Error"
+msgstr "Error"
+
+#: ../simpleline/render/adv_widgets.py:51
+#, python-format
+msgid "Press %s to exit"
+msgstr "Pulse %s para salir"
+
+#: ../simpleline/render/adv_widgets.py:70
+msgid "Password"
+msgstr "Contraseña"
+
+#: ../simpleline/render/adv_widgets.py:71
+msgid "Enter your passphrase"
+msgstr "Introduzca su contraseña"
+
+#: ../simpleline/render/adv_widgets.py:84
+msgid "Passphrase: "
+msgstr "Contraseña: "
+
+#: ../simpleline/render/adv_widgets.py:121
+msgid "Question"
+msgstr "Pregunta"
+
+#: ../simpleline/render/adv_widgets.py:131
+#, python-format
+msgid "Please respond '%(yes)s' or '%(no)s'"
+msgstr "Responda «%(yes)s» o «%(no)s»"
+
+#: ../simpleline/render/adv_widgets.py:167
+msgid "Help"
+msgstr "Ayuda"
+
+#: ../simpleline/render/adv_widgets.py:173
+msgid "The help is not available."
+msgstr "La ayuda no está disponible."
+
+#: ../simpleline/render/adv_widgets.py:186
+#, python-format
+msgid "Press %s to return"
+msgstr "Pulse %s para volver"
+
+#. Default message of the prompt
+#: ../simpleline/render/prompt.py:32
+msgid "Please make a selection from the above"
+msgstr "Seleccione una opción de las anteriores"
+
+#. String to use in a prompt when we want users to press the key ENTER.
+#: ../simpleline/render/prompt.py:35
+msgid "ENTER"
+msgstr "INTRO"
+
+#: ../simpleline/render/prompt.py:39
+msgid "to quit"
+msgstr "para salir"
+
+#: ../simpleline/render/prompt.py:43
+msgid "to continue"
+msgstr "para contnuar"
+
+#: ../simpleline/render/prompt.py:47
+msgid "to refresh"
+msgstr "para actualizar"
+
+#: ../simpleline/render/prompt.py:51
+msgid "to help"
+msgstr "para ayuda"
