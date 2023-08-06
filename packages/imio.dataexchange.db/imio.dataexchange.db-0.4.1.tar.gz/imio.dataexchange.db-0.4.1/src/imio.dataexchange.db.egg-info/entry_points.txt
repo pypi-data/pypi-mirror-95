@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    init_db = imio.dataexchange.db.scripts.init_db:main
+    

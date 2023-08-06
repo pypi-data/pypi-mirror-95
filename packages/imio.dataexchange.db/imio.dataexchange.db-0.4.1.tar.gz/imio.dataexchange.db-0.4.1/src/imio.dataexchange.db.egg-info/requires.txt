@@ -1,0 +1,4 @@
+setuptools
+psycopg2
+SQLAlchemy
+zope.sqlalchemy
