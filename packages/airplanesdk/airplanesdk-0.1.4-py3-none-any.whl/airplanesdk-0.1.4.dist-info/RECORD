@@ -1,0 +1,7 @@
+airplane/__init__.py,sha256=YJvTFp5Ma2-9EKvYsxdTCj_w94izXrdyWCcqLTyUrAc,949
+airplane/client.py,sha256=bmCKA6BHjTSDv2Ujr20gPZljz9MpT6s6n9bkw82HfKI,2019
+airplane/exceptions.py,sha256=LrD3z6NQqiMmvlRHnVfwpdCiu4xj29DeCOpB6bIEJK4,95
+airplanesdk-0.1.4.dist-info/LICENSE,sha256=GeQKBs-tunE6GtVgcyGr_BrKuYzcvkRm39Me0AVuVZM,1080
+airplanesdk-0.1.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+airplanesdk-0.1.4.dist-info/METADATA,sha256=WmR9ETBKNgskeCTOACuFB3zzt3Pvm7K1NV1lZjtS7Ts,2060
+airplanesdk-0.1.4.dist-info/RECORD,,
