@@ -1,0 +1,6 @@
+[invenio_base.api_apps]
+cesnet_openid_remote = cesnet_openid_remote:CESNETOpenIDRemote
+
+[invenio_base.apps]
+cesnet_openid_remote = cesnet_openid_remote:CESNETOpenIDRemote
+
