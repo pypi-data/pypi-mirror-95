@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: kodland_sso_client
+Version: 0.2.0
+Summary: Django sso client package for Kodland
+Home-page: UNKNOWN
+Author: Dmitry Shoytov
+Author-email: shoytov@gmail.com
+License: UNKNOWN
+Description: Для работы пакета нужен установленный RabbitMQ.    
+        Обмен с сервером идет через очереди. 
+        
+        # После установки
+        
+        Добавить приложение в список INSTALLED_APPS проекта:
+        ```python
+        INSTALLED_APPS = [
+            ...
+            'sso_client'
+        ]
+        ```
+        
+        Выполнить миграции:
+        ```shell
+        python manage.py migrate
+        ```
+        
+        Добавить в settings.py следующие строки:
+        ```python
+        import os
+        import pika
+        ```
+        
+        ```python
+        # settings for sso login
+        AUTH_USER_MODEL = 'sso_client.OauthUser'
+        AUTHENTICATION_BACKENDS = ('sso_client.backends.TokenAuth', )
+        SSO_URL = '{адрес sso сервера}/sso/'
+        LOGIN_URL = '{адрес на sso сервере для логина}'
+        
+        # корневой домен для cookies
+        SESSION_COOKIE_DOMAIN = '.local'
+        
+        JWT_SECRET = os.environ.get('JWT_SECRET')
+        
+        RABBIT_PARAMS = {
+            'host': os.environ.get('RABBIT_HOST', 'localhost'),
+            'port': os.environ.get('RABBIT_PORT', 5672),
+            'credentials': pika.PlainCredentials(os.environ.get('RABBIT_USER', 'guest'), os.environ.get('RABBIT_PASSWORD', 'guest'))
+        }
+        ```
+        
+        Добавить в секцию middleware:
+        ```python
+        'sso_client.middleware.CheckTokenMiddleware',
+        'sso_client.middleware.AuthMiddleware'
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
