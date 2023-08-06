@@ -1,0 +1,14 @@
+cozify/Error.py,sha256=3AVIxpfMM7Tur4R7yVTkuB_EtSCGPaiI08dwiEYt7Z8,1494
+cozify/__init__.py,sha256=gCfzMhLTA5cL7eXcOlChBuYFkjCn8H1SjU3SRPiSnV8,23
+cozify/cloud.py,sha256=2fpa1lxbdyfWk72I_bBC74iJujmxA0wFQ4aGi-eCT6Q,13583
+cozify/cloud_api.py,sha256=jhuzOvZxUbwsSYczZ05_QdGlcOKTp3bXJOjmJ8X_Ifg,7528
+cozify/config.py,sha256=jo6NNtSCxVZwl_l06C8-m_6HumDcamyk2sp-bBjSlCA,4360
+cozify/hub.py,sha256=LcBK-jWHG7Fjx04pSyR56r9dqFABRaA2xZWh_jWO4GY,24689
+cozify/hub_api.py,sha256=W4Bom9kM3XBPv2TeT-NR4cJo-0AhCvTe-BK9CsWlfII,7343
+cozify/multisensor.py,sha256=yX91Hd4fxgw9leXUkRByARuXdj8iMoqaA5HbmRFQHEc,1176
+cozify-0.2.27.dist-info/DESCRIPTION.rst,sha256=yv7-EFdAvAW5O6lJlCuQdqBT3TvZKa7E-iHejxHfmAc,9922
+cozify-0.2.27.dist-info/METADATA,sha256=y8mEv0tsJRhexpp81s_gwt07BZLczOGTOC8k8lm5Ctk,10735
+cozify-0.2.27.dist-info/RECORD,,
+cozify-0.2.27.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+cozify-0.2.27.dist-info/metadata.json,sha256=yhPQplhtpo-SjOaGlic7ytn_t9_9yUSoLAC2yhALZk8,1014
+cozify-0.2.27.dist-info/top_level.txt,sha256=7XHdrm8tWSLr7tKqg32sBJNyhWZ-a291Uf16zIzclnk,7
