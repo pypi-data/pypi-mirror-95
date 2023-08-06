@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: opentelemetry-instrumentation-grpc
+Version: 0.18b0
+Summary: OpenTelemetry gRPC instrumentation
+Home-page: https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-grpc
+Author: OpenTelemetry Authors
+Author-email: cncf-opentelemetry-contributors@lists.cncf.io
+License: Apache-2.0
+Description: OpenTelemetry gRPC Integration
+        ==============================
+        
+        |pypi|
+        
+        .. |pypi| image:: https://badge.fury.io/py/opentelemetry-instrumentation-grpc.svg
+           :target: https://pypi.org/project/opentelemetry-instrumentation-grpc/
+        
+        Client and server interceptors for `gRPC Python`_.
+        
+        .. _gRPC Python: https://grpc.github.io/grpc/python/grpc.html
+        
+        Installation
+        ------------
+        
+        ::
+        
+             pip install opentelemetry-instrumentation-grpc
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Provides-Extra: test
