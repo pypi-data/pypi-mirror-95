@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+PyFuzzySet.egg-info/PKG-INFO
+PyFuzzySet.egg-info/SOURCES.txt
+PyFuzzySet.egg-info/dependency_links.txt
+PyFuzzySet.egg-info/top_level.txt
+src/Cluster.py
+src/__init__.py
