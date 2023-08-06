@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: foxtail-blog
+Version: 0.23.0
+Summary: A simple blog for Django 
+Home-page: https://github.com/dmptrluke/foxtail-blog
+Author: Luke Rogers
+Author-email: luke@dmptr.com
