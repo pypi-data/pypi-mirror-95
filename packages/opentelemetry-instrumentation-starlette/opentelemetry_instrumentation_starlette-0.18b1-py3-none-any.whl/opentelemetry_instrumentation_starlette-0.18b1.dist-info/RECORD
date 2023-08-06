@@ -1,0 +1,7 @@
+opentelemetry/instrumentation/starlette/__init__.py,sha256=7t8Xy-PcuOQHoufx59P5865BtrvvKC8B25tDO-kDVc0,2870
+opentelemetry/instrumentation/starlette/version.py,sha256=Sydkw0546EgaXgABaZyVmr1dFQY-Y2yLL2cTeexeoos,608
+opentelemetry_instrumentation_starlette-0.18b1.dist-info/METADATA,sha256=wJOi1DM7hacWn_85i1xGg_yggO5SxrwNXjs3DAtTVfw,2749
+opentelemetry_instrumentation_starlette-0.18b1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_starlette-0.18b1.dist-info/entry_points.txt,sha256=YJ63F_BeV3tSG4THlShXPRwTVCb3BKqvxbkN-CY_ncU,104
+opentelemetry_instrumentation_starlette-0.18b1.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_starlette-0.18b1.dist-info/RECORD,,
