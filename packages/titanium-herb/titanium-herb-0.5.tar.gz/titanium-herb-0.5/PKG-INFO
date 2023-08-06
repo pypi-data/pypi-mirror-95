@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: titanium-herb
+Version: 0.5
+Summary: Test package
+Home-page: https://github.com/schibsted/
+Author: test
+Author-email: stian.kristoffersen@schibsted.com
+License: MIT
+Description: UNKNOWN
+Keywords: test
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
