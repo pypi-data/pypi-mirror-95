@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nc_scp_api
+Version: 0.0.4
+Summary: API wrapper for the netcup scp api
+Home-page: https://github.com/jdenda/nc_scp_api
+Author: Janneck Denda
+Author-email: j@denda.dev
+License: UNKNOWN
+Description: # nc_scp_api
+         
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
