@@ -1,0 +1,15 @@
+MANIFEST.in
+README.txt
+changelog.txt
+license.txt
+requirements.txt
+setup.py
+wallstreetBetsAnalyser/__init__.py
+wallstreetBetsAnalyser/exclusions.py
+wallstreetBetsAnalyser/reddit.py
+wallstreetBetsAnalyser/tickers.py
+wallstreetBetsAnalyser.egg-info/PKG-INFO
+wallstreetBetsAnalyser.egg-info/SOURCES.txt
+wallstreetBetsAnalyser.egg-info/dependency_links.txt
+wallstreetBetsAnalyser.egg-info/requires.txt
+wallstreetBetsAnalyser.egg-info/top_level.txt
