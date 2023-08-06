@@ -1,0 +1,2 @@
+bitarray-hardbyte>=1.5.0
+pyyaml>=3.10
