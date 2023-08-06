@@ -1,0 +1,3 @@
+[console_scripts]
+alfonscli = alfonscli.cli:main
+

@@ -1,0 +1,17 @@
+README.md
+setup.py
+AlfonsCLI.egg-info/PKG-INFO
+AlfonsCLI.egg-info/SOURCES.txt
+AlfonsCLI.egg-info/dependency_links.txt
+AlfonsCLI.egg-info/entry_points.txt
+AlfonsCLI.egg-info/requires.txt
+AlfonsCLI.egg-info/top_level.txt
+alfonscli/__init__.py
+alfonscli/__main__.py
+alfonscli/cli.py
+alfonscli.egg-info/PKG-INFO
+alfonscli.egg-info/SOURCES.txt
+alfonscli.egg-info/dependency_links.txt
+alfonscli.egg-info/entry_points.txt
+alfonscli.egg-info/requires.txt
+alfonscli.egg-info/top_level.txt
