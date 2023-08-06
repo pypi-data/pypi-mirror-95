@@ -1,0 +1,10 @@
+*.egg
+*.pyc
+*.DS_Store
+*-checkpoint.ipynb
+*/dist/
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
+dist/*
+sc_dandelion.egg-info/*
