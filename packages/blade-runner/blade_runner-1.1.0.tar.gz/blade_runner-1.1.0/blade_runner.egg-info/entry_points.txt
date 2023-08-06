@@ -1,0 +1,3 @@
+[console_scripts]
+blade-runner = blade_runner.__init__:main
+
