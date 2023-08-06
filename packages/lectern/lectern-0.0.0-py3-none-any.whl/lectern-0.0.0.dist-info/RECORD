@@ -1,0 +1,8 @@
+lectern/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+lectern/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lectern/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lectern/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lectern-0.0.0.dist-info/LICENSE,sha256=4gLu2TrJPEkFTd4RV8wz0Lncyd4YPBpVUZcolDL6588,1073
+lectern-0.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+lectern-0.0.0.dist-info/METADATA,sha256=0Qnw6KTF3W3e2nxzxKy9fkuTCpjJdgWT9E5EOWNm2vw,9996
+lectern-0.0.0.dist-info/RECORD,,
