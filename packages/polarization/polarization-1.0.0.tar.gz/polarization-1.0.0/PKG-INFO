@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: polarization
+Version: 1.0.0
+Summary: Simple Jones vector and Jones matrices manipulation
+Home-page: https://github.com/DCC-Lab/Polarization
+Author: Daniel Cote
+Author-email: dccote@cervo.ulaval.ca
+License: MIT
+Description: # Polarization
+         A simple module to manage optical polarization with Jones and Stokes vectors.
+        
+        
+Keywords: jones vector matrix polarization optics light
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
