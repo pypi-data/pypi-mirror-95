@@ -1,0 +1,10 @@
+torchserve_dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchserve_dashboard/api.py,sha256=btRnhS5-2zdF1M5G6NwRT1HWPOHVxKqoxDITomYg-YY,3570
+torchserve_dashboard/cli.py,sha256=M3NoCpwhORLWK3WaJCcA2Ay2Yd9DhJg_Re006LmMpZc,465
+torchserve_dashboard/dash.py,sha256=MKrJHhOvZlAL-V0GrupwY6B44YXH19zpewZbftwcc1I,8952
+torchserve_dashboard-0.2.4.dist-info/LICENSE,sha256=F1rszopFsQX3ZKz67vBe_BeWbyoDBeWza176dbaJ9VQ,585
+torchserve_dashboard-0.2.4.dist-info/METADATA,sha256=jTKDAXcA-4ncYgm-iFjC7fJQH4Oxdjo-cEnaHYDvUoE,964
+torchserve_dashboard-0.2.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+torchserve_dashboard-0.2.4.dist-info/entry_points.txt,sha256=IM2aBR9TsGI-gjajh-9eJMSiIMJ4nKJhHxkGMoGt7xs,94
+torchserve_dashboard-0.2.4.dist-info/top_level.txt,sha256=4OWyxeyUg7VcMcN2A-2V18l71fuJZ_odxB-UYKAazhQ,21
+torchserve_dashboard-0.2.4.dist-info/RECORD,,

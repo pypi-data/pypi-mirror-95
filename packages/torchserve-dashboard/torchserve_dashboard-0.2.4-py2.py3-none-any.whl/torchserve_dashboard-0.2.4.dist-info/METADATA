@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: torchserve-dashboard
+Version: 0.2.4
+Summary: Torchserve dashboard using Streamlit
+Home-page: https://github.com/cceyda/torchserve-dashboard
+Author: Ceyda Cinarel
+Author-email: snu.ceyda@gmail.com
+License: Apache Software License 2.0
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: streamlit (>=0.76)
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: httpx (>=0.16.0)
+
+
+Torchserve Dashboard using streamlit
+
+
