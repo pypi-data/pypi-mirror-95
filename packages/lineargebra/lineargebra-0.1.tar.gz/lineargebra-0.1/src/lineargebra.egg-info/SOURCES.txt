@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/lineargebra.py
+src/lineargebra.egg-info/PKG-INFO
+src/lineargebra.egg-info/SOURCES.txt
+src/lineargebra.egg-info/dependency_links.txt
+src/lineargebra.egg-info/top_level.txt
