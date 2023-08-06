@@ -1,0 +1,3 @@
+[console_scripts]
+polyglots = polyglots.__main__:main
+
