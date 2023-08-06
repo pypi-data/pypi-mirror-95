@@ -1,0 +1,8 @@
+README.md
+setup.py
+ScrImports.egg-info/PKG-INFO
+ScrImports.egg-info/SOURCES.txt
+ScrImports.egg-info/dependency_links.txt
+ScrImports.egg-info/top_level.txt
+imports/__init__.py
+imports/imports.py
