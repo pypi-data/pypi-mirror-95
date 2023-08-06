@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: quant-framework
+Version: 0.0.2
+Summary: A basic framework for backtesting and going live with quant strategies
+Home-page: https://github.com/brendangeck/quant-framework
+Author: Brendan Geck
+Author-email: bpgeck@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
