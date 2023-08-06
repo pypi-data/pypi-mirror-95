@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: hi-pypi-practice
+Version: 0.0.2
+Summary: A practice package for me.
+Home-page: UNKNOWN
+Author: John Isaac Delgado
+Author-email: dev.isaac23@gmail.com
+License: MIT
+Description: # PyPi Practice
+        
+        This is a repository mainly for learning how to publish packages that other users can install onto their repo.
+        
+        Change Log
+        ==========
+        
+        0.0.1(02/22/21)
+        ---------------
+        -First Release
+Keywords: hi
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
