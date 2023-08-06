@@ -1,0 +1,3 @@
+[console_scripts]
+biome = biome.text.cli:main
+
