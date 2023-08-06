@@ -1,0 +1,12 @@
+sdk_dados_abertos_camara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk_dados_abertos_camara/api.py,sha256=bkQ2ooMIajAm4wt3NFKWi4hz7cLCaQZgonTLlMD7YmA,1224
+sdk_dados_abertos_camara/endpoints.py,sha256=K6fWA7Jd6dowmKVw4ACbaIjoW0-6n7pXMPoL1WPSgzA,805
+sdk_dados_abertos_camara/exceptions.py,sha256=Y9pZ0B_U3vMneCfJ7gGKvlbUFvfeibhvt0Apo2Nx0zY,611
+sdk_dados_abertos_camara/models.py,sha256=OR_Z_8QU787YR7-MrCYbdiD77qM1RRRwOo7pkzbq04Y,11498
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_models.py,sha256=HlpgfWnb3rpdq4GGHpb5j4kdLMMDsnOMiKJ2zoLZAXg,1021
+sdk_dados_abertos_camara-0.0.7.dist-info/LICENSE,sha256=uZvRzxRXSZPDA5JCCEYMTnGzziRdu1OWZKYRNcwdGwk,1084
+sdk_dados_abertos_camara-0.0.7.dist-info/METADATA,sha256=B7eDGs_JGQzkj_KSHFg77aa9s3_ggh7v78NFltk3CVo,896
+sdk_dados_abertos_camara-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sdk_dados_abertos_camara-0.0.7.dist-info/top_level.txt,sha256=vLMi_0DfznE-G1jmfLr5JGxCa7kRuec1BWkUSBQEOhk,31
+sdk_dados_abertos_camara-0.0.7.dist-info/RECORD,,
