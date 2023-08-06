@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/dovecot_archive.py
+src/dovecot_archive.egg-info/PKG-INFO
+src/dovecot_archive.egg-info/SOURCES.txt
+src/dovecot_archive.egg-info/dependency_links.txt
+src/dovecot_archive.egg-info/entry_points.txt
+src/dovecot_archive.egg-info/requires.txt
+src/dovecot_archive.egg-info/top_level.txt
