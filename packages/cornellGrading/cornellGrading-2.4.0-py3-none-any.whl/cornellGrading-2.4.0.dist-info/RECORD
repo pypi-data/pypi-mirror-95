@@ -1,0 +1,11 @@
+cornellGrading/__init__.py,sha256=K3ZVpvuogH46FnxNkfhmQvEncITunPE-F8OHFjvFZyE,136
+cornellGrading/canvastex.py,sha256=tbqgJSk1JXp32V1B3SPrGDAZt3lOin-xK7NNvxH2-hI,1226
+cornellGrading/cornellGrading.py,sha256=9TKXAXnjA9OwzDwk3Fspb7HQ8Q47IHBnBfAqv4r7Cto,65193
+cornellGrading/cornellQualtrics.py,sha256=zV9feU_SNDur1oeJJCBjLRu4u4AMctr8nUTU23PYFUs,24661
+cornellGrading/matlabgrader.py,sha256=b-7AJDNYsMjjC5Yp8SkMX8IXAVAg05t-NuOekvaK0Z8,1080
+cornellGrading/setupSelfGrading.py,sha256=ecDKxpZr47Tc-U-o0KWMd95eS6RhXW4bGLEIQaxc0IE,975
+cornellGrading-2.4.0.dist-info/LICENSE,sha256=euHkgaAYHv_3Ez4CSRXN_CJ9hbj_qDF3dATZoGyD7zs,1098
+cornellGrading-2.4.0.dist-info/METADATA,sha256=6s0hwq9RLwZsB_RXXcfXc1h7NmZaeOeWvZdCTN-fn_Q,2910
+cornellGrading-2.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cornellGrading-2.4.0.dist-info/top_level.txt,sha256=B_LPnm-XGElx84wZ_yS7vVbNlH-3XG70UU4Q_XRc_yw,15
+cornellGrading-2.4.0.dist-info/RECORD,,
