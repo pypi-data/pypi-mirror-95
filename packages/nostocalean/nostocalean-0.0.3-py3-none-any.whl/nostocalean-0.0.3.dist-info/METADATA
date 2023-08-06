@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nostocalean
+Version: 0.0.3
+Summary: Custom utility functions.
+Home-page: https://github.com/suproteemsarkar/nostocalean
+Author: Suproteem Sarkar
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+# Nostocalean
+
+Custom utility functions.
+
+To sample a utility function, run
+
+```python
+from nostocalean.utility_functions import get_utility_function
+get_utility_function()
+```
+
+
