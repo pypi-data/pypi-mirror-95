@@ -1,0 +1,7 @@
+README.md
+setup.py
+psox.egg-info/PKG-INFO
+psox.egg-info/SOURCES.txt
+psox.egg-info/dependency_links.txt
+psox.egg-info/requires.txt
+psox.egg-info/top_level.txt

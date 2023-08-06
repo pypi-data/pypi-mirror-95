@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: psox
+Version: 0.0.1a1
+Summary: Sound processing toolkit with Python
+Home-page: https://github.com/GaoangLiu/pspt
+Author: SLP
+Author-email: byteleap@gmail.com
+License: UNKNOWN
+Description: `psox` is a cross-platform (Linux, MacOS X, etc.) command line utility that can convert various formats of computer audio files in to other formats. It can also apply various effects to these sound files, and, as an added bonus, SoX can play and record audio files on most platforms.
+        
+        ## Usage
+        ```python
+        import psox
+        ...
+        ```
+        
+        ## Install
+        `python3 -m pip install psox`
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
