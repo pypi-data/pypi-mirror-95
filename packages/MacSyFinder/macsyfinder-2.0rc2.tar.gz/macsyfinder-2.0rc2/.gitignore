@@ -1,0 +1,81 @@
+.eggs
+
+######################
+# Logs and databases #
+######################
+*\.log
+.DS_Store
+
+####################
+# Eclipse metadata_path #
+####################
+\.project
+\.pydevproject
+\.settings/
+
+#############
+# vim files #
+#############
+*\.swp
+*~
+\#*\#
+
+################# 
+# pycharm files #
+#################
+\.idea
+
+##########################
+# Python complied source #
+##########################
+*\.pyc
+*\.pyo
+build/
+dist/
+doc/_build/
+
+###########################
+# coverage files
+##########################
+htmlcov/
+.coverage
+coverage_html/
+
+###################################
+# MacsyFinder results directories #
+###################################
+bin/macsyfinder-*
+bin/log*
+bin/prru_psae_acav.*
+bin/script.csh
+log*
+test/datatest/DEF_svg/
+bin/formatdb.err
+macsypy/*_svg
+macsyfinder-*/
+macsyfinder.egg-info/
+
+####################
+# MacSyFinder data #
+####################
+data/macsyfinder/models/TXSS/*
+data/models/TXSScan
+data/base/*
+sandbox/
+
+##############################
+# MacsyFinder generated file #
+##############################
+MANIFEST
+
+uninstall.cfg
+uninstall_files
+
+*\.idx
+*\.phr
+*\.pin
+*\.pog
+*\.psd
+*\.psi
+*\.psq
+*\formatdb\.err

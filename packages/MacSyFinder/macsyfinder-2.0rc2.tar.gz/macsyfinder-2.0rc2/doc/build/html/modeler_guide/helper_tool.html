@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Helper Tool &mdash; MacSyFinder 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MacSyFinder
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">User Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Modeler Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/index.html">Developer Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MacSyFinder</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Helper Tool</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modeler_guide/helper_tool.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="helper-tool">
+<span id="id1"></span><h1>Helper Tool<a class="headerlink" href="#helper-tool" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="macsyprofile">
+<h2>macsyprofile<a class="headerlink" href="#macsyprofile" title="Permalink to this headline">¶</a></h2>
+<p>To help to develop new model we provide a tool <cite>macsyprofile</cite> which is used as post treatement.
+It is run on previous macsyfinder analysis, it extract from raw hmmer file the hits and compute the profile coverage.
+It write down the results in a file in <cite>tsv</cite> format.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>usage: macsyprofile [-h] [--coverage-profile COVERAGE_PROFILE]
+                    [--i-evalue-sel I_EVALUE_SEL]
+                    [--best-hits {score,i_eval,profile_coverage}] [-p PATTERN]
+                    [-o OUT] [-f] [-V] [-v] [--mute]
+                    previous_run
+
+     *            *               *                   * *       *
+*           *               *   *   *  *    **                *
+  **     *    *   *  *     *                    *               *
+     __  __    *       ____ *      ____        **   __ _ _  *
+    |  \/  | __ _  ___/ ___| _   _|  _ \ _ __ ___  / _(_) | ___
+    | |\/| |/ _` |/ __\___ \| | | | |_) | &#39;__/ _ \| |_| | |/ _ \
+    | |  | | (_| | (__ ___) | |_| |  __/| | | (_) |  _| | |  __/
+    |_|  |_|\__,_|\___|____/ \__, |_|   |_|  \___/|_| |_|_|\___|
+            *                |___/    *                   *
+ *      *   * *     *   **         *   *  *           *
+  *      *         *        *    *              *
+             *                           *  *           *     *
+
+MacSyData - MacSyFinder Data Management
+
+positional arguments:
+  previous_run          The path to a macsyfinder results directory.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --coverage-profile COVERAGE_PROFILE
+                        Minimal profile coverage required for the hit
+                        alignment with the profile to allow the hit selection
+                        for systems detection. (default no threshold)
+  --i-evalue-sel I_EVALUE_SEL
+                        Maximal independent e-value for Hmmer hits to be
+                        selected for systems detection. (default: no selection
+                        based on i-evalue)
+  --best-hits {score,i_eval,profile_coverage}
+                        If several hits match the same replicon, same gene.
+                        Select only the best one (based on best &#39;score&#39; or
+                        &#39;i_evalue&#39; or &#39;profile_coverage&#39;)
+  -p PATTERN, --pattern PATTERN
+                        pattern to filter the hmm files to analyse.
+  -o OUT, --out OUT     the path to a file to write results.
+  -f, --force           force to write output even the file already exists
+                        (overwrite it).
+  -V, --version         show program&#39;s version number and exit
+  -v, --verbosity       Increases the verbosity level. There are 4 levels:
+                        Error messages (default), Warning (-v), Info (-vv) and
+                        Debug.(-vvv)
+  --mute                Mute the log on stdout. (continue to log on
+                        macsyfinder.log) (default: False)
+
+For more details, visit the MacSyFinder website and see the MacSyFinder documentation.
+</pre></div>
+</div>
+<div class="section" id="pattern-example">
+<h3>–pattern example<a class="headerlink" href="#pattern-example" title="Permalink to this headline">¶</a></h3>
+<p>If in previous_run hmmer_results you have the following files</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>previous_run/hmmer_results/Archaeal-T4P_arCOG11238.search_hmm.out
+previous_run/hmmer_results/Archaeal-T4P_arCOG11520.search_hmm.out
+previous_run/hmmer_results/Archaeal-T4P_arCOG11777.search_hmm.out
+previous_run/hmmer_results/Archaeal-T4P_arCOG11778.search_hmm.out
+previous_run/hmmer_results/Archaeal-T4P_arCOG11936.search_hmm.out
+previous_run/hmmer_results/Archaeal-T4P_arCOG14515.search_hmm.out
+previous_run/hmmer_results/ComM_comC.search_hmm.out
+previous_run/hmmer_results/ComM_comEB.search_hmm.out
+previous_run/hmmer_results/ComM_comEC.search_hmm.out
+previous_run/hmmer_results/ComM_comGA.search_hmm.out
+previous_run/hmmer_results/ComM_comGB.search_hmm.out
+previous_run/hmmer_results/ComM_comGC.search_hmm.out
+previous_run/hmmer_results/ComM_comGD.search_hmm.out
+previous_run/hmmer_results/ComM_comGE.search_hmm.out
+previous_run/hmmer_results/MSH_mshA.search_hmm.out
+previous_run/hmmer_results/MSH_mshB.search_hmm.out
+previous_run/hmmer_results/MSH_mshC.search_hmm.out
+</pre></div>
+</div>
+<p>But you are interested only in ComM family genes, you can specify the option –pattern ‘ComM*’.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>previous_run/hmmer_results/ComM_comC.search_hmm.out
+previous_run/hmmer_results/ComM_comEB.search_hmm.out
+previous_run/hmmer_results/ComM_comEC.search_hmm.out
+previous_run/hmmer_results/ComM_comGA.search_hmm.out
+previous_run/hmmer_results/ComM_comGB.search_hmm.out
+previous_run/hmmer_results/ComM_comGC.search_hmm.out
+previous_run/hmmer_results/ComM_comGD.search_hmm.out
+previous_run/hmmer_results/ComM_comGE.search_hmm.out
+</pre></div>
+</div>
+<p>The patterns availables are the <cite>glob</cite> patterns (the jokers usable with unix <cite>ls</cite> command )</p>
+<p>The <cite>macsyprofile</cite> output is a tabulated separated values (<cite>.tsv</cite>) files
+The first lines which are comments (starting with ‘#’) display the tool version
+and the complete command line used. Then follow the results.
+The first line of results is a header line.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># macsyprofile 2.0rc1
+# macsyprofile --pattern ComM* --coverage-profile 0.5 macsyfinder-20201202_15-17-46/
+hit_id  replicon_name   position_hit    hit_sequence_length     gene_name       i_eval  score   profile_coverage        sequence_coverage       begin   end
+GCF_000006745_021980    GCF_000006745   2198    291     ComM_comC       2.500e-40       136.400 0.942   0.708   62      267
+GCF_000006745_007650    GCF_000006745   765     253     ComM_comC       9.600e-31       105.100 0.937   0.798   43      244
+...
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This file can be easily parsed using the Python <a class="reference external" href="https://pandas.pydata.org/">pandas</a> library.</p>
+<p>import pandas as pd</p>
+<p>systems = pd.read_cvs(“path/to/hmm_coverage.tsv”, sep=’t’, comment=’#’)</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2021, &#39;Institut Pasteur (Paris), CNRS&#39;
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+<a href="https://github.com/gem-pasteur/macsyfinder">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+         alt="Fork me on GitHub"
+         data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+</a>
+
+
+
+</body>
+</html>
