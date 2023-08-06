@@ -1,0 +1,7 @@
+README.md
+setup.py
+tales/__init__.py
+tales.egg-info/PKG-INFO
+tales.egg-info/SOURCES.txt
+tales.egg-info/dependency_links.txt
+tales.egg-info/top_level.txt
