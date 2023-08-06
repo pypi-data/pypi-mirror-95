@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "jackie"
+version = "0.1.0"
+description = "A minimal ASGI web framework."
+authors = ["Daan van der Kallen <mail@daanvdk.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+asgiref = "^3.3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.1"
+pytest-asyncio = "^0.14.0"
+flake8 = "^3.8.4"
+pytest-cov = "^2.11.0"
+pytest-flake8 = "^1.0.7"
+mkdocs = "^1.1.2"
+mkdocs-material = "^6.2.8"
+
+[tool.pytest.ini_options]
+addopts = "--flake8 --cov --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["jackie"]
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
