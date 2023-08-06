@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: licel_alice_api
+Version: 0.1.0
+Summary: Alice API
+Home-page: UNKNOWN
+Author: Licel
+License: MIT
+Description: # Alice API
+        
+        ## Usage
+        
+        ```python
+        # 1. Import `AliceAPI` and authorize
+        
+        from licel_alice_api import AliceAPI, ListParams, SortParams, PageParams, SortDirection
+        
+        client = AliceAPI(username="my_username", password="my_password")
+        
+        # 2. Use methods for get data
+        
+        res = client.get_pkp_incident_list()
+        
+        # 3. Client returns typed result.
+        # For getting raw data you can use property `raw`
+        
+        print(res.raw)
+        print(res.list.raw)
+        print(res.list[0].raw)
+        
+        # 4. Sort, paginate and search
+        
+        res = client.get_pkp_incident_list(
+            params=ListParams(
+                sort=SortParams("time", SortDirection.DESC), # sort descendant by time
+                page=PageParams(1, 50), # get get first page per 50 elements on page
+                query="$fingerprint ~ 'Android' and ($type='PKP' or $id=123)"
+                # search incidents where fingerprint contain 'Android' and incident is HPKP or id is 123
+            )
+        )
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
