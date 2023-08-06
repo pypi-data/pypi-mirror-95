@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+lazyprofiler/GetStats.py
+lazyprofiler/__init__.py
+lazyprofiler/__main__.py
+lazyprofiler/_version.py
+lazyprofiler/cli.py
+lazyprofiler.egg-info/PKG-INFO
+lazyprofiler.egg-info/SOURCES.txt
+lazyprofiler.egg-info/dependency_links.txt
+lazyprofiler.egg-info/entry_points.txt
+lazyprofiler.egg-info/top_level.txt

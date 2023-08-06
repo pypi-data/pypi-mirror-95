@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: lazyprofiler
+Version: 0.1.1
+Summary: Lazy Profiler is a simple utility to collect CPU, GPU, RAM and GPU Memorystats while the program is running.
+Home-page: https://github.com/shankarpandala/lazyprofiler
+Author: Shankar Rao Pandala
+Author-email: shankar.pandala@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: lazyprofiler
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
