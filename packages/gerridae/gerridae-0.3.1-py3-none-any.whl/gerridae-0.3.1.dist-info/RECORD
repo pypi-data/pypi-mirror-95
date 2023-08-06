@@ -1,0 +1,17 @@
+gerridae/__init__.py,sha256=-JvYk6iG6FTUmeMXdQ5A8ECp-MoeAELD_QT18LqiCVE,102
+gerridae/exceptions.py,sha256=1_kwB5sTB6d4frx67hBFBodCtzreyrVejWUa1UBrOSw,45
+gerridae/field.py,sha256=zU-NpXvvzAcWJTC9mH3ejl-EI14EGPEQyME2sKY6wCg,3298
+gerridae/item.py,sha256=W-J-grtc4i4e1IkOQxqtSkpdUL3hm8N0MbLtx5GiXy8,2175
+gerridae/log.py,sha256=MgMO9U2J3MQidGa4PChwH3gOUdIJCExt5mWk90nqFcQ,288
+gerridae/middleware.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gerridae/request.py,sha256=wIlT7lUZ6VYYTX-tA0RnSEMvdIFSMjy63MHaq0unIpk,1466
+gerridae/response.py,sha256=Z5hGHmtYk41wJmI8AxtmPTnj1L6y7q5IVYvgpwRCejY,758
+gerridae/spider.py,sha256=EiApWJBi4iw2jFODLt0NhxQHnmUWcigu5wV3kysdc0E,1771
+gerridae/utils.py,sha256=pGn_t3_CacYHgHbetEwZLgXL-IUmzPOsXQpNXXFVLsQ,39
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_regex_field.py,sha256=6M9PmRUvZoqzqTnE-vssNyG-zVqO2QqPvGMgebONcD0,1305
+tests/test_spider.py,sha256=B_bsyX2KLXzKCBLA16qqMEttKe-2HqmdgBY1qAo89JA,2562
+gerridae-0.3.1.dist-info/METADATA,sha256=WvCUEGcrtdDwHUtaD2tZPHjmPF2eSX2UnGrZZpInIV0,929
+gerridae-0.3.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gerridae-0.3.1.dist-info/top_level.txt,sha256=1C7GmMfBhSLlARgdmg0RetzOWJMbFMhwtlGwcNdCxWg,15
+gerridae-0.3.1.dist-info/RECORD,,
