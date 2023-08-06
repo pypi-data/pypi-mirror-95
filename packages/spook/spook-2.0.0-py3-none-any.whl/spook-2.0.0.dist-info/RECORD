@@ -1,0 +1,11 @@
+spook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spook/managers.py,sha256=bigTud3NJLPDHI_LAAx50SZj9f2W-3SoT4o2C1A_Ibo,2261
+spook/resources.py,sha256=mprCklLjLh2eFfH-mbKxD6HH2Xm6h7lUglHjCW6Nt3g,6115
+spook/responses.py,sha256=vfBZngwWc2SNMEnsH-ZTShwuiA5gHVD3_f9krJPCn-8,139
+spook/settings.py,sha256=ogXrRFrmhlr-XwyLr6yN2pP5uvthjke5K9suzNwWCeA,276
+spook/utils.py,sha256=5UOI6gHb3jRbO0HZfHAAicNxSbVsOdx_nIwcfRxCcXA,437
+spook/views.py,sha256=SXVzzkMp2sQ5gmmEW5fW7EzlHQPDY-VLubPOW6S76gc,2610
+spook-2.0.0.dist-info/LICENSE,sha256=CVqU8pNGZH8zjhmZ4l-GMR-rh-vCyhLAOc2hU2H04cI,1088
+spook-2.0.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+spook-2.0.0.dist-info/METADATA,sha256=FnDMEk3Y2L_DOaLZtFxo7fhSV1ktTFfOjSXKxlvClBI,1891
+spook-2.0.0.dist-info/RECORD,,
