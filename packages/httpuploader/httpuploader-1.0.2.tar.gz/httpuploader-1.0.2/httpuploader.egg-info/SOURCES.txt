@@ -1,0 +1,8 @@
+README.rst
+httpuploader.py
+setup.py
+httpuploader.egg-info/PKG-INFO
+httpuploader.egg-info/SOURCES.txt
+httpuploader.egg-info/dependency_links.txt
+httpuploader.egg-info/entry_points.txt
+httpuploader.egg-info/top_level.txt

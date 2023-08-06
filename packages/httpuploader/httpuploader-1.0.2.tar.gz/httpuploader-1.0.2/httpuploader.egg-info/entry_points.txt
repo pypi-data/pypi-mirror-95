@@ -1,0 +1,3 @@
+[console_scripts]
+httpuploader = httpuploader:main
+
