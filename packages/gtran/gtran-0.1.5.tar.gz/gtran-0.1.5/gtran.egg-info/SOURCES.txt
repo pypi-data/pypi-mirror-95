@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+gtran/__init__.py
+gtran/gtran.py
+gtran.egg-info/PKG-INFO
+gtran.egg-info/SOURCES.txt
+gtran.egg-info/dependency_links.txt
+gtran.egg-info/requires.txt
+gtran.egg-info/top_level.txt
