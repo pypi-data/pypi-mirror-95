@@ -1,0 +1,21 @@
+LICENSE,sha256=yyul12pOhhDZ6YJbQgt1StphNDp9eAvF9bjSBrFaPWQ,1066
+README.rst,sha256=lxNXhp0-d-GSPOtdvsmGYjs1aQZIjugQlmmiqSFTMhQ,4039
+scimschema/VERSION,sha256=EmXqhrTvimVcIAlbpJdqeR5S8WO-R-6DKh0aVYMEa2A,6
+scimschema/__init__.py,sha256=jt32bebJNTcPRuivoLTF7QaikBeUogdvRm4zCr9qvuw,726
+scimschema/_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scimschema/_model/attribute.py,sha256=0-77Fb-SEJjZ_VstK2MruS0zA4ZCF_HFJ7ZK8gWdaxU,23257
+scimschema/_model/model.py,sha256=UVWGVOOdldMR0D4DyZv2tdaB0uVsrxpC8YfTfzzjAsg,5165
+scimschema/_model/schema_response.py,sha256=M6pD7gQJqBfOc55ZNHDRvsK3gZJiuDKoygG9BdfnH1U,2243
+scimschema/_model/scim_exceptions.py,sha256=hBHal_j9PXTze7wf0tf0r_RqVuYzwv5brYKPMcKmmZI,4190
+scimschema/core_schemas/SCIM Core2 enterpriseuser spec.json,sha256=Xd0DxhZVbkyNsCjydNnRIjBzOLG0vafLItGLjHPVZlE,4169
+scimschema/core_schemas/SCIM Core2 error spec.json,sha256=DdvD5V9yzgkHvvTZbNWYowuEbJ9f0uAmhfYxIlyJ1-8,1225
+scimschema/core_schemas/SCIM Core2 group spec.json,sha256=0lWE5vYovWToDuxzsHjUYWPg05d_UGsY5ASSTljlzmk,2603
+scimschema/core_schemas/SCIM Core2 resourcetype spec.json,sha256=TrcwzKGxr6VCacghmPagqWb_wSXXOJc46PxnlD1PI2Q,3212
+scimschema/core_schemas/SCIM Core2 schema spec.json,sha256=gaqh_1kKP3pYhrw_NE0XeEWT8DykXj9JVFrA3ZSTCC8,11446
+scimschema/core_schemas/SCIM Core2 serviceproviderconfig spec.json,sha256=v9TmxLOZlKNmlEuFf0_JD5C_1LjfNoI59AGKxHpLKfc,6570
+scimschema/core_schemas/SCIM Core2 user spec.json,sha256=YkfkW8rjU2jYo32AAGiRE8x_D7jfEixvuE6cMZrdi5A,33035
+scimschema/core_schemas/__init__.py,sha256=L2lo4jHNCBL47vXR0voKtsMPgnYV7Wn1tCkkNaO4ICI,1529
+scimschema-0.2.89.dist-info/LICENSE,sha256=yyul12pOhhDZ6YJbQgt1StphNDp9eAvF9bjSBrFaPWQ,1066
+scimschema-0.2.89.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+scimschema-0.2.89.dist-info/METADATA,sha256=tHPSq7KihfVMzof_5ZNksDfwclUrlvKalFLUqWNwvtQ,740
+scimschema-0.2.89.dist-info/RECORD,,
