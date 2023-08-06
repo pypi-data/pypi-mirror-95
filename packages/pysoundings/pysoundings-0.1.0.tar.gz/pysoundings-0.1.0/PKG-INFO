@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pysoundings
+Version: 0.1.0
+Summary: 
+Author: dkllrjr
+Author-email: dg.kllr.jr@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: lxml (>=4.6.2,<5.0.0)
+Requires-Dist: pandas (>=1.2.1,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
