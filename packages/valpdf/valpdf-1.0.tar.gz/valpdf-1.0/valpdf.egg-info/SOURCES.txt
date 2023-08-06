@@ -1,0 +1,9 @@
+README.md
+setup.py
+valpdf/__init__.py
+valpdf/pdf2image.py
+valpdf/pdf2text.py
+valpdf.egg-info/PKG-INFO
+valpdf.egg-info/SOURCES.txt
+valpdf.egg-info/dependency_links.txt
+valpdf.egg-info/top_level.txt
