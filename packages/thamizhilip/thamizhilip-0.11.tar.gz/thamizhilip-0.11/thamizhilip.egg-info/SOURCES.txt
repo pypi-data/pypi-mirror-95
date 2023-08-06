@@ -1,0 +1,9 @@
+README.md
+setup.py
+thamizhilip/__init__.py
+thamizhilip/tamil.py
+thamizhilip.egg-info/PKG-INFO
+thamizhilip.egg-info/SOURCES.txt
+thamizhilip.egg-info/dependency_links.txt
+thamizhilip.egg-info/requires.txt
+thamizhilip.egg-info/top_level.txt

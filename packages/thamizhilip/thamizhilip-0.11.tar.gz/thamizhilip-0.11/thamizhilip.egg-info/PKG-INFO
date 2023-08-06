@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: thamizhilip
+Version: 0.11
+Summary: ThamizhiLIP
+Home-page: UNKNOWN
+Author: Kengatharaiyer Sarveswaran
+Author-email: <iamsarves@gmail.com>
+License: Apache License, Version 2.0
+Description: Thamizhi Linguistic Information Processing Tools for Tamil Language Processing
+Keywords: Thamizhi,Tamil,Tamil NLP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
