@@ -1,0 +1,15 @@
+slackertpy/__init__.py,sha256=qniDww9dfQ78Jkv_k0gczTf2OinnK1AWWSQObpEgg70,268
+slackertpy/alerter.py,sha256=wwjdFQ7C3NKfEKOTBODqe3bcWsL3M2KPlMXL_-qgTgc,1164
+slackertpy/blocks.py,sha256=acu7RY7eqnwo4nKhhtzOt9Kh7ZtjZ00fDcPq7_arWMg,2162
+slackertpy/builder.py,sha256=YBQa2FNUqkdgWhzmc72E3o2XJT7Tdb0YbmrsdIc9USo,1583
+slackertpy/level.py,sha256=GpKni0WNnUPDDLHzYmURREwhVA5qGsn-C_yzmwmCJwM,256
+slackertpy/templates.py,sha256=8BN0asr-k-4qQszSBiM4pnnp3e30C1_yzSSrM4MWTfY,2141
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_alerter.py,sha256=MIXWUVIRHwsWzHhLhgHW5QOUoEGCbdht3EKuPLwtbNw,756
+tests/test_blocks.py,sha256=YIl7htaXYerIXwdjAjykJtpmDBetZjAzt9_-USrVXBo,318
+tests/test_templates.py,sha256=zo3deLjT-GDeDjW_qxOSiM6WI0EuD5_pz7nj3j6_D6A,1407
+slackertpy-0.1.0.dist-info/LICENSE,sha256=VgDE6IEnxVAlGcQ6VhXtDoTM1XacqygRwWvEWrBFNdo,1061
+slackertpy-0.1.0.dist-info/METADATA,sha256=Rxc8XxX-vl69bE1jXGato5d4UHZicYHiCNSMkEyV084,2091
+slackertpy-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slackertpy-0.1.0.dist-info/top_level.txt,sha256=kJVWCkV9ix6881zWXjTMlpuiFEQJ-Qa7oFvHz87EP28,17
+slackertpy-0.1.0.dist-info/RECORD,,
