@@ -1,0 +1,9 @@
+refgetter/__init__.py,sha256=nEUCj8uQxfMHP1HH6tCbrweooE_O51rycD_lRxYBsrQ,1847
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/cli_test.py,sha256=vycLAIFa5NGBBEMU78TRgMLMoxPTowpnfiBE3SPBq8M,4317
+refgetter-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+refgetter-0.0.1.dist-info/METADATA,sha256=CbKrNXFl_6a5EWj6n7vOJ31SlPpP9FkOSBEM-Gi4JP0,528
+refgetter-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+refgetter-0.0.1.dist-info/entry_points.txt,sha256=gqDD7ZfPc8VuOME6j7BfveS2tWO-xxtCjtWcbAil_kI,46
+refgetter-0.0.1.dist-info/top_level.txt,sha256=mQf0F70qvB2QlDWxpgwOYm8JjDTCTFFdhYuPJ6yz73E,16
+refgetter-0.0.1.dist-info/RECORD,,
