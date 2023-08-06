@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dash_shap_components
+Version: 0.0.2
+Summary: Wrapper for using shap plots with dash
+Home-page: UNKNOWN
+Author: Balaji P <p.balaji.iitr@gmail.com>
+License: MIT
+Description: Wrapper for using shap plots with dash
+Platform: UNKNOWN
+Classifier: Framework :: Dash
+Description-Content-Type: text/markdown

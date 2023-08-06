@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_shap_components/ForceArrayPlot.py
+dash_shap_components/ForcePlot.py
+dash_shap_components/__init__.py
+dash_shap_components/_imports_.py
+dash_shap_components/dash_shap_components.min.js
+dash_shap_components/dash_shap_components.min.js.map
+dash_shap_components/metadata.json
+dash_shap_components/package-info.json
+dash_shap_components.egg-info/PKG-INFO
+dash_shap_components.egg-info/SOURCES.txt
+dash_shap_components.egg-info/dependency_links.txt
+dash_shap_components.egg-info/top_level.txt
