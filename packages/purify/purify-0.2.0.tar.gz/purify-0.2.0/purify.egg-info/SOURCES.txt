@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+purify/__about__.py
+purify/__init__.py
+purify/purify.py
+purify.egg-info/PKG-INFO
+purify.egg-info/SOURCES.txt
+purify.egg-info/dependency_links.txt
+purify.egg-info/top_level.txt
