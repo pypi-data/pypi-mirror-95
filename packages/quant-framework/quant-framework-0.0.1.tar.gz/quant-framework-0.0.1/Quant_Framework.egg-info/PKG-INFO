@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: quant-framework
+Version: 0.0.1
+Summary: A basic framework for backtesting and going live with quant strategies
+Home-page: https://github.com/brendangeck/quant-framework
+Author: Brendan Geck
+Author-email: bpgeck@gmail.com
+License: LICENSE.txt
+Description: UNKNOWN
+Platform: UNKNOWN
