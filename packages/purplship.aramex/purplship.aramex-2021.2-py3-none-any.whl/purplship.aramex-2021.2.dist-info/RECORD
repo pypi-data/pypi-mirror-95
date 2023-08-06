@@ -1,0 +1,12 @@
+purplship/mappers/aramex/__init__.py,sha256=TT8T7zoEI_Lw4RinTqde6VjHxnY2O2SCWOsLRCj0DzA,543
+purplship/mappers/aramex/mapper.py,sha256=tYpXKeWI7GPNN_Ohsq1USkzvDyH3BCpllV_rq_GI2vk,4313
+purplship/mappers/aramex/proxy.py,sha256=mcRuITmBMIk7jgJeDsCHGG0Evdqr4kAEaMi3RHDQnkQ,789
+purplship/mappers/aramex/settings.py,sha256=pxwECBCYzOs3gidnElomzQH7gArszr9oykAAED_RYog,479
+purplship/providers/aramex/__init__.py,sha256=hnSWA815SlVsozjULh_79XDU4yhKAZicHx6Pszjp1tI,781
+purplship/providers/aramex/error.py,sha256=7_KdzhgbB-_rDyumk-mgDZQBUxOzq0CeXtmP8Igddt8,779
+purplship/providers/aramex/tracking.py,sha256=-zfAIpSaBhy6U52Y0d8fXXEw0cRgOiCkzqm8Z7uiASo,3139
+purplship/providers/aramex/units.py,sha256=ipIDG2y_xRvReDGYpIn4BuIiqaZG7b1Hp-6mrmv0f2U,1333
+purplship/providers/aramex/utils.py,sha256=WeBOL3iS-ml6Bk5hGOJLTqgXYyXHJ9kKj9XF4DXxeYI,1420
+purplship.aramex-2021.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+purplship.aramex-2021.2.dist-info/METADATA,sha256=PgvMa32T6f3UlZ2KmuXNL_oqTydqpfFNhsWZ5WPVuD4,1412
+purplship.aramex-2021.2.dist-info/RECORD,,
