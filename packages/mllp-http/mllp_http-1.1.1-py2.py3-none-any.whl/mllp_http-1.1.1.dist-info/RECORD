@@ -1,0 +1,12 @@
+mllp_http/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+mllp_http/http2mllp.py,sha256=jAWNAu9w4SBlVd8mvkD-0zHNcANCnU-lbNl4UN4fqtM,4376
+mllp_http/main.py,sha256=pV1HIEwsVeTS-wJLKynjvxHpM1LIobwjLhCMA0Iugf8,4835
+mllp_http/mllp.py,sha256=GdXyby3DXAAF5hg8qt-I8CDJ99gYNJJnCWUSmF8gloo,2338
+mllp_http/mllp2http.py,sha256=ELVVW-2lnhfaj5MukWdmxHRf8e9x7DHouN9PgPpLgRM,3303
+mllp_http/version.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+mllp_http-1.1.1.dist-info/LICENSE.txt,sha256=xfsgamRJTz41f1tx44um-fr1Wo9PX66o3IhLdh1G4oo,1069
+mllp_http-1.1.1.dist-info/METADATA,sha256=tJ7TYKDUU_fWzHRcIK63ONtEAWeFAKBlsf_zR5vZPPs,4967
+mllp_http-1.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+mllp_http-1.1.1.dist-info/entry_points.txt,sha256=gApHVtD0iGJRvVSAmaKbxl4WQ2qqNIqO6CBQYFEsG2k,93
+mllp_http-1.1.1.dist-info/top_level.txt,sha256=t8YxKtEi-UBFnoU5I5iV9Jw3iFYYZs6orQTv3rqVaj8,10
+mllp_http-1.1.1.dist-info/RECORD,,
