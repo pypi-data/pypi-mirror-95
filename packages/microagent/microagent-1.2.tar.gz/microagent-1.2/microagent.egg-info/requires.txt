@@ -1,0 +1,15 @@
+ujson
+requests
+croniter
+
+[aioredis]
+aioredis
+
+[amqp]
+aioamqp==0.14
+
+[kafka]
+aiokafka==0.7
+
+[pulsar]
+pulsar
