@@ -1,0 +1,6 @@
+numpy>=1.13.0
+scipy
+
+[tests]
+pytest>=4.4
+pytest-cov
