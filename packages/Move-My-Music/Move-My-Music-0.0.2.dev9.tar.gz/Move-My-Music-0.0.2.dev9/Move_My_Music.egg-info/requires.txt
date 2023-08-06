@@ -1,0 +1,7 @@
+vk-api==11.8.0
+yandex-music==0.1.2
+spotipy==2.13.0
+six
+beautifulsoup4
+requests
+python-dotenv
