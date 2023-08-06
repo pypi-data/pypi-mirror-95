@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: Taxicab
+Version: 0.0.1
+Summary: Accurate routing for Open Street Maps and OSMnx
+Home-page: https://github.com/nathanrooy/taxicab
+Author: Nathan A. Rooy
+Author-email: nathanrooy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (>=3.3.0)
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: osmnx (>=1.0.0)
+Requires-Dist: Shapely (>=1.7)
+
+[![gh-actions-ci](https://img.shields.io/github/workflow/status/nathanrooy/taxicab/ci?style=flat-square)](https://github.com/nathanrooy/taxicab/actions?query=workflow%3Aci)
+[![GitHub license](https://img.shields.io/github/license/nathanrooy/taxicab?style=flat-square)](https://github.com/nathanrooy/taxicab/blob/main/LICENSE)
+[![codecov](https://img.shields.io/codecov/c/github/nathanrooy/taxicab.svg?style=flat-square)](https://codecov.io/gh/nathanrooy/taxicab)
+
+## Taxicab
+When routing between two points of longitude and latitude, the built in routing functionality in OSMnx will find the nearest network nodes and route between those. This assumption is fine, and works for many applications but when you need routing with a little more accuracy you'll want to consider using Taxicab. Below are a few examples which highlight Taxicab usecases:
+
+When the nearest nodes are not that close
+<img src="https://github.com/nathanrooy/taxicab/blob/main/docs/ex_03.jpg">
+
+When routing along a single edge:
+<img src="https://github.com/nathanrooy/taxicab/blob/main/docs/ex_01.jpg">
+
+When routing along short routes:
+<img src="https://github.com/nathanrooy/taxicab/blob/main/docs/ex_02.jpg">
+
+## Installation
+The easiest way to use Taxicab is probably via a PyPi install:
+```sh
+pip install taxicab
+```
+You can also install directly from this repo:
+```sh
+pip install git+https://github.com/nathanrooy/taxicab
+```
+
+## Example usage
+
+## User reference
+
+## Performance Considerations
+
+
