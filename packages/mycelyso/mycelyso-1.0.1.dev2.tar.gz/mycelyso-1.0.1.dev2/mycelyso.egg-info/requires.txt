@@ -1,0 +1,12 @@
+numpy
+scipy
+networkx
+tables
+numexpr
+pandas
+scikit-image
+pilyso-io
+mfisp_boxdetection
+molyso
+tunable
+tqdm
