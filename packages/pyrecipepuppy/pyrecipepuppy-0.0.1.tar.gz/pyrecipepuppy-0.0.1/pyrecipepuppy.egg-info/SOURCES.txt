@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pyrecipepuppy/__init__.py
+pyrecipepuppy/recipepuppy.py
+pyrecipepuppy.egg-info/PKG-INFO
+pyrecipepuppy.egg-info/SOURCES.txt
+pyrecipepuppy.egg-info/dependency_links.txt
+pyrecipepuppy.egg-info/top_level.txt
