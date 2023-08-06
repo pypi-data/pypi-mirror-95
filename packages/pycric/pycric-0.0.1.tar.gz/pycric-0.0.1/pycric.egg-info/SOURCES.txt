@@ -1,0 +1,7 @@
+setup.py
+py_cric/__init__.py
+py_cric/pycric.py
+pycric.egg-info/PKG-INFO
+pycric.egg-info/SOURCES.txt
+pycric.egg-info/dependency_links.txt
+pycric.egg-info/top_level.txt
