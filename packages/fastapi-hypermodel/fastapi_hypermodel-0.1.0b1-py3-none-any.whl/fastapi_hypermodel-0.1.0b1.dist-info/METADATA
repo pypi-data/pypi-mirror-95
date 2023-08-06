@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fastapi-hypermodel
+Version: 0.1.0b1
+Summary: 
+Author: Joel Collins
+Author-email: joel.collins@renalregistry.nhs.uk
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)

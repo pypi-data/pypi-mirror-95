@@ -1,0 +1,5 @@
+fastapi_hypermodel/__init__.py,sha256=8GDXDdPoNTBc7Rce9FwlTL2FxtiiUQy3CskEj6_Tdz0,83
+fastapi_hypermodel/hypermodel.py,sha256=9e5VyLkWcrq2E1F9JhJQ56TfcF_yUUzWilnfww0u6EI,3758
+fastapi_hypermodel-0.1.0b1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fastapi_hypermodel-0.1.0b1.dist-info/METADATA,sha256=z8C9XoId0eQP1iM_8auQOWGfhCFV_L4rUua7ZzZwJO8,502
+fastapi_hypermodel-0.1.0b1.dist-info/RECORD,,
