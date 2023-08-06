@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+htmlfactory/InnerHtml.py
+htmlfactory/SingletonTag.py
+htmlfactory/TagAndClassStr.py
+htmlfactory/TagAttribute.py
+htmlfactory/TagAttributeList.py
+htmlfactory/TagFactory.py
+htmlfactory/__init__.py
+htmlfactory.egg-info/PKG-INFO
+htmlfactory.egg-info/SOURCES.txt
+htmlfactory.egg-info/dependency_links.txt
+htmlfactory.egg-info/requires.txt
+htmlfactory.egg-info/top_level.txt
