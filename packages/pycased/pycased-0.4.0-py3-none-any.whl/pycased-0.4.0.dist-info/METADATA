@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pycased
+Version: 0.4.0
+Summary: Python library for Cased
+Home-page: https://github.com/cased/cased-python
+Author: Cased
+Author-email: support@cased.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/cased/cased-python/issues
+Project-URL: Documentation, https://docs.cased.com/api
+Project-URL: Source Code, https://github.com/cased/cased-python
+Keywords: cased api
+Platform: UNKNOWN
+Requires-Python: >3.5
+Requires-Dist: requests
+Requires-Dist: responses
+Requires-Dist: mock
+Requires-Dist: pytest (>=4.00)
+Requires-Dist: pytest-mock
+Requires-Dist: pytest-xdist
+Requires-Dist: freezegun
+Requires-Dist: redis
+Requires-Dist: deepmerge
+
+Python library for Cased
+
+

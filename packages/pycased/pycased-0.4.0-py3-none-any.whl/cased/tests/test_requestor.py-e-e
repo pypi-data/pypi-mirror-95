@@ -1,0 +1,41 @@
+import pytest
+
+import cased
+from cased import errors
+from cased.tests.util import mock_response
+from cased.http import Requestor
+
+
+class TestAPIRequestor(object):
+    @property
+    def requestor(self):
+        return Requestor()
+
+    ## Tests
+    def test_requestor_has_api_key(self):
+        with mock_response():
+            cased.policy_key = "cs_test_001"
+
+            assert self.requestor.api_key == "cs_test_001"
+            assert self.requestor.request("post", "/publish").status_code == 200
+
+    def test_requestor_has_api_key_on_404(self):
+        with mock_response(status_code=404):
+            cased.policy_key = "cs_test_001"
+
+            assert self.requestor.api_key == "cs_test_001"
+            assert self.requestor.request("post", "/publish").status_code == 404
+
+    def test_requestor_fails_without_api_key_on_get(self):
+        with mock_response():
+            cased.policy_key = None
+
+            with pytest.raises(errors.AuthenticationError):
+                self.requestor.request("get", "/publish").status_code
+
+    def test_requestor_fails_without_api_key_on_post(self):
+        with mock_response():
+            cased.policy_key = None
+
+            with pytest.raises(errors.AuthenticationError):
+                self.requestor.request("post", "/publish").status_code

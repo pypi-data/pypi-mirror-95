@@ -1,0 +1,26 @@
+import cased
+import requests
+
+from cased import errors
+
+from cased.http import HTTPClient
+
+
+class Requestor:
+    def __init__(self, client=HTTPClient, *args, **kwargs):
+        self.api_base = kwargs.get("api_base") or cased.api_base
+        self.api_key = kwargs.get("api_key") or cased.base_key
+
+        self.client = client
+
+    def request(self, method, url, data=None):
+        if self.api_key is None:
+            raise errors.AuthenticationError(
+                """No API key provided. Set a base API key using
+                cased.base_key = <API-KEY>, set publish and policy keys, or
+                supply a key with the request. See https://docs.cased.com for
+                more information."""
+            )
+
+        absolute_url = self.api_base + url
+        return self.client.make_request(method, absolute_url, self.api_key, data)
