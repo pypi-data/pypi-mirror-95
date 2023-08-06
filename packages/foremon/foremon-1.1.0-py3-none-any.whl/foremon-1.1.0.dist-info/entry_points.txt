@@ -1,0 +1,3 @@
+[console_scripts]
+foremon = foremon.__main__:main
+
