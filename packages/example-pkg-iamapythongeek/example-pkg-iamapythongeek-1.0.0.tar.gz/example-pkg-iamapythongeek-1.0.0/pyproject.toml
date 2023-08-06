@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "mysql-connector-python",
+    "psycopg2-binary",
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+example_pkg_iamapythongeek.egg-info/PKG-INFO
+example_pkg_iamapythongeek.egg-info/SOURCES.txt
+example_pkg_iamapythongeek.egg-info/dependency_links.txt
+example_pkg_iamapythongeek.egg-info/top_level.txt
+translateAPI/__init__.py
+translateAPI/translateAPI.py
