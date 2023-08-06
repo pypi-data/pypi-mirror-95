@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pdot
+Version: 0.0.1
+Summary: This is a bookmark!
+Home-page: UNKNOWN
+Author: Patricio C. V. - patod01
+Author-email: patod01@telegmail.com
+License: WTFPL
+Description: this is __πDot__ stuff and stuff like that...
+        
+            pip install pnomo
+        
+        deal with it!
+        
+Platform: windous
+Classifier: License :: Freeware
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: asdf

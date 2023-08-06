@@ -1,0 +1,15 @@
+MANIFEST.in
+license
+readme
+setup.cfg
+setup.py
+pdot.egg-info/PKG-INFO
+pdot.egg-info/SOURCES.txt
+pdot.egg-info/dependency_links.txt
+pdot.egg-info/entry_points.txt
+pdot.egg-info/requires.txt
+pdot.egg-info/top_level.txt
+pnomo/__init__.py
+pnomo/lib.py
+pnomo/pepo.py
+pruta/icon.svg
