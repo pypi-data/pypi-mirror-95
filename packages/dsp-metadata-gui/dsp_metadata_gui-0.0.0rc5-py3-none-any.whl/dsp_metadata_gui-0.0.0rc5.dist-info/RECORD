@@ -1,0 +1,13 @@
+dspMetadataGUI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dspMetadataGUI/collectMetadata.py,sha256=gihRbh2oGYcaGJELb4VvWXp0xRE4O1LxzwGfpvtDxcQ,52778
+dspMetadataGUI/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dspMetadataGUI/util/dataHandling.py,sha256=PxR92S4p_83ZQNm3HglThOc9nolbfYrWnpkYP4k81Uk,6989
+dspMetadataGUI/util/metaDataHelpers.py,sha256=oZj99BgHFrahpdoTS02057CRKorWY_cFUzjT3olT5rE,1711
+dspMetadataGUI/util/metaDataSet.py,sha256=qF07aeK9VRbY-3lGc47nhEXLwa8uKM5lxlkW6LXuZf4,48656
+dspMetadataGUI/util/utils.py,sha256=tbGIU-6FJuu8wTheGzc8U6vwq9Llmas08D6OcIevT7g,6385
+dsp_metadata_gui-0.0.0rc5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dsp_metadata_gui-0.0.0rc5.dist-info/METADATA,sha256=Ptlh45F19eBP7kYzdIaeg8XTxQHbLfXYPX1uRJ9covQ,4841
+dsp_metadata_gui-0.0.0rc5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dsp_metadata_gui-0.0.0rc5.dist-info/entry_points.txt,sha256=FsyRCNmz-uwTBK9Xs1L44ehQGo_CaMFo1Ws_8rdZx_Y,81
+dsp_metadata_gui-0.0.0rc5.dist-info/top_level.txt,sha256=pIKFREF275WZ2sQibTqtYPdtD6kcBmQXZ3f0pubtlKg,15
+dsp_metadata_gui-0.0.0rc5.dist-info/RECORD,,
