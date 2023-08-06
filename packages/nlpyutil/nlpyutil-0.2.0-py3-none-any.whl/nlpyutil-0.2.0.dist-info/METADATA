@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nlpyutil
+Version: 0.2.0
+Summary: Personal usual utils for python
+Home-page: https://github.com/Brokenwind/nlpyutil
+Author: kun, wang
+Author-email: wangkun6536@gmail.com
+License: MIT
+Keywords: NLP,Utils
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: zhon
+Requires-Dist: dataclasses ; python_version < "3.7"
+
+# nlpyutil
+
+personal usual utils for python
+
+
