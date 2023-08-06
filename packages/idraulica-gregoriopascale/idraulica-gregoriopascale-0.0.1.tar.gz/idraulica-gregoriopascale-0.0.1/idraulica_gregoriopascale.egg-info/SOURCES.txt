@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+idraulica_gregoriopascale.egg-info/PKG-INFO
+idraulica_gregoriopascale.egg-info/SOURCES.txt
+idraulica_gregoriopascale.egg-info/dependency_links.txt
+idraulica_gregoriopascale.egg-info/top_level.txt
+idrocalc/__init__.py
+idrocalc/calc.py
