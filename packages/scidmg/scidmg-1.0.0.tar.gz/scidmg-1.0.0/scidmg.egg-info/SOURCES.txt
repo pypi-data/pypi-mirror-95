@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+scidmg/__init__.py
+scidmg/__main__.py
+scidmg/base.py
+scidmg.egg-info/PKG-INFO
+scidmg.egg-info/SOURCES.txt
+scidmg.egg-info/dependency_links.txt
+scidmg.egg-info/entry_points.txt
+scidmg.egg-info/requires.txt
+scidmg.egg-info/top_level.txt
