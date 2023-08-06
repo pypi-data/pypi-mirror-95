@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+otp/cli.py
+simple_totp.egg-info/PKG-INFO
+simple_totp.egg-info/SOURCES.txt
+simple_totp.egg-info/dependency_links.txt
+simple_totp.egg-info/entry_points.txt
+simple_totp.egg-info/requires.txt
+simple_totp.egg-info/top_level.txt
