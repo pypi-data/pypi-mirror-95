@@ -1,0 +1,1 @@
+{"BadFile": false, "DerivativeSource": "/home/william/work/teneto/teneto/data/testdata/dummybids/derivatives/fmriprep/sub-001/func/sub-001_task-a_run-2_desc-preproc_bold.nii.gz", "TenetoFunction": {"Name": "make_parcellation", "Parameters": {"atlas": "Schaefer2018", "atlas_desc": "100Parcels7Networks", "parc_params": {"detrend": true}}}}

@@ -1,0 +1,1 @@
+{"BadFile": false, "DerivativeSource": "/home/william/work/teneto/teneto/data/testdata/dummybids/derivatives/teneto-make-parcellation/sub-001/func/sub-001_run-1_task-a_timeseries.tsv", "TenetoFunction": {"Name": "remove_confounds", "Parameters": {"confound_selection": ["confound1"], "confounds": "Loaded automatically via TenetoBIDS"}}}
