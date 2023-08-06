@@ -1,0 +1,8 @@
+ElasticEmailClient.py
+README.rst
+setup.cfg
+setup.py
+ElasticEmailWebApiClient.egg-info/PKG-INFO
+ElasticEmailWebApiClient.egg-info/SOURCES.txt
+ElasticEmailWebApiClient.egg-info/dependency_links.txt
+ElasticEmailWebApiClient.egg-info/top_level.txt

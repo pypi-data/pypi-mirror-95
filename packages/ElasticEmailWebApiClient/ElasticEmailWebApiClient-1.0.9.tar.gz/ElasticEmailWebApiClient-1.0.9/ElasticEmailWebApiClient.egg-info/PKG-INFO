@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ElasticEmailWebApiClient
+Version: 1.0.9
+Summary: Easily send emails with Elastic Email using Web API Python Client https://elasticemail.com/
+Home-page: https://github.com/ElasticEmail/ElasticEmail.WebApiClient-python
+Author: ElasticEmail Dev Team
+Author-email: support@elasticemail.com
+License: MIT
+Description: **This library allows you to quickly and easily use the Elastic Email Web API v2 via Python.**
+        
+        # Prerequisites #
+        * [An Elastic Email account](https://elasticemail.com/account/)
+        
+        # About #
+        ElasticEmail.WebApiClient is guided and supported by the ElasticEmail Dev Team.
+        
+        ElasticEmail.WebApiClient is maintained and funded by Elastic Email Inc. The names and logos for ElasticEmail.WebApiClient are trademarks of Elastic Email Inc.
+        
+        ![logo](https://elasticemail.com/files/ee_200x200.png)
+Keywords: elastic email elasticemail web api transactional
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
