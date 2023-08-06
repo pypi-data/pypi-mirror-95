@@ -1,0 +1,3 @@
+[console_scripts]
+pip2spack = pip2spack.main.main:main
+
