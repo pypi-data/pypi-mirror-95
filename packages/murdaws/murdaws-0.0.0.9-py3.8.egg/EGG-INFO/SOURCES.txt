@@ -1,0 +1,9 @@
+README.md
+setup.py
+murdaws/__init__.py
+murdaws/murd_ddb.py
+murdaws.egg-info/PKG-INFO
+murdaws.egg-info/SOURCES.txt
+murdaws.egg-info/dependency_links.txt
+murdaws.egg-info/requires.txt
+murdaws.egg-info/top_level.txt
