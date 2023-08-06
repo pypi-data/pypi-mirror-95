@@ -1,0 +1,6 @@
+dice
+discord.py
+pyyaml
+rich
+tinydb
+xdg
