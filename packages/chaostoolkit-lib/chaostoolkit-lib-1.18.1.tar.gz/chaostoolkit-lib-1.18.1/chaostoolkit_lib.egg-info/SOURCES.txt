@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+chaostoolkit_lib.egg-info/PKG-INFO
+chaostoolkit_lib.egg-info/SOURCES.txt
+chaostoolkit_lib.egg-info/dependency_links.txt
+chaostoolkit_lib.egg-info/top_level.txt
