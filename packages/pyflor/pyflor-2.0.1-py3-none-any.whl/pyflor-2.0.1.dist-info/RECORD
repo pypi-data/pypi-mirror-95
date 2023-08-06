@@ -1,0 +1,14 @@
+flor/__init__.py,sha256=fG5-2Tz-h9v2tUAWoqgjJ-UwCHGBQSebmZmbdbRSL9A,147
+flor/copy.py,sha256=IA7pmDgAXoF_doUUaD1VdxvWR2PbJFA5rL0ErimHxys,9115
+flor/file.py,sha256=oclDG0EK4NMITmYeahBIFnmuLQy-t3fobTRWs1DSO7w,6133
+flor/flags.py,sha256=Q-toakVIneCDcFb7--HQWtKw28TB4Ofmzd4TGEpXM3E,3218
+flor/florin.py,sha256=w8ma4_4fHz2SgApQq2g-e6WR631WEzwc0I6yoVAB2C0,830
+flor/interface.py,sha256=ZayVduwTctdf7bWSjSomj_-XKTXUyBvoN1uOLQbZuiM,2098
+flor/needle.py,sha256=BREs2ZQYrWWOfnOfpxxFw2d4ckcF4kpNFPqHPcTrIqA,3890
+flor/record.py,sha256=2_FjbLFeav9eBq7bsy-oV2t_FGcsCAC2yxSFwAIvqLg,5868
+flor/skip_block.py,sha256=gQqMFZ1qsESePnMrscV2GpEPefw_n1EKr9nSsvKYbH8,5925
+pyflor-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyflor-2.0.1.dist-info/METADATA,sha256=VdS1OUkY9qwz5qPCK-6emsgHQoxAw1o0kwAIvngHog8,6993
+pyflor-2.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyflor-2.0.1.dist-info/top_level.txt,sha256=u13XZfeszLVMa0HriRL_OdVu8mGJg7s06GwDFzbqwfg,5
+pyflor-2.0.1.dist-info/RECORD,,
