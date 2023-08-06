@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+clibato/__init__.py
+clibato/__main__.py
+clibato/config.py
+clibato/content.py
+clibato/destination.py
+clibato/error.py
+clibato.egg-info/PKG-INFO
+clibato.egg-info/SOURCES.txt
+clibato.egg-info/dependency_links.txt
+clibato.egg-info/entry_points.txt
+clibato.egg-info/requires.txt
+clibato.egg-info/top_level.txt
