@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Python_Directory_Compiler.egg-info/PKG-INFO
+Python_Directory_Compiler.egg-info/SOURCES.txt
+Python_Directory_Compiler.egg-info/dependency_links.txt
+Python_Directory_Compiler.egg-info/requires.txt
+Python_Directory_Compiler.egg-info/top_level.txt
+bin/py-dir-compiler
