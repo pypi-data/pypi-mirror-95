@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+src/opentelemetry/exporter/datadog/__init__.py
+src/opentelemetry/exporter/datadog/constants.py
+src/opentelemetry/exporter/datadog/exporter.py
+src/opentelemetry/exporter/datadog/propagator.py
+src/opentelemetry/exporter/datadog/spanprocessor.py
+src/opentelemetry/exporter/datadog/version.py
+src/opentelemetry_exporter_datadog.egg-info/PKG-INFO
+src/opentelemetry_exporter_datadog.egg-info/SOURCES.txt
+src/opentelemetry_exporter_datadog.egg-info/dependency_links.txt
+src/opentelemetry_exporter_datadog.egg-info/requires.txt
+src/opentelemetry_exporter_datadog.egg-info/top_level.txt
