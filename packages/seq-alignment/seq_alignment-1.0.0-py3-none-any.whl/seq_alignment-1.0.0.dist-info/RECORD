@@ -1,0 +1,17 @@
+seq_alignment/__init__.py,sha256=M3VV_2FJcZluZ-Lznki_KXssQNAMQ69IlYx9lXbUBUs,157
+seq_alignment/global_similarity/__init__.py,sha256=Rw6MdjYlwm81PybBUAXxCrwnhCYzmWqAbaymwTfKvWE,91
+seq_alignment/global_similarity/main.py,sha256=tiODUz015XhBJq_0j2hbNcuuWZ_0Unur1XzPjUovaso,11705
+seq_alignment/helpers/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+seq_alignment/helpers/speed_test.py,sha256=7l0RsLyZxhAndvbXW8ayhJ2DCeeg3PHwL6PcVKr4mSg,643
+seq_alignment/local_similarity/__init__.py,sha256=EUq6fi1uO0tqem5HQV0GOKZxTyMdQf6xfTyrWK12zWY,89
+seq_alignment/local_similarity/main.py,sha256=aT3GG_xud8fuXa3DgkiR5TDI-Q7vvosre5btmFOzWlg,11377
+seq_alignment/local_similarity/main_test.py,sha256=Jmhgl2CtIP_mRplryBeUEvBybEKkVvBjGMy2z6vloY4,9719
+seq_alignment/tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+seq_alignment/tests/speed_testing.py,sha256=TnGLV77jpeq3YZWtwLguaoO0GKbJcQdT5r3SYcOc8tA,2588
+seq_alignment/tests/test_global_similarity.py,sha256=ByZ3FRfElg1RVhKDrx4AI877uQB1M6kCMqDNnE4041o,1827
+seq_alignment/tests/test_local_similarity.py,sha256=lrJGrv_hPHe4cfyfqrhrhLCJvut0YU2aem7aQqXjBm4,830
+seq_alignment-1.0.0.dist-info/LICENSE,sha256=QwEWFMYgdlhzYUqZFH-5_ACCPI3Ge1rCDNzj2hHV7So,1069
+seq_alignment-1.0.0.dist-info/METADATA,sha256=n5Gk94A-9znaFVYkNPEpk69uHVHoKd2xuoyzJsWURsE,2971
+seq_alignment-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+seq_alignment-1.0.0.dist-info/top_level.txt,sha256=w8g3EdEgHqknFS7DeXJDT18JJlZAAg9WcS1n6uCFO_k,14
+seq_alignment-1.0.0.dist-info/RECORD,,
