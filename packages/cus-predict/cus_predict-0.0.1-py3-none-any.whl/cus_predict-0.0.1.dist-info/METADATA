@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cus-predict
+Version: 0.0.1
+Summary: Tested 90%% accurate test match score prediction through your cricket knowledge
+Home-page: UNKNOWN
+Author: YusiferZendric (Aditya Singh)
+Author-email: <mail@yusiferzendric.com>
+License: UNKNOWN
+Keywords: python,prediction,without machine learning,cricket,player score prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Hello I am Aditya, I have made this library like this, such that it will predict the supplied player score in test cricket, it work on the principle of player batting position and the percentage of chances of his fifty or hundred you have supplied to it, it is incomplete till now but you can test it and if you like the concept than try to contribute in this project through github.
+
+
