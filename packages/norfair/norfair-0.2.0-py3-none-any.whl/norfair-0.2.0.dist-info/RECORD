@@ -1,0 +1,10 @@
+norfair/__init__.py,sha256=I5sZ5SnxQSV_GTYuCbpWFirUQBdGnvC0jUsk0XxIrSg,142
+norfair/drawing.py,sha256=b88jo41k34Sa0E5YX1DfSyzBot08GG7rZm1Ff4yp264,8823
+norfair/metrics.py,sha256=N9ik9dQ5ekgb5xXz5xZdTS_AM4Q57_0pWen7wjniYIM,11687
+norfair/tracker.py,sha256=IVBpMgySkLrBxggVognDPUpR7zV02PS6JUHODBRili0,15517
+norfair/utils.py,sha256=E64T4x3HC0d11WN3li-thv718tKj3aFRiMjPS_e2RDo,3119
+norfair/video.py,sha256=HMM8KyPkXDKY24wFrBv6Y72x6RRLatyqTXEnQb5rKHo,10076
+norfair-0.2.0.dist-info/LICENSE,sha256=Fx3itxw5_TCDlxsv8lfCAO947jhfRN0RYskqMRjWsUw,1508
+norfair-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+norfair-0.2.0.dist-info/METADATA,sha256=gimLUf-EgpidXbLgE93zE1i24b6SVqpOg6t7W8I2UOs,9926
+norfair-0.2.0.dist-info/RECORD,,
