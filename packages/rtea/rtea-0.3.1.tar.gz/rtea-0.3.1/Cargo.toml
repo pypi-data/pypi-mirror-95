@@ -1,0 +1,50 @@
+[package]
+name = "rtea"
+version = "0.3.1"
+description = "Bring fast TEA cipher to Python. Powered by Rust."
+authors = ["zkonge <zkonge@outlook.com>"]
+edition = "2018"
+readme = "README.md"
+homepage = "https://github.com/zkonge/rtea"
+repository = "https://github.com/zkonge/rtea"
+license-file = "LICENSE"
+
+[lib]
+name = "rtea"
+crate-type = ["cdylib"]
+
+[dependencies]
+byteorder = "1.4"
+generic-array = "0.14"
+rand = "0.8"
+
+[dependencies.pyo3]
+version = "0.13"
+features = ["extension-module"]
+
+[package.metadata.maturin]
+requires-python = ">=3.6"
+classifier = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Typing :: Typed",
+]
+
+[profile.release]
+codegen-units = 1
+debug = false
+incremental = false
+lto = "fat"
+opt-level = 3
+panic = "abort"
