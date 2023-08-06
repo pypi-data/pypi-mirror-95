@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: nlutils
+Version: 0.0.3b1
+Summary: Toolkit for research, both for engineers and researchers. It provides colorful logs, esay figuring and parameter collector logs, which aims to boost machine learning research.
+Home-page: UNKNOWN
+Author: Mengyang Liu
+Author-email: mengyang_liu@foxmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: coloredlogs
+Requires: matplotlib
+Requires: torch
+Requires: numpy
