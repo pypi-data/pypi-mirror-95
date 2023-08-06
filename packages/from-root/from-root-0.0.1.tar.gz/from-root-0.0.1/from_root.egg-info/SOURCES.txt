@@ -1,0 +1,9 @@
+README.md
+setup.py
+from_root/__init__.py
+from_root/from_root.py
+from_root/get_project_dir.py
+from_root.egg-info/PKG-INFO
+from_root.egg-info/SOURCES.txt
+from_root.egg-info/dependency_links.txt
+from_root.egg-info/top_level.txt
