@@ -1,0 +1,3 @@
+[lektor.plugins]
+youtube-embed=lektor_youtube_embed:YoutubeEmbedPlugin
+
