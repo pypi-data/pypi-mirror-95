@@ -1,0 +1,34 @@
+block: (statement ENDBLOCK)*
+
+statement: 
+    | mvf_assignment
+    | evf_assignment
+    | directive
+
+evf_assignment: KEY "[" KEY "]" ":" QSTRING
+mvf_assignment: KEY ":" value ("," value)* (",")*
+
+directive: KEY
+
+value: 
+    | "true" -> true
+    | "false" -> false
+    | "null" -> null
+    | SIGNED_NUMBER -> number
+    | QSTRING 
+
+ENDBLOCK: "::" 
+DQUOTE: "\"" 
+SQUOTE: "'"
+MULTILINE_TEXT: /.+?/s 
+DQSTRING: DQUOTE MULTILINE_TEXT DQUOTE
+SQSTRING: SQUOTE MULTILINE_TEXT SQUOTE
+QSTRING: DQSTRING | SQSTRING
+
+MODULE_NAME: /[a-zA-Z]+[a-zA-Z0-9\_]*/
+KEY: /[a-zA-Z0-9\._-]+/
+ 
+
+%import common.WS
+%import common.SIGNED_NUMBER
+%ignore WS
