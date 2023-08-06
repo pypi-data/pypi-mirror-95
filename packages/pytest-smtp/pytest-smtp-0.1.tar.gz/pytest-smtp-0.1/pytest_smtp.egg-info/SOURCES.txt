@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pytest_smtp/__init__.py
+pytest_smtp/email_template.py
+pytest_smtp/plugin.py
+pytest_smtp.egg-info/PKG-INFO
+pytest_smtp.egg-info/SOURCES.txt
+pytest_smtp.egg-info/dependency_links.txt
+pytest_smtp.egg-info/entry_points.txt
+pytest_smtp.egg-info/requires.txt
+pytest_smtp.egg-info/top_level.txt
+pytest_smtp.egg-info/zip-safe
