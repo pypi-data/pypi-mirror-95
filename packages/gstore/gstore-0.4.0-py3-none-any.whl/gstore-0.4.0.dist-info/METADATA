@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: gstore
+Version: 0.4.0
+Summary: Synchronize GitHub repositories made easy
+Home-page: https://gstore.readthedocs.io
+Author: Serghei Iakovlev
+Author-email: egrep@protonmail.ch
+Maintainer: Serghei Iakovlev
+Maintainer-email: egrep@protonmail.ch
+License: GPLv3+
+Project-URL: Documentation, https://gstore.readthedocs.io
+Project-URL: Bug Tracker, https://github.com/sergeyklay/gstore/issues
+Project-URL: Source Code, https://github.com/sergeyklay/gstore
+Keywords: git,github,backup,repo,sync
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Archiving :: Backup
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/x-rst
+Requires-Dist: PyGithub (>=1.54.1)
+Requires-Dist: gitpython (>=3.0.6)
+Provides-Extra: develop
+Requires-Dist: twine (>=3.3.0) ; extra == 'develop'
+Requires-Dist: setuptools (>=53.0.0) ; extra == 'develop'
+Requires-Dist: wheel (>=0.36.2) ; extra == 'develop'
+Requires-Dist: check-wheel-contents (>=0.2.0) ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: furo (==2020.12.*,>=2020.12.30b24) ; extra == 'docs'
+Requires-Dist: sphinx (>=3.5.0) ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.2.2) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.11.1) ; extra == 'testing'
+Requires-Dist: pylint (!=2.6.1,>=2.6.0) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.8.4) ; extra == 'testing'
+
+==================================================
+gstore: Synchronize GitHub repositories made easy
+==================================================
+
+
+Gstore is a simple tool to synchronize GitHub repositories of your organizations.
+
+Its main goal is to help you make backups and sync your projects automatically
+and easily.
+
+.. teaser-end
+
+.. -project-information-
+
+Project Information
+===================
+
+Gstore is released under the `GNU General Public Licence version 3 <https://choosealicense.com/licenses/gpl-3.0/>`_,
+its documentation lives at `Read the Docs <https://gstore.readthedocs.io/>`_,
+the code on `GitHub <https://github.com/sergeyklay/gstore>`_,
+and the latest release on `PyPI <https://pypi.org/project/gstore/>`_.
+It’s rigorously tested on Python 3.7+.
+
+If you'd like to contribute to Gstore you're most welcome!
+
+.. -support-
+
+Support
+=======
+
+Should you have any question, any remark, or if you find a bug, or if there is
+something you can't do with the Gstore, please
+`open an issue <https://github.com/sergeyklay/gstore/issues>`_.
+
+.. -similar-projects-
+
+Similar projects
+================
+
+There are some projects similar to Gstore you may be interested in:
+
+* https://github.com/kennethreitz42/ghsync
+* https://github.com/lgg/simple-git-mirror-sync
+
+
+Release Information
+===================
+
+0.4.0 (2021-02-19)
+------------------
+
+Features
+^^^^^^^^
+
+* The ``gstore.env`` module was introduced to provide a convenient way to work
+  with environment variables used by various functions within Gstore.
+* Added the following functions within ``gstore.env``:
+
+  * ``lookup_token()`` - lookup a personal access token in environment variables,
+  * ``get_host()`` - get GitHub API hostname from environment variable,
+  * ``get_target()`` - get base target to sync repos from environment variable.
+
+
+Breaking Changes
+^^^^^^^^^^^^^^^^
+
+* Moved ``gstore.Client.TOKEN_NAMES`` to ``gstore.env.TOKEN_NAMES``.
+* Moved ``gstore.args.get_token_from_env()`` to ``gstore.env.lookup_token()``.
+
+
+Improvements
+^^^^^^^^^^^^
+
+* Improved ``git.GitCommandError`` message formatting for more accurate logging.
+* The program now correctly handle Control-C keyboard event and gracefully terminates.
+* Gstore will exit with a status of one when its is called without any argument
+  and there are not enough environment variables for normal operation.
+* Calling program with an invalid token and without ``--org`` option no longer leads
+  to abnormal program termination.
+
+
+Trivial/Internal Changes
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* ``gstore.Client.__init__()`` will raise now ``gstore.client.ValidationError``
+  when no token is provided.
+* ``gstore.Client.resolve_orgs()`` will raise now
+  ``gstore.client.InvalidCredentialsError`` when provided token is invalid.
+
+`Full changelog <https://gstore.readthedocs.io/en/latest/changelog.html>`_.
+
+Credits
+=======
+
+Gstore is written and maintained by `Serghei Iakovlev <https://github.com/sergeyklay/>`_.
+
+A full list of contributors can be found in `GitHub's overview <https://github.com/sergeyklay/gstore/graphs/contributors>`_.
+
+
