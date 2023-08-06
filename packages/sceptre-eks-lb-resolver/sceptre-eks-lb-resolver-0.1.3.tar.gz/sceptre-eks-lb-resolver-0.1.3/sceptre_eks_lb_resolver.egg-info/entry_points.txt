@@ -1,0 +1,3 @@
+[sceptre.resolvers]
+eks_lb_uri = resolver.eks_lb_uri:EksLbUri
+

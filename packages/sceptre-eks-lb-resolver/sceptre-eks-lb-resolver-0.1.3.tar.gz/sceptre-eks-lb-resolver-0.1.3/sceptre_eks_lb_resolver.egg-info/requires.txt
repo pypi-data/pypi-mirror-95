@@ -1,0 +1,6 @@
+packaging==16.8
+sceptre>=2.4.0
+kubernetes>=12.0.1
+
+[test]
+pytest>=3.2

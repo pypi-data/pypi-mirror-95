@@ -1,0 +1,6 @@
+exclude requirements.txt
+exclude tests/
+exclude Makefile
+
+include LICENSE
+include README.md
