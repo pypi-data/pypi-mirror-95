@@ -1,0 +1,7 @@
+pycodestyle
+coverage
+pytest>=6.2
+pytest-cov
+pytest-sugar
+semver
+pylama
