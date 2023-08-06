@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+topi/__init__.py
+topi/exceptions.py
+topi/item.py
+topi/record.py
+topi/thumbnail_utils.py
+topi/tind.py
+topi/tind_utils.py
+topi.egg-info/PKG-INFO
+topi.egg-info/SOURCES.txt
+topi.egg-info/dependency_links.txt
+topi.egg-info/not-zip-safe
+topi.egg-info/requires.txt
+topi.egg-info/top_level.txt
