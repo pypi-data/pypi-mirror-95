@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pymindergas
+Version: 0.1.4
+Summary: A python module to post meter readings to Mindergas
+Home-page: https://gitlab.com/metbril/pymindergas
+Author: Robert van Bregt
+Author-email: robertvanbregt@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pymindergas
+
+A module to post meter readings to [Mindergas](https://www.mindergas.nl/).
+
+
