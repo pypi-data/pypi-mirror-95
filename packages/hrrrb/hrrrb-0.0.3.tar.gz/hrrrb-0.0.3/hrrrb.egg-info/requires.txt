@@ -1,0 +1,5 @@
+curl
+numpy
+pandas
+xarray
+cfgrib
