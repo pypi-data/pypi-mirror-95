@@ -1,0 +1,8 @@
+README.md
+setup.py
+crcmodbus/__init__.py
+crcmodbus/crc16.py
+crcmodbus.egg-info/PKG-INFO
+crcmodbus.egg-info/SOURCES.txt
+crcmodbus.egg-info/dependency_links.txt
+crcmodbus.egg-info/top_level.txt
