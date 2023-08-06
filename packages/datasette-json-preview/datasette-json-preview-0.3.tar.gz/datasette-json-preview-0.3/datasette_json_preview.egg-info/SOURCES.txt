@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_json_preview/__init__.py
+datasette_json_preview.egg-info/PKG-INFO
+datasette_json_preview.egg-info/SOURCES.txt
+datasette_json_preview.egg-info/dependency_links.txt
+datasette_json_preview.egg-info/entry_points.txt
+datasette_json_preview.egg-info/requires.txt
+datasette_json_preview.egg-info/top_level.txt
