@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_testdata.egg-info/PKG-INFO
+django_testdata.egg-info/SOURCES.txt
+django_testdata.egg-info/dependency_links.txt
+django_testdata.egg-info/requires.txt
+django_testdata.egg-info/top_level.txt
+testdata/__init__.py
+testdata/decorators.py
+testdata/descriptors.py
