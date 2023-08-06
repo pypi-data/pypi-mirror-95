@@ -1,0 +1,3 @@
+[console_scripts]
+mathterpreter = mathterpreter.__main__:main
+
