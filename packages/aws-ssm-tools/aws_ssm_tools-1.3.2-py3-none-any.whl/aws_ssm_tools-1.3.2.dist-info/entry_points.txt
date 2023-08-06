@@ -1,0 +1,5 @@
+[console_scripts]
+ssm-session = ssm_tools.ssm_session_cli:main
+ssm-ssh = ssm_tools.ssm_ssh_cli:main
+ssm-tunnel = ssm_tools.ssm_tunnel_cli:main
+
