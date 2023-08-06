@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+main.py
+pyproject.toml
+setup.py
+mosquito_remover/__init__.py
+mosquito_remover.egg-info/PKG-INFO
+mosquito_remover.egg-info/SOURCES.txt
+mosquito_remover.egg-info/dependency_links.txt
+mosquito_remover.egg-info/requires.txt
+mosquito_remover.egg-info/top_level.txt
