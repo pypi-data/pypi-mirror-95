@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: crc-manager
+Version: 0.1.1
+Summary: A script for managing CodeReady Containers binaries and installations
+Home-page: https://git.jharmison.com/jharmison/crc-manager
+Author: James Harmison
+Author-email: jharmison@gmail.com
+License: BSD-2-Clause
+Description: UNKNOWN
+Keywords: crc codeready containers
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

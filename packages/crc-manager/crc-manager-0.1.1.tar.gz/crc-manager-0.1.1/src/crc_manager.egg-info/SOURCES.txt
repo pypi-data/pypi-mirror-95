@@ -1,0 +1,12 @@
+setup.py
+src/crc_manager/__about__.py
+src/crc_manager/__init__.py
+src/crc_manager/main.py
+src/crc_manager/update.py
+src/crc_manager/util.py
+src/crc_manager.egg-info/PKG-INFO
+src/crc_manager.egg-info/SOURCES.txt
+src/crc_manager.egg-info/dependency_links.txt
+src/crc_manager.egg-info/entry_points.txt
+src/crc_manager.egg-info/requires.txt
+src/crc_manager.egg-info/top_level.txt
