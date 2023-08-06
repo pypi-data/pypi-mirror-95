@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: aioscrapy-redis
+Version: 0.1
+Summary: A mini spider framework, Integrate aiohttp into scrapy
+Home-page: https://github.com/pythonlw/aioscrapy_redis
+Author: 道法自然_Tor
+Author-email: 1540310556@qq.com
+License: Apache License v2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (>=3.1.3)
+Requires-Dist: six (>=1.11.0)
+Requires-Dist: asyncio (>=3.4.3)
+Requires-Dist: lxml (>=4.2.1)
+Requires-Dist: w3lib (>=1.19.0)
+Requires-Dist: parsel (>=1.4.0)
+Requires-Dist: redis (>=3.2.0)
+Requires-Dist: Twisted (>=18.4.0)
+Requires-Dist: chardet (>=3.0.4)
+
+Python async library for web scraping
+PyPI version License: MIT
+
+Build Status codecov codebeat badge Codacy Badge
+
+Installing
+pip install aioscrapy_redis
+Usage
+Plain text scraping
+
+
+from aioscrapy_redis.core.spider import Spider
+
+from aioscrapy_redis.https.request import Request
+
+import re
+
+from urllib.parse import unquote
+
+"""
+The start url can be placed in start_urls or written to the redis queue
+"""
+
+class Async_Spider(Spider):
+
+    name = 'aioscrapy_spider'
+
+    redis_key = 'aioscrapy_spider:url'
+
+    start_urls = []
+
+    def parse(self, response):
+        pass
+
+
+
+
