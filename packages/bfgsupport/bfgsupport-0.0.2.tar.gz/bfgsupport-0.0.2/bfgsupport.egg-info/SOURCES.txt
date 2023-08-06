@@ -1,0 +1,7 @@
+README.md
+setup.py
+bfgsupport.egg-info/PKG-INFO
+bfgsupport.egg-info/SOURCES.txt
+bfgsupport.egg-info/dependency_links.txt
+bfgsupport.egg-info/requires.txt
+bfgsupport.egg-info/top_level.txt
