@@ -1,0 +1,6 @@
+osu_sr_calculator
+osu_sr_calculator/Objects
+osu_sr_calculator/Objects/osu
+osu_sr_calculator/Objects/osu/HitObjects
+osu_sr_calculator/Objects/osu/HitObjects/SliderObjects
+osu_sr_calculator/Skills
