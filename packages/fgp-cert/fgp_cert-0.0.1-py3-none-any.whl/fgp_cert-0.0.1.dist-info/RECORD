@@ -1,0 +1,10 @@
+fgp/__init__.py,sha256=xtCKM9VRuWfFNxXrPqTCv_FeIBa6S__xZp4GkbDB9_w,83
+fgp/certification.py,sha256=XWm9glk6rtqZU7o-oJwvo15DvXNDqjU9jbdPKaILi_0,18090
+fgp/checkable_models.py,sha256=EdLYdyNdOWiJWOeKhs4GOTAnN3dFf1VaZkKMgqja4cg,12431
+fgp/projections.py,sha256=OYikPD4nUfRRxxJgF5GDmMGqpt5OD_5MkR7nZoMPsSM,7840
+fgp/queues.py,sha256=ag4-oCFKv-G3EgbYiJ14ODCjZ3b9k1PIXZawU8Mf908,2313
+fgp/utils.py,sha256=ouGqKD5FkJmhknytLtduiIuydcv8IxdMmd8v-fEjlzc,1124
+fgp_cert-0.0.1.dist-info/METADATA,sha256=Ncvd8ltCL_d-eZRjZorJApoBBl-bDCgezdewETmDSeM,4779
+fgp_cert-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fgp_cert-0.0.1.dist-info/top_level.txt,sha256=0vx63h6vdT8wtaqAMqLg96ksiDO5bBUmHCd2Ln71JqY,4
+fgp_cert-0.0.1.dist-info/RECORD,,
