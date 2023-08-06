@@ -1,0 +1,15 @@
+gloro/__init__.py,sha256=tcQSqXP3rc3RyxG-yIA8RHVHnZbhKy4iZ_NFbT3vPcw,281
+gloro/constants.py,sha256=RLkEgAZ3q76KUiR0OvHZSIEPhqAOSiyxLUALEzBanhY,354
+gloro/layers.py,sha256=jh2WjQ9srxD_ouiyHF7lxsDIpxUoVDDrL4jGQRN5pvU,5701
+gloro/models.py,sha256=54us4WdqvgKwim33WfVz0TIfkLuJQbX_wRVvdX8SwUM,4962
+gloro/utils.py,sha256=VwlxUT_jMtmKI0SPGytnVi5gaslEUqIDtaSBGDSal2o,3183
+gloro/training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gloro/training/callbacks.py,sha256=DHMPFNY2689kWvO7c7IAHKoCRqJ2BEVRJgU3-WzhKwg,6793
+gloro/training/losses.py,sha256=g0dzFlUsvciuGq-hK503600vC2E8y_g4kSXJHzPp5Q4,2804
+gloro/training/metrics.py,sha256=b7KFXYQYuh6_PK-Agesp0L6nncGhS9UGPynOx9DbMYQ,698
+gloro/training/utils.py,sha256=k66Ea9j8-WuveA_55lU0BiOrWtL_D1OeB8ipBhKVM4M,379
+gloro-0.0.4.dist-info/LICENSE,sha256=ZTLNsGGrBrGqViPewdI2RYpKOBOjipbeNFTxZuud_Eo,1067
+gloro-0.0.4.dist-info/METADATA,sha256=HmWC7-MbnzycykiS3mCGkO8VJmlC0L1n8E4D-H9-f60,8085
+gloro-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gloro-0.0.4.dist-info/top_level.txt,sha256=BiTIygWgnYqbP_rEp8jfIEnA2Me0y2t-lJ10bxBNX10,6
+gloro-0.0.4.dist-info/RECORD,,
