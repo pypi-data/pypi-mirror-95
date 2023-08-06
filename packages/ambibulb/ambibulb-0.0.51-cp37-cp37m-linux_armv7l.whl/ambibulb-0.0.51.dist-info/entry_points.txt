@@ -1,0 +1,4 @@
+[console_scripts]
+ambibulb = ambibulb.__main__:main
+ambibulb-config = ambibulb.ambibulb_config:main
+
