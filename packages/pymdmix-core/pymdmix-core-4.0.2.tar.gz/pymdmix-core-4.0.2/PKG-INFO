@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pymdmix-core
+Version: 4.0.2
+Summary: Molecular Dynamics with organic solvent mixtures setup and analysis
+Home-page: https://github.com/ggutierrez-bio/mdmix4
+Author: ggutierrez-bio
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
