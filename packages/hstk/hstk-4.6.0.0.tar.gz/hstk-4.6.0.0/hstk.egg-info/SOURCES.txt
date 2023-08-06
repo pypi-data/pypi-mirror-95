@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+hstk/__init__.py
+hstk/hscli.py
+hstk/hsscript.py
+hstk.egg-info/PKG-INFO
+hstk.egg-info/SOURCES.txt
+hstk.egg-info/dependency_links.txt
+hstk.egg-info/entry_points.txt
+hstk.egg-info/requires.txt
+hstk.egg-info/top_level.txt
