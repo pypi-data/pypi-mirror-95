@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: see-saw
+Version: 0.1.1
+Summary: CloudWatch logs viewer for multiple groups
+Home-page: https://rsb.io/
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Provides-Extra: testing
