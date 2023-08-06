@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rupayamn
+Version: 1.0.2
+Summary: Quickstart your masternode
+Home-page: https://rupx.io
+License: GPL-3.0+
+Keywords: rupaya,blockchain,masternode,node
+Author: Aasim
+Author-email: aasim@rupx.io
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: clint (>=0.5.1,<0.6.0)
+Requires-Dist: docker (>=3.5.0,<4.0.0)
+Requires-Dist: pastel (>=0.1.0,<0.2.0)
+Requires-Dist: python-slugify (>=1.2,<2.0)
+Project-URL: Documentation, https://docs.rupx.io/masternode/rupayamn/
+Project-URL: Repository, https://github.com/rupaya-project/rupayamn
+Description-Content-Type: text/markdown
+
+Rupaya MasterNode (rupayamn) is a cli tool to help you run a Rupaya masternode
+
+## Running and applying a masternode
+
+If you are consulting this repo, it's probably because you want to run a masternode.
+For complete guidelines on running a masternode candidate, please refer to the [documentation](https://docs.rupx.io/masternode/requirements/).
+
