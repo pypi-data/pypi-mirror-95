@@ -1,0 +1,9 @@
+opencv-python
+lxml
+numpy
+click
+deskew
+regex
+
+[:python_version < "3.7"]
+importlib_resources
