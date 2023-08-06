@@ -1,0 +1,16 @@
+scmer/__init__.py,sha256=i55LhTwalno_xD985V3t5A4pgou-U1GE7SKbV3A04ZU,145
+scmer/_base_selector.py,sha256=veBT4z4JELPRfOeB48e08oceLUWf-CYh6i40uWNajS4,3337
+scmer/_base_torch_model.py,sha256=CSpPFFnw04Fsvz74oirFR3lrI304rRPTRg_zGxX0U7E,2461
+scmer/_comparison.py,sha256=b3MGuHhicFNynYRXvhZLqENDvagZLwYampMdBxorGxA,2354
+scmer/_interfaces.py,sha256=1iRTr9NTqJFln3jE-AfqNcYn1avs5MBtt78RODXVTag,870
+scmer/_owlqn.py,sha256=2tDVIocc9UR8P75hsGO-tvmBQrdw3GDFVSFwKGsw3aU,34079
+scmer/_tsne_l1.py,sha256=Uf9aPxu30zlH8maFZtyqbwi6lprqGTPHjHuN7ggom6c,20489
+scmer/_tsne_torch_models.py,sha256=Nnk3LsFqXJXvN5rbUAIS3R5gWwto-eKypDFPhXfN9aY,6143
+scmer/_umap_l1.py,sha256=XWPwwm7stdXbznjj03GKHAaRHqvd8XNo8-8CuI5mytU,22835
+scmer/_umap_torch_models.py,sha256=nf4ZmDar_8tinOxFHseP2Qh_hGIcIXUML6PNYojhWWk,5795
+scmer/_utils.py,sha256=ihrn476HdMZReH-3R5KcNB0xqxKVgeygmmyNOoJBJGg,1157
+scmer-0.1.0a0.dist-info/LICENSE,sha256=wM6uc7or0vVPCAYmm65AosJTEcqOqKFnWwQ_yI3E3j8,1087
+scmer-0.1.0a0.dist-info/METADATA,sha256=HiHenR34f6d5xCYMaNBxGHvq80euIRdimiu5DGccrHo,1761
+scmer-0.1.0a0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+scmer-0.1.0a0.dist-info/top_level.txt,sha256=HWaEMNzpCXYkyVC0yJEoV2W1X80I0PlaYzpvw14Yi0s,6
+scmer-0.1.0a0.dist-info/RECORD,,
