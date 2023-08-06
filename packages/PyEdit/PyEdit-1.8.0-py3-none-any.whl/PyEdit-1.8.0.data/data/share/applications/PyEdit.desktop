@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=PyEdit
+Comment=Edit python files
+Exec=pyedit %U
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Development;Utility;IDE
+MimeType=text/x-python;text/plain
+Icon=pyedit
+Actions=new-window
+X-Desktop-File-Install-Version=0.24
+
+[Desktop Action new-window]
+Name=New Window
+Exec=pyedit --new-window

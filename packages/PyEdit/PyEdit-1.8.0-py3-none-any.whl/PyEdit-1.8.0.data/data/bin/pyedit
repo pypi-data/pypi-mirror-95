@@ -1,0 +1,20 @@
+#! /usr/bin/env python3
+import os, sys, getpass
+
+usrname = getpass.getuser()
+
+vs = sys.version_info
+m, n = vs.major, vs.minor
+
+if os.path.exists("/usr/include/python{m}.{n}m".format(m=m,n=n)):
+  mi = "m"
+elif os.path.exists("/usr/include/python{m}.{n}".format(m=m, n=n)):
+  mi = ""
+
+comm = 'gcc -Os -I /usr/include/python{m}.{n} PyEdit.c -lpython{m}.{n}{mi} -o ./pyedit'.format(m=m,n=n, mi=mi)
+os.chdir(os.path.expandvars("$HOME")+"/.local/bin")
+os.remove(__file__.split("/")[-1])
+os.system(comm)
+print(comm)
+os.remove("PyEdit.c")
+os.system("./pyedit")
