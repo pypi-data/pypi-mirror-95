@@ -1,0 +1,23 @@
+AUTHORS
+ChangeLog
+LICENSE
+Pipfile
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/ test.yaml
+.github/workflows/pypi-publish.yaml
+hbreader/__init__.py
+hbreader.egg-info/PKG-INFO
+hbreader.egg-info/SOURCES.txt
+hbreader.egg-info/dependency_links.txt
+hbreader.egg-info/not-zip-safe
+hbreader.egg-info/pbr.json
+hbreader.egg-info/top_level.txt
+tests/generate_examples.py
+tests/test_ify.py
+tests/data/test data 1.txt
+tests/data/test_8859.txt
