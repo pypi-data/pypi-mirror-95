@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: librelingo-fakes
+Version: 0.1.2
+Summary: Fake data for testing LibreLingo-related packages
+License: GPLv3
+Author: Dániel Kántor
+Author-email: git@daniel-kantor.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
