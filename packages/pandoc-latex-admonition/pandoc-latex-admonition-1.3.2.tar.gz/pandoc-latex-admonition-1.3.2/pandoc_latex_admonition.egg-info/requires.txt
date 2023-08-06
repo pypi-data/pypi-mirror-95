@@ -1,0 +1,9 @@
+panflute>=2.0
+
+[dev]
+check-manifest
+
+[test]
+black
+pylint
+pytest-cov
