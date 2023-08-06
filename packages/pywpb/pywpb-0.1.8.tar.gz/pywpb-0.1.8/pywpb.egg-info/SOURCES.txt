@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+pywpb/__init__.py
+pywpb/pywpb.py
+pywpb.egg-info/PKG-INFO
+pywpb.egg-info/SOURCES.txt
+pywpb.egg-info/dependency_links.txt
+pywpb.egg-info/not-zip-safe
+pywpb.egg-info/requires.txt
+pywpb.egg-info/top_level.txt

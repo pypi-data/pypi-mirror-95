@@ -1,0 +1,2 @@
+#templates
+recursive-include neublis/templates *
