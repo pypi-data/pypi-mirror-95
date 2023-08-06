@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: jinjyaml
+Version: 0.2a1
+Summary: Application specific YAML tag of Jinja2 template
+Home-page: https://github.com/tanbro/jinjyaml
+Author: liu xue yan
+Author-email: liu_xue_yan@foxmail.com
+License: BSD 3-Clause License
+Keywords: jinja,jinja2,template,template-engine,yaml,yaml-tag
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2 (~=2.0)
+Requires-Dist: PyYAML (~=5.0)
+
+# jinjyaml
+
+[![GitHub tag](https://img.shields.io/github/tag/tanbro/jinjyaml.svg)](https://github.com/tanbro/jinjyaml)
+[![Test Python Package](https://github.com/tanbro/jinjyaml/actions/workflows/python-package.yml/badge.svg)](https://github.com/tanbro/jinjyaml/actions/workflows/python-package.yml)
+[![Documentation Status](https://readthedocs.org/projects/jinjyaml/badge/?version=latest)](https://jinjyaml.readthedocs.io/en/latest/?badge=latest)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tanbro_jinjyaml&metric=alert_status)](https://sonarcloud.io/dashboard?id=tanbro_jinjyaml)
+[![PyPI](https://img.shields.io/pypi/v/jinjyaml.svg)](https://pypi.org/project/jinjyaml/)
+
+Application specific tag of [Jinja2][] template in [PyYAML][]
+
+## Usage
+
+```python
+>>> import yaml
+>>> import jinjyaml
+>>>
+>>> txt = '''
+... array:
+...   !j2 |
+...     {% for i in range(n) %}
+...     - sub{{i}}: {{loop.index}}
+...     {% endfor %}
+... '''
+>>>
+>>> constructor = jinjyaml.Constructor()
+>>> yaml.add_constructor('!j2', constructor)
+>>> obj = yaml.load(txt, yaml.Loader)
+>>> data = jinjyaml.extract(obj, {'n': 3})
+>>>
+>>> print(data)
+{'array': [{'sub0': 1}, {'sub1': 2}, {'sub2': 3}]}
+```
+
+[Jinja2]: https://jinja.palletsprojects.com/ "Jinja is a modern and designer-friendly templating language for Python"
+[PyYAML]: https://pyyaml.org/ "PyYAML is a full-featured YAML framework for the Python programming language."
+
+# CHANGELOG
+
+## 0.2a1
+
+Many APIs changed in `v0.2`
+
+## v0.1
+
+An early version, maybe not stable enough.
+
+# AUTHORS
+
+* Liu Xue Yan (<liu_xue_yan@foxmail.com>)
+
+  [![liu_xue_yan@foxmail.com](https://www.gravatar.com/avatar/049d2fae1fd2df6439e87d1383d0276b)](mailto:liu_xue_yan@foxmail.com)
+
+
