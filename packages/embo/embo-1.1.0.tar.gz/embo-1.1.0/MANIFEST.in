@@ -1,0 +1,7 @@
+include LICENSE
+include CHANGELOG.md
+include embo/VERSION
+include embo/examples/*.ipynb
+include embo/examples/README.md
+include embo/examples/style.mplstyle
+include tox.ini
