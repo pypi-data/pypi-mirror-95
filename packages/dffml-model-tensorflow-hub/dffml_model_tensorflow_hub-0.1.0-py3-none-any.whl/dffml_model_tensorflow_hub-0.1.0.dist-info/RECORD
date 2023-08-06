@@ -1,0 +1,14 @@
+dffml_model_tensorflow_hub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_model_tensorflow_hub/text_classifier.py,sha256=Q8uibJ0Zx5gwfHKfciv4CruQwi0yj_TdgQqxckgcF0k,13616
+dffml_model_tensorflow_hub/tfhub_models.py,sha256=95TxGV_9K1TJqdt5G_11yFmnpW3vH_BarcUP4_jpNv0,3850
+dffml_model_tensorflow_hub/tfhub_utils.py,sha256=IWVwWb1PKmLO0Gn5pElbk4FeEcogiaDnURjc2EG3GYc,10238
+dffml_model_tensorflow_hub/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_model.py,sha256=PJUYur5E0sBayRyzmiIl6GhbRzIFUip4JnPp_PlBmpk,3202
+tests/test_tfhub_integration.py,sha256=n46pFFJRKh3uh8L96sCMu5hAQ7u_mkIPTrY_5Bo9O2s,5066
+dffml_model_tensorflow_hub-0.1.0.dist-info/LICENSE,sha256=PAXRzyPCEF1oyUe6824WqBzlKGndIZGVRi7w_oQF66w,1081
+dffml_model_tensorflow_hub-0.1.0.dist-info/METADATA,sha256=ZpOYDWyfMVKXeBZ3ATQuA0QnvslhfMpL3zc-3v92ulM,4550
+dffml_model_tensorflow_hub-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_tensorflow_hub-0.1.0.dist-info/entry_points.txt,sha256=SP-D3RCzqOc3zql9lGeCzVGqWs7F54pgBa_YSDgaMiQ,100
+dffml_model_tensorflow_hub-0.1.0.dist-info/top_level.txt,sha256=AwT0VGGXac946SZyXcVJMjfNFkzT0Xqq_JNkZHhkVz4,33
+dffml_model_tensorflow_hub-0.1.0.dist-info/RECORD,,
