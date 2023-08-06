@@ -1,0 +1,15 @@
+mkl_fft/__init__.py,sha256=wBr6zWlpKXE7JFN6IuBC5OwXHEfrZ8ficq2R8uP7YyQ,1903
+mkl_fft/_float_utils.py,sha256=HHOoA4ktCe1Ck9jwJekzdKVnumLxD2S7a31ijRBq5zE,3307
+mkl_fft/_numpy_fft.py,sha256=Ub_lZIjjwo59PzSWtG-6Ap5bHdZqKRz6_Q16rJwNF20,45455
+mkl_fft/_pydfti.cpython-37m-x86_64-linux-gnu.so,sha256=0FStw9F1aNtWpNFScQc6wGyXLigLTOf5CvtwcnPc3jc,632672
+mkl_fft/_scipy_fft.py,sha256=-zi5WnEvxCpAWmoVsw-CkcNqFFR-mbTPZZBJ0CYgQTo,3094
+mkl_fft/_scipy_fft_backend.py,sha256=0LvBF5Z4fH7H-s_fkarAB3iTs7Ynqak6fKtUAx5ezfo,10438
+mkl_fft/_version.py,sha256=U3f_Jgr3zpgiYG2kLcvcT05TQsVzN9Kktg_f3Q9OZFA,22
+mkl_fft/setup.py,sha256=5ODWx8zM-xA7b3zvnUzelZ8Sxlq_wiAidy9knvHE3C0,3769
+mkl_fft/tests/test_fft1d.py,sha256=GxOxNnTl4KmmsrF3Has-OS3ppitYg9lBUbW6cL7WKIk,13388
+mkl_fft/tests/test_fftnd.py,sha256=lwtwsk-HT4XJj9Dq5vSNBm2alC7YX_ovOVPgia2InLw,5851
+mkl_fft-1.2.0.dist-info/LICENSE.txt,sha256=lVd3uLVrIob9lALSs0ybRU0_PILvspU_FlUezqwgDBc,1505
+mkl_fft-1.2.0.dist-info/METADATA,sha256=cP9JKU1ruqHX7RNZLpHOJnnctNuY8UCz4WTZHaClIwQ,3606
+mkl_fft-1.2.0.dist-info/WHEEL,sha256=Z-wDbC2GndpzJwEwlRN_cRoiUMXCZOW1Do99xhjP1i8,235
+mkl_fft-1.2.0.dist-info/top_level.txt,sha256=hjyj9JphiBfpP4bLbMitG4fkZxpFtY3Iyj_nDe03wds,8
+mkl_fft-1.2.0.dist-info/RECORD,,
