@@ -1,0 +1,10 @@
+pyecwid/__init__.py,sha256=ygDSeou3kN_FP9C4qTNH_-VFme-m714sfGgv_pl4Op8,30
+pyecwid/ecwidapi.py,sha256=Fp8LCw05ADo4A53TA8oBInBOOriqp0HBzwReib0gAes,10056
+pyecwid/ecwidutils.py,sha256=K1ZAK8AAmrI169EQMTp5tVRFsvxj2vnGb7OGMRRyyy4,736
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pyecwid.py,sha256=9IOl3t5-WyzrTWQULaKpsrVp0ixj7_-BgfTbkKOksRU,5064
+pyecwid-0.0.2.dist-info/LICENSE,sha256=T0a-mZKySJWaAFAxWEZIWoZ9Xk7ZvTgJxl_H3CXFSUA,1091
+pyecwid-0.0.2.dist-info/METADATA,sha256=rzxsOjmKKeRpSI2HeQPn8cm2i5cd2z9gj9wYweCBnvo,2539
+pyecwid-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyecwid-0.0.2.dist-info/top_level.txt,sha256=__f6BgnUjk3rr4ZBqjz31n7h-U92-7XWKDqsmXIEB8w,14
+pyecwid-0.0.2.dist-info/RECORD,,
