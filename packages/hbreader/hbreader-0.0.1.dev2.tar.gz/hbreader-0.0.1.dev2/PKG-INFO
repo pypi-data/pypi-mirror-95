@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: hbreader
+Version: 0.0.1.dev2
+Summary: Honey Badger reader - a generic file/url/string open and read tool
+Home-page: https://github.com/hsolbrig/hbreader
+Author: Harold Solbrig
+Author-email: solbrig@jhu.edu
+License: CC0 1.0 Universal
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
