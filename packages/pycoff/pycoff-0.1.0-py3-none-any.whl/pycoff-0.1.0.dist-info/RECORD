@@ -1,0 +1,10 @@
+pycoff/__init__.py,sha256=CAQ7Csb8dBCGyPGs_4TK0XLSigzy3YgXA0czkhm6P7s,355
+pycoff/defs.py,sha256=2-Bpb4wKSvoeABEtKHv_r-KbSdIScIlVHHXNSsJpToM,445
+pycoff/elf.py,sha256=DnFPrAy4gztb90qJEdW0ezfl6L9AOJUdqpxssVFyvGw,98
+pycoff/pe.py,sha256=uzkI3ZJPaXBKhxPuq0BEvjdRLXHHMbLv2Ut2AXtap34,7052
+pycoff/utility.py,sha256=SVQfBbYYbRyjMlgLsB3Kk-6RO1XOh0omhyPtjYdBl3U,3373
+pycoff-0.1.0.dist-info/LICENSE,sha256=y-0WxFqcVC7wlhTxHodngbKxhC_ove01LGDDnCST_Jo,1517
+pycoff-0.1.0.dist-info/METADATA,sha256=8jajRRUzWOQxs7n_cLokN128i_NEUSqF9xQSVQoBg98,798
+pycoff-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pycoff-0.1.0.dist-info/top_level.txt,sha256=H9a-w_H3BdsSRdm6LjIfbbeVmASI-6K9uWJ_9y1cOPc,7
+pycoff-0.1.0.dist-info/RECORD,,
