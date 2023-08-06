@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: validatetoken
+Version: 0.0.1
+Summary: Middleware for OpenStack Identity
+Home-page: UNKNOWN
+Author: Open Telekom Cloud
+License: UNKNOWN
+Description: Middleware for the OpenStack Identity API (Keystone)
+        ====================================================
+        
+        This package contains validatetoken middleware for validating Keystone token
+        original keystonemiddleware.auth_token is doing, but using the token itself as
+        authentication information (GET /auth/tokens with
+        X-Auth-Token=X-Subject-Token). If populates all information like auth_token is
+        doing and pass it further down the pipeline. If the token is invalid or expired
+        immedialey NotAuthorized response is returned.
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: audit_notifications
+Provides-Extra: test
