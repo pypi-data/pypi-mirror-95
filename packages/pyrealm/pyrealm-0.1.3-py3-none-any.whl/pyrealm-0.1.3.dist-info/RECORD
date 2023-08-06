@@ -1,0 +1,10 @@
+pyrealm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrealm/params.py,sha256=DFwZXiT6hvXt1QBFV-os-Bjqoy0bP-j2pRXNz6TNX0g,469
+pyrealm/pmodel.py,sha256=QfsKVuJ1B-WF_5crcSqFFle5LYBQ1mzMKVU385K7NPY,52303
+pyrealm/version.py,sha256=5UQ5I5G9WpWlYE599ss4lhPn9VU_9W4wcrL7i0n9aqI,23
+pyrealm/data/params.yaml,sha256=V3QqzW3q-8gfiuhCcOO_JKcsi8ti9caR25M9BRllxks,3579
+pyrealm-0.1.3.dist-info/METADATA,sha256=fsfDP4WzYj8JldoQSUu2U9VXL8EWigUt7y6Xb3ORxuc,6918
+pyrealm-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyrealm-0.1.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyrealm-0.1.3.dist-info/top_level.txt,sha256=TKHbWGa3dIl4wVOqXvuiv2NLxf9bcK8enrQPcFMcX04,8
+pyrealm-0.1.3.dist-info/RECORD,,
