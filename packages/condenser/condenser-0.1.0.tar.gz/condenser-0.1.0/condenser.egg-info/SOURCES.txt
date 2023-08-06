@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+condenser/__init__.py
+condenser/query.py
+condenser/utils.py
+condenser.egg-info/PKG-INFO
+condenser.egg-info/SOURCES.txt
+condenser.egg-info/dependency_links.txt
+condenser.egg-info/not-zip-safe
+condenser.egg-info/requires.txt
+condenser.egg-info/top_level.txt
