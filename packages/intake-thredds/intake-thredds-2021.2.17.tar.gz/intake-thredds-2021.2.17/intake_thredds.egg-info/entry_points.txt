@@ -1,0 +1,4 @@
+[intake.drivers]
+thredds_cat = intake_thredds.cat:ThreddsCatalog
+thredds_merged = intake_thredds.source:THREDDSMergedSource
+
