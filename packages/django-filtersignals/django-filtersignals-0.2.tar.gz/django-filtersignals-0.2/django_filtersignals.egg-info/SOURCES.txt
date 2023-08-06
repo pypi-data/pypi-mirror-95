@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_filtersignals.egg-info/PKG-INFO
+django_filtersignals.egg-info/SOURCES.txt
+django_filtersignals.egg-info/dependency_links.txt
+django_filtersignals.egg-info/requires.txt
+django_filtersignals.egg-info/top_level.txt
+filtersignals/__init__.py
