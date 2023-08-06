@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pyalias/__init__.py
+pyalias/__main__.py
+pyalias.egg-info/PKG-INFO
+pyalias.egg-info/SOURCES.txt
+pyalias.egg-info/dependency_links.txt
+pyalias.egg-info/requires.txt
+pyalias.egg-info/top_level.txt
+scripts/pyalias
