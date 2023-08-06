@@ -1,0 +1,10 @@
+gravitational/__init__.py,sha256=peGASowULJYtNApROOusgvLDr6tBh7uyzg81yG1FESY,83
+gravitational/plays.py,sha256=bgV4_fGKLaP8Z1EhtXzkg2TtkQGHHkMVtXcCA1Asf2o,5678
+gravitational/simulation.py,sha256=WJsAFhlVeMKfYa_n-gXeodQkeLeizeoOQLM269OLbW8,6681
+gravitational/solar_system.py,sha256=xtS-wpCtyex92mzFz-aOr005iro81C6O7FiFNM-2a9Y,2807
+gravitational/utils.py,sha256=BBe0fRlqrVaExUx6DP9Orwi0ygWshL1seechfF-Z118,1210
+gravitational-0.0.3.dist-info/LICENSE.txt,sha256=bhm39Hv4dvAV9kPMPucRYiY4OFDcmjuLQneWAdmMV80,1092
+gravitational-0.0.3.dist-info/METADATA,sha256=DdsoXB-tw4yOKXxWrf8_AO-LvZRq3vLnP2QgTnG3NxM,1594
+gravitational-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gravitational-0.0.3.dist-info/top_level.txt,sha256=BgHyZkzEQF4DTXd0JDvyNEcHzEvYkLnmK3DuY_2RyAs,14
+gravitational-0.0.3.dist-info/RECORD,,
