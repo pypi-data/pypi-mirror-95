@@ -1,0 +1,5 @@
+include snir/first_click.wav
+include snir/second_click.wav
+include snir/startup.wav
+include snir/success.wav
+include snir/negativebeep.wav
