@@ -1,0 +1,9 @@
+pyfindmaxima-0.1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyfindmaxima-0.1.0.3.dist-info/WHEEL,sha256=E9diJhdqYoW-Z_k18V_gCo0nZPNV0ncLHCsPAqWn_Do,106
+pyfindmaxima-0.1.0.3.dist-info/METADATA,sha256=_9u89NnA3ljl-YKk9WscLch-4dbvCYG2BCmpn5bK82c,199
+pyfindmaxima-0.1.0.3.dist-info/RECORD,,
+pyfindmaxima-0.1.0.3.dist-info/top_level.txt,sha256=6TLlBv897OtwNZ5TkNZyjNmRCXqkmez_2CqPRjfSuUg,11
+findmaxima/__init__.py,sha256=00rqBsmQru3S-PX_gJwRgLkvzMoDgSabfBhlQEO5o3Q,19
+findmaxima/cy_findmaxima.cpython-39-i386-linux-gnu.so,sha256=74hUdM6nmXnC7JclmGztMnIKYjIOZJ6_p_AiSfmuASw,1016140
+findmaxima/cy_findmaxima.pyx,sha256=_M8Ub1aYHbemPqopedryV1IAqJO2PXaMrrAjQg9ORfI,5894
+findmaxima/findmaxima.py,sha256=NrTYXb7-hHoxqrsvKonYoMTn0bLrQpzCzwQXVuLI4L0,397
