@@ -1,0 +1,8 @@
+aws_cdk/aws_opsworks/__init__.py,sha256=BZcG-2FwJSSfVuHPi1OuSKCmFlQSP3kVxkUcwY3_noE,237245
+aws_cdk/aws_opsworks/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_opsworks/_jsii/__init__.py,sha256=RgPKZOgxsJMqImq-qas6whmHllx_Rt7uXom5ykYAj2E,373
+aws_cdk/aws_opsworks/_jsii/aws-opsworks@1.90.0.jsii.tgz,sha256=oLC-SPtepV-QNF_TRLdMC-5PDrWI-JVMSpyLWPdsVvE,86625
+aws_cdk.aws_opsworks-1.90.0.dist-info/METADATA,sha256=TeL_mxhOC-TMCZqCo2iwyRHC9ZEDON5tfxzz0WMqCkE,1567
+aws_cdk.aws_opsworks-1.90.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_opsworks-1.90.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_opsworks-1.90.0.dist-info/RECORD,,
