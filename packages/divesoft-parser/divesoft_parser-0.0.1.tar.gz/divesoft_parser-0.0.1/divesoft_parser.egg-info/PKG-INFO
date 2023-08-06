@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: divesoft-parser
+Version: 0.0.1
+Summary: Divesoft Log (DLF) Parser
+Home-page: https://github.com/DiveWithDamian/divesoft-parser
+Author: Damian Zaremba
+Author-email: oss@divewithdamian.eu
+License: MIT
+Description: Divesoft Log Parser
+        ===================
+        
+        Python parser for Divesoft Freedom (DLF) log files.
+        
+        ## Example usage
+        
+        ```python3
+        from divesoft_parser import DLFDecoder
+        
+        dive = DLFDecoder.from_file('00000001.DLF')
+        print(dive.serial)
+        ```
+        
+        ## Support Notes
+        
+        The majority of testing has been done against open circuit dive logs from a 3.0 computer,
+        little support exists for CCR specific data e.g. setpoints, cell calibration etc.
+        
+        ## Implementation references
+        
+        - https://github.com/subsurface/libdc
+        - https://wetnotes.com/
+        - Wetnotes Desktop
+        
+Keywords: divesoft dlf
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown

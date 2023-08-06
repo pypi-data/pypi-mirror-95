@@ -1,0 +1,3 @@
+[console_scripts]
+divesoft-parser = divesoft_parser.cli:cli
+
