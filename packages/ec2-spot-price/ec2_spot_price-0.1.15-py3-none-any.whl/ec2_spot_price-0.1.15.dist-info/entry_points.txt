@@ -1,0 +1,3 @@
+[console_scripts]
+ec2_spot_price=ec2_spot_price.ec2_spot_price:main
+
