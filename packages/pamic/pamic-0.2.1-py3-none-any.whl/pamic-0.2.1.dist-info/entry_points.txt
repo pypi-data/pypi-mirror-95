@@ -1,0 +1,3 @@
+[gui_scripts]
+pamicg = pamicg.__main__:main
+
