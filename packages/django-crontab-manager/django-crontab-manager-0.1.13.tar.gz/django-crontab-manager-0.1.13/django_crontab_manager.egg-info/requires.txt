@@ -1,0 +1,5 @@
+django
+django-apiview>=0.9.7
+django-fastadmin>=0.7.1
+bizerror>=0.4.6
+fastutils>=0.39.1

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: django-crontab-manager
+Version: 0.1.13
+Summary: Manage crontab tasks on web. Update crontab file on system while changes made on manager. Work with django-crontab-agent.
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Description: # django-crontab-manager
+        
+        Manage crontab tasks on web. Update crontab file on system while changes made on manager. Work with django-crontab-agent.
+        
+        ## Install
+        
+        ```
+        pip install django-crontab-manager
+        ```
+        
+        ## Usage
+        
+        *settings.py*
+        
+        ```
+        INSTALLED_APPS = [
+            'django_apiview',
+            'django_fastadmin',
+            'django_crontab_manager',
+        ]
+        ```
+        
+        ## Usage
+        
+        1. Setup django-crontab-manager at server side. django-crontab-manager is a simple django application, include it in django project.
+        1. Install django-crontab-agent on all target linux server.
+        
+        ## Releases
+        
+        ### v0.1.13 2020/01/29
+        
+        - First release.
+Keywords: django extensions
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown

@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-28 18:42+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\django_crontab_manager\admin.py:28
+msgid "Stdout"
+msgstr "输出信息"
+
+#: .\django_crontab_manager\admin.py:32
+msgid "Stderr"
+msgstr "错误信息"
+
+#: .\django_crontab_manager\apps.py:6
+msgid "Django Crontab Manager"
+msgstr "定时任务管理"
+
+#: .\django_crontab_manager\models.py:14
+msgid "Name"
+msgstr "名称"
+
+#: .\django_crontab_manager\models.py:15 .\django_crontab_manager\models.py:51
+msgid "UUID"
+msgstr "唯一识别码"
+
+#: .\django_crontab_manager\models.py:16
+msgid "Acl Key"
+msgstr "访问授权码"
+
+#: .\django_crontab_manager\models.py:17 .\django_crontab_manager\models.py:53
+msgid "Description"
+msgstr "描述"
+
+#: .\django_crontab_manager\models.py:18 .\django_crontab_manager\models.py:60
+msgid "Add Time"
+msgstr "创建时间"
+
+#: .\django_crontab_manager\models.py:19 .\django_crontab_manager\models.py:61
+msgid "Modify Time"
+msgstr "修改时间"
+
+#: .\django_crontab_manager\models.py:20
+msgid "Last Updated Time"
+msgstr "最近更新时间"
+
+#: .\django_crontab_manager\models.py:23 .\django_crontab_manager\models.py:50
+msgid "Server"
+msgstr "服务器"
+
+#: .\django_crontab_manager\models.py:24
+msgid "Servers"
+msgstr "服务器"
+
+#: .\django_crontab_manager\models.py:43
+msgid "Alive"
+msgstr "活动状态"
+
+#: .\django_crontab_manager\models.py:47
+msgid "Linux crontab schedule settings, e.g. * * * * *"
+msgstr "Linux Crontab格式的任务安排。例如：* * * * *"
+
+#: .\django_crontab_manager\models.py:48
+msgid "MD5 code of the schedule settings. It will be auto computed."
+msgstr "任务设置的MD5值。该字段将会自动计算。"
+
+#: .\django_crontab_manager\models.py:52
+msgid "Title"
+msgstr "名称"
+
+#: .\django_crontab_manager\models.py:52
+msgid "Describe the scheduled task, so that we know what it is."
+msgstr "为方便任务的后续维护，请输入任务的描述。"
+
+#: .\django_crontab_manager\models.py:54
+msgid "Schedule Settings"
+msgstr "定时设置"
+
+#: .\django_crontab_manager\models.py:55
+msgid "Running User"
+msgstr "运行用户"
+
+#: .\django_crontab_manager\models.py:56
+msgid "Shell Script"
+msgstr "脚本"
+
+#: .\django_crontab_manager\models.py:57
+msgid "Enable"
+msgstr "启用"
+
+#: .\django_crontab_manager\models.py:58
+msgid "Setting Code"
+msgstr "设置摘要"
+
+#: .\django_crontab_manager\models.py:64 .\django_crontab_manager\models.py:101
+msgid "Schedule"
+msgstr "定时任务"
+
+#: .\django_crontab_manager\models.py:65
+msgid "Schedules"
+msgstr "定时任务"
+
+#: .\django_crontab_manager\models.py:102
+msgid "Run Time"
+msgstr "执行时间"
+
+#: .\django_crontab_manager\models.py:103
+msgid "Script Exit Code"
+msgstr "退出码"
+
+#: .\django_crontab_manager\models.py:104
+msgid "Stdout Message"
+msgstr "输出信息"
+
+#: .\django_crontab_manager\models.py:105
+msgid "Stderr Message"
+msgstr "错误信息"
+
+#: .\django_crontab_manager\models.py:108
+msgid "Result"
+msgstr "运行结果"
+
+#: .\django_crontab_manager\models.py:109
+msgid "Results"
+msgstr "运行结果"
