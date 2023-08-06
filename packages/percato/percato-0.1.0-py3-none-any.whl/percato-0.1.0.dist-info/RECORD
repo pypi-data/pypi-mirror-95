@@ -1,0 +1,16 @@
+percato/__init__.py,sha256=12l1AM1hTooLgX7uVLqWuu5gJXp2HVB7SBnEjPX0ick,106
+percato/characterutil.py,sha256=Jw4wHJ3Y-R0_vuUAQVzVeKFbJSn2PwexZVDneXhsn-w,6802
+percato/container.py,sha256=eqgmGDnz33t00IQiPre_eT5_6SkKYigs0Ca3aNPDl5I,4307
+percato/conv2dete.py,sha256=U7tySvzQ3IzeMxxiaC3656J1_qyZDwOpVRP-RD2CCBM,3608
+percato/datacheck.py,sha256=D2WegpnJJ-xf-pkjRheV3rnHvBEjguF07zQbkPMWXBc,2447
+percato/main.py,sha256=_XZ5AMm5HiaJ38JhxO6ly0YurtJEfZ6zfCxSBFfgocI,2721
+percato/params.py,sha256=oTnZB7ZpbcB_B8xzne8yOVt6QNk9y6Y8dtCQkSFGREs,672
+percato/predict.py,sha256=kD2CsKtlgoTHG4LkYa_6eTr70NXJvr7Ytmyg_tlNpIE,2789
+percato/run.py,sha256=G55jSgWyJnt1VQHP1OAQc2-yzJ72_Ar814MMEa0h6W4,1681
+percato/textutils.py,sha256=Scen3qO7xHOm-wWn6DmDpfS3HGBzmnquTmA_DaTQeLg,10094
+percato-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+percato-0.1.0.dist-info/METADATA,sha256=E3IQqBGC8nVE4Y-avqdneeV-a_1YQjcACYCONYTmsFE,1264
+percato-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+percato-0.1.0.dist-info/entry_points.txt,sha256=pTVMk9et-VSwaVSqv5zcDn_CAcd4I06f77V7rkmdFUA,45
+percato-0.1.0.dist-info/top_level.txt,sha256=lAshWWUgjElybxZqSGECOWaP0ZyIWaGI2MudoG8vm00,8
+percato-0.1.0.dist-info/RECORD,,
