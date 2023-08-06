@@ -1,0 +1,10 @@
+classes/__init__.py,sha256=FwwNdPCapUmyhmoRPra4Xtwi0IvWevmOSCwuEoOGaJc,209
+classes/contrib/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+classes/contrib/mypy/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+classes/contrib/mypy/classes_plugin.py,sha256=UGVu4U0fOQi7vu-XjcRCJdA0UCK-4wowb3cWjdfK680,4065
+classes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classes/typeclass.py,sha256=P56mlZ2K3CgbDijtrjk5IT3pRQoBBd0CbRrVx5XRkAY,9977
+classes-0.2.0.dist-info/LICENSE,sha256=Bbojw4Va1bU4dPNZ5qFhl8JWnOjf4T6co8wugmmTnQ8,1289
+classes-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+classes-0.2.0.dist-info/METADATA,sha256=5Whqcoz5zSAXY2IuE-7jqyeUB_hy64lagJyQPG8EuFE,5720
+classes-0.2.0.dist-info/RECORD,,
