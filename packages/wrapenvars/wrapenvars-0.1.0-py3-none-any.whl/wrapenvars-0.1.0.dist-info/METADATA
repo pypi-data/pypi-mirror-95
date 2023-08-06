@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: wrapenvars
+Version: 0.1.0
+Summary: encode/decode base64 strings
+Home-page: https://github.com/deivguerrero/wrapenvars
+License: MIT
+Author: David Guerrero
+Author-email: deivguerrero@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/deivguerrero/wrapenvars
+Description-Content-Type: text/markdown
+
+# WRAPENVARS
+
+encode/decode base64 strings.
+
