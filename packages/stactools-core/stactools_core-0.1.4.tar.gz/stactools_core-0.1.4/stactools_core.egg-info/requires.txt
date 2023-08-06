@@ -1,0 +1,7 @@
+pystac[validation]==0.5.4
+aiohttp==3.7.3
+fsspec==0.8.4
+requests==2.25.0
+Shapely==1.7.1
+pyproj==3.0.0.post1
+rasterio==1.1.8
