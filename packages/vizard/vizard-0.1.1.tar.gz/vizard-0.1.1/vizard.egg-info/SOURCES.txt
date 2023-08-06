@@ -1,0 +1,9 @@
+README.md
+setup.py
+vizard/Vizard.py
+vizard/__init__.py
+vizard.egg-info/PKG-INFO
+vizard.egg-info/SOURCES.txt
+vizard.egg-info/dependency_links.txt
+vizard.egg-info/requires.txt
+vizard.egg-info/top_level.txt
