@@ -1,0 +1,7 @@
+README.md
+setup.py
+alfonslistener.egg-info/PKG-INFO
+alfonslistener.egg-info/SOURCES.txt
+alfonslistener.egg-info/dependency_links.txt
+alfonslistener.egg-info/requires.txt
+alfonslistener.egg-info/top_level.txt
