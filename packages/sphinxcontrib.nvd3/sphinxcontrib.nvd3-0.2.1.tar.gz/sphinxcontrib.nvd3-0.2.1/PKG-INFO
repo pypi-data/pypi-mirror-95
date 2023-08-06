@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib.nvd3
+Version: 0.2.1
+Summary: Sphinx chart extension using NVD3.js.
+Home-page: https://github.com/shkumagai/sphinxcontrib.nvd3
+License: Apache Software License
+Author: shkumagai
+Author-email: take.this.2.your.grave@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Text Processing :: Markup
+Requires-Dist: Sphinx (>=3.5.0,<4.0.0)
+Requires-Dist: python-nvd3 (>=0.15.0,<0.16.0)
+Description-Content-Type: text/x-rst
+
+====================
+ sphinxcontrib.nvd3
+====================
+
+.. image:: https://github.com/shkumagai/sphinxcontrib.nvd3/workflows/Test/badge.svg?branch=master
+    :target: https://github.com/shkumagai/sphinxcontrib.nvd3/workflows/Test/badge.svg?branch=master
+    :alt: master
+
+.. image:: https://readthedocs.org/projects/sphinxcontribnvd3/badge/?version=latest
+    :target: https://sphinxcontribnvd3.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/sphinxcontrib.nvd3.svg
+    :target: https://pypi.org/project/sphinxcontrib.nvd3/
+    :alt: Latest
+
+.. image:: https://img.shields.io/pypi/pyversions/sphinxcontrib.nvd3.svg
+    :target: https://pypi.org/project/sphinxcontrib.nvd3/
+    :alt: Python Versions
+
+.. image:: https://img.shields.io/badge/license-Apache%202-blue.svg
+    :target: https://github.com/shkumagai/sphinxcontrib.nvd3/blob/master/LICENSE
+    :alt: License
+
+Sphinx chart extension using NVD3.
+
+
+Feature
+=======
+* provide some kinds of ``nvd3-`` prefixed directives to generate SVG chart from source.
+
+
+Installation
+============
+Install with pip::
+
+    $ pip install sphinxcontrib.nvd3
+
+
+setup conf.py with::
+
+    extensions = ["sphinxcontrib.nvd3"]
+
+This package is NOT includes Javascript and CSS files (e.g. d3.js, nvd3.js and nvd3.css).
+
+You need to add `setup` function into conf.py, as below::
+
+    def setup(app):
+        app.add_js_file("/path/to/d3.v3.js")
+        app.add_js_file("/path/to/nv.d3.js")
+        app.add_css_file("/path/to/nv.d3.css")
+
+And then::
+
+    $ make html
+
+
+Requirement
+===========
+* python-nvd3 >= 0.13.10
+* D3.js >= 3.0,<4.0
+* Sphinx >= 3.0
+
+
+License
+=======
+
+Licensed under the `Apache Software License <http://opensource.org/licenses/Apache-2.0>`_ .
+See the LICENSE file for specific terms.
+
+
+.. END
+
