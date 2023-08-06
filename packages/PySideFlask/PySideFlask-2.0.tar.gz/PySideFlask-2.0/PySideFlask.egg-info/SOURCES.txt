@@ -1,0 +1,9 @@
+README.md
+setup.py
+PySideFlask.egg-info/PKG-INFO
+PySideFlask.egg-info/SOURCES.txt
+PySideFlask.egg-info/dependency_links.txt
+PySideFlask.egg-info/not-zip-safe
+PySideFlask.egg-info/requires.txt
+PySideFlask.egg-info/top_level.txt
+pysideflask/__init__.py
