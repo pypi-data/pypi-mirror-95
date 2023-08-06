@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: mdid
+Version: 3.6.0rc1
+Summary: MDID is a digital media management system
+Home-page: https://mdid.org
+Author: vrcHost LLC
+Author-email: info@vrchost.com
+License: GPL
+Platform: Linux
+Platform: Windows
+Requires-Python: >=3.6
+Requires-Dist: attrs (>=17.4.0)
+Requires-Dist: b2sdk (==0.1.6)
+Requires-Dist: beautifulsoup4
+Requires-Dist: bleach (==3.1.4)
+Requires-Dist: bleach-whitelist (==0.0.10)
+Requires-Dist: boto
+Requires-Dist: Celery (==4.2.1)
+Requires-Dist: configobj (<=5.0.0,>=4.7.2)
+Requires-Dist: cryptography
+Requires-Dist: django-appconf (==1.0.3)
+Requires-Dist: django-cas-ng (==3.5.10)
+Requires-Dist: django-compressor (==2.2)
+Requires-Dist: django-extensions (==2.0.7)
+Requires-Dist: django-pagination (==1.0.7)
+Requires-Dist: django-ranged-fileresponse (==0.1.2)
+Requires-Dist: django-storages (==1.6.6)
+Requires-Dist: django-tagging (==0.4.6)
+Requires-Dist: django-contrib-comments (==1.8.0)
+Requires-Dist: Django (==1.11.28)
+Requires-Dist: django-celery-results (==1.0.4)
+Requires-Dist: flake8
+Requires-Dist: flake8-docstrings
+Requires-Dist: flake8-todo
+Requires-Dist: flickrapi (>=2)
+Requires-Dist: flup
+Requires-Dist: gunicorn
+Requires-Dist: ipaddr
+Requires-Dist: markdown (==3.1.1)
+Requires-Dist: pymysql
+Requires-Dist: pep8
+Requires-Dist: pep8-naming
+Requires-Dist: pika
+Requires-Dist: pillow
+Requires-Dist: pycryptodome
+Requires-Dist: PyPDF2
+Requires-Dist: python-ldap
+Requires-Dist: python-memcached
+Requires-Dist: python-pptx
+Requires-Dist: reportlab
+Requires-Dist: requests
+Requires-Dist: sqlparse
+Requires-Dist: werkzeug (==0.16.0)
+Requires-Dist: wfastcgi
+Requires-Dist: wheel
+Requires-Dist: unicodecsv (==0.14.1)
+
+MDID is a digital media management system with sophisticated tools for discovering, aggregating, and presenting digital media in a wide variety of learning spaces.
+
+
