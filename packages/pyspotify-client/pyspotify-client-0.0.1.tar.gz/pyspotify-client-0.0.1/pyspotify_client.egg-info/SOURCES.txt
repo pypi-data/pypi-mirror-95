@@ -1,0 +1,11 @@
+README.md
+setup.py
+client/__init__.py
+client/data_manager.py
+client/menu.py
+client/menu_enum.py
+client/panel.py
+pyspotify_client.egg-info/PKG-INFO
+pyspotify_client.egg-info/SOURCES.txt
+pyspotify_client.egg-info/dependency_links.txt
+pyspotify_client.egg-info/top_level.txt
