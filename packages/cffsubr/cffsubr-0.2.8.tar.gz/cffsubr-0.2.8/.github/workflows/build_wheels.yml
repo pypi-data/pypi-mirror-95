@@ -1,0 +1,77 @@
+# based on https://github.com/joerick/cibuildwheel/blob/master/examples/github-minimal.yml
+
+name: Build wheels
+
+on:
+  push:
+    branches: [master]
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*'  # Push events to matching v*, i.e. v1.0, v20.15.10
+  pull_request:
+    branches: [master]
+
+jobs:
+  build_wheels:
+    name: Build wheels on ${{ matrix.os }}
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # unshallow fetch for setuptools-scm
+        submodules: true
+
+    - name: Use MSBuild (Windows)
+      uses: microsoft/setup-msbuild@v1.0.2
+      if: matrix.os == 'windows-latest'
+
+    - uses: actions/setup-python@v1
+      name: Install Python
+      with:
+        python-version: '3.7'
+
+    - name: Install cibuildwheel
+      run: |
+        python -m pip install cibuildwheel==1.4.1
+
+    - name: Build wheel
+      run: |
+        python -m cibuildwheel --output-dir dist
+      env:
+        # make sure afdko submodule is not "dirty" before starting a new build
+        CIBW_BEFORE_BUILD: "git submodule foreach git clean -fdx"
+        # The embedded 'tx' C executable is independent of Python ABI so we only need to build it once.
+        # Here we choose the minimum supported version, i.e. Python 3.6
+        CIBW_BUILD: "cp36-*"
+        # build using the manylinux1 image to ensure manylinux1 wheels are produced
+        CIBW_MANYLINUX_X86_64_IMAGE: manylinux1
+        # skip PyPy (no manylinux1), 32-bit linux, and other architectures
+        CIBW_SKIP: "pp* cp*manylinux_i686 cp*manylinux_aarch64 cp*manylinux_ppc64le cp*manylinux_s390x"
+        CIBW_TEST_REQUIRES: "pytest"
+        # run test suite with pytest, no coverage
+        # TODO: run with coverage and publish to codecov.io
+        CIBW_TEST_COMMAND: "pytest {project}/tests"
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: cffsubr-dist
+        path: ./dist
+
+    - name: Build sdist
+      run: |
+        python setup.py sdist
+      if: matrix.os == 'ubuntu-latest' && github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
+
+    - name: Publish package to PyPI
+      run: |
+        pip install twine
+        twine upload dist/*
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.pypi_password }}
+      if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')

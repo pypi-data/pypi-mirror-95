@@ -1,0 +1,7 @@
+fontTools>=4.10.2
+
+[:python_version < "3.7"]
+importlib_resources
+
+[testing]
+pytest
