@@ -1,0 +1,8 @@
+README.rst
+arraykit.c
+setup.py
+arraykit.egg-info/PKG-INFO
+arraykit.egg-info/SOURCES.txt
+arraykit.egg-info/dependency_links.txt
+arraykit.egg-info/requires.txt
+arraykit.egg-info/top_level.txt
