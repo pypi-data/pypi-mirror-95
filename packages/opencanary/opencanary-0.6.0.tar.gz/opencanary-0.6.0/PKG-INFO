@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: opencanary
+Version: 0.6.0
+Summary: OpenCanary daemon
+Home-page: http://www.thinkst.com/
+Author: Thinkst Applied Research
+Author-email: info@thinkst.com
+License: BSD
+Description: A low interaction honeypot intended to be run on internal networks.
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Twisted
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
