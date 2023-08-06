@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: masterprograming
+Version: 0.0.5
+Summary: Master Programing is a PIP Package that enables people that aren’t well to Build Software By Coding
+Home-page: UNKNOWN
+Author: Danish Ali
+Author-email: help@masterprograming.com
+License: UNKNOWN
+Description: Master Programing is a PIP Package that enables people that arenâ€™t well to Build Software By Coding. Masterprograming.com provides all the Build Software for ABSOLUTELY FREE OF COST.
+        
+        It is a Package Created For Educational Purpose,
+        It Has one Classes inside Master.
+        It Has 10 Methods inside.
+        
+        
+        MPHindi - For Learning Python
+        
+        
+        MPSimpleGui - Tkinter Calculator App
+        
+        
+        MPPnr - PNR Checker App
+        
+        
+        MPKeyboard - Onscreen Keyboard App
+        
+        
+        MPCal - Calculator To Add Numbers
+        
+        
+        MPQuiz - Quiz App
+        
+        
+        MPSciCal - Scientific Calculator App
+        
+        
+        MPApp - Tkinter Login And Signup With Database
+        
+        
+        MPTodoApp - Todo list App
+        
+        
+        ---------------------------------------
+        
+        
+        from masterprograming.master import *
+        
+        ---------------------------------------
+        obj = Master()
+        
+        --------------------------------------
+        
+        obj.MPSciCal()
+        
+        ----------------------------------------
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
