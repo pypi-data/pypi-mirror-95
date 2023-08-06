@@ -1,0 +1,4 @@
+[console_scripts]
+aws-session-daemon=aws_session_daemon:click_main
+aws-session-daemon-get-config=aws_session_daemon:get_config
+
