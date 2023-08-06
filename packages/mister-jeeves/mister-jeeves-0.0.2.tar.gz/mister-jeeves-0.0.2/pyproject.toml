@@ -1,0 +1,58 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "mister-jeeves"
+description = "Mr Jeeves will be happy to help you managing your Python project sir."
+version = "0.0.2"
+license = "MIT"
+
+authors = []
+
+readme = "README.md"
+
+repository = "https://github.com/python-jeeves/jeeves"
+
+keywords = []
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+packages = [
+    { include = "jeeves" },
+]
+
+[tool.poetry.scripts]
+jeeves = "jeeves.cli:app"
+
+[tool.poetry.dependencies]
+python = ">=3.6,<3.10"
+typer = "^0.3.2"
+isort = "^5.7.0"
+dependencies = "^6.0.1"
+flakehell = "^0.9.0"
+wemake-python-styleguide = "^0.15.1"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.800"
+
+flake8-pytest-style = "^1.3"
+
+safety = "^1.10"
+
+pytest = "^6.2"
+pytest-cov = "^2.11"
+pytest-randomly = "^3.5"
+
+m2r2 = "^0.2"
+tomlkit = "^0.7"
+
+
+[tool.flakehell]
+base = "https://raw.githubusercontent.com/Recall-Masters/standards/main/pyproject.toml"
