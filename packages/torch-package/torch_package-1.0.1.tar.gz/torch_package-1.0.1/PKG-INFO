@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: torch_package
+Version: 1.0.1
+Summary: A model to detect images
+Home-page: UNKNOWN
+Author: Suryam Arnav Kalra
+Author-email: suryamkalra35@gmail.com
+License: GPLv3
+Description: # Pytorch project
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
