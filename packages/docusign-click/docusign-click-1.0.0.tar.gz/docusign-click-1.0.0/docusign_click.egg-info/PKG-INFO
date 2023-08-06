@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: docusign-click
+Version: 1.0.0
+Summary: DocuSign Click API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: devcenter@docusign.com
+License: UNKNOWN
+Description:     DocuSign Click lets you capture consent to standard agreement terms with a single click: terms and conditions, terms of service, terms of use, privacy policies, and more. The Click API lets you include this customizable clickwrap solution in your DocuSign integrations.  # noqa: E501
+            
+Keywords: Swagger,DocuSign Click API
+Platform: UNKNOWN
