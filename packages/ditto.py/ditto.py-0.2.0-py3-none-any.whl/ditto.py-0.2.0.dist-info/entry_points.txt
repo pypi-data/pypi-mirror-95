@@ -1,0 +1,20 @@
+[console_scripts]
+ditto = ditto.cli:cli
+ditto-cli = ditto.cli:cli
+
+[ditto.readers]
+cyme = ditto.readers.cyme:CymeReader
+demo = ditto.readers.demo:DemoReader
+gridlabd = ditto.readers.gridlabd:GridLABDReader
+json = ditto.readers.json:JsonReader
+opendss = ditto.readers.opendss:OpenDSSReader
+synergi = ditto.readers.synergi:SynergiReader
+
+[ditto.writers]
+cyme = ditto.writers.cyme:CymeWriter
+demo = ditto.writers.demo:DemoWriter
+ephasor = ditto.writers.ephasor:EphasorWriter
+gridlabd = ditto.writers.gridlabd:GridLABDWriter
+json = ditto.writers.json:JsonWriter
+opendss = ditto.writers.opendss:OpenDSSWriter
+
