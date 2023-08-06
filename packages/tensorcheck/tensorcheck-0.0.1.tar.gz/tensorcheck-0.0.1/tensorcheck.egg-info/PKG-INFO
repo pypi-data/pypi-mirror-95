@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: tensorcheck
+Version: 0.0.1
+Summary: Run-time validation of tensors for machine-learning systems.
+Home-page: https://github.com/tobyshooters/tensorcheck
+Author: Cristóbal Sciutto
+Author-email: cristobal.sciutto@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

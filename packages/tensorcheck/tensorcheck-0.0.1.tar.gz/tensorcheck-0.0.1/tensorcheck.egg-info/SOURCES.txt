@@ -1,0 +1,12 @@
+MIT_LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+tensorcheck/__init__.py
+tensorcheck/tensorcheck.py
+tensorcheck/test.py
+tensorcheck.egg-info/PKG-INFO
+tensorcheck.egg-info/SOURCES.txt
+tensorcheck.egg-info/dependency_links.txt
+tensorcheck.egg-info/requires.txt
+tensorcheck.egg-info/top_level.txt
