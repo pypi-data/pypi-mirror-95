@@ -1,0 +1,10 @@
+.DS_Store,sha256=-BkuNx3Bf_vhxTvL0PBu62_AxZlvo0Mahg4u0YN5Z38,6148
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_unipass.py,sha256=wpzcbxXJ8jXjVwbada2UtFlOoCxbSA1ZZi8CCVQWK4M,1154
+unipass/__init__.py,sha256=0vc8B5vUY202VNVvwAEYDlkq5tjVbwrIX1bwdo52NGo,166
+unipass/api.py,sha256=1RjH8r0LC0ByMwGAgXEU4s4gb5vOyXeoc2NZDYCLShg,2329
+unipass-0.1.dist-info/LICENSE,sha256=Yjx1vuo4L3PSkK0wzpRT-aK8d-SuJHwkvBWpk20gCqg,1070
+unipass-0.1.dist-info/METADATA,sha256=kl5cmeG4Gnaxy7sYYlDAXtMOiMjVHOleUTwWfjo5IIA,736
+unipass-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+unipass-0.1.dist-info/top_level.txt,sha256=XWYW6nM5-3-j9UjqfwreMw1FwaeDobkkyO5bptIpuuM,14
+unipass-0.1.dist-info/RECORD,,
