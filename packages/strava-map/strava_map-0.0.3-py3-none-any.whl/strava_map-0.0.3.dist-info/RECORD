@@ -1,0 +1,9 @@
+strava_map/__init__.py,sha256=6uuyNKWbKNJ8bnJPDtY0oW1JTvIjakTrN3VgebyizhA,54
+strava_map/strava_heatmap.py,sha256=O9sTpkY88fjXcElokGBVusSAJWOVWDDrA4lFWpj0pGo,4486
+strava_map/stravauth/__init__.py,sha256=XLSCD29jmZUByodAHMjZb6zuPBAMAek-Zg04RsCUgNw,52
+strava_map/stravauth/stravauth.py,sha256=8oIvk9Fubg6V706AbAP2vbbJo5jBtjjnShxcjyVpoE0,4348
+strava_map-0.0.3.dist-info/LICENSE,sha256=OOyWYzLBvsXIOSS0tBC5JtEqlOtC-q6he9qHa-zywT8,1066
+strava_map-0.0.3.dist-info/METADATA,sha256=2QV6Wp6kooS60fdO3898v3-1eACZBejvM-kiybwBYRI,1988
+strava_map-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+strava_map-0.0.3.dist-info/top_level.txt,sha256=AzvCOE5SsJs3XcgEIR5af2Qv0udpeP_NTx0_UVA7FEs,11
+strava_map-0.0.3.dist-info/RECORD,,
