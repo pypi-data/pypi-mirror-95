@@ -1,0 +1,3 @@
+[console_scripts]
+hydrogen = bin.run_HydroGen:main
+
