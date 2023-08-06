@@ -1,0 +1,9 @@
+README.md
+setup.py
+trodesnetwork-python/trodesnetwork/__init__.py
+trodesnetwork-python/trodesnetwork/socket.py
+trodesnetwork-python/trodesnetwork/trodes.py
+trodesnetwork.egg-info/PKG-INFO
+trodesnetwork.egg-info/SOURCES.txt
+trodesnetwork.egg-info/dependency_links.txt
+trodesnetwork.egg-info/top_level.txt
