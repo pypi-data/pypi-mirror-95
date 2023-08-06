@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<div id="homepage-block">
+		<h2>Don't go broke!</h2>
+		<h3>A homemade personal finance manager, built in Flask.</h3>
+	</div>
+	<br>
+	{% if g.user %}
+		<div id="homepage-panels">
+
+			<div id="bank" class="panel">
+				<h2>Coming soon!</h2>
+			</div>
+	
+			<div id="credit" class="panel">
+				<h2>Credit Cards</h2>
+	
+				<ul class="category">
+					<h4>Cards</h4>
+					<li>
+						<a href="{{ url_for('credit.load_cards') }}">
+							Manage accounts
+						</a>
+					</li>
+					<li>
+						<a href="{{ url_for('credit.add_card') }}">
+							Add a new card
+						</a>
+					</li>
+				</ul>
+	
+				<ul class="category">
+					<h4>Statements</h4>
+					<li>
+						<a href="{{ url_for('credit.load_statements') }}">
+							See statement history
+						</a>
+					</li>
+				</ul>
+	
+				<ul class="category">
+					<h4>Transactions</h4>
+					<li>
+						<a href="{{ url_for('credit.load_transactions') }}">
+							See transaction history
+						</a>
+					</li>
+					<li>
+						<a href="{{ url_for('credit.add_transaction') }}">
+							Create a new transaction
+						</a>
+					</li>
+					<li>
+						<a href="{{ url_for('credit.load_tags') }}">
+							Manage transaction tags
+						</a>
+					</li>
+				</ul>
+	
+			</div>
+	
+			<div id="investments" class="panel">
+				<h2>Coming soon!</h2>
+			</div>
+
+		</div>
+	{% endif %}
+{% endblock %}
