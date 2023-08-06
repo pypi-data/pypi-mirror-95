@@ -1,0 +1,4 @@
+docopts
+python-jenkins
+requests
+halo
