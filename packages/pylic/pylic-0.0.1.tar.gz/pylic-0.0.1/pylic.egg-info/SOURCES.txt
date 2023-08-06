@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+pylic/__init__.py
+pylic.egg-info/PKG-INFO
+pylic.egg-info/SOURCES.txt
+pylic.egg-info/dependency_links.txt
+pylic.egg-info/top_level.txt
