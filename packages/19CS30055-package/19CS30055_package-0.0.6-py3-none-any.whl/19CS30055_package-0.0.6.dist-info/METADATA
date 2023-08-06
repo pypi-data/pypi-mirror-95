@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: 19CS30055-package
+Version: 0.0.6
+Summary: My package
+Home-page: UNKNOWN
+Author: Neha Dalmia
+Author-email: <nehadalmia002@gmail.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+My first Python package with a slightly longer description
+
+
