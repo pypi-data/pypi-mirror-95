@@ -1,0 +1,9 @@
+annotell_auth-1.6.0-py3.8-nspkg.pth,sha256=QpBPPgWNKzm0ysnHOq_yHjdpWnH3BJrz1TQeNgOzolw,549
+annotell/auth/__init__.py,sha256=SMeiOeEPQoLN3P9DwfMqt_L3u7Nygg5EPkPVfGMt8j4,126
+annotell/auth/authsession.py,sha256=SdNqLmy4UIiSO2vQx1P9E45XrSp79PkfD7KZUbfzN0Q,4584
+annotell/auth/credentials_parser.py,sha256=MJDyDQUdqwzqyW7fufsbb2dt9A5x3wVMF-IEeLypZEU,2776
+annotell_auth-1.6.0.dist-info/METADATA,sha256=oSJwiiu_tp5uBqmjWygy7JLRvStcEn7qV-ZDbVj7Xsc,2424
+annotell_auth-1.6.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+annotell_auth-1.6.0.dist-info/namespace_packages.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_auth-1.6.0.dist-info/top_level.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_auth-1.6.0.dist-info/RECORD,,
