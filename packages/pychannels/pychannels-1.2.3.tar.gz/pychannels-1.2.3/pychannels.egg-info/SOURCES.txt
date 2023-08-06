@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pychannels/__init__.py
+pychannels.egg-info/PKG-INFO
+pychannels.egg-info/SOURCES.txt
+pychannels.egg-info/dependency_links.txt
+pychannels.egg-info/requires.txt
+pychannels.egg-info/top_level.txt
+pychannels.egg-info/zip-safe
