@@ -1,0 +1,19 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+dist: xenial
+install:
+  - pip install coveralls pytest
+  - python setup.py install
+
+script:
+  - coverage run --source=docrep setup.py pytest
+  - pytest docrep --doctest-modules
+
+after_success:
+  coveralls
