@@ -1,0 +1,9 @@
+wasmite/__init__.py,sha256=6yUSFOmEH3rr-c5kig4eFCusC-lCNpcw_uDCXaMy_yU,451
+wasmite/globals.py,sha256=K6DcAC5Y8_h0aCIp_WQGGQe_8i5Ng3SYITtMe69xoVM,3237
+wasmite/wasi.py,sha256=RWDcP10yzTpx7GfkoVnX4w4N8a77EaPfXosWt6lHCkY,777
+wasmite/wasm.py,sha256=zLAl1hpal0e8qaUk-k2l_l-7ZIwwGhCMXfhN7ibEens,401
+wasmite/wat.py,sha256=bViWDPsGw-ond9nJqunyrZ-oZNm_N-0TPt117u6rHV8,342
+wasmite-0.2.0.dist-info/METADATA,sha256=uMqpg40DfwwgCPb2ZmodMF7tmBpqIOljpwGkrM4FNkw,5608
+wasmite-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wasmite-0.2.0.dist-info/top_level.txt,sha256=Bb0mkaGSchD7WkMGJXuNjNO7-BNqsyIuJhqOl_8G_Hs,8
+wasmite-0.2.0.dist-info/RECORD,,
