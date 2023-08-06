@@ -1,0 +1,2 @@
+utm-zone==1.0.2
+stactools_core==0.1.4
