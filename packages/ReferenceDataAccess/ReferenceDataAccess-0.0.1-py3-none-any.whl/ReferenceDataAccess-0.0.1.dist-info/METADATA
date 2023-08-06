@@ -1,0 +1,177 @@
+Metadata-Version: 2.1
+Name: ReferenceDataAccess
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Jay Sangoi
+Author-email: jay.sangoi@gmail.com
+License: MIT
+Keywords: stocks,market,finance,RduAccess,quotes,derivatives,equity,fixed income,Mifid,shares,Reference Data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+## ReferenceDataAccess
+A python wrapper for accessing Reference data using RduAccess API's.
+To get more details on it, Please refer https://rduaccess.smartstreamrdu.com/getting-started
+
+RduAccess provides an easier way of accessing reference data over different asset type (Future, Options, Strategies, Equity, etc) using Rest Api, popularly known as RduAccess.
+
+You can find all the api's at https://rduaccess.smartstreamrdu.com/. 
+It also has a limited period free version for accessing the data.
+
+
+## Install
+To install the package use:
+```shell
+pip install ReferenceDataAccess
+```
+Or install with pandas support, simply install pandas too:
+```shell
+pip install ReferenceDataAccess pandas
+```
+Note - Pandas version should be atleast 1.0.3 
+
+## News
+* From version 0.0.1.1, support to fetch reference data for Derivatives(Future, Options and Strategies) asset type .
+* From version 0.0.1.3, added a method to get the output column's description, and the methods can now take an optional paramter, column_list, where you can specify the output column's.
+
+## Usage
+To get data from the API, simply import the library and call the object with your API key. Next, get ready for some high quality reference data. 
+You may get a key from https://rduaccess.smartstreamrdu.com/
+```python
+from dataAccess.EtdApi import EtdApi
+etd = EtdApi(key="<<your key>>")
+
+```
+There are various api's through which data can be fetch
+* Fetch By Isin
+* Fetch By ticker and exchange code.
+
+Example of fetch by isin.
+Replace the isin with the isin for which data needs to be fetched
+```
+data = etd.get_by_isin(isin='ISIN')
+```
+
+
+
+
+Example of fetch by ticker and exchange code
+```
+dt = etd.get_by_ticker('ticker', 'exchange code') 
+```
+
+The above methods also has an option of passing an optional parameter column_list, where we can specify the list column's that we want in the output.
+```
+column_list = ['ct_exchCd','c_isin']
+data = etd.get_by_isin(isin='ISIN', columnList= column_list)
+```
+In the above code, data will have two columns 'ct_exchCd','c_isin'
+
+## Output Column and its description
+The output of above method is a pandas dataframe. Below is the list of column names and its description.
+
+Column Name | Description
+--- | --- 
+success	|	Determines whether the call is successful or not, True for success and false for failure
+ct_actFl 	|	"Yes/No flag, indicating the active/inactive status of the contract's trading line: N = Indicates Inactive  Y = Indicates Active"
+ct_exchCd 	|	Exchange code of the session in where the security is trading.
+ct_lstngCycleTp 	|	"Listing cycle type. More specifically: Smallest unit of time between two or more contracts for a specific ETD product, provided that the ETD does not have an irregular listing cycle. Contracts from that same ETD product that initially are listed with a larger unit of time between them, but contain the same expiration date policy, are assumed to flow into that smallest unit of time and therefore, bear the same Listing Cycle Type as of their first listing date.For example, Options on Comex Gold futures at CMEG (OG) shall be listed for trading in each of the nearest twenty (20) consecutive futures contract months. In addition, June and December will be listed for 72 months from the current listed month. And therefore the listing cycle type is Monthly."
+ct_omic 	|	ISO 10383 operating MIC in case the Exchange Code is a segment MIC.
+ct_segTp 	|	Identifies the segment (venue) of the contract's trading line. Possible values are: Electronic, Pit , OTC or Composite.
+ct_smic 	|	ISO 10383 MIC in case the Exchange Code is a segment MIC
+ct_tckSz 	|	A contract's minimum price change
+ct_tckVal 	|	The value of a contract's minimum price change. 
+ct_trdStsTp 	|	Indicates whether the contract's trading line is active, inactive or expired.
+ct_vndrExchCd 	|	Vendor exchange code of the session in where the security is trading, and can return for all the sources the original exchange code value.
+ct_ticker	|	Exchange symbol (also known as Ticker or Trade Symbol) of contract.
+ct_bbgIdBBGlobal	|	The Bloomberg ID_BB_GLOBAL code of the contract.
+ct_bbgCompositeIdBbGlobal	|	The Bloomberg COMPOSITE_ID_BB_GLOBAL code of the contract.
+ct_gmiFullPrdCd	|	"GMI (Newedge Back Office System) ETD full product code constructed based on their three internal codes: - Exchange code; - ETD Product code;- Sub-type code."
+p_clrngCd 	|	The code used by the exchanges for clearing for contracts from this product.
+p_name 	|	The product name. 
+p_roundLotSz 	|	The minimum number of units from the product's contracts that can be traded on the exchange. 
+p_trdCtyCd 	|	Trade currency of the contracts corresponding to this product.
+p_trdCcyMajorFl 	|	Yes/No flag, indicating whether the trade currency is a major currency or not.
+p_trdCcyCd 	|	Trade currency of the contracts corresponding to this product.
+p_dayNum 	|	"In case the exchange provides different exchange prefixes for daily contracts, this attribute will provide the day code. Therefore for daily products, the day code (1 to 31) associated to the product contracts."
+p_maxOrdSz 	|	The maximum size allowed under a single order in a contract from this product.
+p_tckSzDnmntr 	|	When the tick size is expressed as a fraction, the fraction denominator (e.g. 32, for 1/32).
+p_flexElgblFl 	|	Indicates whether the product is eligible for flex contracts.
+p_clrngCcyCd 	|	Clearing currency of the contracts corresponding to this product.
+p_msrmntUntCd 	|	Unit code in which contract size is specified. For example: Metric Tons, US Dollar, US Dollar cents, Million BTU's, etc.
+p_tckSzNmrtr 	|	When the tick size is expressed as a fraction, the fraction numerator (e.g. 1, for 1/32).
+p_spotMnthPosLmt 	|	Product Spot Month Position Limit. Position limit, or the maximum amount the trader may own or control, separately or in combination, net long or short, for the spot month, or the month when the contract reaches maturity and becomes deliverable.
+p_mnthPosLmt 	|	Product Month Position Limit. Position limit, or the maximum amount the trader may own or control, for all contracts for a single month for this product.
+p_allMnthPosLmt 	|	Product All Month Position Limit. Position limit, or the maximum amount the trader may own or control, netting as permitted by the regulator, for all contracts for this product.
+p_blckTrdElgblFl 	|	Yes/No flag, indicating whether the product is eligible for block trades contracts.
+p_exchRptngLvl 	|	Size of positions, in any single futures or option expiration month, set by the exchange at or above which commodity traders or brokers who carry these accounts must make daily reports about the entire position in all futures and options expiration months in that commodity, regardless of size. 
+p_cftcRptngLvl 	|	Size of positions, in any single futures or option expiration month, set by the CFTC at or above which commodity traders or brokers who carry these accounts must make daily reports about the entire position in all futures and options expiration months in that commodity, regardless of size. 
+p_trdStsTp 	|	Indicates whether the product is active or inactive.
+p_cftcRegFl 	|	Yes/No Flag, identifying whether the trading venue is identified as a regulated market by the US Commoditiy Futures Trading Commission (CFTC).
+p_undlRltnsTp 	|	"For derivative products in which the payoff of their contract is based on more than one price reference and/or underlying security.
+c_assetTp 	|	Asset type classification of the contract, intended to be provided the most granular asset type classification where possible.
+c_expDt 	|	The date on which the contract is no longer valid and ceases to exist.
+c_lstTrdDt 	|	Last date that the contract is available for trade.   
+c_settleDt 	|	Date on which payment is due to settle a trade.
+c_frstDlvryDt 	|	The first date on which the underlying may be delivered into a futures contract. 
+c_frstNtcDt 	|	The first day on which a notice of intent to deliver can be made by the clearinghouse to a buyer. 
+c_lstDlvryDt 	|	The last date on which the underlying may be delivered into a futures contract. 
+c_name 	|	The name of the contract.
+c_vndrAssetTp 	|	Data vendor value of the asset type of the contract.
+c_strikePx 	|	The strike price of the option contract.
+c_cfi 	|	ISO 10962 (International Organization for Standardization) code 10962 which represents a standard classification of the features of a security.  The first character represents the category of the security, the second character represents the group of the security, and the third through sixth characters represent the attributes of the security. 
+c_yrCd 	|	Contract period year code.
+c_settleTp 	|	Indicates whether the product's contracts are cash settled or by physical delivery.
+c_ctrSz 	|	The smallest available value of tradable contract. 
+c_frstTrdDt 	|	The date a contract is first eligible to be traded.
+c_settleFixDt 	|	"Date on which the value of the underlying is determined and used for final contract cash settlement.  For example, a Eurodollar futures on CMEG (GE), which has as underlying the 3-Months USD LIBOR, has a fixing date from the second London bank business day immediately preceding the third Wednesday of the contract?s month of delivery. "
+c_numOfLegs 	|	Total number of legs applicable for this strategy.
+c_accrlStrtDt 	|	The first date in which the divident accrual calculation begins for the dividend future.
+c_accrlEndDt 	|	The last date in which the divident accrual calculation begins for the dividend future.
+c_mnthCd 	|	Contract period month code.
+c_dayNum 	|	Contract expiration day code.
+c_pntVal 	|	"The value of one point (One point = Tick Value / Tick Size).  
+c_flexFl 	|	Yes/No flag, indicating whether certain attributes of the contract is adjusted, in correspondence to the flex elgibility of the corresponding product.
+c_actFl 	|	"Yes/No flag, indicating the active/inactive status of the contract:
+c_wkNum 	|	Contract expiration week code.
+c_lstNtcDt 	|	The final day on which a notice of intent to deliver on a contract may be issued.
+c_trdStsTp 	|	Indicates whether the contract is active, inactive or expired.
+c_cfiCd 	|	ISO 10962 (International Organization for Standardization) code 10962:2015 which represents a standard classification of the features of a security.  The first character represents the category of the security, the second character represents the group of the security, and the third through sixth characters represent the attributes of the security. 
+c_isin 	|	The ISIN code of the product's contracts.
+c_bbgTicker 	|	"Bloomberg DataLicense TICKER:
+bbgIdBbUnique 	|	Bloomberg ID_BB_UNIQUE code of the product's contracts.
+
+
+
+
+
+
+
+
+
+## Contributing
+Contributing is always welcome. Just contact us on how best you can contribute, add an issue, or make a PR. 
+
+
+## TODOs:
+* Enhancing this library to provide access to other asset type like Equity,Fixed Income etc. 
+* Adding support access to access data provided by Regulatory Service like MIFID II, SFTR, etc. 
+
+
+
+## Star if you like it.
+If you like or use this project, consider showing your support by starring it.
+
+
+## Contact:
+You can reach/follow us by mail
+
+
