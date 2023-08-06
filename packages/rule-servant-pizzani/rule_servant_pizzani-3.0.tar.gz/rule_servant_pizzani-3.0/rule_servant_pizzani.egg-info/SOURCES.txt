@@ -1,0 +1,8 @@
+setup.py
+rule_servant_pizzani/Ruleservant.py
+rule_servant_pizzani/__init__.py
+rule_servant_pizzani.egg-info/PKG-INFO
+rule_servant_pizzani.egg-info/SOURCES.txt
+rule_servant_pizzani.egg-info/dependency_links.txt
+rule_servant_pizzani.egg-info/top_level.txt
+rule_servant_pizzani.egg-info/zip-safe
