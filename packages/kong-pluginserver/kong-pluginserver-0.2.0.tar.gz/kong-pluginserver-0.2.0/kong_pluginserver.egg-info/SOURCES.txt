@@ -1,0 +1,7 @@
+README.md
+setup.py
+kong_pluginserver.egg-info/PKG-INFO
+kong_pluginserver.egg-info/SOURCES.txt
+kong_pluginserver.egg-info/dependency_links.txt
+kong_pluginserver.egg-info/requires.txt
+kong_pluginserver.egg-info/top_level.txt
