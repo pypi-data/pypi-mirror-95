@@ -1,0 +1,10 @@
+mesh_to_depth/io_utils.py,sha256=zaxSefPscS-J_y9Q2Uxsh4VBx5R8zxi0YjCpD0CWv60,539
+mesh_to_depth/ctypes_mesh2depth.py,sha256=B3DAGlW_38XeuzgZ-5_wV-FcEkrcsPgc4H9D-bSyHzU,7996
+mesh_to_depth/__init__.py,sha256=tn0xT93J6UVPy5H7Zc9CkzcYHpBaxdVJ4H9XFXCY1Y0,63
+mesh_to_depth/log.py,sha256=DoOJTcvxX5RTWO7i-jwg0kJACTjhI5spju3H5IYIdTs,3525
+mesh_to_depth/libmesh2depth.so,sha256=rqlU3aYmxJwdMI_4d1nDiSc4SlCij7wU9GZ_r0h8uIM,474360
+mesh_to_depth-0.1.dist-info/top_level.txt,sha256=stVPLVwN37ZcZYvkMzCx7PKMQxOrtACLDv78UTebGeQ,36
+mesh_to_depth-0.1.dist-info/WHEEL,sha256=AePfFh1hufmWqoDVraXshddHtQ8OCIuQaRoWSgMWmjc,113
+mesh_to_depth-0.1.dist-info/LICENSE,sha256=WNXwG0D392C4_6IQeqPca296kQazM0Yliec3JqpMuz8,1068
+mesh_to_depth-0.1.dist-info/RECORD,,
+mesh_to_depth-0.1.dist-info/METADATA,sha256=BiaptPNn8AT8EKCqPScd6d0sKZxJTGPa9aHWOUmuiAo,467
