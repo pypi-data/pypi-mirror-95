@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gg-scrape
+Version: 0.1.0
+Summary: 
+Author: Alex Whittington
+Author-email: alexmw777@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anytree (>=2.8.0,<3.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: typer[all] (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# gg-scrape
+
+A little Python CLI app that provides a League champion runes/build from mobalytics.gg and the recommended skill order from champion.gg
+The goal was to not have to open a browser tab to check a build.
+
+```
+Usage: ggs.py [OPTIONS] CHAMPION [ROLE]
+```
+
+![screenshot of the app in use](img/Capture.PNG)
+
+
+Depends on the anytree, beautifulsoup4, typer, and requests Python libraries.
+The HTML is requested and parsed sequentially, so it's rather slow.
+
