@@ -1,0 +1,336 @@
+.. only:: html
+
+    .. note::
+        :class: sphx-glr-download-link-note
+
+        Click :ref:`here <sphx_glr_download_source_auto_examples_plot_skewt.py>`     to download the full example code
+    .. rst-class:: sphx-glr-example-title
+
+    .. _sphx_glr_source_auto_examples_plot_skewt.py:
+
+
+Example on how to plot a Skew-T plot of a sounding
+--------------------------------------------------
+
+This example shows how to make a Skew-T plot from a sounding
+and calculate stability indicies.  METPy needs to be installed
+in order to run this example
+
+
+
+.. image:: /source/auto_examples/images/sphx_glr_plot_skewt_001.png
+    :alt: act_datastream on 20190101
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:378: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attributes = {k: var.getncattr(k) for k in var.ncattrs()}
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/xarray/backends/netCDF4_.py:411: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+      attrs = FrozenDict((k, self.ds.getncattr(k)) for k in self.ds.ncattrs())
+    /Users/atheisen/anaconda3/lib/python3.7/site-packages/metpy/interpolate/one_dimension.py:147: UserWarning: Interpolation point out of data bounds encountered
+      warnings.warn('Interpolation point out of data bounds encountered')
+    <xarray.DataArray 'lifted_index' ()>
+    array(28.46396078)
+    Attributes:
+        units:      kelvin
+        long_name:  Lifted index
+    /Users/atheisen/Code/ACT/act/plotting/plot.py:85: UserWarning: Could not discern datastreamname and dict or tuple were not provided. Using defaultname of act_datastream!
+      "name of act_datastream!"), UserWarning)
+    /Users/atheisen/Code/ACT/examples/plot_skewt.py:37: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+      plt.show()
+
+
+
+
+
+
+|
+
+
+.. code-block:: default
+
+
+
+    import act
+    from matplotlib import pyplot as plt
+
+    try:
+        import metpy
+        METPY = True
+    except ImportError:
+        METPY = False
+
+    if METPY:
+        # Read data
+        sonde_ds = act.io.armfiles.read_netcdf(
+            act.tests.sample_files.EXAMPLE_SONDE1)
+
+        # Calculate stability indicies
+        sonde_ds = act.retrievals.calculate_stability_indicies(
+            sonde_ds, temp_name="tdry", td_name="dp", p_name="pres")
+        print(sonde_ds["lifted_index"])
+
+        # Set up plot
+        skewt = act.plotting.SkewTDisplay(sonde_ds, figsize=(15, 10))
+
+        # Add data
+        skewt.plot_from_u_and_v('u_wind', 'v_wind', 'pres', 'tdry', 'dp')
+        sonde_ds.close()
+        plt.show()
+
+
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** ( 0 minutes  1.201 seconds)
+
+
+.. _sphx_glr_download_source_auto_examples_plot_skewt.py:
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-python
+
+     :download:`Download Python source code: plot_skewt.py <plot_skewt.py>`
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+     :download:`Download Jupyter notebook: plot_skewt.ipynb <plot_skewt.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_
