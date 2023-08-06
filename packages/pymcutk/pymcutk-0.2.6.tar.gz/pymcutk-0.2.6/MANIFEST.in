@@ -1,0 +1,6 @@
+include requirements-dev.txt
+recursive-exclude mcutk *.pyc __pycache__
+recursive-include mcutk *.py *.sh *.bat
+exclude .travis.yml
+recursive-exclude test *
+recursive-exclude doc *
