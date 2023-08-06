@@ -1,0 +1,10 @@
+cemotion/__init__.py,sha256=OdRl5nH3QI6_06W1HIaWA4vwWKf_SuXlFt8cd1emgpY,65
+cemotion/app.py,sha256=rTQBNvVygDbcfwvrhTs9fQHownLPDQm5lF9EDwy4TpY,2339
+cemotion/dataset.py,sha256=1kWSbpRZKmjfgwMr4BrDYPMC3Qv9Q1z-aJXnDeeVyj0,1740
+cemotion/download.py,sha256=dWaAEv9TFi_93oBe_-LTunwbDWoaXaJj6KuHOI5-QHo,1584
+cemotion/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cemotion/models/requirements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Cemotion_apple-0.1.1.dist-info/METADATA,sha256=22nUg1gmawbeEGUkOZI5KSA-HpRv0V8oKsPBO-df4LQ,2424
+Cemotion_apple-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Cemotion_apple-0.1.1.dist-info/top_level.txt,sha256=x428yVREM68CoBdpxIWAfzqlI3wdF41zt2_KVkHiV7g,9
+Cemotion_apple-0.1.1.dist-info/RECORD,,
