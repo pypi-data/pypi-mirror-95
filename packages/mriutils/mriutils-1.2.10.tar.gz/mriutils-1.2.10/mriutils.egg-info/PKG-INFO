@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mriutils
+Version: 1.2.10
+Summary: A simple common utils and models package
+Home-page: https://github.com/kuangmeng/MRIUtils
+Author: Mengmeng Kuang
+Author-email: kuangmeng@msn.com
+License: UNKNOWN
+Description: A simple common utils and models package for MRI analysis.
+        
+        ## Functions implemented in MRIUtils
+        
+        ### Datasets
+        
+        - ACDC: `from mriutils.acdc import LoadACDC`
+        - BraTS: `from mriutils.brats import LoadBraTS`
+        - MRBrainS: `from mriutils.mrbrains import LoadMRBrainS`
+        - H5 files: `from mriutils.ic_data import LoadH5`
+        - Other `*.png` datasets: `from mriutils.pngs import LoadPNGS`
+        
+        ### Load and save Files
+        
+        - `*.npy`: `from mriutils.tonpy import SaveDataset`
+        - `*.nii`/`*.nii.gz`: `from mriutils.tonii import SaveNiiFile`
+        
+        ### Models
+        
+        - 2D-UNet: `from mriutils.unet import UNet`
+        - 3D-UNet: `from mriutils.unet_3d import UNet3D`
+        - 3D-UNet with Attention: `from mriutils.unet_3d_atten import UNet3D_Atten`
+        
+        ### Metrics
+        
+        - MRI Metrics: `from mriutils.metrics import Metrics`
+        
+        ### Others
+        
+        - Normalization: `from mriutils.norm import Normalization`
+        - Time related: `from mriutils.timer import Timer`
+        - Print logs: `from mriutils.logs import Logs`
+        - Plot lines: `from mriutils.plots import Plots`
+        
+        
+Keywords: MRI-Analysis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
