@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: yach
+Version: 0.0.1a1
+Summary: Yet another configuration handler.
+Home-page: https://github.com/gdoras/Yach
+Author: gdoras
+Author-email: guillaume.doras@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml (>=5.4.1)
+
+# Yach
+
+Yet another configuration handler.
+
