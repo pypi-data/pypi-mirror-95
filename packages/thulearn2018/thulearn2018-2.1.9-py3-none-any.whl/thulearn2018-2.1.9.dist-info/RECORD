@@ -1,0 +1,14 @@
+thulearn2018/__init__.py,sha256=ypEaur_WOaianzsIKFPvd1ivwd8YCCKIjfQe1pbV2ik,22
+thulearn2018/browser.py,sha256=5gOsyzjcgwj8aenC0T4Ph_vbdAIbsp0vZl-S2GxZTKk,5782
+thulearn2018/filemanager.py,sha256=2E3fc8aDjCjc-3-u2rBiaQ8WU9vtIaSk8AGXUfg6AA8,3248
+thulearn2018/jsonhelper.py,sha256=YDb3aqixy95ui_BBUc2XbAIniged2erHtqzJ3P6G-Pg,493
+thulearn2018/learn.py,sha256=UZuBZ3ZAuawHxyHECrODMJMN_wLkVBOFiKaLBkLK8lY,1919
+thulearn2018/settings.py,sha256=R3kkQOHVOATMkXBIM73J6d5AG4ks-hkEAVYp5fTmjiY,3041
+thulearn2018/soup.py,sha256=zcmfZydBr5cTwPjtjfxw9ufJmcEwlrqoI8fy1xZ10GM,2061
+thulearn2018/utils.py,sha256=lj0sOjpTQ07AMlTQ9BGQNwM37aiWZIFzsyYuMMVZzgE,1006
+thulearn2018-2.1.9.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+thulearn2018-2.1.9.dist-info/METADATA,sha256=k7IOxN4tsXEW6OLQ80oi3coEGTIJwCCwZ3utf_s7HhE,707
+thulearn2018-2.1.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+thulearn2018-2.1.9.dist-info/entry_points.txt,sha256=wahnBEMs4laGxeM756WXn4c3VWvKtTnXdMptXSvb1_A,51
+thulearn2018-2.1.9.dist-info/top_level.txt,sha256=bA1hOFamWHQaWXsQlx71VO4HbjP2Fk7ybbmJQ_Q8dGE,13
+thulearn2018-2.1.9.dist-info/RECORD,,
