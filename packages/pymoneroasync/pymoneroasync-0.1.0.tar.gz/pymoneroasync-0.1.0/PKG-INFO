@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pymoneroasync
+Version: 0.1.0
+Summary: 
+Author: euri10
+Author-email: benoit.barthelet@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.16.1,<0.17.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: sansio-jsonrpc (>=0.2.0,<0.3.0)
