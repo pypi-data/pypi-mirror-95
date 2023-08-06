@@ -1,0 +1,154 @@
+[tool.poetry]
+name = "certdumper"
+version = "0.1.0"
+description = ""
+authors = ["Mateusz Klos <novopl@gmail.com>"]
+packages = [
+    { include = "certdumper", from = "src" },
+]
+
+[tool.poetry.scripts]
+certdumper = 'certdumper.cli:app'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.3.2"
+pydantic = "^1.7.3"
+flex-config = "^2.0.0"
+watchdog = "^1.0.2"
+PyYAML = "^5.4.1"
+
+[tool.poetry.dev-dependencies]
+coverage = "~=5.3"
+mypy = ">=0.790"
+psutil = "~=5.7.3"
+pycodestyle = "~=2.6.0"
+pytest = "~=6.1.2"
+pytest-cov = "~=2.10.1"
+pytest-sugar = "~=0.9.4"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+##################
+#     PELTAK     #
+##################
+
+[tool.peltak]
+pelconf_version = "0"
+commands = [
+    "peltak.extra.changelog",
+    "peltak.extra.git",
+    "peltak.extra.gitflow",
+    "peltak.extra.version"
+]
+python_paths = ["src"]
+build_dir = ".build"
+
+[tool.peltak.changelog]
+tag_format = '{tag}:'
+
+[[tool.peltak.changelog.tags]]
+tag = 'feature'
+header = 'Features'
+
+[[tool.peltak.changelog.tags]]
+tag = 'fix'
+header = 'Fixes'
+
+[[tool.peltak.changelog.tags]]
+tag = 'change'
+header = 'Changes'
+
+[[tool.peltak.changelog.tags]]
+tag = 'dev'
+header = 'Dev tasks'
+
+[[tool.peltak.changelog.tags]]
+tag = 'refactor'
+header = 'Refactored'
+
+
+[tool.peltak.version]
+files = [
+    "pyproject.toml",
+    "src/certdumper/__init__.py"
+]
+
+[tool.peltak.clean]
+patterns = [
+    "*.mypy_cache",
+    "*.pytest_cache",
+    "*.build",
+    "*__pycache__"
+]
+exclude = [".venv"]
+
+[tool.peltak.scripts.test]
+root_cli = true
+about = "Run tests"
+command_file = "ops/scripts/test.sh.j2"
+
+[[tool.peltak.scripts.test.options]]
+name = ["-k", '--kind']
+type = 'str'
+default = 'all'
+about = "Kind of tests to run: all/unit/doctest. Defaults to all."
+
+[[tool.peltak.scripts.test.options]]
+name = ["--no-sugar"]
+is_flag = true
+about = "Disable pytest-sugar. Might be useful for CI runs."
+
+[[tool.peltak.scripts.test.options]]
+name = ["--cov-xml"]
+is_flag = true
+about = "Generate junit XML coverage report. Useful for 3rd party integrations"
+
+[tool.peltak.scripts.check]
+root_cli = true
+about = "Run all checks (types, pep8, code style)"
+command_file = "ops/scripts/check.sh.j2"
+
+[tool.peltak.scripts.check.files]
+paths = ["src", "tests"]
+include = "*.py"
+use_gitignore = true
+
+
+[tool.peltak.scripts.docs]
+root_cli = true
+about = "Generate sphinx documentation"
+command_file = "ops/scripts/docs.sh.j2"
+
+[[tool.peltak.scripts.docs.options]]
+name = [ "--recreate" ]
+about = "Delete build and out directories before running."
+is_flag = true
+
+[[tool.peltak.scripts.docs.options]]
+name = [ "--run-doctests" ]
+about = "Also run all doctests."
+is_flag = true
+
+
+[tool.peltak.scripts.pr-release]
+root_cli = true
+about = "Create PR for the current release branch"
+command = """
+gh pr create \
+    --repo novopl/certdumper \
+    --title "Release: v$(peltak version --porcelain)" \
+    --body "$(peltak changelog)"
+"""
+
+
+[tool.peltak.scripts.build]
+root_cli = true
+about = "Build docker image"
+command = """
+docker build -t novopl/certdumper .
+"""
