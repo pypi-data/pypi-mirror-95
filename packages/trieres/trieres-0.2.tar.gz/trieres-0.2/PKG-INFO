@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: trieres
+Version: 0.2
+Summary: A package for cloudFPGA quantitative finance lib.
+Home-page: https://github.com/cloudFPGA/trieres
+Author: Dionysios Diamantopoulos
+Author-email: did@zurich.ibm.com
