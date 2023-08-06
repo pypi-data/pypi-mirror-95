@@ -1,0 +1,18 @@
+
+[:platform_system == "Darwin" and python_version == "3.7"]
+dffml==0.4.0
+
+[:platform_system == "Darwin" and python_version == "3.8"]
+dffml==0.4.0
+
+[:platform_system == "Linux" and python_version == "3.7"]
+dffml==0.4.0
+
+[:platform_system == "Linux" and python_version == "3.8"]
+dffml==0.4.0
+
+[:platform_system == "Windows" and python_version == "3.7"]
+dffml==0.4.0
+
+[:platform_system == "Windows" and python_version == "3.8"]
+dffml==0.4.0
