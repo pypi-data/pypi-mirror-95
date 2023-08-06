@@ -1,0 +1,3 @@
+[console_scripts]
+batch_processing = aicssegmentation.bin.batch_processing:main
+
