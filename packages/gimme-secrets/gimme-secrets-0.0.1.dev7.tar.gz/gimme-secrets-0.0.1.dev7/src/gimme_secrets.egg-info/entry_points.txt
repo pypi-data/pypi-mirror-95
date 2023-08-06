@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gimme-secrets=gimme_secrets.cli:entrypoint
+    

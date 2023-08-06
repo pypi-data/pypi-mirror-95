@@ -1,0 +1,15 @@
+click==7.1.2
+tabulate==0.8.7
+starlette
+boto3
+azure-common==1.1.25
+azure-core==1.5.0
+azure-identity==1.3.1
+azure-keyvault==4.0.0
+azure-keyvault-certificates==4.2.0b1
+azure-keyvault-keys==4.1.0
+azure-keyvault-secrets==4.2.0b1
+google-cloud-kms
+pytest
+pytest-runner
+moto
