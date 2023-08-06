@@ -1,0 +1,387 @@
+package_label: "Single Cell"
+package_desc: "Single Cell"
+
+common:
+  data: "Data"
+  genes: "Genes"
+  transformed_data: "Transformed Data"
+  genes_components: "Genes per n. Components"
+  selected_data: "Selected Data"
+  contingency_table: "Contingency Table"
+  scorer: "Scorer"
+  reduced_data: "Reduced Data"
+  scores: "Scores"
+  preprocessed_data: "Preprocessed Data"
+
+scbnorm:
+  identity_link: "Identity link"
+  log_link: "Log link"
+
+owaligndatasets:
+  name: "Align Datasets"
+  desc: "Alignment of multiple datasets with a diagram of correlation visualization."
+  row_score: "Scoring:"
+  btn:
+    apply: "Apply"
+    apply_automatically: "Apply automatically"
+  label:
+    num_components: "Num. of components"
+    num_genes: "Num. of genes"
+    correlation_component: "Correlation components"
+    correlation_strength: "Correlation strength"
+  box:
+    data_source_indicator: "Data source indicator"
+    canonical_correlation_analysis: "Canonical correlation analysis"
+    post-process: "Post-processing"
+    shared_genes: "Shared genes"
+  msg:
+    no_features: "At least 1 feature is required"
+    no_instances: "At least 2 data instances are required for each class"
+    no_class: "At least 1 Discrete class variable is required"
+    nan_class: "Data contains undefined instances for the selected Data source indicator"
+    nan_input: "Input data contains non numeric values"
+    sparse_data: "Sparse data is not supported"
+    only_one_dataset: "Data source indicator attribute column must indicate at least two datasets."
+  gbox:
+    pearson_correlation: "Pearson correlation"
+    spearman_correlation: "Spearman correlation"
+    biweights_midcorrelation: "Biweights midcorrelation"
+    quantile_normalization: "Quantile normalization"
+    dynamic_time_warping: "Dynamic time warping"
+  report:
+    source_id: "Source ID"
+    num_components: "Selected num. of components"
+    num_genes: "Selected num. of genes"
+    score: "Scoring"
+    quantile_normalization: "Quantile normalization"
+    quantile_normalization_percentage": "Quantile normalization percentage"
+    dynamic_time_warping: "Dynamic time warping"
+
+owbatchnorm:
+  name: "Batch Effect Removal"
+  desc: "Batch effect normalization on Single Cell data set."
+  label:
+    var: "Variable"
+    score: "Score"
+  checkbox:
+    skip_zeros: "Skip zero expressions"
+  box:
+    info: "Info"
+    info_label: "No data on input."
+    method: "Method"
+    batch_box: "Batch Variable Selection"
+  msg:
+    discrete_attributes: "Data with discrete attributes can not be processed."
+    missing_values: "Missing values have been replaced with 0."
+    negative_values: "Unable to use current settings due to negative values in data."
+  btn:
+    apply: "Apply"
+    apply_automatically: "Apply Automatically"
+  text:
+    input_no_data: "No data on input."
+    cell_gene: "{} cells, {} genes\n"
+    meta_features: "{} meta features"
+    no_meta_feature: "(no meta features)"
+  report:
+    method: "Method"
+    var: "Batch variable selection"
+    none: "None"
+    skip_zero_expression: " (Skip zero expressions)"
+
+owdotmatrix:
+  name: "Dot Matrix"
+  desc: "Perform cluster analysis."
+  info_format_str: "{} genes\n{} cells\n{} clusters"
+  btn:
+    apply: "&Apply"
+  checkbox:
+    biclustering: "Order cells and genes"
+    transpose: "Transpose"
+    log_scale: "Log scale"
+    normalize: "Normalize data"
+  box:
+    cluster_var: "Cluster Variable"
+    aggregation: "Aggregation"
+    options: "Options"
+    plot_size: "Plot Size"
+  msg:
+    no_discrete_variable: "No discrete variables in data."
+    to_many_attributes: "Too many genes on input, first {} genes displayed."
+  gbox:
+    mean: "Mean expression"
+    median: "Median expression"
+    min: "Min expression"
+    max: "Max expression"
+    fraction: "Fraction expressing"
+
+owdropout:
+  name: "Dropout Gene Selection"
+  desc: "Dropout-based gene selection"
+  label:
+    bottom: "Mean log2 nonzero expression"
+    left: "Frequency of zero expression"
+  box:
+    info: "Info"
+    filter: "Filter"
+  btn:
+    send_selection: "Send Selection"
+    send_automatically: "Send Automatically"
+    number_genes: "Number of genes:"
+    apply_exp: "Apply exp(-a(x-b))+c"
+  msg:
+    less_selected: "Cannot select more than {} genes."
+    missing_entrez_id: "'Entred ID' is missing in Genes table."
+  text:
+    input_no_data: "No data on input."
+  report:
+    number_genes: "Number of genes"
+
+owfilter:
+  name: "Filter"
+  desc: "Filter cells/genes"
+  btn:
+    min: "Min"
+    max: "Max"
+    data_points: "Show data points"
+    log_scale: "Log scale"
+    commit: "Commit"
+    cells: "Cells"
+    genes: "Genes"
+    data: "Data"
+    select_all: "Select All"
+  box:
+    info: "Info"
+    info_label: "No data in input\n"
+    filter_type: "Filter Type"
+    filter: "Filter"
+    plot_options: "Plot Options"
+  msg:
+    sampling_in_effect: "Too many data points to display. Sampling {} of {} data points."
+    invalid_range: "Negative values in input data. This filter is only defined for non-negative values."
+    invalid_domain:  "Invalid domain\n Domain contains non numeric columns."
+  gbox:
+    total_counts: "Total counts"
+    total_counts_tip: "Sum of all counts across cell/gene"
+    detection_count: "Detection count"
+    detection_count_tip: "Number of cells/genes with non-zero expression"
+  label:
+    cell: "Cell Filter"
+    cell_tip: "Filter cells (rows) by total counts (library size) or number of expressed genes."
+    genes: "Gene Filter"
+    genes_tip: "Filter genes (columns) by total counts mapped to a gene or number of cells in which the gene is expressed in."
+    data: "Data filter"
+    data_tip: "Filter out (zero) small measurements"
+    total_counts_library: "Total counts (library size)"
+    express_genes: "Number of expressed genes"
+    total_counts: "Total counts"
+    number_cells: "Number of cells a gene is expressed in"
+    gene_expression: "Gene Expression"
+    log_scale: "1 + '{}' <i>(in log scale)</i>"
+  text:
+    missing_data: "No data on input.\n"
+    info: "Data with {N} cell(s) and {M} gene(s)"
+    select_subject: "{} {subject}(s) in selection"
+    out_filtered: "All {}s filtered out"
+    cell: "cell"
+    gene: "gene"
+
+owloaddata:
+  label:
+    file: "File:"
+  row:
+    data_start: "Data starts with"
+    header_row: "header row(s)"
+    first: "First"
+    column_row_label: "column(s) are row labels"
+    cell: "% of cells"
+    gene: "% of genes"
+  box:
+    header_row_label: "Headers and Row Labels"
+    data_struct: "Input Data Structure"
+    sample_data: "Sample Data"
+    annotation_files: "Cell && Gene Annotation Files"
+  btn:
+    gene_cell: "Genes in rows, cells in columns"
+    cell_gene: "Cells in rows, genes in columns"
+    cell_annotation: "Cell annotations"
+    gene_annotation: "Gene annotations"
+    load_data: "Load data"
+    reload: "Reload"
+  text:
+    rows: "{:n} rows"
+    columns: "{:n} columns"
+  format:
+    count: "Count file (*.count)"
+    tab: "Tab separated file (*.tsv *.tab)"
+    csv: "Comma separated file (*.csv)"
+    matrix: "10x gene-barcode matrix (matrix.mtx)"
+    xls: "Microsoft Excel spreadsheet (*.xls *.xlsx)"
+    pickle: "Pickled Python object file (*.pkl *.pickle)"
+    all_file: "All files (*.*)"
+    meta: "Meta file (*.meta)"
+
+owmultisample:
+  name: "Load Data"
+  desc: "Load samples for multi-sample analysis"
+  tooltip_missing_file_system: "Missing from file system"
+  text:
+    recent_files: "Recent files"
+    add_files: "Add file:"
+    browse: "Browse..."
+  msg:
+    file_in_list: "File {} already in the list."
+  btn:
+    intersection: "Intersection"
+    union: "Union"
+    output_genes: "Output genes:"
+    load_data: "Load Data"
+  label:
+    file: "File"
+    source_name: "Source Name"
+    cells: "Cells"
+    genes: "Genes"
+    size: "Size"
+    sparsity: "Sparsity"
+  report:
+    concatenated_sample: "Concatenated samples"
+    file: "Files"
+    no_file: "No files."
+    output_genes: "Output genes"
+
+owscdatasets:
+  name: "Single Cell Datasets"
+  desc: "Load a data set from an online repository"
+  label:
+    title: "Title"
+    size: "Size"
+    cells: "Cells"
+    genes: "Genes"
+    organism: "Organism"
+    target: "Target"
+    tags: "Tags"
+
+owscorecells:
+  name: "Score Cells"
+  desc: "Add a cell score based on the given set of genes"
+  placeholder_column_name: "Column Name ..."
+  btn_apply: "&Apply"
+  report_gene: "Gene"
+  info:
+    data: "Data: {} cells, {} genes.\n"
+    markers: "Markers: {} genes.\n"
+    missing_data: "No genes on input.\n"
+    gene_matching: "Gene matching: {} markers found in input data.\n"
+  box:
+    input_info: "Input info"
+    aggregation: "Aggregation"
+    column_name_output: "Score Column Name in Output Data: "
+  msg:
+    no_genes: "No matching genes in data"
+    some_genes : "{} (of {}) genes not found in data"
+    organism_mismatch: "Organism in input data and marker genes does not match"
+    missing_annotation_input: "Missing annotation on gene IDs and organism in the input genes data."
+    missing_gene_id_input: "Gene identification info missing in input genes data."
+    missin_organism_input: "Missing organism information in the input genes data"
+    missing_annotation_marker: "Missing annotation on gene IDs and organism in the marker genes data."
+    missing_gene_id_marker: "Gene identification info missing in marker genes data."
+    missin_organism_marker: "Missing organism information in the marker genes data"
+  gbox:
+    mean_expression: "Mean expression"
+    mean_normalized: "Mean normalized expression"
+    nanmedian: "Median expression"
+    nanmax: "Maximum expression"
+    percent_nonzero: "Fraction of expressed markers"
+    score: "Score"
+
+owscoregenes:
+  name: "Score Genes"
+  desc: "Score and filter genes by their relevance."
+  box:
+    scoring_methods: "Scoring Methods"
+    select_genes: "Select Genes"
+  btn:
+    none: "None"
+    all: "All"
+    manual: "Manual"
+    best_ranked: "Best ranked:"
+    send: "Send"
+    mean: "Mean"
+    variance: "Variance"
+    dispersion: "Dispersion"
+    cv: "Coef. of variation (CV)"
+    info_gain: "Information Gain"
+    univar_reg: "Univariate Regression"
+  lable:
+    info_gain: "Info. gain"
+    univar_reg: "Univar. reg."
+    mean: "Mean"
+    variance: "Variance"
+    dispersion: "Dispersion"
+    cv: "CV"
+  msg:
+    no_target_var: "Data does not have a single target variable. You can still connect in unsupervised scorers such as PCA."
+    missings_imputed: "Missing values will be imputed as needed."
+    invalid_type: "Cannot handle target variable type {}"
+    inadequate_learner: "Scorer {} inadequate: {}"
+    no_attributes: "No attributes"
+  status:
+    running: "Running"
+  report:
+    input: "Input"
+    ranks: "Ranks"
+    output: "Output"
+
+owscpreprocess:
+  name: "Single Cell Preprocess"
+  desc: "Preprocess Single Cell data set"
+  label:
+    gene_groups: "gene groups."
+    logarithmic_scale: "Logarithmic Scale"
+    logarithmic_scale_desc: "Logarithmic Scale"
+    binarize_exp: "Binarize Expression"
+    binarize_exp_desc: "Binarize Expression"
+    normalize: "Normalize Samples"
+    normalize_desc: "Normalize Samples"
+    standardize: "Standardize Genes"
+    standardize_desc: "Standardize Genes"
+    select_genes: "Select Most Variable Genes"
+    select_genes_desc: "Select Most Variable Genes"
+    dropout: "Dropout Gene Selection"
+    dropout_desc: "Dropout Gene Selection"
+  btn:
+    cpm: "Counts per million"
+    med: "Median"
+    cell_group: "Cell Groups: "
+    lower_bound: "Lower Bound: "
+    upper_bound: "Upper Bound: "
+    dispersion: "Dispersion"
+    variance: "Variance"
+    mean: "Mean"
+    compute_statistics: "Compute statistics for"
+  row:
+    logarithm_base: "Logarithm Base:"
+    condition: "Condition:"
+    threshold: "Threshold:"
+    clipping: "Clipping"
+    number_genes: "Number of genes:"
+    genes_number: "Number of genes:"
+  gbox:
+    binary_logarithm: "2 (Binary Logarithm)"
+    natural_logarithm: "e (Natural Logarithm)"
+    common_logarithm: "10 (Common Logarithm)"
+    greater_equal: "Greater or Equal"
+    greater: "Greater"
+  msg:
+    discrete_attributes: "Data with discrete attributes can not be preprocessed."
+    missing_values: "Missing values have been replaced with 0."
+    bad_pp_combination: "Dropout should not be used after Normalization/Log-transformation."
+  report:
+    condition_threshold: "Condition: {}, Threshold: {}"
+    group_by: ", Grouped by: {}"
+    method: "Method: {}"
+    lower_bound: "Lower Bound: {}"
+    upper_bound: "Upper Bound: {}"
+    no_clipping: "No Clipping"
+    method_genes: "Method: {}, Number of Genes: {}"
+    number_groups: ", Number of Groups: {}"
+    number_genes: "Number of Genes: {}"
