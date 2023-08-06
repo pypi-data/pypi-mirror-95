@@ -1,0 +1,38 @@
+Metadata-Version: 1.2
+Name: tcpb
+Version: 0.6.0
+Summary: Python client for TeraChem Protocol Buffer server
+Home-page: https://github.com/mtzgroup/tcpb-client
+License: UNKNOWN
+Project-URL: Source, https://github.com/mtzgroup/tcpb-client
+Project-URL: Tracker, https://github.com/mtzgroup/tcpb-client/issues
+Project-URL: Documentation, https://mtzgrouptcpb.readthedocs.io/en/latest/index.html
+Description: # Python TeraChem Protocol Buffer (TCPB) Client
+        
+        This repository is designed to facilitate the development a Python client for communicating with TeraChem running in Protocol Buffer server mode.
+        
+        This client uses C-style sockets for communication, and Protocol Buffers for a clean, well-defined way to serialize TeraChem input & output.
+        
+        For more documentation, check out https://mtzgrouptcpb.readthedocs.io/en/latest/.
+        
+        For distribution, check out https://anaconda.org/mtzgroup/tcpb.
+        
+        ## How do I use this?
+        
+        TODO: More details
+        
+        ## Contact
+        
+        * Stefan Seritan <sseritan@stanford.edu>
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4

@@ -1,0 +1,4 @@
+google==1.9.3
+protobuf>=3.2.0
+numpy>=1.13
+future
