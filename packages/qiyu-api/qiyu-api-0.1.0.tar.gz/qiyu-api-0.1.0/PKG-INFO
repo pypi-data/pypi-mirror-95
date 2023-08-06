@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: qiyu-api
+Version: 0.1.0
+Summary: 奇遇科技 Python API 合集
+Home-page: https://oss.qiyutech.tech/
+Author: dev
+Author-email: dev@qiyutech.tech
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7,<4)
+Requires-Dist: cryptography (>=3.0,<4.0)
+Requires-Dist: dataclasses-json (>=0.5,<0.6)
+Requires-Dist: pydantic (>=1.7,<2)
+Requires-Dist: pydes (>=2,<3)
+Requires-Dist: pyjwt (>=2.0,<3)
+Requires-Dist: requests (>=2.25,<3)
+Requires-Dist: structlog (>=21,<22)
+Requires-Dist: tbk_api (>=0.2.1,<0.3)
+Project-URL: Repository, https://github.com/QiYuTechDev/qiyu-api
+Description-Content-Type: text/markdown
+
+# QiYu-api
+
+[![Black Format Check](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/black-format.yml/badge.svg)](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/black-format.yml)
+[![CodeQL](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/codeql-analysis.yml)
+[![Poetry Publish](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/poetry_pypi.yml/badge.svg)](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/poetry_pypi.yml)
+[![Pylama Lint](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/pylama-lint.yml/badge.svg)](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/pylama-lint.yml)
+[![pytest](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/pytest.yml/badge.svg)](https://github.com/QiYuTechDev/qiyu-api/actions/workflows/pytest.yml)
+
+奇遇科技 Python API 集合
+
+## 当前已经合并
+
+* ztk_api
+* mob_api
+* apns_sdk_py
+* py_apple_signin
+
