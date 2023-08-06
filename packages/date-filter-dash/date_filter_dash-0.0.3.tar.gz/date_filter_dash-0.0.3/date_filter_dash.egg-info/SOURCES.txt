@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+date_filter_dash/DateFilterDash.py
+date_filter_dash/__init__.py
+date_filter_dash/_imports_.py
+date_filter_dash/date_filter_dash.min.js
+date_filter_dash/date_filter_dash.min.js.map
+date_filter_dash/metadata.json
+date_filter_dash/package-info.json
+date_filter_dash.egg-info/PKG-INFO
+date_filter_dash.egg-info/SOURCES.txt
+date_filter_dash.egg-info/dependency_links.txt
+date_filter_dash.egg-info/top_level.txt
