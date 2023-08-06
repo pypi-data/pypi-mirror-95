@@ -1,0 +1,15 @@
+ipysankeywidget/__init__.py,sha256=7HIqTmUJyG-9gA5MXezt9L_Xz4g2dOtxppoSzhuBdPI,284
+ipysankeywidget/_version.py,sha256=snq995mgAChj8egNp0c5T-3Xh9KLIaXQNFeOdrjRFEw,281
+ipysankeywidget/sankey_widget.py,sha256=jwCnz8bad5aPhp8HdoURhg8-YAkbV3OyEdDsSQzyPN0,6658
+ipysankeywidget/static/extension.js,sha256=0R1aFHwDvhP_iwEB8fN1lmu3sjZtfxP1ry6nYgUPqHs,3369
+ipysankeywidget/static/index.js,sha256=YrhdR1VAXjKNRSe0EK4lilUKCkBxgbHllg9Is2z666I,1532295
+ipysankeywidget/static/index.js.map,sha256=_HcZS_ijWHYgyD-P-PYY5LW3T_s5cUaDrA-xXRcch7w,1798002
+ipysankeywidget-0.4.1.data/data/etc/jupyter/nbconfig/notebook.d/ipysankeywidget.json,sha256=Mi5_TGADubgVcOnNq7q-LN5AHrX6zV6rsVMitT0LKOs,69
+ipysankeywidget-0.4.1.data/data/share/jupyter/nbextensions/jupyter-sankey-widget/extension.js,sha256=0R1aFHwDvhP_iwEB8fN1lmu3sjZtfxP1ry6nYgUPqHs,3369
+ipysankeywidget-0.4.1.data/data/share/jupyter/nbextensions/jupyter-sankey-widget/index.js,sha256=YrhdR1VAXjKNRSe0EK4lilUKCkBxgbHllg9Is2z666I,1532295
+ipysankeywidget-0.4.1.data/data/share/jupyter/nbextensions/jupyter-sankey-widget/index.js.map,sha256=_HcZS_ijWHYgyD-P-PYY5LW3T_s5cUaDrA-xXRcch7w,1798002
+ipysankeywidget-0.4.1.dist-info/LICENCE,sha256=yMf1PajKPn9T6dE1bFn2HnzEVO7WqgSvbGBl4BK2nSg,1078
+ipysankeywidget-0.4.1.dist-info/METADATA,sha256=Q05vWvvT63GX8bBziuQ7Fxq6wm9vyEd700cyWkmEy0Y,871
+ipysankeywidget-0.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ipysankeywidget-0.4.1.dist-info/top_level.txt,sha256=eQmQ7A0CwSqKeO7YQmCeVq7C9vZxr2oxhTwCdFsyN9Y,16
+ipysankeywidget-0.4.1.dist-info/RECORD,,
