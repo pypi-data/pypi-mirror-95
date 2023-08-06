@@ -1,0 +1,5 @@
+ipykernel
+pyserial
+iot-device
+termcolor
+argparse
