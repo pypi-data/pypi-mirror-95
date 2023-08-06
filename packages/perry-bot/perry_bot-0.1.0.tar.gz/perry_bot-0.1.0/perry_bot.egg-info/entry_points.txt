@@ -1,0 +1,3 @@
+[console_scripts]
+perry-bot = perry_bot.cli_entry:main
+
