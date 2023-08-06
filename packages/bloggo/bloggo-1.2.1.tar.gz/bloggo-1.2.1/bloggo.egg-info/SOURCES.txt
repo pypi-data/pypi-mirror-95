@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./bloggo/__init__.py
+./bloggo/__main__.py
+./bloggo/core.py
+./bloggo/hbs.py
+bin/bloggo
+bloggo.egg-info/PKG-INFO
+bloggo.egg-info/SOURCES.txt
+bloggo.egg-info/dependency_links.txt
+bloggo.egg-info/not-zip-safe
+bloggo.egg-info/requires.txt
+bloggo.egg-info/top_level.txt

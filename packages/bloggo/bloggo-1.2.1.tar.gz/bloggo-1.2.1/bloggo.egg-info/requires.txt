@@ -1,0 +1,4 @@
+pybars3>=0.9.7
+watchgod>=0.7
+mock>=4.0.3
+Markdown>=3.3.3
