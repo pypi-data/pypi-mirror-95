@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: my-package-19CS10073
+Version: 1.0
+Summary: My package
+Home-page: UNKNOWN
+Author: Rajat Bachhawat
+Author-email: <myemail@abc.com>
+License: UNKNOWN
+Description: My first Python package but with a longer description
+Keywords: python,first-package
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
