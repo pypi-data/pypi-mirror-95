@@ -1,0 +1,10 @@
+README.md
+setup.py
+hhqtrain/__init__.py
+hhqtrain/detect_mfcc_plot.py
+hhqtrain/hhqtrain.py
+hhqtrain.egg-info/PKG-INFO
+hhqtrain.egg-info/SOURCES.txt
+hhqtrain.egg-info/dependency_links.txt
+hhqtrain.egg-info/not-zip-safe
+hhqtrain.egg-info/top_level.txt
