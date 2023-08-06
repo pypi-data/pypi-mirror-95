@@ -1,0 +1,4 @@
+[dffml.model]
+xgbclassifier = dffml_model_xgboost.xgbclassifier:XGBClassifierModel
+xgbregressor = dffml_model_xgboost.xgbregressor:XGBRegressorModel
+

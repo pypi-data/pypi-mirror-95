@@ -1,0 +1,13 @@
+dffml_model_xgboost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_model_xgboost/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+dffml_model_xgboost/xgbclassifier.py,sha256=klRfNoHUlcZ8-zDTwnm_QtFtTdYjri7OV0xrbT1H7JI,9496
+dffml_model_xgboost/xgbregressor.py,sha256=btId8oyKYq4X7a7sNNlCrrHl_MlcJ5JVgCvh3C2osMM,9405
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_classifier_model.py,sha256=m8fVOGWesXNsTO2kh9tQkxH-The7oZSQL1hWmljLilU,4813
+tests/test_regressor_model.py,sha256=VfAv3HPM6vAgfu2Z79Qp6iKbqUsAxzNT6MPYPN5PS8U,3821
+dffml_model_xgboost-0.1.0.dist-info/LICENSE,sha256=BFYq_kLVLq-wzGIu-XKix6IVLzZRrfaspOEdqsypyA8,1078
+dffml_model_xgboost-0.1.0.dist-info/METADATA,sha256=MqA_8zadhnMFHrTjx4DJZqr1obA4pQ1CAzFCRfNiWO0,3167
+dffml_model_xgboost-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_model_xgboost-0.1.0.dist-info/entry_points.txt,sha256=xnJd69Fk6rbK6xfz3hHBJAqbgR-0EeyYzmatFztbH1M,150
+dffml_model_xgboost-0.1.0.dist-info/top_level.txt,sha256=aWXf__mK6W5WpMYNIMt30GbSYkVdF_UMOYQrejeiR1c,26
+dffml_model_xgboost-0.1.0.dist-info/RECORD,,

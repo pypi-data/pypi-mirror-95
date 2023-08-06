@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dffml-model-xgboost
+Version: 0.1.0
+Summary: DFFML model dffml-model-xgboost
+Home-page: https://github.com/dffml/dffml-model-xgboost
+Author: Oliver O'Brien
+Author-email: oliverobrien111@gmail.com
+Maintainer: Oliver O'Brien
+Maintainer-email: oliverobrien111@gmail.com
+License: MIT
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: joblib (>=0.16.0)
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: xgboost (==1.3.3) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: pandas (==1.2.2) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: scikit-learn (==0.24.1) ; platform_system == "Darwin" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: xgboost (==1.3.3) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: pandas (==1.2.2) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: scikit-learn (==0.24.1) ; platform_system == "Darwin" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: xgboost (==1.3.3) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: pandas (==1.2.2) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: scikit-learn (==0.24.1) ; platform_system == "Linux" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: xgboost (==1.3.3) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: pandas (==1.2.2) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: scikit-learn (==0.24.1) ; platform_system == "Linux" and python_version == "3.8"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: xgboost (==1.3.3) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: pandas (==1.2.2) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: scikit-learn (==0.24.1) ; platform_system == "Windows" and python_version == "3.7"
+Requires-Dist: dffml (==0.4.0) ; platform_system == "Windows" and python_version == "3.8"
+
+# DFFML XGBoost Models
+
+## About
+
+dffml_model_xgboost supports XGBoost models.
+![XGBoost](https://xgboost.readthedocs.io/en/latest/)
+
+## Documentation
+
+Documentation is hosted at https://intel.github.io/dffml/plugins/dffml_model.html#dffml-model-xgboost
+
+## License
+
+dffml_model_xgboost Models are distributed under the terms of the
+[MIT License](LICENSE).
+
