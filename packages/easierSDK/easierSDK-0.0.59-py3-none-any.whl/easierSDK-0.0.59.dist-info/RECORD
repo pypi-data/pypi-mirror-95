@@ -1,0 +1,17 @@
+easierSDK/__init__.py,sha256=DPF2Jhluwds9HK2-tDMLFQyiGmsVRWGTcgMnU51RNW4,843
+easierSDK/datasetsAPI.py,sha256=HRkxdlxfr-n7SDK1ZHJ63yiUCsUOhw_ynTDZMWsISKM,25215
+easierSDK/easier.py,sha256=yTK5NzdOeXFYiEt-bcKYGevaHfTyUiEkpIBI7-fCLF0,11057
+easierSDK/modelsAPI.py,sha256=dd5_a9UoSnx2qREkfhbOSUWUDzhHqNtPT6ySkDJm5aI,29458
+easierSDK/classes/__init__.py,sha256=DPF2Jhluwds9HK2-tDMLFQyiGmsVRWGTcgMnU51RNW4,843
+easierSDK/classes/categories.py,sha256=Jp-5hT3RcjBt3ObOucQiTumA4dWIgfWs0uRTJ9MSNEE,1116
+easierSDK/classes/category_metadata.py,sha256=NHafDyWaUrCRFVLvVjVKpNev2KGNLGNaYpV1xGKT4c8,3698
+easierSDK/classes/constants.py,sha256=oVhSK4U87BWBfjYFfCY9qCnSbBnI7q4NAGnemSzrGLE,1738
+easierSDK/classes/dataset_metadata.py,sha256=kOs5cvjRG5VTPaIFOHMx9qYoCGetwurXpDNti3a1Iw8,4177
+easierSDK/classes/easier_model.py,sha256=Zu6FD-4hySdkfWNFBCyieT-UU8xVvSG9mq0klHvEvhI,9796
+easierSDK/classes/model_metadata.py,sha256=xyl7t4mNpbI0zxNCt6Y7x0ycr8p02sK0ZB_De-eraSg,4203
+easierSDK/classes/repository_metadata.py,sha256=nguSDqzp8wbdhU__oGa9x0jJI9qO2sP88eh-fHC0JjM,4393
+easierSDK-0.0.59.dist-info/LICENSE,sha256=A3Xl197G_RrQ0UILVqyCh5AHc882cPYqDSZ4chF1G9M,11342
+easierSDK-0.0.59.dist-info/METADATA,sha256=AkQp2gM_OOPY-XP_3EYRjPodzl-Ku9buYcp3QN6PNtU,83704
+easierSDK-0.0.59.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+easierSDK-0.0.59.dist-info/top_level.txt,sha256=PiGb1GQflST97N5M40UiX5XKUHPdAOLKumzhU4NPuj0,10
+easierSDK-0.0.59.dist-info/RECORD,,
