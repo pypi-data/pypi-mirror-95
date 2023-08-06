@@ -1,0 +1,5 @@
+django-appconf
+django-cms>=3.0
+isodate>=0.5.4
+jsonfield>=2.1.1
+requests
