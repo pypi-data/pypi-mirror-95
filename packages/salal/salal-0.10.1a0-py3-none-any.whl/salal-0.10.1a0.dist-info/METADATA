@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: salal
+Version: 0.10.1a0
+Summary: A system for building websites from templates and content
+Home-page: https://github.com/haskelt/salal
+Author: Todd Haskell
+Author-email: todd@craggypeak.com
+License: GNU General Public License v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2 (>=2.11.2)
+Requires-Dist: lxml (>=4.1.0)
+
+Salal is a simple system for building websites from templates and content.
+
+[About Salal](https://github.com/haskelt/salal/wiki/About-Salal)
+[Installation](https://github.com/haskelt/salal/wiki/Installation)
+
+
