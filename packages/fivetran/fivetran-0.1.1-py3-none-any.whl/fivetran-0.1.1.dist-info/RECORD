@@ -1,0 +1,5 @@
+fivetran/__init__.py,sha256=n7FfHjITrtKjOCo0AyB4lME-DmaBebq3Y7ly123es9M,52
+fivetran/base_connector.py,sha256=nIOLGK13vdcGRhvqK8NSXhIuiiRV20aKA-jk1DJH-rY,2604
+fivetran-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fivetran-0.1.1.dist-info/METADATA,sha256=pJbhAvmeHNvnVWPYUR3bxHAE3Mg740aup6zcRIYU30c,250
+fivetran-0.1.1.dist-info/RECORD,,
