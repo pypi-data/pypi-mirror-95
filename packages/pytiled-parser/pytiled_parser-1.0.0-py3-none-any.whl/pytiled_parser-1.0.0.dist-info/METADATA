@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pytiled-parser
+Version: 1.0.0
+Summary: A library for parsing JSON formatted Tiled Map Editor maps and tilesets.
+Home-page: https://github.com/Beefy-Swain/pytiled_parser
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: attrs
+Requires-Dist: typing-extensions
+Provides-Extra: build
+Requires-Dist: pep517 ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: isort (<5,>=4.2.5) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+UNKNOWN
+
+
