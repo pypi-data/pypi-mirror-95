@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: TPP
+Version: 0.2
+Summary: Text PreProcessing libraries
+Home-page: https://github.com/saby2184/TPP
+Author: Saby
+Author-email: saby2184@gmail.com
+License: MIT
+Download-URL: https://github.com/saby2184/TPP/archive/v0.01.tar.gz
+Description: UNKNOWN
+Keywords: NOISE,WHITESPACE,SMALLCASE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
