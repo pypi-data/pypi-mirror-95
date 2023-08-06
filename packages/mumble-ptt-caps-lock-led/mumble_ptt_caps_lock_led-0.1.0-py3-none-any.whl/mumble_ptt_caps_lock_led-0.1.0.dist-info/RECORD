@@ -1,0 +1,7 @@
+mumble_ptt_caps_lock_led/read_ptt_state.py,sha256=hQ8_TLhr34l7gjVS20QKeXeUeIKvfNKcnpKeZlXjNS0,2262
+mumble_ptt_caps_lock_led/set_caps_led_from_pipe.py,sha256=MgypSfej2LlU0YJKQKsJalsofmTnd9LE1lXFD0fcgPg,1335
+mumble_ptt_caps_lock_led-0.1.0.dist-info/entry_points.txt,sha256=uwXpUTRial7alxmfJaioduBGjn33XQU9xu48I0k0zzU,125
+mumble_ptt_caps_lock_led-0.1.0.dist-info/LICENSE,sha256=pc5Ac3pIyTvpP6EtvGbkWN47895dBfA0VD9wc4IpZ90,1072
+mumble_ptt_caps_lock_led-0.1.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+mumble_ptt_caps_lock_led-0.1.0.dist-info/METADATA,sha256=YsodDAn4wgKOo89uJS_Y7fdBpEmwmbyhTrPfHbKC65g,1282
+mumble_ptt_caps_lock_led-0.1.0.dist-info/RECORD,,
