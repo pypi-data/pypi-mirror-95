@@ -1,0 +1,9 @@
+pymatching/__init__.py,sha256=yJ1FXs7Fb5ovGu0FeKP5u_ZOEg41hNGkcVX1MAQX4-c,731
+pymatching/_cpp_mwpm.cp36-win_amd64.pyd,sha256=GyLDVGeRahTqM3WJ8bx8dyUDIHbgsVnpDpkNDdHokVE,296960
+pymatching/_version.py,sha256=rjduQfsqv798vuV1dmNbE1CnPnGzsSkSK2VuLFVP3PQ,613
+pymatching/matching.py,sha256=rzelUXARu4EtFh9uBrov0IvQygZW27D1UbKE8JxdXlA,16584
+PyMatching-0.2.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+PyMatching-0.2.4.dist-info/METADATA,sha256=YiLFo4ftKDjnuBbGe3c4yec7yxm0bWZ9V8c_9G4tr9Q,5755
+PyMatching-0.2.4.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+PyMatching-0.2.4.dist-info/top_level.txt,sha256=Bwoj_tdrVKgNF3MVQ1IdXkFwSRIXkVHiNDk3dGKbTWI,11
+PyMatching-0.2.4.dist-info/RECORD,,
