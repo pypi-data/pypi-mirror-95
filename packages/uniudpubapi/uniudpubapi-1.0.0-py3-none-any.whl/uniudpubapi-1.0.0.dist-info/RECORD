@@ -1,0 +1,13 @@
+uniudpubapi/__init__.py,sha256=snvuARbuCwreLsI_7QowvkVy7X2McSmTHt6v_hM4in8,57
+uniudpubapi/dep_pubs.py,sha256=r7eP_f44Zwao6M9WYGVuu_YyTwkveWaqJlBTtoYyenU,7251
+uniudpubapi/elements.py,sha256=lXWUoDfYM-LNQIIqq1tgUgclgSFaQ_E8c0yTESyImC0,21009
+uniudpubapi/publications.py,sha256=9T1pvQkMohOUw26B_lr9jGtOM0pcpfp8uZv4pbgSZc8,5072
+uniudpubapi/writers.py,sha256=bA3pRFEJKwPosw8KZRLLSg_1rVtQ88mcZgGggTGs8bo,6520
+uniudpubapi/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniudpubapi/utils/decorators.py,sha256=7sMVVux-4IKKgPJBgq3CTl94VKmGw5KIdsYP_-cfnNw,505
+uniudpubapi/utils/oai_search.py,sha256=1yqfx4XWUvkPjpzdAyyqew2RWSpERZVTOeji8SE8x_Q,2028
+uniudpubapi-1.0.0.dist-info/LICENSE.txt,sha256=WCJcnO5RzoFLUz3lDPHb_5kpGJyNc2v0xJsvV_-_cMU,1071
+uniudpubapi-1.0.0.dist-info/METADATA,sha256=c07M2cqmJLqnABkOB1cMxGP8SXm_1egcm5BQ-aI1_GQ,6429
+uniudpubapi-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+uniudpubapi-1.0.0.dist-info/top_level.txt,sha256=iwr6iieLNa_OH9GE-GTTflA3oTC5NcQ2fKw_YyRansY,12
+uniudpubapi-1.0.0.dist-info/RECORD,,
