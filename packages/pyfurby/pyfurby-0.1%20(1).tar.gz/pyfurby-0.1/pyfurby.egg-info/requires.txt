@@ -1,0 +1,4 @@
+Adafruit-Blinka
+Flask
+mpu6050-raspberrypi
+pyttsx3
