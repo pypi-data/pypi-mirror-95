@@ -1,0 +1,2 @@
+matplotlib
+openpifpaf>=0.12b1
