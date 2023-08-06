@@ -1,0 +1,46 @@
+Metadata-Version: 1.0
+Name: distprob
+Version: 0.1
+Summary: Gaussian and Binomial distributions
+Home-page: UNKNOWN
+Author: irishwy_2
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: # distprob
+        
+        distprob is a Python library for dealing with distribution calculation and visualization.
+        
+        Gaussian distribution class - calculating and visualizing a Gaussian distribution.
+        Binomial distribution class - calculating and visualizing a Binomial distribution.
+        Generic distribution class - calculating and visualizing a probability distribution.
+        
+        ## Installation
+        
+        Use the package manager pip to install distprob.
+        
+        ```bash
+        pip install distprob
+        ```
+        
+        ## Usage
+        
+        ```python
+        from distprob import Gaussian
+        gaussian_one = Gaussian(25, 2)
+        gaussian_one.mean
+        gaussian_one + gaussian_one
+        from distprob import Binomial
+        binomial_one = Binomial(, 2)
+        binomial_one.mean
+        binomial_one + binomial_one
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
