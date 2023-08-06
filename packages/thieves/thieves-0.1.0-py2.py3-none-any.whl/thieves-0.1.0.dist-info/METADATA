@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: thieves
+Version: 0.1.0
+Summary: Thieves is a concurrent, thread-safe Google Drive uploader library.
+Home-page: https://github.com/midoublelo/thieves
+Author: Millo Evers
+Author-email: contact@milloevers.com
+License: MPL-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: pydrive
+
+UNKNOWN
+
+
