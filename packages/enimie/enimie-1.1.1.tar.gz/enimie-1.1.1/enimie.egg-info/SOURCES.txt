@@ -1,0 +1,9 @@
+README.md
+setup.py
+enimie/__init__.py
+enimie.egg-info/PKG-INFO
+enimie.egg-info/SOURCES.txt
+enimie.egg-info/dependency_links.txt
+enimie.egg-info/entry_points.txt
+enimie.egg-info/requires.txt
+enimie.egg-info/top_level.txt
