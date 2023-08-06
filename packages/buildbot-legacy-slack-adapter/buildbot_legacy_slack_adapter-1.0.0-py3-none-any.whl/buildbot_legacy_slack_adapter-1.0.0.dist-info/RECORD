@@ -1,0 +1,8 @@
+buildbot_legacy_slack_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildbot_legacy_slack_adapter/reporter.py,sha256=7gm92cOjFEjaNGeDY7xXAm2B5rfUOskb3d4QhXmWyjg,5124
+buildbot_legacy_slack_adapter-1.0.0.dist-info/LICENSE,sha256=hQH5KEVdjwqe76vsZB553lvBUtcF-aC2exw7cCN8g0A,1066
+buildbot_legacy_slack_adapter-1.0.0.dist-info/METADATA,sha256=XTaOkVz0htfPcHoiy8TawgZbs84rDyGgmqFde4wFUtg,1651
+buildbot_legacy_slack_adapter-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+buildbot_legacy_slack_adapter-1.0.0.dist-info/entry_points.txt,sha256=03XAoPTrOVbqr37_a0Ju3Hs0AoX77yjTsEg_VRqwopM,95
+buildbot_legacy_slack_adapter-1.0.0.dist-info/top_level.txt,sha256=WHzI1ATu7J3A9NkbriPGE-3FYExJgdzSKm_wpZcpaqI,30
+buildbot_legacy_slack_adapter-1.0.0.dist-info/RECORD,,
