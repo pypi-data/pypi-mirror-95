@@ -1,0 +1,10 @@
+singer-python==5.10.0
+backoff==1.8.0
+ratelimit==2.2.1
+requests==2.23.0
+pyhumps==1.6.1
+
+[dev]
+pylint
+ipdb
+nose

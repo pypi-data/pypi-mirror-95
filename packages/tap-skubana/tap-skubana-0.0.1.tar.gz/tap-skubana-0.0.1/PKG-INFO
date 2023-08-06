@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: tap-skubana
+Version: 0.0.1
+Summary: Singer.io tap for extracting data from the Skubana API
+Home-page: UNKNOWN
+Author: scott.coleman@bytecode.io
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5.6

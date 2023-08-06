@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          tap-skubana=tap_skubana:main
+      
