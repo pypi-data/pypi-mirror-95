@@ -1,0 +1,14 @@
+.travis.yml
+LICENSE.txt
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+pyproject.toml
+setup.py
+test_helloworld.py
+src/helloworld.py
+src/helloworld_nik12.egg-info/PKG-INFO
+src/helloworld_nik12.egg-info/SOURCES.txt
+src/helloworld_nik12.egg-info/dependency_links.txt
+src/helloworld_nik12.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tox = "*"
+helloworld-nik12 = {editable = true, path = "."}
+
+[dev-packages]
+pytest = ">=3.7"
+twine = "*"
+
+[requires]
+python_version = "3.7"
