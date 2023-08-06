@@ -1,0 +1,3 @@
+[console_scripts]
+taky = taky.__main__:main
+
