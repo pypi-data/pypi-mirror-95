@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pymessenger4
+Version: 1.0.1
+Summary: Python Wrapper for Facebook Messenger Platform
+Home-page: https://github.com/tanlull/pymessenger4
+Author: Tanya S.
+Author-email: tanlull@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/tablull/pymessenger4/tarball/1.0.0
+Keywords: facebook messenger,python,wrapper,bot,messenger bot
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: six
+
+UNKNOWN
+
+
