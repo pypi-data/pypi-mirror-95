@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: udpipe-parser
+Version: 0.4
+Summary: UDPipe-based Parser brings Universal Dependencies trees in more practical form.
+Home-page: https://github.com/constantin50/udpipe_parser
+Author: Constantin Werner
+Author-email: const.werner@gmail.com
+License: MIT
+Description: This analyzer takes sentence in russian and does syntax analysis using udpipe model. The result of analysis is
+        represented in four items and its attributes.
+        
+        see: https://github.com/constantin50/udpipe_analyzer
+Keywords: parser,Universal Dependencies,NLP,russian,syntax
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
