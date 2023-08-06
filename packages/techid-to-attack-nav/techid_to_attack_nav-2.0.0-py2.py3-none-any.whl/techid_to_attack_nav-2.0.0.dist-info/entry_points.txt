@@ -1,0 +1,3 @@
+[console_scripts]
+techid_to_attack_nav = techid_to_attack_nav.cli:main
+
