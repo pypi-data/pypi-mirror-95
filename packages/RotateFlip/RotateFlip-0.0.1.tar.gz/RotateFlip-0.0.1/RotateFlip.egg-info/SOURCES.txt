@@ -1,0 +1,8 @@
+README.md
+setup.py
+RotateFlip/Image.py
+RotateFlip/__init__.py
+RotateFlip.egg-info/PKG-INFO
+RotateFlip.egg-info/SOURCES.txt
+RotateFlip.egg-info/dependency_links.txt
+RotateFlip.egg-info/top_level.txt
