@@ -1,0 +1,6 @@
+setup.py
+J_12_Spotify_recommendation.egg-info/PKG-INFO
+J_12_Spotify_recommendation.egg-info/SOURCES.txt
+J_12_Spotify_recommendation.egg-info/dependency_links.txt
+J_12_Spotify_recommendation.egg-info/top_level.txt
+Scripts/__init__.py
