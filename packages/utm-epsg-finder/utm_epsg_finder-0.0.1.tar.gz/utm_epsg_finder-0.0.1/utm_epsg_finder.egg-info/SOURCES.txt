@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+utm_epsg_finder/__init__.py
+utm_epsg_finder/utm_epsg_finder.py
+utm_epsg_finder.egg-info/PKG-INFO
+utm_epsg_finder.egg-info/SOURCES.txt
+utm_epsg_finder.egg-info/dependency_links.txt
+utm_epsg_finder.egg-info/not-zip-safe
+utm_epsg_finder.egg-info/top_level.txt
