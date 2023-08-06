@@ -1,0 +1,328 @@
+# Suluoya
+
+### This is a package written by Suluoya not just for fun!
+
+## pip error
+
+```python
+pip3 install --ignore-installed olefile
+
+pip3 install --ignore-installed llvmlite
+
+pip3 install --ignore-installed filelock
+```
+
+------
+
+## Upgrade Suluoya
+
+```python
+import Suluoya as sly
+sly.upgrade()
+```
+
+## Welcome
+
+```python
+import Suluoya as sly
+sly.welcome()
+```
+
+### (1)If you wanna get text from your clipboard...
+
+```python
+import Suluoya as sly
+sly.get_clipboard(show=True)
+a = sly.get_clipboard()
+print(a)
+```
+
+### (2)If you wanna get content from a file...
+
+Currently support 'doc','docx','ppt','pptx','txt'
+
+```python
+import Suluoya as sly
+content = sly.get_content(file=r'c:\lalala\1.docx')
+print(content)
+```
+
+### (3)If you wanna analyse your dataframe...
+
+```python
+import Suluoya as sly
+import pandas as pd
+df = pd.read_csv('https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv')
+sly.report(df)
+#This will make a html,just look for and open it!
+```
+
+### (4) make a QRcode
+
+fill in an url or some strings in content
+
+fill in the name of the png in name
+
+```python
+import Suluoya as sly
+sly.QRcode(content='', name='')
+```
+
+## 2. Import
+
+If you wanna auto import some packages...
+
+use"import Suluoya.Import as SI" instead of "import pandas as pd,import numpy as np"...
+
+```python
+#pass
+import pandas as pd
+import numpy as np
+...
+df = pd.Dataframe()
+#now
+import Suluoya.Import as SI
+df = pd.Dataframe() # directly
+SI.check() # just to check your import by using SI,can be omitted
+# ps. go and see a file named "auto_imports.py"!
+```
+
+## 3. Crawl
+
+```python
+from Suluoya.crawl import slycrawl as sc
+sc=sc(url='',headers={},params={},cookies={},timeout=5)
+print(sc.url)
+print(sc.response)
+print(sc.html)
+print(sc.headers)
+print(sc.params)
+print(sc.cookies)
+'''generate a fake useragent'''
+print(sc.useragent)
+'''parsel.css'''
+print(sc.selector)
+'''BeautifulSoup'''
+print(sc.soup)
+'''it will return a **dic** which contain title,text,description,keywords,tags,image,infomation and the raw_html'''
+print(sc.text)
+'''it will return a dictionary which contain text,title,html,author,image,movies,keywords and summary.'''
+print(sc.news)
+'''url links'''
+print(sc.links)
+'''pandas.read_html'''
+print(sc.tables)
+```
+
+### get proxies
+
+```python
+from Suluoya.crawl import GetProxy as gp
+proxies=gp(number=1)
+print(proxies)
+```
+
+## 4. Download
+
+```python
+from Suluoya.crawl import slydownload as sd
+sd=sd(url='')
+```
+
+### (1)download music
+
+```python
+sd.download_music(path='d:\\')
+```
+
+### (2)download video
+
+```python
+sd.download_video()
+```
+
+### (3)download anything you want with an URL
+
+```python
+sd.download()
+```
+
+### (4)download a big file
+
+```python
+sd.download_big_file()
+```
+
+## 5. Text
+
+### (1)initialize
+
+```python
+from Suluoya.text import slytext as st
+st=st('Suluoya','苏洛雅')
+```
+
+### (2)translate
+
+```python
+st=st('苏洛雅')
+translate=st.translate
+print(translate)
+```
+
+### (3)gender guess
+
+name should be a Chinese name!
+
+```python
+st=st('苏洛雅')
+gender=st.gender
+print(gender)
+```
+
+### (4)text compare
+
+accurate=True --> accurate match mode
+
+accurate=False --> fuzzy match mode
+
+```python
+st=st('Suluoya','suluoya')
+text_compare=st.compare(accurate=True)
+print(text_compare)
+```
+
+### (5)sentiment
+
+language='C'-->Chinese
+
+language='E'-->English
+
+To download the necessary data,simply run "python -m textblob.download_corpora" before using it,if something goes wrong,then click https://zhuanlan.zhihu.com/p/272181552, https://www.cnblogs.com/liweikuan/p/14052001.html or https://mp.weixin.qq.com/s?__biz=MzI1NzczMDIwNw==&mid=2247483777&idx=1&sn=cd985f3f7fe0472df9560de94753d86d&chksm=ea13b271dd643b67a591485d249ca9f64aaa380db3ff16c462c0d2def5ccce114e3c938b955e&token=445308227&lang=zh_CN#rd
+
+```python
+st=st('hello','sad')
+sentiment=st.sentiment(language='E')
+print(sentiment)
+```
+
+### (6)draw a heart
+
+```python
+st=st('Suluoya','苏洛雅')
+st.heart
+```
+
+### (7)voice synthesis
+
+```python
+st=st('Suluoya','苏洛雅')
+st.voice
+```
+
+
+
+## 6. Stock
+
+### (1)initialize
+
+```python
+from Suluoya.stock import slystock as sk
+sk=sk(names=['隆基股份','贵州茅台'],
+     start_date='2020-12-01', 
+     end_date='2020-12-31',
+     frequency="w")#d→day,w→week，m→month
+print(
+    sk.start_date,
+    sk.end_date,
+	sk.frequency,
+    sk.names,
+    sk.combinations,
+    sk.information,
+    sk.codes,
+    sk.stock_pair,
+    sk.data
+)
+```
+
+### (2)stock data
+
+reference: http://baostock.com/baostock/index.php/Python_API%E6%96%87%E6%A1%A3
+
+```python
+#adjustflag：复权类型，默认不复权：3；1：后复权；2：前复权。已支持分钟线、日线、周线、月线前后复权。
+
+#frequency：数据类型，默认为d，日k线；d=日k线、w=周、m=月、5=5分钟、15=15分钟、30=30分钟、60=60分钟k线数据，不区分大小写；指数没有分钟线数据；周线每周最后一个交易日才可以获取，月线每月最后一个交易日才可以获取
+from Suluoya.stock import getstock
+#initialize
+gk = getstock(names=['隆基股份','贵州茅台'], 
+                  start_date='2020-12-01', 
+                  end_date='2020-12-31',
+                  frequency='w'     
+                  )
+combination=gk.comnine # return a dataframe
+stockpair=gk.stock_pair
+stockdata=gk.stock_data # return codes, stock pair, stock data
+gk.quit() #Please don't forget it!
+```
+
+### (3)calculate sharp ratio
+
+```python
+#dic_sharp contains weights,risk,rate of return and sharp ratio
+#eg. weights=[0.1,0.2,0.3,0.4],stock_list=['隆基股份','五粮液','贵州茅台','宁德时代']
+#The stock_list should be in the names!
+#no_risk_rate means “无风险收益率”
+from Suluoya.stock import slystock as sk
+dic_sharp = sk.sharp(weights=[], stock_list=[], no_risk_rate=0.45/5200)
+print(dic_sharp)
+sk.quit()#Please don't forget it!
+```
+
+### (4)Markowit
+
+```python
+from Suluoya.stock import slystock as sk
+sk=sk(names=['隆基股份','贵州茅台'],
+     start_date='2020-12-01', 
+     end_date='2020-12-31',
+     frequency="w"
+     )
+#if stock_list = [], stock_list = names
+#accurate:True→gradient descent，False→500 random weights
+markowit=sk.Markowit(stock_list=[],
+                     accurate=True, 
+                     number=500, 
+                     no_risk_rate=0.45/5200)
+print(markowit)
+
+sk.quit()#Please don't forget it!
+```
+
+### (5)investment portfolio
+
+```python
+from Suluoya.stock import slystock as sk
+sk=sk(names=['隆基股份','贵州茅台'],
+     start_date='2020-12-01', 
+     end_date='2020-12-31',
+     frequency="w"
+     )
+#accurate=False
+result = sk.portfolio(accurate=False, number=500, no_risk_rate=0.45/5200)
+print(result)
+#accurate=True
+print(sk.save_result())
+
+sk.quit()#Please don't forget it!
+```
+
+### (6)choose good stocks
+
+```python
+#get data from "http://fund.eastmoney.com/data/rankhandler.aspx"
+from Suluoya.stock import getgoodstock as gs
+df=gs.get_good_stock(page=5)
+print(df)
+```
+
