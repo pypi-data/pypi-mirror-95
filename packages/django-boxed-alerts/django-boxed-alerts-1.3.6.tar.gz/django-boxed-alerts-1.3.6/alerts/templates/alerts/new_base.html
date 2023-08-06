@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load i18n static alert_fields %}
+<html>
+  <head>
+    <title>{% block title %}{{ title|default:"Index" }}{% endblock %} - {% trans "Alerts" %}</title>
+    <meta charset="utf-8"/>
+
+    <link rel="shortcut icon" href="{% static "alerts/images/logo.svg" %}"/>
+
+    {% if rss %}
+      <link rel="alternate" type="application/rss+xml" title="{% trans "RSS Feed" %}" href="{{ rss }}" />
+    {% endif %}
+    {% block "css" %}
+      <link href="{% static "alerts/css/bootstrap.min.css" %}" rel="stylesheet" id="bootstrap-css">
+      <link href="{% static "alerts/css/alerts.css" %}" rel="stylesheet" id="alerts-css">
+    {% endblock %}
+
+    {% block "js" %}
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "alerts/js/bootstrap.min.js" %}"></script>
+    {% endblock %}
+
+    {{ form.media }}
+  </head>
+  <body data-static="{% static '' %}" {% if request.user.is_authenticated %} data-user="{{ request.user.username }}" data-userid="{{ request.user.id }}"{% endif %}>
+    {% block "container" %}
+    {% block "wrapper" %}
+    <div class="container-flex alerts-app">
+    {% endblock "wrapper" %}
+        {% block "header" %}
+        <header class="alerts-header">
+          <div class="alerts-branding"><a class="alerts-logo" href="/alerts/"><img src="{% static "alerts/images/logo.svg" %}"> <span class="alerts-name">Notifications</span> <span class="alerts-tagline">Be Alert</span></a></div>
+          {% block "search-block" %}
+          <form action="{# url "alerts:search" #}" class="pull-right alerts-search">
+            <div class="input-append">
+              {% block "search" %}{% endblock %}
+              <input type="text" class="sr-input" name="q" value="{{ request.GET.q }}" placeholder="{% trans "Search" %}"><button class="btn sr-btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+          </form>
+          {% endblock "search-block" %}
+          
+          {% block "user-menu" %}
+          <ul class="user-menu">
+            {% if not request.user.is_authenticated %}
+            <li class="user-register"><a href="{# url "auth_register" #}?next={{ request.path }}"><span class="glyphicon glyphicon-record"></span> {% trans "Register" %}</a></li>
+            <li class="user-login"><a href="{% url "auth_login" %}?next={{ request.path }}"><span class="glyphicon glyphicon-log-in"></span> {% trans "Log in" %}</a></li>
+            {% else %}
+            <li class="user-account"><a href="{{ request.user.get_absolute_url }}"><span class="glyphicon glyphicon-edit"></span> {% trans "My account" %}</a></li>
+            <li class="user-logout"><a href="{% url "auth_logout" %}"><span class="glyphicon glyphicon-log-out"></span> {% trans "Log out" %}</a></li>
+              {% if request.user.is_staff %}
+                <li class="user-logout"><a href="{# url "admin:app_list" "alerts" #}"><span class="glyphicon glyphicon-cog"></span></a></li>
+              {% endif %}
+              {% if rss %}
+                <li class="thread-rss"><a href="{{ rss }}"><span class="iw-rss"></span></a></li>
+              {% endif %}
+            {% endif %}
+          </ul>
+          {% endblock %}
+          
+          {% block "alertheader" %}{% endblock %}
+
+        </header>
+        {% endblock "header" %}
+        <div class="alert-data">
+            <div class="alert-content">
+              {% block "supercontent" %}
+              <div class="alert-head">
+                {% block "page-header" %}
+                <div class="alert-option">
+                  {% block "tools" %}
+                    {% if is_paginated %}
+                      {% with request.GET|querydict_pop:"page" as get %}
+                      <ul class="unstyled alert-pagination">
+                        <li><span class="count">{{ page_obj.start_index }}-{{ page_obj.end_index }} of {{ page_obj.paginator.count }}</span></li>
+                        <li>
+                          {% if page_obj.has_previous %}
+                            <a class="np-btn" href="?page={{ page_obj.previous_page_number }}&{{ get.urlencode }}{{ hashtag }}"><span class="glyphicon glyphicon-chevron-left pagination-left"></span></a>
+                          {% else %}
+                            <a class="np-btn disabled"><span class="glyphicon glyphicon-chevron-left pagination-left"></span></a>
+                          {% endif %}
+                        </li>
+                        <li>
+                          {% if page_obj.has_next %}
+                            <a class="np-btn" href="?page={{ page_obj.next_page_number }}&{{ get.urlencode }}{{ hashtag }}"><span class="glyphicon glyphicon-chevron-right pagination-right"></span></a>
+                          {% else %}
+                            <a class="np-btn disabled" href="#"><span class="glyphicon glyphicon-chevron-right pagination-right"></span></a>
+                          {% endif %}
+                        </li>
+                      </ul>
+                      {% endwith %}
+                    {% endif %}
+                  {% endblock %}
+                </div>
+                {% endblock %}
+              </div>
+              <div class="alert-body">
+                {% block "content" %}
+                {% endblock %}
+              </div>
+              {% endblock %}
+            </div>
+            {# end .alert-content #}
+            
+            {% block "aside" %}
+            <aside class="sm-side alert-sidebar">
+              
+              {% if request.user.is_authenticated %}
+                <ul class="nav nav-pills nav-stacked labels-info">
+                  <li>
+                    <h4>{% trans "Direct Messages" %}</h4>
+                  </li>
+                  <li class="alert-item {% url_name "messages" %}">
+                    <a href="{% url "messages" %}"><span class="glyphicon-glyphicon-envelope"></span> {% trans "Inbox" %}</a>
+                  </li>
+                  <li class="alert-item {% url_name "message.new" %}">
+                    <a href="{% url "message.new" %}"><span class="glyphicon-glyphicon-plus"></span> {% trans "New Message" %}</a>
+                  </li>
+                </ul>
+              {% endif %}
+            </aside>
+            {% endblock %}
+        </div>
+        <div class="alert-footer text-muted">
+            <p>Django Boxed Alerts developed by Martin Owens under the AGPLv3 License, design by Mihaela and Jabier. <span class="render-time" title="{% now %}"><span class="glyphicon glyphicon-time"></span> <i></i></p>
+        </div>
+    </div>{# end .container #}
+    {% endblock %}
+  </body>
+</html>

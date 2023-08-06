@@ -1,0 +1,29 @@
+{% extends "alerts/new_base.html" %}
+{% load i18n static inkscape %}
+
+{% block "wrapper" %}
+  <div class="container-flex forums-app forums-topic-detail">
+{% endblock "wrapper" %}
+
+{% block "content" %}
+
+  <div>
+    <ol class="panel-body comment-list">
+      {% for message in object_list %}
+        <li class="comment left clearfix">
+            <span class="comment-header-group">
+              <address class="comment-author-address" data-user="{{ message.user.username }}" data-userid="{{ message.user.id }}">
+                  <a class="comment-author"><img src="{% if message.sender.photo %}{{ message.sender.photo.url }}{% else %}{% static "forums/images/user.svg" %}{% endif %}" alt="{{ message.emder }}" class="img-circle" />{{ message.sender }}</a></address> 
+              <small class="text-muted comment-subject"><span class="iw-email"></span> {{ message.subject }}</small>
+              <small class="pull-left text-muted comment-time"><span class="glyphicon glyphicon-time"></span> {{ message.created|timetag }}</small>
+            </span>
+      
+            <div class="buttons-group">
+            </div>
+
+            <section class="comment-text">{{ message.body }}</section>
+         </li> 
+      {% endfor %}
+    </ol>
+  </div>
+{% endblock %}

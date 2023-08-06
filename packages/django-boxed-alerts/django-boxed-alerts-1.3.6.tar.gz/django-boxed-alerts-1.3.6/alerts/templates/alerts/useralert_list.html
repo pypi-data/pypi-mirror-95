@@ -1,0 +1,50 @@
+{% extends "alerts/new_base.html" %}
+{% load i18n static alert_fields %}
+
+{% block "tools" %}
+  <div class="btn-group">
+    <a href="{% url "alert.view" %}?next={{ request.path }}" class="btn btn-default" title="{% trans "Mark all as read" %}"><span class="glyphicon glyphicon-check"></span></a>
+    <a href="{% url "alert.delete" %}?next={{ request.path }}" class="btn btn-danger" title="{% trans "Delete all notifications" %}"><span class="glyphicon glyphicon-remove-sign"></span></a>
+  </div>
+  <div class="btn-group">
+    <a href="{% url "alert.settings" %}" class="btn btn-primary" title="{% trans "Notification Settings" %}"><span class="glyphicon glyphicon-wrench"></span></a>
+  </div>
+  {{ block.super }}
+{% endblock %}
+
+{% block "aside" %}
+  <aside class="sm-side forum-sidebar">
+    {% if request.user.is_authenticated %}
+      <ul class="nav nav-pills nav-stacked labels-info">
+        <li><h4>{% trans "Notifications" %}</h4></li>
+        <li class="forum-item">
+          <a href="{# url "comment_list" request.user.username #}"><span class="iw-chat"></span> {% trans "My Comments" %}</a>
+        </li>
+      </ul>
+    {% endif %}
+  </aside>
+{% endblock %}
+
+{% block "content" %}
+  <table class="table table-forum table-hover">
+    <tbody>
+      {% for object in object_list %}
+        {% with object.data as data %}
+        <tr class="{% cycle 'odd' 'even' %}{% if not object.viewed %} new{% endif %}">
+            <td class="icon forum-small-cells"><span class="glyphicon glyphicon-bell"></span></td>
+            <td class="topic-item">
+              <a href="{{ data.instance.get_absolute_url }}">{{ object.subject }}</a>
+            </td>
+            <td class="text-right text-muted"><span class="glyphicon glyphicon-time"></span> {{ object.created|timetag }}</td>
+            <td class="forum-small-cells">
+                <a href="{% url "alert.delete" object.pk %}?next={{ request.path }}" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a>
+            </td>
+      </tr>
+      {% endwith %}
+    {% empty %}
+      <h1 class="text-muted text-center">{% trans "No notifications" %}</h1>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+

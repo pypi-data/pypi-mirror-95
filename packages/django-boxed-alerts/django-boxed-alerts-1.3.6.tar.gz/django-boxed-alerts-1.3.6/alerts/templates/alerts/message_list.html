@@ -1,0 +1,66 @@
+{% extends "alerts/new_base.html" %}
+{% load i18n static alert_fields %}
+
+{% block "tools" %}
+  <div class="btn-group">
+    <a href="{% url "alert.view" %}?next={{ request.path }}" class="btn btn-default" title="{% trans "Mark all as read" %}"><span class="glyphicon glyphicon-check"></span></a>
+    <a href="{% url "alert.delete" %}?next={{ request.path }}" class="btn btn-danger" title="{% trans "Delete all notifications" %}"><span class="glyphicon glyphicon-remove-sign"></span></a>
+  </div>
+  {{ block.super }}
+{% endblock %}
+
+{% block "content" %}
+  <table class="table table-alert table-hover">
+    <tbody>
+      {% for object in object_list %}
+        <tr class="{% cycle 'odd' 'even' %}{% if not object.viewed %} new{% endif %}">
+            <td class="icon alert-small-cells"><span class="iw-email"></span></td>
+            <td class="topic-item">
+              <a href="{{ object.get_absolute_url }}">{{ object.subject }}</a>
+            </td>
+            <td class="text-left">
+                {% if object.sender == request.user %}
+                  {{ object.recipient }}
+                {% else %}
+                  {{ object.sender }}
+                {% endif %}
+            </td>
+            <td class="text-center"><span class="label label-default counter">{{ object.thread.count }}</span></td>
+            <td class="text-right text-muted"><span class="glyphicon glyphicon-time"></span> {{ object.created|timetag }}</td>
+      </tr>
+    {% empty %}
+      <h1 class="text-muted text-center">{% trans "No direct messages" %}</h1>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+
+
+{% block content %}
+  {% for object in object_list %}
+
+<div class="comment" id="alert_{{ object.id }}">
+  <div class="details">
+    {% if data.instance_deleted %}
+      <div class="title">{{ data.instance_deleted }}</div>
+    {% else %}
+      <div class="title">
+        <a href="{{ data.instance.get_absolute_url }}">{{ object.subject }}</a>
+      </div>
+    {% endif %}
+    <div class="index">{{ object.created|timetag }}</div>
+  </div>
+  {% if not data.instance_deleted %}
+    <div class="body">
+      <div class="text">{{ object.body|urlize|linebreaks }}</div>
+    </div>
+    <div class="footer">
+      <div class="status">{% trans "to" %} <a href="{{ object.recipient.get_absolute_url }}" title="{% trans "Visit profile" %}">{{ object.recipient }}</a></div>
+    </div>
+  {% endif %}
+</div>
+  {% empty %}
+  {% endfor %}
+
+{% endblock %}
+
