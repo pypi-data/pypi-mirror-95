@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: boonlab
+Version: 1.0.0
+Summary: Boon AI Jupyter Environment
+Home-page: https://www.boonai.io
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: cmake
+Requires-Dist: boonsdk
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: ipython
+Requires-Dist: scikit-learn
+Requires-Dist: bokeh
+Requires-Dist: holoviews
+Requires-Dist: MulticoreTSNE
+
+UNKNOWN
+
+
