@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fiji-arnheim"
+version = "0.1.2"
+description = ""
+packages = [{include = "fiji_arnheim"}]
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+grunnlag = "^0.2.9"
+bergen= "^0.3.31"
+pyimagej = "^1.0.0"
+
+[tool.poetry.scripts]
+fiji-arnheim = "fiji_arnheim.run:main"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
