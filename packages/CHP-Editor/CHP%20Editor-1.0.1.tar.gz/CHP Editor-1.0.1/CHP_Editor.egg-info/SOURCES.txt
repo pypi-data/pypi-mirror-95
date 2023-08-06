@@ -1,0 +1,9 @@
+setup.py
+CHP/CHP.py
+CHP/TEXT.py
+CHP/__init__.py
+CHP_Editor.egg-info/PKG-INFO
+CHP_Editor.egg-info/SOURCES.txt
+CHP_Editor.egg-info/dependency_links.txt
+CHP_Editor.egg-info/requires.txt
+CHP_Editor.egg-info/top_level.txt
