@@ -1,0 +1,5 @@
+moviepy
+pytube
+requests
+urllib3
+python-dotenv
