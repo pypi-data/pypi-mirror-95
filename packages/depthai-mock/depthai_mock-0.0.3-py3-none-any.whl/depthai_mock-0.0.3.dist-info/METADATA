@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: depthai-mock
+Version: 0.0.3
+Summary: The tool that allows you to record and playback the DepthAI generated frames
+Home-page: https://github.com/luxonis/depthai-mock
+Author: Luxonis
+Author-email: support@luxonis.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/luxonis/depthai-mock/issues
+Project-URL: Source Code, https://github.com/luxonis/depthai-mock
+Keywords: depthai mock record tool development
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: depthai (==0.4.1.1)
+
+# Depthai-Mock
+
+This tool allows you to record the packets produced by DepthAI device into your disk
+and then play them back again as they would be produced normally - but without actually running the DepthAI
+
+## Installation
+
+```
+python3 -m pip install depthai-mock
+```
+## Usage
+
+```
+usage: depthai_mock [-h] [-nd] [-t TIME] [-ai] [-b BLOB] [-bc BLOB_CONFIG] [-p PATH] [-s STREAMS [STREAMS ...]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -nd, --no-display     Do not try display the incoming frames
+  -t TIME, --time TIME  Limits the max time of the recording. Mandatory whenused with -nd (--no-display) option
+  -ai, --enable-ai      Store also the nnet results
+  -b BLOB, --blob BLOB  Path to nnet model .blob file
+  -bc BLOB_CONFIG, --blob-config BLOB_CONFIG
+                        Path to nnet model config .json file
+  -p PATH, --path PATH  Path where to store the captured data
+  -s STREAMS [STREAMS ...], --streams STREAMS [STREAMS ...]
+                        Define which streams to enable Format: stream_name or stream_name,max_fps Example: -s metaout previewout Example: -s metaout previewout,10 depth_sipp,10
+```
+
+Having DepthAI connected, run
+```
+depthai_mock -s previewout
+```
+
+then, when `data` folder is there, you can unplug the DepthAI and run
+
+```
+cd depthai_mock
+python3 test.py -p ../data
+```
+

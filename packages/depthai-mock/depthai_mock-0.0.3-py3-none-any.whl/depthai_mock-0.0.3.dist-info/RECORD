@@ -1,0 +1,11 @@
+depthai_mock/__init__.py,sha256=58C0NAUGBo1jjvfyZ-kV_ARixqnugngWYLEO7PF3HsI,178
+depthai_mock/cli.py,sha256=j1en9Fy1CPD5KIAT0lFvfAxs4lRVUa7xAxrKzu4mSLM,5928
+depthai_mock/pipeline.py,sha256=NVmHarjGluDEeSVWEMe0ph2Cymk98yvUQRwxkSoUznk,3886
+depthai_mock/test.py,sha256=AHYHSizv_CXNAgMRE5XhvnrYBS0Q6KdmUjHcQ3RI3bA,1329
+depthai_mock/mobilenet-ssd/mobilenet-ssd.blob,sha256=GB6zaanNZu9aYq_yGNLvpWRUhRzSsATlpej4fz8rpSQ,14489664
+depthai_mock/mobilenet-ssd/mobilenet-ssd.json,sha256=2zKLREOcWcO42wSqYokluHl5XiCISRNfhHY6kdwxulw,670
+depthai_mock-0.0.3.dist-info/METADATA,sha256=fb-c8gyHfUUWAQV3Q3M3k-XOn3-fan3cdZwaJaNhXIY,2232
+depthai_mock-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+depthai_mock-0.0.3.dist-info/entry_points.txt,sha256=DV2DfYydYOJUZcI9UaGB9ld5xzhmQK-tNE_7ynB4330,74
+depthai_mock-0.0.3.dist-info/top_level.txt,sha256=iK3YCZqDUmI1aKJSU2axYaF8j6QaNL6S91nR36sr_OE,13
+depthai_mock-0.0.3.dist-info/RECORD,,
