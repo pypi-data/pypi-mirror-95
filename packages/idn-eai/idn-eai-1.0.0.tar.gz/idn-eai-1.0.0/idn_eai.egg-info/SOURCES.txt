@@ -1,0 +1,10 @@
+README.md
+setup.py
+eai/__init__.py
+eai/eaichecker.py
+eai/idn_services.py
+idn_eai.egg-info/PKG-INFO
+idn_eai.egg-info/SOURCES.txt
+idn_eai.egg-info/dependency_links.txt
+idn_eai.egg-info/requires.txt
+idn_eai.egg-info/top_level.txt
