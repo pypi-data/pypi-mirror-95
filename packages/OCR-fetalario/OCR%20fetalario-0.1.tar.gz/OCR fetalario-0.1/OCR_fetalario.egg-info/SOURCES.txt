@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+OCR_fetalario.egg-info/PKG-INFO
+OCR_fetalario.egg-info/SOURCES.txt
+OCR_fetalario.egg-info/dependency_links.txt
+OCR_fetalario.egg-info/requires.txt
+OCR_fetalario.egg-info/top_level.txt
