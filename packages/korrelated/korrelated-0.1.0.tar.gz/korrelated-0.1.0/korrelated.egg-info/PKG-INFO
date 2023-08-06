@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: korrelated
+Version: 0.1.0
+Summary: A package containing python interfaces to some popular correlated-k radiative transfer libraries
+Home-page: https://github.com/JoyMonteiro/korrelated
+Author: Joy Merwin Monteiro
+Author-email: joy.merwin@gmail.com
+License: BSD license
+Description: ==========
+        korrelated
+        ==========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/korrelated.svg
+                :target: https://pypi.python.org/pypi/korrelated
+        
+        .. image:: https://img.shields.io/travis/JoyMonteiro/korrelated.svg
+                :target: https://travis-ci.com/JoyMonteiro/korrelated
+        
+        .. image:: https://readthedocs.org/projects/korrelated/badge/?version=latest
+                :target: https://korrelated.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        A package containing python interfaces to some popular correlated-k radiative transfer libraries
+        
+        
+        * Free software: BSD license
+        * Documentation: https://korrelated.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-02-17)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: korrelated
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
