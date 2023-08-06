@@ -1,0 +1,14 @@
+dffml_feature_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_feature_auth/version.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+dffml_feature_auth/feature/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dffml_feature_auth/feature/definitions.py,sha256=-uYuAwNzv2MiUm-OHFbhskwNCp5h3SJZyrlWmGyXocU,284
+dffml_feature_auth/feature/log.py,sha256=JEQupC78YzISS9FV3AtmZ_VJjcSmFlZzkNOIjkR0bHc,140
+dffml_feature_auth/feature/operations.py,sha256=7nzrxoy4kkPRoxuSQ6xojGeyYboYD1-0ZbEyOXRK7Ro,5102
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_df.py,sha256=mL4BUMRMxcI67Ly0mNJMsmc1je2EWuchzGMXId79uvA,1597
+dffml_feature_auth-0.1.0.dist-info/LICENSE,sha256=TTaPqfOARqs-Ja1c3SqqLfsOu5Rj6rtG3EvrlBF2rNA,1067
+dffml_feature_auth-0.1.0.dist-info/METADATA,sha256=3_kClnvs_FSGANdc7nsC8GjiTQWBID2ePNe76_99ECU,2247
+dffml_feature_auth-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dffml_feature_auth-0.1.0.dist-info/entry_points.txt,sha256=Xw2mgFUq5ax7MFjCl-NpjHXVQUHRq28d6QNhipM0u8k,73
+dffml_feature_auth-0.1.0.dist-info/top_level.txt,sha256=-F-GH4gEvYKY2pX2-79zBRxa13DOy703psSe7KtGbdE,25
+dffml_feature_auth-0.1.0.dist-info/RECORD,,
