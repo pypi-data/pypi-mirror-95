@@ -1,0 +1,3 @@
+pyprinttags
+pytaglib
+taglib
