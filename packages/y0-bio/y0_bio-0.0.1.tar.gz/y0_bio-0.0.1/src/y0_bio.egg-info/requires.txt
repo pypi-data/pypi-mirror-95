@@ -1,0 +1,15 @@
+more_itertools
+tqdm
+click
+more_click
+y0>=0.0.3
+pybel
+indra
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-click
+sphinx-autodoc-typehints
+sphinx_automodapi
+texext

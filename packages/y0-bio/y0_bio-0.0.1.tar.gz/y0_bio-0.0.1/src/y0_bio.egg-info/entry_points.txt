@@ -1,0 +1,3 @@
+[console_scripts]
+y0_bio = y0_bio.cli:main
+
