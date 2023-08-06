@@ -1,0 +1,12 @@
+pyunfurl/__init__.py,sha256=6owrYnQbhWEMkNPhe9B4TRGsYTOnlpwjAICx3sYwNA0,96
+pyunfurl/example.py,sha256=IsWDla-HaVgJ0azfwx1b3DY_3XTDjmhcQ9UEaTA-6-U,88
+pyunfurl/unfurl.py,sha256=Ehlseug6KBr8cF_CBQ1vspvH9QY1jp33Z3dZzrOHinQ,8444
+pyunfurl/provider_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyunfurl/provider_data/custom.py,sha256=buJ7g6b0HCDpAJqMMWvwzJpnblwb03gXcpaoAg4d30g,1400
+pyunfurl/provider_data/noembed.py,sha256=oBYj879uhhO8suFM40QB1RzCLeXXHJP2a4NfNIJk9g0,21105
+pyunfurl/provider_data/oembed.py,sha256=Wyaakr9nX2J1HSlabvt3VxudD0u8GaH-rnavwQsExVI,48489
+pyunfurl-0.1.5.dist-info/LICENSE,sha256=AsI8pyyW2BsTled8hjcX-mfORmOQJcOGiTfetwFFimQ,1090
+pyunfurl-0.1.5.dist-info/METADATA,sha256=-I-YUaHh6sZfu6aTGV3Amwk-ZJpDhaTpxF3Pw19tmxs,4890
+pyunfurl-0.1.5.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pyunfurl-0.1.5.dist-info/top_level.txt,sha256=qXMfOjKw3HqDIK9lgnv3M5PrGLY_pvoYMtSfCBYS1y8,9
+pyunfurl-0.1.5.dist-info/RECORD,,
