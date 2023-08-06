@@ -1,0 +1,5 @@
+numpy>=1.17
+zhon
+
+[:python_version < "3.7"]
+dataclasses
