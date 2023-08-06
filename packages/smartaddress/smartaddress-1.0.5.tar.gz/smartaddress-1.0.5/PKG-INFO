@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: smartaddress
+Version: 1.0.5
+Summary: Intelligent resolution of receiving address
+Home-page: UNKNOWN
+Author: andy
+Author-email: liuxiaoming@yihaohulian.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
