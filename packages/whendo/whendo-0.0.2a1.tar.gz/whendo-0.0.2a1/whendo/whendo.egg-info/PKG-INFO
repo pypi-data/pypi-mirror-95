@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: whendo
+Version: 0.0.2a1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: beaver@electronhead.com
+License: MIT
+Description: UNKNOWN
+Keywords: scheduling,api
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
