@@ -1,0 +1,6 @@
+docopt
+python-dateutil
+requests
+schema
+tabulate
+typer
