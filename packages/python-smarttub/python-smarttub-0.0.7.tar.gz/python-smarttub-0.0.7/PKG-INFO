@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: python-smarttub
+Version: 0.0.7
+Summary: API to query and control hot tubs using the SmartTub system
+Home-page: https://github.com/mdz/python-smarttub
+Author: Matt Zimmerman
+Author-email: mdz@alcor.net
+License: UNKNOWN
+Description: # python-smarttub
+        
+        This package provides an API for querying and controlling hot tubs using the SmartTub system.
+        
+        ```
+        pip install python-smarttub
+        ```
+        
+        See `smarttub/__main__.py` for example usage
+        
+        
+        # Contributing
+        ```bash
+        pip install pre-commit && pre-commit install
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
