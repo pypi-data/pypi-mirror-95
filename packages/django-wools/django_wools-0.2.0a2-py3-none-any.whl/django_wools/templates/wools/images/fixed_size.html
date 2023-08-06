@@ -1,0 +1,17 @@
+{% if base_url %}
+<picture>
+    {% for type, source in sources.items %}
+    <source
+        type="image/{{ type }}"
+        srcset="{{ source.srcset }}"
+    >
+    {% endfor %}
+
+    <img
+        src="{{ base_url }}"
+        alt="{{ alt }}"
+        width="{{ size.width }}"
+        height="{{ size.height }}"
+    >
+</picture>
+{% endif %}
